@@ -6,7 +6,7 @@ Universidad Peruana de Ciencias Aplicadas<br>
 Carrera de Ingeniería de Software<br><br>
 
 <strong>1ASI0730</strong><br>
-<strong>Aplicaciones Web/strong><br>
+<strong>Aplicaciones Web</strong><br>
 NRC<br>
 <strong>8084</strong><br>
 <strong>Informe del Trabajo Final</strong><br>
