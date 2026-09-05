@@ -373,6 +373,11 @@ Las funcionalidades disponibles dependerán del tipo de usuario.
 
 **Restricciones de Tiempo y Costo:**
 
+- El desarrollo se enmarca en el calendario académico del curso 1ASI0730 (ciclo 2026-20), con entregables en las semanas 4 (AV1), 7 (TB1), 12 (AV2) y 15 (TB2), lo que limita el tiempo disponible para iterar sobre cada funcionalidad.
+- El equipo no cuenta con presupuesto de inversión real, por lo que la implementación y el despliegue se realizarán utilizando planes gratuitos o de nivel educativo de las herramientas y servicios cloud seleccionados.
+- La dedicación del equipo al proyecto es parcial, al compartirse con la carga académica de otros cursos del ciclo, lo cual condiciona el volumen de funcionalidades que pueden completarse por Sprint.
+- No se contempla presupuesto para la adquisición de dispositivos IoT físicos ni sensores durante el desarrollo académico del proyecto.
+
 
 ### 1.2.2. Lean UX Process
 
