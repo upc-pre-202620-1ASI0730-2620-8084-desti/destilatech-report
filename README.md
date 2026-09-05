@@ -357,8 +357,10 @@ Las funcionalidades disponibles dependerán del tipo de usuario.
 - Alertas de stock.
 - Estimaciones de reposición.
 
-##Restricciones del alcance:
+## Restricciones
 
+
+**Restricciones del alcance:**
 - El proyecto académico se concentra en el desarrollo de software y no incluye la fabricación de dispositivos electrónicos.
 - Los datos provenientes de dispositivos IoT serán simulados durante el desarrollo.
 - La solución se enfocará inicialmente en el ecosistema peruano del pisco.
@@ -368,6 +370,8 @@ Las funcionalidades disponibles dependerán del tipo de usuario.
 - La funcionalidad predictiva inicial estará enfocada principalmente en inventario y reposición.
 - No se implementarán algoritmos avanzados de optimización de rutas logísticas durante el MVP.
 - Las funcionalidades propuestas podrán modificarse de acuerdo con los resultados obtenidos durante las entrevistas y posteriores actividades de validación.
+
+**Restricciones de Tiempo y Costo:**
 
 
 ### 1.2.2. Lean UX Process
