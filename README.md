@@ -606,32 +606,106 @@ En este apartado, examinamos el ecosistema de soluciones existentes en el mercad
 ### 2.1.1. Análisis competitivo
 
 **¿Por qué llevar a cabo este análisis?** Determinar si existe una solución digital que ya resuelva de forma integrada el monitoreo de producción, la gestión de inventario/lotes y la comercialización del pisco, y con ello confirmar el espacio de diferenciación de Destilatech frente a otras soluciones.
-
-**Competitive Analysis Landscape**
-
-| | **Destilatech (nuestra startup)** | **Competidor 1: Solmicro–eXpertis** | **Competidor 2: Ubidots** | **Competidor 3: Defontana Perú** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Perfil / Overview** | Plataforma web B2B SaaS que centraliza monitoreo IoT de producción, gestión de lotes/inventario y comercialización básica (clientes/pedidos) para productores y comercializadores de pisco en el Perú. | ERP especializado para bodegas vitivinícolas y de pisco (viñedo–elaboración–embotellado–venta), del grupo español Solmicro, con distribución activa en Perú. | Plataforma de IoT industrial "AI-native" para monitoreo, alertas y mantenimiento predictivo de variables de proceso, con enfoque regional en Latinoamérica. | ERP peruano en la nube con IA agéntica, orientado a facturación, inventario, ventas/CRM y punto de venta para pymes y medianas empresas. |
-| **Ventaja competitiva** | Única solución (identificada) que integra IoT de producción + inventario/lotes + comercialización en un mismo producto, especializada en el dominio del pisco. | Cobertura completa del ciclo productivo vitivinícola (incluida trazabilidad y costos), con experiencia previa en el sector vino/pisco. | Motor de IoT maduro, flexible y multi-industria, con capacidades de IA/mantenimiento predictivo ya probadas a escala. | Marca establecida y confianza en el mercado peruano ("N.º 1 en Perú"), con integración nativa a SUNAT y soporte local. |
-| **¿Qué valor ofrece a los clientes?** | Visión centralizada de producción e inventario, alertas oportunas y estimaciones de reposición, reduciendo la dependencia de registros dispersos. | Control administrativo y de costos de la producción vitivinícola, con trazabilidad end-to-end para cumplimiento y calidad. | Visibilidad en tiempo real de variables físicas de cualquier proceso, con automatización de alertas y acciones. | Cumplimiento tributario automatizado, control de inventario y ventas omnicanal para el día a día del negocio. |
-| **Mercado objetivo** | Pequeños y medianos productores de pisco (Lima, Ica, Arequipa, Moquegua, Tacna) y pequeños comercializadores de pisco (licorerías, bodegas, minimarkets, distribuidores). | Bodegas productoras de vino y pisco de mediana escala en el Perú (ej. Arequipa/Ica). | Empresas industriales, agroindustria, energía y ciudades inteligentes en LatAm/EE. UU. — sin foco específico en bebidas alcohólicas. | Pymes y medianas empresas peruanas de cualquier rubro comercial. |
-| **Estrategias de marketing** | Modelo B2B SaaS con prueba gratuita de hasta 14 días, marketing directo a gremios y asociaciones de productores de pisco. | Venta consultiva vía distribuidor local, referencias de clientes existentes (casos de éxito) en el sector. | Marketing de producto (documentación técnica, comunidad de desarrolladores), prueba gratuita de 30 días. | Marketing digital masivo (SEO/SEM), cotización y demo gratuita en línea, equipo comercial local. |
-| **Productos y servicios** | Monitoreo IoT simulado, gestión de lotes, inventario, alertas, clientes/pedidos, estimaciones predictivas; futuro: instalación y mantenimiento de sensores físicos. | Gestión de viñedo/vendimia, elaboración, guarda/embotellado, trazabilidad, costos, logística, CRM comercial. | Dashboards, reglas de automatización, gestión de dispositivos, agentes de IA, analítica predictiva. | Facturación electrónica, inventario, ventas/CRM, contabilidad, RR. HH., punto de venta. |
-| **Precios y costos** | SaaS por suscripción (planes a definir), prueba gratuita de 14 días; ingresos complementarios por instalación/mantenimiento de IoT físico. | No publica precios; modelo de cotización personalizada por distribuidor. | Plan Profesional desde USD 99/mes; planes Industrial y Enterprise con precio personalizado; prueba gratuita de 30 días sin tarjeta (Ubidots, 2026). | No publica precios; modelo de cotización y demo personalizada. |
-| **Canales de distribución (Web/Móvil)** | Plataforma web responsive; app móvil no contemplada en el MVP. | Software de escritorio/web distribuido a través de partner local; sin app móvil evidenciada. | Plataforma web + app móvil, con SDKs para integración de dispositivos. | Plataforma web + POS móvil para ventas en punto de venta y e-commerce. |
-
-
-
-
-**Análisis SWOT**
-
-| | **Fortalezas** | **Debilidades** | **Oportunidades** | **Amenazas** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Destilatech** | Propuesta única de integración (IoT + inventario + comercialización) enfocada en el nicho del pisco; modelo SaaS de bajo costo de entrada (trial de 14 días). | Producto nuevo, sin base de clientes ni casos de éxito; dispositivos IoT físicos aún no desarrollados (datos simulados). | Mercado con más de 527 empresas formales (mayoritariamente MYPE) y bajo nivel de digitalización reportado (Ministerio de la Producción, 2025); posible adopción de un ERP genérico sin experiencia previa en el sector. | Entrada de ERPs vitivinícolas ya consolidados (como Solmicro) hacia el mercado peruano; posibilidad de que productores arme soluciones "caseras" combinando Ubidots + un ERP genérico a menor costo percibido. |
-| **Solmicro–eXpertis** | Producto maduro con trazabilidad y control de costos ya probados en bodegas reales. | Sin módulo de monitoreo IoT ni de comercialización minorista; orientado a bodegas medianas/grandes, con curva de adopción más compleja para MYPE. | Bajo conocimiento de ERPs en el mercado vitivinícola peruano (mencionado por su propio distribuidor), lo que deja espacio para alternativas más simples. | Que soluciones locales y más económicas (como Destilatech) capturen primero a las MYPE antes de que Solmicro escale su distribución en el país. |
-| **Ubidots** | Plataforma de IoT robusta, probada y multi-industria, con capacidades de IA. | No ofrece gestión de inventario, lotes, clientes ni pedidos; requiere conocimiento técnico para configurar el monitoreo de un proceso específico como la destilación de pisco. | Demanda creciente de monitoreo remoto en agroindustria latinoamericana. | Que plataformas verticales especializadas (como Destilatech) empaqueten IoT + gestión para el usuario final sin que este necesite configurar nada. |
-| **Defontana Perú** | Marca reconocida en Perú, integración nativa con SUNAT y soporte local. | Sin ninguna funcionalidad de producción o monitoreo IoT; es un ERP genérico no especializado en pisco. | Amplia base instalada de pymes peruanas que ya usan o conocen Defontana. | Que comercializadores que ya usan Defontana no vean necesidad de migrar o integrarse con una solución adicional especializada. |
-
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th colspan="6"><b>Competitive Analysis Landscape</b></th>
+  </tr>
+  <tr>
+    <td>¿Por qué llevar a cabo este análisis?</td>
+    <td colspan="5">Queremos saber cómo está posicionado cada posible competidor con nuestro producto, así podemos detectar ventajas competitivas y diferenciar nuestra propuesta de valor.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Nombre y logo de competidor</td>
+    <td><b>Destilatech</b></td>
+    <td><b>Solmicro–eXpertis</b></td>
+    <td><b>Ubidots</b></td>
+    <td><b>Defontana Perú</b></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b>Perfil</b></td>
+    <td><b>Overview</b></td>
+    <td>Plataforma web B2B SaaS que centraliza monitoreo IoT de producción, gestión de lotes/inventario y comercialización básica (clientes/pedidos) para productores y comercializadores de pisco en el Perú.</td>
+    <td>ERP especializado para bodegas vitivinícolas y de pisco (viñedo–elaboración–embotellado–venta), del grupo español Solmicro, con distribución activa en Perú.</td>
+    <td>Plataforma de IoT industrial "AI-native" para monitoreo, alertas y mantenimiento predictivo de variables de proceso, con enfoque regional en Latinoamérica.</td>
+    <td>ERP peruano en la nube con IA agéntica, orientado a facturación, inventario, ventas/CRM y punto de venta para pymes y medianas empresas.</td>
+  </tr>
+  <tr>
+    <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
+    <td>- Única solución (identificada) que integra IoT de producción + inventario/lotes + comercialización en un mismo producto, especializada en el dominio del pisco.<br>- Visión centralizada de producción e inventario, alertas oportunas y estimaciones de reposición, reduciendo la dependencia de registros dispersos.</td>
+    <td>- Cobertura completa del ciclo productivo vitivinícola (incluida trazabilidad y costos), con experiencia previa en el sector vino/pisco.<br>- Control administrativo y de costos de la producción vitivinícola, con trazabilidad end-to-end para cumplimiento y calidad.</td>
+    <td>- Motor de IoT maduro, flexible y multi-industria, con capacidades de IA/mantenimiento predictivo ya probadas a escala.<br>- Visibilidad en tiempo real de variables físicas de cualquier proceso, con automatización de alertas y acciones.</td>
+    <td>- Marca establecida y confianza en el mercado peruano ("N.º 1 en Perú"), con integración nativa a SUNAT y soporte local.<br>- Cumplimiento tributario automatizado, control de inventario y ventas omnicanal para el día a día del negocio.</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b>Perfil de Marketing</b></td>
+    <td><b>Mercado objetivo</b></td>
+    <td>Pequeños y medianos productores de pisco (Lima, Ica, Arequipa, Moquegua, Tacna) y pequeños comercializadores de pisco (licorerías, bodegas, minimarkets, distribuidores).</td>
+    <td>Bodegas productoras de vino y pisco de mediana escala en el Perú (ej. Arequipa/Ica).</td>
+    <td>Empresas industriales, agroindustria, energía y ciudades inteligentes en LatAm/EE. UU. — sin foco específico en bebidas alcohólicas.</td>
+    <td>Pymes y medianas empresas peruanas de cualquier rubro comercial.</td>
+  </tr>
+  <tr>
+    <td><b>Estrategias de marketing</b></td>
+    <td>Modelo B2B SaaS con prueba gratuita de hasta 14 días, marketing directo a gremios y asociaciones de productores de pisco.</td>
+    <td>Venta consultiva vía distribuidor local, referencias de clientes existentes (casos de éxito) en el sector.</td>
+    <td>Marketing de producto (documentación técnica, comunidad de desarrolladores), prueba gratuita de 30 días.</td>
+    <td>Marketing digital masivo (SEO/SEM), cotización y demo gratuita en línea, equipo comercial local.</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><b>Perfil de Producto</b></td>
+    <td><b>Productos y Servicios</b></td>
+    <td>Monitoreo IoT simulado, gestión de lotes, inventario, alertas, clientes/pedidos, estimaciones predictivas; futuro: instalación y mantenimiento de sensores físicos.</td>
+    <td>Gestión de viñedo/vendimia, elaboración, guarda/embotellado, trazabilidad, costos, logística, CRM comercial.</td>
+    <td>Dashboards, reglas de automatización, gestión de dispositivos, agentes de IA, analítica predictiva.</td>
+    <td>Facturación electrónica, inventario, ventas/CRM, contabilidad, RR. HH., punto de venta.</td>
+  </tr>
+  <tr>
+    <td><b>Precios y Costos</b></td>
+    <td>SaaS por suscripción (planes a definir), prueba gratuita de 14 días; ingresos complementarios por instalación/mantenimiento de IoT físico.</td>
+    <td>No publica precios; modelo de cotización personalizada por distribuidor.</td>
+    <td>Plan Profesional desde USD 99/mes; planes Industrial y Enterprise con precio personalizado; prueba gratuita de 30 días sin tarjeta (Ubidots, 2026).</td>
+    <td>No publica precios; modelo de cotización y demo personalizada.</td>
+  </tr>
+  <tr>
+    <td><b>Canales de distribución (Web y/o móvil)</b></td>
+    <td>Plataforma web responsive; app móvil no contemplada en el MVP.</td>
+    <td>Software de escritorio/web distribuido a través de partner local; sin app móvil evidenciada.</td>
+    <td>Plataforma web + app móvil, con SDKs para integración de dispositivos.</td>
+    <td>Plataforma web + POS móvil para ventas en punto de venta y e-commerce.</td>
+  </tr>
+  <tr>
+    <td rowspan="5"><b>Análisis SWOT</b></td>
+    <td colspan="5">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.</td>
+  </tr>
+  <tr>
+    <td><b>Fortalezas</b></td>
+    <td>Propuesta única de integración (IoT + inventario + comercialización) enfocada en el nicho del pisco; modelo SaaS de bajo costo de entrada (trial de 14 días).</td>
+    <td>Producto maduro con trazabilidad y control de costos ya probados en bodegas reales.</td>
+    <td>Plataforma de IoT robusta, probada y multi-industria, con capacidades de IA.</td>
+    <td>Marca reconocida en Perú, integración nativa con SUNAT y soporte local.</td>
+  </tr>
+  <tr>
+    <td><b>Debilidades</b></td>
+    <td>Producto nuevo, sin base de clientes ni casos de éxito; dispositivos IoT físicos aún no desarrollados (datos simulados).</td>
+    <td>Sin módulo de monitoreo IoT ni de comercialización minorista; orientado a bodegas medianas/grandes, con curva de adopción más compleja para MYPE.</td>
+    <td>No ofrece gestión de inventario, lotes, clientes ni pedidos; requiere conocimiento técnico para configurar el monitoreo de un proceso específico como la destilación de pisco.</td>
+    <td>Sin ninguna funcionalidad de producción o monitoreo IoT; es un ERP genérico no especializado en pisco.</td>
+  </tr>
+  <tr>
+    <td><b>Oportunidades</b></td>
+    <td>Mercado con más de 527 empresas formales (mayoritariamente MYPE) y bajo nivel de digitalización reportado (Ministerio de la Producción, 2025); posible adopción de un ERP genérico sin experiencia previa en el sector.</td>
+    <td>Bajo conocimiento de ERPs en el mercado vitivinícola peruano (mencionado por su propio distribuidor), lo que deja espacio para alternativas más simples.</td>
+    <td>Demanda creciente de monitoreo remoto en agroindustria latinoamericana.</td>
+    <td>Amplia base instalada de pymes peruanas que ya usan o conocen Defontana.</td>
+  </tr>
+  <tr>
+    <td><b>Amenazas</b></td>
+    <td>Entrada de ERPs vitivinícolas ya consolidados (como Solmicro) hacia el mercado peruano; posibilidad de que productores arme soluciones "caseras" combinando Ubidots + un ERP genérico a menor costo percibido.</td>
+    <td>Que soluciones locales y más económicas (como Destilatech) capturen primero a las MYPE antes de que Solmicro escale su distribución en el país.</td>
+    <td>Que plataformas verticales especializadas (como Destilatech) empaqueten IoT + gestión para el usuario final sin que este necesite configurar nada.</td>
+    <td>Que comercializadores que ya usan Defontana no vean necesidad de migrar o integrarse con una solución adicional especializada.</td>
+  </tr>
+</table>
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 Frente a Solmicro–eXpertis, Destilatech no competirá en profundidad de control de costos ni en trazabilidad contable, sino en simplicidad y en el módulo que Solmicro no ofrece: el monitoreo IoT de variables productivas. La táctica preliminar es priorizar en el MVP una experiencia de configuración simple (datos simulados primero, sensores físicos después) y un precio de entrada accesible para MYPE, buscando posicionar a Destilatech como la opción "más simple y más barata de empezar" frente a un ERP vitivinícola que exige mayor inversión y curva de adopción.
