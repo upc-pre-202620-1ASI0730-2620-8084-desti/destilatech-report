@@ -759,8 +759,6 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
 ### 2.2.1. Diseño de entrevistas
 
-Se diseñan dos guías de entrevista semiestructurada, una por segmento objetivo (productor y comercializador), aplicando buenas prácticas de diseño de entrevistas: preguntas abiertas y no dirigidas, evitar preguntas que sugieran la respuesta esperada, indagar sobre comportamientos y hechos pasados (no solo opiniones u "hipótesis" del entrevistado sobre lo que haría), una pregunta a la vez, y uso de repreguntas ("¿por qué?", "¿puedes darme un ejemplo?", "¿cómo lo resolviste?") para profundizar sin inducir la respuesta. Cada guía recoge información principal (para responder directamente los problem statements y assumptions) y complementaria (para construir el arquetipo/User Persona).
-
 **Estructura común a ambas guías**
 
 1. Apertura: presentación del equipo, propósito de la investigación (sin mencionar aún la solución para no sesgar respuestas), consentimiento para grabar en video, duración estimada (20–30 min).
