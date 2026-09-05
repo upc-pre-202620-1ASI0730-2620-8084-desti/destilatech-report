@@ -264,46 +264,14 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 ### 1.1.2. Perfiles de Integrantes del equipo
 
-#### Mario Alonso Fernandez Seer
+| **Nombre Completo del integrante**    | 	**Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
+| :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
+| Mario Alonso Fernandez Seer      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
+| Santiago Atanacio, Jairo Mathias      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Estudiante 3     | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | descripcion
+| Estudiante 4      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                     | descripcion
+| Estudiante 5 | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto | descripcion
 
-<!-- Agregar fotografía del integrante -->
-
-- **Código:** U202317807
-- **Carrera:** Ingeniería de Software
-- **Rol dentro del equipo:** Líder del proyecto
-- **Perfil y aporte al proyecto:** Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
-
-#### Santiago Atanacio, Jairo Mathias
-
-<!-- Agregar fotografía del integrante -->
-
-- **Código:** U202418755
-- **Carrera:** Ingeniería de Software
-- **Perfil y aporte al proyecto:** [Agregar una breve descripción de sus conocimientos técnicos, habilidades y contribución al proyecto.]
-
-#### [Nombre del integrante 3]
-
-<!-- Agregar fotografía del integrante -->
-
-- **Código:** UXXXXXXXXX
-- **Carrera:** Ingeniería de Software
-- **Perfil y aporte al proyecto:** [Agregar una breve descripción de sus conocimientos técnicos, habilidades y contribución al proyecto.]
-
-#### [Nombre del integrante 4]
-
-<!-- Agregar fotografía del integrante -->
-
-- **Código:** UXXXXXXXXX
-- **Carrera:** Ingeniería de Software
-- **Perfil y aporte al proyecto:** [Agregar una breve descripción de sus conocimientos técnicos, habilidades y contribución al proyecto.]
-
-#### [Nombre del integrante 5]
-
-<!-- Agregar fotografía del integrante -->
-
-- **Código:** UXXXXXXXXX
-- **Carrera:** Ingeniería de Software
-- **Perfil y aporte al proyecto:** [Agregar una breve descripción de sus conocimientos técnicos, habilidades y contribución al proyecto.]
 
 
 ## 1.2. Solution Profile
