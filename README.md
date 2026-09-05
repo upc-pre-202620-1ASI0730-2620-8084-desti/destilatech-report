@@ -292,15 +292,15 @@ Las problemáticas presentadas constituyen hipótesis iniciales del equipo y deb
 
 **Análisis 5W + 2H:**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Who - ¿Quién?** | Pequeños y medianos productores de pisco y pequeños negocios dedicados a su comercialización, incluyendo licorerías, bodegas comerciales y distribuidores. |
-| **What - ¿Qué?** | Existe una posible fragmentación de información relacionada con producción, lotes, inventario, pedidos y reposición, dificultando disponer de una visión centralizada de las operaciones. |
-| **Where - ¿Dónde?** | Para los productores, principalmente en las zonas peruanas autorizadas para la producción de Pisco con Denominación de Origen. Para los comercializadores, en negocios peruanos dedicados a la venta o distribución de pisco. |
-| **When - ¿Cuándo?** | Durante actividades de producción, almacenamiento, supervisión, control de inventario, registro de pedidos y planificación de reposiciones. |
-| **Why - ¿Por qué?** | Porque disponer de información distribuida entre diferentes medios puede incrementar el esfuerzo necesario para supervisar las operaciones y dificultar la detección oportuna de situaciones que requieren atención. |
-| **How - ¿Cómo?** | Se plantea que parte del seguimiento puede realizarse mediante registros manuales, hojas de cálculo, instrumentos de medición, aplicaciones de mensajería u otras herramientas no integradas. Este supuesto deberá validarse mediante entrevistas. |
-| **How Much - ¿Cuánto?** | El impacto puede manifestarse en tiempo destinado a consolidar información, dificultad para conocer el stock disponible, reposiciones tardías o demora en identificar condiciones productivas que requieren atención. Su magnitud será determinada durante la investigación con usuarios. |
+| Elemento | Pregunta | Definición para Destilatech
+| :--- | :--- | :--- |
+| **Who - ¿Quién?** | ¿A quién afecta el problema / Quién es el usuario? | Pequeños y medianos productores de pisco y pequeños negocios dedicados a su comercialización, incluyendo licorerías, bodegas comerciales y distribuidores. |
+| **What - ¿Qué?** | ¿Cuál es el problema / Qué se ofrece? | Existe una posible fragmentación de información relacionada con producción, lotes, inventario, pedidos y reposición, dificultando disponer de una visión centralizada de las operaciones. |
+| **Where - ¿Dónde?** | ¿Dónde ocurre el problema / Dónde se usará? | Para los productores, principalmente en las zonas peruanas autorizadas para la producción de Pisco con Denominación de Origen. Para los comercializadores, en negocios peruanos dedicados a la venta o distribución de pisco. |
+| **When - ¿Cuándo?** | ¿Cuándo ocurre / Cuándo se usará? | Durante actividades de producción, almacenamiento, supervisión, control de inventario, registro de pedidos y planificación de reposiciones. |
+| **Why - ¿Por qué?** | ¿Por qué es importante resolverlo? | Porque disponer de información distribuida entre diferentes medios puede incrementar el esfuerzo necesario para supervisar las operaciones y dificultar la detección oportuna de situaciones que requieren atención. |
+| **How - ¿Cómo?** | ¿Cómo se va a resolver? | Se plantea que parte del seguimiento puede realizarse mediante registros manuales, hojas de cálculo, instrumentos de medición, aplicaciones de mensajería u otras herramientas no integradas. Este supuesto deberá validarse mediante entrevistas. |
+| **How Much - ¿Cuánto?** | ¿Cuánto costará / Cuál es el impacto? | El impacto puede manifestarse en tiempo destinado a consolidar información, dificultad para conocer el stock disponible, reposiciones tardías o demora en identificar condiciones productivas que requieren atención. Su magnitud será determinada durante la investigación con usuarios. |
 
 **Objetivo general:**
 
