@@ -300,7 +300,9 @@ Las problemáticas presentadas constituyen hipótesis iniciales del equipo y deb
 | **When - ¿Cuándo?** | ¿Cuándo ocurre / Cuándo se usará? | Durante actividades de producción, almacenamiento, supervisión, control de inventario, registro de pedidos y planificación de reposiciones. |
 | **Why - ¿Por qué?** | ¿Por qué es importante resolverlo? | Porque disponer de información distribuida entre diferentes medios puede incrementar el esfuerzo necesario para supervisar las operaciones y dificultar la detección oportuna de situaciones que requieren atención. |
 | **How - ¿Cómo?** | ¿Cómo se va a resolver? | Se plantea que parte del seguimiento puede realizarse mediante registros manuales, hojas de cálculo, instrumentos de medición, aplicaciones de mensajería u otras herramientas no integradas. Este supuesto deberá validarse mediante entrevistas. |
-| **How Much - ¿Cuánto?** | ¿Cuánto costará / Cuál es el impacto? | El impacto puede manifestarse en tiempo destinado a consolidar información, dificultad para conocer el stock disponible, reposiciones tardías o demora en identificar condiciones productivas que requieren atención. Su magnitud será determinada durante la investigación con usuarios. |
+| **How Much - ¿Cuánto?** | ¿Cuál es el impacto? | El impacto puede manifestarse en tiempo destinado a consolidar información, dificultad para conocer el stock disponible, reposiciones tardías o demora en identificar condiciones productivas que requieren atención. Su magnitud será determinada durante la investigación con usuarios. |
+
+## Objetivos
 
 **Objetivo general:**
 
@@ -355,7 +357,7 @@ Las funcionalidades disponibles dependerán del tipo de usuario.
 - Alertas de stock.
 - Estimaciones de reposición.
 
-**Restricciones del alcance:**
+##Restricciones del alcance:
 
 - El proyecto académico se concentra en el desarrollo de software y no incluye la fabricación de dispositivos electrónicos.
 - Los datos provenientes de dispositivos IoT serán simulados durante el desarrollo.
