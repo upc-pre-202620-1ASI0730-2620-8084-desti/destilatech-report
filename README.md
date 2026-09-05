@@ -486,17 +486,54 @@ Creemos que lograremos **mejorar la planificación de reposición y de nueva pro
 
 #### 1.2.2.4. Lean UX Canvas
 
-| Sección | Definición para Destilatech |
-| :--- | :--- |
-| **1. Business Problem** | Productores y pequeños comercializadores de pisco pueden gestionar información mediante diferentes registros y herramientas, dificultando disponer de una visión centralizada de producción, inventario y operaciones. |
-| **2. Business Outcomes** | Conseguir clientes mediante suscripciones, aumentar el uso recurrente de la plataforma, reducir el esfuerzo necesario para consultar información y generar oportunidades futuras de integración con servicios IoT. |
-| **3. Users** | Pequeños y medianos productores de pisco y propietarios, administradores o responsables de inventario de licorerías, bodegas comerciales y pequeños distribuidores. |
-| **4. User Outcomes & Benefits** | Mayor visibilidad de las operaciones, mejor control de inventario, acceso centralizado a información, detección de alertas y mayor capacidad de planificación. |
-| **5. Solutions** | Dashboard adaptado al usuario, monitoreo IoT, gestión de lotes, inventario, clientes, pedidos, alertas y estimaciones de reposición. |
-| **6. Hypotheses** | Si productores y comercializadores pueden acceder a información centralizada y herramientas adaptadas a sus operaciones mediante Destilatech, podrán gestionar sus actividades con menor dependencia de registros y herramientas independientes. |
-| **7. What do we need to learn first?** | Cómo administran actualmente la producción y el inventario, qué herramientas utilizan, cuáles son sus principales dificultades, qué información consideran importante y qué funcionalidades valorarían dentro de una plataforma especializada. |
-| **8. What's the least amount of work we need to do to learn the next most important thing?** | Entrevistar usuarios pertenecientes a ambos segmentos y posteriormente validar las principales funcionalidades mediante wireframes y prototipos antes de desarrollar características de mayor complejidad. |
-
+<table>  
+<tr>  
+<td>  
+<h2>Business Problem</h2>  
+Productores y pequeños comercializadores de pisco pueden gestionar información mediante diferentes registros y herramientas, dificultando disponer de una visión centralizada de producción, inventario y operaciones.
+</td>  
+<td>  
+<h2>Solutions</h2>  
+Dashboard adaptado al tipo de usuario, monitoreo IoT (simulado), gestión de lotes, inventario y movimientos de stock, alertas de producción/inventario, módulo básico de clientes y pedidos, estimaciones de inventario y reposición.
+</td>  
+<td>  
+<h2>Business Outcomes</h2>  
+1. Conseguir clientes mediante suscripciones (conversión del trial).<br>
+2. Aumentar el uso recurrente de la plataforma (consulta de dashboards).<br>
+3. Reducir el esfuerzo para consultar información operativa.<br>
+4. Incrementar el registro digital de lotes, productos, movimientos y pedidos.<br>
+5. Reducir inventario insuficiente no detectado a tiempo.<br>
+6. Generar interés en integraciones futuras de IoT físico.<br>
+7. Mejorar la supervisión y respuesta ante condiciones anómalas de producción.<br>
+8. Mejorar la planificación de reposición y de nueva producción.
+</td>  
+</tr>  
+<tr>  
+<td>  
+<h2>Users</h2>  
+Pequeños y medianos productores de pisco (Lima, Ica, Arequipa, Moquegua, Tacna) y propietarios/administradores/responsables de inventario de licorerías, bodegas comerciales, minimarkets y pequeños distribuidores de pisco.
+</td>  
+<td></td>  
+<td>  
+<h2>User Outcomes & Benefits</h2>  
+Mayor visibilidad de las operaciones de producción; detección oportuna de condiciones que requieren atención; información organizada sobre lotes; conocimiento rápido de existencias; identificación oportuna de necesidades de reposición; menor dependencia de registros dispersos; información histórica que apoya decisiones.
+</td>  
+</tr>  
+<tr>  
+<td>  
+<h2>Hypotheses</h2>  
+Si productores y comercializadores acceden a información centralizada y a herramientas adaptadas a sus operaciones mediante Destilatech, podrán supervisar su producción, controlar su inventario y anticipar necesidades de reposición con menor dependencia de registros y herramientas independientes, lo que se reflejará en un uso recurrente de la plataforma y en la conversión de la prueba gratuita hacia una suscripción paga.
+</td>  
+<td>  
+<h2>What’s the most important thing we need to learn first?</h2>  
+Cómo administran hoy la producción, el inventario y la reposición ambos segmentos; qué herramientas usan actualmente (cuadernos, Excel, WhatsApp, instrumentos de medición); cuáles son sus principales dificultades; qué información consideran crítica; qué funcionalidades valorarían de una plataforma especializada; y si estarían dispuestos a pagar una suscripción SaaS por ella.
+</td>  
+<td>  
+<h2>What’s the least amount of work we need to do to learn the next most important thing?</h2>  
+Entrevistar de 3 a 5 representantes de cada segmento (productores y comercializadores) y, con esos hallazgos, validar las funcionalidades priorizadas mediante wireframes/prototipos de baja fidelidad antes de construir las características de mayor complejidad (monitoreo IoT y estimaciones predictivas).
+</td>  
+</tr>  
+</table>
 
 ## 1.3. Segmentos objetivo
 
