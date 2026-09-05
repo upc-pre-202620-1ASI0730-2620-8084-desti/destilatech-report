@@ -423,6 +423,8 @@ Sabremos que la solución genera valor cuando estos usuarios utilicen Destilatec
 4. Esperamos incrementar el registro digital de lotes, productos, movimientos y pedidos.
 5. Esperamos reducir situaciones de inventario insuficiente que no hayan sido identificadas oportunamente.
 6. Esperamos que las funcionalidades de monitoreo generen interés por futuras integraciones con dispositivos IoT físicos.
+7. Esperamos que el monitoreo de variables productivas mediante IoT mejore la capacidad de supervisión y respuesta de los productores ante condiciones anómalas del proceso productivo.
+8. Esperamos que las estimaciones basadas en información histórica mejoren la planificación de reposición de inventario y de nuevos lotes de producción.
 
 Estos resultados podrán medirse posteriormente mediante indicadores como usuarios activos, frecuencia de acceso, cantidad de registros de inventario, alertas atendidas, utilización de las funcionalidades principales y conversión del periodo de prueba hacia una suscripción.
 
@@ -460,34 +462,27 @@ Estos resultados podrán medirse posteriormente mediante indicadores como usuari
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Hypothesis Statement 1 - Dashboard**
 
+**Hypothesis Statement 1 — Dashboard**
 Creemos que lograremos **reducir el esfuerzo necesario para consultar el estado general de una operación** si **productores y comercializadores** obtienen **una vista centralizada y adaptada a sus principales necesidades** mediante **dashboards personalizados según el tipo de usuario**.
 
-**Hypothesis Statement 2 - Monitoreo IoT**
+**Hypothesis Statement 2 — Monitoreo IoT**
+Creemos que lograremos **mejorar la capacidad de supervisión y respuesta ante condiciones anómalas del proceso productivo** si **los productores y responsables de producción** obtienen **acceso centralizado a variables relevantes** mediante **un módulo de monitoreo conectado a fuentes de datos IoT**.
 
-Creemos que lograremos **mejorar la capacidad de supervisión del proceso productivo** si **los productores y responsables de producción** obtienen **acceso centralizado a variables relevantes** mediante **un módulo de monitoreo conectado a fuentes de datos IoT**.
-
-**Hypothesis Statement 3 - Gestión de lotes**
-
+**Hypothesis Statement 3 — Gestión de lotes** 
 Creemos que lograremos **mejorar la organización del historial de producción** si **los productores** obtienen **una forma estructurada de registrar y consultar sus procesos productivos** mediante **un módulo de gestión de lotes**.
 
-**Hypothesis Statement 4 - Inventario**
-
+**Hypothesis Statement 4 — Inventario** 
 Creemos que lograremos **mejorar la visibilidad de las existencias** si **productores y comercializadores** obtienen **información organizada sobre productos, stock y movimientos** mediante **un módulo centralizado de inventario**.
 
-**Hypothesis Statement 5 - Alertas**
-
+**Hypothesis Statement 5 — Alertas** 
 Creemos que lograremos **reducir situaciones relevantes que no sean detectadas oportunamente** si **productores y comercializadores** obtienen **avisos cuando una condición requiere atención** mediante **un sistema automático de alertas de producción e inventario**.
 
-**Hypothesis Statement 6 - Clientes y pedidos**
-
+**Hypothesis Statement 6 — Clientes y pedidos** 
 Creemos que lograremos **mejorar la organización de información comercial** si **los usuarios responsables de ventas y abastecimiento** obtienen **una manera sencilla de registrar operaciones comerciales** mediante **un módulo básico de clientes y pedidos**.
 
-**Hypothesis Statement 7 - Estimaciones de inventario**
-
-Creemos que lograremos **mejorar la planificación de reposición y producción** si **productores y comercializadores** obtienen **información anticipada sobre posibles necesidades futuras de inventario** mediante **estimaciones construidas a partir de información histórica**.
-
+**Hypothesis Statement 7 — Estimaciones de inventario** 
+Creemos que lograremos **mejorar la planificación de reposición y de nueva producción** si **productores y comercializadores** obtienen **información anticipada sobre posibles necesidades futuras de inventario** mediante **estimaciones construidas a partir de información histórica**.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -600,3 +595,116 @@ Destilatech utilizará una misma plataforma tecnológica, pero presentará difer
 Esta estrategia permite mantener un alcance manejable para el desarrollo, debido a que componentes como usuarios, productos, inventario, pedidos y alertas pueden ser reutilizados entre ambos segmentos, mientras que las funcionalidades de producción y monitoreo IoT estarán disponibles específicamente para los productores.
 
 Las características y necesidades descritas constituyen hipótesis iniciales del equipo. Durante el Capítulo II se realizarán entrevistas con representantes de ambos segmentos para validar, modificar o descartar los problemas, comportamientos y necesidades identificados.
+
+
+## Capítulo II: Requirements Elicitation & Analysis
+
+### 2.1. Competidores
+
+En este apartado, examinamos el ecosistema de soluciones existentes en el mercado peruano que ofrecen servicios de producción, gestión de lotes/inventario y comercialización específicamente para pisco.
+
+### 2.1.1. Análisis competitivo
+
+**¿Por qué llevar a cabo este análisis?** Determinar si existe una solución digital que ya resuelva de forma integrada el monitoreo de producción, la gestión de inventario/lotes y la comercialización del pisco, y con ello confirmar el espacio de diferenciación de Destilatech frente a otras soluciones.
+
+**Competitive Analysis Landscape**
+
+| | **Destilatech (nuestra startup)** | **Competidor 1: Solmicro–eXpertis** | **Competidor 2: Ubidots** | **Competidor 3: Defontana Perú** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Perfil / Overview** | Plataforma web B2B SaaS que centraliza monitoreo IoT de producción, gestión de lotes/inventario y comercialización básica (clientes/pedidos) para productores y comercializadores de pisco en el Perú. | ERP especializado para bodegas vitivinícolas y de pisco (viñedo–elaboración–embotellado–venta), del grupo español Solmicro, con distribución activa en Perú. | Plataforma de IoT industrial "AI-native" para monitoreo, alertas y mantenimiento predictivo de variables de proceso, con enfoque regional en Latinoamérica. | ERP peruano en la nube con IA agéntica, orientado a facturación, inventario, ventas/CRM y punto de venta para pymes y medianas empresas. |
+| **Ventaja competitiva** | Única solución (identificada) que integra IoT de producción + inventario/lotes + comercialización en un mismo producto, especializada en el dominio del pisco. | Cobertura completa del ciclo productivo vitivinícola (incluida trazabilidad y costos), con experiencia previa en el sector vino/pisco. | Motor de IoT maduro, flexible y multi-industria, con capacidades de IA/mantenimiento predictivo ya probadas a escala. | Marca establecida y confianza en el mercado peruano ("N.º 1 en Perú"), con integración nativa a SUNAT y soporte local. |
+| **¿Qué valor ofrece a los clientes?** | Visión centralizada de producción e inventario, alertas oportunas y estimaciones de reposición, reduciendo la dependencia de registros dispersos. | Control administrativo y de costos de la producción vitivinícola, con trazabilidad end-to-end para cumplimiento y calidad. | Visibilidad en tiempo real de variables físicas de cualquier proceso, con automatización de alertas y acciones. | Cumplimiento tributario automatizado, control de inventario y ventas omnicanal para el día a día del negocio. |
+| **Mercado objetivo** | Pequeños y medianos productores de pisco (Lima, Ica, Arequipa, Moquegua, Tacna) y pequeños comercializadores de pisco (licorerías, bodegas, minimarkets, distribuidores). | Bodegas productoras de vino y pisco de mediana escala en el Perú (ej. Arequipa/Ica). | Empresas industriales, agroindustria, energía y ciudades inteligentes en LatAm/EE. UU. — sin foco específico en bebidas alcohólicas. | Pymes y medianas empresas peruanas de cualquier rubro comercial. |
+| **Estrategias de marketing** | Modelo B2B SaaS con prueba gratuita de hasta 14 días, marketing directo a gremios y asociaciones de productores de pisco. | Venta consultiva vía distribuidor local, referencias de clientes existentes (casos de éxito) en el sector. | Marketing de producto (documentación técnica, comunidad de desarrolladores), prueba gratuita de 30 días. | Marketing digital masivo (SEO/SEM), cotización y demo gratuita en línea, equipo comercial local. |
+| **Productos y servicios** | Monitoreo IoT simulado, gestión de lotes, inventario, alertas, clientes/pedidos, estimaciones predictivas; futuro: instalación y mantenimiento de sensores físicos. | Gestión de viñedo/vendimia, elaboración, guarda/embotellado, trazabilidad, costos, logística, CRM comercial. | Dashboards, reglas de automatización, gestión de dispositivos, agentes de IA, analítica predictiva. | Facturación electrónica, inventario, ventas/CRM, contabilidad, RR. HH., punto de venta. |
+| **Precios y costos** | SaaS por suscripción (planes a definir), prueba gratuita de 14 días; ingresos complementarios por instalación/mantenimiento de IoT físico. | No publica precios; modelo de cotización personalizada por distribuidor. | Plan Profesional desde USD 99/mes; planes Industrial y Enterprise con precio personalizado; prueba gratuita de 30 días sin tarjeta (Ubidots, 2026). | No publica precios; modelo de cotización y demo personalizada. |
+| **Canales de distribución (Web/Móvil)** | Plataforma web responsive; app móvil no contemplada en el MVP. | Software de escritorio/web distribuido a través de partner local; sin app móvil evidenciada. | Plataforma web + app móvil, con SDKs para integración de dispositivos. | Plataforma web + POS móvil para ventas en punto de venta y e-commerce. |
+
+
+
+
+**Análisis SWOT**
+
+| | **Fortalezas** | **Debilidades** | **Oportunidades** | **Amenazas** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Destilatech** | Propuesta única de integración (IoT + inventario + comercialización) enfocada en el nicho del pisco; modelo SaaS de bajo costo de entrada (trial de 14 días). | Producto nuevo, sin base de clientes ni casos de éxito; dispositivos IoT físicos aún no desarrollados (datos simulados). | Mercado con más de 527 empresas formales (mayoritariamente MYPE) y bajo nivel de digitalización reportado (Ministerio de la Producción, 2025); posible adopción de un ERP genérico sin experiencia previa en el sector. | Entrada de ERPs vitivinícolas ya consolidados (como Solmicro) hacia el mercado peruano; posibilidad de que productores arme soluciones "caseras" combinando Ubidots + un ERP genérico a menor costo percibido. |
+| **Solmicro–eXpertis** | Producto maduro con trazabilidad y control de costos ya probados en bodegas reales. | Sin módulo de monitoreo IoT ni de comercialización minorista; orientado a bodegas medianas/grandes, con curva de adopción más compleja para MYPE. | Bajo conocimiento de ERPs en el mercado vitivinícola peruano (mencionado por su propio distribuidor), lo que deja espacio para alternativas más simples. | Que soluciones locales y más económicas (como Destilatech) capturen primero a las MYPE antes de que Solmicro escale su distribución en el país. |
+| **Ubidots** | Plataforma de IoT robusta, probada y multi-industria, con capacidades de IA. | No ofrece gestión de inventario, lotes, clientes ni pedidos; requiere conocimiento técnico para configurar el monitoreo de un proceso específico como la destilación de pisco. | Demanda creciente de monitoreo remoto en agroindustria latinoamericana. | Que plataformas verticales especializadas (como Destilatech) empaqueten IoT + gestión para el usuario final sin que este necesite configurar nada. |
+| **Defontana Perú** | Marca reconocida en Perú, integración nativa con SUNAT y soporte local. | Sin ninguna funcionalidad de producción o monitoreo IoT; es un ERP genérico no especializado en pisco. | Amplia base instalada de pymes peruanas que ya usan o conocen Defontana. | Que comercializadores que ya usan Defontana no vean necesidad de migrar o integrarse con una solución adicional especializada. |
+
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+Frente a Solmicro–eXpertis, Destilatech no competirá en profundidad de control de costos ni en trazabilidad contable, sino en simplicidad y en el módulo que Solmicro no ofrece: el monitoreo IoT de variables productivas. La táctica preliminar es priorizar en el MVP una experiencia de configuración simple (datos simulados primero, sensores físicos después) y un precio de entrada accesible para MYPE, buscando posicionar a Destilatech como la opción "más simple y más barata de empezar" frente a un ERP vitivinícola que exige mayor inversión y curva de adopción.
+
+Frente a Ubidots, la estrategia es no competir como plataforma de IoT genérica, sino ofrecer una solución "lista para usar" en el dominio del pisco: variables y alertas preconfiguradas para el proceso de destilación/almacenamiento, sin que el productor tenga que programar reglas ni dashboards desde cero. Esto aprovecha la debilidad de Ubidots (requiere configuración técnica) y evita competir directamente en la robustez de su motor de IoT, donde Destilatech no tiene ventaja.
+
+Frente a Defontana Perú (y ERPs genéricos similares), la táctica es capturar al segmento comercializador ofreciendo, dentro del mismo producto que ya usan sus proveedores productores, un módulo de inventario/pedidos/alertas de stock enfocado específicamente en bebidas alcohólicas (presentaciones, lotes, vencimientos si aplica), de forma que un comercializador que trabaja con varios productores encuentre valor en compartir una misma plataforma con ellos, en lugar de mantener un ERP genérico desconectado de sus proveedores.
+
+Como táctica transversal, dado que ninguno de los tres competidores identificados atiende el dominio combinado (producción + inventario + comercialización del pisco) desde una sola plataforma, la estrategia central de Destilatech durante el MVP es validar rápidamente con productores y comercializadores reales (mediante las entrevistas descritas en la sección 2.2) si esta integración es realmente valorada, antes de invertir en profundizar cualquiera de los tres módulos por separado.
+
+---
+
+### 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas
+
+Se diseñan dos guías de entrevista semiestructurada, una por segmento objetivo (productor y comercializador), aplicando buenas prácticas de diseño de entrevistas: preguntas abiertas y no dirigidas, evitar preguntas que sugieran la respuesta esperada, indagar sobre comportamientos y hechos pasados (no solo opiniones u "hipótesis" del entrevistado sobre lo que haría), una pregunta a la vez, y uso de repreguntas ("¿por qué?", "¿puedes darme un ejemplo?", "¿cómo lo resolviste?") para profundizar sin inducir la respuesta. Cada guía recoge información principal (para responder directamente los problem statements y assumptions) y complementaria (para construir el arquetipo/User Persona).
+
+**Estructura común a ambas guías**
+
+1. Apertura: presentación del equipo, propósito de la investigación (sin mencionar aún la solución para no sesgar respuestas), consentimiento para grabar en video, duración estimada (20–30 min).
+2. Datos demográficos y de contexto (para el User Persona).
+3. Bloque de comportamiento actual (core de la indagación del problema).
+4. Bloque de herramientas y tecnología.
+5. Bloque de necesidades, frustraciones y priorización.
+6. Cierre: agradecimiento y pregunta abierta final ("¿hay algo importante que no te haya preguntado?").
+
+#### A. Guía de entrevista — Segmento Productor de pisco
+
+**1. Datos demográficos y de contexto (complementaria — para el arquetipo)**
+- Nombre, edad, distrito/región donde opera la bodega, estado civil y composición familiar (¿la empresa es un negocio familiar?).
+- Rol/cargo dentro de la empresa (propietario, administrador, jefe de producción) y años de experiencia en el rubro.
+- Tamaño aproximado de la producción (litros/año) y número de colaboradores.
+
+**2. Producción y almacenamiento (principal)**
+- Cuéntame cómo es, paso a paso, tu proceso desde que empieza la producción de un lote hasta que el pisco queda embotellado. *(complementaria: ¿qué variables monitoreas durante ese proceso — temperatura, grados alcohólicos, tiempos —, y cómo las mides hoy?)*
+- ¿Cómo registras y consultas la información de cada lote de producción? *(complementaria: ¿en qué medio — cuaderno, Excel, memoria —, y quién más accede a esa información?)*
+- Cuéntame de alguna vez en que algo salió mal durante la producción o el almacenamiento (una condición fuera de lo normal). ¿Cómo te enteraste y qué hiciste? *(complementaria: ¿cuánto tiempo pasó entre que ocurrió el problema y que lo detectaste?)*
+
+**3. Inventario y comercialización (principal)**
+- ¿Cómo sabes hoy cuánto stock de producto terminado tienes disponible para vender? *(complementaria: ¿con qué frecuencia actualizas o revisas esa información?)*
+- ¿Cómo gestionas la información de tus clientes y de los pedidos que te hacen? *(complementaria: ¿qué información de un cliente consideras importante guardar?)*
+
+**4. Herramientas y tecnología (complementaria)**
+- ¿Qué aplicaciones o herramientas digitales usas actualmente para tu negocio (mensajería, hojas de cálculo, redes sociales, algún software)? *(complementaria: ¿en qué dispositivo las usas más — celular, computadora —, y qué tan cómodo te sientes usándolas?)*
+- ¿Has usado o escuchado de algún sensor o dispositivo que mida variables de tu proceso automáticamente? ¿Qué opinas de esa idea?
+
+**5. Necesidades y frustraciones (principal)**
+- ¿Qué es lo que más tiempo o esfuerzo te quita hoy en la gestión de tu producción o inventario?
+- Si pudieras resolver un solo problema de los que me has contado hoy mismo, ¿cuál sería y por qué?
+- ¿Pagarías por un servicio que te ayude a resolver esto? *(complementaria: ¿cuánto estarías dispuesto a invertir al mes, aproximadamente, y por qué esa cifra?)*
+
+#### B. Guía de entrevista — Segmento Comercializador (licorerías, bodegas, distribuidores)
+
+**1. Datos demográficos y de contexto (complementaria — para el arquetipo)**
+- Nombre, edad, distrito donde está ubicado el negocio, estado civil/familia.
+- Rol dentro del negocio (propietario, administrador, encargado de inventario) y tipo de establecimiento (licorería, bodega, minimarket, distribuidor).
+- Cuántos productos/marcas de pisco y otras bebidas comercializa aproximadamente.
+
+**2. Control de inventario (principal)**
+- Cuéntame cómo haces hoy para saber qué productos y cuánta cantidad tienes en tu local en un momento dado. *(complementaria: ¿en qué medio llevas ese registro?)*
+- Cuéntame de alguna vez en que te quedaste sin stock de un producto que un cliente pedía. ¿Cómo te diste cuenta y qué pasó después? *(complementaria: ¿con qué frecuencia te pasa esto?)*
+
+**3. Reposición y proveedores (principal)**
+- ¿Cómo decides hoy cuándo y cuánto pedir de reposición a tus proveedores? *(complementaria: ¿qué información usas para tomar esa decisión?)*
+- ¿Cómo te comunicas y coordinas los pedidos con tus proveedores (productores/distribuidores)?
+
+**4. Herramientas y tecnología (complementaria)**
+- ¿Qué herramientas digitales usas hoy para llevar tu negocio (punto de venta, hojas de cálculo, mensajería)? *(complementaria: ¿en qué dispositivo las usas más?)*
+- ¿Has usado antes algún sistema de inventario o punto de venta? ¿Qué te gustó o no te gustó de esa experiencia?
+
+**5. Necesidades y frustraciones (principal)**
+- ¿Qué es lo que más te complica hoy del control de tu inventario o de tus pedidos?
+- Si pudieras resolver un solo problema de los que me has contado hoy, ¿cuál sería y por qué?
+- ¿Pagarías por un servicio que te ayude con esto? *(complementaria: ¿cuánto estarías dispuesto a invertir al mes, aproximadamente?)*
+
