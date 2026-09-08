@@ -37,8 +37,8 @@ Proyecto<br>
       <td>Santiago Atanacio, Jairo Mathias</td>
     </tr>
     <tr>
-      <td>UXXXXXXX</td>
-      <td>XXXXXXXXX</td>
+      <td>U202316845</td>
+      <td>Almandroz Carbajal, Pierina Marysabel</td>
     </tr>
     <tr>
       <td>UXXXXXXXXX</td>
