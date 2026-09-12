@@ -828,7 +828,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
     * **Edad:** XX
     * **Distrito:** XXXX
     * **Screenshot:**
-      <img src="assets/md-imagenes-front-matter/EntrevistaXXX.png" alt="md-imagenes-front-matter" style="height: 150px !important; width: 150px !important;">
+      <img src="assets/md-images-front-matter/EntrevistaXXX.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
       * **Video URL:** 
       * **Timing:** XX:XX / XX:XX
       * **Resumen:**
@@ -842,7 +842,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
     * **Edad:** 19
     * **Distrito:** Lima
     * **Screenshot:**
-      <img src="assets/md-imagenes-front-matter/Entrevista1_Seg2.png" alt="md-imagenes-front-matter" style="height: 150px !important; width: 150px !important;">
+      <img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
       * **Video URL:**
       * **Timing:** XX:XX / XX:XX
       * **Resumen:**
@@ -919,7 +919,7 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 * **Segmento 2: Comercializador**
 
-<img src="assets/md-imagenes-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
+<img src="assets/md-images-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
 
 ### 2.3.2. User Task Matrix
 
