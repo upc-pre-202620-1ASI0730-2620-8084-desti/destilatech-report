@@ -41,8 +41,8 @@ Proyecto<br>
       <td>Almandroz Carbajal, Pierina Marysabel</td>
     </tr>
     <tr>
-      <td>UXXXXXXXXX</td>
-      <td>XXXXXXXXX</td>
+      <td>U202418405</td>
+      <td>Condor Sandoval, Jean Pierre</td>
     </tr>
     <tr>
       <td>UXXXXXXXXX</td>
@@ -743,6 +743,7 @@ En este apartado, examinamos el ecosistema de soluciones existentes en el mercad
     <td>Que comercializadores que ya usan Defontana no vean necesidad de migrar o integrarse con una solución adicional especializada.</td>
   </tr>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 Frente a Solmicro–eXpertis, Destilatech no competirá en profundidad de control de costos ni en trazabilidad contable, sino en simplicidad y en el módulo que Solmicro no ofrece: el monitoreo IoT de variables productivas. La táctica preliminar es priorizar en el MVP una experiencia de configuración simple (datos simulados primero, sensores físicos después) y un precio de entrada accesible para MYPE, buscando posicionar a Destilatech como la opción "más simple y más barata de empezar" frente a un ERP vitivinícola que exige mayor inversión y curva de adopción.
@@ -816,4 +817,127 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 - ¿Qué es lo que más te complica hoy del control de tu inventario o de tus pedidos?
 - Si pudieras resolver un solo problema de los que me has contado hoy, ¿cuál sería y por qué?
 - ¿Pagarías por un servicio que te ayude con esto? *(complementaria: ¿cuánto estarías dispuesto a invertir al mes, aproximadamente?)*
+
+### 2.2.2. Registro de entrevistas
+
+* **Segmento 1: Productor de pisco**
+
+  * **Entrevista 1:**
+    * **Nombres:** XXXX
+    * **Apellidos:** XXXXX XXXXX
+    * **Edad:** XX
+    * **Distrito:** XXXX
+    * **Screenshot:**
+      <img src="assets/md-imagenes-front-matter/EntrevistaXXX.png" alt="md-imagenes-front-matter" style="height: 150px !important; width: 150px !important;">
+      * **Video URL:** 
+      * **Timing:** XX:XX / XX:XX
+      * **Resumen:**
+       XX.....
+
+* **Segmento 2: Comercializador**
+
+  * **Entrevista 1:**
+    * **Nombres:** Marco
+    * **Apellidos:** Cavero Arjona
+    * **Edad:** 19
+    * **Distrito:** Lima
+    * **Screenshot:**
+      <img src="assets/md-imagenes-front-matter/Entrevista1_Seg2.png" alt="md-imagenes-front-matter" style="height: 150px !important; width: 150px !important;">
+      * **Video URL:**
+      * **Timing:** XX:XX / XX:XX
+      * **Resumen:**
+        Marco Vargas, de 22 años, es propietario de una bodega y licorería ubicada en San Miguel, Lima. Comentó que actualmente controla su inventario principalmente de memoria, mediante un cuaderno y Excel, aunque los registros no siempre están actualizados por la cantidad de ventas. Señaló que suele quedarse sin stock de algunos productos una o dos veces al mes, especialmente en fechas de alta demanda, ocasionando la pérdida de algunas ventas. Para realizar pedidos, revisa las existencias y se basa en su experiencia y en las promociones de sus proveedores, con quienes se comunica principalmente por WhatsApp. Indicó que su principal dificultad es conocer rápidamente cuánto stock tiene y cuáles productos necesitan reposición, ya que debe revisar el almacén manualmente y en ocasiones algunos productos se agotan sin que lo note. Por ello, le gustaría contar con un sistema que pueda consultar desde su celular y que le envíe alertas cuando un producto esté por terminarse. Finalmente, mencionó que estaría dispuesto a pagar entre 40 y 80 soles mensuales por una solución sencilla que le permita ahorrar tiempo y evitar pérdidas.
+
+
+### 2.2.3. Análisis de entrevistas
+
+El análisis de las entrevistas realizadas a los dos segmentos objetivo (Productor de pisco y Comercializador) permite identificar patrones demográficos, comportamentales y tecnológicos que fundamentan la construcción de los User Personas y las decisiones de diseño de la solución. A continuación, se presenta un análisis estadístico detallado por cada segmento, considerando las características objetivas (demográficas) y subjetivas (personalidad, habilidades, canales de interacción, dispositivos de preferencia, marcas e influencias).
+
+#### Segmento 1: Productor de pisco
+
+El análisis de las X entrevistas realizadas a los productores de pisco revela patrones claros en su perfil:
+
+**Características demográficas (objetivas):**
+...
+
+**Características de personalidad (subjetivas):**
+...
+
+**Habilidades y tecnología:**
+...
+
+**Canales de interacción:**
+...
+
+**Dispositivos de preferencia:**
+...
+
+**Marcas e influencias:**
+...
+
+**Conclusiones del análisis:**
+
+En resumen, los productores de pisco entrevistados muestran ....
+
+#### Segmento 2: Comercializador
+
+El análisis de las X entrevistas realizadas a comercializadores revela los siguientes patrones:
+
+**Características demográficas (objetivas):**
+...
+
+**Características de personalidad (subjetivas):**
+...
+
+**Habilidades y tecnología:**
+...
+
+**Canales de interacción:**
+...
+
+**Dispositivos de preferencia:**
+...
+
+**Marcas e influencias:**
+...
+
+**Conclusiones del análisis:**
+
+En resumen, los comercializadores entrevistados muestran ...
+
+### 2.3. Needfinding
+
+El proceso de Needfinding permitió transformar los hallazgos de las entrevistas en herramientas de diseño centradas en el usuario. A partir del análisis estadístico de las características demográficas, comportamentales y subjetivas de cada segmento, se construyeron los siguientes artefactos que guiarán el diseño de la solución Destulatech.
+
+### 2.3.1. User Personas
+
+A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los tres segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
+
+* **Segmento 1: Productor de pisco**
+
+
+
+* **Segmento 2: Comercializador**
+
+<img src="assets/md-imagenes-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
+
+### 2.3.2. User Task Matrix
+
+La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
+
+### 2.3.3. User Journey Mapping
+
+Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos, sin la existencia de la solución Destilatech. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) que la plataforma debe abordar.
+
+### 2.3.4. Empathy Mapping
+
+Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
+
+### 2.4. Big Picture Event Storming
+
+### 2.5. Ubiquitous Language
+
+El siguiente glosario define los términos y conceptos clave del dominio de negocio de TerraTech, asegurando una comunicación clara y sin ambigüedades entre todos los miembros del equipo y stakeholders. Los términos están presentados en inglés (con el equivalente en español entre paréntesis) y sus definiciones están redactadas en español.
+
+
 
