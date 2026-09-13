@@ -838,7 +838,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
   * **Entrevista 1:**
     * **Nombres:** Marco
-    * **Apellidos:** Arjona
+    * **Apellidos:** Vargas
     * **Edad:** 22
     * **Distrito:** Lima
     * **Screenshot:**
