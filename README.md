@@ -838,8 +838,8 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
   * **Entrevista 1:**
     * **Nombres:** Marco
-    * **Apellidos:** Cavero Arjona
-    * **Edad:** 19
+    * **Apellidos:** Arjona
+    * **Edad:** 22
     * **Distrito:** Lima
     * **Screenshot:**
       <img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
