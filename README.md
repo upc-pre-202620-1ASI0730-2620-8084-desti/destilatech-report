@@ -1094,35 +1094,46 @@ El análisis de las 4 entrevistas realizadas a comercializadores revela los sigu
 **Características demográficas (objetivas):**
 
 -El 100% de los comercializadores entrevistados reside en Lima Metropolitana (distritos de San Miguel, Magdalena y Comas).
+
 -Las edades de los entrevistados varían entre 22 y 29 años (rango de edad de 22 a 29 años), lo que refleja un perfil joven y familiarizado con el uso de herramientas digitales cotidianas.
+
 -El 100% administra negocios minoristas del rubro de bebidas e inventarios (bodegas y licorerías) ofreciendo un catálogo promedio de entre 80 y 150 productos, integrando entre 8 y 10 marcas de pisco.
 
 **Características de personalidad (subjetivas):**
 
-El 100% muestra interés en adoptar una solución tecnológica sencilla que les permita ahorrar tiempo y optimizar el control de sus existencias.
-El 100% busca evitar la pérdida de ventas provocada por el desabastecimiento en momentos de alta demanda (como fines de semana o feriados largos) (Necesidad de eficiencia operativa).
-El 100% experimenta frustración al quedarse sin productos clave sin haberlo notado a tiempo y tener que revisar el almacén de manera manual (Pain Point).
+-El 100% muestra interés en adoptar una solución tecnológica sencilla que les permita ahorrar tiempo y optimizar el control de sus existencias.
+
+-El 100% busca evitar la pérdida de ventas provocada por el desabastecimiento en momentos de alta demanda (como fines de semana o feriados largos) (Necesidad de eficiencia operativa).
+
+-El 100% experimenta frustración al quedarse sin productos clave sin haberlo notado a tiempo y tener que revisar el almacén de manera manual (Pain Point).
 
 **Habilidades y tecnología:**
 
-El 100% utiliza actualmente métodos manuales e informales para el control de inventario (cuaderno y Excel), sumando en algunos casos la revisión visual directa del almacén.
-El 100% reporta quedarse sin stock de productos 1 o 2 veces al mes, detectando la falta de mercadería principalmente en el momento en que el cliente la solicita.
-El 67% (2 de 3 entrevistados) probó anteriormente un sistema de inventario digital, pero lo abandonó por la complejidad de registrar los productos y los descuadres ocasionados.
-El 100% manifiesta disposición a pagar por una solución digital sencilla, con propuestas de tarifa mensual que van de 30 a 80 soles (Marco: S/ 40-80, Carlos: S/ 50-80, Rubens: S/ 30-80).
+-El 100% utiliza actualmente métodos manuales e informales para el control de inventario (cuaderno y Excel), sumando en algunos casos la revisión visual directa del almacén.
+
+-El 100% reporta quedarse sin stock de productos 1 o 2 veces al mes, detectando la falta de mercadería principalmente en el momento en que el cliente la solicita.
+
+-El 67% (2 de 3 entrevistados) probó anteriormente un sistema de inventario digital, pero lo abandonó por la complejidad de registrar los productos y los descuadres ocasionados.
+
+-El 100% manifiesta disposición a pagar por una solución digital sencilla, con propuestas de tarifa mensual que van de 30 a 80 soles (Marco: S/ 40-80, Carlos: S/ 50-80, Rubens: S/ 30-80).
 
 **Canales de interacción:**
-El 100% utiliza WhatsApp como canal exclusivo para comunicarse con sus proveedores, gestionar pedidos y consultar promociones.
-El 100% realiza revisiones presenciales o manuales de su mercadería previa a la emisión de un nuevo pedido.
+
+-El 100% utiliza WhatsApp como canal exclusivo para comunicarse con sus proveedores, gestionar pedidos y consultar promociones.
+
+-El 100% realiza revisiones presenciales o manuales de su mercadería previa a la emisión de un nuevo pedido.
 
 **Dispositivos de preferencia:**
 
-El 100% considera el smartphone como su dispositivo principal para la gestión diaria del negocio y la comunicación.
-El 33% (1 de 3 entrevistados) menciona el uso complementario de una laptop para el registro de datos en Excel.
+-El 100% considera el smartphone como su dispositivo principal para la gestión diaria del negocio y la comunicación.
+
+-El 33% (1 de 3 entrevistados) menciona el uso complementario de una laptop para el registro de datos en Excel.
 
 **Marcas e influencias:**
 
-El 100% decide la reposición de inventario basándose en su experiencia comercial, la revisión de existencias y las ofertas/promociones que envían los proveedores.
-El 67% influye su percepción del software comercial debido a malas experiencias previas con sistemas complejos y poco adaptados a pequeños comercios.
+-El 100% decide la reposición de inventario basándose en su experiencia comercial, la revisión de existencias y las ofertas/promociones que envían los proveedores.
+
+-El 67% influye su percepción del software comercial debido a malas experiencias previas con sistemas complejos y poco adaptados a pequeños comercios.
 
 **Conclusiones del análisis:**
 
@@ -1147,6 +1158,34 @@ Falta
 ### 2.3.2. User Task Matrix
 
 La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
+
+| Tarea | **Productor de pisco** (Frecuencia / Importancia) | **Comercializador** (Frecuencia / Importancia) |
+| :--- |:-------------------------------------------------:|:----------------------------------------:|
+| **Monitorear variables IoT (Temperatura, pH, Nivel)** |                  Horaria / Alta                   |               N/A / N/A               |
+| **Atender alertas críticas de producción / stock** |                    Horaria / Alta                    |              Diaria / Alta               |
+| **Consultar Dashboard General de estado del negocio** |                   Diaria / Alta                   |               Diaria / Alta                |
+| **Registrar y actualizar lotes de producción** |                   Mensual / Alta                    |              N/A / N/A               |
+| **Consultar stock disponible en almacén/tienda** |                   Diaria / Alta                    |               Diaria / Alta                |
+| **Registrar entradas y salidas de inventario (Kardex)** |                    Diaria / Alta                    |               Diaria / Alta                |
+| **Registrar clientes y pedidos de venta** |                    Diaria / Media                    |               N/A / N/A               |
+| **Generar y emitir pedidos de reposición de stock** |                   N/A / N/A                    |              Semanal / Alta               |
+| **Revisar estimaciones/predicciones de agotamiento de stock** |                   Semanal / Media                   |               Semanal / Media               |
+| **Analizar indicadores históricos de producción y venta** |                    Mensual / Media                    |               Mensual / Media                |
+| **Configurar parámetros de alertas y umbrales IoT** |                    Ocasional / Media                    |              N/A / N/A               |
+| **Gestionar suscripción y usuarios del sistema** |                    Ocasional / Baja                    |              Ocasional / Baja               |
+
+
+Tareas de Alta Frecuencia y Alta Prioridad (Núcleo del MVP):
+
+-Para el Productor, el monitoreo en tiempo real de las variables de fermentación/destilación (IoT) y el control de inventario/lotes son operaciones críticas y de alta frecuencia. La plataforma debe garantizar accesibilidad inmediata desde el Dashboard principal a estos módulos.
+
+-Para el Comercializador, la consulta diaria de existencias, el registro de movimientos y la recepción de alertas de bajo stock representan el núcleo de sus interacciones diarias.
+
+Diferenciación de Experiencia por Rol:
+
+-Las tareas relacionadas al seguimiento de variables físicas de producción (temperatura, nivel) y la gestión por lotes son exclusivas del perfil Productor, confirmando la necesidad de vistas y paneles de navegación segmentados (Dashboards específicos).
+
+-El Comercializador centra su interacción en el flujo de reabastecimiento (pedidos de reposición y control rápido de stock), lo cual demanda un flujo UX optimizado para realizar operaciones operativas en pocos clics.
 
 ### 2.3.3. User Journey Mapping
 
