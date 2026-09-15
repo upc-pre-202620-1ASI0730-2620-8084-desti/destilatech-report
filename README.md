@@ -227,3 +227,48 @@ Objetivo general, ABET – EAC - Student Outcome 3: Capacidad de comunicarse efe
 |--|--|--|
 | Comunica oralmente con efectividad a diferentes rangos de audiencia. |  |
 | Comunica por escrito con efectividad a diferentes rangos de audiencia |  |
+
+# Capitulo I: Introducción
+
+## 1.1. StartUp Profile
+
+### 1.1.1. Descripción de la StartUp
+
+**FuturosSeniors** es una startup tecnológica orientada al desarrollo de soluciones digitales que permitan optimizar procesos productivos y comerciales mediante el uso de tecnologías web, análisis de datos e integración con soluciones IoT.
+
+Su producto principal, **Destilatech**, es una plataforma web orientada inicialmente al ecosistema peruano del pisco. La solución busca centralizar información relacionada con la producción, inventario y comercialización del producto, permitiendo que diferentes actores puedan consultar y gestionar información relevante desde una misma plataforma.
+
+El principal grupo de usuarios de Destilatech está conformado por pequeños y medianos productores de pisco. Para ellos, la plataforma contempla herramientas de monitoreo de producción, gestión de lotes, inventario, alertas y análisis de información. Adicionalmente, se considera como segmento complementario a pequeños negocios encargados de la comercialización de pisco, como licorerías, bodegas comerciales y pequeños distribuidores, quienes podrán utilizar principalmente funcionalidades relacionadas con inventario, pedidos y reposición.
+
+Destilatech contempla una futura integración con dispositivos IoT capaces de registrar variables relevantes durante los procesos de producción y almacenamiento. Dentro del alcance académico del proyecto, los dispositivos físicos no serán desarrollados; en su lugar, se utilizarán fuentes de datos simuladas que permitan representar el comportamiento de sensores y desarrollar la arquitectura de software necesaria para una futura integración con hardware real.
+
+La propuesta de negocio se plantea bajo un modelo **Business-to-Business (B2B)** basado en **Software as a Service (SaaS)**. Los potenciales clientes podrán acceder a un **periodo de prueba gratuito de hasta 14 días**, luego del cual deberán contratar un plan de suscripción para continuar utilizando la plataforma.
+
+Como oportunidad de crecimiento futura, Destilatech podrá complementar su modelo de suscripción mediante servicios de instalación, configuración, integración y mantenimiento de dispositivos IoT compatibles con la plataforma. De esta manera, el modelo de negocio podría generar ingresos tanto mediante la suscripción al software como por servicios tecnológicos especializados.
+
+El mercado inicial se concentra en el sector pisquero peruano. De acuerdo con información publicada por el Ministerio de la Producción, durante 2024 la industria del pisco estuvo conformada por más de **527 empresas formales, en su mayoría MYPE**, y alcanzó una producción aproximada de **7.8 millones de litros** (Ministerio de la Producción, 2025).
+
+La solución se enfocará inicialmente en el pisco con la finalidad de mantener un dominio de negocio específico y un alcance viable para el desarrollo del producto. En una etapa futura, luego de validar la propuesta dentro de este mercado, Destilatech podría adaptarse a productores y comercializadores de otras bebidas alcohólicas que presenten necesidades similares.
+
+**Propuesta de valor:**
+
+> Destilatech centraliza el monitoreo de producción, la gestión de inventario y las operaciones comerciales relacionadas con el pisco en una plataforma web, integrando datos IoT y herramientas de análisis para facilitar una toma de decisiones más rápida, informada y eficiente.
+
+**Principales capacidades de la solución:**
+
+1. **Monitoreo inteligente de producción:** permite visualizar información relacionada con las condiciones del proceso productivo y almacenamiento mediante datos provenientes de fuentes IoT simuladas y, en una implementación futura, dispositivos físicos.
+
+2. **Gestión de inventario y operaciones:** permite registrar productos, lotes, existencias, movimientos de inventario, clientes y pedidos desde una misma plataforma.
+
+3. **Análisis y apoyo a la planificación:** utiliza información histórica de inventario y operaciones para generar alertas y estimaciones que permitan anticipar necesidades de reposición o nueva producción.
+
+### 1.1.2. Perfiles de Integrantes del equipo
+
+| **Nombre Completo del integrante**    | 	**Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
+| :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
+| Mario Alonso Fernandez Seer      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
+| Santiago Atanacio, Jairo Mathias      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Estudiante 3     | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | descripcion
+| Estudiante 4      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                     | descripcion
+| Estudiante 5 | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto | descripcion
+
