@@ -1040,7 +1040,7 @@ URL DEL VIDEO:
       <td><b>Evidencia</b></td>
       <td>
         <div align="center">
-      <img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
+      <img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Entrevistas" style="height: 120px !important; width: 250px !important;">
         </div>
       </td>
     </tr>
