@@ -535,3 +535,103 @@ Entrevistar de 3 a 5 representantes de cada segmento (productores y comercializa
 </td>  
 </tr>  
 </table>
+
+
+## 1.3. Segmentos objetivo
+
+Destilatech se orienta inicialmente hacia actores relacionados con la producción y comercialización de pisco en el Perú.
+
+De acuerdo con el Ministerio de la Producción, durante 2024 la industria del pisco estuvo compuesta por más de **527 empresas formales, en su mayoría MYPE**, y alcanzó aproximadamente **7.8 millones de litros de producción nacional**. Adicionalmente, las micro y pequeñas empresas representaron el **99.1 % de las empresas formales del Perú durante 2024**, mientras que los sectores de comercio y servicios concentraron el 85.8 % de las MYPE (Ministerio de la Producción, 2025).
+
+Para el desarrollo inicial del producto se identificaron dos segmentos objetivo.
+
+
+### Segmento 1: Pequeños y medianos productores de pisco
+
+Este segmento está compuesto por propietarios, administradores y responsables de operaciones de pequeñas y medianas empresas productoras de pisco.
+
+La Denominación de Origen Pisco comprende zonas ubicadas en **Lima, Ica, Arequipa, Moquegua y Tacna**, por lo que estas regiones representan el principal ámbito geográfico asociado al segmento productor (Indecopi, 2024).
+
+**Características iniciales:**
+
+- Propietarios, administradores o responsables de empresas productoras de pisco.
+- Principalmente vinculados con empresas de pequeña y mediana escala.
+- Participan en procesos relacionados con producción, almacenamiento e inventario.
+- Requieren consultar información relacionada con el estado de sus operaciones.
+- Toman o apoyan decisiones relacionadas con producción, existencias y planificación.
+
+**Necesidades asumidas a validar:**
+
+- Supervisar información relacionada con la producción.
+- Registrar y consultar lotes.
+- Controlar el inventario disponible.
+- Detectar condiciones que requieran atención.
+- Mantener información organizada sobre productos y movimientos.
+- Utilizar información histórica para apoyar decisiones.
+- Reducir la dependencia de registros separados.
+
+Este segmento representa al principal usuario de las capacidades de **producción, monitoreo IoT y gestión de lotes** de Destilatech.
+
+
+### Segmento 2: Pequeños comercializadores de pisco
+
+Este segmento está compuesto por propietarios, administradores o responsables de inventario de pequeños establecimientos y negocios dedicados a comercializar pisco y otras bebidas alcohólicas.
+
+Dentro de este segmento se consideran principalmente:
+
+- Licorerías.
+- Bodegas comerciales.
+- Minimarkets que comercialicen bebidas alcohólicas.
+- Pequeños distribuidores.
+- Otros pequeños comercios especializados en bebidas.
+
+Estos usuarios no requieren acceder a las funcionalidades relacionadas directamente con el proceso de elaboración del pisco. Su interacción con Destilatech estará centrada principalmente en inventario, pedidos, alertas y reposición.
+
+**Características iniciales:**
+
+- Propietarios, administradores o responsables de pequeños negocios comerciales.
+- Personal encargado de inventario o abastecimiento.
+- Comercializan diferentes productos y presentaciones.
+- Necesitan conocer las existencias disponibles.
+- Realizan procesos periódicos de reposición de productos.
+- Participan en decisiones relacionadas con compra y abastecimiento.
+
+**Necesidades asumidas a validar:**
+
+- Consultar rápidamente el stock disponible.
+- Registrar entradas y salidas de productos.
+- Identificar productos con niveles bajos de inventario.
+- Registrar pedidos.
+- Consultar información histórica de inventario.
+- Anticipar posibles necesidades de abastecimiento.
+- Mantener información relacionada con inventario en una ubicación centralizada.
+
+Este segmento representa principalmente al usuario de las capacidades de **inventario, pedidos y reposición** de Destilatech.
+
+
+### Relación entre los segmentos
+
+Los dos segmentos participan en diferentes etapas relacionadas con el pisco, pero presentan necesidades que pueden ser atendidas mediante componentes compartidos de Destilatech.
+
+El **productor** se concentra principalmente en:
+
+- Producción.
+- Monitoreo.
+- Lotes.
+- Almacenamiento.
+- Inventario.
+- Pedidos.
+
+El **comercializador** se concentra principalmente en:
+
+- Inventario.
+- Pedidos.
+- Reposición.
+- Comercialización.
+
+Destilatech utilizará una misma plataforma tecnológica, pero presentará diferentes funcionalidades y vistas de acuerdo con las necesidades del usuario.
+
+Esta estrategia permite mantener un alcance manejable para el desarrollo, debido a que componentes como usuarios, productos, inventario, pedidos y alertas pueden ser reutilizados entre ambos segmentos, mientras que las funcionalidades de producción y monitoreo IoT estarán disponibles específicamente para los productores.
+
+Las características y necesidades descritas constituyen hipótesis iniciales del equipo. Durante el Capítulo II se realizarán entrevistas con representantes de ambos segmentos para validar, modificar o descartar los problemas, comportamientos y necesidades identificados.
+
