@@ -862,7 +862,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
       * **Resumen:**
         Marco Vargas, de 22 años, es propietario de una bodega y licorería ubicada en San Miguel, Lima. Comentó que actualmente controla su inventario principalmente de memoria, mediante un cuaderno y Excel, aunque los registros no siempre están actualizados por la cantidad de ventas. Señaló que suele quedarse sin stock de algunos productos una o dos veces al mes, especialmente en fechas de alta demanda, ocasionando la pérdida de algunas ventas. Para realizar pedidos, revisa las existencias y se basa en su experiencia y en las promociones de sus proveedores, con quienes se comunica principalmente por WhatsApp. Indicó que su principal dificultad es conocer rápidamente cuánto stock tiene y cuáles productos necesitan reposición, ya que debe revisar el almacén manualmente y en ocasiones algunos productos se agotan sin que lo note. Por ello, le gustaría contar con un sistema que pueda consultar desde su celular y que le envíe alertas cuando un producto esté por terminarse. Finalmente, mencionó que estaría dispuesto a pagar entre 40 y 80 soles mensuales por una solución sencilla que le permita ahorrar tiempo y evitar pérdidas.
 
-    * **Entrevista 2:**
+  * **Entrevista 2:**
     * **Nombres:** Carlos
     * **Apellidos:** Moreno
     * **Edad:** 29
@@ -874,7 +874,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
       * **Resumen:**
         Carlos Mendoza, de 29 años, tiene una licorería ubicada en Magdalena y administra el negocio junto con su hermano. Comentó que comercializa entre 120 y 150 productos, incluyendo aproximadamente 8 a 10 marcas de pisco. Actualmente controla el inventario principalmente de forma manual, utilizando un cuaderno y un Excel básico, pero durante las horas de mayor demanda no siempre registra las ventas. Esto ocasiona que en algunas ocasiones se quede sin productos importantes y se dé cuenta recién cuando un cliente los solicita. Señaló que este problema ocurre una o dos veces al mes, especialmente durante fines de semana largos y fechas de alta demanda. Sobre la reposición, explicó que decide cuánto comprar basándose principalmente en su experiencia, revisando las existencias y tomando en cuenta las promociones de los proveedores. La comunicación con ellos se realiza principalmente mediante WhatsApp. En cuanto a tecnología, utiliza principalmente su celular para gestionar proveedores, pagos y otras actividades del negocio, mientras que utiliza Excel en una laptop para algunos registros. Mencionó que anteriormente probó un sistema de inventario, pero dejó de usarlo porque era complicado registrar y actualizar los productos y el inventario terminó descuadrándose. Actualmente, su principal necesidad es conocer en tiempo real qué productos tiene disponibles y recibir una alerta antes de que alguno se agote. Considera que una herramienta sencilla que funcione desde el celular le ayudaría a evitar pérdidas de ventas y ahorrar tiempo. Estaría dispuesto a pagar entre 50 y 80 soles mensuales, siempre que el sistema sea fácil de utilizar y realmente le ayude a mejorar el control de su inventario.
 
-  * **Entrevista 3:**
+ * **Entrevista 3:**
   * **Nombres:** Rubens
   * **Apellidos:** Moreno
   * **Edad:** 24
