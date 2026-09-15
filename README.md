@@ -1194,3 +1194,94 @@ Los User Journey Maps representan el recorrido end-to-end que cada User Persona 
 ### 2.3.4. Empathy Mapping
 
 Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
+
+
+### 2.4. Big Picture EventStorming
+
+
+
+### 2.5. Ubiquitous Language
+
+
+
+
+## Capítulo III: Requirements Specification
+
+### 3.1. User Stories
+
+En esta sección, profundizaremos en la definición y elaboración de las User Stories relacionadas con nuestro proyecto. Las historias de usuario son una herramienta fundamental en el desarrollo de software ágil, conceptualizadas formalmente bajo los principios propuestos por Cohn (2004), diseñadas para asegurar que las funcionalidades del sistema aporten valor directo a los objetivos del usuario final.
+
+**EPICS**
+
+| Epic ID | Título | Descripción | Criterio de Aceptación |
+| :--- | :--- | :--- | :--- |
+| EP01 | Autenticación y cuentas | Registro, inicio de sesión y gestión del periodo de prueba gratuito. | Given que un visitante completa el registro con datos válidos, When confirma el formulario, Then el sistema crea la cuenta y activa el periodo de prueba de 14 días.<br>Given que un usuario intenta acceder a una función restringida sin sesión iniciada, When lo intenta, Then el sistema lo redirige a la pantalla de inicio de sesión. |
+| EP02 | Dashboard | Vistas principales adaptadas por tipo de usuario. | Given que un usuario autenticado ingresa a la plataforma, When accede a su cuenta, Then el sistema muestra el dashboard correspondiente a su tipo de usuario.<br>Given que un usuario no tiene datos registrados aún, When accede a su dashboard, Then el sistema muestra un estado vacío guiándolo a registrar su primera información. |
+| EP03 | Gestión de lotes de producción | Registro y seguimiento de lotes de producción. | Given que un productor gestiona un lote, When lo registra y actualiza su estado, Then el sistema mantiene un historial trazable del lote.<br>Given que un productor consulta un lote existente, When lo selecciona, Then el sistema muestra su historial completo de cambios. |
+| EP04 | Monitoreo IoT | Visualización y configuración de variables de proceso (simuladas). | Given que un productor tiene un lote activo con variables configuradas, When se recibe una lectura simulada fuera de rango, Then el sistema genera una alerta de condición anómala.<br>Given que un productor consulta el monitoreo de un lote, When accede al módulo, Then visualiza las lecturas simuladas más recientes. |
+| EP05 | Gestión de inventario | Catálogo de productos, movimientos y consulta de stock. | Given que un usuario registra productos y movimientos, When consulta su inventario, Then el sistema refleja el stock actualizado.<br>Given que un movimiento dejaría el stock en negativo, When se intenta registrar, Then el sistema lo rechaza con una advertencia. |
+| EP06 | Sistema de alertas | Umbrales de stock y gestión de alertas. | Given que el stock de un producto llega a su umbral mínimo, When se actualiza el inventario, Then el sistema genera una alerta automática de stock bajo.<br>Given que un usuario atiende una alerta, When la marca como resuelta, Then el sistema actualiza su estado. |
+| EP07 | Clientes y pedidos | Gestión comercial básica de clientes y pedidos. | Given que un usuario registra un pedido de un cliente, When lo confirma, Then el sistema descuenta el stock correspondiente y lo agrega al historial de pedidos.<br>Given que un pedido excede el stock disponible, When se intenta confirmar, Then el sistema muestra una advertencia antes de continuar. |
+| EP08 | Estimaciones y reposición | Analítica predictiva básica sobre inventario y reposición. | Given que un producto cuenta con historial suficiente de movimientos, When un usuario consulta su ficha, Then el sistema muestra una estimación de reposición.<br>Given que un usuario consulta indicadores históricos, When accede al módulo, Then visualiza la evolución de su inventario/producción. |
+| EP09 | Landing Page (visitante) | Sitio web estático de Destilatech. | Given que un visitante ingresa al sitio web, When navega por sus secciones, Then encuentra la propuesta de valor, planes, funcionalidades y un call-to-action hacia el registro.<br>Given que un visitante accede desde un dispositivo móvil, When navega el landing page, Then la interfaz se adapta correctamente a su pantalla. |
+| EP10 | Technical Stories (RESTful API) | Endpoints necesarios para soportar las features anteriores. | Given que la Web Application requiere autenticar usuarios y gestionar inventario, When consume los endpoints del API, Then recibe respuestas consistentes con los códigos HTTP y datos esperados.<br>Given que se envía una lectura IoT simulada fuera de rango, When el API la procesa, Then almacena la lectura y genera la alerta correspondiente. |
+
+
+**USER STORIES**
+
+| Epic/Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| US30 | Implementación de la sección del Header | Como Developer quiero implementar la sección Header del landing page para que los visitantes identifiquen la marca y naveguen entre las secciones principales. | Given que un visitante carga el landing page, When la página termina de renderizar, Then el Header muestra el logo de Destilatech y los enlaces de navegación a las secciones principales.<br>Given que un visitante hace clic en un enlace del Header, When la página se desplaza, Then es llevado a la sección correspondiente sin recargar la página. | EP09 |
+| US31 | Implementación de la sección Description | Como Developer quiero implementar la sección Description para que los visitantes entiendan qué es Destilatech y a quién está dirigido. | Given que un visitante llega a la sección Description, When la visualiza, Then encuentra el nombre del producto, su propuesta de valor y los segmentos objetivo (productor y comercializador). | EP09 |
+| US32 | Implementación de la sección Goals | Como Developer quiero implementar la sección Goals para comunicar los principales beneficios que ofrece Destilatech. | Given que un visitante llega a la sección Goals, When la visualiza, Then encuentra los beneficios principales de la plataforma (monitoreo, inventario, alertas, estimaciones) presentados de forma clara. | EP09 |
+| US33 | Implementación de la sección Pricing | Como Developer quiero implementar la sección Pricing para que los visitantes conozcan los planes de suscripción y el periodo de prueba gratuito. | Given que un visitante llega a la sección Pricing, When la visualiza, Then encuentra los planes disponibles, sus precios y la duración del periodo de prueba gratuito.<br>Given que un visitante selecciona un plan, When hace clic en su call-to-action, Then es redirigido al formulario de registro con el plan preseleccionado. | EP09 |
+| US34 | Implementación de la sección Impact | Como Developer quiero implementar la sección Impact para mostrar cifras que respalden la relevancia de Destilatech en el sector pisquero. | Given que un visitante llega a la sección Impact, When la visualiza, Then encuentra cifras del sector pisquero peruano (empresas formales, producción anual) que respaldan la propuesta. | EP09 |
+| US35 | Implementación de la sección Platform Features | Como Developer quiero implementar la sección Platform Features para mostrar las capacidades de la plataforma diferenciadas por segmento. | Given que un visitante llega a la sección Platform Features, When la visualiza, Then encuentra las funcionalidades principales agrupadas para productor y para comercializador. | EP09 |
+| US36 | Implementación de la sección del Footer | Como Developer quiero implementar la sección Footer para que los visitantes encuentren información de contacto y enlaces adicionales. | Given que un visitante llega al final del landing page, When visualiza el Footer, Then encuentra información de contacto, enlaces legales/redes sociales y el call-to-action de registro. | EP09 |
+| US37 | Implementación de la adaptabilidad móvil | Como Developer quiero implementar la adaptabilidad móvil del landing page para que la experiencia sea consistente en distintos tamaños de pantalla. | Given que un visitante accede al landing page desde un smartphone, When la página carga, Then todas las secciones se adaptan correctamente sin elementos cortados o desbordados.<br>Given que un visitante accede desde una tablet o desktop, When la página carga, Then el diseño aprovecha el espacio disponible manteniendo la misma jerarquía de contenido. | EP09 |
+
+
+### 3.2. Impact Mapping
+
+
+### 3.3. Product Backlog
+
+| # Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | US30 | Implementación de la sección del Header | Header con navegación del landing page. | 2 |
+| 2 | US31 | Implementación de la sección Description | Sección de propuesta de valor. | 2 |
+| 3 | US32 | Implementación de la sección Goals | Sección de beneficios principales. | 2 |
+| 4 | US33 | Implementación de la sección Pricing | Sección de planes y trial gratuito. | 3 |
+| 5 | US34 | Implementación de la sección Impact | Sección de cifras del sector pisquero. | 2 |
+| 6 | US35 | Implementación de la sección Platform Features | Sección de funcionalidades por segmento. | 3 |
+| 7 | US36 | Implementación de la sección del Footer | Footer con contacto y enlaces. | 1 |
+| 8 | US37 | Implementación de la adaptabilidad móvil | Responsividad de todas las secciones del landing page. | 3 |
+| 9 | US22 | Conocer la propuesta de valor | Contenido de la sección principal del landing page. | 2 |
+| 10 | US23 | Conocer planes y periodo de prueba | Contenido de planes y trial gratuito. | 2 |
+| 11 | US25 | Conocer casos de uso por segmento | Contenido diferenciado por segmento. | 3 |
+| 12 | US24 | Registrarme desde la landing page | Call-to-action hacia el registro. | 1 |
+| 13 | US01 | Registrarme como productor o comercializador | Registro de cuenta con periodo de prueba. | 3 |
+| 14 | US26 | Endpoint de autenticación | API: login con emisión de token. | 3 |
+| 15 | US02 | Iniciar sesión | Login de usuario registrado. | 2 |
+| 16 | US04 | Ver dashboard de producción | Dashboard adaptado al productor. | 5 |
+| 17 | US05 | Ver dashboard comercial | Dashboard adaptado al comercializador. | 5 |
+| 18 | US12 | Registrar producto | Catálogo de productos. | 2 |
+| 19 | US27 | Endpoint de movimientos de inventario | API: registro consistente de movimientos de stock. | 3 |
+| 20 | US13 | Registrar movimiento de inventario | Entradas/salidas de stock. | 3 |
+| 21 | US14 | Consultar stock disponible | Vista de stock actual por producto. | 2 |
+| 22 | US06 | Registrar lote de producción | Alta de un nuevo lote. | 3 |
+| 23 | US15 | Configurar umbral de stock bajo | Umbral mínimo por producto. | 2 |
+| 24 | US16 | Visualizar y atender alertas | Módulo de alertas. | 3 |
+| 25 | US07 | Actualizar estado de un lote | Seguimiento del avance del lote. | 2 |
+| 26 | US17 | Registrar cliente | Alta de clientes. | 2 |
+| 27 | US18 | Registrar pedido | Registro de pedido con descuento de stock. | 5 |
+| 28 | US08 | Consultar historial de un lote | Trazabilidad de un lote. | 2 |
+| 29 | US19 | Consultar historial de pedidos | Listado de pedidos anteriores. | 2 |
+| 30 | US28 | Endpoint de lecturas IoT simuladas | API: ingestión y evaluación de lecturas. | 3 |
+| 31 | US09 | Visualizar variables de proceso | Monitoreo IoT en el lote. | 5 |
+| 32 | US10 | Configurar rango normal de una variable | Umbrales de variables de proceso. | 3 |
+| 33 | US11 | Recibir notificación de condición anómala | Alerta de anomalía en producción. | 3 |
+| 34 | US29 | Endpoint de estimaciones de reposición | API: cálculo de estimación de reposición. | 3 |
+| 35 | US20 | Ver estimación de reposición | Estimación en la ficha de inventario. | 5 |
+| 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
+| 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
