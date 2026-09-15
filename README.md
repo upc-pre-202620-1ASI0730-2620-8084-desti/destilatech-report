@@ -822,69 +822,240 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
 ### 2.2.2. Registro de entrevistas
 
-* **Segmento 1: Productor de pisco**
+URL DEL VIDEO: 
 
-  * **Entrevista 1:**
-    * **Nombres:** XXXX
-    * **Apellidos:** XXXXX XXXXX
-    * **Edad:** XX
-    * **Distrito:** XXXX
-    * **Screenshot:**
-      <img src="assets/md-images-front-matter/EntrevistaXXX.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
-      * **Video URL:** 
-      * **Timing:** XX:XX / XX:XX
-      * **Resumen:**
-       XX.....
 
- * **Entrevista 2:**
-    * **Nombres:** Luciana
-    * **Apellidos:** Cueva
-    * **Edad:** 20
-    * **Distrito:** Lima
-    * **Screenshot:**
-      <img src="assets/md-images-front-matter/Captura de pantalla 2026-09-14 171922.png" style="height: 150px !important; width: 150px !important;">
-      * **Video URL:** [ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202316845_upc_edu_pe/IQDhjbmscT04ToeUWPodXJRvAeTWCS9Hr6sFi5yWmOHKthQ?e=MrRCng&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-      * **Timing:** 00:00 / 11:27 
-      * **Resumen:**
-      Luciana, de 20 años, trabaja en el área administrativa de un negocio familiar de pisco (10 años en el mercado, 8,000–100,000 L/año). El proceso va desde recepción de uva y molienda hasta fermentación, destilación, reposo, controles y embotellado. Registran cada lote en cuadernos y luego lo pasan a Excel, y el stock lo verifican con conteo físico semanal, lo que genera errores y demoras cuando hay varios pedidos. Los pedidos se coordinan por WhatsApp y usan Instagram/Facebook para promoción. Tuvieron un problema de temperatura en fermentación que malogró un lote y solo lo detectaron manualmente. Le gustaría un sistema centralizado en el celular, con alertas automáticas ante desviaciones del proceso, y pagarían entre 50 y 100 soles mensuales por una solución sencilla.
-        
-* **Segmento 2: Comercializador**
 
-  * **Entrevista 1:**
-    * **Nombres:** Marco
-    * **Apellidos:** Vargas
-    * **Edad:** 22
-    * **Distrito:** Lima
-    * **Screenshot:**
-      <img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
-      * **Video URL:**
-      * **Timing:** XX:XX / XX:XX
-      * **Resumen:**
-        Marco Vargas, de 22 años, es propietario de una bodega y licorería ubicada en San Miguel, Lima. Comentó que actualmente controla su inventario principalmente de memoria, mediante un cuaderno y Excel, aunque los registros no siempre están actualizados por la cantidad de ventas. Señaló que suele quedarse sin stock de algunos productos una o dos veces al mes, especialmente en fechas de alta demanda, ocasionando la pérdida de algunas ventas. Para realizar pedidos, revisa las existencias y se basa en su experiencia y en las promociones de sus proveedores, con quienes se comunica principalmente por WhatsApp. Indicó que su principal dificultad es conocer rápidamente cuánto stock tiene y cuáles productos necesitan reposición, ya que debe revisar el almacén manualmente y en ocasiones algunos productos se agotan sin que lo note. Por ello, le gustaría contar con un sistema que pueda consultar desde su celular y que le envíe alertas cuando un producto esté por terminarse. Finalmente, mencionó que estaría dispuesto a pagar entre 40 y 80 soles mensuales por una solución sencilla que le permita ahorrar tiempo y evitar pérdidas.
 
-  * **Entrevista 2:**
-    * **Nombres:** Carlos
-    * **Apellidos:** Moreno
-    * **Edad:** 29
-    * **Distrito:** Magdalena, Lima
-    * **Screenshot:**
-      <img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
-      * **Video URL:**
-      * **Timing:** XX:XX / XX:XX
-      * **Resumen:**
-        Carlos Mendoza, de 29 años, tiene una licorería ubicada en Magdalena y administra el negocio junto con su hermano. Comentó que comercializa entre 120 y 150 productos, incluyendo aproximadamente 8 a 10 marcas de pisco. Actualmente controla el inventario principalmente de forma manual, utilizando un cuaderno y un Excel básico, pero durante las horas de mayor demanda no siempre registra las ventas. Esto ocasiona que en algunas ocasiones se quede sin productos importantes y se dé cuenta recién cuando un cliente los solicita. Señaló que este problema ocurre una o dos veces al mes, especialmente durante fines de semana largos y fechas de alta demanda. Sobre la reposición, explicó que decide cuánto comprar basándose principalmente en su experiencia, revisando las existencias y tomando en cuenta las promociones de los proveedores. La comunicación con ellos se realiza principalmente mediante WhatsApp. En cuanto a tecnología, utiliza principalmente su celular para gestionar proveedores, pagos y otras actividades del negocio, mientras que utiliza Excel en una laptop para algunos registros. Mencionó que anteriormente probó un sistema de inventario, pero dejó de usarlo porque era complicado registrar y actualizar los productos y el inventario terminó descuadrándose. Actualmente, su principal necesidad es conocer en tiempo real qué productos tiene disponibles y recibir una alerta antes de que alguno se agote. Considera que una herramienta sencilla que funcione desde el celular le ayudaría a evitar pérdidas de ventas y ahorrar tiempo. Estaría dispuesto a pagar entre 50 y 80 soles mensuales, siempre que el sistema sea fácil de utilizar y realmente le ayude a mejorar el control de su inventario.
+<br>
 
- * **Entrevista 3:**
-  * **Nombres:** Rubens
-  * **Apellidos:** Moreno
-  * **Edad:** 24
-  * **Distrito:** Comas, Lima
-  * **Screenshot:**
-    <img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
-    * **Video URL:**
-    * **Timing:** XX:XX / XX:XX
-    * **Resumen:**
-      Rubens, de 24 años, administra una licorería ubicada en Comas y vive con su familia. Se encarga de las compras, pedidos e inventario del negocio, donde comercializa aproximadamente 10 marcas de pisco y alrededor de 80 productos entre bebidas y otros artículos. Actualmente controla el inventario revisando directamente el almacén y utilizando un cuaderno y Excel. Comentó que en algunas ocasiones se queda sin productos solicitados por los clientes, especialmente los fines de semana, lo que puede ocasionar la pérdida de ventas. Para realizar los pedidos de reposición se basa principalmente en su experiencia, revisando las existencias y sus registros. Mantiene comunicación con sus proveedores principalmente por WhatsApp y utiliza su celular como principal herramienta digital. También probó anteriormente un sistema de inventario, pero lo consideró complicado debido a la cantidad de información que debía registrar y actualizar. Su principal necesidad es conocer con anticipación cuándo un producto está por agotarse para poder reponerlo a tiempo. Finalmente, indicó que estaría dispuesto a pagar entre 30 y 80 soles mensuales por un servicio sencillo que realmente le ayude a controlar su inventario y evitar pérdidas de ventas.
+**Segmento #1: Productor de pisco**
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Luciana<br>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Cueva</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>20 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="assets/md-images-front-matter/Captura de pantalla 2026-09-14 171922.png" style="height: 150px !important; width: 150px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>11:27 min / --</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td> Luciana, de 20 años, trabaja en el área administrativa de un negocio familiar de pisco (10 años en el mercado, 8,000–100,000 L/año). El proceso va desde recepción de uva y molienda hasta fermentación, destilación, reposo, controles y embotellado. Registran cada lote en cuadernos y luego lo pasan a Excel, y el stock lo verifican con conteo físico semanal, lo que genera errores y demoras cuando hay varios pedidos. Los pedidos se coordinan por WhatsApp y usan Instagram/Facebook para promoción. Tuvieron un problema de temperatura en fermentación que malogró un lote y solo lo detectaron manualmente. Le gustaría un sistema centralizado en el celular, con alertas automáticas ante desviaciones del proceso, y pagarían entre 50 y 100 soles mensuales por una solución sencilla.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+ <br>     
+
+  **Segmento #2: Comercializador**
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Marco<br>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Vargas</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>22 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+      <img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>8:55 min / --</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Marco Vargas, de 22 años, es propietario de una bodega y licorería ubicada en San Miguel, Lima. Comentó que actualmente controla su inventario principalmente de memoria, mediante un cuaderno y Excel, aunque los registros no siempre están actualizados por la cantidad de ventas. Señaló que suele quedarse sin stock de algunos productos una o dos veces al mes, especialmente en fechas de alta demanda, ocasionando la pérdida de algunas ventas. Para realizar pedidos, revisa las existencias y se basa en su experiencia y en las promociones de sus proveedores, con quienes se comunica principalmente por WhatsApp. Indicó que su principal dificultad es conocer rápidamente cuánto stock tiene y cuáles productos necesitan reposición, ya que debe revisar el almacén manualmente y en ocasiones algunos productos se agotan sin que lo note. Por ello, le gustaría contar con un sistema que pueda consultar desde su celular y que le envíe alertas cuando un producto esté por terminarse. Finalmente, mencionó que estaría dispuesto a pagar entre 40 y 80 soles mensuales por una solución sencilla que le permita ahorrar tiempo y evitar pérdidas.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Carlos<br>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Moreno</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>29 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Magdalena</td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+       <img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>12:24 min / --</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Carlos Mendoza, de 29 años, tiene una licorería ubicada en Magdalena y administra el negocio junto con su hermano. Comentó que comercializa entre 120 y 150 productos, incluyendo aproximadamente 8 a 10 marcas de pisco. Actualmente controla el inventario principalmente de forma manual, utilizando un cuaderno y un Excel básico, pero durante las horas de mayor demanda no siempre registra las ventas. Esto ocasiona que en algunas ocasiones se quede sin productos importantes y se dé cuenta recién cuando un cliente los solicita. Señaló que este problema ocurre una o dos veces al mes, especialmente durante fines de semana largos y fechas de alta demanda. Sobre la reposición, explicó que decide cuánto comprar basándose principalmente en su experiencia, revisando las existencias y tomando en cuenta las promociones de los proveedores. La comunicación con ellos se realiza principalmente mediante WhatsApp. En cuanto a tecnología, utiliza principalmente su celular para gestionar proveedores, pagos y otras actividades del negocio, mientras que utiliza Excel en una laptop para algunos registros. Mencionó que anteriormente probó un sistema de inventario, pero dejó de usarlo porque era complicado registrar y actualizar los productos y el inventario terminó descuadrándose. Actualmente, su principal necesidad es conocer en tiempo real qué productos tiene disponibles y recibir una alerta antes de que alguno se agote. Considera que una herramienta sencilla que funcione desde el celular le ayudaría a evitar pérdidas de ventas y ahorrar tiempo. Estaría dispuesto a pagar entre 50 y 80 soles mensuales, siempre que el sistema sea fácil de utilizar y realmente le ayude a mejorar el control de su inventario.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Rubens<br>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Moreno</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>24 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Comas</td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+        <img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>3:36 min / --</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Rubens, de 24 años, administra una licorería ubicada en Comas y vive con su familia. Se encarga de las compras, pedidos e inventario del negocio, donde comercializa aproximadamente 10 marcas de pisco y alrededor de 80 productos entre bebidas y otros artículos. Actualmente controla el inventario revisando directamente el almacén y utilizando un cuaderno y Excel. Comentó que en algunas ocasiones se queda sin productos solicitados por los clientes, especialmente los fines de semana, lo que puede ocasionar la pérdida de ventas. Para realizar los pedidos de reposición se basa principalmente en su experiencia, revisando las existencias y sus registros. Mantiene comunicación con sus proveedores principalmente por WhatsApp y utiliza su celular como principal herramienta digital. También probó anteriormente un sistema de inventario, pero lo consideró complicado debido a la cantidad de información que debía registrar y actualizar. Su principal necesidad es conocer con anticipación cuándo un producto está por agotarse para poder reponerlo a tiempo. Finalmente, indicó que estaría dispuesto a pagar entre 30 y 80 soles mensuales por un servicio sencillo que realmente le ayude a controlar su inventario y evitar pérdidas de ventas.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Andrea<br>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Mendoza</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>41 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Surquillo</td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+      <img src="assets/md-images-front-matter/Entrevista7_Seg2.jpg" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>6:11 min / --</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Soy Andrea Mendoza, tengo 41 años, casada, con dos hijos, y administro junto a mi familia una licorería de barrio en Surquillo donde ofrezco unas 15 marcas de pisco y alrededor de 80 variedades de otras bebidas. Para llevar el inventario me apoyo en la revisión visual directa y en anotaciones en un cuaderno, pero la carga diaria impide registrar cada venta en tiempo real, lo que me ha llevado a quedarme sin stock frente a los clientes en fechas clave como Fiestas Patrias, perdiendo ingresos importantes y dándome cuenta de la falta de producto al menos dos o tres veces al mes. La reposición la calculo al ojo según el espacio libre en los estantes y coordino los pedidos directamente por WhatsApp con distribuidores y productores artesanales, lidiando frecuentemente con demoras en sus respuestas o faltantes imprevistos de mercadería. Aunque intenté usar una hoja de cálculo en laptop, la descarté porque me quitaba agilidad en el mostrador; hoy resuelvo todo desde el celular con WhatsApp, Yape, Plin y la banca móvil. Mi principal frustración es la incertidumbre de no saber con exactitud cuánto stock me queda sin ir a revisar físicamente el almacén y el riesgo constante de perder ventas, por lo que una alerta sencilla al teléfono que me avise cuándo pedir reposición resolvería mi mayor dolor de cabeza; por una herramienta práctica de este tipo, manejable enteramente desde el móvil y sin pasos complejos, estaría dispuesta a pagar entre 40 y 50 soles mensuales.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
 ### 2.2.3. Análisis de entrevistas
 
