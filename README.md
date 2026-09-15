@@ -755,3 +755,194 @@ Frente a Ubidots, la estrategia es no competir como plataforma de IoT genérica,
 Frente a Defontana Perú (y ERPs genéricos similares), la táctica es capturar al segmento comercializador ofreciendo, dentro del mismo producto que ya usan sus proveedores productores, un módulo de inventario/pedidos/alertas de stock enfocado específicamente en bebidas alcohólicas (presentaciones, lotes, vencimientos si aplica), de forma que un comercializador que trabaja con varios productores encuentre valor en compartir una misma plataforma con ellos, en lugar de mantener un ERP genérico desconectado de sus proveedores.
 
 Como táctica transversal, dado que ninguno de los tres competidores identificados atiende el dominio combinado (producción + inventario + comercialización del pisco) desde una sola plataforma, la estrategia central de Destilatech durante el MVP es validar rápidamente con productores y comercializadores reales (mediante las entrevistas descritas en la sección 2.2) si esta integración es realmente valorada, antes de invertir en profundizar cualquiera de los tres módulos por separado.
+
+---
+
+### 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas
+
+**Estructura común a ambas guías**
+
+1. Apertura: presentación del equipo, propósito de la investigación (sin mencionar aún la solución para no sesgar respuestas), consentimiento para grabar en video, duración estimada (20–30 min).
+2. Datos demográficos y de contexto (para el User Persona).
+3. Bloque de comportamiento actual (core de la indagación del problema).
+4. Bloque de herramientas y tecnología.
+5. Bloque de necesidades, frustraciones y priorización.
+6. Cierre: agradecimiento y pregunta abierta final ("¿hay algo importante que no te haya preguntado?").
+
+#### A. Guía de entrevista — Segmento Productor de pisco
+
+**1. Datos demográficos y de contexto (complementaria — para el arquetipo)**
+- Nombre, edad, distrito/región donde opera la bodega, estado civil y composición familiar (¿la empresa es un negocio familiar?).
+- Rol/cargo dentro de la empresa (propietario, administrador, jefe de producción) y años de experiencia en el rubro.
+- Tamaño aproximado de la producción (litros/año) y número de colaboradores.
+
+**2. Producción y almacenamiento (principal)**
+- Cuéntame cómo es, paso a paso, tu proceso desde que empieza la producción de un lote hasta que el pisco queda embotellado. *(complementaria: ¿qué variables monitoreas durante ese proceso — temperatura, grados alcohólicos, tiempos —, y cómo las mides hoy?)*
+- ¿Cómo registras y consultas la información de cada lote de producción? *(complementaria: ¿en qué medio — cuaderno, Excel, memoria —, y quién más accede a esa información?)*
+- Cuéntame de alguna vez en que algo salió mal durante la producción o el almacenamiento (una condición fuera de lo normal). ¿Cómo te enteraste y qué hiciste? *(complementaria: ¿cuánto tiempo pasó entre que ocurrió el problema y que lo detectaste?)*
+
+**3. Inventario y comercialización (principal)**
+- ¿Cómo sabes hoy cuánto stock de producto terminado tienes disponible para vender? *(complementaria: ¿con qué frecuencia actualizas o revisas esa información?)*
+- ¿Cómo gestionas la información de tus clientes y de los pedidos que te hacen? *(complementaria: ¿qué información de un cliente consideras importante guardar?)*
+
+**4. Herramientas y tecnología (complementaria)**
+- ¿Qué aplicaciones o herramientas digitales usas actualmente para tu negocio (mensajería, hojas de cálculo, redes sociales, algún software)? *(complementaria: ¿en qué dispositivo las usas más — celular, computadora —, y qué tan cómodo te sientes usándolas?)*
+- ¿Has usado o escuchado de algún sensor o dispositivo que mida variables de tu proceso automáticamente? ¿Qué opinas de esa idea?
+
+**5. Necesidades y frustraciones (principal)**
+- ¿Qué es lo que más tiempo o esfuerzo te quita hoy en la gestión de tu producción o inventario?
+- Si pudieras resolver un solo problema de los que me has contado hoy mismo, ¿cuál sería y por qué?
+- ¿Pagarías por un servicio que te ayude a resolver esto? *(complementaria: ¿cuánto estarías dispuesto a invertir al mes, aproximadamente, y por qué esa cifra?)*
+
+#### B. Guía de entrevista — Segmento Comercializador (licorerías, bodegas, distribuidores)
+
+**1. Datos demográficos y de contexto (complementaria — para el arquetipo)**
+- Nombre, edad, distrito donde está ubicado el negocio, estado civil/familia.
+- Rol dentro del negocio (propietario, administrador, encargado de inventario) y tipo de establecimiento (licorería, bodega, minimarket, distribuidor).
+- Cuántos productos/marcas de pisco y otras bebidas comercializa aproximadamente.
+
+**2. Control de inventario (principal)**
+- Cuéntame cómo haces hoy para saber qué productos y cuánta cantidad tienes en tu local en un momento dado. *(complementaria: ¿en qué medio llevas ese registro?)*
+- Cuéntame de alguna vez en que te quedaste sin stock de un producto que un cliente pedía. ¿Cómo te diste cuenta y qué pasó después? *(complementaria: ¿con qué frecuencia te pasa esto?)*
+
+**3. Reposición y proveedores (principal)**
+- ¿Cómo decides hoy cuándo y cuánto pedir de reposición a tus proveedores? *(complementaria: ¿qué información usas para tomar esa decisión?)*
+- ¿Cómo te comunicas y coordinas los pedidos con tus proveedores (productores/distribuidores)?
+
+**4. Herramientas y tecnología (complementaria)**
+- ¿Qué herramientas digitales usas hoy para llevar tu negocio (punto de venta, hojas de cálculo, mensajería)? *(complementaria: ¿en qué dispositivo las usas más?)*
+- ¿Has usado antes algún sistema de inventario o punto de venta? ¿Qué te gustó o no te gustó de esa experiencia?
+
+**5. Necesidades y frustraciones (principal)**
+- ¿Qué es lo que más te complica hoy del control de tu inventario o de tus pedidos?
+- Si pudieras resolver un solo problema de los que me has contado hoy, ¿cuál sería y por qué?
+- ¿Pagarías por un servicio que te ayude con esto? *(complementaria: ¿cuánto estarías dispuesto a invertir al mes, aproximadamente?)*
+
+### 2.2.2. Registro de entrevistas
+
+* **Segmento 1: Productor de pisco**
+
+  * **Entrevista 1:**
+    * **Nombres:** XXXX
+    * **Apellidos:** XXXXX XXXXX
+    * **Edad:** XX
+    * **Distrito:** XXXX
+    * **Screenshot:**
+      <img src="assets/md-images-front-matter/EntrevistaXXX.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
+      * **Video URL:** 
+      * **Timing:** XX:XX / XX:XX
+      * **Resumen:**
+       XX.....
+
+ * **Entrevista 2:**
+    * **Nombres:** Luciana
+    * **Apellidos:** Cueva
+    * **Edad:** 20
+    * **Distrito:** Lima
+    * **Screenshot:**
+      <img src="assets/md-images-front-matter/Captura de pantalla 2026-09-14 171922.png" style="height: 150px !important; width: 150px !important;">
+      * **Video URL:** [ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202316845_upc_edu_pe/IQDhjbmscT04ToeUWPodXJRvAeTWCS9Hr6sFi5yWmOHKthQ?e=MrRCng&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+      * **Timing:** 00:00 / 11:27 
+      * **Resumen:**
+      Luciana, de 20 años, trabaja en el área administrativa de un negocio familiar de pisco (10 años en el mercado, 8,000–100,000 L/año). El proceso va desde recepción de uva y molienda hasta fermentación, destilación, reposo, controles y embotellado. Registran cada lote en cuadernos y luego lo pasan a Excel, y el stock lo verifican con conteo físico semanal, lo que genera errores y demoras cuando hay varios pedidos. Los pedidos se coordinan por WhatsApp y usan Instagram/Facebook para promoción. Tuvieron un problema de temperatura en fermentación que malogró un lote y solo lo detectaron manualmente. Le gustaría un sistema centralizado en el celular, con alertas automáticas ante desviaciones del proceso, y pagarían entre 50 y 100 soles mensuales por una solución sencilla.
+        
+* **Segmento 2: Comercializador**
+
+  * **Entrevista 1:**
+    * **Nombres:** Marco
+    * **Apellidos:** Vargas
+    * **Edad:** 22
+    * **Distrito:** Lima
+    * **Screenshot:**
+      <img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 150px !important;">
+      * **Video URL:**
+      * **Timing:** XX:XX / XX:XX
+      * **Resumen:**
+        Marco Vargas, de 22 años, es propietario de una bodega y licorería ubicada en San Miguel, Lima. Comentó que actualmente controla su inventario principalmente de memoria, mediante un cuaderno y Excel, aunque los registros no siempre están actualizados por la cantidad de ventas. Señaló que suele quedarse sin stock de algunos productos una o dos veces al mes, especialmente en fechas de alta demanda, ocasionando la pérdida de algunas ventas. Para realizar pedidos, revisa las existencias y se basa en su experiencia y en las promociones de sus proveedores, con quienes se comunica principalmente por WhatsApp. Indicó que su principal dificultad es conocer rápidamente cuánto stock tiene y cuáles productos necesitan reposición, ya que debe revisar el almacén manualmente y en ocasiones algunos productos se agotan sin que lo note. Por ello, le gustaría contar con un sistema que pueda consultar desde su celular y que le envíe alertas cuando un producto esté por terminarse. Finalmente, mencionó que estaría dispuesto a pagar entre 40 y 80 soles mensuales por una solución sencilla que le permita ahorrar tiempo y evitar pérdidas.
+
+
+### 2.2.3. Análisis de entrevistas
+
+El análisis de las entrevistas realizadas a los dos segmentos objetivo (Productor de pisco y Comercializador) permite identificar patrones demográficos, comportamentales y tecnológicos que fundamentan la construcción de los User Personas y las decisiones de diseño de la solución. A continuación, se presenta un análisis estadístico detallado por cada segmento, considerando las características objetivas (demográficas) y subjetivas (personalidad, habilidades, canales de interacción, dispositivos de preferencia, marcas e influencias).
+
+#### Segmento 1: Productor de pisco
+
+El análisis de las X entrevistas realizadas a los productores de pisco revela patrones claros en su perfil:
+
+**Características demográficas (objetivas):**
+...
+
+**Características de personalidad (subjetivas):**
+...
+
+**Habilidades y tecnología:**
+...
+
+**Canales de interacción:**
+...
+
+**Dispositivos de preferencia:**
+...
+
+**Marcas e influencias:**
+...
+
+**Conclusiones del análisis:**
+
+En resumen, los productores de pisco entrevistados muestran ....
+
+#### Segmento 2: Comercializador
+
+El análisis de las X entrevistas realizadas a comercializadores revela los siguientes patrones:
+
+**Características demográficas (objetivas):**
+...
+
+**Características de personalidad (subjetivas):**
+...
+
+**Habilidades y tecnología:**
+...
+
+**Canales de interacción:**
+...
+
+**Dispositivos de preferencia:**
+...
+
+**Marcas e influencias:**
+...
+
+**Conclusiones del análisis:**
+
+En resumen, los comercializadores entrevistados muestran ...
+
+### 2.3. Needfinding
+
+El proceso de Needfinding permitió transformar los hallazgos de las entrevistas en herramientas de diseño centradas en el usuario. A partir del análisis estadístico de las características demográficas, comportamentales y subjetivas de cada segmento, se construyeron los siguientes artefactos que guiarán el diseño de la solución Destulatech.
+
+### 2.3.1. User Personas
+
+A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los tres segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
+
+* **Segmento 1: Productor de pisco**
+
+
+
+* **Segmento 2: Comercializador**
+
+<img src="assets/md-images-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
+
+### 2.3.2. User Task Matrix
+
+La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
+
+### 2.3.3. User Journey Mapping
+
+Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos, sin la existencia de la solución Destilatech. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) que la plataforma debe abordar.
+
+### 2.3.4. Empathy Mapping
+
+Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
