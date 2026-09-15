@@ -875,16 +875,16 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
         Carlos Mendoza, de 29 años, tiene una licorería ubicada en Magdalena y administra el negocio junto con su hermano. Comentó que comercializa entre 120 y 150 productos, incluyendo aproximadamente 8 a 10 marcas de pisco. Actualmente controla el inventario principalmente de forma manual, utilizando un cuaderno y un Excel básico, pero durante las horas de mayor demanda no siempre registra las ventas. Esto ocasiona que en algunas ocasiones se quede sin productos importantes y se dé cuenta recién cuando un cliente los solicita. Señaló que este problema ocurre una o dos veces al mes, especialmente durante fines de semana largos y fechas de alta demanda. Sobre la reposición, explicó que decide cuánto comprar basándose principalmente en su experiencia, revisando las existencias y tomando en cuenta las promociones de los proveedores. La comunicación con ellos se realiza principalmente mediante WhatsApp. En cuanto a tecnología, utiliza principalmente su celular para gestionar proveedores, pagos y otras actividades del negocio, mientras que utiliza Excel en una laptop para algunos registros. Mencionó que anteriormente probó un sistema de inventario, pero dejó de usarlo porque era complicado registrar y actualizar los productos y el inventario terminó descuadrándose. Actualmente, su principal necesidad es conocer en tiempo real qué productos tiene disponibles y recibir una alerta antes de que alguno se agote. Considera que una herramienta sencilla que funcione desde el celular le ayudaría a evitar pérdidas de ventas y ahorrar tiempo. Estaría dispuesto a pagar entre 50 y 80 soles mensuales, siempre que el sistema sea fácil de utilizar y realmente le ayude a mejorar el control de su inventario.
 
   * **Entrevista 3:**
-  * **Nombres:** Rubens
-  * **Apellidos:** Moreno
-  * **Edad:** 24
-  * **Distrito:** Comas, Lima
-  * **Screenshot:**
-    <img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
-    * **Video URL:**
-    * **Timing:** XX:XX / XX:XX
-    * **Resumen:**
-      Rubens, de 24 años, administra una licorería ubicada en Comas y vive con su familia. Se encarga de las compras, pedidos e inventario del negocio, donde comercializa aproximadamente 10 marcas de pisco y alrededor de 80 productos entre bebidas y otros artículos. Actualmente controla el inventario revisando directamente el almacén y utilizando un cuaderno y Excel. Comentó que en algunas ocasiones se queda sin productos solicitados por los clientes, especialmente los fines de semana, lo que puede ocasionar la pérdida de ventas. Para realizar los pedidos de reposición se basa principalmente en su experiencia, revisando las existencias y sus registros. Mantiene comunicación con sus proveedores principalmente por WhatsApp y utiliza su celular como principal herramienta digital. También probó anteriormente un sistema de inventario, pero lo consideró complicado debido a la cantidad de información que debía registrar y actualizar. Su principal necesidad es conocer con anticipación cuándo un producto está por agotarse para poder reponerlo a tiempo. Finalmente, indicó que estaría dispuesto a pagar entre 30 y 80 soles mensuales por un servicio sencillo que realmente le ayude a controlar su inventario y evitar pérdidas de ventas.
+   * **Nombres:** Rubens
+   * **Apellidos:** Moreno
+   * **Edad:** 24
+   * **Distrito:** Comas, Lima
+   * **Screenshot:**
+     <img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Entrevistas" style="height: 150px !important; width: 300px !important;">
+     * **Video URL:**
+     * **Timing:** XX:XX / XX:XX
+     * **Resumen:**
+       Rubens, de 24 años, administra una licorería ubicada en Comas y vive con su familia. Se encarga de las compras, pedidos e inventario del negocio, donde comercializa aproximadamente 10 marcas de pisco y alrededor de 80 productos entre bebidas y otros artículos. Actualmente controla el inventario revisando directamente el almacén y utilizando un cuaderno y Excel. Comentó que en algunas ocasiones se queda sin productos solicitados por los clientes, especialmente los fines de semana, lo que puede ocasionar la pérdida de ventas. Para realizar los pedidos de reposición se basa principalmente en su experiencia, revisando las existencias y sus registros. Mantiene comunicación con sus proveedores principalmente por WhatsApp y utiliza su celular como principal herramienta digital. También probó anteriormente un sistema de inventario, pero lo consideró complicado debido a la cantidad de información que debía registrar y actualizar. Su principal necesidad es conocer con anticipación cuándo un producto está por agotarse para poder reponerlo a tiempo. Finalmente, indicó que estaría dispuesto a pagar entre 30 y 80 soles mensuales por un servicio sencillo que realmente le ayude a controlar su inventario y evitar pérdidas de ventas.
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -918,29 +918,44 @@ En resumen, los productores de pisco entrevistados muestran ....
 
 #### Segmento 2: Comercializador
 
-El análisis de las X entrevistas realizadas a comercializadores revela los siguientes patrones:
+El análisis de las 4 entrevistas realizadas a comercializadores revela los siguientes patrones:
 
 **Características demográficas (objetivas):**
-...
+
+-El 100% de los comercializadores entrevistados reside en Lima Metropolitana (distritos de San Miguel, Magdalena y Comas).
+-Las edades de los entrevistados varían entre 22 y 29 años (rango de edad de 22 a 29 años), lo que refleja un perfil joven y familiarizado con el uso de herramientas digitales cotidianas.
+-El 100% administra negocios minoristas del rubro de bebidas e inventarios (bodegas y licorerías) ofreciendo un catálogo promedio de entre 80 y 150 productos, integrando entre 8 y 10 marcas de pisco.
 
 **Características de personalidad (subjetivas):**
-...
+
+El 100% muestra interés en adoptar una solución tecnológica sencilla que les permita ahorrar tiempo y optimizar el control de sus existencias.
+El 100% busca evitar la pérdida de ventas provocada por el desabastecimiento en momentos de alta demanda (como fines de semana o feriados largos) (Necesidad de eficiencia operativa).
+El 100% experimenta frustración al quedarse sin productos clave sin haberlo notado a tiempo y tener que revisar el almacén de manera manual (Pain Point).
 
 **Habilidades y tecnología:**
-...
+
+El 100% utiliza actualmente métodos manuales e informales para el control de inventario (cuaderno y Excel), sumando en algunos casos la revisión visual directa del almacén.
+El 100% reporta quedarse sin stock de productos 1 o 2 veces al mes, detectando la falta de mercadería principalmente en el momento en que el cliente la solicita.
+El 67% (2 de 3 entrevistados) probó anteriormente un sistema de inventario digital, pero lo abandonó por la complejidad de registrar los productos y los descuadres ocasionados.
+El 100% manifiesta disposición a pagar por una solución digital sencilla, con propuestas de tarifa mensual que van de 30 a 80 soles (Marco: S/ 40-80, Carlos: S/ 50-80, Rubens: S/ 30-80).
 
 **Canales de interacción:**
-...
+El 100% utiliza WhatsApp como canal exclusivo para comunicarse con sus proveedores, gestionar pedidos y consultar promociones.
+El 100% realiza revisiones presenciales o manuales de su mercadería previa a la emisión de un nuevo pedido.
 
 **Dispositivos de preferencia:**
-...
+
+El 100% considera el smartphone como su dispositivo principal para la gestión diaria del negocio y la comunicación.
+El 33% (1 de 3 entrevistados) menciona el uso complementario de una laptop para el registro de datos en Excel.
 
 **Marcas e influencias:**
-...
+
+El 100% decide la reposición de inventario basándose en su experiencia comercial, la revisión de existencias y las ofertas/promociones que envían los proveedores.
+El 67% influye su percepción del software comercial debido a malas experiencias previas con sistemas complejos y poco adaptados a pequeños comercios.
 
 **Conclusiones del análisis:**
 
-En resumen, los comercializadores entrevistados muestran ...
+En resumen, los comercializadores entrevistados dependen de métodos manuales como el cuaderno, el Excel y la revisión física del almacén para gestionar sus inventarios. Esta falta de automatización genera desabastecimientos recurrentes (1 a 2 veces al mes) y la consecuente pérdida de ventas en fechas clave. Aunque la mayoría (67%) tuvo malas experiencias con softwares complejos en el pasado, existe un 100% de apertura a pagar entre 30 y 80 soles mensuales por una herramienta accesible desde el smartphone. La prioridad unánime del segmento es contar con un sistema intuitivo que emita alertas de reposición antes de que los productos se agoten y permita consultar el stock en tiempo real sin complicaciones operativas.
 
 ### 2.3. Needfinding
 
@@ -952,11 +967,11 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 * **Segmento 1: Productor de pisco**
 
-
+FALTAAA
 
 * **Segmento 2: Comercializador**
 
-<img src="assets/md-images-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
+<img src="assets/md-images-front-matter/UXPressia_Seg2.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
 ### 2.3.2. User Task Matrix
 
