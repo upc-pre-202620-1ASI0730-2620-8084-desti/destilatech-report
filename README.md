@@ -1089,29 +1089,55 @@ En resumen, los productores de pisco entrevistados muestran ....
 
 #### Segmento 2: Comercializador
 
-El análisis de las X entrevistas realizadas a comercializadores revela los siguientes patrones:
+El análisis de las 4 entrevistas realizadas a comercializadores revela los siguientes patrones:
 
 **Características demográficas (objetivas):**
-...
+
+-El 100% de los comercializadores entrevistados reside en Lima Metropolitana (distritos de San Miguel, Magdalena y Comas).
+
+-Las edades de los entrevistados varían entre 22 y 29 años (rango de edad de 22 a 29 años), lo que refleja un perfil joven y familiarizado con el uso de herramientas digitales cotidianas.
+
+-El 100% administra negocios minoristas del rubro de bebidas e inventarios (bodegas y licorerías) ofreciendo un catálogo promedio de entre 80 y 150 productos, integrando entre 8 y 10 marcas de pisco.
 
 **Características de personalidad (subjetivas):**
-...
+
+-El 100% muestra interés en adoptar una solución tecnológica sencilla que les permita ahorrar tiempo y optimizar el control de sus existencias.
+
+-El 100% busca evitar la pérdida de ventas provocada por el desabastecimiento en momentos de alta demanda (como fines de semana o feriados largos) (Necesidad de eficiencia operativa).
+
+-El 100% experimenta frustración al quedarse sin productos clave sin haberlo notado a tiempo y tener que revisar el almacén de manera manual (Pain Point).
 
 **Habilidades y tecnología:**
-...
+
+-El 100% utiliza actualmente métodos manuales e informales para el control de inventario (cuaderno y Excel), sumando en algunos casos la revisión visual directa del almacén.
+
+-El 100% reporta quedarse sin stock de productos 1 o 2 veces al mes, detectando la falta de mercadería principalmente en el momento en que el cliente la solicita.
+
+-El 67% (2 de 3 entrevistados) probó anteriormente un sistema de inventario digital, pero lo abandonó por la complejidad de registrar los productos y los descuadres ocasionados.
+
+-El 100% manifiesta disposición a pagar por una solución digital sencilla, con propuestas de tarifa mensual que van de 30 a 80 soles (Marco: S/ 40-80, Carlos: S/ 50-80, Rubens: S/ 30-80).
 
 **Canales de interacción:**
-...
+
+-El 100% utiliza WhatsApp como canal exclusivo para comunicarse con sus proveedores, gestionar pedidos y consultar promociones.
+
+-El 100% realiza revisiones presenciales o manuales de su mercadería previa a la emisión de un nuevo pedido.
 
 **Dispositivos de preferencia:**
-...
+
+-El 100% considera el smartphone como su dispositivo principal para la gestión diaria del negocio y la comunicación.
+
+-El 33% (1 de 3 entrevistados) menciona el uso complementario de una laptop para el registro de datos en Excel.
 
 **Marcas e influencias:**
-...
+
+-El 100% decide la reposición de inventario basándose en su experiencia comercial, la revisión de existencias y las ofertas/promociones que envían los proveedores.
+
+-El 67% influye su percepción del software comercial debido a malas experiencias previas con sistemas complejos y poco adaptados a pequeños comercios.
 
 **Conclusiones del análisis:**
 
-En resumen, los comercializadores entrevistados muestran ...
+En resumen, los comercializadores entrevistados dependen de métodos manuales como el cuaderno, el Excel y la revisión física del almacén para gestionar sus inventarios. Esta falta de automatización genera desabastecimientos recurrentes (1 a 2 veces al mes) y la consecuente pérdida de ventas en fechas clave. Aunque la mayoría (67%) tuvo malas experiencias con softwares complejos en el pasado, existe un 100% de apertura a pagar entre 30 y 80 soles mensuales por una herramienta accesible desde el smartphone. La prioridad unánime del segmento es contar con un sistema intuitivo que emita alertas de reposición antes de que los productos se agoten y permita consultar el stock en tiempo real sin complicaciones operativas.
 
 ### 2.3. Needfinding
 
@@ -1123,20 +1149,180 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 * **Segmento 1: Productor de pisco**
 
-
+Falta
 
 * **Segmento 2: Comercializador**
 
-<img src="assets/md-images-front-matter/XX.png" alt="User Persona" style="height: 150px !important; width: 150px !important;">
+<img src="assets/md-images-front-matter/UXPressia_Seg2.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
 ### 2.3.2. User Task Matrix
 
 La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
 
+| Tarea | **Productor de pisco** (Frecuencia / Importancia) | **Comercializador** (Frecuencia / Importancia) |
+| :--- |:-------------------------------------------------:|:----------------------------------------:|
+| **Monitorear variables IoT (Temperatura, pH, Nivel)** |                  Horaria / Alta                   |               N/A / N/A               |
+| **Atender alertas críticas de producción / stock** |                    Horaria / Alta                    |              Diaria / Alta               |
+| **Consultar Dashboard General de estado del negocio** |                   Diaria / Alta                   |               Diaria / Alta                |
+| **Registrar y actualizar lotes de producción** |                   Mensual / Alta                    |              N/A / N/A               |
+| **Consultar stock disponible en almacén/tienda** |                   Diaria / Alta                    |               Diaria / Alta                |
+| **Registrar entradas y salidas de inventario (Kardex)** |                    Diaria / Alta                    |               Diaria / Alta                |
+| **Registrar clientes y pedidos de venta** |                    Diaria / Media                    |               N/A / N/A               |
+| **Generar y emitir pedidos de reposición de stock** |                   N/A / N/A                    |              Semanal / Alta               |
+| **Revisar estimaciones/predicciones de agotamiento de stock** |                   Semanal / Media                   |               Semanal / Media               |
+| **Analizar indicadores históricos de producción y venta** |                    Mensual / Media                    |               Mensual / Media                |
+| **Configurar parámetros de alertas y umbrales IoT** |                    Ocasional / Media                    |              N/A / N/A               |
+| **Gestionar suscripción y usuarios del sistema** |                    Ocasional / Baja                    |              Ocasional / Baja               |
+
+
+Tareas de Alta Frecuencia y Alta Prioridad (Núcleo del MVP):
+
+-Para el Productor, el monitoreo en tiempo real de las variables de fermentación/destilación (IoT) y el control de inventario/lotes son operaciones críticas y de alta frecuencia. La plataforma debe garantizar accesibilidad inmediata desde el Dashboard principal a estos módulos.
+
+-Para el Comercializador, la consulta diaria de existencias, el registro de movimientos y la recepción de alertas de bajo stock representan el núcleo de sus interacciones diarias.
+
+Diferenciación de Experiencia por Rol:
+
+-Las tareas relacionadas al seguimiento de variables físicas de producción (temperatura, nivel) y la gestión por lotes son exclusivas del perfil Productor, confirmando la necesidad de vistas y paneles de navegación segmentados (Dashboards específicos).
+
+-El Comercializador centra su interacción en el flujo de reabastecimiento (pedidos de reposición y control rápido de stock), lo cual demanda un flujo UX optimizado para realizar operaciones operativas en pocos clics.
+
 ### 2.3.3. User Journey Mapping
 
 Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos, sin la existencia de la solución Destilatech. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) que la plataforma debe abordar.
 
+
+* **Segmento 1: Productor de pisco**
+
+
+
+* **Segmento 2: Comercializador**
+
+El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietario de una licorería y bodega en Lima, para gestionar el stock de sus productos y realizar los pedidos de reposición a sus proveedores. El recorrido muestra cómo Carlos depende de métodos manuales e informales (cuaderno, memoria, Excel) y enfrenta perdidas económicas por quiebres de stock en momentos de alta demanda.
+
+<img src="assets/md-images-front-matter/user_journey_map_2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
+
 ### 2.3.4. Empathy Mapping
 
 Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
+
+
+### 2.4. Big Picture EventStorming
+
+
+
+### 2.5. Ubiquitous Language
+
+
+
+
+## Capítulo III: Requirements Specification
+
+### 3.1. User Stories
+
+En esta sección, profundizaremos en la definición y elaboración de las User Stories relacionadas con nuestro proyecto. Las historias de usuario son una herramienta fundamental en el desarrollo de software ágil, conceptualizadas formalmente bajo los principios propuestos por Cohn (2004), diseñadas para asegurar que las funcionalidades del sistema aporten valor directo a los objetivos del usuario final.
+
+**EPICS**
+
+| Epic ID | Título | Descripción | Criterio de Aceptación |
+| :--- | :--- | :--- | :--- |
+| EP01 | Autenticación y cuentas | Registro, inicio de sesión y gestión del periodo de prueba gratuito. | Given que un visitante completa el registro con datos válidos, When confirma el formulario, Then el sistema crea la cuenta y activa el periodo de prueba de 14 días.<br>Given que un usuario intenta acceder a una función restringida sin sesión iniciada, When lo intenta, Then el sistema lo redirige a la pantalla de inicio de sesión. |
+| EP02 | Dashboard | Vistas principales adaptadas por tipo de usuario. | Given que un usuario autenticado ingresa a la plataforma, When accede a su cuenta, Then el sistema muestra el dashboard correspondiente a su tipo de usuario.<br>Given que un usuario no tiene datos registrados aún, When accede a su dashboard, Then el sistema muestra un estado vacío guiándolo a registrar su primera información. |
+| EP03 | Gestión de lotes de producción | Registro y seguimiento de lotes de producción. | Given que un productor gestiona un lote, When lo registra y actualiza su estado, Then el sistema mantiene un historial trazable del lote.<br>Given que un productor consulta un lote existente, When lo selecciona, Then el sistema muestra su historial completo de cambios. |
+| EP04 | Monitoreo IoT | Visualización y configuración de variables de proceso (simuladas). | Given que un productor tiene un lote activo con variables configuradas, When se recibe una lectura simulada fuera de rango, Then el sistema genera una alerta de condición anómala.<br>Given que un productor consulta el monitoreo de un lote, When accede al módulo, Then visualiza las lecturas simuladas más recientes. |
+| EP05 | Gestión de inventario | Catálogo de productos, movimientos y consulta de stock. | Given que un usuario registra productos y movimientos, When consulta su inventario, Then el sistema refleja el stock actualizado.<br>Given que un movimiento dejaría el stock en negativo, When se intenta registrar, Then el sistema lo rechaza con una advertencia. |
+| EP06 | Sistema de alertas | Umbrales de stock y gestión de alertas. | Given que el stock de un producto llega a su umbral mínimo, When se actualiza el inventario, Then el sistema genera una alerta automática de stock bajo.<br>Given que un usuario atiende una alerta, When la marca como resuelta, Then el sistema actualiza su estado. |
+| EP07 | Clientes y pedidos | Gestión comercial básica de clientes y pedidos. | Given que un usuario registra un pedido de un cliente, When lo confirma, Then el sistema descuenta el stock correspondiente y lo agrega al historial de pedidos.<br>Given que un pedido excede el stock disponible, When se intenta confirmar, Then el sistema muestra una advertencia antes de continuar. |
+| EP08 | Estimaciones y reposición | Analítica predictiva básica sobre inventario y reposición. | Given que un producto cuenta con historial suficiente de movimientos, When un usuario consulta su ficha, Then el sistema muestra una estimación de reposición.<br>Given que un usuario consulta indicadores históricos, When accede al módulo, Then visualiza la evolución de su inventario/producción. |
+| EP09 | Landing Page (visitante) | Sitio web estático de Destilatech. | Given que un visitante ingresa al sitio web, When navega por sus secciones, Then encuentra la propuesta de valor, planes, funcionalidades y un call-to-action hacia el registro.<br>Given que un visitante accede desde un dispositivo móvil, When navega el landing page, Then la interfaz se adapta correctamente a su pantalla. |
+| EP10 | Technical Stories (RESTful API) | Endpoints necesarios para soportar las features anteriores. | Given que la Web Application requiere autenticar usuarios y gestionar inventario, When consume los endpoints del API, Then recibe respuestas consistentes con los códigos HTTP y datos esperados.<br>Given que se envía una lectura IoT simulada fuera de rango, When el API la procesa, Then almacena la lectura y genera la alerta correspondiente. |
+
+
+**USER STORIES**
+
+
+| Epic/Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| US01 | Registrarme como productor o comercializador | Como visitante quiero registrar una cuenta indicando mi tipo de negocio para comenzar mi periodo de prueba gratuito. | Given que soy un visitante no registrado, When completo el formulario con datos válidos y selecciono mi tipo de negocio, Then el sistema crea mi cuenta y activa un periodo de prueba de 14 días.<br>Given que el correo ya está en uso, When envío el formulario, Then el sistema muestra un error y no crea una cuenta duplicada. | EP01 |
+| US02 | Iniciar sesión | Como usuario registrado quiero iniciar sesión para acceder a las funcionalidades de mi tipo de usuario. | Given que tengo una cuenta activa, When ingreso credenciales correctas, Then el sistema me redirige al dashboard de mi tipo de usuario.<br>Given que ingreso una contraseña incorrecta, When intento iniciar sesión, Then el sistema muestra un error sin indicar el dato incorrecto. | EP01 |
+| US03 | Recibir aviso de fin de periodo de prueba | Como usuario en prueba quiero recibir un aviso antes de que finalice mi periodo gratuito para decidir si me suscribo. | Given que mi prueba finaliza en 3 días, When inicio sesión, Then el sistema muestra un aviso con los días restantes y la opción de suscribirme.<br>Given que mi prueba finalizó sin suscripción, When intento acceder a una función restringida, Then el sistema me redirige a los planes de suscripción. | EP01 |
+| US04 | Ver dashboard de producción | Como productor quiero ver un dashboard con el estado general de mi producción e inventario. | Given que soy productor autenticado, When accedo al dashboard, Then visualizo lotes activos, alertas pendientes y niveles de inventario.<br>Given que no tengo lotes ni inventario, When accedo al dashboard, Then el sistema muestra un estado vacío con guía para mi primer lote. | EP02 |
+| US05 | Ver dashboard comercial | Como comercializador quiero ver un dashboard con el estado de mi inventario y pedidos. | Given que soy comercializador autenticado, When accedo al dashboard, Then visualizo productos con stock bajo, alertas pendientes y pedidos recientes. | EP02 |
+| US06 | Registrar lote de producción | Como productor quiero registrar un nuevo lote para llevar un historial organizado de mis procesos. | Given que soy productor autenticado, When registro un lote con fecha, producto y cantidad estimada, Then el sistema lo guarda y lo muestra en mis lotes activos.<br>Given que no indico la fecha de inicio, When envío el formulario, Then el sistema muestra un error y no guarda el lote. | EP03 |
+| US07 | Actualizar estado de un lote | Como productor quiero actualizar el estado de un lote para reflejar el avance real del proceso. | Given que tengo un lote registrado, When actualizo su estado a la siguiente etapa, Then el sistema registra la fecha del cambio y actualiza su historial. | EP03 |
+| US08 | Consultar historial de un lote | Como productor quiero consultar el historial completo de un lote para revisar su trazabilidad. | Given que tengo lotes registrados, When selecciono un lote, Then el sistema muestra todos sus cambios de estado y variables monitoreadas. | EP03 |
+| US09 | Visualizar variables de proceso | Como productor quiero visualizar las variables de un lote (simuladas) para supervisar el proceso a distancia. | Given que tengo un lote en fermentación/destilación, When accedo al monitoreo, Then visualizo las lecturas simuladas más recientes de ese lote. | EP04 |
+| US10 | Configurar rango normal de una variable | Como productor quiero definir el rango normal de una variable para que el sistema detecte anomalías automáticamente. | Given que tengo un lote activo, When configuro un rango mínimo y máximo, Then el sistema guarda la configuración y la aplica a las siguientes lecturas. | EP04 |
+| US11 | Recibir notificación de condición anómala | Como productor quiero ser notificado cuando una variable salga del rango normal para actuar a tiempo. | Given que configuré un rango normal, When una lectura simulada lo excede, Then el sistema genera una alerta visible en el dashboard y en el módulo de alertas. | EP04 |
+| US12 | Registrar producto | Como productor o comercializador quiero registrar mis productos para tener un catálogo organizado. | Given que soy usuario autenticado, When registro un producto con nombre, presentación y unidad, Then el sistema lo agrega a mi catálogo. | EP05 |
+| US13 | Registrar movimiento de inventario | Como productor o comercializador quiero registrar entradas/salidas de un producto para mantener mi stock actualizado. | Given que tengo un producto registrado, When registro un movimiento con una cantidad, Then el sistema actualiza el stock disponible.<br>Given que la salida es mayor al stock disponible, When envío el movimiento, Then el sistema muestra una advertencia antes de confirmar. | EP05 |
+| US14 | Consultar stock disponible | Como productor o comercializador quiero consultar el stock disponible sin revisar físicamente el almacén. | Given que tengo productos con movimientos registrados, When accedo al inventario, Then visualizo el stock actual ordenado por nivel de existencias. | EP05 |
+| US15 | Configurar umbral de stock bajo | Como productor o comercializador quiero definir un umbral mínimo por producto para recibir alertas antes de quedarme sin stock. | Given que tengo un producto registrado, When configuro un umbral mínimo, Then el sistema genera una alerta automática cuando el stock llegue o caiga por debajo de ese umbral. | EP06 |
+| US16 | Visualizar y atender alertas | Como usuario quiero visualizar mis alertas pendientes y marcarlas como atendidas. | Given que tengo alertas generadas, When accedo al módulo de alertas, Then visualizo la lista ordenada por fecha, pendientes y atendidas.<br>Given que reviso una alerta pendiente, When la marco como atendida, Then el sistema actualiza su estado. | EP06 |
+| US17 | Registrar cliente | Como productor o comercializador quiero registrar información básica de mis clientes. | Given que soy usuario autenticado, When registro un cliente con nombre y contacto, Then el sistema lo agrega a mi lista de clientes. | EP07 |
+| US18 | Registrar pedido | Como productor o comercializador quiero registrar un pedido de un cliente para llevar control de mis ventas. | Given que tengo clientes y productos registrados, When registro un pedido con cliente, productos y cantidades, Then el sistema lo guarda y descuenta el stock correspondiente.<br>Given que el pedido excede el stock disponible, When intento confirmarlo, Then el sistema muestra una advertencia antes de continuar. | EP07 |
+| US19 | Consultar historial de pedidos | Como productor o comercializador quiero consultar mis pedidos anteriores. | Given que tengo pedidos registrados, When accedo al módulo de pedidos, Then visualizo la lista con fecha, cliente, productos y estado. | EP07 |
+| US20 | Ver estimación de reposición | Como productor o comercializador quiero ver una estimación de cuándo reponer un producto según mi historial. | Given que un producto tiene historial suficiente, When accedo a su ficha, Then el sistema muestra una estimación de fecha o cantidad de reposición.<br>Given que no tiene historial suficiente, When accedo a su ficha, Then el sistema indica que aún no hay datos suficientes. | EP08 |
+| US21 | Ver indicadores históricos | Como productor o comercializador quiero visualizar indicadores históricos de inventario/producción. | Given que tengo historial registrado, When accedo a indicadores, Then visualizo gráficos de evolución en el periodo seleccionado. | EP08 |
+| US22 | Conocer la propuesta de valor | Como visitante quiero conocer qué ofrece Destilatech para decidir si me interesa registrarme. | Given que soy visitante, When ingreso a la página de inicio, Then visualizo la propuesta de valor y las capacidades principales. | EP09 |
+| US23 | Conocer planes y periodo de prueba | Como visitante quiero conocer los planes y el trial gratuito antes de registrarme. | Given que soy visitante, When accedo a la sección de planes, Then visualizo los planes, precios y duración del periodo de prueba. | EP09 |
+| US24 | Registrarme desde la landing page | Como visitante productor o comercializador quiero acceder al registro desde la página de inicio. | Given que soy visitante, When hago clic en el call-to-action principal, Then el sistema me redirige al formulario de registro. | EP09 |
+| US25 | Conocer casos de uso por segmento | Como visitante de un segmento quiero ver contenido específico sobre cómo Destilatech resuelve mis necesidades. | Given que soy visitante, When navego a la sección de productores, Then visualizo contenido sobre monitoreo IoT, lotes e inventario.<br>Given que soy visitante, When navego a la sección de comercializadores, Then visualizo contenido sobre inventario, pedidos y alertas de reposición. | EP09 |
+| US26 | Endpoint de autenticación | Como Developer quiero un endpoint de autenticación que devuelva un token para que la Web Application autentique usuarios. | Given un POST /auth/login con credenciales válidas, When el servicio las valida, Then responde 200 con un token y datos básicos del usuario.<br>Given credenciales inválidas, When el servicio las valida, Then responde 401 sin indicar el dato incorrecto. | EP10 |
+| US27 | Endpoint de movimientos de inventario | Como Developer quiero un endpoint que registre movimientos de inventario de forma consistente. | Given un POST /inventory/movements válido, When el servicio lo procesa, Then responde 201 con el movimiento y el nuevo stock.<br>Given un movimiento que deja el stock negativo, When el servicio lo valida, Then responde 409 y no lo aplica. | EP10 |
+| US28 | Endpoint de lecturas IoT simuladas | Como Developer quiero un endpoint que reciba lecturas simuladas y las evalúe contra los rangos configurados. | Given un POST /batches/{id}/readings dentro de rango, When se procesa, Then responde 201 y almacena la lectura sin alerta.<br>Given una lectura fuera de rango, When se procesa, Then responde 201, la almacena y genera una alerta asociada al lote. | EP10 |
+| US29 | Endpoint de estimaciones de reposición | Como Developer quiero un endpoint que devuelva la estimación de reposición de un producto. | Given un GET /products/{id}/replenishment-estimate con historial suficiente, When se calcula, Then responde 200 con la estimación.<br>Given historial insuficiente, When se evalúa, Then responde 200 indicando que no hay datos suficientes. | EP10 |
+| US30 | Implementación de la sección del Header | Como Developer quiero implementar la sección Header del landing page para que los visitantes identifiquen la marca y naveguen entre las secciones principales. | Given que un visitante carga el landing page, When la página termina de renderizar, Then el Header muestra el logo de Destilatech y los enlaces de navegación a las secciones principales.<br>Given que un visitante hace clic en un enlace del Header, When la página se desplaza, Then es llevado a la sección correspondiente sin recargar la página. | EP09 |
+| US31 | Implementación de la sección Description | Como Developer quiero implementar la sección Description para que los visitantes entiendan qué es Destilatech y a quién está dirigido. | Given que un visitante llega a la sección Description, When la visualiza, Then encuentra el nombre del producto, su propuesta de valor y los segmentos objetivo (productor y comercializador). | EP09 |
+| US32 | Implementación de la sección Goals | Como Developer quiero implementar la sección Goals para comunicar los principales beneficios que ofrece Destilatech. | Given que un visitante llega a la sección Goals, When la visualiza, Then encuentra los beneficios principales de la plataforma (monitoreo, inventario, alertas, estimaciones) presentados de forma clara. | EP09 |
+| US33 | Implementación de la sección Pricing | Como Developer quiero implementar la sección Pricing para que los visitantes conozcan los planes de suscripción y el periodo de prueba gratuito. | Given que un visitante llega a la sección Pricing, When la visualiza, Then encuentra los planes disponibles, sus precios y la duración del periodo de prueba gratuito.<br>Given que un visitante selecciona un plan, When hace clic en su call-to-action, Then es redirigido al formulario de registro con el plan preseleccionado. | EP09 |
+| US34 | Implementación de la sección Impact | Como Developer quiero implementar la sección Impact para mostrar cifras que respalden la relevancia de Destilatech en el sector pisquero. | Given que un visitante llega a la sección Impact, When la visualiza, Then encuentra cifras del sector pisquero peruano (empresas formales, producción anual) que respaldan la propuesta. | EP09 |
+| US35 | Implementación de la sección Platform Features | Como Developer quiero implementar la sección Platform Features para mostrar las capacidades de la plataforma diferenciadas por segmento. | Given que un visitante llega a la sección Platform Features, When la visualiza, Then encuentra las funcionalidades principales agrupadas para productor y para comercializador. | EP09 |
+| US36 | Implementación de la sección del Footer | Como Developer quiero implementar la sección Footer para que los visitantes encuentren información de contacto y enlaces adicionales. | Given que un visitante llega al final del landing page, When visualiza el Footer, Then encuentra información de contacto, enlaces legales/redes sociales y el call-to-action de registro. | EP09 |
+| US37 | Implementación de la adaptabilidad móvil | Como Developer quiero implementar la adaptabilidad móvil del landing page para que la experiencia sea consistente en distintos tamaños de pantalla. | Given que un visitante accede al landing page desde un smartphone, When la página carga, Then todas las secciones se adaptan correctamente sin elementos cortados o desbordados.<br>Given que un visitante accede desde una tablet o desktop, When la página carga, Then el diseño aprovecha el espacio disponible manteniendo la misma jerarquía de contenido. | EP09 |
+
+
+### 3.2. Impact Mapping
+
+
+### 3.3. Product Backlog
+
+| # Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | US30 | Implementación de la sección del Header | Header con navegación del landing page. | 2 |
+| 2 | US31 | Implementación de la sección Description | Sección de propuesta de valor. | 2 |
+| 3 | US32 | Implementación de la sección Goals | Sección de beneficios principales. | 2 |
+| 4 | US33 | Implementación de la sección Pricing | Sección de planes y trial gratuito. | 3 |
+| 5 | US34 | Implementación de la sección Impact | Sección de cifras del sector pisquero. | 2 |
+| 6 | US35 | Implementación de la sección Platform Features | Sección de funcionalidades por segmento. | 3 |
+| 7 | US36 | Implementación de la sección del Footer | Footer con contacto y enlaces. | 1 |
+| 8 | US37 | Implementación de la adaptabilidad móvil | Responsividad de todas las secciones del landing page. | 3 |
+| 9 | US22 | Conocer la propuesta de valor | Contenido de la sección principal del landing page. | 2 |
+| 10 | US23 | Conocer planes y periodo de prueba | Contenido de planes y trial gratuito. | 2 |
+| 11 | US25 | Conocer casos de uso por segmento | Contenido diferenciado por segmento. | 3 |
+| 12 | US24 | Registrarme desde la landing page | Call-to-action hacia el registro. | 1 |
+| 13 | US01 | Registrarme como productor o comercializador | Registro de cuenta con periodo de prueba. | 3 |
+| 14 | US26 | Endpoint de autenticación | API: login con emisión de token. | 3 |
+| 15 | US02 | Iniciar sesión | Login de usuario registrado. | 2 |
+| 16 | US04 | Ver dashboard de producción | Dashboard adaptado al productor. | 5 |
+| 17 | US05 | Ver dashboard comercial | Dashboard adaptado al comercializador. | 5 |
+| 18 | US12 | Registrar producto | Catálogo de productos. | 2 |
+| 19 | US27 | Endpoint de movimientos de inventario | API: registro consistente de movimientos de stock. | 3 |
+| 20 | US13 | Registrar movimiento de inventario | Entradas/salidas de stock. | 3 |
+| 21 | US14 | Consultar stock disponible | Vista de stock actual por producto. | 2 |
+| 22 | US06 | Registrar lote de producción | Alta de un nuevo lote. | 3 |
+| 23 | US15 | Configurar umbral de stock bajo | Umbral mínimo por producto. | 2 |
+| 24 | US16 | Visualizar y atender alertas | Módulo de alertas. | 3 |
+| 25 | US07 | Actualizar estado de un lote | Seguimiento del avance del lote. | 2 |
+| 26 | US17 | Registrar cliente | Alta de clientes. | 2 |
+| 27 | US18 | Registrar pedido | Registro de pedido con descuento de stock. | 5 |
+| 28 | US08 | Consultar historial de un lote | Trazabilidad de un lote. | 2 |
+| 29 | US19 | Consultar historial de pedidos | Listado de pedidos anteriores. | 2 |
+| 30 | US28 | Endpoint de lecturas IoT simuladas | API: ingestión y evaluación de lecturas. | 3 |
+| 31 | US09 | Visualizar variables de proceso | Monitoreo IoT en el lote. | 5 |
+| 32 | US10 | Configurar rango normal de una variable | Umbrales de variables de proceso. | 3 |
+| 33 | US11 | Recibir notificación de condición anómala | Alerta de anomalía en producción. | 3 |
+| 34 | US29 | Endpoint de estimaciones de reposición | API: cálculo de estimación de reposición. | 3 |
+| 35 | US20 | Ver estimación de reposición | Estimación en la ficha de inventario. | 5 |
+| 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
+| 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
