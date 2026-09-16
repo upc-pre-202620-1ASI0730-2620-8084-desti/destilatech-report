@@ -1206,10 +1206,49 @@ El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietari
 
 Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
 
+* **Segmento 1: Productor de pisco**
+
+
+
+* **Segmento 2: Comercializador**
+
+El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietario de una licorería y bodega en Lima, para gestionar el stock de sus productos y realizar los pedidos de reposición a sus proveedores. El recorrido muestra cómo Carlos depende de métodos manuales e informales (cuaderno, memoria, Excel) y enfrenta perdidas económicas por quiebres de stock en momentos de alta demanda.
+
+<img src="assets/md-images-front-matter/Empathy_Mapping_2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
+
 
 ### 2.4. Big Picture EventStorming
 
 
+Según Qlerify (s.f.), el Big Picture Event Storming constituye una de las variantes del Event Storming, técnica de descubrimiento de dominio orientada a que equipos multidisciplinarios —negocio y tecnología— construyan de forma colaborativa una línea de tiempo de los eventos relevantes de un proceso, utilizando notas adhesivas de colores sobre una superficie compartida. Esta variante fue originalmente propuesta por Alberto Brandolini (2018) como punto de partida de Domain-Driven Design, con el objetivo de explorar dominios de negocio complejos sin quedar limitados por la estructura de un modelo de datos preexistente. Chatuev (2020) señala además que este ejercicio permite identificar de manera temprana el lenguaje ubicuo del dominio y sentar las bases para la posterior delimitación de Bounded Contexts.
+ 
+Para Destilatech, se aplicó esta técnica con el fin de representar de manera visual los dos flujos principales de la plataforma —el del productor de pisco y el del comercializador— identificando los eventos de dominio, los objetos relevantes, los sistemas externos involucrados y los puntos de incertidumbre o fricción del proceso, insumo directo para la posterior definición de los Bounded Contexts del sistema.
+ 
+#### 2.4.1. Metodología aplicada
+ 
+La construcción del tablero siguió la guía de Philippe Bourgau (2022) en su artículo *"Step by Step Guide to run your Big Picture Event Storming"*, adaptando sus pasos al contexto del proyecto: (1) definición del alcance del proceso a explorar (producción y comercialización de pisco), (2) identificación libre y cronológica de los eventos de dominio relevantes para cada flujo, (3) señalización de los puntos donde el equipo tenía dudas o vacíos de información (hotspots), (4) incorporación de los objetos del dominio y los sistemas externos que participan o disparan eventos, y (5) agrupación de los eventos en posibles Bounded Contexts como cierre del ejercicio.
+ 
+Para la notación de colores se consultó adicionalmente el material teórico de Draft.io (s.f.) sobre Event Storming, que describe el uso de notas de distintos colores según el tipo de elemento representado. Con base en ello, para Destilatech se definió la siguiente convención de cuatro categorías.
+ 
+**Big Picture Event Storming — Leyenda**
+ 
+- **Eventos del dominio (naranja):** hechos relevantes que ya ocurrieron en el negocio, redactados como objeto + verbo en participio pasado (p. ej. "Lote de producción registrado").
+- **Objetos del dominio (amarillo claro):** entidades o conceptos relevantes del proceso sobre los que ocurren los eventos (p. ej. "Lote de Producción", "Inventario de Productor").
+- **Sistemas externos (rosa):** sistemas ajenos a Destilatech que disparan o reciben eventos (p. ej. sensor IoT simulado, pasarela de pago, WhatsApp).
+- **Preguntas / hotspots (rojo):** dudas, vacíos de información o puntos de fricción identificados durante el ejercicio, pendientes de profundizar (p. ej. "¿Qué pasarela de pago se integrará para las suscripciones?").
+#### 2.4.2. Big Picture Event Storming — Mapa
+ 
+<img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture 1" style="width: 110%; max-width: 1200px; height: 500px;">
+
+<img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture 2" style="width: 110%; max-width: 1200px; height: 500px;">
+
+**Interpretación de hallazgos clave**
+ 
+**Interpretación por función de notas.** Las notas naranjas trazan la línea de tiempo de ambos flujos: en el del productor, desde la creación de la cuenta y el inicio del período de prueba hasta el registro del lote, el monitoreo de fermentación, la destilación, el embotellado y la actualización de inventario; en el del comercializador, desde la creación de cuenta hasta el registro de ventas, la actualización de stock y la generación de pedidos a proveedores. Las notas amarillo claro identifican los objetos de dominio que persisten a lo largo del proceso (Lote de Producción, Producto Embotellado, Inventario de Productor, Producto, Stock del Producto, Pedido a Proveedor, entre otros), mientras que las notas rosa evidencian que Destilatech no opera de forma aislada, sino que depende de sistemas externos como el sensor IoT (simulado en el alcance académico), la pasarela de pago para las suscripciones y WhatsApp como canal informal de coordinación de pedidos.
+ 
+**Hallazgos clave del análisis.** Las notas rojas concentraron los principales puntos de incertidumbre del dominio: la ausencia de monitoreo automático dificulta la detección temprana de condiciones anómalas, el conteo manual de stock genera errores en el flujo del comercializador, y persisten dudas sobre la confiabilidad de las estimaciones de reposición generadas por el sistema. Se identificaron también dos fricciones adicionales relevantes para el modelo de negocio: la falta de definición sobre la pasarela de pago a integrar para las suscripciones, y la ausencia de un mecanismo formal de conciliación de inventario cuando un mismo proveedor también utiliza Destilatech, lo que podría derivar en registros duplicados o inconsistentes entre cuentas.
+ 
+**Conclusiones.** El ejercicio de Big Picture Event Storming permitió confirmar que Destilatech no corresponde a un dominio único y monolítico, sino a un ecosistema modular compuesto por seis Bounded Contexts: Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Esta separación —surgida directamente de la agrupación natural de eventos, objetos y sistemas externos identificados en el tablero— sienta las bases para el diseño de una arquitectura de software desacoplada, en la que cada contexto podrá evolucionar de forma independiente y facilitar la futura integración con dispositivos IoT reales.
 
 ### 2.5. Ubiquitous Language
 
