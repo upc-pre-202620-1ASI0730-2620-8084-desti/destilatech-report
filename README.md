@@ -1227,9 +1227,9 @@ Para la notación de colores se consultó adicionalmente el material teórico de
 - **Preguntas / hotspots (rojo):** dudas, vacíos de información o puntos de fricción identificados durante el ejercicio, pendientes de profundizar (p. ej. "¿Qué pasarela de pago se integrará para las suscripciones?").
 #### 2.4.2. Big Picture Event Storming — Mapa
  
-<img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture 1" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture 1" style="width: 110%; max-width: 1200px; height: 500px;">
 
-<img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture 2" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture 2" style="width: 110%; max-width: 1200px; height: 500px;">
 
 **Interpretación de hallazgos clave**
  
