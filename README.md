@@ -1252,7 +1252,302 @@ Para la notación de colores se consultó adicionalmente el material teórico de
 
 ### 2.5. Ubiquitous Language
 
+El siguiente glosario define los términos y conceptos clave del dominio de negocio de Destilatech, asegurando una comunicación clara y sin ambigüedades entre todos los miembros del equipo y stakeholders. Los términos están presentados en inglés (con el equivalente en español entre paréntesis) y sus definiciones están redactadas en español.
 
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Identity & Access Management</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>User</td>
+            <td>Usuario</td>
+            <td>Persona autenticada que interactúa con la plataforma, categorizada según su rol como Producer (Productor) o Merchant (Comercializador).</td>
+        </tr>
+        <tr>
+            <td>Register User</td>
+            <td>Registrar usuario</td>
+            <td>Proceso mediante el cual una persona crea una nueva cuenta en la plataforma especificando su tipo de negocio.</td>
+        </tr>
+        <tr>
+            <td>Login</td>
+            <td>Iniciar sesión</td>
+            <td>Proceso de autenticación de credenciales para acceder a los recursos autorizados del sistema..</td>
+        </tr>
+        <tr>
+            <td>Trial Period</td>
+            <td>Periodo de prueba</td>
+            <td>Intervalo temporal de uso gratuito de hasta 14 días otorgado a nuevas cuentas para evaluar las capacidades de la plataforma.</td>
+        </tr>
+        <tr>
+            <td>Subscription</td>
+            <td>Suscripción</td>
+            <td>Plan de pago recurrente que otorga a un usuario o empresa derecho continuo de uso del software B2B SaaS.</td>
+        </tr>
+        <tr>
+            <td>Payment Gateway</td>
+            <td>Usuario registrado</td>
+            <td>Hecho ocurrido cuando un usuario completa exitosamente el registro de su cuenta.</td>
+        </tr>
+        <tr>
+            <td>Subscription Started</td>
+            <td>Suscripción iniciada</td>
+            <td>Evento de Dominio: Hecho que confirma el pago exitoso y la activación formal del plan de suscripción contratado.</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Production & IoT Monitoring</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Producer</td>
+            <td>Productor</td>
+            <td>Usuario representante de una bodega o empresa dedicada a la elaboración y transformación del pisco.</td>
+        </tr>
+        <tr>
+            <td>Production Batch</td>
+            <td>Lote de producción</td>
+            <td>Unidad trazable e identificable de producción de pisco que evoluciona a través de diferentes fases operativas.</td>
+        </tr>
+        <tr>
+            <td>Fermentation</td>
+            <td>Fermentación</td>
+            <td>Etapa en la que los azúcares presentes en el mosto de uva pisquera se transforman bioquímicamente en alcohol.</td>
+        </tr>
+        <tr>
+            <td>Distillation</td>
+            <td>Destilación</td>
+            <td>Etapa en la que el mosto fermentado se procesa en el alambique para separar y extraer el destilado de pisco.</td>
+        </tr>
+        <tr>
+            <td>Resting</td>
+            <td>Reposo</td>
+            <td>Período en el cual el pisco reposa en tanques inalterables para estabilizar sus propiedades organolépticas antes del embotellado.</td>
+        </tr>
+        <tr>
+            <td>IoT Sensor</td>
+            <td>Sensor IoT</td>
+            <td>Componente físico o simulador de telemetría que captura y transmite datos en tiempo real sobre las variables del proceso.</td>
+        </tr>
+        <tr>
+            <td>Process Variable</td>
+            <td>Variable de proceso</td>
+            <td>Métrica física o química monitoreada durante la producción (ej. temperatura, pH, densidad, grados alcohólicos).</td>
+        </tr>
+        <tr>
+            <td>Normal Range</td>
+            <td>Rango normal</td>
+            <td>Intervalo operativo con límites mínimo y máximo aceptables dentro del cual una variable opera de manera segura.</td>
+        </tr>
+        <tr>
+            <td>Anomalous Reading</td>
+            <td>Lectura anómala</td>
+            <td>Muestra o dato transmitido por un sensor IoT que sobrepasa los umbrales definidos en el rango normal.</td>
+        </tr>
+        <tr>
+            <td>Batch Registered</td>
+            <td>Lote registrado</td>
+            <td>Notificación de que se ha inicializado un nuevo lote de producción en el sistema.</td>
+        <tr>
+            <td>Batch Status Updated</td>
+            <td>Estado de lote actualizado</td>
+            <td>Registro del cambio de estado o avance del lote a una nueva etapa dentro de la cadena productiva.</td>
+        </tr>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Inventory & Stock Management</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Merchant</td>
+            <td>Comercializador</td>
+            <td>Usuario perteneciente a licorerías, bodegas, minimarkets o distribuidoras que comercializan el pisco terminado.</td>
+        </tr>
+        <tr>
+            <td>Product</td>
+            <td>Producto</td>
+            <td>Bebida comercializable registrada en catálogo, caracterizada por su variedad de pisco, marca, lote de origen y volumen de presentación.</td>
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td>Existencias</td>
+            <td>Transacción financiera para habilitar un servicio o renovar la suscripción.</td>
+        </tr>
+        <tr>
+            <td>Stock Movement</td>
+            <td>Movimiento de stock</td>
+            <td>Registro individual de entradas (incrementos por producción/compra) o salidas (decrementos por venta/merma) en el Kardex.</td>
+        </tr>
+        <tr>
+            <td>Stock Threshold</td>
+            <td>Umbral de stock bajo</td>
+            <td>Límite mínimo de seguridad de inventario configurado para gatillar acciones de reabastecimiento.</td>
+        </tr>
+        <tr>
+            <td>Product Bottled</td>
+            <td>Producto embotellado</td>
+            <td>Cierre formal de un lote de producción que transforma la materia prima en unidades de producto terminado para el inventario.</td>
+        </tr>
+        <tr>
+            <td>Stock Updated</td>
+            <td>Stock actualizado</td>
+            <td>Cambio confirmado en las cantidades del inventario como consecuencia de un movimiento registrado.</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Orders & Replenishment</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Customer</td>
+            <td>Cliente</td>
+            <td>Comprador final o empresa a quien el productor o comercializador vende sus productos registrados.</td>
+        </tr>
+        <tr>
+            <td>Supplier</td>
+            <td>Producto</td>
+            <td>Empresa o bodega productora encargada de surtir de mercancía a los comercializadores.</td>
+        </tr>
+        <tr>
+            <td>Order</td>
+            <td>Pedido</td>
+            <td>Transacción comercial que detalla los productos, cantidades, importes y estado de una venta o compra realizada.</td>
+        </tr>
+        <tr>
+            <td>Replenishment</td>
+            <td>Reposición</td>
+            <td>Flujo operativo de reabastecimiento de inventario gestionado entre el comercializador y sus proveedores.</td>
+        </tr>
+        <tr>
+            <td>Order Placed</td>
+            <td>Pedido registrado</td>
+            <td>Confirmación de la emisión de un pedido comercial que compromete o reduce el stock correspondiente.</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Alerts & Notifications</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alert</td>
+            <td>Alerta</td>
+            <td>Notificación generada automáticamente por el sistema frente a un evento fuera de los límites aceptables.</td>
+        </tr>
+        <tr>
+            <td>Low Stock Alert</td>
+            <td>Alerta de stock bajo</td>
+            <td>Notificación emitida cuando el stock disponible es igual o inferior al umbral configurado.</td>
+        </tr>
+        <tr>
+            <td>Production Alert</td>
+            <td>Alerta de producción</td>
+            <td>Notificación crítica generada por una lectura anómala proveniente de los sensores IoT del proceso productivo.</td>
+        </tr>
+        <tr>
+            <td>Attended Alert</td>
+            <td>Alerta atendida</td>
+            <td>Condición que adquiere una alerta una vez que el usuario ha tomado conocimiento de ella y registrado una acción correctiva.</td>
+        </tr>
+        <tr>
+            <td>WhatsApp Integration</td>
+            <td>Integración WhatsApp</td>
+            <td>Canal de mensajería externa utilizado para el envío automatizado de notificaciones urgentes a los usuarios. </td>
+        </tr>
+        <tr>
+            <td>Alert Triggered</td>
+            <td>Alerta generada</td>
+            <td>Disparo automático de una notificación derivado de un evento crítico de stock o monitoreo.</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="3">Analytics & Estimations</th>
+        </tr>
+        <tr>
+            <th>Term (English)</th>
+            <th>Term (Spanish)</th>
+            <th>Definition (in Spanish)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dashboard</td>
+            <td>Panel principal</td>
+            <td>Pantalla resumida e interactiva que muestra indicadores clave de rendimiento (KPIs), métricas y alertas según el rol del usuario.</td>
+        </tr>
+        <tr>
+            <td>Historical Data</td>
+            <td>Datos históricos</td>
+            <td>Conjunto de registros pasados de telemetría, ventas y movimientos de inventario acumulados para análisis posterior.</td>
+        </tr>
+        <tr>
+            <td>Replenishment Estimate</td>
+            <td>Estimación de reposición</td>
+            <td>Cálculo predictivo generado con base en datos históricos que proyecta la fecha estimada y volumen requerido de reabastecimiento.</td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## Capítulo III: Requirements Specification
