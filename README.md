@@ -1206,6 +1206,16 @@ El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietari
 
 Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
 
+* **Segmento 1: Productor de pisco**
+
+
+
+* **Segmento 2: Comercializador**
+
+El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietario de una licorería y bodega en Lima, para gestionar el stock de sus productos y realizar los pedidos de reposición a sus proveedores. El recorrido muestra cómo Carlos depende de métodos manuales e informales (cuaderno, memoria, Excel) y enfrenta perdidas económicas por quiebres de stock en momentos de alta demanda.
+
+<img src="assets/md-images-front-matter/Empathy_Mapping_2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
+
 
 ### 2.4. Big Picture EventStorming
 
