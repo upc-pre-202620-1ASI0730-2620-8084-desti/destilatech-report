@@ -1252,7 +1252,31 @@ Para la notación de colores se consultó adicionalmente el material teórico de
 
 ### 2.5. Ubiquitous Language
 
-
+El siguiente glosario recoge los términos del dominio de negocio de Destilatech (producción, almacenamiento y comercialización de pisco).
+ 
+| Term | Definición |
+| :--- | :--- |
+| **Batch** (Lote) | Cantidad específica de pisco producida en conjunto bajo condiciones uniformes, que se rastrea como una unidad trazable desde la recepción de la materia prima hasta el embotellado. |
+| **Must** (Mosto) | Jugo de uva obtenido antes de la fermentación, materia prima base del proceso productivo. |
+| **Fermentation** (Fermentación) | Proceso bioquímico mediante el cual el mosto se transforma en un líquido alcohólico base, previo a la destilación. |
+| **Distillation** (Destilación) | Proceso de separación y concentración del alcohol a partir del fermentado, mediante el cual se obtiene el pisco. |
+| **Resting Period** (Reposo) | Periodo posterior a la destilación durante el cual el pisco reposa en recipientes de material neutro antes de su envasado, según el Reglamento de la Denominación de Origen Pisco. |
+| **Bottling** (Embotellado) | Proceso de envasado del pisco terminado en botellas listas para su comercialización. |
+| **Denomination of Origin** (Denominación de Origen) | Designación oficial que restringe el uso del término "Pisco" al producto elaborado en las zonas peruanas autorizadas, bajo un reglamento específico. |
+| **Producer** (Productor) | Segmento principal de usuario: pequeño o mediano negocio que elabora pisco, desde la recepción de uva hasta el embotellado. |
+| **Retailer** (Comercializador) | Segmento complementario de usuario: negocio (licorería, bodega, minimarket, distribuidor) que compra pisco y otras bebidas para revenderlas al consumidor final. |
+| **Inventory Item** (Ítem de inventario / Existencia) | Producto o presentación específica que se controla dentro del inventario de un productor o comercializador. |
+| **Stock Movement** (Movimiento de inventario) | Registro de una entrada o salida de cantidad de un ítem de inventario. |
+| **Replenishment** (Reposición) | Acción de reabastecer un ítem de inventario cuando su cantidad disponible cae por debajo de lo necesario. |
+| **Low-Stock Alert** (Alerta de stock bajo) | Notificación automática generada cuando el stock de un producto alcanza o cae por debajo del umbral configurado. |
+| **Anomaly Alert** (Alerta de anomalía) | Notificación automática generada cuando una variable monitoreada del proceso productivo se sale del rango configurado como normal. |
+| **Sensor Reading** (Lectura de sensor) | Valor capturado de una variable de proceso monitoreada, proveniente de un dispositivo IoT (simulado en el MVP). |
+| **Trial Period** (Periodo de prueba) | Periodo gratuito de hasta 14 días durante el cual un nuevo cliente puede usar Destilatech antes de requerir una suscripción paga. |
+| **Subscription** (Suscripción) | Plan de pago recurrente que un cliente debe contratar para continuar usando Destilatech al finalizar el periodo de prueba. |
+| **Order** (Pedido) | Solicitud de productos realizada por un cliente a un productor, o por un comercializador a su proveedor. |
+| **Customer** (Cliente) | Parte que adquiere pisco u otro producto de un productor o comercializador. |
+| **Supplier** (Proveedor) | Parte a la que un comercializador (o un productor, para insumos) solicita el abastecimiento de un producto. |
+ 
 
 ## Capítulo III: Requirements Specification
 
