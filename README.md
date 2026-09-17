@@ -1607,3 +1607,9 @@ flowchart LR
 
 Este contexto suscribe al evento `StockMovementRegistered` publicado por Inventory & Stock Management para recalcular la estimación de reposición (US20) sin acoplarse a su modelo interno. `GenerateHistoricalIndicators` se ejecuta de forma periódica/bajo demanda para alimentar los gráficos de evolución de inventario y producción (US21), consumiendo el historial de Production & Monitoring e Inventory & Stock Management.
 
+## 4.7. Software Object-Oriented Design
+
+En esta sección el equipo profundiza el diseño orientado a objetos de la RESTful API, presentando el Class Diagram de UML correspondiente a cada uno de los seis Bounded Contexts identificados. El nivel de detalle incluye clases, atributos, métodos, el scope de cada miembro (`+` public, `-` private, `#` protected) y las relaciones entre clases con su calificación, dirección y multiplicidad.
+
+### 4.7.1. Class Diagrams
+
