@@ -1447,3 +1447,22 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 | 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
 | 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
 
+## 4.6. Domain-Driven Software Architecture
+
+Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Se ejecuta un Design-Level Event Storming para cada uno de los seis Bounded Contexts identificados —Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations—, llegando a la identificación de Commands, Aggregates, Domain Events, Policies y Read Models para cada uno. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
+
+### 4.6.1. Design-Level Event Storming
+
+El equipo organizó una sesión de Design-Level Event Storming con una duración de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide), partiendo de los seis Bounded Contexts identificados en el Big Picture Event Storming. Para cada Bounded Context se identificaron los Commands (acciones que un actor o sistema externo dispara), el Aggregate que procesa el Command y garantiza sus invariantes, los Domain Events resultantes, las Policies (reacciones automáticas del sistema ante un evento, que pueden disparar Commands en el mismo Bounded Context o en otro) y los Read Models (vistas de consulta que el sistema expone como resultado de los eventos).
+
+**Leyenda utilizada en los diagramas:**
+
+| Elemento | Color | Descripción |
+| :--- | :--- | :--- |
+| Command | Azul | Acción o intención disparada por un actor o sistema externo. |
+| Aggregate | Amarillo | Objeto del dominio que procesa el Command y mantiene su consistencia. |
+| Domain Event | Naranja | Hecho relevante ya ocurrido en el dominio, resultado de procesar un Command. |
+| Policy | Morado | Reacción automática del sistema ante un evento, que puede disparar otro Command. |
+| Read Model | Verde | Vista de consulta construida a partir de los eventos. |
+| Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
+
