@@ -1490,3 +1490,413 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 | 35 | US20 | Ver estimación de reposición | Estimación en la ficha de inventario. | 5 |
 | 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
 | 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
+
+
+## 4.6. Domain-Driven Software Architecture
+
+Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Se ejecuta un Design-Level Event Storming para cada uno de los seis Bounded Contexts identificados —Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations—, llegando a la identificación de Commands, Aggregates, Domain Events, Policies y Read Models para cada uno. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
+
+### 4.6.1. Design-Level Event Storming
+
+El equipo organizó una sesión de Design-Level Event Storming con una duración de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide), partiendo de los seis Bounded Contexts identificados en el Big Picture Event Storming. Para cada Bounded Context se identificaron los Commands (acciones que un actor o sistema externo dispara), el Aggregate que procesa el Command y garantiza sus invariantes, los Domain Events resultantes, las Policies (reacciones automáticas del sistema ante un evento, que pueden disparar Commands en el mismo Bounded Context o en otro) y los Read Models (vistas de consulta que el sistema expone como resultado de los eventos).
+
+**Leyenda utilizada en los diagramas:**
+
+| Elemento | Color | Descripción |
+| :--- | :--- | :--- |
+| Command | Azul | Acción o intención disparada por un actor o sistema externo. |
+| Aggregate | Amarillo | Objeto del dominio que procesa el Command y mantiene su consistencia. |
+| Domain Event | Naranja | Hecho relevante ya ocurrido en el dominio, resultado de procesar un Command. |
+| Policy | Morado | Reacción automática del sistema ante un evento, que puede disparar otro Command. |
+| Read Model | Verde | Vista de consulta construida a partir de los eventos. |
+| Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
+
+**a. Identity/Access & Subscriptions**
+
+Este Bounded Context gestiona el ciclo de vida de la cuenta del usuario (productor o comercializador), su periodo de prueba y su suscripción paga, respondiendo a los Epics EP01.
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
+    E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
+    C3["Command:\nSubscribeToPlan"]:::command --> A3{{"Aggregate:\nSubscription"}}:::aggregate --> E4(["Event:\nSubscriptionActivated"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C3
+    E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
+    E4 --> RM1
+    E3 --> RM1
+```
+
+El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
+
+**b. Production & Monitoring**
+
+Gestiona los lotes de producción y el monitoreo de variables de proceso (EP03, EP04).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterBatch"]:::command --> A1{{"Aggregate:\nProductionBatch"}}:::aggregate --> E1(["Event:\nBatchRegistered"]):::event
+    C2["Command:\nUpdateBatchStage"]:::command --> A1
+    A1 --> E2(["Event:\nBatchStageUpdated"]):::event
+    C3["Command:\nConfigureVariableRange"]:::command --> A2{{"Aggregate:\nProcessVariable"}}:::aggregate --> E3(["Event:\nVariableRangeConfigured"]):::event
+    EXT1(["Sistema externo:\nSensor IoT (simulado)"]):::external -.->|"lectura"| C4["Command:\nRecordSensorReading"]:::command --> A2 --> E4(["Event:\nSensorReadingRecorded"]):::event
+    E4 --> P1{"Policy:\nEvaluateReadingAgainstRange"}:::policy --> E5(["Event:\nAnomalyDetected"]):::event
+    E5 --> P2{"Policy:\nRaiseAlertOnAnomaly"}:::policy --> XC1["Command hacia\nAlerts & Notifications:\nRaiseAlert"]:::command
+    E1 --> RM1[/"Read Model:\nProductionDashboardView"/]:::readmodel
+    E2 --> RM1
+    E4 --> RM2[/"Read Model:\nBatchHistoryView"/]:::readmodel
+```
+
+La política `EvaluateReadingAgainstRange` es el corazón del monitoreo: compara cada `SensorReadingRecorded` contra el rango configurado en `ConfigureVariableRange` (US10) y, de estar fuera de rango, genera `AnomalyDetected` (US11), que a su vez dispara un Command hacia el Bounded Context Alerts & Notifications. El Sensor IoT se mantiene simulado dentro del alcance académico, tal como se identificó en el Big Picture Event Storming.
+
+**c. Inventory & Stock Management**
+
+Gestiona el catálogo de productos y el control de stock (EP05, EP06).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+
+    C1["Command:\nRegisterProduct"]:::command --> A1{{"Aggregate:\nProduct"}}:::aggregate --> E1(["Event:\nProductRegistered"]):::event
+    C2["Command:\nConfigureLowStockThreshold"]:::command --> A2{{"Aggregate:\nStockItem"}}:::aggregate --> E2(["Event:\nLowStockThresholdConfigured"]):::event
+    C3["Command:\nRegisterStockMovement"]:::command --> A2 --> E3(["Event:\nStockMovementRegistered"]):::event
+    E3 --> P1{"Policy:\nRecalculateStockLevel"}:::policy --> E4(["Event:\nStockLevelUpdated"]):::event
+    E4 --> P2{"Policy:\nCheckAgainstThreshold"}:::policy --> E5(["Event:\nLowStockDetected"]):::event
+    E5 --> P3{"Policy:\nRaiseAlertOnLowStock"}:::policy --> XC1["Command hacia\nAlerts & Notifications:\nRaiseAlert"]:::command
+    XC2["Command desde\nOrders & Replenishment:\nDiscountStock"]:::command -.-> C3
+    XC3["Command desde\nProduction & Monitoring:\nAddBottledStock"]:::command -.-> C3
+    E4 --> RM1[/"Read Model:\nStockLevelView"/]:::readmodel
+```
+
+`RegisterStockMovement` puede originarse directamente en la interfaz del usuario (US13) o ser disparado por Commands cruzados desde otros Bounded Contexts: `DiscountStock` (cuando Orders & Replenishment confirma un pedido, US18) y `AddBottledStock` (cuando Production & Monitoring embotella un lote). La política `CheckAgainstThreshold` compara el nuevo nivel contra el umbral configurado (US15) para decidir si dispara `LowStockDetected` (US16).
+
+**d. Orders & Replenishment**
+
+Gestiona clientes y pedidos de venta, y los pedidos de reposición a proveedores (EP07).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterCustomer"]:::command --> A1{{"Aggregate:\nCustomer"}}:::aggregate --> E1(["Event:\nCustomerRegistered"]):::event
+    C2["Command:\nRegisterOrder"]:::command --> A2{{"Aggregate:\nOrder"}}:::aggregate --> E2(["Event:\nOrderRegistered"]):::event
+    E2 --> P1{"Policy:\nDiscountStockOnOrder"}:::policy --> XC1["Command hacia\nInventory & Stock Management:\nDiscountStock"]:::command
+    C3["Command:\nRequestReplenishmentOrder"]:::command --> A3{{"Aggregate:\nReplenishmentOrder"}}:::aggregate --> E3(["Event:\nReplenishmentOrderRequested"]):::event
+    EXT1(["Sistema externo:\nWhatsApp"]):::external -.->|"coordinación informal"| C3
+    E2 --> RM1[/"Read Model:\nOrderHistoryView"/]:::readmodel
+```
+
+`RegisterOrder` (US18) dispara la política `DiscountStockOnOrder`, que emite un Command hacia Inventory & Stock Management para descontar el stock vendido, evitando que Orders & Replenishment conozca o manipule directamente el Aggregate `StockItem` (los Bounded Contexts se comunican por eventos/commands, no compartiendo agregados). WhatsApp se mantiene como canal informal externo de coordinación de pedidos de reposición, tal como se identificó en el Big Picture.
+
+**e. Alerts & Notifications**
+
+Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management (EP04, EP06).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+
+    XC1["Command desde\nProduction & Monitoring:\nRaiseAlert (Anomaly)"]:::command --> A1{{"Aggregate:\nAlert"}}:::aggregate
+    XC2["Command desde\nInventory & Stock Mgmt:\nRaiseAlert (LowStock)"]:::command --> A1
+    A1 --> E1(["Event:\nAlertRaised"]):::event
+    C1["Command:\nMarkAlertAsAttended"]:::command --> A1 --> E2(["Event:\nAlertAttended"]):::event
+    E1 --> RM1[/"Read Model:\nAlertsInboxView"/]:::readmodel
+    E2 --> RM1
+```
+
+Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
+
+**f. Analytics & Estimations**
+
+Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts (EP08).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+
+    XC1["Evento observado desde\nInventory & Stock Mgmt:\nStockMovementRegistered"]:::event --> P1{"Policy:\nRecalculateEstimateOnMovement"}:::policy --> C1["Command:\nCalculateReplenishmentEstimate"]:::command --> A1{{"Aggregate:\nReplenishmentEstimate"}}:::aggregate --> E1(["Event:\nReplenishmentEstimateCalculated"]):::event
+    C2["Command:\nGenerateHistoricalIndicators"]:::command --> A2{{"Aggregate:\nHistoricalIndicator"}}:::aggregate --> E2(["Event:\nHistoricalIndicatorsGenerated"]):::event
+    E1 --> RM1[/"Read Model:\nReplenishmentEstimateView"/]:::readmodel
+    E2 --> RM2[/"Read Model:\nHistoricalIndicatorsView"/]:::readmodel
+```
+
+Este contexto suscribe al evento `StockMovementRegistered` publicado por Inventory & Stock Management para recalcular la estimación de reposición (US20) sin acoplarse a su modelo interno. `GenerateHistoricalIndicators` se ejecuta de forma periódica/bajo demanda para alimentar los gráficos de evolución de inventario y producción (US21), consumiendo el historial de Production & Monitoring e Inventory & Stock Management.
+
+## 4.7. Software Object-Oriented Design
+
+En esta sección el equipo profundiza el diseño orientado a objetos de la RESTful API, presentando el Class Diagram de UML correspondiente a cada uno de los seis Bounded Contexts identificados. El nivel de detalle incluye clases, atributos, métodos, el scope de cada miembro (`+` public, `-` private, `#` protected) y las relaciones entre clases con su calificación, dirección y multiplicidad.
+
+### 4.7.1. Class Diagrams
+
+**a. Identity/Access & Subscriptions**
+
+```mermaid
+classDiagram
+    class Account {
+        -Guid id
+        -string fullName
+        -string email
+        -string passwordHash
+        -BusinessType businessType
+        -DateTime createdAt
+        +Register(fullName, email, password, businessType) Account
+        +Login(email, password) bool
+        #ValidateEmailUniqueness() bool
+    }
+    class TrialPeriod {
+        -Guid id
+        -DateTime startDate
+        -DateTime endDate
+        -TrialStatus status
+        +Start(accountId) TrialPeriod
+        +IsExpiringSoon() bool
+        +Expire() void
+    }
+    class Subscription {
+        -Guid id
+        -SubscriptionStatus status
+        -DateTime startDate
+        -DateTime renewalDate
+        +Activate(planId) void
+        +Cancel() void
+    }
+    class Plan {
+        -Guid id
+        -string name
+        -decimal price
+        -BillingCycle billingCycle
+    }
+    class BusinessType {
+        <<enumeration>>
+        PRODUCER
+        RETAILER
+    }
+
+    Account "1" --> "1" TrialPeriod : owns
+    Account "1" --> "0..1" Subscription : has
+    Subscription "*" --> "1" Plan : subscribesTo
+    Account ..> BusinessType : uses
+```
+
+**b. Production & Monitoring**
+
+```mermaid
+classDiagram
+    class ProductionBatch {
+        -Guid id
+        -Guid producerAccountId
+        -string productName
+        -DateTime startDate
+        -BatchStage stage
+        -decimal estimatedQuantity
+        +Register(producerAccountId, productName, startDate, estimatedQuantity) ProductionBatch
+        +UpdateStage(newStage) void
+        +Close() void
+    }
+    class ProcessVariable {
+        -Guid id
+        -Guid batchId
+        -string name
+        -decimal minRange
+        -decimal maxRange
+        +ConfigureRange(min, max) void
+        #IsWithinRange(value) bool
+    }
+    class SensorReading {
+        -Guid id
+        -Guid processVariableId
+        -decimal value
+        -DateTime recordedAt
+        +Record(processVariableId, value) SensorReading
+        +Evaluate() bool
+    }
+    class BatchStage {
+        <<enumeration>>
+        RECEIVED
+        FERMENTATION
+        DISTILLATION
+        RESTING
+        BOTTLED
+    }
+
+    ProductionBatch "1" --> "*" ProcessVariable : monitors
+    ProcessVariable "1" --> "*" SensorReading : records
+    ProductionBatch ..> BatchStage : uses
+```
+
+**c. Inventory & Stock Management**
+
+```mermaid
+classDiagram
+    class Product {
+        -Guid id
+        -Guid ownerAccountId
+        -string name
+        -string presentation
+        -string unit
+        +Register(ownerAccountId, name, presentation, unit) Product
+    }
+    class StockItem {
+        -Guid id
+        -Guid productId
+        -decimal currentQuantity
+        -decimal lowStockThreshold
+        +ConfigureThreshold(threshold) void
+        +ApplyMovement(movement) void
+        +IsBelowThreshold() bool
+    }
+    class StockMovement {
+        -Guid id
+        -Guid stockItemId
+        -MovementType type
+        -decimal quantity
+        -DateTime movementDate
+        -string reason
+        +Register(stockItemId, type, quantity, reason) StockMovement
+    }
+    class MovementType {
+        <<enumeration>>
+        IN
+        OUT
+    }
+
+    Product "1" --> "1" StockItem : tracks
+    StockItem "1" --> "*" StockMovement : records
+    StockMovement ..> MovementType : uses
+```
+
+**d. Orders & Replenishment**
+
+```mermaid
+classDiagram
+    class Customer {
+        -Guid id
+        -Guid ownerAccountId
+        -string name
+        -string contact
+        +Register(ownerAccountId, name, contact) Customer
+    }
+    class Order {
+        -Guid id
+        -Guid customerId
+        -DateTime orderDate
+        -OrderStatus status
+        +Register(customerId, lines) Order
+        +Confirm() void
+    }
+    class OrderLine {
+        -Guid id
+        -Guid orderId
+        -Guid productId
+        -decimal quantity
+    }
+    class ReplenishmentOrder {
+        -Guid id
+        -Guid ownerAccountId
+        -string supplierName
+        -DateTime orderDate
+        -OrderStatus status
+        +Request(ownerAccountId, supplierName) ReplenishmentOrder
+    }
+    class OrderStatus {
+        <<enumeration>>
+        PENDING
+        CONFIRMED
+        CANCELLED
+    }
+
+    Customer "1" --> "*" Order : places
+    Order "1" --> "1..*" OrderLine : contains
+    Order ..> OrderStatus : uses
+    ReplenishmentOrder ..> OrderStatus : uses
+```
+
+**e. Alerts & Notifications**
+
+```mermaid
+classDiagram
+    class Alert {
+        -Guid id
+        -Guid ownerAccountId
+        -AlertType type
+        -Guid sourceId
+        -string message
+        -AlertStatus status
+        -DateTime createdAt
+        +Raise(ownerAccountId, type, sourceId, message) Alert
+        +MarkAsAttended() void
+    }
+    class AlertType {
+        <<enumeration>>
+        LOW_STOCK
+        ANOMALY
+    }
+    class AlertStatus {
+        <<enumeration>>
+        PENDING
+        ATTENDED
+    }
+
+    Alert ..> AlertType : uses
+    Alert ..> AlertStatus : uses
+```
+
+**f. Analytics & Estimations**
+
+```mermaid
+classDiagram
+    class ReplenishmentEstimate {
+        -Guid id
+        -Guid productId
+        -DateTime estimatedDate
+        -decimal estimatedQuantity
+        -decimal confidence
+        +Calculate(productId) ReplenishmentEstimate
+    }
+    class HistoricalIndicator {
+        -Guid id
+        -Guid ownerAccountId
+        -string period
+        -MetricType metricType
+        -decimal value
+        +Generate(ownerAccountId, period, metricType) HistoricalIndicator
+    }
+    class MetricType {
+        <<enumeration>>
+        PRODUCTION_VOLUME
+        STOCK_LEVEL
+        SALES_VOLUME
+    }
+
+    HistoricalIndicator ..> MetricType : uses
+```
