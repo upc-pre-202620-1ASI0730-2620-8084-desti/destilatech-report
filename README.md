@@ -864,7 +864,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>11:27 min / --</td>
+      <td>11:27 min / 00:00</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
@@ -920,7 +920,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>14:23 min / 00:00:00</td>
+      <td>14:23 min / 11:28</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
@@ -970,7 +970,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>8:55 min / --</td>
+      <td>8:55 min / 31:26</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
@@ -1014,7 +1014,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>12:24 min / --</td>
+      <td>12:24 min / 40:22</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
@@ -1058,7 +1058,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>3:36 min / --</td>
+      <td>3:36 min / 52:46</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
@@ -1102,7 +1102,7 @@ URL DEL VIDEO:
     </tr>
     <tr>
       <td><b>Duración / Timing</b></td>
-      <td>6:11 min / --</td>
+      <td>6:11 min / 56:23</td>
     </tr>
     <tr>
       <td><b>Resumen</b></td>
