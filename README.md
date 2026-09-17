@@ -873,7 +873,63 @@ URL DEL VIDEO:
   </tbody>
 </table>
 
+<br>
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Mario</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Fernández</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>59 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Santiago de Surco (Chacarilla)</td>
+    </tr>
+    <tr>
+      <td><b>Ubicación de la bodega</b></td>
+      <td>Mala, Cañete</td>
+    </tr>
+    <tr>
+      <td><b>Estado civil y familia</b></td>
+      <td>Divorciado. Participa en una empresa familiar dedicada a la producción y comercialización de pisco.</td>
+    </tr>
+    <tr>
+      <td><b>Rol</b></td>
+      <td>Propietario y productor de Pisco Don Ítalo</td>
+    </tr>
+     <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/user-attachments/assets/8f562527-623e-43e0-9e29-e2fa96c66efb" alt="Entrevista a productor de pisco" style="height: 150px !important; width: 270px !important;">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>14:23 min / 00:00:00</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Mario Fernández, de 59 años, reside en Chacarilla, distrito de Santiago de Surco, y es propietario de Pisco Don Ítalo, una empresa familiar cuya bodega de producción se encuentra ubicada en Mala, Cañete. Cuenta con varios años de experiencia en la elaboración de pisco y aproximadamente tres años de presencia formal en el mercado. La empresa produce pisco puro quebranta, pisco puro Italia, mosto verde quebranta y mosto verde Italia, y tiene previsto incorporar variedades acholadas elaboradas a partir de una mezcla de cepas quebranta e Italia. La producción aproximada es de 22,000 litros anuales y en la bodega trabajan tres colaboradores: un responsable general y dos operarios encargados de actividades como el pesaje de la uva, despalillado, prensado y manejo del alambique. El proceso productivo comprende la poda y cosecha de la uva, recepción y pesaje, despalillado, prensado, fermentación, destilación, separación de cabeza y cola, reposo en tanques, filtrado, embotellado, etiquetado y distribución. Durante este proceso se controlan manualmente variables como el peso, tiempo, temperatura, grado de azúcar y grado alcohólico, utilizando principalmente termómetros y la supervisión directa del personal. La información correspondiente a la producción, lotes, inventario, clientes y pedidos se registra principalmente en hojas de cálculo de Excel, debido a que actualmente no cuentan con una aplicación especializada. La empresa dispone de aproximadamente 5,500 litros de la producción de 2024 pendientes de envasar, 10,000 litros correspondientes a 2025 en proceso y cerca de 1,000 litros de producto terminado almacenado en Lima. La información de clientes y pedidos también se administra mediante Excel, mientras que un vendedor visita a los clientes aproximadamente cada quince días para revisar sus necesidades, ofrecer degustaciones y coordinar actividades comerciales. Para la comunicación y gestión directa con los clientes utiliza principalmente el celular; sin embargo, para administrar el inventario y otros registros del negocio emplea una computadora y el navegador Google Chrome. La empresa mantiene presencia en Instagram y Facebook, aunque su estrategia comercial depende principalmente de las degustaciones y del contacto presencial debido al carácter sensorial del producto. Actualmente no utiliza sensores, dispositivos IoT ni sistemas automatizados durante la producción. El entrevistado considera que uno de los principales retos consiste en controlar adecuadamente variables críticas como el grado de azúcar de la uva, la temperatura y el grado alcohólico del producto final. También señaló que los traslados hacia la bodega ubicada en Mala requieren tiempo y coordinación. Su comportamiento refleja experiencia práctica, conocimiento técnico del proceso artesanal y una actitud cautelosa, pero abierta a la incorporación de nuevas tecnologías cuando estas demuestren beneficios concretos. Estaría dispuesto a evaluar el pago de una suscripción aproximada de entre S/80 y S/100 mensuales, siempre que la solución permita optimizar los procesos, reducir errores y generar un beneficio proporcional a su costo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
  <br>     
 
