@@ -1448,6 +1448,7 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 
 ### 3.2. Impact Mapping
 
+<img src="assets/md-images-front-matter/Impact_mapping_Destilatech.png" alt="impact mapping" style="width: 60%; max-width: 800px; height: 700px;">
 
 ### 3.3. Product Backlog
 
