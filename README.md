@@ -1566,3 +1566,24 @@ flowchart LR
 
 `RegisterOrder` (US18) dispara la política `DiscountStockOnOrder`, que emite un Command hacia Inventory & Stock Management para descontar el stock vendido, evitando que Orders & Replenishment conozca o manipule directamente el Aggregate `StockItem` (los Bounded Contexts se comunican por eventos/commands, no compartiendo agregados). WhatsApp se mantiene como canal informal externo de coordinación de pedidos de reposición, tal como se identificó en el Big Picture.
 
+**e. Alerts & Notifications**
+
+Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management (EP04, EP06).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+
+    XC1["Command desde\nProduction & Monitoring:\nRaiseAlert (Anomaly)"]:::command --> A1{{"Aggregate:\nAlert"}}:::aggregate
+    XC2["Command desde\nInventory & Stock Mgmt:\nRaiseAlert (LowStock)"]:::command --> A1
+    A1 --> E1(["Event:\nAlertRaised"]):::event
+    C1["Command:\nMarkAlertAsAttended"]:::command --> A1 --> E2(["Event:\nAlertAttended"]):::event
+    E1 --> RM1[/"Read Model:\nAlertsInboxView"/]:::readmodel
+    E2 --> RM1
+```
+
+Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
+
