@@ -45,8 +45,8 @@ Proyecto<br>
       <td>Condor Sandoval, Jean Pierre</td>
     </tr>
     <tr>
-      <td>UXXXXXXXXX</td>
-      <td>XXXXXXXXX</td>
+      <td>U202322404</td>
+      <td>Domenack Angeles, Miguel</td>
     </tr>
   </tbody>
 </table>
@@ -268,7 +268,7 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 | :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
 | Mario Alonso Fernandez Seer      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
 | Santiago Atanacio, Jairo Mathias      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
-| Estudiante 3     | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | descripcion
+| Domenack Angeles Miguel     | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia.
 | Estudiante 4      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                     | descripcion
 | Estudiante 5 | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto | descripcion
 
@@ -1388,3 +1388,486 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 | 35 | US20 | Ver estimación de reposición | Estimación en la ficha de inventario. | 5 |
 | 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
 | 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
+
+## 4.6. Domain-Driven Software Architecture.
+
+Destilatech propone una plataforma web B2B SaaS para pequeños y medianos productores de pisco y negocios comercializadores. Su arquitectura se deriva de los seis bounded contexts identificados en el Big Picture EventStorming del capítulo II y de las historias US01–US37 del capítulo III. El diseño integra gestión de lotes, monitoreo IoT simulado, inventario, pedidos, alertas y estimaciones básicas de reposición.
+
+Se propone un monolito modular para la API: los seis contextos conservan modelos, contratos y responsabilidades propios dentro de un solo despliegue ASP.NET Core. Esta separación lógica permite aplicar Domain-Driven Design sin introducir seis servicios distribuidos en un MVP académico. Los límites de contexto no equivalen a contenedores C4 ni a bases de datos físicas independientes.
+
+El frontend se plantea con Vue, JavaScript y PrimeVue; la API con C# y Entity Framework Core. Se selecciona MySQL como propuesta entre las alternativas permitidas por el curso. La landing page utiliza HTML5, CSS3 y JavaScript. Los diagramas describen la arquitectura objetivo del producto; para AV1, la implementación exigida es la primera landing page desplegada.
+
+Estado del documento: propuesta de diseño elaborada a partir del README de main consultado el 16/09/2026. MySQL, las reglas detalladas y el contrato de pagos requieren validación del equipo. No se afirma que estos componentes estén implementados ni que se haya realizado una sesión grupal de Design-Level EventStorming.
+
+| Decisión | Aplicación al proyecto |
+| --- | --- |
+| Aislamiento por negocio | Cada recurso operativo incluye business_id. La API lo obtiene de la identidad autenticada y valida propiedad y permisos. |
+| Persistencia | Una base MySQL con tablas agrupadas por contexto; cada módulo es propietario de sus escrituras. |
+| Consistencia | Pedido confirmado y descuento de stock se guardan en una transacción local. Alertas y lecturas anómalas también se persisten conjuntamente. |
+| Servicio externo | Pasarela de pago en sandbox propuesta para las suscripciones; proveedor pendiente de elección. El simulador propio no sustituye este requisito. |
+| Alcance | Sin hardware físico, marketplace, contabilidad completa, rutas logísticas ni sincronización automática entre empresas. |
+
+### Límites de dominio y trazabilidad
+
+Los nombres de los contextos mantienen la terminología del informe. El umbral de stock pertenece al inventario y el rango de una variable pertenece al monitoreo; Alerts & Notifications administra la alerta resultante. Analytics & Estimations consulta contratos de lectura y no modifica los saldos ni los lotes.
+
+El dashboard es una composición de consultas de varios contextos. La landing page es un producto de presentación y no constituye un bounded context adicional. Las necesidades de autenticación y suscripción se mantienen juntas por compatibilidad con el informe, aunque pueden refinarse en una evolución posterior.
+
+| Bounded context | Responsabilidad y agregados principales | Trazabilidad |
+| --- | --- | --- |
+| Identity/Access & Subscriptions | BusinessAccount, UserAccount, Subscription; catálogo Plan y PaymentAttempt. | US01–03, US26; US23/33 exponen planes. |
+| Production & Monitoring | ProductionBatch, MonitoringRule y SensorReading; historial de estados. | US06–11, US28. |
+| Inventory & Stock Management | Product, StockItem y registro inmutable InventoryMovement. | US12–15, US27. |
+| Orders & Replenishment | Customer y SalesOrder. Registra ventas; coordina necesidades de reposición con Analytics. | US17–19. Compras a proveedores requieren nuevas historias. |
+| Alerts & Notifications | Alert; apertura, consulta y atención de avisos internos. | US11, US15–16; apoya US03. |
+| Analytics & Estimations | ReplenishmentEstimate y consultas DashboardSummary. | US04–05, US20–21, US29. |
+| Presentación pública | Landing page, CTA por segmento y contenido adaptable. | US22–25, US30–37. |
+
+### 4.6.1. Design-Level EventStorming.
+
+El refinamiento de diseño transforma los eventos generales del capítulo II en flujos que explican quién ejecuta una acción, qué comando envía, qué agregado protege las reglas, qué evento confirma el resultado y qué política responde. Las consultas y sus modelos de lectura se representan por separado, porque no cambian el estado del dominio.
+
+Los tableros siguientes son artefactos propuestos para la sesión de validación del equipo. La secuencia de trabajo consiste en revisar los dos segmentos, ordenar comandos y eventos, asignar agregados, identificar invariantes y acordar contratos entre contextos. El acta, asistentes, fecha y capturas de la sesión deben incorporarse después de realizarla; no se sustituyen por evidencias inventadas.
+
+Convención: amarillo para actor/agregado, azul para comando, naranja para evento, violeta para política, verde para consulta/modelo de lectura y gris para sistema externo. Cada tarjeta incluye su tipo para que la interpretación no dependa únicamente del color. Los eventos se nombran en pasado y los comandos en infinitivo.
+
+| Flujo | Invariante propuesta | Consulta |
+| --- | --- | --- |
+| Registro y prueba | Un correo normalizado no se duplica; trial_end = trial_start + 14 días; la consulta de planes e ingreso siguen disponibles al vencer la prueba. | GetSubscriptionStatus / GetDashboard. |
+| Lote y monitoreo | Solo un productor modifica lotes propios; un rango cumple mínimo < máximo y define unidad; lectura duplicada no crea otra alerta. | GetBatchHistory / GetLatestReadings. |
+| Pedido e inventario | Cantidades positivas; salida nunca deja stock negativo; confirmación única y atómica. | GetStock / GetOrderHistory. |
+| Estimación | Los ajustes y entradas no cuentan como demanda; datos insuficientes no se presentan como demanda cero. | GetReplenishmentEstimate. |
+
+### Flujo A. Registro y habilitación de acceso
+
+US01 activa un trial de 14 días al crear la cuenta. El comando registra negocio, usuario y suscripción en una única transacción. US02 y US26 autentican al usuario y emiten un token; la vigencia de la suscripción se comprueba en el servidor para cada operación restringida. No se confía exclusivamente en una fecha almacenada en el navegador.
+
+US03 consulta el tiempo restante: si faltan tres días o menos y el trial sigue activo, se muestra el aviso; al vencer, se bloquean operaciones de negocio y se mantiene el acceso al ingreso y a planes. Como extensión de diseño necesaria para el SaaS, un pago verificado en sandbox puede activar un período pagado; esta funcionalidad debe añadirse al backlog antes de implementarse. El retorno del navegador desde la pasarela no confirma el pago.
+
+![Registro, prueba y suscripción](assets/arquitectura/01-es-registro.png)
+
+*Figura 1. Registro, prueba y suscripción. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/01-es-registro.mmd) · [Imagen vectorial SVG](assets/arquitectura/01-es-registro.svg)
+
+### Flujo B. Lote, lectura y anomalía
+
+US06–08 registran el lote y su historial. Se propone la secuencia Registered → Fermenting → Distilling → Bottling → Completed. Las etapas y métricas deben validarse con productores; no se fijan umbrales físicos universales. US10 configura reglas por lote y variable, con mínimos, máximos y unidades explícitos.
+
+El simulador ejecuta US28 usando una identidad técnica restringida a lotes autorizados. Cada lectura tiene un source_id único por negocio. Se conserva el identificador de la revisión de regla aplicada y el instante observado. Una lectura fuera de rango se guarda junto con su alerta; una lectura repetida no duplica ninguna de ellas. US09 consulta las últimas lecturas y US11 muestra las anomalías.
+
+La configuración de un rango crea una nueva revisión inmutable, para que las lecturas históricas puedan explicarse con la regla vigente en ese momento. Completar un lote no incrementa automáticamente el inventario: el ingreso de producto terminado se registra mediante un movimiento explícito US13, evitando contabilizar dos veces la misma producción.
+
+![Producción y monitoreo de variables](assets/arquitectura/02-es-produccion.png)
+
+*Figura 2. Producción y monitoreo de variables. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/02-es-produccion.mmd) · [Imagen vectorial SVG](assets/arquitectura/02-es-produccion.svg)
+
+### Flujo B.2. Lectura y alerta de monitoreo
+
+El comando RecordSensorReading identifica el lote y la revisión de regla aplicable. El agregado SensorReading conserva la observación, su origen único y el resultado de comparación. SensorReadingRecorded activa la política que solicita OpenSensorAlert cuando corresponde. La política no envía instrucciones a un sensor ni controla físicamente la producción.
+
+El agregado Alert protege la unicidad del origen. El servicio de aplicación guarda lectura y alerta en una sola transacción. Después del commit, GetLatestReadings y GetPendingAlerts alimentan las pantallas de monitoreo. Si el valor está dentro del rango, se guarda la lectura y no se solicita apertura de alerta. Las consultas no ejecutan comandos sobre el lote.
+
+![Lectura, regla y apertura de alerta](assets/arquitectura/02b-es-monitoreo.png)
+
+*Figura 3. Lectura, regla y apertura de alerta. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/02b-es-monitoreo.mmd) · [Imagen vectorial SVG](assets/arquitectura/02b-es-monitoreo.svg)
+
+### Flujo C. Pedido, inventario y alertas
+
+US17 registra clientes; US18 confirma la venta y US19 consulta su historial. Un borrador no altera existencias. La confirmación genera una salida por línea, vinculada al pedido; la cantidad y la unidad corresponden al producto del catálogo. La API agrupa pedido, líneas, movimientos y saldos en una transacción local coordinada por la capa de aplicación.
+
+Si alguna línea supera el stock disponible, se rechaza la operación completa con HTTP 409 y no se confirma el pedido. Esta decisión aplica la regla explícita de EP05 y US27 y aclara las advertencias ambiguas de US13/US18: una advertencia no permite continuar con un saldo negativo. Los reintentos con la misma clave de idempotencia devuelven el resultado existente, sin repetir el descuento.
+
+Inventory publica StockChanged dentro de la transacción. La política de bajo stock crea como máximo una alerta abierta por producto. La atención de la alerta (US16) no modifica el stock. Cuando una entrada supera el umbral, termina el episodio de bajo stock; una nueva caída puede abrir un nuevo aviso.
+
+![Confirmación de pedido y control de stock](assets/arquitectura/03-es-pedido.png)
+
+*Figura 4. Confirmación de pedido y control de stock. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/03-es-pedido.mmd) · [Imagen vectorial SVG](assets/arquitectura/03-es-pedido.svg)
+
+### Flujo D. Estimaciones de reposición
+
+Para US20/US29 se propone una media móvil simple, no un modelo avanzado de inteligencia artificial. La demanda diaria es la suma de salidas por venta durante una ventana de 30 días completos dividida entre 30. Los días sin venta cuentan como cero solo si el historial se considera completo. Se requiere fecha de inicio de seguimiento y confirmación de cobertura; estos son parámetros técnicos propuestos.
+
+Con historial suficiente y demanda positiva: días de cobertura = stock actual / demanda diaria media. El punto de reposición es demanda diaria × plazo de abastecimiento + stock de seguridad. Se propone reponer cuando el stock alcance ese punto; la fecha estimada es hoy + máximo(0, cobertura − plazo − stock de seguridad / demanda diaria). Se indica el instante del cálculo y no se presenta como garantía de venta futura.
+
+Si faltan 30 días completos o la cobertura no se ha confirmado, el estado es InsufficientData. Si la cobertura es suficiente pero no hubo ventas, el estado es NoDemand y no se divide por cero. Plazo y stock de seguridad son parámetros por producto; la salida mostrará las suposiciones empleadas. No se emiten compras ni se contacta automáticamente a proveedores.
+
+![Estimación de reposición y consulta](assets/arquitectura/04-es-estimaciones.png)
+
+*Figura 5. Estimación de reposición y consulta. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/04-es-estimaciones.mmd) · [Imagen vectorial SVG](assets/arquitectura/04-es-estimaciones.svg)
+
+### Contratos, consultas y puntos de validación
+
+Los contextos se comunican mediante interfaces de aplicación dentro del proceso de la API. Los eventos aquí descritos son eventos de dominio; no implican instalar un broker. La política de alertas se ejecuta antes del commit para que lectura/alerta y saldo/alerta no queden parcialmente persistidos. Analytics realiza consultas bajo demanda a través de puertos de lectura.
+
+Los siguientes puntos deben revisarse antes de integrar el diseño al informe como versión aprobada. Su resolución no altera los seis contextos; aclara contratos y evita que el esquema de datos contradiga el backlog.
+
+| Punto | Decisión propuesta / validación pendiente |
+| --- | --- |
+| Reposición y ventas | US17–19 autorizan clientes y ventas para ambos segmentos. La matriz de tareas excluye ventas del comercializador: alinearla con las historias o corregir ambas. |
+| Compras a proveedores | El Big Picture menciona pedidos de reposición, pero no existe una historia detallada para registrarlos. Se modela recomendación de reposición; compras quedan pendientes de refinamiento. |
+| Pago de suscripción | Agregar historia de selección de plan, checkout sandbox y confirmación verificada. Elegir proveedor y condiciones; no se inventan tarifas. |
+| Producción | Validar etapas, variables y unidades con productores. Un lote referencia un producto de salida, sin modelo de recetas ni consumo de materia prima en este MVP. |
+| Monitoreo | Propuesta: una alerta por lectura anómala única; se podrá agrupar por episodio en una evolución. Validar frecuencia de simulación. |
+| Evidencia de sesión | Añadir fecha, participantes, acuerdos y capturas del tablero tras la sesión real de EventStorming. |
+
+### 4.6.2. Software Architecture Context Diagram.
+
+El diagrama sitúa a Destilatech como un único sistema e identifica sus tres perfiles de interacción: productor, comercializador y visitante. Productor y comercializador corresponden a negocios independientes; compartir la plataforma no les permite consultar datos de otros negocios.
+
+La pasarela de pago es una dependencia externa propuesta para el modelo de suscripción. El proveedor todavía debe elegirse. El simulador es software propio y se muestra dentro del sistema en el nivel de contenedores. WhatsApp es un canal manual identificado en entrevistas; no se representa como integración automática porque el alcance no define una API de WhatsApp.
+
+![C4 · Nivel 1 · Contexto del sistema](assets/arquitectura/05-c4-contexto.png)
+
+*Figura 6. C4 · Nivel 1 · Contexto del sistema. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/05-c4-contexto.mmd) · [Imagen vectorial SVG](assets/arquitectura/05-c4-contexto.svg)
+
+### 4.6.3. Software Architecture Container Diagrams.
+
+La arquitectura distribuye responsabilidades entre cinco unidades desplegables o de almacenamiento. El usuario accede a la landing page y a la Web Application mediante su navegador. La landing redirige al registro con el segmento y, opcionalmente, un identificador de plan; estos valores se validan nuevamente en la API. La aplicación web nunca accede directamente a la base de datos.
+
+La REST API concentra autorización, reglas, transacciones y persistencia. El simulador se ejecuta como herramienta independiente y envía lecturas sintéticas a los lotes habilitados. MySQL conserva datos de los seis contextos en tablas separadas por prefijo. El flujo de pagos se resuelve mediante un adaptador de infraestructura y un endpoint de webhook autenticado por el mecanismo del proveedor.
+
+Las comunicaciones de navegador y servicios utilizan HTTPS. El acceso MySQL usa conexión protegida y credenciales del servidor. El almacenamiento del token y su vencimiento se definen al implementar autenticación; no se incluyen secretos en el código del frontend. El diagrama representa la solución objetivo; no evidencia un despliegue existente.
+
+![C4 · Nivel 2 · Contenedores](assets/arquitectura/06-c4-contenedores.png)
+
+*Figura 7. C4 · Nivel 2 · Contenedores. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/06-c4-contenedores.mmd) · [Imagen vectorial SVG](assets/arquitectura/06-c4-contenedores.svg)
+
+### 4.6.4. Software Architecture Components Diagrams.
+
+Los diagramas de componentes descomponen los contenedores ejecutables y declaran la responsabilidad de cada bloque. La API mantiene una separación entre interfaz HTTP, aplicación, dominio e infraestructura; sus clases de dominio no dependen de Vue, HTTP ni Entity Framework Core. Las interfaces de repositorio y puertos de integración permiten sustituir la persistencia y el proveedor de pagos.
+
+La base de datos no ejecuta componentes de negocio: su descomposición se presenta como estructura de almacenamiento y se detalla mediante diagramas ER en 4.8. Así se cubren los cinco contenedores sin confundir tablas con servicios. Los componentes son módulos lógicos; no se despliegan por separado.
+
+### Componentes de la landing page
+
+Las historias US22–25 y US30–37 se asignan a navegación, contenido, precios, CTA y footer. La adaptabilidad visual se implementa con CSS; la selección de idioma y navegación accesible complementan las secciones. Se consideran inglés por defecto y español latinoamericano conforme al enunciado.
+
+La landing es estática y no administra inventario ni autenticación. Los planes publicados son contenido controlado por el equipo; cualquier precio seleccionado se verifica al crear un checkout en la API, evitando tomar el valor del navegador como fuente de cobro.
+
+![C4 · Componentes de Landing Page](assets/arquitectura/07-componentes-landing.png)
+
+*Figura 8. C4 · Componentes de Landing Page. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/07-componentes-landing.mmd) · [Imagen vectorial SVG](assets/arquitectura/07-componentes-landing.svg)
+
+### Componentes de la aplicación web
+
+Las vistas del productor habilitan lotes y monitoreo; las del comercializador priorizan inventario, clientes, pedidos y reposición. El dashboard compone US04/US05 a partir de consultas de la API y presenta un estado vacío cuando no existe información.
+
+Los guards mejoran la navegación, pero la seguridad se aplica siempre en el servidor. API Client traduce errores de autenticación, suscripción, validación y stock insuficiente a mensajes de interfaz. Las vistas comparten convenciones de Material Design, PrimeVue, idioma y accesibilidad con la landing page.
+
+![C4 · Componentes de Web Application](assets/arquitectura/08-componentes-web.png)
+
+*Figura 9. C4 · Componentes de Web Application. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/08-componentes-web.mmd) · [Imagen vectorial SVG](assets/arquitectura/08-componentes-web.svg)
+
+### Componentes de la API: límites funcionales
+
+Cada módulo C# contiene sus endpoints, casos de uso, modelo de dominio y adaptadores de persistencia. Identity ofrece una política de acceso utilizada por todos los módulos operativos; por legibilidad se dibuja una conexión representativa. Los otros enlaces muestran colaboración de negocio y no acceso libre a las tablas ajenas.
+
+Orders llama al contrato de Inventory para confirmar ventas. Production e Inventory solicitan apertura de alertas mediante un puerto. Analytics obtiene historiales y saldos por interfaces de lectura. Los repositorios permanecen dentro del módulo propietario; las dependencias se registran con inyección de dependencias de ASP.NET Core.
+
+![C4 · API: módulos de negocio y contratos](assets/arquitectura/09-componentes-api.png)
+
+*Figura 10. C4 · API: módulos de negocio y contratos. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/09-componentes-api.mmd) · [Imagen vectorial SVG](assets/arquitectura/09-componentes-api.svg)
+
+### Componentes de la API: capas y persistencia
+
+HTTP Endpoints valida la forma de la solicitud, aplica permisos y devuelve códigos HTTP; Application Services coordina el caso de uso y la unidad de trabajo; Domain Model protege las reglas; los adaptadores materializan los contratos de infraestructura. La flecha hacia un adaptador representa colaboración en ejecución, no una dependencia del dominio sobre EF Core.
+
+Para confirmar una venta, Orders y el puerto de Inventory comparten una unidad de trabajo de EF Core. Se actualizan saldos de forma condicional con control de versión; cualquier conflicto revierte todo el pedido. El adaptador de pagos verifica la notificación con el proveedor y deduplica su identificador de evento antes de activar la suscripción.
+
+![C4 · API: procesamiento y adaptadores](assets/arquitectura/10-componentes-api-tecnico.png)
+
+*Figura 11. C4 · API: procesamiento y adaptadores. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/10-componentes-api-tecnico.mmd) · [Imagen vectorial SVG](assets/arquitectura/10-componentes-api-tecnico.svg)
+
+### Componentes del simulador y del almacenamiento
+
+El simulador permite demostrar US09–11/US28 sin fabricar sensores. La configuración selecciona lotes de prueba y unidades compatibles; el generador emite lecturas con identificadores estables. Ante un fallo temporal, el cliente reenvía la misma lectura; la API evita duplicados por business_id y source_id. Sus credenciales técnicas no habilitan operaciones de ventas ni acceso a otros negocios.
+
+El contenedor MySQL se descompone en grupos iam_, production_, inventory_, orders_, alerts_ y analytics_. No se proponen procedimientos almacenados con reglas de dominio. Las tablas auxiliares de pagos y sus restricciones pertenecen a iam_. La estructura y las cardinalidades se documentan en 4.8; el conjunto de tablas se despliega mediante migraciones versionadas.
+
+![C4 · Componentes de IoT Simulator](assets/arquitectura/11-componentes-simulador.png)
+
+*Figura 12. C4 · Componentes de IoT Simulator. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/11-componentes-simulador.mmd) · [Imagen vectorial SVG](assets/arquitectura/11-componentes-simulador.svg)
+
+## 4.7. Software Object-Oriented Design.
+
+El diseño orientado a objetos expresa las reglas de Destilatech mediante clases de dominio, entidades, objetos de valor, interfaces y enumeraciones. Las raíces de agregado controlan la modificación de su estado y exponen operaciones con significado de negocio. Los identificadores de otros contextos se conservan como referencias; no se compone todo el sistema en un único grafo de objetos.
+
+Los diagramas usan nombres en inglés para mantener consistencia con la implementación. El signo − indica visibilidad privada y + visibilidad pública; las relaciones presentan nombre, dirección cuando corresponde y multiplicidad. Los tipos Guid, decimal, DateTime y bool son conceptuales para C#. Los objetos de valor se comparan por sus valores y no por una identidad de base de datos.
+
+Las entidades no contienen contraseñas en texto plano ni realizan solicitudes HTTP. La verificación de credenciales corresponde a AuthenticationService y al mecanismo de hash seguro seleccionado. Los servicios de aplicación reciben DTO y consultan repositorios mediante interfaces; las colecciones de historial no se cargan completas al abrir una pantalla.
+
+### 4.7.1. Class Diagrams.
+
+Los siguientes diagramas se organizan por los seis bounded contexts del backend y por los otros productos de software. Se muestran miembros relevantes para el alcance del MVP; los DTO de transporte y las operaciones mecánicas de mapeo se omiten para mantener legibilidad. La documentación explica qué clases son agregados, qué relaciones solo referencian identificadores y qué datos no requieren tabla propia.
+
+### Identity/Access & Subscriptions: cuentas y vigencia
+
+BusinessAccount identifica al negocio y su segmento. UserAccount pertenece a un único negocio; el registro crea inicialmente un usuario. La multiplicidad admite usuarios futuros sin incorporar una pantalla de administración de colaboradores al MVP. Los productores y comercializadores son tipos de negocio, no subclases que heredan todos los datos operativos.
+
+Subscription conserva el período de prueba y la fecha de vigencia pagada; planId y paidUntil pueden estar ausentes durante el trial. CanAccess utiliza fechas del servidor y evita depender de una tarea programada para expirar el acceso. AuthenticationService verifica credenciales mediante el repositorio de usuarios y el mecanismo de hash seguro; emite el token para US26.
+
+![Clases · Identity/Access & Subscriptions](assets/arquitectura/12-clases-identidad.png)
+
+*Figura 13. Clases · Identity/Access & Subscriptions. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/12-clases-identidad.mmd) · [Imagen vectorial SVG](assets/arquitectura/12-clases-identidad.svg)
+
+### Identity/Access & Subscriptions: pago propuesto
+
+Plan define una tarifa y una moneda sin inventar precios comerciales. PaymentAttempt conserva una copia del importe esperado y el plan elegido. Money evita separar accidentalmente el valor y su moneda. La interfaz de pago permite cambiar de proveedor sin modificar las entidades.
+
+SubscriptionApplicationService verifica negocio, importe, moneda, plan y estado del pago con la pasarela. Un evento ya procesado no extiende dos veces la vigencia; un estado Paid no retrocede por una notificación tardía Pending. El período nuevo inicia al final de la vigencia actual o en la fecha de confirmación, la que sea posterior. El ciclo mensual y la política de cancelación se validarán al seleccionar el proveedor. Esta extensión requiere historias adicionales de suscripción.
+
+![Clases · Suscripciones y pago externo](assets/arquitectura/13-clases-pagos.png)
+
+*Figura 14. Clases · Suscripciones y pago externo. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/13-clases-pagos.mmd) · [Imagen vectorial SVG](assets/arquitectura/13-clases-pagos.svg)
+
+### Production & Monitoring
+
+ProductionBatch es la raíz del lote y controla transiciones; BatchStatusChange registra el historial, incluyendo la creación con fromStatus vacío. MonitoringRule mantiene revisiones inmutables por variable y unidad. SensorReading referencia tanto el lote como la revisión aplicada, sin formar una colección ilimitada dentro del agregado del lote.
+
+El servicio de monitoreo valida pertenencia del lote, etapa monitoreable, unidad y duplicidad antes de crear SensorReading. La referencia productId identifica el producto de salida en Inventory; no representa materia prima. IBatchRepository reconstituye y guarda lotes sin acoplar la entidad a MySQL ni a Entity Framework.
+
+![Clases · Production & Monitoring](assets/arquitectura/14-clases-produccion.png)
+
+*Figura 15. Clases · Production & Monitoring. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/14-clases-produccion.mmd) · [Imagen vectorial SVG](assets/arquitectura/14-clases-produccion.svg)
+
+### Inventory & Stock Management
+
+Product conserva catálogo, unidad base y umbral. StockItem protege un saldo único por producto y negocio; Issue rechaza cantidades no positivas o mayores al saldo disponible. InventoryMovement es un registro inmutable y almacena cantidad positiva, dirección y motivo. Las correcciones se hacen con movimientos compensatorios autorizados, conservando el historial.
+
+Un movimiento Sale siempre es Out y referencia una línea de pedido. Restock y Production son In. Adjustment puede ser In u Out, siempre con explicación. sourceKey permite deduplicar entradas, salidas y reintentos. La relación con movimientos es una asociación de historial, no una colección que deba cargarse completa para actualizar el saldo.
+
+IInventoryPort es el contrato que utiliza Orders; su implementación usa los agregados de Inventory. La disponibilidad se verifica al guardar mediante control de versión o actualización condicional para impedir que dos ventas simultáneas consuman la misma existencia.
+
+![Clases · Inventory & Stock Management](assets/arquitectura/15-clases-inventario.png)
+
+*Figura 16. Clases · Inventory & Stock Management. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/15-clases-inventario.mmd) · [Imagen vectorial SVG](assets/arquitectura/15-clases-inventario.svg)
+
+### Orders & Replenishment
+
+SalesOrder es la raíz de la venta y contiene líneas con cantidad, precio y una copia del nombre/unidad del producto. La copia conserva el significado del pedido aunque el catálogo cambie posteriormente. Customer pertenece al negocio; no representa una cuenta registrada de otra empresa en Destilatech.
+
+OrderApplicationService coordina validación del pedido, salida de existencias y confirmación en una única transacción. El agregado SalesOrder no invoca HTTP ni modifica tablas de Inventory por su cuenta. No se incorpora cancelación con devolución ni reservas de inventario porque las historias actuales no definen esos procesos.
+
+La reposición disponible consiste en consultar recomendaciones de Analytics. Registrar compras a proveedores, enviar mensajes o sincronizar cuentas de empresas requiere historias adicionales y no se introduce implícitamente en este modelo.
+
+![Clases · Orders & Replenishment](assets/arquitectura/16-clases-pedidos.png)
+
+*Figura 17. Clases · Orders & Replenishment. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/16-clases-pedidos.mmd) · [Imagen vectorial SVG](assets/arquitectura/16-clases-pedidos.svg)
+
+### Alerts & Notifications
+
+Alert representa un aviso interno asociado a un producto con stock bajo o a una lectura anómala. Exactamente una de esas referencias estará informada según el tipo. Acknowledge registra quién atendió el aviso y cuándo. La atención no significa que la condición física o el saldo se hayan corregido.
+
+Para LowStock, el episodio sigue abierto hasta que el saldo supera el umbral, incluso si el usuario ya reconoció la alerta. Una clave única de episodio impide generar avisos repetidos mientras la condición persiste. Para SensorAnomaly, la referencia única a la lectura evita duplicar la alerta al reenviar datos. El aviso de fin de trial se calcula al consultar la suscripción y no necesita otra tabla de notificaciones.
+
+![Clases · Alerts & Notifications](assets/arquitectura/17-clases-alertas.png)
+
+*Figura 18. Clases · Alerts & Notifications. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/17-clases-alertas.mmd) · [Imagen vectorial SVG](assets/arquitectura/17-clases-alertas.svg)
+
+### Analytics & Estimations
+
+EstimationService utiliza un puerto de lectura para obtener ventas y stock sin acceder a repositorios de escritura ajenos. ReplenishmentParameters conserva las hipótesis necesarias para calcular la fecha de reposición; los valores propuestos se muestran al usuario. ReplenishmentEstimate es una instantánea reproducible del cálculo y no cambia el inventario.
+
+El estado Estimated exige cobertura suficiente y demanda positiva. En InsufficientData o NoDemand no se informa una fecha ficticia. DashboardSummary es un modelo de lectura calculado bajo demanda y no una entidad persistente. Los indicadores de producción se consultan adicionalmente mediante el contrato de Production; un comercializador no recibe indicadores de lotes ajenos.
+
+![Clases · Analytics & Estimations](assets/arquitectura/18-clases-analitica.png)
+
+*Figura 19. Clases · Analytics & Estimations. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/18-clases-analitica.mmd) · [Imagen vectorial SVG](assets/arquitectura/18-clases-analitica.svg)
+
+### Productos de presentación: landing y aplicación web
+
+La landing usa HTML/CSS y módulos JavaScript pequeños. LandingNavigation y LocaleService representan responsabilidades de sus módulos, no una obligación de convertir cada sección HTML en una clase. No contienen entidades persistentes.
+
+En Vue, ApiClient, SessionStore y los modelos de vista representan la organización propuesta de servicios y composables JavaScript. Las vistas de lotes, pedidos, alertas y planes siguen el mismo patrón de InventoryViewModel: solicitar DTO a la API y presentar el resultado. Ninguna regla de stock depende solo del frontend. El diagrama expresa estructura conceptual, compatible con Composition API sin exigir clases JavaScript para cada componente Vue.
+
+![Clases de soporte · Landing y Web Application](assets/arquitectura/19-clases-presentacion.png)
+
+*Figura 20. Clases de soporte · Landing y Web Application. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/19-clases-presentacion.mmd) · [Imagen vectorial SVG](assets/arquitectura/19-clases-presentacion.svg)
+
+### Producto de simulación IoT
+
+SimulationScenario define el conjunto de prueba. ReadingGenerator crea payloads identificados; HttpReadingSender implementa IReadingSender y utiliza HttpClient para llamar a US28. Reintentar preserva sourceId y observedAt, de modo que un fallo de comunicación no produzca mediciones aparentemente nuevas.
+
+El simulador no necesita base de datos propia. La configuración y los logs técnicos pueden almacenarse en archivos del entorno de desarrollo; las mediciones aceptadas se conservan únicamente en el backend de Destilatech. Las credenciales se suministran por configuración segura del entorno y no se incluyen en escenarios versionados.
+
+![Clases · IoT Simulator](assets/arquitectura/20-clases-simulador.png)
+
+*Figura 21. Clases · IoT Simulator. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/20-clases-simulador.mmd) · [Imagen vectorial SVG](assets/arquitectura/20-clases-simulador.svg)
+
+## 4.8. Database Design.
+
+Se propone MySQL como sistema relacional y Entity Framework Core para el mapeo y las migraciones. Una base física contiene tablas diferenciadas por prefijo de contexto. Esta elección facilita las transacciones del MVP y conserva una propiedad lógica clara de los datos. No se incorpora MongoDB porque el alcance inicial no demuestra una necesidad adicional de persistencia documental.
+
+Las claves id se representan como UUID y se almacenan como CHAR(36). business_id delimita el negocio. Las fechas utilizan DATETIME(6) en UTC; las cantidades usan DECIMAL(14,3), los importes DECIMAL(14,2) y las tasas calculadas DECIMAL(18,6). Se propone VARCHAR(32) para estados/tipos y VARCHAR(255) para otros textos, salvo las longitudes específicas del diccionario. Todos los campos son NOT NULL excepto los marcados nullable. La precisión se validará con las unidades reales del producto.
+
+Las relaciones dentro de un contexto usan claves foráneas. En esta base compartida se admiten claves foráneas entre contextos para garantizar integridad, pero las escrituras siguen pasando por el módulo propietario. En tablas operativas se define UNIQUE(business_id, id) para soportar referencias compuestas y evitar vínculos entre recursos de distintos negocios. Las relaciones gráficas se complementan con el diccionario de constraints.
+
+### 4.8.1. Database Diagrams.
+
+Los diagramas representan el modelo lógico propuesto con PK, FK, claves únicas y cardinalidades. Los nombres uuid, datetime y decimal son tipos lógicos; su materialización MySQL se establece en 4.8. No se presenta este diseño como una base de datos ya creada.
+
+Las tablas de catálogo global, como iam_plans, no incluyen business_id. En el resto de las tablas operativas, la relación con iam_business_accounts se aplica aunque no se repita visualmente en cada diagrama. Para legibilidad, algunas referencias externas aparecen solo como campos FK y se resuelven en el diccionario posterior. No deben omitirse de las migraciones.
+
+### Persistencia de Identity/Access & Subscriptions
+
+Cada negocio dispone de una suscripción y al menos el usuario creado en el registro. Un plan puede relacionarse con muchas suscripciones; plan_id es nulo durante un trial sin plan seleccionado. Los intentos de pago identifican el plan y el importe verificado. Los eventos de proveedor solo se marcan procesados en la misma transacción que actualiza pago y suscripción.
+
+Las contraseñas se guardan mediante hash; no se persisten datos de tarjeta. El par (provider, provider_event_id) es único para evitar procesar dos veces una notificación. idempotency_key es única por negocio en los intentos de checkout; provider_payment_id puede ser nulo antes de recibir respuesta del proveedor.
+
+![ER · Identidad y suscripciones](assets/arquitectura/21-er-identidad.png)
+
+*Figura 22. ER · Identidad y suscripciones. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/21-er-identidad.mmd) · [Imagen vectorial SVG](assets/arquitectura/21-er-identidad.svg)
+
+### Persistencia de Production & Monitoring
+
+production_batches referencia el producto de salida de inventory_products. La cantidad estimada utiliza su unidad base; no se mezclan litros y botellas sin una conversión explícita. production_status_changes conserva cada transición y su autor. La primera transición permite from_status nulo.
+
+Las reglas son revisiones inmutables. Cada lectura referencia una revisión del mismo lote y negocio; la unidad y la variable quedan determinadas por esa regla. Se verifica la unidad recibida antes de persistir. La combinación (business_id, source_id) es única. La API selecciona la regla vigente según observed_at y rechaza una lectura si no existe configuración válida para ese instante.
+
+![ER · Producción y monitoreo](assets/arquitectura/22-er-produccion.png)
+
+*Figura 23. ER · Producción y monitoreo. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/22-er-produccion.mmd) · [Imagen vectorial SVG](assets/arquitectura/22-er-produccion.svg)
+
+### Persistencia de Inventory & Stock Management
+
+inventory_products define un SKU único por negocio y una unidad base. Cada producto tiene un único stock_item, creado con saldo cero en la misma transacción que el producto. Los movimientos mantienen cantidades positivas y usan direction para determinar el signo; quantity del saldo nunca puede ser negativa.
+
+Un movimiento derivado de venta referencia una línea de orders_order_lines. order_line_id es único cuando está informado, por lo que una línea confirmada produce una sola salida. source_key también es única por negocio. El saldo se actualiza y el movimiento se inserta en la misma transacción; se conserva version para detectar concurrencia.
+
+![ER · Inventario y movimientos](assets/arquitectura/23-er-inventario.png)
+
+*Figura 24. ER · Inventario y movimientos. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/23-er-inventario.mmd) · [Imagen vectorial SVG](assets/arquitectura/23-er-inventario.svg)
+
+### Persistencia de Orders & Replenishment
+
+orders_sales_orders referencia un cliente del mismo negocio y conserva moneda, estado e idempotencia. orders_order_lines referencia un producto propio y guarda su descripción/unidad histórica. Los totales se calculan sumando quantity × unit_price; no se guardan subtotales redundantes en este diseño.
+
+La creación persistida de un pedido incluye al menos una línea, y la confirmación exige líneas válidas, cliente existente y stock suficiente. La regla de al menos una línea se aplica en la transacción de aplicación, ya que una FK simple no puede garantizarla. La fecha confirmed_at solo se informa en estado Confirmed. No se modela envío, factura ni compra a proveedor.
+
+![ER · Clientes y pedidos](assets/arquitectura/24-er-pedidos.png)
+
+*Figura 25. ER · Clientes y pedidos. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/24-er-pedidos.mmd) · [Imagen vectorial SVG](assets/arquitectura/24-er-pedidos.svg)
+
+### Persistencia de Alerts & Notifications
+
+LowStock exige product_id y prohíbe reading_id; SensorAnomaly exige reading_id y prohíbe product_id. Las referencias externas se muestran para hacer visible su origen. El registro mantiene estado de atención, usuario e instante de reconocimiento.
+
+episode_key incluye negocio y producto mientras el episodio de bajo stock está abierto. Su unicidad evita más de un episodio activo; al recuperarse el stock se establece episode_ended_at y episode_key pasa a nulo, conservando el historial. Una restricción única por negocio/reading_id evita dos alertas para la misma lectura. Una alerta de lectura es inmutable en su origen; solo cambia su atención.
+
+![ER · Alertas y referencias de origen](assets/arquitectura/25-er-alertas.png)
+
+*Figura 26. ER · Alertas y referencias de origen. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/25-er-alertas.mmd) · [Imagen vectorial SVG](assets/arquitectura/25-er-alertas.svg)
+
+### Persistencia de Analytics & Estimations
+
+analytics_parameters contiene como máximo una configuración por producto. Su ausencia produce InsufficientData hasta configurar y confirmar cobertura. analytics_estimates conserva los parámetros efectivos, ventana, saldo y resultado del cálculo para explicar lo mostrado al usuario.
+
+estimated_reorder_at es nulo cuando el estado no es Estimated. daily_demand puede ser nulo con historial insuficiente y es cero en NoDemand. Los dashboards se construyen mediante consultas, sin una tabla dashboard. Se propone conservar las instantáneas de estimación mientras sean útiles para trazabilidad; su política de retención se definirá con el equipo.
+
+![ER · Parámetros e instantáneas de estimación](assets/arquitectura/26-er-analitica.png)
+
+*Figura 27. ER · Parámetros e instantáneas de estimación. Fuente: elaboración propia para esta propuesta.*
+
+[Fuente editable Mermaid](diagramas/26-er-analitica.mmd) · [Imagen vectorial SVG](assets/arquitectura/26-er-analitica.svg)
+
+### Diccionario de restricciones y referencias: identidad y producción
+
+Las siguientes restricciones completan los diagramas y deben incorporarse a las migraciones y validaciones de aplicación. PK significa clave primaria, FK clave foránea, UQ unicidad y CK condición de validación. Toda tabla de negocio contiene FK business_id → iam_business_accounts.id; las tablas con id y business_id exponen UQ(business_id, id).
+
+| Tablas | Restricciones y referencias |
+| --- | --- |
+| iam_business_accounts / iam_users | CK business_type IN (Producer, Merchant). email_normalized VARCHAR(254), UQ global y normalización consistente. password_hash VARCHAR(255). Nombre VARCHAR(150). |
+| iam_subscriptions | UQ(business_id); FK plan_id → iam_plans.id nullable. CK trial_end > trial_start; trial de 14 días en aplicación. Estados Trial/Active/Expired. CanAccess comprueba fechas. |
+| iam_plans | UQ(code), code VARCHAR(50); monthly_price >= 0; currency CHAR(3). No se definen importes comerciales en esta propuesta. |
+| iam_payment_attempts | FK(business_id, subscription_id) → iam_subscriptions(business_id,id); FK plan_id → iam_plans.id. UQ(business_id,idempotency_key); UQ(provider_payment_id). expected_amount >= 0; estado Pending/Paid/Failed. |
+| iam_payment_events | FK payment_attempt_id → iam_payment_attempts.id. UQ(provider,provider_event_id). Solo se persiste processed_at tras verificación y commit del pago. |
+| production_batches | FK(business_id,product_id) → inventory_products(business_id,id). UQ(business_id,code). estimated_output > 0; estado de BatchStatus. |
+| production_status_changes | FK(business_id,batch_id) → production_batches; FK(business_id,changed_by) → iam_users. Transición inicial sin from_status; sucesoras según secuencia acordada. |
+| production_monitoring_rules | FK(business_id,batch_id) → production_batches. UQ(business_id,batch_id,metric,effective_from); UQ(business_id,batch_id,id). CK minimum < maximum. metric VARCHAR(50), unit VARCHAR(20). |
+| production_sensor_readings | FK(business_id,batch_id,rule_id) → production_monitoring_rules(business_id,batch_id,id). UQ(business_id,source_id), source_id VARCHAR(100). Regla/unidad/instante y fuente se validan en aplicación. |
+
+### Diccionario de restricciones y referencias: operaciones
+
+| Tablas | Restricciones y referencias |
+| --- | --- |
+| inventory_products | UQ(business_id,sku), sku VARCHAR(64); name VARCHAR(150); presentation VARCHAR(100); unit VARCHAR(20); reorder_level >= 0. Desactivación lógica, sin borrar historial. |
+| inventory_stock_items | FK(business_id,product_id) → inventory_products. UQ(business_id,product_id). CK quantity >= 0 y version >= 0. Producto + saldo inicial se crean juntos. |
+| inventory_movements | FK(business_id,stock_item_id) → inventory_stock_items; FK(business_id,order_line_id) → orders_order_lines nullable; FK(business_id,recorded_by) → iam_users. UQ(business_id,source_key), UQ(business_id,order_line_id). CK quantity > 0. |
+| Movimiento por venta | reason=Sale implica direction=Out y order_line_id no nulo; otras razones exigen order_line_id nulo. Restock/Production implican In. Adjustment permite In/Out y requiere note. |
+| orders_customers | Nombre VARCHAR(150), contact VARCHAR(254). Se desactiva en lugar de eliminar registros referenciados. |
+| orders_sales_orders | FK(business_id,customer_id) → orders_customers. UQ(business_id,idempotency_key). CK Draft → confirmed_at nulo; Confirmed → confirmed_at informado. currency CHAR(3). |
+| orders_order_lines | FK(business_id,order_id) → orders_sales_orders; FK(business_id,product_id) → inventory_products. UQ(business_id,order_id,product_id); cantidad > 0, precio >= 0. Un pedido persistido tiene al menos una línea (aplicación). |
+| alerts_alerts | FK compuestas al producto, lectura y usuario del mismo negocio. CK origen exclusivo según type; CK acknowledged_at/by informados solo en Acknowledged. UQ(episode_key), UQ(business_id,reading_id). |
+| analytics_parameters | FK(business_id,product_id) → inventory_products; UQ(business_id,product_id). lead_time_days >= 0; safety_stock >= 0; tracking_start informado. |
+| analytics_estimates | FK(business_id,product_id) → inventory_products. window_start < window_end; stock_snapshot >= 0; demanda >= 0 si informada. Estimated requiere demanda > 0 y fecha; otros estados no tienen fecha. |
+
+### Integridad, índices y escenarios de comprobación
+
+Los índices se orientan a las consultas del backlog: (business_id,status) en pedidos, lotes y alertas; (business_id,stock_item_id,occurred_at) en movimientos; (business_id,batch_id,observed_at) en lecturas; y (business_id,product_id,calculated_at) en estimaciones. Las FK compuestas también requieren índices compatibles. Las referencias históricas utilizan RESTRICT; no se propone borrado en cascada de ventas o lecturas.
+
+La API aplica filtros de negocio, permisos por segmento y transacciones; las restricciones SQL refuerzan estas reglas. Una FK no sustituye autorización. Los agregados validan cantidades, estados y pertenencia antes de persistir; las comprobaciones SQL e idempotencia protegen además contra concurrencia y reenvíos.
+
+Estos son criterios propuestos para validar la futura implementación, no pruebas ya ejecutadas sobre una aplicación existente.
+
+| Escenario | Resultado esperado |
+| --- | --- |
+| Dos ventas concurrentes del último stock | Solo una confirma; la otra recibe conflicto. El saldo no es negativo. |
+| Reintento de confirmación del pedido | Se devuelve el mismo pedido confirmado sin otro movimiento. |
+| Lectura repetida fuera de rango | Existe una lectura y una alerta, conservando el mismo source_id. |
+| Cambio de regla después de una lectura | El dato histórico conserva la revisión utilizada al evaluarlo. |
+| Identificador de producto de otro negocio | La API rechaza acceso y las FK compuestas impiden vínculos cruzados. |
+| Pago notificado dos veces | La vigencia se extiende una sola vez tras verificación del proveedor. |
+| Historial incompleto o sin demanda | Se muestra InsufficientData o NoDemand, sin fecha engañosa. |
+
+
