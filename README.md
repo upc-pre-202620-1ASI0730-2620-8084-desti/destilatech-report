@@ -1466,3 +1466,28 @@ El equipo organizó una sesión de Design-Level Event Storming con una duración
 | Read Model | Verde | Vista de consulta construida a partir de los eventos. |
 | Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
 
+**a. Identity/Access & Subscriptions**
+
+Este Bounded Context gestiona el ciclo de vida de la cuenta del usuario (productor o comercializador), su periodo de prueba y su suscripción paga, respondiendo a los Epics EP01.
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
+    E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
+    C3["Command:\nSubscribeToPlan"]:::command --> A3{{"Aggregate:\nSubscription"}}:::aggregate --> E4(["Event:\nSubscriptionActivated"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C3
+    E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
+    E4 --> RM1
+    E3 --> RM1
+```
+
+El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
+
