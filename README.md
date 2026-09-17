@@ -1750,3 +1750,49 @@ classDiagram
     StockMovement ..> MovementType : uses
 ```
 
+**d. Orders & Replenishment**
+
+```mermaid
+classDiagram
+    class Customer {
+        -Guid id
+        -Guid ownerAccountId
+        -string name
+        -string contact
+        +Register(ownerAccountId, name, contact) Customer
+    }
+    class Order {
+        -Guid id
+        -Guid customerId
+        -DateTime orderDate
+        -OrderStatus status
+        +Register(customerId, lines) Order
+        +Confirm() void
+    }
+    class OrderLine {
+        -Guid id
+        -Guid orderId
+        -Guid productId
+        -decimal quantity
+    }
+    class ReplenishmentOrder {
+        -Guid id
+        -Guid ownerAccountId
+        -string supplierName
+        -DateTime orderDate
+        -OrderStatus status
+        +Request(ownerAccountId, supplierName) ReplenishmentOrder
+    }
+    class OrderStatus {
+        <<enumeration>>
+        PENDING
+        CONFIRMED
+        CANCELLED
+    }
+
+    Customer "1" --> "*" Order : places
+    Order "1" --> "1..*" OrderLine : contains
+    Order ..> OrderStatus : uses
+    ReplenishmentOrder ..> OrderStatus : uses
+```
+
