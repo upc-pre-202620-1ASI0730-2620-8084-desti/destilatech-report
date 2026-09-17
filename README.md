@@ -1826,3 +1826,33 @@ classDiagram
     Alert ..> AlertStatus : uses
 ```
 
+**f. Analytics & Estimations**
+
+```mermaid
+classDiagram
+    class ReplenishmentEstimate {
+        -Guid id
+        -Guid productId
+        -DateTime estimatedDate
+        -decimal estimatedQuantity
+        -decimal confidence
+        +Calculate(productId) ReplenishmentEstimate
+    }
+    class HistoricalIndicator {
+        -Guid id
+        -Guid ownerAccountId
+        -string period
+        -MetricType metricType
+        -decimal value
+        +Generate(ownerAccountId, period, metricType) HistoricalIndicator
+    }
+    class MetricType {
+        <<enumeration>>
+        PRODUCTION_VOLUME
+        STOCK_LEVEL
+        SALES_VOLUME
+    }
+
+    HistoricalIndicator ..> MetricType : uses
+```
+
