@@ -1587,3 +1587,23 @@ flowchart LR
 
 Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
 
+**f. Analytics & Estimations**
+
+Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts (EP08).
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+
+    XC1["Evento observado desde\nInventory & Stock Mgmt:\nStockMovementRegistered"]:::event --> P1{"Policy:\nRecalculateEstimateOnMovement"}:::policy --> C1["Command:\nCalculateReplenishmentEstimate"]:::command --> A1{{"Aggregate:\nReplenishmentEstimate"}}:::aggregate --> E1(["Event:\nReplenishmentEstimateCalculated"]):::event
+    C2["Command:\nGenerateHistoricalIndicators"]:::command --> A2{{"Aggregate:\nHistoricalIndicator"}}:::aggregate --> E2(["Event:\nHistoricalIndicatorsGenerated"]):::event
+    E1 --> RM1[/"Read Model:\nReplenishmentEstimateView"/]:::readmodel
+    E2 --> RM2[/"Read Model:\nHistoricalIndicatorsView"/]:::readmodel
+```
+
+Este contexto suscribe al evento `StockMovementRegistered` publicado por Inventory & Stock Management para recalcular la estimación de reposición (US20) sin acoplarse a su modelo interno. `GenerateHistoricalIndicators` se ejecuta de forma periódica/bajo demanda para alimentar los gráficos de evolución de inventario y producción (US21), consumiendo el historial de Production & Monitoring e Inventory & Stock Management.
+
