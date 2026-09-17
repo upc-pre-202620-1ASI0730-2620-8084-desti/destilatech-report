@@ -1,0 +1,55 @@
+classDiagram
+direction LR
+class ProductionBatch {
+  -Guid id
+  -Guid businessId
+  -Guid productId
+  -BatchStatus status
+  -decimal estimatedOutput
+  +ChangeStatus(next, at) void
+}
+class BatchStatusChange {
+  -Guid id
+  -BatchStatus fromStatus
+  -BatchStatus toStatus
+  -DateTime changedAt
+  +Describe() string
+}
+class MonitoringRule {
+  -Guid id
+  -Guid batchId
+  -string metric
+  -string unit
+  -decimal minimum
+  -decimal maximum
+  -DateTime effectiveFrom
+  +IsOutside(value, unit) bool
+}
+class BatchStatus {
+  <<enumeration>>
+  Registered
+  Fermenting
+  Distilling
+  Bottling
+  Completed
+}
+class SensorReading {
+  -Guid id
+  -Guid batchId
+  -Guid ruleId
+  -string sourceId
+  -decimal value
+  -DateTime observedAt
+  -bool anomalous
+  +Record(rule) SensorReading
+}
+class IBatchRepository {
+  <<interface>>
+  +Find(id, businessId) ProductionBatch
+  +Save(batch) void
+}
+ProductionBatch "1" *-- "1..*" BatchStatusChange : historial
+ProductionBatch "1" -- "0..*" MonitoringRule : configura
+ProductionBatch ..> BatchStatus : estado
+MonitoringRule "1" -- "0..*" SensorReading : regla aplicada
+IBatchRepository ..> ProductionBatch : reconstituye

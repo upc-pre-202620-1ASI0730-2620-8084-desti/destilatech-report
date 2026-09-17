@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="1040" viewBox="0 0 1170 1040" role="img">
+<rect x="0" y="0" width="1170" height="1040" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="35" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">ER · Parámetros e instantáneas de estimación</text>
+<text x="35" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Modelo lógico · PK primaria / FK foránea / UK única · referencias compuestas en el texto</text>
+<polyline points="520,242 650,242" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<text x="540" y="233" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1</text>
+<text x="630" y="233" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="end">0..1</text>
+<rect x="537.4" y="183" width="95.2" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="585.0" y="197" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">parametriza</text>
+<polyline points="277.5,277 277.5,625" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<text x="287.5" y="299.0" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1</text>
+<text x="287.5" y="603.0" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">0..*</text>
+<rect x="279.9" y="437.0" width="131.2" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="345.5" y="451.0" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">tiene_resultados</text>
+<rect x="35" y="130" width="485" height="147" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="36" y="131" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="51" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">inventory_products</text>
+<text x="51" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="51" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="51" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar name</text>
+<rect x="650" y="130" width="485" height="235" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="651" y="131" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="666" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">analytics_parameters</text>
+<text x="666" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="666" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="666" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid product_id FK</text>
+<text x="666" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">int lead_time_days</text>
+<text x="666" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal safety_stock</text>
+<text x="666" y="316" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime tracking_start</text>
+<text x="666" y="338" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">boolean history_confirmed</text>
+<rect x="35" y="625" width="485" height="345" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="36" y="626" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="51" y="652" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">analytics_estimates</text>
+<text x="51" y="701" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="51" y="723" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="51" y="745" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid product_id FK</text>
+<text x="51" y="767" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar status</text>
+<text x="51" y="789" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime window_start</text>
+<text x="51" y="811" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime window_end</text>
+<text x="51" y="833" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal daily_demand nullable</text>
+<text x="51" y="855" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal stock_snapshot</text>
+<text x="51" y="877" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">int lead_time_days_snapshot</text>
+<text x="51" y="899" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal safety_stock_snapshot</text>
+<text x="51" y="921" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime estimated_reorder_at nullable</text>
+<text x="51" y="943" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime calculated_at</text>
+<text x="35" y="1022" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">FUENTE: elaboración para Destilatech · Diseño propuesto, no evidencia de implementación.</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="864" viewBox="0 0 1170 864" role="img">
+<rect x="0" y="0" width="1170" height="864" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="35" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">ER · Clientes y pedidos</text>
+<text x="35" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Modelo lógico · PK primaria / FK foránea / UK única · referencias compuestas en el texto</text>
+<polyline points="520,286 650,286" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<text x="540" y="277" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1</text>
+<text x="630" y="277" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="end">0..*</text>
+<rect x="551.8" y="227" width="66.4" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="585.0" y="241" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">realiza</text>
+<polyline points="892.5,387 892.5,437 277.5,437 277.5,537" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<text x="902.5" y="409.0" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1</text>
+<text x="287.5" y="515.0" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1..*</text>
+<rect x="548.2" y="419" width="73.6" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="585.0" y="433" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">contiene</text>
+<rect x="35" y="130" width="485" height="191" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="36" y="131" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="51" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">orders_customers</text>
+<text x="51" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="51" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="51" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar name</text>
+<text x="51" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar contact</text>
+<text x="51" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">boolean active</text>
+<rect x="650" y="130" width="485" height="257" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="651" y="131" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="666" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">orders_sales_orders</text>
+<text x="666" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="666" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="666" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid customer_id FK</text>
+<text x="666" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar status</text>
+<text x="666" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar currency</text>
+<text x="666" y="316" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar idempotency_key</text>
+<text x="666" y="338" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime created_at</text>
+<text x="666" y="360" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">datetime confirmed_at nullable</text>
+<rect x="35" y="537" width="485" height="257" rx="8" fill="#ffffff" stroke="#3730a3" stroke-width="1.6"/>
+<rect x="36" y="538" width="483" height="51" rx="7" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="51" y="564" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#3730a3" text-anchor="start">orders_order_lines</text>
+<text x="51" y="613" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid id PK</text>
+<text x="51" y="635" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid business_id FK</text>
+<text x="51" y="657" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid order_id FK</text>
+<text x="51" y="679" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">uuid product_id FK</text>
+<text x="51" y="701" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar product_name_snapshot</text>
+<text x="51" y="723" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">varchar unit_snapshot</text>
+<text x="51" y="745" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal quantity</text>
+<text x="51" y="767" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">decimal unit_price</text>
+<text x="35" y="846" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">FUENTE: elaboración para Destilatech · Diseño propuesto, no evidencia de implementación.</text>
+</svg>
