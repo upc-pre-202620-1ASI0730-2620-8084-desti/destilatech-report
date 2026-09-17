@@ -1,0 +1,32 @@
+erDiagram
+direction LR
+inventory_products {
+  uuid id PK
+  uuid business_id FK
+  varchar name
+}
+analytics_parameters {
+  uuid id PK
+  uuid business_id FK
+  uuid product_id FK
+  int lead_time_days
+  decimal safety_stock
+  datetime tracking_start
+  boolean history_confirmed
+}
+analytics_estimates {
+  uuid id PK
+  uuid business_id FK
+  uuid product_id FK
+  varchar status
+  datetime window_start
+  datetime window_end
+  decimal daily_demand "nullable"
+  decimal stock_snapshot
+  int lead_time_days_snapshot
+  decimal safety_stock_snapshot
+  datetime estimated_reorder_at "nullable"
+  datetime calculated_at
+}
+inventory_products ||--o| analytics_parameters : parametriza
+inventory_products ||--o{ analytics_estimates : tiene_resultados

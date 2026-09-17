@@ -1,0 +1,37 @@
+classDiagram
+direction LR
+class Alert {
+  -Guid id
+  -Guid businessId
+  -AlertType type
+  -AlertStatus status
+  -Guid productId
+  -Guid readingId
+  -DateTime createdAt
+  +Acknowledge(userId, at) void
+  +EndEpisode(at) void
+}
+class AlertType {
+  <<enumeration>>
+  LowStock
+  SensorAnomaly
+}
+class AlertStatus {
+  <<enumeration>>
+  Pending
+  Acknowledged
+}
+class AlertPolicy {
+  -IAlertRepository repository
+  +OnStockChanged(event) void
+  +OnAnomalyDetected(event) void
+}
+class IAlertRepository {
+  <<interface>>
+  +FindOpenEpisode(key) Alert
+  +Add(alert) void
+}
+Alert ..> AlertType : tipo
+Alert ..> AlertStatus : estado
+AlertPolicy ..> Alert : abre o cierra episodio
+AlertPolicy ..> IAlertRepository : consulta duplicados

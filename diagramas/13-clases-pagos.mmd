@@ -1,0 +1,44 @@
+classDiagram
+direction LR
+class Plan {
+  -Guid id
+  -string code
+  -decimal monthlyPrice
+  -string currency
+  +IsAvailable() bool
+}
+class PaymentAttempt {
+  -Guid id
+  -Guid subscriptionId
+  -Guid planId
+  -Money expectedAmount
+  -string providerPaymentId
+  -PaymentStatus status
+  +MarkVerifiedPaid(reference) void
+}
+class SubscriptionApplicationService {
+  -IPaymentGateway gateway
+  +StartCheckout(planId) Checkout
+  +ConfirmPayment(eventId) void
+}
+class Money {
+  -decimal amount
+  -string currency
+  +Equals(other) bool
+}
+class PaymentStatus {
+  <<enumeration>>
+  Pending
+  Paid
+  Failed
+}
+class IPaymentGateway {
+  <<interface>>
+  +CreateCheckout(request) Checkout
+  +VerifyPayment(reference) PaymentResult
+}
+Plan "1" -- "0..*" PaymentAttempt : plan elegido
+PaymentAttempt "1" *-- "1" Money : importe
+PaymentAttempt ..> PaymentStatus : estado
+SubscriptionApplicationService ..> PaymentAttempt : verifica y actualiza
+SubscriptionApplicationService ..> IPaymentGateway : usa
