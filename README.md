@@ -1709,3 +1709,44 @@ classDiagram
     ProductionBatch ..> BatchStage : uses
 ```
 
+**c. Inventory & Stock Management**
+
+```mermaid
+classDiagram
+    class Product {
+        -Guid id
+        -Guid ownerAccountId
+        -string name
+        -string presentation
+        -string unit
+        +Register(ownerAccountId, name, presentation, unit) Product
+    }
+    class StockItem {
+        -Guid id
+        -Guid productId
+        -decimal currentQuantity
+        -decimal lowStockThreshold
+        +ConfigureThreshold(threshold) void
+        +ApplyMovement(movement) void
+        +IsBelowThreshold() bool
+    }
+    class StockMovement {
+        -Guid id
+        -Guid stockItemId
+        -MovementType type
+        -decimal quantity
+        -DateTime movementDate
+        -string reason
+        +Register(stockItemId, type, quantity, reason) StockMovement
+    }
+    class MovementType {
+        <<enumeration>>
+        IN
+        OUT
+    }
+
+    Product "1" --> "1" StockItem : tracks
+    StockItem "1" --> "*" StockMovement : records
+    StockMovement ..> MovementType : uses
+```
+
