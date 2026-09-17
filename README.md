@@ -822,10 +822,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
 ### 2.2.2. Registro de entrevistas
 
-URL DEL VIDEO: 
-
-
-
+URL DEL VIDEO: [https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8a859f76%2D82ca%2D49cb%2D84d8%2D934b1dd892e3](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8a859f76%2D82ca%2D49cb%2D84d8%2D934b1dd892e3)
 
 <br>
 
