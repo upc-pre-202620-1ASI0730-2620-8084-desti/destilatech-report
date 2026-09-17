@@ -1663,3 +1663,49 @@ classDiagram
     Account ..> BusinessType : uses
 ```
 
+**b. Production & Monitoring**
+
+```mermaid
+classDiagram
+    class ProductionBatch {
+        -Guid id
+        -Guid producerAccountId
+        -string productName
+        -DateTime startDate
+        -BatchStage stage
+        -decimal estimatedQuantity
+        +Register(producerAccountId, productName, startDate, estimatedQuantity) ProductionBatch
+        +UpdateStage(newStage) void
+        +Close() void
+    }
+    class ProcessVariable {
+        -Guid id
+        -Guid batchId
+        -string name
+        -decimal minRange
+        -decimal maxRange
+        +ConfigureRange(min, max) void
+        #IsWithinRange(value) bool
+    }
+    class SensorReading {
+        -Guid id
+        -Guid processVariableId
+        -decimal value
+        -DateTime recordedAt
+        +Record(processVariableId, value) SensorReading
+        +Evaluate() bool
+    }
+    class BatchStage {
+        <<enumeration>>
+        RECEIVED
+        FERMENTATION
+        DISTILLATION
+        RESTING
+        BOTTLED
+    }
+
+    ProductionBatch "1" --> "*" ProcessVariable : monitors
+    ProcessVariable "1" --> "*" SensorReading : records
+    ProductionBatch ..> BatchStage : uses
+```
+
