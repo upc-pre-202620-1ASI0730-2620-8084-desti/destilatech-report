@@ -1613,3 +1613,53 @@ En esta sección el equipo profundiza el diseño orientado a objetos de la RESTf
 
 ### 4.7.1. Class Diagrams
 
+**a. Identity/Access & Subscriptions**
+
+```mermaid
+classDiagram
+    class Account {
+        -Guid id
+        -string fullName
+        -string email
+        -string passwordHash
+        -BusinessType businessType
+        -DateTime createdAt
+        +Register(fullName, email, password, businessType) Account
+        +Login(email, password) bool
+        #ValidateEmailUniqueness() bool
+    }
+    class TrialPeriod {
+        -Guid id
+        -DateTime startDate
+        -DateTime endDate
+        -TrialStatus status
+        +Start(accountId) TrialPeriod
+        +IsExpiringSoon() bool
+        +Expire() void
+    }
+    class Subscription {
+        -Guid id
+        -SubscriptionStatus status
+        -DateTime startDate
+        -DateTime renewalDate
+        +Activate(planId) void
+        +Cancel() void
+    }
+    class Plan {
+        -Guid id
+        -string name
+        -decimal price
+        -BillingCycle billingCycle
+    }
+    class BusinessType {
+        <<enumeration>>
+        PRODUCER
+        RETAILER
+    }
+
+    Account "1" --> "1" TrialPeriod : owns
+    Account "1" --> "0..1" Subscription : has
+    Subscription "*" --> "1" Plan : subscribesTo
+    Account ..> BusinessType : uses
+```
+
