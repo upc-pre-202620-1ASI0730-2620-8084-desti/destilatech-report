@@ -1,0 +1,48 @@
+classDiagram
+direction LR
+class BusinessAccount {
+  -Guid id
+  -string name
+  -BusinessType businessType
+  +Register(name, type) BusinessAccount
+}
+class UserAccount {
+  -Guid id
+  -Guid businessId
+  -string emailNormalized
+  -string passwordHash
+  -bool active
+  +Deactivate() void
+}
+class Subscription {
+  -Guid id
+  -Guid businessId
+  -Guid planId
+  -DateTime trialStart
+  -DateTime trialEnd
+  -DateTime paidUntil
+  -SubscriptionStatus status
+  +CanAccess(now) bool
+  +ActivatePaidPeriod(end) void
+}
+class BusinessType {
+  <<enumeration>>
+  Producer
+  Merchant
+}
+class SubscriptionStatus {
+  <<enumeration>>
+  Trial
+  Active
+  Expired
+}
+class AuthenticationService {
+  -IUserRepository users
+  +Register(request) UserAccount
+  +Login(credentials) AccessToken
+}
+BusinessAccount "1" -- "1..*" UserAccount : pertenece a
+BusinessAccount "1" -- "1" Subscription : dispone de
+BusinessAccount ..> BusinessType : clasifica
+Subscription ..> SubscriptionStatus : estado
+AuthenticationService ..> UserAccount : autentica

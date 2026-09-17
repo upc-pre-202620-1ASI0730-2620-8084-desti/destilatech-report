@@ -1,0 +1,46 @@
+erDiagram
+direction LR
+production_batches {
+  uuid id PK
+  uuid business_id FK
+  uuid product_id FK
+  varchar code
+  varchar status
+  datetime started_at
+  decimal estimated_output
+  datetime created_at
+}
+production_status_changes {
+  uuid id PK
+  uuid business_id FK
+  uuid batch_id FK
+  varchar from_status "nullable"
+  varchar to_status
+  datetime changed_at
+  uuid changed_by FK
+}
+production_monitoring_rules {
+  uuid id PK
+  uuid business_id FK
+  uuid batch_id FK
+  varchar metric
+  varchar unit
+  decimal minimum
+  decimal maximum
+  datetime effective_from
+}
+production_sensor_readings {
+  uuid id PK
+  uuid business_id FK
+  uuid batch_id FK
+  uuid rule_id FK
+  varchar source_id
+  decimal value
+  datetime observed_at
+  datetime received_at
+  boolean anomalous
+}
+production_batches ||--|{ production_status_changes : historial
+production_batches ||--o{ production_monitoring_rules : configura
+production_monitoring_rules ||--o{ production_sensor_readings : evalua
+production_batches ||--o{ production_sensor_readings : recibe

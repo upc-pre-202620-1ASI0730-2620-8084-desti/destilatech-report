@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="952" viewBox="0 0 1440 952" role="img">
+<rect x="0" y="0" width="1440" height="952" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="35" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">Clases · Alerts &amp; Notifications</text>
+<text x="35" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">UML · − privado / + público · multiplicidad junto a la relación</text>
+<polyline points="405,220 535,220" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="523.0,226.0 535,220 523.0,214.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="447.6" y="161" width="44.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="175" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">tipo</text>
+<polyline points="220.0,130 220.0,105 1220.0,105 1220.0,130" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="1214.0,118.0 1220.0,130 1226.0,118.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="690.4" y="88" width="59.2" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="720.0" y="102" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">estado</text>
+<polyline points="220.0,581 220.0,431" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="226.0,443.0 220.0,431 214.0,443.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="200.8" y="492.0" width="174.4" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="288.0" y="506.0" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">abre o cierra episodio</text>
+<polyline points="405,693 535,693" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="523.0,699.0 535,693 523.0,687.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="426.0" y="634" width="88.0" height="36" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="648" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">consulta</text>
+<text x="470.0" y="664" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">duplicados</text>
+<rect x="35" y="130" width="370" height="301" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="36" y="131" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="51" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">Alert</text>
+<text x="51" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid id</text>
+<text x="51" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid businessId</text>
+<text x="51" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-AlertType type</text>
+<text x="51" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-AlertStatus status</text>
+<text x="51" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid productId</text>
+<text x="51" y="316" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid readingId</text>
+<text x="51" y="338" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-DateTime createdAt</text>
+<polyline points="47,351 393,351" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="51" y="382" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Acknowledge(userId, at) void</text>
+<text x="51" y="404" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+EndEpisode(at) void</text>
+<rect x="535" y="130" width="370" height="125" rx="8" fill="#ffffff" stroke="#6b21a8" stroke-width="1.6"/>
+<rect x="536" y="131" width="368" height="51" rx="7" fill="#faf5ff" stroke="none" stroke-width="1"/>
+<text x="551" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#6b21a8" text-anchor="start">AlertType</text>
+<text x="551" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">LowStock</text>
+<text x="551" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">SensorAnomaly</text>
+<rect x="1035" y="130" width="370" height="125" rx="8" fill="#ffffff" stroke="#6b21a8" stroke-width="1.6"/>
+<rect x="1036" y="131" width="368" height="51" rx="7" fill="#faf5ff" stroke="none" stroke-width="1"/>
+<text x="1051" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#6b21a8" text-anchor="start">AlertStatus</text>
+<text x="1051" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">Pending</text>
+<text x="1051" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">Acknowledged</text>
+<rect x="35" y="581" width="370" height="169" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="36" y="582" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="51" y="608" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">AlertPolicy</text>
+<text x="51" y="657" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-IAlertRepository repository</text>
+<polyline points="47,670 393,670" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="51" y="701" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+OnStockChanged(event) void</text>
+<text x="51" y="723" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+OnAnomalyDetected(event) void</text>
+<rect x="535" y="581" width="370" height="147" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="536" y="582" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="551" y="608" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">IAlertRepository «interface»</text>
+<polyline points="547,648 893,648" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="551" y="679" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+FindOpenEpisode(key) Alert</text>
+<text x="551" y="701" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Add(alert) void</text>
+<text x="35" y="934" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">FUENTE: elaboración para Destilatech · Diseño propuesto, no evidencia de implementación.</text>
+</svg>

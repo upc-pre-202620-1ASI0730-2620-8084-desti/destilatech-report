@@ -1,0 +1,35 @@
+classDiagram
+direction LR
+class SimulationScenario {
+  -Guid businessId
+  -Guid batchId
+  -string metric
+  -string unit
+  -int intervalSeconds
+  +Validate() bool
+}
+class ReadingGenerator {
+  -SimulationScenario scenario
+  +Next() ReadingPayload
+}
+class ReadingPayload {
+  +string sourceId
+  +Guid batchId
+  +string metric
+  +string unit
+  +decimal value
+  +DateTime observedAt
+}
+class IReadingSender {
+  <<interface>>
+  +Send(payload) Task
+}
+class HttpReadingSender {
+  -HttpClient client
+  +Send(payload) Task
+  +RetrySamePayload(payload) Task
+}
+SimulationScenario "1" -- "1" ReadingGenerator : configura
+ReadingGenerator ..> ReadingPayload : crea
+ReadingGenerator ..> IReadingSender : entrega
+HttpReadingSender ..|> IReadingSender : implementa

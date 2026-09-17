@@ -1,0 +1,26 @@
+flowchart LR
+  http["HTTP Endpoints & Middleware<br/>Componente: ASP.NET Core<br/>Token, business_id, DTO y OpenAPI"]:::component
+  app["Application Services<br/>Componente: C#<br/>Casos de uso y transacción local"]:::component
+  domain["Domain Model<br/>Componente: C# puro<br/>Agregados, invariantes y eventos"]:::component
+  ports["Repositories & Unit of Work<br/>Componente: EF Core<br/>Mapeo y persistencia por contexto"]:::component
+  payment["Payment Gateway Adapter<br/>Componente: C# / HTTPS<br/>Checkout, webhook y verificación"]:::component
+  db["MySQL<br/>Contenedor externo al foco<br/>Tablas por contexto"]:::external
+http -->|"invoca caso de uso"| app
+app -->|"ejecuta reglas"| domain
+app -->|"usa interfaces"| ports
+app -->|"usa IPaymentGateway"| payment
+ports -->|"SQL parametrizado"| db
+classDef actor fill:#fef3c7,stroke:#92400e,color:#172033
+classDef command fill:#dbeafe,stroke:#1d4ed8,color:#172033
+classDef event fill:#ffedd5,stroke:#c2410c,color:#172033
+classDef aggregate fill:#fef9c3,stroke:#854d0e,color:#172033
+classDef policy fill:#f3e8ff,stroke:#7e22ce,color:#172033
+classDef query fill:#dcfce7,stroke:#15803d,color:#172033
+classDef external fill:#f1f5f9,stroke:#475569,color:#172033
+classDef system fill:#dbeafe,stroke:#1e40af,color:#172033
+classDef container fill:#e0f2fe,stroke:#0369a1,color:#172033
+classDef component fill:#ecfeff,stroke:#0e7490,color:#172033
+classDef class fill:#f0fdfa,stroke:#115e59,color:#172033
+classDef enum fill:#faf5ff,stroke:#6b21a8,color:#172033
+classDef table fill:#eef2ff,stroke:#3730a3,color:#172033
+classDef hotspot fill:#fee2e2,stroke:#b91c1c,color:#172033

@@ -1,0 +1,31 @@
+erDiagram
+direction LR
+orders_customers {
+  uuid id PK
+  uuid business_id FK
+  varchar name
+  varchar contact
+  boolean active
+}
+orders_sales_orders {
+  uuid id PK
+  uuid business_id FK
+  uuid customer_id FK
+  varchar status
+  varchar currency
+  varchar idempotency_key
+  datetime created_at
+  datetime confirmed_at "nullable"
+}
+orders_order_lines {
+  uuid id PK
+  uuid business_id FK
+  uuid order_id FK
+  uuid product_id FK
+  varchar product_name_snapshot
+  varchar unit_snapshot
+  decimal quantity
+  decimal unit_price
+}
+orders_customers ||--o{ orders_sales_orders : realiza
+orders_sales_orders ||--|{ orders_order_lines : contiene
