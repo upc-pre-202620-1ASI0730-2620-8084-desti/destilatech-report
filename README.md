@@ -1796,3 +1796,33 @@ classDiagram
     ReplenishmentOrder ..> OrderStatus : uses
 ```
 
+**e. Alerts & Notifications**
+
+```mermaid
+classDiagram
+    class Alert {
+        -Guid id
+        -Guid ownerAccountId
+        -AlertType type
+        -Guid sourceId
+        -string message
+        -AlertStatus status
+        -DateTime createdAt
+        +Raise(ownerAccountId, type, sourceId, message) Alert
+        +MarkAsAttended() void
+    }
+    class AlertType {
+        <<enumeration>>
+        LOW_STOCK
+        ANOMALY
+    }
+    class AlertStatus {
+        <<enumeration>>
+        PENDING
+        ATTENDED
+    }
+
+    Alert ..> AlertType : uses
+    Alert ..> AlertStatus : uses
+```
+
