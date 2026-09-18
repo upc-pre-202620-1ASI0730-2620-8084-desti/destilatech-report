@@ -45,8 +45,8 @@ Proyecto<br>
       <td>Condor Sandoval, Jean Pierre</td>
     </tr>
     <tr>
-      <td>UXXXXXXXXX</td>
-      <td>XXXXXXXXX</td>
+      <td>U202322404</td>
+      <td>Domenack Angeles, Miguel</td>
     </tr>
   </tbody>
 </table>
@@ -85,11 +85,11 @@ xxxxxxx
 
 ##### Participación por integrante:
 
-- xxxxxxxxxx      <br>
-- xxxxxxxxxx 
-- xxxxxxxxxx 
-- xxxxxxxxxx 
-- xxxxxxxxxx  
+- U202317807      <br>
+- U202418755 
+- U202316845 
+- U202418405 
+- U202322404  
 
 + **Evidencias de colaboración y commits - Github:**
     * **Análiticos de colaboración** <br><br>
@@ -264,13 +264,13 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 ### 1.1.2. Perfiles de Integrantes del equipo
 
-| **Nombre Completo del integrante**    | 	**Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
-| :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
-| Mario Alonso Fernandez Seer      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
-| Santiago Atanacio, Jairo Mathias      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
-| Estudiante 3     | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto               | descripcion
-| Estudiante 4      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                     | descripcion
-| Estudiante 5 | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto | descripcion
+| **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia** | **Conocimientos y habilidades**
+|:-----------------------------------|:-----------------------------------------------------------------|:---------------|:------------------------------------ |
+| Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
+| Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Estudiante 3                       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | descripcion
+| Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
+| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto           | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
 
 
 
@@ -1377,7 +1377,30 @@ Para la notación de colores se consultó adicionalmente el material teórico de
 
 ### 2.5. Ubiquitous Language
 
+El siguiente glosario recoge los términos del dominio de negocio de Destilatech (producción, almacenamiento y comercialización de pisco).
 
+| Term | Definición |
+| :--- | :--- |
+| **Batch** (Lote) | Cantidad específica de pisco producida en conjunto bajo condiciones uniformes, que se rastrea como una unidad trazable desde la recepción de la materia prima hasta el embotellado. |
+| **Must** (Mosto) | Jugo de uva obtenido antes de la fermentación, materia prima base del proceso productivo. |
+| **Fermentation** (Fermentación) | Proceso bioquímico mediante el cual el mosto se transforma en un líquido alcohólico base, previo a la destilación. |
+| **Distillation** (Destilación) | Proceso de separación y concentración del alcohol a partir del fermentado, mediante el cual se obtiene el pisco. |
+| **Resting Period** (Reposo) | Periodo posterior a la destilación durante el cual el pisco reposa en recipientes de material neutro antes de su envasado, según el Reglamento de la Denominación de Origen Pisco. |
+| **Bottling** (Embotellado) | Proceso de envasado del pisco terminado en botellas listas para su comercialización. |
+| **Denomination of Origin** (Denominación de Origen) | Designación oficial que restringe el uso del término "Pisco" al producto elaborado en las zonas peruanas autorizadas, bajo un reglamento específico. |
+| **Producer** (Productor) | Segmento principal de usuario: pequeño o mediano negocio que elabora pisco, desde la recepción de uva hasta el embotellado. |
+| **Retailer** (Comercializador) | Segmento complementario de usuario: negocio (licorería, bodega, minimarket, distribuidor) que compra pisco y otras bebidas para revenderlas al consumidor final. |
+| **Inventory Item** (Ítem de inventario / Existencia) | Producto o presentación específica que se controla dentro del inventario de un productor o comercializador. |
+| **Stock Movement** (Movimiento de inventario) | Registro de una entrada o salida de cantidad de un ítem de inventario. |
+| **Replenishment** (Reposición) | Acción de reabastecer un ítem de inventario cuando su cantidad disponible cae por debajo de lo necesario. |
+| **Low-Stock Alert** (Alerta de stock bajo) | Notificación automática generada cuando el stock de un producto alcanza o cae por debajo del umbral configurado. |
+| **Anomaly Alert** (Alerta de anomalía) | Notificación automática generada cuando una variable monitoreada del proceso productivo se sale del rango configurado como normal. |
+| **Sensor Reading** (Lectura de sensor) | Valor capturado de una variable de proceso monitoreada, proveniente de un dispositivo IoT (simulado en el MVP). |
+| **Trial Period** (Periodo de prueba) | Periodo gratuito de hasta 14 días durante el cual un nuevo cliente puede usar Destilatech antes de requerir una suscripción paga. |
+| **Subscription** (Suscripción) | Plan de pago recurrente que un cliente debe contratar para continuar usando Destilatech al finalizar el periodo de prueba. |
+| **Order** (Pedido) | Solicitud de productos realizada por un cliente a un productor, o por un comercializador a su proveedor. |
+| **Customer** (Cliente) | Parte que adquiere pisco u otro producto de un productor o comercializador. |
+| **Supplier** (Proveedor) | Parte a la que un comercializador (o un productor, para insumos) solicita el abastecimiento de un producto. |
 
 
 ## Capítulo III: Requirements Specification
@@ -1688,14 +1711,53 @@ Esquema de pestañas interactivas para filtrar funcionalidades por perfil (Produ
 
 <p align="center">
 <img src="assets/md-images-front-matter/wireframes_5.png" alt="wireframe" style="height: 250px; width: 400px;">
-</p
+</p>
 <p align="center">
 <img src="assets/md-images-front-matter/wireframes_6.png" alt="wireframe" style="height: 250px; width: 400px;">
 </p>
 
 ### 4.3.2. Landing Page Mock-up.
 
+Interfaz final del Hero Section destaca la integración de la paleta de colores corporativa (Deep Copper y Cask Cream), tipografía moderna (Poppins e Inter) y la imagen de alambiques de cobre integrados con tarjetas flotantes que muestran métricas en tiempo real de fermentación (18.4°C, Óptimo) e inventario (42 uds., Reponer pronto), logrando captar la atención del usuario inmediatamente.
+
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_1.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+Implementación final de las tarjetas de Segmentos y Objetivos se incorporaron imágenes fotográficas de alta calidad de bodegas artesanales y estanterías de licorerías, junto con un diseño de tarjeta limpia (Clean UI) con íconos minimalistas y listas de verificación (checklists) que resumen los cuatro pilares operativos de la plataforma para facilitar la lectura.
+
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_2.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_3.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+
+Resultado visual de la sección de Precios e Impacto presenta formalmente los tres planes de suscripción (Básico, Profesional y Empresarial) resaltando el "Plan Profesional" con la insignia "Más elegido", seguido de un bloque de impacto visual con fondo fotográfico oscuro y métricas destacadas de la industria formal del pisco (527+ empresas y 7.8M de litros) para transmitir solidez y confianza técnica al visitante.
+
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_4.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_5.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+Versión construida de Funcionalidades, CTA final y Footer utiliza un sistema de pestañas interactivas para alternar entre perfiles (Productor / Comercializador), un bloque de conversión central con fondo crema cálido que enfoca la atención en la "Prueba gratis 14 días", y cierra la página con un pie de página en tono oscuro corporativo (#241a16) estructurado en columnas para navegación, enlaces legales, redes sociales y contacto directo.
+
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_6.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+<p align="center">
+<img src="assets/md-images-front-matter/landing_page_7.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
 ## 4.4. Web Applications UX/UI Design
+### 4.4.1. Web Applications Wireframes
+### 4.4.2. Web Applications Wireflow Diagrams
+### 4.4.3. Web Applications Mock-ups
+### 4.4.4. Web Applications User Flow Diagrams
+## 4.5. Web Applications Prototyping
 
 
 ## 4.6. Domain-Driven Software Architecture
