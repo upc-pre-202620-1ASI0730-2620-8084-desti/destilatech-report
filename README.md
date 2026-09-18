@@ -2712,17 +2712,17 @@ Se detalla a continuación el listado consolidado de los commits que evidencian 
 El principal logro del Sprint 1 consistió en el despliegue de la versión inicial de la landing page. Se completó el desarrollo del header, hero y footer, junto con las secciones de Propuesta, Diferencias, Roles, Creadores, Planes y Formulario. Asimismo, se implementó la metodología GitFlow, gestionando el avance mediante ramas `feature/*` integradas posteriormente en el branch `develop` y finalmente en `main`.
 **Header** <br>
 <div align="center">
-
+ <img src="assets/md-images-front-matter/header-landing.png">
 </div> <br>
 
 **Main Section** <br>
 <div align="center">
-
+ <img src="assets/md-images-front-matter/main-section-landing.png">
 </div> <br>
 
 **Footer**<br>
 <div align="center">
-
+ <img src="assets/md-images-front-matter/footer-landing.jpeg">
 </div> <br>
 
 ##### 5.2.1.6.	Services Documentation Evidence for Sprint Review.
