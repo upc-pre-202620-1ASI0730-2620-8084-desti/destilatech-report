@@ -63,7 +63,7 @@ Proyecto<br>
 
 | Versión |   Fecha    |                                                                               Autor                                                                               |                                                  Descripción de modificación                                                   |
 | :-----: |:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------: |
-|   AV1   | xxxxxxxx |       xxxxxxxxxxxxxx     | Avance del trabajo: xxxxxxxxxxxx |
+|   AV1   | 18/09/2026 | Equipo FuturosSeniors | Avance del trabajo: Capítulos I al III completos; Capítulo IV con la sección de Domain-Driven Software Architecture (Design-Level Event Storming, C4 Model, Class Diagrams y Database Diagrams) y las secciones de diseño UX/UI. |
 
 
 <div style="page-break-after: always;"></div>
