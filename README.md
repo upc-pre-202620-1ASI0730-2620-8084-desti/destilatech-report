@@ -2504,13 +2504,13 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 ##### 5.1.4.1.1.  Ingresamos al repositorio de la landing page
 
-<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 120%; max-width: 1200px; height: 300px;">
+<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 120%; max-width: 500px; height: 200px;">
 <br>
 
 ##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
 
 
-<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 120%; max-width: 500px; height: q00px;">
+<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 120%; max-width: 500px; height: 200px;">
 <br>
 
 ##### 5.1.4.1.3.  Vamos a la sección de Github Pages
