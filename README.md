@@ -73,11 +73,15 @@ A continuación, se detallan los repositorios utilizados a lo largo del proyecto
 
 #### Link del repositorio del Reporte:
 
-- [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report](destilatech-report)
+- [destilatech-report](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report)
 
 #### Link del repositorio del Website:
 
-- [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](destilatech-website)
+- [destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website)
+
+#### Link del Website:
+
+- [destilatech-website](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
 
 ### Desarrollo de Actividades
