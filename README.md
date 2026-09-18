@@ -2474,6 +2474,29 @@ classDiagram
 
 #### 4.8.1. Database Diagrams
 
+Se presenta el modelo de datos relacional de cada uno de los siete Bounded Contexts, derivado directamente de los Class Diagrams de la sección 4.7.1. Cada Bounded Context es propietario de sus propias tablas; las referencias hacia otros contextos (por ejemplo, `account_id` en Billing) se modelan como identificadores lógicos y no como llaves foráneas físicas entre esquemas, preservando el desacoplamiento entre módulos del monolito modular.
+
+**a. IAM**
+
+```mermaid
+erDiagram
+    ACCOUNT ||--|| TRIAL_PERIOD : owns
+    ACCOUNT {
+        guid id PK
+        string full_name
+        string email
+        string password_hash
+        string business_type
+        datetime created_at
+    }
+    TRIAL_PERIOD {
+        guid id PK
+        guid account_id FK
+        datetime start_date
+        datetime end_date
+        string status
+    }
+```
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
