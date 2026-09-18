@@ -73,11 +73,11 @@ A continuación, se detallan los repositorios utilizados a lo largo del proyecto
 
 #### Link del repositorio del Reporte:
 
-- xxxxxxxx
+- [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report](destilatech-report)
 
 #### Link del repositorio del Website:
 
-- xxxxxx
+- [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](destilatech-website)
 
 
 ### **Entrega AV1:**
@@ -85,11 +85,11 @@ xxxxxxx
 
 ##### Participación por integrante:
 
-- U202317807      <br>
-- U202418755 
-- U202316845 
-- U202418405 
-- U202322404  
+- xxxxxxxxxx      <br>
+- xxxxxxxxxx 
+- xxxxxxxxxx 
+- xxxxxxxxxx 
+- xxxxxxxxxx  
 
 + **Evidencias de colaboración y commits - Github:**
     * **Análiticos de colaboración** <br><br>
@@ -221,12 +221,84 @@ xxxxxxx
 
 ## Student Outcome
 
-Objetivo general, ABET – EAC - Student Outcome 3: Capacidad de comunicarse efectivamente con un rango de audiencias.
+El curso contribuye al cumplimiento del Student Outcome ABET:<br><br>
+**ABET – EAC - Student Outcome 5**<br>
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.<br><br>
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.<br><br>
 
-| Criterio Especifico | Acciones realizadas | Conclusiones |
-|--|--|--|
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. |  |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia |  |
+<table>
+<thead>
+<tr>
+<th colspan="3"><b>Criterio específico</b></th>
+<th colspan="3"><b>Acciones realizadas</b></th>
+<th colspan="3"><b>Conclusiones</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
+<td colspan="3" align="justify">
+<h3>Santiago Atanacio, Jairo Mathias</h3>
+<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de las secciones como Lean UX Canvas, analisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories, product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
+  
+<h3>ALUMNO 2</h3>
+<b>AV1</b><p>
+  
+</p>
+
+<h3>ALUMNO 3</h3>
+<b>AV1</b><p>
+  
+</p>
+
+<h3>ALUMNO 4</h3>
+<b>AV1</b><p>
+  
+</p>
+
+
+<h3>ALUMNO 5</h3>
+<b>AV1</b><p>
+  
+</p>
+
+<td colspan="3" align="justify">
+<b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. De esta manera, hemos asegurado nuestro avance como grupo, fortaleciendo el liderazgo compartido del equipo y la coordinación técnica para cumplir con los objetivos del sprint.</p>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+<td colspan="3" align="justify">
+<h3>Santiago Atanacio, Jairo Mathias</h3>
+<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, se logró completar la primera parte del trabajo sin problemas mayores. Todos asumimos un liderazgo compartido en la creación, redacción y despliegue de la Landing Page, asegurando nuestro avance como grupo.</p>
+
+<h3>ALUMNO 2</h3>
+<b>AV1</b><p>
+  .</p>
+
+
+<h3>ALUMNO 3</h3>
+<b>AV1</b><p>
+  
+</p>
+
+<h3>ALUMNO 4</h3>
+
+</td>
+
+<h3>ALUMNO 5</h3>
+<b>AV1</b><p>
+  
+</p>
+
+<td colspan="3" align="justify">
+<b>AV1</b><p>Se logró culminar el primer avance de manera correcta. Ello nos permitirá seguir para la próxima actividad.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Capitulo I: Introducción
 
