@@ -1492,6 +1492,211 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 | 36 | US21 | Ver indicadores históricos | Gráficos de evolución de inventario/producción. | 5 |
 | 37 | US03 | Recibir aviso de fin de periodo de prueba | Aviso previo al fin del trial. | 2 |
 
+## Capítulo IV: Product Design
+
+## 4.1. Style Guidelines
+
+Un Style Guideline es un conjunto de directrices y normas que establecen los estándares y criterios a seguir en la redacción, diseño y presentación de documentos, contenido web, software y otros productos creativos. A continuación, se presentan las especificaciones detalladas de los parámetros implementados en la estructura de Destilatech.
+
+### 4.1.1. General Style Guidelines
+
+**Branding**
+
+Para el desarrollo del logotipo e identidad visual de Destilatech, hemos elegido un diseño que encapsula la esencia del ecosistema del pisco peruano y su modernización tecnológica. El logotipo presenta una tipografía sólida, elegante y legible. El ícono combina la silueta de un alambique/copa de destilado tradicional con un acento circular luminoso que simboliza la precisión del monitoreo digital en tiempo real. La elección de colores —encabezada por el color cobre/terracota profundo (Deep Copper), acentos cálidos ambarinos (Amber Gold) y fondos cremas/cálidos (Cask Cream)— transmite la tradición artesanal del pisco respaldada por la estabilidad técnica, la trazabilidad y la eficiencia analítica del modelo SaaS.
+
+<img src="assets/md-images-front-matter/Destilatech_logo.jpeg" alt="style guidelines" style="width: 300px; height: 300px;">
+
+**Typography**
+
+Para el diseño tipográfico de Destilatech, se ha seleccionado una combinación de fuentes de la biblioteca de Google Fonts (Poppins e Inter) que refleja elegancia, claridad y funcionalidad tecnológica, garantizando máxima legibilidad tanto en pantallas de computadora como en dispositivos móviles utilizados en bodegas y puntos de venta. La tipografía principal para encabezados es Poppins, elegida por sus formas geométricas limpias y estructura sólida. Para los textos de párrafo, tablas e indicadores de sensores/inventario, se utiliza Inter, una fuente optimizada para pantallas digitales que favorece una lectura fluida e intuitiva de métricas y datos operativos.
+
+A continuación, se detallan las especificaciones tipográficas adoptadas para Destilatech:
+
+| Elemento | TextColor | Background | Font | Weight | Size | Line Height | Alignment |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **H1** | #5c2b21 | none | Montserrat (bold, clean, professional) | Bold | 48 px | 1.2 | Left |
+| **H2** | #5c2b21 | none | Montserrat (semi-bold) | Semi-bold | 36 px | 1.3 | Left |
+| **H3** | #5c2b21 | none | Montserrat (medium-bold) | Semi-bold | 24 px | 1.4 | Left |
+| **H4** | #7a3b2e | none | Montserrat (medium) | Medium | 20 px | 1.4 | Left |
+| **Paragraph** | #2c2320 | none | Roboto (regular, legible, data-focused) | Regular | 16 px | 1.5 | Left |
+| **Small Text** | #6b5d55 | none | Roboto (light) | Light | 12 px | 1.5 | Left |
+
+**Colors**
+
+La paleta de colores de Destilatech fue seleccionada para evocar el proceso de maduración y destilación artesanal del pisco, complementada con tonos de alerta e interfaz que garantizan usabilidad y prevención en el control de stock. Los tonos tierra y terracota dominantes transmiten tradición, mientras que los acentos amarillos y verdes aportan modernidad y resaltan los estados del sistema.
+
+A continuación, se detallan los colores seleccionados para Destilatech:
+
+<img src="assets/md-images-front-matter/Color_Destilatech.jpeg" alt="style guidelines" style="width: 300px; height: 150px;">
+
+**Spacing**
+
+El espaciado en Destilatech está definido para garantizar una interfaz organizada, limpia y altamente táctil en dispositivos móviles. Se emplean variables y escalas estandarizadas que mejoran la legibilidad de métricas de lotes e inventario:
+
+| Token | Valor | Caso de uso principal |
+| :--- | :--- | :--- |
+| **Spacing 01** | `8 px` | Botones compactos, badges e íconos pequeños. |
+| **Spacing 02** | `16 px` | Cards pequeñas, menús de navegación y separación ícono-texto. |
+| **Spacing 03** | `24 px` | Cards de planes, contenedores e ítems de grids. |
+| **Spacing 04** | `36 px` | Bloques de contenido, columnas y títulos de sección. |
+| **Spacing 05** | `64 px - 88 px` | Padding vertical para secciones completas de la página. |
+
+---
+
+### 4.1.2. Web Style Guidelines
+
+Destilatech cuenta con un diseño web adaptativo (Responsive Web Design) que garantiza una experiencia fluida tanto en computadoras de escritorio (oficinas administrativas) como en dispositivos móviles (operarios en bodega o comerciales en punto de venta).
+
+En la versión desktop, la Landing Page implementa una estructura en Z que guía la mirada del visitante desde la propuesta de valor en el Hero (H1 y resumen de plataforma) hacia los indicadores en tiempo real de temperatura de tanques y stock de botellas.
+El logotipo institucional (Destilatech) se posiciona fijado en la esquina superior izquierda. La barra de navegación superior permite desplazamientos suaves (smooth scroll) hacia secciones clave (Descripción, Objetivos, Precios, Impacto, Funcionalidades), seguida por el selector de idioma en tiempo real (ES / EN) y el Botón de Acción Principal (CTA) "Prueba gratis 14 días" ubicado estratégicamente a la derecha.
+En pantallas menores a 768px, la navegación principal colapsa de forma intuitiva en un menú desplegable de tipo "hamburguesa" con soporte para gestos y teclado, manteniendo el CTA al alcance del pulgar.
+
+## 4.2. Information Architecture
+
+### 4.2.1. Organization Systems
+
+1. ***Visual Organization***
+
+Para facilitar la asimilación visual y reducir la carga cognitiva del usuario, Destilatech aplica los siguientes modelos de organización visual en las distintas secciones de la plataforma:
+
+
+-Se aplica en el Hero Section y se extiende al Dashboard de Monitoreo (US01 - Monitoreo IoT). En el panel de control del productor, la información más crítica (como alertas rojas/amarillas de "Temperatura Fuera de Rango" en tanques de fermentación o el estado crítico de "Reponer pronto" en Pisco Quebranta) tiene el mayor peso visual, ubicándose en tarjetas destacadas superiormente con colores de advertencia (color-warn) y tipografía Poppins Bold. La información secundaria (como configuraciones de usuario) mantiene un peso menor.
+
+-Se emplea en los flujos que requieren alta precisión para evitar errores en el trabajo diario. Esto aplica al flujo de Registro de Usuario con prueba gratuita de 14 días (US02), la Configuración de un Nuevo Lote de Destilación (US04) y el Registro de Movimiento de Inventario de Insumos (US06). La interfaz guía al usuario mediante componentes paso a paso (ej. Paso 1: Selección de Tipo de Uva -> Paso 2: Lectura inicial de Mosto -> Paso 3: Asignación de Tanque/Alambique).
+
+-Se utiliza para cruzar datos de producción y comercialización en tiempo real. Su principal aplicación se da en el Panel de Trazabilidad de Lotes (US08) y el Control de Stock de Comercializadores (US10), donde el usuario visualiza tablas matriciales cruzando filas (Lote/Botella de Pisco) con columnas (Fecha de destilación, Graduación alcohólica, Stock actual, Alerta de reposición).
+
+### 4.2.2. Labeling Systems
+
+La plataforma aplica un sistema de etiquetado claro, coherente y adaptado a los dos perfiles principales del ecosistema del pisco: Bodegas Productoras y Comercializadores/Distribuidores.
+
+
+- ***Para el visitante / usuario nuevo (Landing Page):*** Se utilizan llamadas a la acción claras e inequívocas como "Prueba gratis 14 días", "Ver funcionalidades" y etiquetas de entrada de datos sencillas para los formularios de registro ("Nombre", "Nombre de la Bodega / Empresa", "Correo electrónico").
+
+
+- ***Para el Productor de Pisco (Perfil Técnico/Operativo):*** Se emplean etiquetas técnicas estandarizadas para la industria vitivinícola y destilería. Las métricas se etiquetan con sus unidades de medida explícitas: "Temperatura (°C)", "Brix del mosto (°Bx)", "Volumen en Tanque (L)" y "Trazabilidad de Lote ID". Los botones de acción rápida responden a acciones directas: "Registrar Destilación", "Agregar Tanque", "Exportar Trazabilidad".
+
+
+- ***Para el Comercializador / Distribuidor (Perfil Comercial):*** Las etiquetas adoptan un enfoque orientado al flujo de caja y gestión de stock. Se muestran etiquetas centradas en negocio como "Unidades Disponibles (uds.)", "Punto de Reorden", "Alertas de Stock Bajo" y botones de acción rápida como "Registrar Entrada/Salida", "Solicitar Reposición a Proveedor" y "Ver Análisis Predictivo".
+
+### 4.2.3. SEO Tags and Meta Tags
+
+Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender y posicionar en los resultados. Los meta tags son etiquetas que proporcionan información sobre la página, como su descripción, palabras clave y autor, lo cual ayuda al ser buscado en el navegador. A continuación se presentan los SEO tags y meta tags que se utilizarán en la plataforma Destilatech:
+
+***Title Tag:*** Este tag define el título de la página y es uno de los factores más importantes para el SEO. Debe ser único y contener palabras clave relevantes.
+
+```html
+<title>Destilatech - Software SaaS e IoT para Control de Producción e Inventario de Pisco</title>
+```
+
+***Meta Description:*** Este tag proporciona una breve descripción del contenido de la página. Permite a los usuarios entender de qué trata la página antes de hacer clic en el enlace. Debe ser conciso y atractivo.
+
+```html
+<meta name="description" content="Destilatech es la plataforma SaaS que optimiza la producción de pisco mediante monitoreo IoT en tanques de fermentación, trazabilidad de lotes y control de inventario en tiempo real.">```
+```
+
+***Language tag:*** Este tag indica el idioma principal del contenido de la página. Es importante para la accesibilidad y el SEO local.
+
+```html
+<meta http-equiv="Content-Language" content="es-PE">
+```
+
+***Robots tag:*** Este tag indica a los motores de búsqueda cómo deben indexar la página. Puede ser utilizado para evitar que ciertas páginas sean indexadas (por ejemplo, el dashboard interno de producción).
+```html
+<meta name="robots" content="index, follow">
+```
+
+***Author tag:*** Este tag indica el autor del contenido de la página. Es útil para dar crédito a los creadores de contenido.
+
+```html
+<meta name="author" content="Destilatech Engineering Team">
+```
+
+***Meta Viewport:*** Este tag es esencial para que la página sea responsiva en dispositivos móviles (vital para operarios en la bodega o vendedores en punto de venta). Mejora la experiencia del usuario y es un factor importante para el SEO técnico.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+***Canonical Tag:*** Este tag especifica la URL canónica de la página para evitar problemas de contenido duplicado en motores de búsqueda. Ayuda a consolidar el posicionamiento de una sola versión de la página.
+
+```html
+<link rel="canonical" href="https://www.destilatech.com/">
+```
+
+### 4.2.4. Searching Systems
+
+Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios botones y empleamos varios indicadores visuales para que el usuario sepa dónde encontrar lo que necesita. A continuación se muestran los ejemplos de los tipos de búsqueda que usaremos:
+
+- ***Búsqueda de tanques y sensores:*** Para facilitar el monitoreo en bodegas y áreas de fermentación, usamos una serie de filtros y un selector desplegable para que el productor pueda hallar exactamente el tanque de fermentación o el sensor IoT individual (ID) del cual desea ver los datos en tiempo real.
+
+
+- ***Búsqueda en histórico de lotes:*** Usamos filtros por rango de fechas, tipo de uva/pisco (Quebranta, Italia, Acholado, Torontel, etc.) y parámetro (Temperatura, Brix o Graduación alcohólica) para que el maestro destilador pueda graficar las tendencias de fermentación y garantizar la consistencia en el perfil del pisco.
+
+
+- ***Búsqueda de inventario y pedidos:*** Para los comercializadores y distribuidores, se les da una forma de buscar rápidamente el stock disponible por bodega proveedora, SKU de botella o lote específico, permitiéndoles acceder ágilmente al estado de reorden y a la exportación de reportes de existencias.
+
+### 4.2.5. Navigation Systems
+
+- ***Registro e Inicio de Sesión:*** Para poder entrar, el usuario ingresará sus credenciales y el sistema registrará qué tipo de usuario es: Bodega Productora, que busca monitorear la fermentación/destilación de sus lotes y garantizar trazabilidad, o Comercializador / Distribuidor, que requiere visualizar niveles de stock, controlar alertas de reposición y gestionar pedidos de ventas.
+
+
+- ***Dashboard de Monitoreo:*** Permite a los usuarios visualizar los indicadores clave de los tanques en tiempo real (temperatura y densidad), ver el estado actual del inventario de botellas e insumos, y acceder rápidamente a notificaciones y alertas predictivas de variaciones térmicas o quiebres de stock.
+
+
+- ***Trazabilidad y Lotes:*** Permite a los productores navegar por el ciclo de vida de cada lote de pisco (desde la recepción de la uva hasta el embotellado final), permitiendo auditar parámetros técnicos y generar reportes de calidad.
+
+
+- ***Gestión de Dispositivos e Inventario:*** Una sección dedicada donde el productor puede vincular nuevos sensores IoT físicamente instalados en sus tanques y configurar umbrales de alerta personalizados, mientras que el comercializador puede registrar entradas/salidas de cajas y botellas.
+
+
+- ***Mi Perfil:*** Permite a los usuarios configurar sus preferencias personales, actualizar la información comercial de su bodega o distribuidora, gestionar los roles de su equipo y cambiar su contraseña.
+
+## 4.3. Landing Page UI Design
+
+El diseño de la interfaz de usuario en la landing page de Destilatech será clave para causar una primera impresión positiva y transmitir la innovación tecnológica que respalda a nuestro equipo. Buscamos ofrecer una experiencia visual limpia, elegante y altamente funcional que inspire confianza e invite a los productores de pisco, dueños de bodegas y comercializadores a iniciar su prueba gratuita de 14 días y explorar nuestro ecosistema de monitoreo IoT y gestión de inventarios.
+
+### 4.3.1. Landing Page Wireframe
+
+**Landing Page para Desktop Browser**
+
+Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor a la izquierda y un elemento visual destacado a la derecha con tarjetas flotantes informativas de tanques de fermentación y stock.
+
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_1.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+Utilizando tarjetas de dos columnas para diferenciar bodegas productoras y comercializadores, seguido de una cuadrícula de cuatro columnas para los pilares u objetivos operativos de la plataforma.
+
+
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_2.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_3.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+Define una cuadrícula adaptable (responsive grid) de tres columnas para los planes de suscripción (Básico, Profesional y Empresarial) y un bloque de dos columnas para las estadísticas del impacto en el sector pisco.
+
+
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_4.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+Esquema de pestañas interactivas para filtrar funcionalidades por perfil (Productor / Comercializador), un bloque centralizado para el llamado a la acción final y un pie de página estructurado en múltiples columnas para navegación, enlaces legales y contacto.
+
+
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_5.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p
+<p align="center">
+<img src="assets/md-images-front-matter/wireframes_6.png" alt="wireframe" style="height: 250px; width: 400px;">
+</p>
+
+### 4.3.2. Landing Page Mock-up.
+
+## 4.4. Web Applications UX/UI Design
+
 
 ## 4.6. Domain-Driven Software Architecture
 
