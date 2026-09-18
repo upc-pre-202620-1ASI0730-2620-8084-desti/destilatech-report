@@ -269,11 +269,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   
 </p>
 
-<h3>ALUMNO 4</h3>
-<b>AV1</b><p>
-  
-</p>
-
+<h3>Condor Sandoval, Jean Pierre</h3>
+<b>AV1</b><p>Lideré y gestioné activamente la fase de investigación de usuarios y diseño de experiencia del producto. Me encargué del análisis de las entrevistas realizadas a los usuarios clave y de la definición de los User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, garantizando una comprensión clara de sus necesidades. Asimismo, participé en la definición del Impact Mapping y en el establecimiento de los lineamientos de diseño (General Style Guidelines y Web Style Guidelines), además del diseño de los Landing Page Wireframes para asegurar la consistencia del sistema.</p>
 
 <h3>ALUMNO 5</h3>
 <b>AV1</b><p>
@@ -301,9 +298,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   
 </p>
 
-<h3>ALUMNO 4</h3>
+<h3>Condor Sandoval, Jean Pierre</h3>
+<b>AV1</b><p>Asumí la responsabilidad del cumplimiento en tiempo y forma de las tareas asignadas en las fases de investigación y diseño visual. Colaboré activamente con el equipo coordinando la validación del comportamiento y flujo de los usuarios mediante la matriz de tareas y mapas de empatía, asegurando que todos los miembros tuvieran una visión clara y compartida sobre el diseño UI/UX y la estructura del proyecto en la Landing Page Wireframe.</p>
+</p>
 
-</td>
 
 <h3>ALUMNO 5</h3>
 <b>AV1</b><p>
@@ -354,13 +352,13 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 #### 1.1.2. Perfiles de Integrantes del equipo
 
-| **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia** | **Conocimientos y habilidades**
-|:-----------------------------------|:-----------------------------------------------------------------|:---------------|:------------------------------------ |
-| Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
-| Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png">           | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
-| Estudiante 3                       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | descripcion
-| Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
-| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto           | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
+| **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia**                                               | **Conocimientos y habilidades**
+|:-----------------------------------|:-----------------------------------------------------------------|:-------------------------------------------------------------|:------------------------------------ |
+| Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                                                         |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
+| Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png"> | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Estudiante 3                       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                                                         | descripcion
+| Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg">   | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
+| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto                                                         | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
 
 
 
