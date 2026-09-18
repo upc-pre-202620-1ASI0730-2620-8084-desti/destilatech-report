@@ -2267,7 +2267,10 @@ Para aislar el desarrollo de nuevas características sin afectar el código esta
 * `feature/[nombre]`: Ramas temporales para tareas específicas (ej. `feature/sprint-1-development`). 
 
 A continuación, se evidencia la correcta aplicación de estas ramas y los flujos de trabajo (Pull Requests) integrados en nuestros repositorios durante el desarrollo del Sprint:
-
+<p align="center">
+<img src="assets/md-images-front-matter/evidencia_ramas.jpeg" alt="Evidencia de ramas" style="width: 85%;">
+</p>
+  <br>
 
 
 ### 5.1.3. Source Code Style Guide & Conventions.
