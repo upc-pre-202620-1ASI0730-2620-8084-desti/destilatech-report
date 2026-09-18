@@ -1877,9 +1877,9 @@ El equipo organizó una sesión de Design-Level Event Storming con una duración
 | Read Model | Verde | Vista de consulta construida a partir de los eventos. |
 | Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
 
-**a. Identity/Access & Subscriptions**
+**a. IAM (Identity & Access Management)**
 
-Este Bounded Context gestiona el ciclo de vida de la cuenta del usuario (productor o comercializador), su periodo de prueba y su suscripción paga, respondiendo a los Epics EP01.
+Este Bounded Context gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación y su periodo de prueba, respondiendo al Epic EP01.
 
 ```mermaid
 flowchart LR
@@ -1891,16 +1891,15 @@ flowchart LR
     classDef external fill:#F1948A,stroke:#943126,color:#000
 
     C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    C1b["Command:\nLogin"]:::command --> A1 --> E1b(["Event:\nUserAuthenticated"]):::event
     E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
     E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
-    C3["Command:\nSubscribeToPlan"]:::command --> A3{{"Aggregate:\nSubscription"}}:::aggregate --> E4(["Event:\nSubscriptionActivated"]):::event
-    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C3
     E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
-    E4 --> RM1
+    E2 --> RM1
     E3 --> RM1
 ```
 
-El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
+El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). El comando `Login` autentica al usuario y emite el token de sesión (US02, US26). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). IAM expone `AccountStatusView` para que otros Bounded Contexts, como Billing, consulten si la cuenta está activa sin acoplarse a su modelo interno.
 
 **c. Production & Monitoring**
 
