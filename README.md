@@ -2504,32 +2504,32 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 ##### 5.1.4.1.1.  Ingresamos al repositorio de la landing page
 
-<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 120%; max-width: 1200px; height: 300px;">
 <br>
 
 ##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
 
 
-<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 120%; max-width: 1200px; height: 300px;">
 <br>
 
 ##### 5.1.4.1.3.  Vamos a la sección de Github Pages
 
 
-<img src="assets/md-images-front-matter/despliegue3.jpeg" alt="Despliegue 3" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/despliegue3.jpeg" alt="Despliegue 3" style="width: 120%; max-width: 1200px; height: 300px;">
 <br>
 
 
 ##### 5.1.4.1.4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.
 
 
-<img src="assets/md-images-front-matter/despliegue4.jpeg" alt="Despliegue 4" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/despliegue4.jpeg" alt="Despliegue 4" style="width: 120%; max-width: 1200px; height: 300px;">
 <br>
 
 
 ##### 5.1.4.1.5.  Finalmente estaría todo listo.
 
-<img src="assets/md-images-front-matter/despliegue5.jpeg" alt="Despliegue 5" style="width: 90%; max-width: 1200px; height: 700px;">
+<img src="assets/md-images-front-matter/despliegue5.jpeg" alt="Despliegue 5" style="width: 120%; max-width: 1200px; height: 300px;">
 <br>
 
 
