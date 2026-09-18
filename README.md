@@ -80,49 +80,63 @@ A continuación, se detallan los repositorios utilizados a lo largo del proyecto
 - [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](destilatech-website)
 
 
-### **Entrega AV1:**
-xxxxxxx
+### Desarrollo de Actividades
 
-##### Participación por integrante:
+A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicación constante utilizando canales de voz en Discord para las reuniones virtuales y coordinaciones generales. La carga de trabajo del informe y del desarrollo del software se distribuyó equitativamente con plazos adecuados para cada iteración, en este caso AV1. Finalmente, las sesiones presenciales fueron clave para obtener retroalimentación del docente, resolver impedimentos técnicos y optimizar el avance frente a los horarios limitados del grupo.
 
-- xxxxxxxxxx      <br>
-- xxxxxxxxxx 
-- xxxxxxxxxx 
-- xxxxxxxxxx 
-- xxxxxxxxxx  
+---
 
-+ **Evidencias de colaboración y commits - Github:**
-    * **Análiticos de colaboración** <br><br>
-        + **Pulse Image of Github Insights**
-        xxxxxxxxx
+### Evidencias de Colaboración (GitHub Insights)
+
+#### 1. Analíticas Globales del Equipo
+
+**A. Pulse Insights (Actividad general de los repositorios)**
+
+| AV1 (Avance 1) |
+| :---: | 
+|  |
+
+**B. Contributors Insights (Evolución de Aportes)**
+
+| AV1 (Avance 1) | 
+| :---: | 
+|  |
 
 
-        + **Contributors Image of Github Insights**
-        xxxxxxxxx
+---
+
+#### 2. Evidencias Individuales (Commits por Integrante)
+
+A continuación, se detalla el progreso y la constancia de los *commits* realizados por cada miembro a lo largo del ciclo.
+
+**Fernandez Seer Mario Alonso**
+| AV1 | 
+| :---: | 
+|  | 
 
 
-    * **Commits**
 
-         A continuación se muestran algunos commits realizados en este entrega de TB1.
+**Santiago Atanacio, Jairo Mathias**
+| AV1 | 
+| :---: | 
+|  |
 
-        + **xxxxxxxxxx **
 
-            </div><br>
+**Almandroz Carbajal, Pierina Marysabel**
+| AV1 |
+| :---: | 
+|   |
 
-        + **xxxxxxxxxx **
 
-            </div><br>
+**Condor Sandoval, Jean Pierre**
+| AV1 | 
+| :---: |
+|   |
 
-        + **xxxxxxxxxx **
-
-            </div><br>
-        + **xxxxxxxxxx **
-
-            </div><br>
-        + **xxxxxxxxxx **
-
-            </div><br>
-
+**Domenack Angeles, Miguel**
+| AV1 | 
+| :---: |
+|   |
 
 # Contenido
 
@@ -339,7 +353,7 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 | **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia** | **Conocimientos y habilidades**
 |:-----------------------------------|:-----------------------------------------------------------------|:---------------|:------------------------------------ |
 | Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
-| Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png">           | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
 | Estudiante 3                       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | descripcion
 | Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto           | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
 | Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto           | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
