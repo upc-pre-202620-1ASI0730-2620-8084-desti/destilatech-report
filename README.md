@@ -2511,25 +2511,30 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 ##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
 
-
-<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 120%; max-width: 500px; height: 200px;">
-<br>
+<p align="center">
+<img src="assets/md-images-front-matter/despliegue2.jpeg" alt="Despliegue 2" style="width: 85%;">
+</p>
+  <br>
 
 ##### 5.1.4.1.3.  Vamos a la sección de Github Pages
 
-
-<img src="assets/md-images-front-matter/despliegue3.jpeg" alt="Despliegue 3" style="width: 120%; max-width: 500px; height:200px;">
-<br>
+<p align="center">
+<img src="assets/md-images-front-matter/despliegue3.jpeg" alt="Despliegue 3" style="width: 85%;">
+</p>
+  <br>
 
 ##### 5.1.4.1.4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.
 
-
-<img src="assets/md-images-front-matter/despliegue4.jpeg" alt="Despliegue 4" style="width: 120%; max-width: 500px; height:200px;">
-<br>
+<p align="center">
+<img src="assets/md-images-front-matter/despliegue4.jpeg" alt="Despliegue 4" style="width: 85%;">
+</p>
+  <br>
 
 ##### 5.1.4.1.5.  Finalmente estaría todo listo.
 
-<img src="assets/md-images-front-matter/despliegue5.jpeg" alt="Despliegue 5" style="width: 120%; max-width: 500px; height: 200px;">
-<br>
+<p align="center">
+<img src="assets/md-images-front-matter/despliegue5.jpeg" alt="Despliegue 5" style="width: 85%;">
+</p>
+  <br>
 
 En resumen, Github Pages usa la rama main como origen de producción. Paralelamente, se configuró un flujo con GitHub actions que reacciona a los commits de la rama develop que compila con el código estático. Es así que, cuando las modificaciones son revisadas y aprobadas por el equipo en su fase de producción, la plataforma actualiza el sitio en una nueva versión.
