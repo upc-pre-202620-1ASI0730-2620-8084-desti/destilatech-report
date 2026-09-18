@@ -2042,6 +2042,33 @@ Este contexto suscribe al evento `StockMovementRegistered` publicado por Invento
 
 #### 4.6.2. Software Architecture Context Diagram
 
+El siguiente diagrama presenta a Destilatech como un único sistema al centro, mostrando los actores (Productor, Comercializador y Visitante) y los sistemas externos con los que interactúa: la Pasarela de Pago (para las suscripciones, consumida por Billing) y el Sensor IoT simulado (para el monitoreo de variables de proceso).
+
+```mermaid
+C4Context
+    title Diagrama de Contexto - Destilatech
+
+    Person(producer, "Productor de Pisco", "Pequeño/mediano productor que registra lotes y monitorea su proceso")
+    Person(retailer, "Comercializador", "Bodega, licorería o distribuidor que gestiona inventario y pedidos")
+    Person(visitor, "Visitante", "Usuario no registrado que conoce la propuesta de valor")
+
+    System(destilatech, "Destilatech", "Plataforma que soporta el monitoreo de producción, el control de inventario y la gestión comercial de pisco")
+
+    System_Ext(payment, "Pasarela de Pago", "Procesa el cobro recurrente de las suscripciones")
+    System_Ext(iot, "Sensor IoT (simulado)", "Emite lecturas de variables de proceso (temperatura, pH, nivel)")
+
+    Rel(visitor, destilatech, "Conoce la propuesta de valor y se registra", "HTTPS")
+    Rel(producer, destilatech, "Registra lotes, monitorea variables y gestiona inventario", "HTTPS")
+    Rel(retailer, destilatech, "Gestiona inventario, clientes y pedidos", "HTTPS")
+    Rel(destilatech, payment, "Procesa cobros de suscripción", "HTTPS/REST")
+    Rel(iot, destilatech, "Envía lecturas simuladas", "HTTPS/REST")
+
+    UpdateRelStyle(visitor, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(producer, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(retailer, destilatech, $textColor="black", $lineColor="black")
+```
+
+Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna (incluida la división entre IAM y Billing). La Pasarela de Pago y el Sensor IoT son los dos únicos sistemas externos identificados durante el Big Picture Event Storming, consistentes con las notas rosa registradas en esa sesión.
 
 #### 4.6.3. Software Architecture Container Diagrams
 
