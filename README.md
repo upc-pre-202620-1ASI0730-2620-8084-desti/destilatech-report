@@ -60,10 +60,9 @@ Proyecto<br>
 
 ## Registro de Versiones del Informe
 
-
-| Versión |   Fecha    |                                                                               Autor                                                                               |                                                  Descripción de modificación                                                   |
-| :-----: |:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------: |
-|   AV1   | xxxxxxxx |       xxxxxxxxxxxxxx     | Avance del trabajo: xxxxxxxxxxxx |
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :---: | :--- |
+| **AV1** | 18/09/2026 | Fernandez Seer, Mario Alonso<br>Santiago Atanacio, Jairo Mathias<br>Almandroz Carbajal, Pierina Marysabel<br>Condor Sandoval, Jean Pierre<br>Domenack Angeles, Miguel | **Entrega del Avance 1 (AV1):**<br>• **Capítulo I:** Definición del perfil de la startup FuturosSeniors y Destilatech, análisis 5W+2H, objetivos, restricciones de alcance y desarrollo del Lean UX Canvas con hipótesis validadas por segmento.<br>• **Capítulo II:** Análisis competitivo frente a Solmicro, Ubidots y Defontana; ejecución y registro de 7 entrevistas a productores y comercializadores; desarrollo de User Personas, User Task Matrix, User Journey Maps y Empathy Maps; taller de Big Picture Event Storming y definición del Ubiquitous Language.<br>• **Capítulo III:** Especificación de 10 Épicas y 37 Historias de Usuario con criterios de aceptación Gherkin, estructuración del Impact Mapping y priorización del Product Backlog en Story Points.<br>• **Capítulo IV:** Establecimiento de guías de estilo visual, arquitectura de información, Wireframes y Mock-ups de la Landing Page; modelado de arquitectura con Design-Level Event Storming y diagramas de clases UML para los 6 Bounded Contexts.<br>• **Capítulo V:** Configuración del entorno de desarrollo, convenciones de código y ejecución completa del Sprint 1, culminando con la maquetación y despliegue público de la Landing Page en GitHub Pages. |
 
 
 <div style="page-break-after: always;"></div>
@@ -240,8 +239,8 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 ## Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:<br><br>
-**ABET – EAC - Student Outcome 5**<br>
-**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.<br><br>
+<b>ABET – EAC - Student Outcome 5</b><br>
+<b>Criterio:</b> La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.<br><br>
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.<br><br>
 
 <table>
@@ -257,60 +256,44 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3">Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
-<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de las secciones como Lean UX Canvas, analisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories, product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
+<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de secciones como Lean UX Canvas, análisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories y product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
   
-<h3>ALUMNO 2</h3>
-<b>AV1</b><p>
-  
-</p>
+<h3>Fernandez Seer, Mario Alonso</h3>
+<b>AV1</b><p>Asumí el liderazgo general y la coordinación técnica del equipo, guiando la definición estratégica de la propuesta de valor y el modelo de negocio B2B SaaS de Destilatech. Lideré la conceptualización de las secciones de Pricing e Impacto en la Landing Page, así como la alineación de las épicas principales de Dashboard y cuentas. Asimismo, coordiné las reuniones de seguimiento por Discord y las revisiones presenciales con el docente para mantener el enfoque del proyecto.</p>
 
-<h3>ALUMNO 3</h3>
-<b>AV1</b><p>
-  
-</p>
+<h3>Almandroz Carbajal, Pierina Marysabel</h3>
+<b>AV1</b><p>Lideré la definición y especificación funcional del módulo de inventario y catálogo de productos (Épica EP05), asegurando que las historias de usuario reflejaran de manera precisa las necesidades comerciales del sector. Además, coordiné activamente la estructuración y diseño de la sección de Platform Features en la Landing Page, orientando al equipo en la diferenciación de vistas y funcionalidades para productores y comercializadores.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Lideré y gestioné activamente la fase de investigación de usuarios y diseño de experiencia del producto. Me encargué del análisis de las entrevistas realizadas a los usuarios clave y de la definición de los User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, garantizando una comprensión clara de sus necesidades. Asimismo, participé en la definición del Impact Mapping y en el establecimiento de los lineamientos de diseño (General Style Guidelines y Web Style Guidelines), además del diseño de los Landing Page Wireframes para asegurar la consistencia del sistema.</p>
 
-<h3>ALUMNO 5</h3>
-<b>AV1</b><p>
-  
-</p>
-
+<h3>Domenack Angeles, Miguel</h3>
+<b>AV1</b><p>Asumí el liderazgo en la verificación de la calidad del entregable mediante la auditoría continua y corrección de errores en la redacción y estructura del informe general. Asimismo, coordiné y estructuré el diseño de la presentación en Canva para la exposición académica del avance, y colaboré estrechamente en el modelado del Capítulo IV, aportando en la elaboración de las guías de estilo, la arquitectura de información y la especificación de los diagramas del sistema.</p>
+</td>
 <td colspan="3" align="justify">
-<b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. De esta manera, hemos asegurado nuestro avance como grupo, fortaleciendo el liderazgo compartido del equipo y la coordinación técnica para cumplir con los objetivos del sprint.</p>
-
+<b>AV1</b><p>Se logró completar la primera parte del trabajo demostrando un liderazgo distribuido y eficaz. La asignación clara de roles estratégicos y técnicos permitió cumplir los objetivos de investigación, diseño conceptual y despliegue del Sprint 1 en los plazos previstos, manteniendo una comunicación constante y resolviendo impedimentos en equipo.</p>
 </td>
 </tr>
 <tr>
 <td colspan="3">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
-<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, se logró completar la primera parte del trabajo sin problemas mayores. Todos asumimos un liderazgo compartido en la creación, redacción y despliegue de la Landing Page, asegurando nuestro avance como grupo.</p>
+<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, logrando completar la primera parte del trabajo sin problemas mayores. Asumí un rol activo en la planificación de sprints, la redacción colaborativa de los requerimientos y el despliegue del sitio web, asegurando que todos los integrantes contaran con tareas claras y plazos realistas.</p>
 
-<h3>ALUMNO 2</h3>
-<b>AV1</b><p>
-  .</p>
+<h3>Fernandez Seer, Mario Alonso</h3>
+<b>AV1</b><p>Fomenté un entorno colaborativo e inclusivo al facilitar las sesiones de planificación (Sprint Planning 1) y coordinar los canales de voz para la toma de decisiones consensuadas. Cumplí puntualmente con la implementación de las tareas asignadas para la Landing Page (secciones de Pricing e Impacto) y aseguré la trazabilidad del trabajo del equipo mediante el control de entregables y la revisión mutua de código y documentación.</p>
 
-
-<h3>ALUMNO 3</h3>
-<b>AV1</b><p>
-  
-</p>
+<h3>Almandroz Carbajal, Pierina Marysabel</h3>
+<b>AV1</b><p>Promoví el trabajo colaborativo asegurando que los criterios de aceptación de las historias de usuario de inventario fueran comprendidos y validados por todos los miembros. Cumplí responsablemente con la maquetación de la sección de Platform Features y colaboré en la revisión de los flujos de interacción del comercializador, integrando las sugerencias del grupo en el backlog.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Asumí la responsabilidad del cumplimiento en tiempo y forma de las tareas asignadas en las fases de investigación y diseño visual. Colaboré activamente con el equipo coordinando la validación del comportamiento y flujo de los usuarios mediante la matriz de tareas y mapas de empatía, asegurando que todos los miembros tuvieran una visión clara y compartida sobre el diseño UI/UX y la estructura del proyecto en la Landing Page Wireframe.</p>
-</p>
 
-
-<h3>ALUMNO 5</h3>
-<b>AV1</b><p>
-  
-</p>
-
+<h3>Domenack Angeles, Miguel</h3>
+<b>AV1</b><p>Promoví un ambiente de trabajo transparente y colaborativo al revisar minuciosamente cada sección del informe y compartir retroalimentación oportuna con el equipo para subsanar inconsistencias antes de la entrega final. En la parte de desarrollo, cumplí cabalmente con la tarea asignada de diseño adaptativo (Responsive Design), garantizando que la Landing Page funcionara de manera óptima en dispositivos móviles y de escritorio, además de estructurar el soporte visual en Canva para el equipo.</p>
+</td>
 <td colspan="3" align="justify">
-<b>AV1</b><p>Se logró culminar el primer avance de manera correcta. Ello nos permitirá seguir para la próxima actividad.</p>
-
+<b>AV1</b><p>El equipo consolidó un entorno inclusivo y de alta disciplina de trabajo, planificando tareas a través de tableros ágiles y cumpliendo el 100% de las historias asignadas para el primer hito del proyecto. Esto sienta una base sólida para afrontar las siguientes fases de desarrollo de la aplicación web y backend.</p>
 </td>
 </tr>
 </tbody>
@@ -358,7 +341,7 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 | Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png"> | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
 | Estudiante 3                       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                                                         | descripcion
 | Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg">   | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
-| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto                                                         | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
+| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png">                                                         | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
 
 
 
