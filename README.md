@@ -262,7 +262,7 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 3. **Análisis y apoyo a la planificación:** utiliza información histórica de inventario y operaciones para generar alertas y estimaciones que permitan anticipar necesidades de reposición o nueva producción.
 
-### 1.1.2. Perfiles de Integrantes del equipo
+#### 1.1.2. Perfiles de Integrantes del equipo
 
 | **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia** | **Conocimientos y habilidades**
 |:-----------------------------------|:-----------------------------------------------------------------|:---------------|:------------------------------------ |
@@ -275,9 +275,9 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 
 
-## 1.2. Solution Profile
+### 1.2. Solution Profile
 
-### 1.2.1. Antecedentes y Problemática
+#### 1.2.1. Antecedentes y Problemática
 
 La producción y comercialización de pisco involucra diferentes actividades relacionadas con elaboración, supervisión de lotes, almacenamiento, inventario, pedidos y distribución del producto. Durante estas actividades se genera información que puede ser utilizada para conocer el estado de las operaciones y apoyar la toma de decisiones.
 
@@ -380,7 +380,7 @@ Las funcionalidades disponibles dependerán del tipo de usuario.
 - No se contempla presupuesto para la adquisición de dispositivos IoT físicos ni sensores durante el desarrollo académico del proyecto.
 
 
-### 1.2.2. Lean UX Process
+#### 1.2.2. Lean UX Process
 
 El Lean UX Process de Destilatech permite estructurar las hipótesis iniciales relacionadas con el problema, los usuarios, los resultados esperados y las posibles funcionalidades de la solución.
 
@@ -391,7 +391,7 @@ La visión de negocio considera a Destilatech como una plataforma B2B bajo un mo
 En una etapa posterior, el modelo de negocio podrá complementarse mediante servicios de instalación, configuración, integración y mantenimiento de dispositivos IoT físicos compatibles con Destilatech.
 
 
-#### 1.2.2.1. Lean UX Problem Statements
+##### 1.2.2.1. Lean UX Problem Statements
 
 El estado actual del dominio de producción y comercialización de pisco se encuentra principalmente enfocado en la ejecución de procesos de producción, control de inventario, comercialización y reposición mediante diferentes procedimientos y herramientas.
 
@@ -404,7 +404,7 @@ Nuestro enfoque inicial estará dirigido a pequeños y medianos productores de p
 Sabremos que la solución genera valor cuando estos usuarios utilicen Destilatech recurrentemente para consultar y registrar información relacionada con sus operaciones, gestionar inventario y detectar situaciones que requieran atención, reduciendo su dependencia de múltiples fuentes de información independientes.
 
 
-#### 1.2.2.2. Lean UX Assumptions
+##### 1.2.2.2. Lean UX Assumptions
 
 **Business Assumptions:**
 
@@ -461,7 +461,7 @@ Estos resultados podrán medirse posteriormente mediante indicadores como usuari
 7. Creemos que las **estimaciones de inventario y reposición** permitirán anticipar posibles necesidades futuras.
 
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
+##### 1.2.2.3. Lean UX Hypothesis Statements
 
 
 **Hypothesis Statement 1 — Dashboard**
@@ -485,7 +485,7 @@ Creemos que lograremos **mejorar la organización de información comercial** si
 **Hypothesis Statement 7 — Estimaciones de inventario** 
 Creemos que lograremos **mejorar la planificación de reposición y de nueva producción** si **productores y comercializadores** obtienen **información anticipada sobre posibles necesidades futuras de inventario** mediante **estimaciones construidas a partir de información histórica**.
 
-#### 1.2.2.4. Lean UX Canvas
+##### 1.2.2.4. Lean UX Canvas
 
 <table>  
 <tr>  
@@ -537,7 +537,7 @@ Entrevistar de 3 a 5 representantes de cada segmento (productores y comercializa
 </table>
 
 
-## 1.3. Segmentos objetivo
+### 1.3. Segmentos objetivo
 
 Destilatech se orienta inicialmente hacia actores relacionados con la producción y comercialización de pisco en el Perú.
 
@@ -642,7 +642,7 @@ Las características y necesidades descritas constituyen hipótesis iniciales de
 
 En este apartado, examinamos el ecosistema de soluciones existentes en el mercado peruano que ofrecen servicios de producción, gestión de lotes/inventario y comercialización específicamente para pisco.
 
-### 2.1.1. Análisis competitivo
+#### 2.1.1. Análisis competitivo
 
 **¿Por qué llevar a cabo este análisis?** Determinar si existe una solución digital que ya resuelva de forma integrada el monitoreo de producción, la gestión de inventario/lotes y la comercialización del pisco, y con ello confirmar el espacio de diferenciación de Destilatech frente a otras soluciones.
 <table border="1" cellpadding="5" cellspacing="0">
@@ -760,7 +760,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
 ### 2.2. Entrevistas
 
-### 2.2.1. Diseño de entrevistas
+#### 2.2.1. Diseño de entrevistas
 
 **Estructura común a ambas guías**
 
@@ -1266,7 +1266,7 @@ En resumen, los comercializadores entrevistados dependen de métodos manuales co
 
 El proceso de Needfinding permitió transformar los hallazgos de las entrevistas en herramientas de diseño centradas en el usuario. A partir del análisis estadístico de las características demográficas, comportamentales y subjetivas de cada segmento, se construyeron los siguientes artefactos que guiarán el diseño de la solución Destulatech.
 
-### 2.3.1. User Personas
+#### 2.3.1. User Personas
 
 A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los dos segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
 
@@ -1278,7 +1278,7 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 <img src="assets/md-images-front-matter/UXPressia_Seg2_UserPersona.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
-### 2.3.2. User Task Matrix
+#### 2.3.2. User Task Matrix
 
 La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
 
@@ -1310,7 +1310,7 @@ Diferenciación de Experiencia por Rol:
 
 -El Comercializador centra su interacción en el flujo de reabastecimiento (pedidos de reposición y control rápido de stock), lo cual demanda un flujo UX optimizado para realizar operaciones operativas en pocos clics.
 
-### 2.3.3. User Journey Mapping
+#### 2.3.3. User Journey Mapping
 
 Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos, sin la existencia de la solución Destilatech. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) que la plataforma debe abordar.
 
@@ -1327,7 +1327,7 @@ El siguiente Journey Map ilustra el proceso que sigue Carlos Mendoza, propietari
 
 <img src="assets/md-images-front-matter/user_journey_map_2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-### 2.3.4. Empathy Mapping
+#### 2.3.4. Empathy Mapping
 
 Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
 
@@ -2538,3 +2538,23 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
   <br>
 
 En resumen, Github Pages usa la rama main como origen de producción. Paralelamente, se configuró un flujo con GitHub actions que reacciona a los commits de la rama develop que compila con el código estático. Es así que, cuando las modificaciones son revisadas y aprobadas por el equipo en su fase de producción, la plataforma actualiza el sitio en una nueva versión.
+
+### 5.2.	Landing Page, Services & Applications Implementation.
+
+#### 5.2.1.	Sprint 1
+
+##### 5.2.1.1.	Sprint Planning 1.
+
+##### 5.2.1.2.   Aspect Leaders and Collaborators.
+
+##### 5.2.1.3.	Sprint Backlog 1.
+
+##### 5.2.1.4.	Development Evidence for Sprint Review.
+
+##### 5.2.1.5.	Execution Evidence for Sprint Review.
+
+##### 5.2.1.6.	Services Documentation Evidence for Sprint Review.
+
+##### 5.2.1.7.	Software Deployment Evidence for Sprint Review.
+
+##### 5.2.1.8.	Team Collaboration Insights during Sprint.
