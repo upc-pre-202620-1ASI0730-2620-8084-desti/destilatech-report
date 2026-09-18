@@ -2105,7 +2105,7 @@ classDiagram
     Account ..> BusinessType : uses
 ```
 
-**b. Production & Monitoring**
+**c. Production & Monitoring**
 
 ```mermaid
 classDiagram
@@ -2151,7 +2151,7 @@ classDiagram
     ProductionBatch ..> BatchStage : uses
 ```
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 ```mermaid
 classDiagram
@@ -2192,7 +2192,7 @@ classDiagram
     StockMovement ..> MovementType : uses
 ```
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 ```mermaid
 classDiagram
@@ -2238,7 +2238,7 @@ classDiagram
     ReplenishmentOrder ..> OrderStatus : uses
 ```
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 ```mermaid
 classDiagram
@@ -2268,7 +2268,7 @@ classDiagram
     Alert ..> AlertStatus : uses
 ```
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 ```mermaid
 classDiagram
