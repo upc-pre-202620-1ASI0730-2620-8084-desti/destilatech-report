@@ -2655,21 +2655,123 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 | Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 | EP09 |EP10 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Fernandez Seer, Mario Alonso | MrbBaru | C | L | C | C | C | C | C | C | C | C |
-| Santiago Atanacio, Jairo Mathias | Msa-ware | L | C | L | C | C | C | L | L |
-| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | C | L | C | C | L | C | C | C |
-| Condor Sandoval, Jean Pierre | jeanpcs | C | C | C | L | C | L | L | C |
-| Domenack Angeles, Miguel | midoan0805 | C | C | C | C | C | L | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | L | C | L | C | C | C | L | L | C | C |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | C | C | C | C | L | C | C | C | C | L |
+| Condor Sandoval, Jean Pierre | jeanpcs | C | C | C | L | C | L | L | C | L | C |
+| Domenack Angeles, Miguel | midoan0805 | C | C | C | C | C | L | C | C | C | C |
 
 **Leyenda:** L = Líder, C = Colaborador
 
 ##### 5.2.1.3.	Sprint Backlog 1.
 
+Nuestro objetivo principal con este Sprint 1 es desplegar la versión inicial de la Landing Page de Destilatech con el propósito de atrapar el interés del mercado y establecer un canal de comunicación directo con nuestros prospectos. Para lograr este objetivo, se ha realizado una distribución estratégica de tareas entre los integrantes del equipo. Esto nos permitirá asegurar que cada sección del sitio transmita nuestra propuesta de valor con claridad, genere confianza en el sector de licoreria y cuente con llamados a la acción funcionales para capturar los primeros registros.
+
+**Enlace Sprint Backlog 1 en Trello:** [Ver Tablero Destilatech (Sprint 1)](https://trello.com/invite/b/69edb4e56f8b545259285224/ATTI4223d4c1388fe29def281fbeae6553a0CD55EAEA/cortisense-app-web)
+
+
+| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US-27** | Visualización de propuesta de valor | TK-01 | Hero Section | Implementación de la sección Hero | 1 | Sebastián Gutierrez | Done |
+| **US-27** | Visualización de propuesta de valor | TK-01 | Adaptabilidad Móvil | Implementación de la adaptabilidad móvil | 1 | Sebastián Gutierrez | Done |
+| **US-28** | Descripción de aplicación | TK-02 | Description Section | Implementación de la sección Description | 1 | Johan Yonel | Done |
+| **US-29** | Metas de aplicación | TK-03 | Goals Section | Implementación de la sección Goals | 1 | Guiou Mauricio | Done |
+| **US-30** | Planes de pago | TK-04 | Pricing Section | Implementación de la sección Pricing | 1 | Marcelo Pareja | Done |
+| **US-31** | Fidelización de clientes | TK-05 | Impact | Implementación de la sección Impact | 1 | Marcelo Pareja | Done |
+| **US-32** | herramientas de software | TK-06 | Platform Features | Implementación de la sección Platform Features | 1 | Guiou Mauricio | Done |
+| **US-33** | Header y Footer | TK-07 | Sticky Header | Implementación de la sección del Header | 1 | Jairo Santiago | Done |
+| **US-33** | Header y Footer | TK-08 | Accesibilidad del Footer | Implementación de la seccion del Footer | 1 | Jairo Santiago | Done |
+
+
 ##### 5.2.1.4.	Development Evidence for Sprint Review.
+
+
+Se detalla a continuación el listado consolidado de los commits que evidencian la implementación técnica de la Landing Page, destacando el uso de Conventional Commits y la separación de responsabilidades en los assets del front-end.
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `e3c8149` | refactor(landing): update interactivity and event listeners in scripts.js | 2026-05-14 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `fe0a10b` | style(landing): update responsive layouts and breakpoints in styles.css | 2026-05-14 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `ffccd47` | style(landing): apply brand color variables in stylesheet | 2026-05-14 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `3afbdce` | feat(landing): add impact and goals sections to index.html | 2026-05-14 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `ba10549` | feat(landing): implement hero and sticky header sections | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `3710bda` | chore(assets): remove unused doctor preview image | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `d16f70d` | chore(docs): remove outdated project documentation | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `f347c9a` | docs(readme): update project description and setup instructions | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `83bb373` | docs(readme): initialize project documentation | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `d857913` | feat(assets): add initial mockup assets and visual wireframes | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `da63305` | chore(repo): remove legacy CortiSenseWeb directory | 2026-04-25 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-website | main | `e129bd1` | init: initial project scaffolding and folder structure | 2026-04-25 |
+
 
 ##### 5.2.1.5.	Execution Evidence for Sprint Review.
 
+El principal logro del Sprint 1 consistió en el despliegue de la versión inicial de la landing page. Se completó el desarrollo del header, hero y footer, junto con las secciones de Propuesta, Diferencias, Roles, Creadores, Planes y Formulario. Asimismo, se implementó la metodología GitFlow, gestionando el avance mediante ramas `feature/*` integradas posteriormente en el branch `develop` y finalmente en `main`.
+**Header** <br>
+<div align="center">
+
+</div> <br>
+
+**Main Section** <br>
+<div align="center">
+
+</div> <br>
+
+**Footer**<br>
+<div align="center">
+
+</div> <br>
+
 ##### 5.2.1.6.	Services Documentation Evidence for Sprint Review.
+
+
+**Introducción y Estado Actual**  
+Durante el Sprint 1, el equipo concentró sus esfuerzos técnicos exclusivamente en el diseño UI/UX, maquetación y despliegue de la Landing Page del proyecto Destilatech  (alineado con la Épica EP08). El objetivo principal de esta iteración fue validar la propuesta de valor frente al mercado y establecer los canales de captación temprana de leads.
+
 
 ##### 5.2.1.7.	Software Deployment Evidence for Sprint Review.
 
+Durante el Sprint 1, la Landing Page estática fue desplegada exitosamente hacia un entorno web accesible públicamente. El código fuente, basado en HTML5, CSS3 y Vanilla JavaScript puro, se gestiona en un repositorio independiente (`destilatech-website`). La publicación de esta página permite a los stakeholders externos interactuar de primera mano con la visión del proyecto y actúa como plataforma principal para la recolección de métricas de interés comercial.
+
+**Enlace de Producción:** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+
+
 ##### 5.2.1.8.	Team Collaboration Insights during Sprint.
+
+
+
+Las estadísticas extraídas de GitHub demuestran el trabajo coordinado de los 5 miembros del equipo al maquetar la Landing Page, dividiendo equitativamente la creación de los archivos HTML y CSS a lo largo del Sprint.
+
+**Aportes Individuales (Commits por desarrollador):**
+
++ **Fernandez Seer, Mario Alonso**
+<div align="center">
+
+</div><br>
+
++ **Santiago Atanacio, Jairo Mathias**
+<div align="center">
+
+</div><br>
+
++ **Almandroz Carbajal, Pierina Marysabel**
+<div align="center">
+
+</div><br>
+
++ **Condor Sandoval, Jean Pierre**
+<div align="center">
+
+</div><br>
+
++ **Domenack Angeles, Miguel**
+<div align="center">
+
+</div><br><br>
+
+**Colaboración Global:**
+<div align="center">
+  
+</div><br><br>
+<div align="center">
+  
+</div><br><br>
