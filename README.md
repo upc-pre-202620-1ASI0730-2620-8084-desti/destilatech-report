@@ -94,7 +94,7 @@ A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicaci
 
 | AV1 (Avance 1) |
 | :---: | 
-|  |
+| <img src="assets/md-images-front-matter/grupal-commit.png">  |
 
 **B. Contributors Insights (Evolución de Aportes)**
 
@@ -112,31 +112,31 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 **Fernandez Seer Mario Alonso**
 | AV1 | 
 | :---: | 
-|  | 
+| <img src="assets/md-images-front-matter/mario-commit.png"> | 
 
 
 
 **Santiago Atanacio, Jairo Mathias**
 | AV1 | 
 | :---: | 
-|  |
+| <img src="assets/md-images-front-matter/jairo-commit1.png"> |
 
 
 **Almandroz Carbajal, Pierina Marysabel**
 | AV1 |
 | :---: | 
-|   |
+| <img src="assets/md-images-front-matter/pierina-commit.png">  |
 
 
 **Condor Sandoval, Jean Pierre**
 | AV1 | 
 | :---: |
-|   |
+|  <img src="assets/md-images-front-matter/jean-commit.png"> |
 
 **Domenack Angeles, Miguel**
 | AV1 | 
 | :---: |
-|   |
+|  <img src="assets/md-images-front-matter/miguel-commit.png"> |
 
 # Contenido
 
