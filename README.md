@@ -2589,7 +2589,22 @@ Estas referencias serán aplicadas de manera complementaria. Si existiera confli
 
 ### 5.1.4. Software Deployment Configuration.
 
-En esta sección mostraremos los pasos que hemos realizado para poder desplegar cada uno de nuestros proyectos.
+
+Se detalla a continuación el listado consolidado de los commits que evidencian la implementación técnica de la Landing Page, ordenados cronológicamente y aplicando Conventional Commits.
+ 
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `6f9d1f4` | Initial commit | 2026-09-04 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `a524f80` | docs: subir imagenes a assets | 2026-09-05 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `a438143` | docs: eliminando | 2026-09-05 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `a1d574c` | docs: subir imagenes | 2026-09-06 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `9e034db` | docs: agregar parte del index, js | 2026-09-08 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `9ff557f` | docs: eliminando | 2026-09-08 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `5d16532` | docs: subiendo archuvi html, js y css | 2026-09-10 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `5be25df` | docs: agregar estrucutra de responsive design | 2026-09-12 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `f521716` | docs: agregar estructura de logo-icon | 2026-09-14 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `70141ff` | docs: agregar estructura de platform feature tabs | 2026-09-16 |
+| upc-pre-202620-1asi0730-8084-destilatech/destilatech-website | main | `03cf29c` | docs: agregar estructura de i18n | 2026-09-18 |
 
 #### 5.1.4.1. Landing Page
 
