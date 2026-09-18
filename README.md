@@ -2634,7 +2634,33 @@ En resumen, Github Pages usa la rama main como origen de producción. Paralelame
 
 ##### 5.2.1.1.	Sprint Planning 1.
 
+
+| Sprint # | Sprint 1 |
+| :--- | :--- |
+| **Antecedentes de la planificación de sprints** | Como hito inicial del proyecto, el equipo determinó que la primera fase debía centrarse exclusivamente en la validación comercial y captación de prospectos mediante el diseño y despliegue de una Landing Page (Website), dejando el desarrollo técnico de la Web App y la base de datos para los sprints posteriores. |
+| **Fecha** | 2026-18-09 |
+| **Hora** | 11:00 AM |
+| **Ubicación** | Reunión presencial después de clase |
+| **Preparada por** |Santiago Atanacio, Jairo Mathias |
+| **Asistentes (a la reunión de planificación)** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel  |
+| **Objetivo del Sprint 1** | El equipo de CortiSense ha decidido lanzar su página de destino inicial para presentar su propuesta de valor al sector sanitario y captar los primeros contactos de centros médicos y hospitales. El objetivo es consolidar la credibilidad de la monitorización del cortisol y la fatiga mediante tecnología de software. Buscamos generar interés directo entre los administradores hospitalarios y los responsables de recursos humanos del sector sanitario, ofreciendo una solución clara para reducir el agotamiento profesional. El éxito se confirmará cuando la página registre al menos 10 solicitudes de demostración o registros válidos a través de los formularios de contacto. |
+| **Velocidad del Sprint 1** | 14 Story Points (Horas estimadas) |
+
+
 ##### 5.2.1.2.   Aspect Leaders and Collaborators.
+
+
+Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics definidas en el Product Backlog. La asignación de líderes y colaboradores se ha realizado considerando la responsabilidad real de cada miembro en los distintos aspectos del proyecto, según se documenta en la planificación interna del equipo.
+
+| Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 | EP09 |EP10 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Fernandez Seer, Mario Alonso | MrbBaru | C | L | C | C | C | C | C | C | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | L | C | L | C | C | C | L | L |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | C | L | C | C | L | C | C | C |
+| Condor Sandoval, Jean Pierre | jeanpcs | C | C | C | L | C | L | L | C |
+| Domenack Angeles, Miguel | midoan0805 | C | C | C | C | C | L | C | C |
+
+**Leyenda:** L = Líder, C = Colaborador
 
 ##### 5.2.1.3.	Sprint Backlog 1.
 
