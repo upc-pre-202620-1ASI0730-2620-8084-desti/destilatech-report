@@ -1901,6 +1901,27 @@ flowchart LR
 
 El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). El comando `Login` autentica al usuario y emite el token de sesión (US02, US26). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). IAM expone `AccountStatusView` para que otros Bounded Contexts, como Billing, consulten si la cuenta está activa sin acoplarse a su modelo interno.
 
+**b. Billing**
+
+Este Bounded Context gestiona los planes, la suscripción paga y los pagos asociados a la cuenta, respondiendo al Epic EP01.
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nSubscribeToPlan"]:::command --> A1{{"Aggregate:\nSubscription"}}:::aggregate --> E1(["Event:\nSubscriptionActivated"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C1
+    E1 --> P1{"Policy:\nSyncAccountAccessOnActivation"}:::policy --> XC1["Command hacia IAM:\nExtendAccountAccess"]:::command
+    E1 --> RM1[/"Read Model:\nSubscriptionStatusView"/]:::readmodel
+```
+
+El comando `SubscribeToPlan` depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming. Al activarse la suscripción (`SubscriptionActivated`), la política `SyncAccountAccessOnActivation` envía un Command hacia IAM para extender el acceso de la cuenta más allá del periodo de prueba, evidenciando el acoplamiento delgado entre ambos Bounded Contexts mediante eventos, en vez de consultas directas a su modelo interno.
+
 **c. Production & Monitoring**
 
 Gestiona los lotes de producción y el monitoreo de variables de proceso (EP03, EP04).
