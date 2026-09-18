@@ -2745,33 +2745,31 @@ Las estadísticas extraídas de GitHub demuestran el trabajo coordinado de los 5
 
 + **Fernandez Seer, Mario Alonso**
 <div align="center">
-
+<img src="assets/md-images-front-matter/mario-commit.png">
 </div><br>
 
 + **Santiago Atanacio, Jairo Mathias**
 <div align="center">
-
+<img src="assets/md-images-front-matter/jairo-commit2.png">
 </div><br>
 
 + **Almandroz Carbajal, Pierina Marysabel**
 <div align="center">
-
+<img src="assets/md-images-front-matter/pierina-commit.png">
 </div><br>
 
 + **Condor Sandoval, Jean Pierre**
 <div align="center">
-
+<img src="assets/md-images-front-matter/jean-commit.png">
 </div><br>
 
 + **Domenack Angeles, Miguel**
 <div align="center">
-
+<img src="assets/md-images-front-matter/miguel-commit.png">
 </div><br><br>
 
 **Colaboración Global:**
 <div align="center">
-  
+<img src="assets/md-images-front-matter/grupal-commit.png"> 
 </div><br><br>
-<div align="center">
-  
-</div><br><br>
+
