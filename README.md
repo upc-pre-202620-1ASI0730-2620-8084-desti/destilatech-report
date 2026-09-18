@@ -1902,7 +1902,7 @@ flowchart LR
 
 El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
 
-**b. Production & Monitoring**
+**c. Production & Monitoring**
 
 Gestiona los lotes de producción y el monitoreo de variables de proceso (EP03, EP04).
 
@@ -1929,7 +1929,7 @@ flowchart LR
 
 La política `EvaluateReadingAgainstRange` es el corazón del monitoreo: compara cada `SensorReadingRecorded` contra el rango configurado en `ConfigureVariableRange` (US10) y, de estar fuera de rango, genera `AnomalyDetected` (US11), que a su vez dispara un Command hacia el Bounded Context Alerts & Notifications. El Sensor IoT se mantiene simulado dentro del alcance académico, tal como se identificó en el Big Picture Event Storming.
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 Gestiona el catálogo de productos y el control de stock (EP05, EP06).
 
@@ -1954,7 +1954,7 @@ flowchart LR
 
 `RegisterStockMovement` puede originarse directamente en la interfaz del usuario (US13) o ser disparado por Commands cruzados desde otros Bounded Contexts: `DiscountStock` (cuando Orders & Replenishment confirma un pedido, US18) y `AddBottledStock` (cuando Production & Monitoring embotella un lote). La política `CheckAgainstThreshold` compara el nuevo nivel contra el umbral configurado (US15) para decidir si dispara `LowStockDetected` (US16).
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 Gestiona clientes y pedidos de venta, y los pedidos de reposición a proveedores (EP07).
 
@@ -1977,7 +1977,7 @@ flowchart LR
 
 `RegisterOrder` (US18) dispara la política `DiscountStockOnOrder`, que emite un Command hacia Inventory & Stock Management para descontar el stock vendido, evitando que Orders & Replenishment conozca o manipule directamente el Aggregate `StockItem` (los Bounded Contexts se comunican por eventos/commands, no compartiendo agregados). WhatsApp se mantiene como canal informal externo de coordinación de pedidos de reposición, tal como se identificó en el Big Picture.
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management (EP04, EP06).
 
@@ -1998,7 +1998,7 @@ flowchart LR
 
 Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts (EP08).
 
