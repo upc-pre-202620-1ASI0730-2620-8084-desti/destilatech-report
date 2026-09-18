@@ -2610,6 +2610,21 @@ erDiagram
     }
 ```
 
+**f. Alerts & Notifications**
+
+```mermaid
+erDiagram
+    ALERT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string type
+        guid source_id "referencia al lote o producto origen"
+        string message
+        string status
+        datetime created_at
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
