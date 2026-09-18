@@ -2072,6 +2072,37 @@ Los tres actores acceden a Destilatech como un único sistema, sin necesidad de 
 
 #### 4.6.3. Software Architecture Container Diagrams
 
+El Container Diagram descompone a Destilatech en sus unidades de despliegue independientes: el Landing Page (sitio estático), la Web Application (SPA consumida por productores y comercializadores), la RESTful API (que expone la lógica de negocio de los siete Bounded Contexts) y la Base de Datos relacional.
+
+```mermaid
+C4Container
+    title Diagrama de Contenedores - Destilatech
+
+    Person(producer, "Productor de Pisco")
+    Person(retailer, "Comercializador")
+    Person(visitor, "Visitante")
+
+    System_Boundary(destilatech, "Destilatech") {
+        Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Sitio estático con la propuesta de valor, planes y el punto de entrada al registro")
+        Container(webapp, "Web Application", "Vue.js (SPA)", "Interfaz web adaptable donde productores y comercializadores operan la plataforma")
+        Container(api, "RESTful API", "ASP.NET Core / C#", "Expone los servicios de los Bounded Contexts del dominio")
+        ContainerDb(db, "Database", "SQL Server (relacional)", "Persiste la información de cada Bounded Context")
+    }
+
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(visitor, landing, "Visita", "HTTPS")
+    Rel(landing, webapp, "Redirige al registro / login", "HTTPS")
+    Rel(producer, webapp, "Usa", "HTTPS")
+    Rel(retailer, webapp, "Usa", "HTTPS")
+    Rel(webapp, api, "Consume servicios", "JSON/HTTPS")
+    Rel(api, db, "Lee y escribe", "SQL/TCP")
+    Rel(api, payment, "Procesa cobros de suscripción (Billing)", "HTTPS/REST")
+    Rel(iot, api, "Envía lecturas simuladas", "HTTPS/REST")
+```
+
+La decisión tecnológica principal es separar el Landing Page (contenido estático, sin autenticación) de la Web Application (SPA autenticada), ambos consumiendo la misma RESTful API para mantener consistente la experiencia entre ambos, tal como exige el enunciado del proyecto. La RESTful API se implementa en C# sobre ASP.NET Core, comunicándose con la Base de Datos relacional y con los dos sistemas externos (Pasarela de Pago y Sensor IoT). A este nivel de Container, la división entre IAM y Billing no se representa como contenedores separados, ya que ambos forman parte del mismo despliegue de la RESTful API (monolito modular); esta separación se detalla en el nivel de Component (4.6.4).
 
 #### 4.6.4. Software Architecture Components Diagrams
 
