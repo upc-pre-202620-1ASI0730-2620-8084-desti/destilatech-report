@@ -2625,6 +2625,26 @@ erDiagram
     }
 ```
 
+**g. Analytics & Estimations**
+
+```mermaid
+erDiagram
+    REPLENISHMENT_ESTIMATE {
+        guid id PK
+        guid product_id "referencia logica a Inventory"
+        datetime estimated_date
+        decimal estimated_quantity
+        decimal confidence
+    }
+    HISTORICAL_INDICATOR {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string period
+        string metric_type
+        decimal value
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
