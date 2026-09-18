@@ -2090,6 +2090,29 @@ classDiagram
     Account ..> BusinessType : uses
 ```
 
+**b. Billing**
+
+```mermaid
+classDiagram
+    class Subscription {
+        -Guid id
+        -Guid accountId
+        -SubscriptionStatus status
+        -DateTime startDate
+        -DateTime renewalDate
+        +Activate(planId) void
+        +Cancel() void
+    }
+    class Plan {
+        -Guid id
+        -string name
+        -decimal price
+        -BillingCycle billingCycle
+    }
+
+    Subscription "*" --> "1" Plan : subscribesTo
+```
+
 **c. Production & Monitoring**
 
 ```mermaid
