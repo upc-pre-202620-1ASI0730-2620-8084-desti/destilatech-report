@@ -2504,8 +2504,10 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 ##### 5.1.4.1.1.  Ingresamos al repositorio de la landing page
 
-<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 120%; max-width: 500px; height: 200px;">
-<br>
+<p align="center">
+<img src="assets/md-images-front-matter/despliegue1.jpeg" alt="Despliegue 1" style="width: 85%;">
+</p>
+  <br>
 
 ##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
 
