@@ -60,10 +60,20 @@ Proyecto<br>
 
 ## Registro de Versiones del Informe
 
-
-| Versión |   Fecha    |                                                                               Autor                                                                               |                                                  Descripción de modificación                                                   |
-| :-----: |:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------: |
-|   AV1   | 18/09/2026 | Equipo FuturosSeniors | Avance del trabajo: Capítulos I al III completos; Capítulo IV con la sección de Domain-Driven Software Architecture (Design-Level Event Storming, C4 Model, Class Diagrams y Database Diagrams) y las secciones de diseño UX/UI. |
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :---: | :--- |
+| 0.1.0 | 12/09/2026 | Fernandez Seer, Mario Alonso | Estructura base del informe, carátula, perfil de la StartUp y definición de la propuesta de valor de Destilatech (`main`)|
+| 0.2.0 | 13/09/2026 | Santiago Atanacio, Jairo Mathias | Elaboración del Lean UX Process completo: Problem Statements, Assumptions, 7 Hipótesis y Lean UX Canvas (`feat/chapter-1-introduction-and-lean-ux`) |
+| 0.3.0 | 14/09/2026 | Condor Sandoval, Jean Pierre | Análisis competitivo de mercado (Solmicro, Ubidots, Defontana), diseño de guías y registro de entrevistas (`feat/chapter-2-requirements-elicitation-and-analysis`) |
+| 0.4.0 | 14/09/2026 | Condor Sandoval, Jean Pierre | Desarrollo de artefactos de Needfinding: User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping (`feat/chapter-2-needfinding`) |
+| 0.5.0 | 15/09/2026 | Santiago Atanacio, Jairo Mathias | Taller y documentación del Big Picture Event Storming, definición del Ubiquitous Language y redacción inicial de User Stories (`feat/chapter-2-event-storming`) |
+| 0.6.0 | 15/09/2026 | Almandroz Carbajal, Pierina Marysabel | Especificación de historias de usuario de inventario/catálogo (EP05) y estructuración del Impact Mapping (`feat/chapter-3-requirements-specification`) |
+| 0.7.0 | 16/09/2026 | Santiago Atanacio, Jairo Mathias | Consolidación de 10 Épicas, 37 User Stories con criterios Gherkin y priorización del Product Backlog en Story Points (`feat/chapter-3-product-backlog`) |
+| 0.8.0 | 16/09/2026 | Fernandez Seer, Mario Alonso | Desarrollo de Style Guidelines, arquitectura de información, Wireframes y Mock-ups de la Landing Page (`feat/chapter-4-product-design`) |
+| 0.9.0 | 17/09/2026 | Domenack Angeles, Miguel | Elaboración del Design-Level Event Storming, especificación de diagramas de clases UML para los 6 Bounded Contexts y adaptabilidad móvil (`feat/chapter-4-software-architecture`) |
+| 0.9.1 | 17/09/2026 | Almandroz Carbajal, Pierina Marysabel | Configuración de convenciones de código, maquetación de Platform Features y documentación del Sprint Backlog 1 (`feat/chapter-5-sprint-1`) |
+| 0.9.2 | 18/09/2026 | Domenack Angeles, Miguel | Auditoría de calidad, corrección ortográfica y estructural de los Capítulos I al V, y diseño de la presentación en Canva (`feat/report-review-and-canva`) |
+| 1.0.0 | 18/09/2026 | Todos los integrantes | Revisión general, unificación de ramas, verificación de despliegue en GitHub Pages y entrega final del Avance 1 (AV1 Report) (`main`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -240,8 +250,8 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 ## Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:<br><br>
-**ABET – EAC - Student Outcome 5**<br>
-**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.<br><br>
+<b>ABET – EAC - Student Outcome 5</b><br>
+<b>Criterio:</b> La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.<br><br>
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.<br><br>
 
 <table>
@@ -257,60 +267,46 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3">Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
-<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de las secciones como Lean UX Canvas, analisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories, product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
+<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de secciones como Lean UX Canvas, análisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories y product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
   
-<h3>ALUMNO 2</h3>
-<b>AV1</b><p>
-  
-</p>
+<h3>Fernandez Seer, Mario Alonso</h3>
+<b>AV1</b><p>Como líder del equipo, coordiné la definición de la propuesta de valor, los segmentos objetivo y el alcance funcional de Destilatech, procurando que las decisiones del proyecto respondieran a las necesidades identificadas en el sector pisquero. Realicé y documenté la Entrevista #2 del Segmento 1 a un productor de Pisco Don Ítalo, cuyos hallazgos permitieron validar necesidades relacionadas con el monitoreo de variables, la gestión de lotes y el control de inventario. Asimismo, lideré la elaboración de los wireframes, wireflows, mock-ups, user flows y el prototipo interactivo de la aplicación web, alineando estos artefactos con los requerimientos y compartiéndolos con el equipo para su integración en el informe.</p>
 
-<h3>ALUMNO 3</h3>
-<b>AV1</b><p>
-  
-</p>
+
+<h3>Almandroz Carbajal, Pierina Marysabel</h3>
+<b>AV1</b><p>Lideré la definición y especificación funcional del módulo de inventario y catálogo de productos (Épica EP05), asegurando que las historias de usuario reflejaran de manera precisa las necesidades comerciales del sector. Además, coordiné activamente la estructuración y diseño de la sección de Platform Features en la Landing Page, orientando al equipo en la diferenciación de vistas y funcionalidades para productores y comercializadores.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Lideré y gestioné activamente la fase de investigación de usuarios y diseño de experiencia del producto. Me encargué del análisis de las entrevistas realizadas a los usuarios clave y de la definición de los User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, garantizando una comprensión clara de sus necesidades. Asimismo, participé en la definición del Impact Mapping y en el establecimiento de los lineamientos de diseño (General Style Guidelines y Web Style Guidelines), además del diseño de los Landing Page Wireframes para asegurar la consistencia del sistema.</p>
 
-<h3>ALUMNO 5</h3>
-<b>AV1</b><p>
-  
-</p>
-
+<h3>Domenack Angeles, Miguel</h3>
+<b>AV1</b><p>Asumí el liderazgo en la verificación de la calidad del entregable mediante la auditoría continua y corrección de errores en la redacción y estructura del informe general. Asimismo, coordiné y estructuré el diseño de la presentación en Canva para la exposición académica del avance, y colaboré estrechamente en el modelado del Capítulo IV, aportando en la elaboración de las guías de estilo, la arquitectura de información y la especificación de los diagramas del sistema.</p>
+</td>
 <td colspan="3" align="justify">
-<b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. De esta manera, hemos asegurado nuestro avance como grupo, fortaleciendo el liderazgo compartido del equipo y la coordinación técnica para cumplir con los objetivos del sprint.</p>
-
+<b>AV1</b><p>Se logró completar la primera parte del trabajo demostrando un liderazgo distribuido y eficaz. La asignación clara de roles estratégicos y técnicos permitió cumplir los objetivos de investigación, diseño conceptual y despliegue del Sprint 1 en los plazos previstos, manteniendo una comunicación constante y resolviendo impedimentos en equipo.</p>
 </td>
 </tr>
 <tr>
 <td colspan="3">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
-<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, se logró completar la primera parte del trabajo sin problemas mayores. Todos asumimos un liderazgo compartido en la creación, redacción y despliegue de la Landing Page, asegurando nuestro avance como grupo.</p>
+<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, logrando completar la primera parte del trabajo sin problemas mayores. Asumí un rol activo en la planificación de sprints, la redacción colaborativa de los requerimientos y el despliegue del sitio web, asegurando que todos los integrantes contaran con tareas claras y plazos realistas.</p>
 
-<h3>ALUMNO 2</h3>
-<b>AV1</b><p>
-  .</p>
+<h3>Fernandez Seer, Mario Alonso</h3>
+<b>AV1</b><p>Organicé mis entregables de acuerdo con los objetivos asignados y trabajé mediante ramas independientes para evitar interferir con los avances de mis compañeros. Cumplí con la realización, registro y síntesis de la entrevista del Segmento 1, así como con el desarrollo de los artefactos UX/UI de la aplicación web en Figma. Además, adapté la numeración, las rutas de las imágenes y la documentación al formato existente del informe, incorporando las observaciones del equipo y manteniendo la trazabilidad de los aportes mediante commits en GitHub. De esta manera, facilité que el trabajo pudiera revisarse, integrarse y reutilizarse por los demás integrantes.</p>
 
 
-<h3>ALUMNO 3</h3>
-<b>AV1</b><p>
-  
-</p>
+<h3>Almandroz Carbajal, Pierina Marysabel</h3>
+<b>AV1</b><p>Promoví el trabajo colaborativo asegurando que los criterios de aceptación de las historias de usuario de inventario fueran comprendidos y validados por todos los miembros. Cumplí responsablemente con la maquetación de la sección de Platform Features y colaboré en la revisión de los flujos de interacción del comercializador, integrando las sugerencias del grupo en el backlog.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Asumí la responsabilidad del cumplimiento en tiempo y forma de las tareas asignadas en las fases de investigación y diseño visual. Colaboré activamente con el equipo coordinando la validación del comportamiento y flujo de los usuarios mediante la matriz de tareas y mapas de empatía, asegurando que todos los miembros tuvieran una visión clara y compartida sobre el diseño UI/UX y la estructura del proyecto en la Landing Page Wireframe.</p>
-</p>
 
-
-<h3>ALUMNO 5</h3>
-<b>AV1</b><p>
-  
-</p>
-
+<h3>Domenack Angeles, Miguel</h3>
+<b>AV1</b><p>Promoví un ambiente de trabajo transparente y colaborativo al revisar minuciosamente cada sección del informe y compartir retroalimentación oportuna con el equipo para subsanar inconsistencias antes de la entrega final. En la parte de desarrollo, cumplí cabalmente con la tarea asignada de diseño adaptativo (Responsive Design), garantizando que la Landing Page funcionara de manera óptima en dispositivos móviles y de escritorio, además de estructurar el soporte visual en Canva para el equipo.</p>
+</td>
 <td colspan="3" align="justify">
-<b>AV1</b><p>Se logró culminar el primer avance de manera correcta. Ello nos permitirá seguir para la próxima actividad.</p>
-
+<b>AV1</b><p>El equipo consolidó un entorno inclusivo y de alta disciplina de trabajo, planificando tareas a través de tableros ágiles y cumpliendo el 100% de las historias asignadas para el primer hito del proyecto. Esto sienta una base sólida para afrontar las siguientes fases de desarrollo de la aplicación web y backend.</p>
 </td>
 </tr>
 </tbody>
@@ -354,11 +350,11 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 | **Nombre Completo del integrante** | 	**Descripcion de la carrera**                                   | **Fotografia**                                               | **Conocimientos y habilidades**
 |:-----------------------------------|:-----------------------------------------------------------------|:-------------------------------------------------------------|:------------------------------------ |
-| Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | foto                                                         |  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
+| Fernandez Seer, Mario Alonso       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img width="640" height="641" alt="image" src="https://github.com/user-attachments/assets/1a9dbe0b-f15c-4a42-ab1f-871cf0094a28" />|  Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requerimientos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio.
 | Santiago Atanacio, Jairo Mathias   | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png"> | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
 | Almandroz Carbajal, Pierina Marysabel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/pierina-almandroz.jpg"> | Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Dentro del equipo me enfoco en el diseño de la arquitectura de software del proyecto, aplicando Domain-Driven Design, Event Storming a nivel de diseño y el C4 Model para representar los niveles de Context, Container y Component, así como los Class Diagrams y el modelo de base de datos de cada Bounded Context. También coordino el flujo de trabajo en Git y GitHub del equipo, cuidando la organización de ramas, commits y Pull Requests del repositorio.
 | Condor Sandoval, Jean Pierre       | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg">   | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requerimientos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y metodologías de desarrollo.
-| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | foto                                                         | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
+| Domenack Angeles, Miguel           | Ingeniería de software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png">                                                         | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. 
 
 
 
@@ -1840,27 +1836,69 @@ Versión construida de Funcionalidades, CTA final y Footer utiliza un sistema de
 <img src="assets/md-images-front-matter/landing_page_7.png" alt="wireframe" style="height: 250px; width: 400px;">
 </p>
 
-### 4.4. Web Applications UX/UI Design
+## 4.4. Web Applications UX/UI Design
 
+El diseño UX/UI de la aplicación web de Destilatech considera las necesidades de sus dos segmentos objetivo: productores de pisco y pequeños comercializadores. La solución emplea una estructura visual común, pero adapta la navegación y la información disponible según las responsabilidades de cada perfil.
 
-#### 4.4.1. Web Applications Wireframes
+El Productor accede a monitoreo IoT, gestión de lotes, inventario, pedidos y alertas. El Comercializador utiliza una navegación simplificada centrada en inventario, pedidos y alertas de reposición.
 
+- [Archivo completo de Destilatech en Figma](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2007-2)
 
-#### 4.4.2. Web Applications Wireflow Diagrams
+### 4.4.1. Web Applications Wireframes
 
+Los wireframes representan la estructura inicial de las pantallas antes de aplicar los elementos visuales definitivos. Se diseñaron ocho vistas: inicio de sesión, dashboard del productor, monitoreo IoT, gestión de lotes, inventario, pedidos, centro de alertas y dashboard del comercializador.
 
-#### 4.4.3. Web Applications Mock-ups
+Las vistas permiten validar la jerarquía de información, la distribución de componentes y las diferencias entre perfiles. Incluyen indicadores, tablas, gráficos, estados operativos y acciones vinculadas con la producción y comercialización del pisco.
 
+<div align="center">
+  <img src="assets/md-images-front-matter/web-app-wireframes.png" alt="Web Applications Wireframes de Destilatech" style="width: 100%; max-width: 1400px;">
+</div>
 
-#### 4.4.4. Web Applications User Flow Diagrams
+### 4.4.2. Web Applications Wireflow Diagrams
 
+Los wireflows muestran la relación entre las pantallas y las tareas principales de cada segmento. El Productor inicia sesión, consulta su dashboard, supervisa las variables IoT, revisa alertas, consulta la trazabilidad de los lotes y actualiza el inventario. El Comercializador consulta su dashboard e inventario, identifica productos con stock bajo, registra la reposición y confirma el pedido.
 
-### 4.5. Web Applications Prototyping
+<div align="center">
+  <img src="assets/md-images-front-matter/web-app-wireflows.png" alt="Web Applications Wireflow Diagrams de Destilatech" style="width: 100%; max-width: 1400px;">
+</div>
+
+### 4.4.3. Web Applications Mock-ups
+
+Los mockups presentan la propuesta visual de alta fidelidad. Para mantener consistencia con la Landing Page se empleó una paleta de tonos vino, terracota, crema y dorado, junto con las tipografías Poppins e Inter.
+
+Las interfaces muestran información simulada coherente con el dominio: lotes, temperatura, pH, humedad, densidad, niveles de inventario, pedidos y alertas. Las etiquetas de rol y los menús laterales distinguen las funcionalidades disponibles para productores y comercializadores.
+
+<div align="center">
+  <img src="assets/md-images-front-matter/web-app-mockups.png" alt="Web Applications Mock-ups de Destilatech" style="width: 100%; max-width: 1400px;">
+</div>
+
+### 4.4.4. Web Applications User Flow Diagrams
+
+Los User Flow Diagrams describen dos procesos prioritarios. En el flujo del Productor, el sistema evalúa las variables IoT y genera una alerta cuando alguna se encuentra fuera del rango esperado, permitiendo revisar el lote y registrar una acción correctiva. En el flujo del Comercializador, el sistema facilita detectar stock bajo, crear una reposición, registrar el pedido al proveedor y actualizar las existencias después de recibir los productos.
+
+<div align="center">
+  <img src="assets/md-images-front-matter/web-app-user-flows.png" alt="Web Applications User Flow Diagrams de Destilatech" style="width: 100%; max-width: 1400px;">
+</div>
+
+## 4.5. Web Applications Prototyping
+
+El prototipo interactivo fue construido en Figma a partir de los mockups de alta fidelidad. Está compuesto por doce pantallas y cuarenta y dos interacciones configuradas mediante eventos **On Click** y transiciones **Smart Animate** de 250 ms.
+
+Se definieron dos puntos de inicio. El recorrido del Productor incluye dashboard de producción, monitoreo IoT, lotes, inventario, pedidos y alertas. El recorrido del Comercializador presenta una navegación simplificada hacia dashboard comercial, inventario, pedidos y alertas.
+
+<div align="center">
+  <img src="assets/md-images-front-matter/web-app-prototyping.png" alt="Web Applications Prototyping de Destilatech" style="width: 100%; max-width: 1400px;">
+</div>
+
+**Enlaces del prototipo interactivo:**
+
+- [Flujo del Productor](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-525)
+- [Flujo del Comercializador](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-874)
 
 
 ### 4.6. Domain-Driven Software Architecture
 
-Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Se ejecuta un Design-Level Event Storming para cada uno de los seis Bounded Contexts identificados —Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations—, llegando a la identificación de Commands, Aggregates, Domain Events, Policies y Read Models para cada uno. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
+Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Durante el Design-Level Event Storming, el equipo identificó que el Bounded Context Identity/Access & Subscriptions agrupaba dos responsabilidades con ciclos de cambio distintos: la gestión de identidad y acceso de la cuenta, y la gestión comercial de planes, suscripciones y pagos. Por ello, este contexto se refina y se divide en dos Bounded Contexts independientes —**IAM (Identity & Access Management)** y **Billing**—, quedando el dominio compuesto por siete Bounded Contexts: IAM, Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Para cada uno se identificaron los Commands, Aggregates, Domain Events, Policies y Read Models correspondientes. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component, así como el Class Diagram (sección 4.7) y el modelo de base de datos (sección 4.8) de cada Bounded Context. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
 
 #### 4.6.1. Design-Level Event Storming
 
@@ -1877,9 +1915,9 @@ El equipo organizó una sesión de Design-Level Event Storming con una duración
 | Read Model | Verde | Vista de consulta construida a partir de los eventos. |
 | Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
 
-**a. Identity/Access & Subscriptions**
+**a. IAM (Identity & Access Management)**
 
-Este Bounded Context gestiona el ciclo de vida de la cuenta del usuario (productor o comercializador), su periodo de prueba y su suscripción paga, respondiendo a los Epics EP01.
+Este Bounded Context gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación y su periodo de prueba, respondiendo al Epic EP01.
 
 ```mermaid
 flowchart LR
@@ -1891,18 +1929,38 @@ flowchart LR
     classDef external fill:#F1948A,stroke:#943126,color:#000
 
     C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    C1b["Command:\nLogin"]:::command --> A1 --> E1b(["Event:\nUserAuthenticated"]):::event
     E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
     E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
-    C3["Command:\nSubscribeToPlan"]:::command --> A3{{"Aggregate:\nSubscription"}}:::aggregate --> E4(["Event:\nSubscriptionActivated"]):::event
-    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C3
     E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
-    E4 --> RM1
+    E2 --> RM1
     E3 --> RM1
 ```
 
-El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
+El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). El comando `Login` autentica al usuario y emite el token de sesión (US02, US26). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). IAM expone `AccountStatusView` para que otros Bounded Contexts, como Billing, consulten si la cuenta está activa sin acoplarse a su modelo interno.
 
-**b. Production & Monitoring**
+**b. Billing**
+
+Este Bounded Context gestiona los planes, la suscripción paga y los pagos asociados a la cuenta, respondiendo al Epic EP01.
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nSubscribeToPlan"]:::command --> A1{{"Aggregate:\nSubscription"}}:::aggregate --> E1(["Event:\nSubscriptionActivated"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C1
+    E1 --> P1{"Policy:\nSyncAccountAccessOnActivation"}:::policy --> XC1["Command hacia IAM:\nExtendAccountAccess"]:::command
+    E1 --> RM1[/"Read Model:\nSubscriptionStatusView"/]:::readmodel
+```
+
+El comando `SubscribeToPlan` depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming. Al activarse la suscripción (`SubscriptionActivated`), la política `SyncAccountAccessOnActivation` envía un Command hacia IAM para extender el acceso de la cuenta más allá del periodo de prueba, evidenciando el acoplamiento delgado entre ambos Bounded Contexts mediante eventos, en vez de consultas directas a su modelo interno.
+
+**c. Production & Monitoring**
 
 Gestiona los lotes de producción y el monitoreo de variables de proceso (EP03, EP04).
 
@@ -1929,7 +1987,7 @@ flowchart LR
 
 La política `EvaluateReadingAgainstRange` es el corazón del monitoreo: compara cada `SensorReadingRecorded` contra el rango configurado en `ConfigureVariableRange` (US10) y, de estar fuera de rango, genera `AnomalyDetected` (US11), que a su vez dispara un Command hacia el Bounded Context Alerts & Notifications. El Sensor IoT se mantiene simulado dentro del alcance académico, tal como se identificó en el Big Picture Event Storming.
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 Gestiona el catálogo de productos y el control de stock (EP05, EP06).
 
@@ -1954,7 +2012,7 @@ flowchart LR
 
 `RegisterStockMovement` puede originarse directamente en la interfaz del usuario (US13) o ser disparado por Commands cruzados desde otros Bounded Contexts: `DiscountStock` (cuando Orders & Replenishment confirma un pedido, US18) y `AddBottledStock` (cuando Production & Monitoring embotella un lote). La política `CheckAgainstThreshold` compara el nuevo nivel contra el umbral configurado (US15) para decidir si dispara `LowStockDetected` (US16).
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 Gestiona clientes y pedidos de venta, y los pedidos de reposición a proveedores (EP07).
 
@@ -1977,7 +2035,7 @@ flowchart LR
 
 `RegisterOrder` (US18) dispara la política `DiscountStockOnOrder`, que emite un Command hacia Inventory & Stock Management para descontar el stock vendido, evitando que Orders & Replenishment conozca o manipule directamente el Aggregate `StockItem` (los Bounded Contexts se comunican por eventos/commands, no compartiendo agregados). WhatsApp se mantiene como canal informal externo de coordinación de pedidos de reposición, tal como se identificó en el Big Picture.
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management (EP04, EP06).
 
@@ -1998,7 +2056,7 @@ flowchart LR
 
 Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts (EP08).
 
@@ -2022,12 +2080,172 @@ Este contexto suscribe al evento `StockMovementRegistered` publicado por Invento
 
 #### 4.6.2. Software Architecture Context Diagram
 
+El siguiente diagrama presenta a Destilatech como un único sistema al centro, mostrando los actores (Productor, Comercializador y Visitante) y los sistemas externos con los que interactúa: la Pasarela de Pago (para las suscripciones, consumida por Billing) y el Sensor IoT simulado (para el monitoreo de variables de proceso).
+
+```mermaid
+C4Context
+    title Diagrama de Contexto - Destilatech
+
+    Person(producer, "Productor de Pisco", "Pequeño/mediano productor que registra lotes y monitorea su proceso")
+    Person(retailer, "Comercializador", "Bodega, licorería o distribuidor que gestiona inventario y pedidos")
+    Person(visitor, "Visitante", "Usuario no registrado que conoce la propuesta de valor")
+
+    System(destilatech, "Destilatech", "Plataforma que soporta el monitoreo de producción, el control de inventario y la gestión comercial de pisco")
+
+    System_Ext(payment, "Pasarela de Pago", "Procesa el cobro recurrente de las suscripciones")
+    System_Ext(iot, "Sensor IoT (simulado)", "Emite lecturas de variables de proceso (temperatura, pH, nivel)")
+
+    Rel(visitor, destilatech, "Conoce la propuesta de valor y se registra", "HTTPS")
+    Rel(producer, destilatech, "Registra lotes, monitorea variables y gestiona inventario", "HTTPS")
+    Rel(retailer, destilatech, "Gestiona inventario, clientes y pedidos", "HTTPS")
+    Rel(destilatech, payment, "Procesa cobros de suscripción", "HTTPS/REST")
+    Rel(iot, destilatech, "Envía lecturas simuladas", "HTTPS/REST")
+
+    UpdateRelStyle(visitor, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(producer, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(retailer, destilatech, $textColor="black", $lineColor="black")
+```
+
+Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna (incluida la división entre IAM y Billing). La Pasarela de Pago y el Sensor IoT son los dos únicos sistemas externos identificados durante el Big Picture Event Storming, consistentes con las notas rosa registradas en esa sesión.
 
 #### 4.6.3. Software Architecture Container Diagrams
 
+El Container Diagram descompone a Destilatech en sus unidades de despliegue independientes: el Landing Page (sitio estático), la Web Application (SPA consumida por productores y comercializadores), la RESTful API (que expone la lógica de negocio de los siete Bounded Contexts) y la Base de Datos relacional.
+
+```mermaid
+C4Container
+    title Diagrama de Contenedores - Destilatech
+
+    Person(producer, "Productor de Pisco")
+    Person(retailer, "Comercializador")
+    Person(visitor, "Visitante")
+
+    System_Boundary(destilatech, "Destilatech") {
+        Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Sitio estático con la propuesta de valor, planes y el punto de entrada al registro")
+        Container(webapp, "Web Application", "Vue.js (SPA)", "Interfaz web adaptable donde productores y comercializadores operan la plataforma")
+        Container(api, "RESTful API", "ASP.NET Core / C#", "Expone los servicios de los Bounded Contexts del dominio")
+        ContainerDb(db, "Database", "SQL Server (relacional)", "Persiste la información de cada Bounded Context")
+    }
+
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(visitor, landing, "Visita", "HTTPS")
+    Rel(landing, webapp, "Redirige al registro / login", "HTTPS")
+    Rel(producer, webapp, "Usa", "HTTPS")
+    Rel(retailer, webapp, "Usa", "HTTPS")
+    Rel(webapp, api, "Consume servicios", "JSON/HTTPS")
+    Rel(api, db, "Lee y escribe", "SQL/TCP")
+    Rel(api, payment, "Procesa cobros de suscripción (Billing)", "HTTPS/REST")
+    Rel(iot, api, "Envía lecturas simuladas", "HTTPS/REST")
+```
+
+La decisión tecnológica principal es separar el Landing Page (contenido estático, sin autenticación) de la Web Application (SPA autenticada), ambos consumiendo la misma RESTful API para mantener consistente la experiencia entre ambos, tal como exige el enunciado del proyecto. La RESTful API se implementa en C# sobre ASP.NET Core, comunicándose con la Base de Datos relacional y con los dos sistemas externos (Pasarela de Pago y Sensor IoT). A este nivel de Container, la división entre IAM y Billing no se representa como contenedores separados, ya que ambos forman parte del mismo despliegue de la RESTful API (monolito modular); esta separación se detalla en el nivel de Component (4.6.4).
 
 #### 4.6.4. Software Architecture Components Diagrams
 
+Se presentan los Component Diagrams de los tres Containers de la solución: Landing Page, Web Application y RESTful API. El Container de Base de Datos se detalla en la sección 4.8 (Database Design).
+
+**a. Componentes del Landing Page**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Landing Page
+
+    Container_Boundary(landing, "Landing Page") {
+        Component(header, "Header", "Vue Component", "Logo y navegación entre secciones (US30)")
+        Component(description, "Description", "Vue Component", "Propuesta de valor de Destilatech (US31)")
+        Component(goals, "Goals", "Vue Component", "Beneficios principales de la plataforma (US32)")
+        Component(pricing, "Pricing", "Vue Component", "Planes de suscripción y trial gratuito (US33)")
+        Component(impact, "Impact", "Vue Component", "Cifras del sector pisquero peruano (US34)")
+        Component(features, "Platform Features", "Vue Component", "Funcionalidades por segmento objetivo (US35)")
+        Component(footer, "Footer", "Vue Component", "Contacto, enlaces y call-to-action de registro (US36)")
+    }
+    Container(webapp, "Web Application", "Vue.js (SPA)")
+
+    Rel(pricing, webapp, "Redirige con plan preseleccionado", "HTTPS")
+    Rel(footer, webapp, "Redirige al formulario de registro", "HTTPS")
+```
+
+**b. Componentes de la Web Application**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Web Application
+
+    Container_Boundary(webapp, "Web Application") {
+        Component(auth, "Auth Module", "Vue Component", "Registro, login y estado de la sesión (IAM)")
+        Component(billing, "Billing Module", "Vue Component", "Selección de plan, estado de suscripción y trial (Billing)")
+        Component(dashboard, "Dashboard Module", "Vue Component", "Dashboard de producción o comercial según el rol")
+        Component(production, "Production Module", "Vue Component", "Registro y seguimiento de lotes y variables")
+        Component(inventory, "Inventory Module", "Vue Component", "Catálogo de productos y movimientos de stock")
+        Component(orders, "Orders Module", "Vue Component", "Clientes, pedidos e historial")
+        Component(alerts, "Alerts Module", "Vue Component", "Bandeja de alertas de anomalía y stock bajo")
+        Component(analytics, "Analytics Module", "Vue Component", "Estimaciones e indicadores históricos")
+    }
+    Container(api, "RESTful API", "ASP.NET Core / C#")
+
+    Rel(auth, api, "Consume", "JSON/HTTPS")
+    Rel(billing, api, "Consume", "JSON/HTTPS")
+    Rel(dashboard, api, "Consume", "JSON/HTTPS")
+    Rel(production, api, "Consume", "JSON/HTTPS")
+    Rel(inventory, api, "Consume", "JSON/HTTPS")
+    Rel(orders, api, "Consume", "JSON/HTTPS")
+    Rel(alerts, api, "Consume", "JSON/HTTPS")
+    Rel(analytics, api, "Consume", "JSON/HTTPS")
+```
+
+**c. Componentes de la RESTful API**
+
+Cada componente de la API corresponde exactamente a uno de los siete Bounded Contexts identificados en el Design-Level Event Storming (4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - RESTful API
+
+    Container_Boundary(api, "RESTful API") {
+        Component(gateway, "API Gateway / Controllers", "ASP.NET Core Controllers", "Enruta, valida y autentica las peticiones HTTP")
+        Component(iam, "IAM", "C# Module", "Identidad de la cuenta, autenticación y trial")
+        Component(billing, "Billing", "C# Module", "Planes, suscripciones y pagos")
+        Component(production, "Production & Monitoring", "C# Module", "Lotes de producción y lecturas de variables")
+        Component(inventory, "Inventory & Stock Management", "C# Module", "Productos, stock y umbrales")
+        Component(orders, "Orders & Replenishment", "C# Module", "Clientes, pedidos y reposición a proveedores")
+        Component(alerts, "Alerts & Notifications", "C# Module", "Centraliza y gestiona alertas")
+        Component(analytics, "Analytics & Estimations", "C# Module", "Estimaciones e indicadores históricos")
+    }
+
+    ContainerDb(db, "Database", "SQL Server")
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(gateway, iam, "Enruta")
+    Rel(gateway, billing, "Enruta")
+    Rel(gateway, production, "Enruta")
+    Rel(gateway, inventory, "Enruta")
+    Rel(gateway, orders, "Enruta")
+    Rel(gateway, alerts, "Enruta")
+    Rel(gateway, analytics, "Enruta")
+
+    Rel(billing, iam, "Publica SubscriptionActivated (extiende acceso)")
+    Rel(production, alerts, "Publica AnomalyDetected")
+    Rel(inventory, alerts, "Publica LowStockDetected")
+    Rel(orders, inventory, "Publica OrderRegistered (descuenta stock)")
+    Rel(production, inventory, "Publica BatchStageUpdated (embotellado agrega stock)")
+    Rel(inventory, analytics, "Provee historial de movimientos")
+    Rel(production, analytics, "Provee historial de lotes")
+    Rel(billing, payment, "Procesa cobros")
+    Rel(production, iot, "Recibe lecturas simuladas")
+
+    Rel(iam, db, "Lee/Escribe")
+    Rel(billing, db, "Lee/Escribe")
+    Rel(production, db, "Lee/Escribe")
+    Rel(inventory, db, "Lee/Escribe")
+    Rel(orders, db, "Lee/Escribe")
+    Rel(alerts, db, "Lee/Escribe")
+    Rel(analytics, db, "Lee/Escribe")
+```
+
+La comunicación entre componentes de distintos Bounded Contexts (por ejemplo, `billing` hacia `iam`, `production` hacia `alerts`, u `orders` hacia `inventory`) se realiza mediante la publicación de eventos de dominio y no compartiendo directamente sus modelos internos, respetando el desacoplamiento definido en el Design-Level Event Storming.
 
 ### 4.7. Software Object-Oriented Design
 
@@ -2035,7 +2253,7 @@ En esta sección el equipo profundiza el diseño orientado a objetos de la RESTf
 
 #### 4.7.1. Class Diagrams
 
-**a. Identity/Access & Subscriptions**
+**a. IAM**
 
 ```mermaid
 classDiagram
@@ -2052,6 +2270,7 @@ classDiagram
     }
     class TrialPeriod {
         -Guid id
+        -Guid accountId
         -DateTime startDate
         -DateTime endDate
         -TrialStatus status
@@ -2059,8 +2278,23 @@ classDiagram
         +IsExpiringSoon() bool
         +Expire() void
     }
+    class BusinessType {
+        <<enumeration>>
+        PRODUCER
+        RETAILER
+    }
+
+    Account "1" --> "1" TrialPeriod : owns
+    Account ..> BusinessType : uses
+```
+
+**b. Billing**
+
+```mermaid
+classDiagram
     class Subscription {
         -Guid id
+        -Guid accountId
         -SubscriptionStatus status
         -DateTime startDate
         -DateTime renewalDate
@@ -2073,19 +2307,11 @@ classDiagram
         -decimal price
         -BillingCycle billingCycle
     }
-    class BusinessType {
-        <<enumeration>>
-        PRODUCER
-        RETAILER
-    }
 
-    Account "1" --> "1" TrialPeriod : owns
-    Account "1" --> "0..1" Subscription : has
     Subscription "*" --> "1" Plan : subscribesTo
-    Account ..> BusinessType : uses
 ```
 
-**b. Production & Monitoring**
+**c. Production & Monitoring**
 
 ```mermaid
 classDiagram
@@ -2131,7 +2357,7 @@ classDiagram
     ProductionBatch ..> BatchStage : uses
 ```
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 ```mermaid
 classDiagram
@@ -2172,7 +2398,7 @@ classDiagram
     StockMovement ..> MovementType : uses
 ```
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 ```mermaid
 classDiagram
@@ -2218,7 +2444,7 @@ classDiagram
     ReplenishmentOrder ..> OrderStatus : uses
 ```
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 ```mermaid
 classDiagram
@@ -2248,7 +2474,7 @@ classDiagram
     Alert ..> AlertStatus : uses
 ```
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 ```mermaid
 classDiagram
@@ -2286,6 +2512,176 @@ classDiagram
 
 #### 4.8.1. Database Diagrams
 
+Se presenta el modelo de datos relacional de cada uno de los siete Bounded Contexts, derivado directamente de los Class Diagrams de la sección 4.7.1. Cada Bounded Context es propietario de sus propias tablas; las referencias hacia otros contextos (por ejemplo, `account_id` en Billing) se modelan como identificadores lógicos y no como llaves foráneas físicas entre esquemas, preservando el desacoplamiento entre módulos del monolito modular.
+
+**a. IAM**
+
+```mermaid
+erDiagram
+    ACCOUNT ||--|| TRIAL_PERIOD : owns
+    ACCOUNT {
+        guid id PK
+        string full_name
+        string email
+        string password_hash
+        string business_type
+        datetime created_at
+    }
+    TRIAL_PERIOD {
+        guid id PK
+        guid account_id FK
+        datetime start_date
+        datetime end_date
+        string status
+    }
+```
+
+**b. Billing**
+
+```mermaid
+erDiagram
+    PLAN ||--o{ SUBSCRIPTION : subscribed_by
+    PLAN {
+        guid id PK
+        string name
+        decimal price
+        string billing_cycle
+    }
+    SUBSCRIPTION {
+        guid id PK
+        guid account_id "referencia logica a IAM"
+        guid plan_id FK
+        string status
+        datetime start_date
+        datetime renewal_date
+    }
+```
+
+**c. Production & Monitoring**
+
+```mermaid
+erDiagram
+    PRODUCTION_BATCH ||--o{ PROCESS_VARIABLE : monitors
+    PROCESS_VARIABLE ||--o{ SENSOR_READING : records
+    PRODUCTION_BATCH {
+        guid id PK
+        guid producer_account_id "referencia logica a IAM"
+        string product_name
+        datetime start_date
+        string stage
+        decimal estimated_quantity
+    }
+    PROCESS_VARIABLE {
+        guid id PK
+        guid batch_id FK
+        string name
+        decimal min_range
+        decimal max_range
+    }
+    SENSOR_READING {
+        guid id PK
+        guid process_variable_id FK
+        decimal value
+        datetime recorded_at
+    }
+```
+
+**d. Inventory & Stock Management**
+
+```mermaid
+erDiagram
+    PRODUCT ||--|| STOCK_ITEM : tracks
+    STOCK_ITEM ||--o{ STOCK_MOVEMENT : records
+    PRODUCT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string presentation
+        string unit
+    }
+    STOCK_ITEM {
+        guid id PK
+        guid product_id FK
+        decimal current_quantity
+        decimal low_stock_threshold
+    }
+    STOCK_MOVEMENT {
+        guid id PK
+        guid stock_item_id FK
+        string type
+        decimal quantity
+        datetime movement_date
+        string reason
+    }
+```
+
+**e. Orders & Replenishment**
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ "ORDER" : places
+    "ORDER" ||--|{ ORDER_LINE : contains
+    CUSTOMER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string contact
+    }
+    "ORDER" {
+        guid id PK
+        guid customer_id FK
+        datetime order_date
+        string status
+    }
+    ORDER_LINE {
+        guid id PK
+        guid order_id FK
+        guid product_id "referencia logica a Inventory"
+        decimal quantity
+    }
+    REPLENISHMENT_ORDER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string supplier_name
+        datetime order_date
+        string status
+    }
+```
+
+**f. Alerts & Notifications**
+
+```mermaid
+erDiagram
+    ALERT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string type
+        guid source_id "referencia al lote o producto origen"
+        string message
+        string status
+        datetime created_at
+    }
+```
+
+**g. Analytics & Estimations**
+
+```mermaid
+erDiagram
+    REPLENISHMENT_ESTIMATE {
+        guid id PK
+        guid product_id "referencia logica a Inventory"
+        datetime estimated_date
+        decimal estimated_quantity
+        decimal confidence
+    }
+    HISTORICAL_INDICATOR {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string period
+        string metric_type
+        decimal value
+    }
+```
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
