@@ -2644,11 +2644,11 @@ En resumen, Github Pages usa la rama main como origen de producción. Paralelame
 | **Antecedentes de la planificación de sprints** | Como hito inicial del proyecto, el equipo determinó que la primera fase debía centrarse exclusivamente en la validación comercial y captación de prospectos mediante el diseño y despliegue de una Landing Page (Website), dejando el desarrollo técnico de la Web App y la base de datos para los sprints posteriores. |
 | **Fecha** | 2026-18-09 |
 | **Hora** | 11:00 AM |
-| **Ubicación** | Reunión presencial después de clase |
+| **Ubicación** | Reunión virtual por zoom, meets, discord y whatsapp |
 | **Preparada por** |Santiago Atanacio, Jairo Mathias |
 | **Asistentes (a la reunión de planificación)** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel  |
-| **Objetivo del Sprint 1** | El equipo de CortiSense ha decidido lanzar su página de destino inicial para presentar su propuesta de valor al sector sanitario y captar los primeros contactos de centros médicos y hospitales. El objetivo es consolidar la credibilidad de la monitorización del cortisol y la fatiga mediante tecnología de software. Buscamos generar interés directo entre los administradores hospitalarios y los responsables de recursos humanos del sector sanitario, ofreciendo una solución clara para reducir el agotamiento profesional. El éxito se confirmará cuando la página registre al menos 10 solicitudes de demostración o registros válidos a través de los formularios de contacto. |
-| **Velocidad del Sprint 1** | 14 Story Points (Horas estimadas) |
+| **Objetivo del Sprint 1** | El equipo de FuturosSeniors ha decidido lanzar la primera versión de la Landing Page de Destilatech para presentar su propuesta de valor al ecosistema peruano del pisco. El objetivo es consolidar la credibilidad de la plataforma frente a productores y comercializadores, comunicando sus tres capacidades principales (monitoreo inteligente de producción, gestión de inventario y estimaciones predictivas) y facilitando el inicio del periodo de prueba gratuito de 14 días. Buscamos generar interés directo entre pequeños y medianos productores de pisco y pequeños comercializadores (licorerías, bodegas, distribuidores), ofreciendo una solución clara para centralizar su información operativa. El éxito se confirmará cuando la página quede desplegada públicamente con sus 7 secciones completas (Header, Description, Goals, Pricing, Impact, Platform Features, Footer), sea completamente responsive, y registre al menos 10 solicitudes de registro/prueba gratuita a través del call-to-action principal. |
+| **Velocidad del Sprint 1** | 18 Story Points (Horas estimadas) |
 
 
 ##### 5.2.1.2.   Aspect Leaders and Collaborators.
