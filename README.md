@@ -2688,17 +2688,18 @@ Nuestro objetivo principal con este Sprint 1 es desplegar la versión inicial de
 **Enlace Sprint Backlog 1 en Trello:** [Ver Tablero Destilatech (Sprint 1)](https://trello.com/invite/b/69edb4e56f8b545259285224/ATTI4223d4c1388fe29def281fbeae6553a0CD55EAEA/cortisense-app-web)
 
 
+
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **US-27** | Visualización de propuesta de valor | TK-01 | Hero Section | Implementación de la sección Hero | 1 | Sebastián Gutierrez | Done |
-| **US-27** | Visualización de propuesta de valor | TK-01 | Adaptabilidad Móvil | Implementación de la adaptabilidad móvil | 1 | Sebastián Gutierrez | Done |
-| **US-28** | Descripción de aplicación | TK-02 | Description Section | Implementación de la sección Description | 1 | Johan Yonel | Done |
-| **US-29** | Metas de aplicación | TK-03 | Goals Section | Implementación de la sección Goals | 1 | Guiou Mauricio | Done |
-| **US-30** | Planes de pago | TK-04 | Pricing Section | Implementación de la sección Pricing | 1 | Marcelo Pareja | Done |
-| **US-31** | Fidelización de clientes | TK-05 | Impact | Implementación de la sección Impact | 1 | Marcelo Pareja | Done |
-| **US-32** | herramientas de software | TK-06 | Platform Features | Implementación de la sección Platform Features | 1 | Guiou Mauricio | Done |
-| **US-33** | Header y Footer | TK-07 | Sticky Header | Implementación de la sección del Header | 1 | Jairo Santiago | Done |
-| **US-33** | Header y Footer | TK-08 | Accesibilidad del Footer | Implementación de la seccion del Footer | 1 | Jairo Santiago | Done |
+| **US30** | Implementación de la sección del Header | TK-01 | Header Section | Implementación de la sección Header con logo y navegación | 2 | Santiago Atanacio, Jairo Mathias | Done |
+| **US31** | Implementación de la sección Description | TK-02 | Description Section | Implementación de la sección Description (qué es Destilatech) | 2 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Implementación de la sección Goals | TK-03 | Goals Section | Implementación de la sección Goals (beneficios principales) | 2 | Condor Sandoval, Jean Pierre | Done |
+| **US33** | Implementación de la sección Pricing | TK-04 | Pricing Section | Implementación de la sección Pricing y trial gratuito | 3 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Implementación de la sección Impact | TK-05 | Impact Section | Implementación de la sección Impact (cifras del sector pisquero) | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US35** | Implementación de la sección Platform Features | TK-06 | Platform Features Section | Implementación de la sección Platform Features por segmento | 3 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US36** | Implementación de la sección del Footer | TK-07 | Footer Section | Implementación de la sección Footer | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US37** | Implementación de la adaptabilidad móvil | TK-08 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
+ 
 
 
 ##### 5.2.1.4.	Development Evidence for Sprint Review.
