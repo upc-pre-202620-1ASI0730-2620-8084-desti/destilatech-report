@@ -2270,4 +2270,263 @@ A continuación, se evidencia la correcta aplicación de estas ramas y los flujo
 
 
 
-#### 5.1.3. Source Code Style Guide & Conventions.
+### 5.1.3. Source Code Style Guide & Conventions.
+
+Esta sección define las reglas de codificación y nomenclatura definidas por el equipo de trabajo que serán aplicadas en Destilatech. De esta manera, el grupo asegura la conservación de la legibilidad, mantenibilidad y escalabilidad en las etapas de desarrollo de la solución.
+
+El proyecto utilizará HTML, CSS, JavaScript, TypeScript, C# y Gherkin con el propósito de favorecer la implementación y validación de comportamiento. Para el código fuente, el idioma empleado será el inglés y se respetará el uso de estándares tecnológicos oficiales.
+
+#### 5.1.3.1 Principios generales para todos los lenguajes
+
+##### 5.1.3.1.1 Nomenclatura obligatoria en inglés
+
+Todo el código (variables, clases, comentarios, commits) debe ser redactado estrictamente en inglés.
+
+Reglas transversales:
+
+- Los nombres deben ser descriptivos y orientados al dominio.
+- Las abreviaciones ambiguas (`tmp`, `obj`, `val`) están prohibidas a excepción de tratarse de contextos locales muy acotados.
+- La semántica del nombre debe anticipar su responsabilidad y tipo de dato.
+- Los nombres de una sola letra se reservan para iteradores de alcance corto (`i`, `j`) o coordenadas matemáticas (`x`, `y`, `z`).
+
+##### 5.1.3.1.2 Formato base de código
+
+- Los archivos serán guardados en UTF-8.
+- Las líneas de código excesivamente largas serán evitadas, debido a que se prioriza la legibilidad.
+- Los comentarios serán usados para la documentación técnica de las clases y métodos complejos.
+
+##### 5.1.3.1.3 Convenciones de estilo por tecnología
+
+Cada lenguaje conserva su convención estándar:
+
+- HTML/CSS/JavaScript/TypeScript: Estilo de Google, MDN y recomendaciones del ecosistema oficial de Vue.js.
+- C#: Convenciones oficiales de Microsoft y del ecosistema ASP.NET Core.
+- Gherkin: Enfoque de legibilidad y comportamiento orientado a negocio.
+
+#### 5.1.3.2 Convenciones para HTML
+
+Se adoptará HTML5 con el objetivo de buscar un enfoque semántico y accesible.
+
+##### 5.1.3.2.1 Estructura y sintaxis
+
+- Es necesario declarar `<!doctype html>` al inicio.
+- Se requiere escribir etiquetas y atributos en minúsculas.
+- Se necesita el uso de comillas dobles para valores de atributos.
+
+##### 5.1.3.2.2 Semántica y accesibilidad
+
+- Se requerirá del uso de elementos semánticos (`header`, `main`, `nav`, `section`, `article`, `footer`) en lugar de `div` sin propósito.
+- Se prefiere evitar controladores *inline* (`onclick`, `onchange`), debido a que se busca que la lógica sea delegada a los eventos de Vue.js (`@click`, `@change`).
+- Se exige la inclusión de texto alternativo significativo en imágenes.
+- Se desea asociar etiquetas y controles de formulario (`label` + `for`).
+
+Ejemplo recomendado:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Settings</title>
+  </head>
+  <body>
+    <main>
+      <h1>Account Settings</h1>
+      <img src="avatar.png" alt="Profile avatar preview">
+      <a href="/comments">All comments</a>
+    </main>
+  </body>
+</html>
+```
+
+#### 5.1.3.3 Convenciones para CSS
+
+Se adopta CSS con enfoque mantenible, predecible y escalable.
+
+##### 5.1.3.3.1 Nomenclatura
+
+- Se exige nomenclatura de clases en inglés y formato `kebab-case`.
+- Se prioriza semántica de componente/rol (`checkout-form`, `product-card-title`).
+- Se busca evitar nombres crípticos (`.rg`, `.x`, `.blueText`).
+
+##### 5.1.3.3.2 Reglas de estilo
+
+- Se requiere del uso de un espacio después de `:` en cada declaración.
+- Se necesita finalizar cada declaración con `;`.
+- Se sugiere usar las llaves de apertura en la misma línea del selector.
+- Se recomienda evitar la sentencia `!important` salvo justificación técnica documentada.
+
+Ejemplo recomendado:
+
+```css
+.checkout-form {
+  padding: 0 1rem 1.5rem;
+  border-top: 0;
+}
+
+.checkout-form__title {
+  margin-bottom: 0.75rem;
+  font: 600 1.25rem/1.4 "Open Sans", sans-serif;
+}
+```
+
+Complementación conveniente:
+
+- Se recomienda el uso de unidades relativas (`rem`, `%`) con el propósito de mejorar la escalabilidad y accesibilidad.
+- Se sugiere realizar la estandarización de la paleta de colores y espaciados mediante variables CSS (`:root { --color-primary: ... }`).
+
+#### 5.1.3.4 Convenciones para JavaScript y TypeScript
+
+Se adopta JavaScript moderno (ES202x) y TypeScript como lenguajes principales del cliente web.
+
+##### 5.1.3.4.1 Nomenclatura y estructura
+
+- Se exige el uso de identificadores en inglés.
+- Se sugiere la denominación de variables y funciones en `camelCase`.
+- Se sugiere la denominación de clases y constructores en `PascalCase`.
+- Se recomienda la denominación de constantes globales en `UPPER_SNAKE_CASE`.
+
+##### 5.1.3.4.2 Reglas de codificación
+
+- Preferir el uso de la igualdad estricta (`===`, `!==`).
+- Dejar espacios alrededor de operadores y después de comas.
+- Incorporar el uso del punto y coma al final de sentencias.
+- Usar comillas simples por defecto; reservar *template literals* (``) para interpolación.
+- Manejar errores de forma explícita (`try/catch` o propagación controlada).
+
+##### 5.1.3.4.3 Reglas específicas para TypeScript y Vue.js
+
+- Buscar el tipado explícito de parámetros, retornos y estructuras de datos cuando el tipo no sea obvio por inferencia.
+- Preferir `interface` para contratos de datos de la API.
+- Mantener el uso de componentes con una sola responsabilidad.
+- Nombrar archivos de Vue.js siguiendo la convención *Single File Component (SFC)* en `PascalCase` (`DoctorDashboard.vue`, `MetricCard.vue`).
+- Evitar lógica compleja en templates HTML; mover cálculos y transformaciones a propiedades computadas (`computed`) o al store global (`Pinia`).
+
+Ejemplo recomendado:
+
+```ts
+const MAX_RETRY_ATTEMPTS = 3;
+
+function calculateSquare(value: number): number {
+  return value * value;
+}
+
+function getGreeting(hour: number): string {
+  if (hour < 20) {
+    return 'Good day';
+  }
+
+  return 'Good evening';
+}
+```
+
+#### 5.1.3.5 Convenciones para C# y .NET
+
+Se adoptan las convenciones oficiales de Microsoft y buenas prácticas compatibles con ASP.NET Core.
+
+##### 5.1.3.5.1 Nomenclatura
+
+Todos los nombres serán escritos en el idioma inglés.
+
+- Las clases, registros (*records*), métodos, propiedades y eventos serán denominados bajo `PascalCase`.
+- Las variables locales y parámetros de métodos serán nombrados bajo `camelCase`.
+- Los campos privados de una clase deben llevar el prefijo guion bajo (`_camelCase`) para distinguirlos rápidamente de las variables locales.
+- En las interfaces, el prefijo `I` es **obligatorio** (`IOrderRepository`, `IPaymentService`).
+
+##### 5.1.3.5.2 Formato y prácticas
+
+- Se exige el uso de llaves `{}` en líneas separadas (convención Allman).
+- Se exige que los métodos posean una responsabilidad única y clara.
+- Las clases de servicio y repositorios requieren nombres orientados al modelo de dominio.
+- Los métodos asíncronos obligatoriamente deben llevar el sufijo `Async` (Ej. `SaveDataAsync`).
+
+Ejemplo recomendado:
+
+```csharp
+public class OrderService
+{
+    private readonly IOrderRepository _orderRepository;
+
+    public OrderService(IOrderRepository orderRepository)
+    {
+        _orderRepository = orderRepository;
+    }
+
+    public async Task<Order?> FindByIdAsync(Guid orderId)
+    {
+        if (orderId == Guid.Empty)
+        {
+            return null;
+        }
+
+        return await _orderRepository.FindByIdAsync(orderId);
+    }
+}
+```
+
+#### 5.1.3.6 Convenciones para Gherkin
+
+Gherkin se utiliza para especificaciones legibles por negocio y equipo técnico.
+
+##### 5.1.3.6.1 Reglas de legibilidad
+
+- Los escenarios presentan estructura clara, mediante la denominación `Given-When-Then`.
+- La sentencia `And` se usa para continuidad lógica dentro del mismo bloque.
+- Se exigen *steps* concretos, observables y sin ruido irrelevante.
+- Cuando un *step* requiere una tabla de datos, debe finalizar con `:`.
+- Se recomienda dejar líneas en blanco entre escenarios para facilitar su lectura.
+
+Ejemplo recomendado:
+
+```gherkin
+Feature: Contact channels
+
+  Scenario: Visitor sends a contact form request
+    Given the visitor provides the following data:
+      | field   | value               |
+      | name    | Ana Torres          |
+      | email   | ana@example.com     |
+      | message | I need more details |
+    When the visitor submits the form
+    Then the system confirms the request was received
+```
+
+Estas referencias serán aplicadas de manera complementaria. Si existiera conflicto entre guías, se priorizará la convención oficial de Microsoft (.NET) o Vue.js según el módulo implementado.
+
+### 5.1.4. Software Deployment Configuration.
+
+En esta sección mostraremos los pasos que hemos realizado para poder desplegar cada uno de nuestros proyectos.
+
+#### 5.1.4.1. Landing Page
+
+Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos la plataforma GitHub Pages, ya que permite alojar sitios web estáticos de forma totalmente gratuita.
+
+##### 5.1.4.1.1.  Ingresamos al repositorio de la landing page
+
+
+<br>
+
+##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
+
+
+
+<br>
+
+##### 5.1.4.1.3.  Vamos a la sección de Github Pages
+
+
+
+<br>
+
+##### 5.1.4.1.4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.
+
+
+
+<br>
+
+##### 5.1.4.1.5.  Finalmente estaría todo listo.
+
+
+
+En resumen, Github Pages usa la rama main como origen de producción. Paralelamente, se configuró un flujo con GitHub actions que reacciona a los commits de la rama develop que compila con el código estático. Es así que, cuando las modificaciones son revisadas y aprobadas por el equipo en su fase de producción, la plataforma actualiza el sitio en una nueva versión.
