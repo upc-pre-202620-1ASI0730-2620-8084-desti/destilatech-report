@@ -2129,6 +2129,34 @@ C4Component
     Rel(footer, webapp, "Redirige al formulario de registro", "HTTPS")
 ```
 
+**b. Componentes de la Web Application**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Web Application
+
+    Container_Boundary(webapp, "Web Application") {
+        Component(auth, "Auth Module", "Vue Component", "Registro, login y estado de la sesión (IAM)")
+        Component(billing, "Billing Module", "Vue Component", "Selección de plan, estado de suscripción y trial (Billing)")
+        Component(dashboard, "Dashboard Module", "Vue Component", "Dashboard de producción o comercial según el rol")
+        Component(production, "Production Module", "Vue Component", "Registro y seguimiento de lotes y variables")
+        Component(inventory, "Inventory Module", "Vue Component", "Catálogo de productos y movimientos de stock")
+        Component(orders, "Orders Module", "Vue Component", "Clientes, pedidos e historial")
+        Component(alerts, "Alerts Module", "Vue Component", "Bandeja de alertas de anomalía y stock bajo")
+        Component(analytics, "Analytics Module", "Vue Component", "Estimaciones e indicadores históricos")
+    }
+    Container(api, "RESTful API", "ASP.NET Core / C#")
+
+    Rel(auth, api, "Consume", "JSON/HTTPS")
+    Rel(billing, api, "Consume", "JSON/HTTPS")
+    Rel(dashboard, api, "Consume", "JSON/HTTPS")
+    Rel(production, api, "Consume", "JSON/HTTPS")
+    Rel(inventory, api, "Consume", "JSON/HTTPS")
+    Rel(orders, api, "Consume", "JSON/HTTPS")
+    Rel(alerts, api, "Consume", "JSON/HTTPS")
+    Rel(analytics, api, "Consume", "JSON/HTTPS")
+```
+
 ### 4.7. Software Object-Oriented Design
 
 En esta sección el equipo profundiza el diseño orientado a objetos de la RESTful API, presentando el Class Diagram de UML correspondiente a cada uno de los seis Bounded Contexts identificados. El nivel de detalle incluye clases, atributos, métodos, el scope de cada miembro (`+` public, `-` private, `#` protected) y las relaciones entre clases con su calificación, dirección y multiplicidad.
