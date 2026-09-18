@@ -2248,3 +2248,26 @@ Para el desarrollo del ecosistema de Destilatech, el equipo integró las siguien
   + **Microsoft Office 365:** Suite colaborativa en la nube para la gestión del reporte académico final y documentación adjunta.<br>https://www.microsoft.com/microsoft-365<br><br>
 
 
+
+#### 5.1.2. Source Code Management
+Se implementa la metodología Git Flow para gestionar el desarrollo de Destilatech, garantizando que el monitoreo de salud nunca se vea interrumpido por código inestable. Adicionalmente, se eligió GitHub como plataforma de control de versiones, aprovechando su funcionalidad GitHub Pages. Esta característica permite desplegar el proyecto de manera sencilla, facilitando la visualización del sitio web a partir de archivos en formato .html mediante la generación de un enlace accesible. Respecto a la documentación de nuevas funcionalidades, se decidió crear ramas bajo la nomenclatura "feature/sprint-1-development" para cada componente implementado. De esta forma, se asegura el orden y progreso al momento de desarrollar el proyecto.
+
+**Enlace del Website (Landing Page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+
+
+
+**Repositorio GitHub del Website (Landing Page):** [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website)
+
+**Evidencia de Gestión de Ramas (Git Flow)**
+
+Para aislar el desarrollo de nuevas características sin afectar el código estable, todo el equipo trabaja bajo una nomenclatura estandarizada:
+
+* `main`: Rama de producción, contiene el código 100% testeado que se despliega automáticamente en Azure y GitHub Pages.
+* `develop`: Rama principal de integración para el equipo.
+* `feature/[nombre]`: Ramas temporales para tareas específicas (ej. `feature/sprint-1-development`). 
+
+A continuación, se evidencia la correcta aplicación de estas ramas y los flujos de trabajo (Pull Requests) integrados en nuestros repositorios durante el desarrollo del Sprint:
+
+
+
+#### 5.1.3. Source Code Style Guide & Conventions.
