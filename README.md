@@ -2344,7 +2344,7 @@ Se implementa la metodología Git Flow para gestionar el desarrollo de Destilate
 
 **Enlace del Website (Landing Page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
-
+<img src="assets/md-images-front-matter/landing.jpeg">
 
 **Repositorio GitHub del Website (Landing Page):** [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website)
 
