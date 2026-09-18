@@ -2203,7 +2203,9 @@ classDiagram
 
 ### 5.1. Software Configuration Management
 
-En esta sección se detallan las decisiones tecnológicas, herramientas de colaboración y convenciones de código que garantizan la integridad y escalabilidad de CortiSense. Según Bourque y Fairley (2014) en el estándar SWEBOK, la gestión de la configuración del software es crucial para mantener la visibilidad y el control del rendimiento funcional y físico del producto a lo largo de todo su ciclo de vida.
+
+En esta sección se detallan las decisiones tecnológicas, herramientas de colaboración y convenciones de código que garantizan la integridad y escalabilidad de Destilatech. Según Bourque y Fairley (2014) en el estándar SWEBOK, la gestión de la configuración del software es crucial para mantener la visibilidad y el control del rendimiento funcional y físico del producto a lo largo de todo su ciclo de vida.
+
 
 #### 5.1.1. Software Development Environment Configuration
 
