@@ -2519,6 +2519,35 @@ erDiagram
     }
 ```
 
+**c. Production & Monitoring**
+
+```mermaid
+erDiagram
+    PRODUCTION_BATCH ||--o{ PROCESS_VARIABLE : monitors
+    PROCESS_VARIABLE ||--o{ SENSOR_READING : records
+    PRODUCTION_BATCH {
+        guid id PK
+        guid producer_account_id "referencia logica a IAM"
+        string product_name
+        datetime start_date
+        string stage
+        decimal estimated_quantity
+    }
+    PROCESS_VARIABLE {
+        guid id PK
+        guid batch_id FK
+        string name
+        decimal min_range
+        decimal max_range
+    }
+    SENSOR_READING {
+        guid id PK
+        guid process_variable_id FK
+        decimal value
+        datetime recorded_at
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
