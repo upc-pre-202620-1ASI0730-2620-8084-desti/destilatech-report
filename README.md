@@ -2577,6 +2577,39 @@ erDiagram
     }
 ```
 
+**e. Orders & Replenishment**
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ "ORDER" : places
+    "ORDER" ||--|{ ORDER_LINE : contains
+    CUSTOMER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string contact
+    }
+    "ORDER" {
+        guid id PK
+        guid customer_id FK
+        datetime order_date
+        string status
+    }
+    ORDER_LINE {
+        guid id PK
+        guid order_id FK
+        guid product_id "referencia logica a Inventory"
+        decimal quantity
+    }
+    REPLENISHMENT_ORDER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string supplier_name
+        datetime order_date
+        string status
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
