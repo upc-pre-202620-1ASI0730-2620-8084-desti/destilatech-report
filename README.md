@@ -2157,6 +2157,58 @@ C4Component
     Rel(analytics, api, "Consume", "JSON/HTTPS")
 ```
 
+**c. Componentes de la RESTful API**
+
+Cada componente de la API corresponde exactamente a uno de los siete Bounded Contexts identificados en el Design-Level Event Storming (4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - RESTful API
+
+    Container_Boundary(api, "RESTful API") {
+        Component(gateway, "API Gateway / Controllers", "ASP.NET Core Controllers", "Enruta, valida y autentica las peticiones HTTP")
+        Component(iam, "IAM", "C# Module", "Identidad de la cuenta, autenticación y trial")
+        Component(billing, "Billing", "C# Module", "Planes, suscripciones y pagos")
+        Component(production, "Production & Monitoring", "C# Module", "Lotes de producción y lecturas de variables")
+        Component(inventory, "Inventory & Stock Management", "C# Module", "Productos, stock y umbrales")
+        Component(orders, "Orders & Replenishment", "C# Module", "Clientes, pedidos y reposición a proveedores")
+        Component(alerts, "Alerts & Notifications", "C# Module", "Centraliza y gestiona alertas")
+        Component(analytics, "Analytics & Estimations", "C# Module", "Estimaciones e indicadores históricos")
+    }
+
+    ContainerDb(db, "Database", "SQL Server")
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(gateway, iam, "Enruta")
+    Rel(gateway, billing, "Enruta")
+    Rel(gateway, production, "Enruta")
+    Rel(gateway, inventory, "Enruta")
+    Rel(gateway, orders, "Enruta")
+    Rel(gateway, alerts, "Enruta")
+    Rel(gateway, analytics, "Enruta")
+
+    Rel(billing, iam, "Publica SubscriptionActivated (extiende acceso)")
+    Rel(production, alerts, "Publica AnomalyDetected")
+    Rel(inventory, alerts, "Publica LowStockDetected")
+    Rel(orders, inventory, "Publica OrderRegistered (descuenta stock)")
+    Rel(production, inventory, "Publica BatchStageUpdated (embotellado agrega stock)")
+    Rel(inventory, analytics, "Provee historial de movimientos")
+    Rel(production, analytics, "Provee historial de lotes")
+    Rel(billing, payment, "Procesa cobros")
+    Rel(production, iot, "Recibe lecturas simuladas")
+
+    Rel(iam, db, "Lee/Escribe")
+    Rel(billing, db, "Lee/Escribe")
+    Rel(production, db, "Lee/Escribe")
+    Rel(inventory, db, "Lee/Escribe")
+    Rel(orders, db, "Lee/Escribe")
+    Rel(alerts, db, "Lee/Escribe")
+    Rel(analytics, db, "Lee/Escribe")
+```
+
+La comunicación entre componentes de distintos Bounded Contexts (por ejemplo, `billing` hacia `iam`, `production` hacia `alerts`, u `orders` hacia `inventory`) se realiza mediante la publicación de eventos de dominio y no compartiendo directamente sus modelos internos, respetando el desacoplamiento definido en el Design-Level Event Storming.
+
 ### 4.7. Software Object-Oriented Design
 
 En esta sección el equipo profundiza el diseño orientado a objetos de la RESTful API, presentando el Class Diagram de UML correspondiente a cada uno de los seis Bounded Contexts identificados. El nivel de detalle incluye clases, atributos, métodos, el scope de cada miembro (`+` public, `-` private, `#` protected) y las relaciones entre clases con su calificación, dirección y multiplicidad.
