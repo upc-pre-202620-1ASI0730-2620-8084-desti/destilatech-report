@@ -2548,6 +2548,35 @@ erDiagram
     }
 ```
 
+**d. Inventory & Stock Management**
+
+```mermaid
+erDiagram
+    PRODUCT ||--|| STOCK_ITEM : tracks
+    STOCK_ITEM ||--o{ STOCK_MOVEMENT : records
+    PRODUCT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string presentation
+        string unit
+    }
+    STOCK_ITEM {
+        guid id PK
+        guid product_id FK
+        decimal current_quantity
+        decimal low_stock_threshold
+    }
+    STOCK_MOVEMENT {
+        guid id PK
+        guid stock_item_id FK
+        string type
+        decimal quantity
+        datetime movement_date
+        string reason
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
