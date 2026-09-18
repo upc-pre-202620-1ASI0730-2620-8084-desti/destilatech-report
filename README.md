@@ -2498,6 +2498,27 @@ erDiagram
     }
 ```
 
+**b. Billing**
+
+```mermaid
+erDiagram
+    PLAN ||--o{ SUBSCRIPTION : subscribed_by
+    PLAN {
+        guid id PK
+        string name
+        decimal price
+        string billing_cycle
+    }
+    SUBSCRIPTION {
+        guid id PK
+        guid account_id "referencia logica a IAM"
+        guid plan_id FK
+        string status
+        datetime start_date
+        datetime renewal_date
+    }
+```
+
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
