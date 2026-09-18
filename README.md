@@ -1898,7 +1898,7 @@ Se definieron dos puntos de inicio. El recorrido del Productor incluye dashboard
 
 ### 4.6. Domain-Driven Software Architecture
 
-Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Se ejecuta un Design-Level Event Storming para cada uno de los seis Bounded Contexts identificados —Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations—, llegando a la identificación de Commands, Aggregates, Domain Events, Policies y Read Models para cada uno. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
+Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Durante el Design-Level Event Storming, el equipo identificó que el Bounded Context Identity/Access & Subscriptions agrupaba dos responsabilidades con ciclos de cambio distintos: la gestión de identidad y acceso de la cuenta, y la gestión comercial de planes, suscripciones y pagos. Por ello, este contexto se refina y se divide en dos Bounded Contexts independientes —**IAM (Identity & Access Management)** y **Billing**—, quedando el dominio compuesto por siete Bounded Contexts: IAM, Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Para cada uno se identificaron los Commands, Aggregates, Domain Events, Policies y Read Models correspondientes. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component, así como el Class Diagram (sección 4.7) y el modelo de base de datos (sección 4.8) de cada Bounded Context. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
 
 #### 4.6.1. Design-Level Event Storming
 
@@ -1915,9 +1915,9 @@ El equipo organizó una sesión de Design-Level Event Storming con una duración
 | Read Model | Verde | Vista de consulta construida a partir de los eventos. |
 | Sistema externo | Rosa | Sistema ajeno a Destilatech que dispara o recibe eventos. |
 
-**a. Identity/Access & Subscriptions**
+**a. IAM (Identity & Access Management)**
 
-Este Bounded Context gestiona el ciclo de vida de la cuenta del usuario (productor o comercializador), su periodo de prueba y su suscripción paga, respondiendo a los Epics EP01.
+Este Bounded Context gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación y su periodo de prueba, respondiendo al Epic EP01.
 
 ```mermaid
 flowchart LR
@@ -1929,18 +1929,38 @@ flowchart LR
     classDef external fill:#F1948A,stroke:#943126,color:#000
 
     C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    C1b["Command:\nLogin"]:::command --> A1 --> E1b(["Event:\nUserAuthenticated"]):::event
     E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
     E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
-    C3["Command:\nSubscribeToPlan"]:::command --> A3{{"Aggregate:\nSubscription"}}:::aggregate --> E4(["Event:\nSubscriptionActivated"]):::event
-    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C3
     E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
-    E4 --> RM1
+    E2 --> RM1
     E3 --> RM1
 ```
 
-El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). La suscripción (`SubscribeToPlan`) depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming.
+El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, que activa automáticamente el periodo de prueba de 14 días (US01). El comando `Login` autentica al usuario y emite el token de sesión (US02, US26). La política `NotifyBeforeExpiration` observa el paso del tiempo sobre `TrialPeriod` y genera el aviso al usuario cuando quedan 3 días (US03). IAM expone `AccountStatusView` para que otros Bounded Contexts, como Billing, consulten si la cuenta está activa sin acoplarse a su modelo interno.
 
-**b. Production & Monitoring**
+**b. Billing**
+
+Este Bounded Context gestiona los planes, la suscripción paga y los pagos asociados a la cuenta, respondiendo al Epic EP01.
+
+```mermaid
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nSubscribeToPlan"]:::command --> A1{{"Aggregate:\nSubscription"}}:::aggregate --> E1(["Event:\nSubscriptionActivated"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago"]):::external -.-> C1
+    E1 --> P1{"Policy:\nSyncAccountAccessOnActivation"}:::policy --> XC1["Command hacia IAM:\nExtendAccountAccess"]:::command
+    E1 --> RM1[/"Read Model:\nSubscriptionStatusView"/]:::readmodel
+```
+
+El comando `SubscribeToPlan` depende de la Pasarela de Pago como sistema externo, identificada como hotspot en el Big Picture Event Storming. Al activarse la suscripción (`SubscriptionActivated`), la política `SyncAccountAccessOnActivation` envía un Command hacia IAM para extender el acceso de la cuenta más allá del periodo de prueba, evidenciando el acoplamiento delgado entre ambos Bounded Contexts mediante eventos, en vez de consultas directas a su modelo interno.
+
+**c. Production & Monitoring**
 
 Gestiona los lotes de producción y el monitoreo de variables de proceso (EP03, EP04).
 
@@ -1967,7 +1987,7 @@ flowchart LR
 
 La política `EvaluateReadingAgainstRange` es el corazón del monitoreo: compara cada `SensorReadingRecorded` contra el rango configurado en `ConfigureVariableRange` (US10) y, de estar fuera de rango, genera `AnomalyDetected` (US11), que a su vez dispara un Command hacia el Bounded Context Alerts & Notifications. El Sensor IoT se mantiene simulado dentro del alcance académico, tal como se identificó en el Big Picture Event Storming.
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 Gestiona el catálogo de productos y el control de stock (EP05, EP06).
 
@@ -1992,7 +2012,7 @@ flowchart LR
 
 `RegisterStockMovement` puede originarse directamente en la interfaz del usuario (US13) o ser disparado por Commands cruzados desde otros Bounded Contexts: `DiscountStock` (cuando Orders & Replenishment confirma un pedido, US18) y `AddBottledStock` (cuando Production & Monitoring embotella un lote). La política `CheckAgainstThreshold` compara el nuevo nivel contra el umbral configurado (US15) para decidir si dispara `LowStockDetected` (US16).
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 Gestiona clientes y pedidos de venta, y los pedidos de reposición a proveedores (EP07).
 
@@ -2015,7 +2035,7 @@ flowchart LR
 
 `RegisterOrder` (US18) dispara la política `DiscountStockOnOrder`, que emite un Command hacia Inventory & Stock Management para descontar el stock vendido, evitando que Orders & Replenishment conozca o manipule directamente el Aggregate `StockItem` (los Bounded Contexts se comunican por eventos/commands, no compartiendo agregados). WhatsApp se mantiene como canal informal externo de coordinación de pedidos de reposición, tal como se identificó en el Big Picture.
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management (EP04, EP06).
 
@@ -2036,7 +2056,7 @@ flowchart LR
 
 Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAttended` (US16); su Aggregate `Alert` se crea a partir de los Commands cruzados que le envían Production & Monitoring y Inventory & Stock Management, manteniendo el desacoplamiento entre contextos.
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts (EP08).
 
@@ -2060,12 +2080,172 @@ Este contexto suscribe al evento `StockMovementRegistered` publicado por Invento
 
 #### 4.6.2. Software Architecture Context Diagram
 
+El siguiente diagrama presenta a Destilatech como un único sistema al centro, mostrando los actores (Productor, Comercializador y Visitante) y los sistemas externos con los que interactúa: la Pasarela de Pago (para las suscripciones, consumida por Billing) y el Sensor IoT simulado (para el monitoreo de variables de proceso).
+
+```mermaid
+C4Context
+    title Diagrama de Contexto - Destilatech
+
+    Person(producer, "Productor de Pisco", "Pequeño/mediano productor que registra lotes y monitorea su proceso")
+    Person(retailer, "Comercializador", "Bodega, licorería o distribuidor que gestiona inventario y pedidos")
+    Person(visitor, "Visitante", "Usuario no registrado que conoce la propuesta de valor")
+
+    System(destilatech, "Destilatech", "Plataforma que soporta el monitoreo de producción, el control de inventario y la gestión comercial de pisco")
+
+    System_Ext(payment, "Pasarela de Pago", "Procesa el cobro recurrente de las suscripciones")
+    System_Ext(iot, "Sensor IoT (simulado)", "Emite lecturas de variables de proceso (temperatura, pH, nivel)")
+
+    Rel(visitor, destilatech, "Conoce la propuesta de valor y se registra", "HTTPS")
+    Rel(producer, destilatech, "Registra lotes, monitorea variables y gestiona inventario", "HTTPS")
+    Rel(retailer, destilatech, "Gestiona inventario, clientes y pedidos", "HTTPS")
+    Rel(destilatech, payment, "Procesa cobros de suscripción", "HTTPS/REST")
+    Rel(iot, destilatech, "Envía lecturas simuladas", "HTTPS/REST")
+
+    UpdateRelStyle(visitor, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(producer, destilatech, $textColor="black", $lineColor="black")
+    UpdateRelStyle(retailer, destilatech, $textColor="black", $lineColor="black")
+```
+
+Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna (incluida la división entre IAM y Billing). La Pasarela de Pago y el Sensor IoT son los dos únicos sistemas externos identificados durante el Big Picture Event Storming, consistentes con las notas rosa registradas en esa sesión.
 
 #### 4.6.3. Software Architecture Container Diagrams
 
+El Container Diagram descompone a Destilatech en sus unidades de despliegue independientes: el Landing Page (sitio estático), la Web Application (SPA consumida por productores y comercializadores), la RESTful API (que expone la lógica de negocio de los siete Bounded Contexts) y la Base de Datos relacional.
+
+```mermaid
+C4Container
+    title Diagrama de Contenedores - Destilatech
+
+    Person(producer, "Productor de Pisco")
+    Person(retailer, "Comercializador")
+    Person(visitor, "Visitante")
+
+    System_Boundary(destilatech, "Destilatech") {
+        Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Sitio estático con la propuesta de valor, planes y el punto de entrada al registro")
+        Container(webapp, "Web Application", "Vue.js (SPA)", "Interfaz web adaptable donde productores y comercializadores operan la plataforma")
+        Container(api, "RESTful API", "ASP.NET Core / C#", "Expone los servicios de los Bounded Contexts del dominio")
+        ContainerDb(db, "Database", "SQL Server (relacional)", "Persiste la información de cada Bounded Context")
+    }
+
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(visitor, landing, "Visita", "HTTPS")
+    Rel(landing, webapp, "Redirige al registro / login", "HTTPS")
+    Rel(producer, webapp, "Usa", "HTTPS")
+    Rel(retailer, webapp, "Usa", "HTTPS")
+    Rel(webapp, api, "Consume servicios", "JSON/HTTPS")
+    Rel(api, db, "Lee y escribe", "SQL/TCP")
+    Rel(api, payment, "Procesa cobros de suscripción (Billing)", "HTTPS/REST")
+    Rel(iot, api, "Envía lecturas simuladas", "HTTPS/REST")
+```
+
+La decisión tecnológica principal es separar el Landing Page (contenido estático, sin autenticación) de la Web Application (SPA autenticada), ambos consumiendo la misma RESTful API para mantener consistente la experiencia entre ambos, tal como exige el enunciado del proyecto. La RESTful API se implementa en C# sobre ASP.NET Core, comunicándose con la Base de Datos relacional y con los dos sistemas externos (Pasarela de Pago y Sensor IoT). A este nivel de Container, la división entre IAM y Billing no se representa como contenedores separados, ya que ambos forman parte del mismo despliegue de la RESTful API (monolito modular); esta separación se detalla en el nivel de Component (4.6.4).
 
 #### 4.6.4. Software Architecture Components Diagrams
 
+Se presentan los Component Diagrams de los tres Containers de la solución: Landing Page, Web Application y RESTful API. El Container de Base de Datos se detalla en la sección 4.8 (Database Design).
+
+**a. Componentes del Landing Page**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Landing Page
+
+    Container_Boundary(landing, "Landing Page") {
+        Component(header, "Header", "Vue Component", "Logo y navegación entre secciones (US30)")
+        Component(description, "Description", "Vue Component", "Propuesta de valor de Destilatech (US31)")
+        Component(goals, "Goals", "Vue Component", "Beneficios principales de la plataforma (US32)")
+        Component(pricing, "Pricing", "Vue Component", "Planes de suscripción y trial gratuito (US33)")
+        Component(impact, "Impact", "Vue Component", "Cifras del sector pisquero peruano (US34)")
+        Component(features, "Platform Features", "Vue Component", "Funcionalidades por segmento objetivo (US35)")
+        Component(footer, "Footer", "Vue Component", "Contacto, enlaces y call-to-action de registro (US36)")
+    }
+    Container(webapp, "Web Application", "Vue.js (SPA)")
+
+    Rel(pricing, webapp, "Redirige con plan preseleccionado", "HTTPS")
+    Rel(footer, webapp, "Redirige al formulario de registro", "HTTPS")
+```
+
+**b. Componentes de la Web Application**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Web Application
+
+    Container_Boundary(webapp, "Web Application") {
+        Component(auth, "Auth Module", "Vue Component", "Registro, login y estado de la sesión (IAM)")
+        Component(billing, "Billing Module", "Vue Component", "Selección de plan, estado de suscripción y trial (Billing)")
+        Component(dashboard, "Dashboard Module", "Vue Component", "Dashboard de producción o comercial según el rol")
+        Component(production, "Production Module", "Vue Component", "Registro y seguimiento de lotes y variables")
+        Component(inventory, "Inventory Module", "Vue Component", "Catálogo de productos y movimientos de stock")
+        Component(orders, "Orders Module", "Vue Component", "Clientes, pedidos e historial")
+        Component(alerts, "Alerts Module", "Vue Component", "Bandeja de alertas de anomalía y stock bajo")
+        Component(analytics, "Analytics Module", "Vue Component", "Estimaciones e indicadores históricos")
+    }
+    Container(api, "RESTful API", "ASP.NET Core / C#")
+
+    Rel(auth, api, "Consume", "JSON/HTTPS")
+    Rel(billing, api, "Consume", "JSON/HTTPS")
+    Rel(dashboard, api, "Consume", "JSON/HTTPS")
+    Rel(production, api, "Consume", "JSON/HTTPS")
+    Rel(inventory, api, "Consume", "JSON/HTTPS")
+    Rel(orders, api, "Consume", "JSON/HTTPS")
+    Rel(alerts, api, "Consume", "JSON/HTTPS")
+    Rel(analytics, api, "Consume", "JSON/HTTPS")
+```
+
+**c. Componentes de la RESTful API**
+
+Cada componente de la API corresponde exactamente a uno de los siete Bounded Contexts identificados en el Design-Level Event Storming (4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - RESTful API
+
+    Container_Boundary(api, "RESTful API") {
+        Component(gateway, "API Gateway / Controllers", "ASP.NET Core Controllers", "Enruta, valida y autentica las peticiones HTTP")
+        Component(iam, "IAM", "C# Module", "Identidad de la cuenta, autenticación y trial")
+        Component(billing, "Billing", "C# Module", "Planes, suscripciones y pagos")
+        Component(production, "Production & Monitoring", "C# Module", "Lotes de producción y lecturas de variables")
+        Component(inventory, "Inventory & Stock Management", "C# Module", "Productos, stock y umbrales")
+        Component(orders, "Orders & Replenishment", "C# Module", "Clientes, pedidos y reposición a proveedores")
+        Component(alerts, "Alerts & Notifications", "C# Module", "Centraliza y gestiona alertas")
+        Component(analytics, "Analytics & Estimations", "C# Module", "Estimaciones e indicadores históricos")
+    }
+
+    ContainerDb(db, "Database", "SQL Server")
+    System_Ext(payment, "Pasarela de Pago")
+    System_Ext(iot, "Sensor IoT (simulado)")
+
+    Rel(gateway, iam, "Enruta")
+    Rel(gateway, billing, "Enruta")
+    Rel(gateway, production, "Enruta")
+    Rel(gateway, inventory, "Enruta")
+    Rel(gateway, orders, "Enruta")
+    Rel(gateway, alerts, "Enruta")
+    Rel(gateway, analytics, "Enruta")
+
+    Rel(billing, iam, "Publica SubscriptionActivated (extiende acceso)")
+    Rel(production, alerts, "Publica AnomalyDetected")
+    Rel(inventory, alerts, "Publica LowStockDetected")
+    Rel(orders, inventory, "Publica OrderRegistered (descuenta stock)")
+    Rel(production, inventory, "Publica BatchStageUpdated (embotellado agrega stock)")
+    Rel(inventory, analytics, "Provee historial de movimientos")
+    Rel(production, analytics, "Provee historial de lotes")
+    Rel(billing, payment, "Procesa cobros")
+    Rel(production, iot, "Recibe lecturas simuladas")
+
+    Rel(iam, db, "Lee/Escribe")
+    Rel(billing, db, "Lee/Escribe")
+    Rel(production, db, "Lee/Escribe")
+    Rel(inventory, db, "Lee/Escribe")
+    Rel(orders, db, "Lee/Escribe")
+    Rel(alerts, db, "Lee/Escribe")
+    Rel(analytics, db, "Lee/Escribe")
+```
+
+La comunicación entre componentes de distintos Bounded Contexts (por ejemplo, `billing` hacia `iam`, `production` hacia `alerts`, u `orders` hacia `inventory`) se realiza mediante la publicación de eventos de dominio y no compartiendo directamente sus modelos internos, respetando el desacoplamiento definido en el Design-Level Event Storming.
 
 ### 4.7. Software Object-Oriented Design
 
@@ -2073,7 +2253,7 @@ En esta sección el equipo profundiza el diseño orientado a objetos de la RESTf
 
 #### 4.7.1. Class Diagrams
 
-**a. Identity/Access & Subscriptions**
+**a. IAM**
 
 ```mermaid
 classDiagram
@@ -2090,6 +2270,7 @@ classDiagram
     }
     class TrialPeriod {
         -Guid id
+        -Guid accountId
         -DateTime startDate
         -DateTime endDate
         -TrialStatus status
@@ -2097,8 +2278,23 @@ classDiagram
         +IsExpiringSoon() bool
         +Expire() void
     }
+    class BusinessType {
+        <<enumeration>>
+        PRODUCER
+        RETAILER
+    }
+
+    Account "1" --> "1" TrialPeriod : owns
+    Account ..> BusinessType : uses
+```
+
+**b. Billing**
+
+```mermaid
+classDiagram
     class Subscription {
         -Guid id
+        -Guid accountId
         -SubscriptionStatus status
         -DateTime startDate
         -DateTime renewalDate
@@ -2111,19 +2307,11 @@ classDiagram
         -decimal price
         -BillingCycle billingCycle
     }
-    class BusinessType {
-        <<enumeration>>
-        PRODUCER
-        RETAILER
-    }
 
-    Account "1" --> "1" TrialPeriod : owns
-    Account "1" --> "0..1" Subscription : has
     Subscription "*" --> "1" Plan : subscribesTo
-    Account ..> BusinessType : uses
 ```
 
-**b. Production & Monitoring**
+**c. Production & Monitoring**
 
 ```mermaid
 classDiagram
@@ -2169,7 +2357,7 @@ classDiagram
     ProductionBatch ..> BatchStage : uses
 ```
 
-**c. Inventory & Stock Management**
+**d. Inventory & Stock Management**
 
 ```mermaid
 classDiagram
@@ -2210,7 +2398,7 @@ classDiagram
     StockMovement ..> MovementType : uses
 ```
 
-**d. Orders & Replenishment**
+**e. Orders & Replenishment**
 
 ```mermaid
 classDiagram
@@ -2256,7 +2444,7 @@ classDiagram
     ReplenishmentOrder ..> OrderStatus : uses
 ```
 
-**e. Alerts & Notifications**
+**f. Alerts & Notifications**
 
 ```mermaid
 classDiagram
@@ -2286,7 +2474,7 @@ classDiagram
     Alert ..> AlertStatus : uses
 ```
 
-**f. Analytics & Estimations**
+**g. Analytics & Estimations**
 
 ```mermaid
 classDiagram
@@ -2324,6 +2512,176 @@ classDiagram
 
 #### 4.8.1. Database Diagrams
 
+Se presenta el modelo de datos relacional de cada uno de los siete Bounded Contexts, derivado directamente de los Class Diagrams de la sección 4.7.1. Cada Bounded Context es propietario de sus propias tablas; las referencias hacia otros contextos (por ejemplo, `account_id` en Billing) se modelan como identificadores lógicos y no como llaves foráneas físicas entre esquemas, preservando el desacoplamiento entre módulos del monolito modular.
+
+**a. IAM**
+
+```mermaid
+erDiagram
+    ACCOUNT ||--|| TRIAL_PERIOD : owns
+    ACCOUNT {
+        guid id PK
+        string full_name
+        string email
+        string password_hash
+        string business_type
+        datetime created_at
+    }
+    TRIAL_PERIOD {
+        guid id PK
+        guid account_id FK
+        datetime start_date
+        datetime end_date
+        string status
+    }
+```
+
+**b. Billing**
+
+```mermaid
+erDiagram
+    PLAN ||--o{ SUBSCRIPTION : subscribed_by
+    PLAN {
+        guid id PK
+        string name
+        decimal price
+        string billing_cycle
+    }
+    SUBSCRIPTION {
+        guid id PK
+        guid account_id "referencia logica a IAM"
+        guid plan_id FK
+        string status
+        datetime start_date
+        datetime renewal_date
+    }
+```
+
+**c. Production & Monitoring**
+
+```mermaid
+erDiagram
+    PRODUCTION_BATCH ||--o{ PROCESS_VARIABLE : monitors
+    PROCESS_VARIABLE ||--o{ SENSOR_READING : records
+    PRODUCTION_BATCH {
+        guid id PK
+        guid producer_account_id "referencia logica a IAM"
+        string product_name
+        datetime start_date
+        string stage
+        decimal estimated_quantity
+    }
+    PROCESS_VARIABLE {
+        guid id PK
+        guid batch_id FK
+        string name
+        decimal min_range
+        decimal max_range
+    }
+    SENSOR_READING {
+        guid id PK
+        guid process_variable_id FK
+        decimal value
+        datetime recorded_at
+    }
+```
+
+**d. Inventory & Stock Management**
+
+```mermaid
+erDiagram
+    PRODUCT ||--|| STOCK_ITEM : tracks
+    STOCK_ITEM ||--o{ STOCK_MOVEMENT : records
+    PRODUCT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string presentation
+        string unit
+    }
+    STOCK_ITEM {
+        guid id PK
+        guid product_id FK
+        decimal current_quantity
+        decimal low_stock_threshold
+    }
+    STOCK_MOVEMENT {
+        guid id PK
+        guid stock_item_id FK
+        string type
+        decimal quantity
+        datetime movement_date
+        string reason
+    }
+```
+
+**e. Orders & Replenishment**
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ "ORDER" : places
+    "ORDER" ||--|{ ORDER_LINE : contains
+    CUSTOMER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string name
+        string contact
+    }
+    "ORDER" {
+        guid id PK
+        guid customer_id FK
+        datetime order_date
+        string status
+    }
+    ORDER_LINE {
+        guid id PK
+        guid order_id FK
+        guid product_id "referencia logica a Inventory"
+        decimal quantity
+    }
+    REPLENISHMENT_ORDER {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string supplier_name
+        datetime order_date
+        string status
+    }
+```
+
+**f. Alerts & Notifications**
+
+```mermaid
+erDiagram
+    ALERT {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string type
+        guid source_id "referencia al lote o producto origen"
+        string message
+        string status
+        datetime created_at
+    }
+```
+
+**g. Analytics & Estimations**
+
+```mermaid
+erDiagram
+    REPLENISHMENT_ESTIMATE {
+        guid id PK
+        guid product_id "referencia logica a Inventory"
+        datetime estimated_date
+        decimal estimated_quantity
+        decimal confidence
+    }
+    HISTORICAL_INDICATOR {
+        guid id PK
+        guid owner_account_id "referencia logica a IAM"
+        string period
+        string metric_type
+        decimal value
+    }
+```
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
