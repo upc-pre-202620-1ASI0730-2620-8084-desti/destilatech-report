@@ -2744,9 +2744,11 @@ El principal logro del Sprint 1 consistió en el despliegue de la versión inici
 ##### 5.2.1.6.	Services Documentation Evidence for Sprint Review.
 
 
-**Introducción y Estado Actual**  
-Durante el Sprint 1, el equipo concentró sus esfuerzos técnicos exclusivamente en el diseño UI/UX, maquetación y despliegue de la Landing Page del proyecto Destilatech  (alineado con la Épica EP08). El objetivo principal de esta iteración fue validar la propuesta de valor frente al mercado y establecer los canales de captación temprana de leads.
-
+**Introducción y Estado Actual**
+ 
+Durante el Sprint 1, el equipo concentró sus esfuerzos técnicos exclusivamente en el diseño UI/UX, la maquetación y el despliegue de la Landing Page del proyecto Destilatech (alineado con la Épica **EP09 — Landing Page (visitante)**). El objetivo principal de esta iteración fue validar la propuesta de valor frente al mercado pisquero peruano y establecer los canales de captación temprana de leads mediante el call-to-action de registro/prueba gratuita.
+ 
+Dado que el alcance de este Sprint no contempló el desarrollo de Web Services —planificados para Sprints posteriores junto con el despliegue de Frontend Web Applications y Web Services (según lo indicado para TB1/AV2)—, no se generó documentación de Endpoints mediante OpenAPI durante esta iteración. La documentación de servicios correspondiente a la Épica **EP10 — Technical Stories (RESTful API)** se incorporará en el informe a partir del Sprint en que se implemente el backend en C# / .NET, conforme al alcance definido en el Capítulo I.
 
 ##### 5.2.1.7.	Software Deployment Evidence for Sprint Review.
 
