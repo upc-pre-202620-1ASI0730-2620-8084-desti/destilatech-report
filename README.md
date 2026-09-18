@@ -2106,6 +2106,28 @@ La decisión tecnológica principal es separar el Landing Page (contenido estát
 
 #### 4.6.4. Software Architecture Components Diagrams
 
+Se presentan los Component Diagrams de los tres Containers de la solución: Landing Page, Web Application y RESTful API. El Container de Base de Datos se detalla en la sección 4.8 (Database Design).
+
+**a. Componentes del Landing Page**
+
+```mermaid
+C4Component
+    title Diagrama de Componentes - Landing Page
+
+    Container_Boundary(landing, "Landing Page") {
+        Component(header, "Header", "Vue Component", "Logo y navegación entre secciones (US30)")
+        Component(description, "Description", "Vue Component", "Propuesta de valor de Destilatech (US31)")
+        Component(goals, "Goals", "Vue Component", "Beneficios principales de la plataforma (US32)")
+        Component(pricing, "Pricing", "Vue Component", "Planes de suscripción y trial gratuito (US33)")
+        Component(impact, "Impact", "Vue Component", "Cifras del sector pisquero peruano (US34)")
+        Component(features, "Platform Features", "Vue Component", "Funcionalidades por segmento objetivo (US35)")
+        Component(footer, "Footer", "Vue Component", "Contacto, enlaces y call-to-action de registro (US36)")
+    }
+    Container(webapp, "Web Application", "Vue.js (SPA)")
+
+    Rel(pricing, webapp, "Redirige con plan preseleccionado", "HTTPS")
+    Rel(footer, webapp, "Redirige al formulario de registro", "HTTPS")
+```
 
 ### 4.7. Software Object-Oriented Design
 
