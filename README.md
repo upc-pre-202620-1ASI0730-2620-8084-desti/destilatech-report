@@ -228,11 +228,11 @@ Objetivo general, ABET – EAC - Student Outcome 3: Capacidad de comunicarse efe
 | Comunica oralmente con efectividad a diferentes rangos de audiencia. |  |
 | Comunica por escrito con efectividad a diferentes rangos de audiencia |  |
 
-# Capitulo I: Introducción
+## Capitulo I: Introducción
 
-## 1.1. StartUp Profile
+### 1.1. StartUp Profile
 
-### 1.1.1. Descripción de la StartUp
+#### 1.1.1. Descripción de la StartUp
 
 **FuturosSeniors** es una startup tecnológica orientada al desarrollo de soluciones digitales que permitan optimizar procesos productivos y comerciales mediante el uso de tecnologías web, análisis de datos e integración con soluciones IoT.
 
@@ -1517,11 +1517,11 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 
 ## Capítulo IV: Product Design
 
-## 4.1. Style Guidelines
+### 4.1. Style Guidelines
 
 Un Style Guideline es un conjunto de directrices y normas que establecen los estándares y criterios a seguir en la redacción, diseño y presentación de documentos, contenido web, software y otros productos creativos. A continuación, se presentan las especificaciones detalladas de los parámetros implementados en la estructura de Destilatech.
 
-### 4.1.1. General Style Guidelines
+#### 4.1.1. General Style Guidelines
 
 **Branding**
 
@@ -1566,7 +1566,7 @@ El espaciado en Destilatech está definido para garantizar una interfaz organiza
 
 ---
 
-### 4.1.2. Web Style Guidelines
+#### 4.1.2. Web Style Guidelines
 
 Destilatech cuenta con un diseño web adaptativo (Responsive Web Design) que garantiza una experiencia fluida tanto en computadoras de escritorio (oficinas administrativas) como en dispositivos móviles (operarios en bodega o comerciales en punto de venta).
 
@@ -1574,9 +1574,9 @@ En la versión desktop, la Landing Page implementa una estructura en Z que guía
 El logotipo institucional (Destilatech) se posiciona fijado en la esquina superior izquierda. La barra de navegación superior permite desplazamientos suaves (smooth scroll) hacia secciones clave (Descripción, Objetivos, Precios, Impacto, Funcionalidades), seguida por el selector de idioma en tiempo real (ES / EN) y el Botón de Acción Principal (CTA) "Prueba gratis 14 días" ubicado estratégicamente a la derecha.
 En pantallas menores a 768px, la navegación principal colapsa de forma intuitiva en un menú desplegable de tipo "hamburguesa" con soporte para gestos y teclado, manteniendo el CTA al alcance del pulgar.
 
-## 4.2. Information Architecture
+### 4.2. Information Architecture
 
-### 4.2.1. Organization Systems
+#### 4.2.1. Organization Systems
 
 1. ***Visual Organization***
 
@@ -1589,7 +1589,7 @@ Para facilitar la asimilación visual y reducir la carga cognitiva del usuario, 
 
 -Se utiliza para cruzar datos de producción y comercialización en tiempo real. Su principal aplicación se da en el Panel de Trazabilidad de Lotes (US08) y el Control de Stock de Comercializadores (US10), donde el usuario visualiza tablas matriciales cruzando filas (Lote/Botella de Pisco) con columnas (Fecha de destilación, Graduación alcohólica, Stock actual, Alerta de reposición).
 
-### 4.2.2. Labeling Systems
+#### 4.2.2. Labeling Systems
 
 La plataforma aplica un sistema de etiquetado claro, coherente y adaptado a los dos perfiles principales del ecosistema del pisco: Bodegas Productoras y Comercializadores/Distribuidores.
 
@@ -1602,7 +1602,7 @@ La plataforma aplica un sistema de etiquetado claro, coherente y adaptado a los 
 
 - ***Para el Comercializador / Distribuidor (Perfil Comercial):*** Las etiquetas adoptan un enfoque orientado al flujo de caja y gestión de stock. Se muestran etiquetas centradas en negocio como "Unidades Disponibles (uds.)", "Punto de Reorden", "Alertas de Stock Bajo" y botones de acción rápida como "Registrar Entrada/Salida", "Solicitar Reposición a Proveedor" y "Ver Análisis Predictivo".
 
-### 4.2.3. SEO Tags and Meta Tags
+#### 4.2.3. SEO Tags and Meta Tags
 
 Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender y posicionar en los resultados. Los meta tags son etiquetas que proporcionan información sobre la página, como su descripción, palabras clave y autor, lo cual ayuda al ser buscado en el navegador. A continuación se presentan los SEO tags y meta tags que se utilizarán en la plataforma Destilatech:
 
@@ -1647,7 +1647,7 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender
 <link rel="canonical" href="https://www.destilatech.com/">
 ```
 
-### 4.2.4. Searching Systems
+#### 4.2.4. Searching Systems
 
 Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios botones y empleamos varios indicadores visuales para que el usuario sepa dónde encontrar lo que necesita. A continuación se muestran los ejemplos de los tipos de búsqueda que usaremos:
 
@@ -1659,7 +1659,7 @@ Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios bot
 
 - ***Búsqueda de inventario y pedidos:*** Para los comercializadores y distribuidores, se les da una forma de buscar rápidamente el stock disponible por bodega proveedora, SKU de botella o lote específico, permitiéndoles acceder ágilmente al estado de reorden y a la exportación de reportes de existencias.
 
-### 4.2.5. Navigation Systems
+#### 4.2.5. Navigation Systems
 
 - ***Registro e Inicio de Sesión:*** Para poder entrar, el usuario ingresará sus credenciales y el sistema registrará qué tipo de usuario es: Bodega Productora, que busca monitorear la fermentación/destilación de sus lotes y garantizar trazabilidad, o Comercializador / Distribuidor, que requiere visualizar niveles de stock, controlar alertas de reposición y gestionar pedidos de ventas.
 
@@ -1675,11 +1675,11 @@ Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios bot
 
 - ***Mi Perfil:*** Permite a los usuarios configurar sus preferencias personales, actualizar la información comercial de su bodega o distribuidora, gestionar los roles de su equipo y cambiar su contraseña.
 
-## 4.3. Landing Page UI Design
+### 4.3. Landing Page UI Design
 
 El diseño de la interfaz de usuario en la landing page de Destilatech será clave para causar una primera impresión positiva y transmitir la innovación tecnológica que respalda a nuestro equipo. Buscamos ofrecer una experiencia visual limpia, elegante y altamente funcional que inspire confianza e invite a los productores de pisco, dueños de bodegas y comercializadores a iniciar su prueba gratuita de 14 días y explorar nuestro ecosistema de monitoreo IoT y gestión de inventarios.
 
-### 4.3.1. Landing Page Wireframe
+#### 4.3.1. Landing Page Wireframe
 
 **Landing Page para Desktop Browser**
 
@@ -1716,7 +1716,7 @@ Esquema de pestañas interactivas para filtrar funcionalidades por perfil (Produ
 <img src="assets/md-images-front-matter/wireframes_6.png" alt="wireframe" style="height: 250px; width: 400px;">
 </p>
 
-### 4.3.2. Landing Page Mock-up.
+#### 4.3.2. Landing Page Mock-up.
 
 Interfaz final del Hero Section destaca la integración de la paleta de colores corporativa (Deep Copper y Cask Cream), tipografía moderna (Poppins e Inter) y la imagen de alambiques de cobre integrados con tarjetas flotantes que muestran métricas en tiempo real de fermentación (18.4°C, Óptimo) e inventario (42 uds., Reponer pronto), logrando captar la atención del usuario inmediatamente.
 
@@ -1752,19 +1752,29 @@ Versión construida de Funcionalidades, CTA final y Footer utiliza un sistema de
 <img src="assets/md-images-front-matter/landing_page_7.png" alt="wireframe" style="height: 250px; width: 400px;">
 </p>
 
-## 4.4. Web Applications UX/UI Design
-### 4.4.1. Web Applications Wireframes
-### 4.4.2. Web Applications Wireflow Diagrams
-### 4.4.3. Web Applications Mock-ups
-### 4.4.4. Web Applications User Flow Diagrams
-## 4.5. Web Applications Prototyping
+### 4.4. Web Applications UX/UI Design
 
 
-## 4.6. Domain-Driven Software Architecture
+#### 4.4.1. Web Applications Wireframes
+
+
+#### 4.4.2. Web Applications Wireflow Diagrams
+
+
+#### 4.4.3. Web Applications Mock-ups
+
+
+#### 4.4.4. Web Applications User Flow Diagrams
+
+
+### 4.5. Web Applications Prototyping
+
+
+### 4.6. Domain-Driven Software Architecture
 
 Partiendo de los logros alcanzados en el Big Picture Event Storming (sección 2.4) y del Ubiquitous Language definido en la sección 2.5, en esta sección el equipo profundiza el análisis del dominio aplicando Domain-Driven Design (Evans, 2003). Se ejecuta un Design-Level Event Storming para cada uno de los seis Bounded Contexts identificados —Identity/Access & Subscriptions, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations—, llegando a la identificación de Commands, Aggregates, Domain Events, Policies y Read Models para cada uno. A partir de este modelo se deriva la representación de la arquitectura de software de la solución aplicando el C4 Model (Brown, 2018), documentando los niveles de Context, Container y Component. Todos los diagramas de esta sección se elaboraron con la herramienta Mermaid, embebidos directamente en este documento Markdown para que se rendericen como imagen al visualizar el repositorio en GitHub.
 
-### 4.6.1. Design-Level Event Storming
+#### 4.6.1. Design-Level Event Storming
 
 El equipo organizó una sesión de Design-Level Event Storming con una duración de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide), partiendo de los seis Bounded Contexts identificados en el Big Picture Event Storming. Para cada Bounded Context se identificaron los Commands (acciones que un actor o sistema externo dispara), el Aggregate que procesa el Command y garantiza sus invariantes, los Domain Events resultantes, las Policies (reacciones automáticas del sistema ante un evento, que pueden disparar Commands en el mismo Bounded Context o en otro) y los Read Models (vistas de consulta que el sistema expone como resultado de los eventos).
 
@@ -1920,11 +1930,22 @@ flowchart LR
 
 Este contexto suscribe al evento `StockMovementRegistered` publicado por Inventory & Stock Management para recalcular la estimación de reposición (US20) sin acoplarse a su modelo interno. `GenerateHistoricalIndicators` se ejecuta de forma periódica/bajo demanda para alimentar los gráficos de evolución de inventario y producción (US21), consumiendo el historial de Production & Monitoring e Inventory & Stock Management.
 
-## 4.7. Software Object-Oriented Design
+
+
+#### 4.6.2. Software Architecture Context Diagram
+
+
+#### 4.6.3. Software Architecture Container Diagrams
+
+
+#### 4.6.4. Software Architecture Components Diagrams
+
+
+### 4.7. Software Object-Oriented Design
 
 En esta sección el equipo profundiza el diseño orientado a objetos de la RESTful API, presentando el Class Diagram de UML correspondiente a cada uno de los seis Bounded Contexts identificados. El nivel de detalle incluye clases, atributos, métodos, el scope de cada miembro (`+` public, `-` private, `#` protected) y las relaciones entre clases con su calificación, dirección y multiplicidad.
 
-### 4.7.1. Class Diagrams
+#### 4.7.1. Class Diagrams
 
 **a. Identity/Access & Subscriptions**
 
@@ -2168,3 +2189,60 @@ classDiagram
 
     HistoricalIndicator ..> MetricType : uses
 ```
+
+
+### 4.8. Database Design
+
+
+
+
+#### 4.8.1. Database Diagrams
+
+
+## Capítulo V: Product Implementation, Validation & Deployment
+
+### 5.1. Software Configuration Management
+
+En esta sección se detallan las decisiones tecnológicas, herramientas de colaboración y convenciones de código que garantizan la integridad y escalabilidad de CortiSense. Según Bourque y Fairley (2014) en el estándar SWEBOK, la gestión de la configuración del software es crucial para mantener la visibilidad y el control del rendimiento funcional y físico del producto a lo largo de todo su ciclo de vida.
+
+#### 5.1.1. Software Development Environment Configuration
+
+
+Para el desarrollo del ecosistema de Destilatech, el equipo integró las siguientes herramientas y plataformas, organizadas según su propósito en el ciclo de vida del software:
+
++ **Project Management**<br>La gestión de proyectos asegura que el desarrollo se entregue dentro de los plazos y presupuestos previstos. Según el Project Management Institute (2021), una gestión efectiva es fundamental para coordinar recursos, mitigar riesgos y alinear el trabajo colaborativo con los objetivos del negocio.<br><br>
+  +	**Jira Software:** Herramienta de gestión de proyectos ágil (Atlassian, 2023) que permite planificar y gestionar el trabajo mediante tableros Scrum o Kanban, facilitando la colaboración transparente entre los equipos de desarrollo.<br>https://www.atlassian.com/software/jira<br><br>
+  + **Trello:** Herramienta visual basada en tableros Kanban (Atlassian, 2024), utilizada como complemento ágil para gestionar tareas rápidas, lluvia de ideas y organizar el flujo de trabajo diario de los desarrolladores.<br>https://trello.com/<br><br>
+
++ **Requirements Management**<br>Implica transformar las necesidades abstractas de los usuarios en requisitos de software medibles. La trazabilidad de estos requerimientos garantiza que el producto final no diverja del valor de negocio esperado por los *stakeholders* (Bourque & Fairley, 2014).<br><br>
+  + **Jira Software:** En su función de gestión de backlog, permite estructurar Historias de Usuario (*User Stories*) y Épicas, priorizando el trabajo orientado a aportar valor continuo en cada iteración.<br>https://www.atlassian.com/software/jira<br><br>
+
++ **Product UX/UI Design**<br>El diseño de experiencia (UX) e interfaz (UI) se apoya en el modelo de diseño centrado en el humano (Norman, 2013), buscando optimizar la forma en que los usuarios interactúan con el sistema en momentos de alta carga cognitiva.<br><br>
+  + **Figma:** Herramienta colaborativa en la nube para la creación de interfaces y prototipos de alta fidelidad, vital para validar flujos antes del desarrollo de código.<br>https://www.figma.com/ <br><br>
+  + **UXPressia:** Plataforma empleada para mapear el *Customer Journey* y construir *User Personas*, traduciendo la investigación cualitativa en artefactos visuales de diseño.<br>https://uxpressia.com/ <br><br>
+  + **MIRO:** Tablero digital colaborativo utilizado para las sesiones de *Big Picture Event Storming* y *Domain-Driven Design*.<br>https://miro.com/ <br><br> 
+  + **Canva:** Herramienta de diseño gráfico en línea utilizada para la elaboración de la identidad visual de la marca y la estructuración de la presentación final del proyecto.<br>https://www.canva.com/<br><br> 
+  + **Structurizr:** Plataforma basada en el modelo C4 para visualizar interacciones entre microservicios y contextos delimitados (*Bounded Contexts*) (Brown, 2020).<br>https://structurizr.com/ <br><br>
+  + **Lucidchart:** Herramienta de diagramación empleada para los esquemas lógicos, flujos de base de datos y arquitectura preliminar.<br>https://www.lucidchart.com/<br><br>
+  + **PlantUML:** Herramienta de código abierto que implementa *Diagrams as Code*, permitiendo que la arquitectura del sistema evolucione y se versione junto con el código fuente en GitHub.<br>https://plantuml.com/es/<br><br>
+  + **Mermaid:** Biblioteca JavaScript utilizada para la renderización de flujos de usuario (*User Flow Diagrams*) mediante sintaxis textual directamente soportada por GitHub (Mermaid, 2023).<br>https://mermaid.js.org/<br><br>
+
++ **Software Development**<br>Etapa donde se materializa la arquitectura de software. Se seleccionaron lenguajes y frameworks tipados y de alto rendimiento para garantizar la tolerancia a fallos del sistema clínico.<br><br> 
+  + **GitHub:** Plataforma base para el control de versiones distribuido mediante Git, permitiendo la integración y revisión de código asíncrona.<br>https://github.com/ <br><br> 
+  + **Visual Studio Code:** Editor de código fuente ligero y versátil (Microsoft, 2024), utilizado por parte del equipo gracias a su amplio ecosistema de extensiones para múltiples lenguajes.<br>https://code.visualstudio.com/ <br><br>
+  + **JetBrains Rider:** Entorno de Desarrollo Integrado (IDE) multiplataforma y de alto rendimiento (JetBrains, 2024), utilizado como herramienta principal para el desarrollo de la lógica de negocio y la API en C# / .NET.<br>https://www.jetbrains.com/rider/<br><br>
+  + **JetBrains WebStorm:** IDE especializado en el desarrollo web moderno (JetBrains, 2024), empleado para la programación y depuración de todo el ecosistema frontend con Vue.js y TypeScript.<br>https://www.jetbrains.com/webstorm/<br><br>
+  + **HTML & CSS:** Lenguajes estándar web utilizados para estructurar el contenido (HTML) y definir la apariencia y diseño visual (CSS) de la Landing Page y la Web App.<br>https://developer.mozilla.org/es/docs/Web/HTML<br><br> 
+  + **JavaScript / TypeScript:** Lenguajes web que dotan de tipado estricto y dinamismo al cliente web, reduciendo la incidencia de errores en tiempo de ejecución.<br>https://www.typescriptlang.org/<br><br> 
+
++ **Software Testing**<br>La evaluación de la calidad del software garantiza que la solución cumpla con los estándares médicos exigidos.<br><br> 
+  + **Lenguaje Gherkin (Cucumber):** Lenguaje de dominio (DSL) implementado para el *Behavior-Driven Development* (BDD) (Smart, 2014). Permite traducir criterios de aceptación en pruebas legibles por negocio mediante sintaxis *Given-When-Then*.<br>https://cucumber.io/<br><br> 
+
++ **Software Deployment**<br>Consiste en la automatización y alojamiento de los artefactos compilados para su consumo público.<br><br> 
+  + **Github Pages:** Servicio de *hosting* estático aprovechado para el despliegue automático de la *Landing Page* institucional.<br>https://pages.github.com/ <br><br>
+
++ **Software Documentation**<br>Mantenimiento de la información técnica esencial para reducir la curva de aprendizaje de nuevos desarrolladores e interesados en el proyecto.<br><br> 
+  + **Markdown:** Lenguaje de marcado ligero, pilar de la documentación técnica moderna en repositorios, facilitando legibilidad humana y renderización web.<br>https://www.markdownguide.org/getting-started/<br><br>
+  + **Microsoft Office 365:** Suite colaborativa en la nube para la gestión del reporte académico final y documentación adjunta.<br>https://www.microsoft.com/microsoft-365<br><br>
+
+
