@@ -49,7 +49,7 @@ Proyecto<br>
       <td>Domenack Angeles, Miguel</td>
     </tr>
   </tbody>
-</table>
+</table> 
 
 <strong>Período 202620</strong><br><br>
 
