@@ -1,0 +1,28 @@
+flowchart LR
+subgraph Destilatech["Destilatech · sistema"]
+  lp["Landing Page<br/>Contenedor: HTML/CSS/JavaScript<br/>Propuesta, planes y CTA por segmento"]:::container
+  web["Web Application<br/>Contenedor: Vue / PrimeVue<br/>Interfaz adaptada a cada negocio"]:::container
+  api["REST API<br/>Contenedor: ASP.NET Core / C#<br/>Seis módulos y reglas del dominio"]:::container
+  sim["IoT Simulator<br/>Contenedor: aplicación C#<br/>Produce lecturas sintéticas identificadas"]:::container
+  db["Relational Database<br/>Contenedor: MySQL<br/>Datos operativos por negocio"]:::container
+end
+  pay["Payment Gateway<br/>Sistema externo: sandbox<br/>Checkout y confirmación de pago"]:::external
+lp -->|"redirige por HTTPS"| web
+web -->|"HTTPS / JSON + token"| api
+sim -->|"HTTPS / JSON; identidad técnica"| api
+api -->|"EF Core / SQL / TLS"| db
+api -->|"HTTPS / JSON + webhook"| pay
+classDef actor fill:#fef3c7,stroke:#92400e,color:#172033
+classDef command fill:#dbeafe,stroke:#1d4ed8,color:#172033
+classDef event fill:#ffedd5,stroke:#c2410c,color:#172033
+classDef aggregate fill:#fef9c3,stroke:#854d0e,color:#172033
+classDef policy fill:#f3e8ff,stroke:#7e22ce,color:#172033
+classDef query fill:#dcfce7,stroke:#15803d,color:#172033
+classDef external fill:#f1f5f9,stroke:#475569,color:#172033
+classDef system fill:#dbeafe,stroke:#1e40af,color:#172033
+classDef container fill:#e0f2fe,stroke:#0369a1,color:#172033
+classDef component fill:#ecfeff,stroke:#0e7490,color:#172033
+classDef class fill:#f0fdfa,stroke:#115e59,color:#172033
+classDef enum fill:#faf5ff,stroke:#6b21a8,color:#172033
+classDef table fill:#eef2ff,stroke:#3730a3,color:#172033
+classDef hotspot fill:#fee2e2,stroke:#b91c1c,color:#172033

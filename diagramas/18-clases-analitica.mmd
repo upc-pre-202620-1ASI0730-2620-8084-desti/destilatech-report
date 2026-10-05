@@ -1,0 +1,47 @@
+classDiagram
+direction LR
+class ReplenishmentEstimate {
+  -Guid id
+  -Guid businessId
+  -Guid productId
+  -EstimateStatus status
+  -decimal dailyDemand
+  -decimal stockSnapshot
+  -DateTime calculatedAt
+  +HasEstimate() bool
+}
+class EstimationService {
+  -IInventoryHistoryReadPort history
+  +Calculate(productId) ReplenishmentEstimate
+}
+class IInventoryHistoryReadPort {
+  <<interface>>
+  +ReadSales(productId, from, to) SalesSeries
+  +ReadStock(productId) decimal
+}
+class EstimateStatus {
+  <<enumeration>>
+  Estimated
+  InsufficientData
+  NoDemand
+}
+class ReplenishmentParameters {
+  -Guid productId
+  -int leadTimeDays
+  -decimal safetyStock
+  -DateTime trackingStart
+  -bool historyConfirmed
+  +HasCoverage(from, to) bool
+}
+class DashboardSummary {
+  +int activeBatches
+  +int pendingAlerts
+  +int lowStockProducts
+  +int recentOrders
+  +ForBusiness(type) DashboardSummary
+}
+ReplenishmentEstimate ..> EstimateStatus : resultado
+EstimationService ..> ReplenishmentEstimate : produce
+EstimationService ..> IInventoryHistoryReadPort : consulta
+EstimationService ..> ReplenishmentParameters : aplica
+EstimationService ..> DashboardSummary : apoya consultas

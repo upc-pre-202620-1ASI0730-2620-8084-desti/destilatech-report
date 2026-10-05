@@ -1,0 +1,56 @@
+erDiagram
+direction LR
+iam_business_accounts {
+  uuid id PK
+  varchar name
+  varchar business_type
+  datetime created_at
+}
+iam_users {
+  uuid id PK
+  uuid business_id FK
+  varchar name
+  varchar email_normalized UK
+  varchar password_hash
+  boolean active
+}
+iam_subscriptions {
+  uuid id PK
+  uuid business_id FK,UK
+  uuid plan_id FK "nullable"
+  varchar status
+  datetime trial_start
+  datetime trial_end
+  datetime paid_until "nullable"
+}
+iam_plans {
+  uuid id PK
+  varchar code UK
+  decimal monthly_price
+  char currency
+  boolean active
+}
+iam_payment_attempts {
+  uuid id PK
+  uuid business_id FK
+  uuid subscription_id FK
+  uuid plan_id FK
+  varchar idempotency_key
+  varchar provider_payment_id UK "nullable"
+  decimal expected_amount
+  char currency
+  varchar status
+}
+iam_payment_events {
+  uuid id PK
+  uuid payment_attempt_id FK
+  varchar provider
+  varchar provider_event_id
+  datetime processed_at
+}
+iam_business_accounts ||--|{ iam_users : pertenece
+iam_business_accounts ||--|| iam_subscriptions : posee
+iam_plans |o--o{ iam_subscriptions : rige
+iam_subscriptions ||--o{ iam_payment_attempts : recibe
+iam_plans ||--o{ iam_payment_attempts : seleccionado
+iam_payment_attempts ||--o{ iam_payment_events : procesa

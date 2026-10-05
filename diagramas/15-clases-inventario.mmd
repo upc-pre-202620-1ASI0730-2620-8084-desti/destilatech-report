@@ -1,0 +1,51 @@
+classDiagram
+direction LR
+class Product {
+  -Guid id
+  -Guid businessId
+  -string sku
+  -string name
+  -string unit
+  -decimal reorderLevel
+  +SetReorderLevel(value) void
+}
+class StockItem {
+  -Guid id
+  -Guid businessId
+  -Guid productId
+  -decimal quantity
+  -long version
+  +Receive(quantity) void
+  +Issue(quantity) void
+}
+class InventoryMovement {
+  -Guid id
+  -Guid stockItemId
+  -MovementType type
+  -MovementReason reason
+  -decimal quantity
+  -string sourceKey
+  +SignedQuantity() decimal
+}
+class MovementType {
+  <<enumeration>>
+  In
+  Out
+}
+class MovementReason {
+  <<enumeration>>
+  Sale
+  Restock
+  Production
+  Adjustment
+}
+class IInventoryPort {
+  <<interface>>
+  +IssueForOrder(lines, key) void
+  +GetStock(productId) decimal
+}
+Product "1" -- "1" StockItem : saldo
+StockItem "1" -- "0..*" InventoryMovement : registra
+InventoryMovement ..> MovementType : dirección
+InventoryMovement ..> MovementReason : motivo
+IInventoryPort ..> StockItem : coordina operaciones

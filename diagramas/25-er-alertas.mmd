@@ -1,0 +1,33 @@
+erDiagram
+direction LR
+alerts_alerts {
+  uuid id PK
+  uuid business_id FK
+  varchar type
+  varchar status
+  uuid product_id FK "nullable"
+  uuid reading_id FK "nullable"
+  varchar episode_key UK "nullable"
+  datetime created_at
+  datetime acknowledged_at "nullable"
+  uuid acknowledged_by FK "nullable"
+  datetime episode_ended_at "nullable"
+}
+inventory_products {
+  uuid id PK
+  uuid business_id FK
+  varchar name
+}
+production_sensor_readings {
+  uuid id PK
+  uuid business_id FK
+  uuid batch_id FK
+}
+iam_users {
+  uuid id PK
+  uuid business_id FK
+  varchar name
+}
+inventory_products |o--o{ alerts_alerts : origina_low_stock
+production_sensor_readings |o--o| alerts_alerts : origina_anomalia
+iam_users |o--o{ alerts_alerts : atiende

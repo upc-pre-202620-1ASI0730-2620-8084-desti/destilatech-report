@@ -1,0 +1,47 @@
+@startuml
+title Diagrama de clases — Alerts & Notifications
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+left to right direction
+class Alert {
+  -id : Guid
+  -ownerAccountId : Guid
+  -type : AlertType
+  -sourceId : Guid
+  -message : string
+  -status : AlertStatus
+  -episodeKey : string
+  -createdAt : DateTime
+  -attendedAt : DateTime
+  +Raise(ownerAccountId, type, sourceId, message, episodeKey) : Alert
+  +MarkAsAttended() : void
+}
+class AlertPolicy <<service>> {
+  -alerts : IAlertRepository
+  +RaiseIfNew(ownerAccountId, type, sourceId, message) : Alert
+  #FindOpenEpisode(episodeKey) : Alert
+}
+class AlertQueryService <<service>> {
+  -alerts : IAlertRepository
+  +GetInbox(ownerAccountId, type, status) : Alert[]
+}
+interface IAlertRepository {
+  +Save(alert) : void
+  +FindOpenByEpisode(episodeKey) : Alert
+  +Find(ownerAccountId, type, status) : Alert[]
+}
+enum AlertType {
+  LOW_STOCK
+  ANOMALY
+}
+enum AlertStatus {
+  PENDING
+  ATTENDED
+}
+Alert ..> AlertType : tipo
+Alert ..> AlertStatus : estado
+AlertPolicy ..> Alert : crea
+AlertPolicy ..> IAlertRepository : consulta episodios con
+AlertQueryService ..> IAlertRepository : lista con
+@enduml

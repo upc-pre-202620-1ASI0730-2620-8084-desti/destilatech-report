@@ -1,0 +1,74 @@
+@startuml
+title Diagrama de clases — Orders & Replenishment
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+left to right direction
+class Customer {
+  -id : Guid
+  -ownerAccountId : Guid
+  -name : string
+  -contact : string
+  +Register(ownerAccountId, name, contact) : Customer
+  +Edit(name, contact) : void
+}
+class Order {
+  -id : Guid
+  -customerId : Guid
+  -orderDate : DateTime
+  -status : OrderStatus
+  -idempotencyKey : string
+  +Register(customerId, lines, idempotencyKey) : Order
+  +Confirm() : void
+  +Cancel() : void
+}
+class OrderLine {
+  -id : Guid
+  -orderId : Guid
+  -productId : Guid
+  -productNameSnapshot : string
+  -unitSnapshot : string
+  -quantity : decimal
+}
+class ReplenishmentList {
+  -id : Guid
+  -ownerAccountId : Guid
+  -generatedAt : DateTime
+  -shareableText : string
+  +Generate(ownerAccountId, items) : ReplenishmentList
+  +ToText() : string
+}
+class ReplenishmentItem {
+  -productId : Guid
+  -productName : string
+  -suggestedQuantity : decimal
+}
+class OrderService <<service>> {
+  -inventory : IInventoryPort
+  -orders : IOrderRepository
+  +RegisterOrder(customerId, lines, idempotencyKey) : Order
+  +ConfirmOrder(orderId) : void
+  +GetHistory(ownerAccountId) : Order[]
+  +GenerateReplenishmentList(ownerAccountId) : ReplenishmentList
+}
+interface IInventoryPort {
+  +DiscountStock(productId, quantity, sourceKey) : void
+  +GetProductsToReplenish(ownerAccountId) : ReplenishmentItem[]
+}
+interface IOrderRepository {
+  +Save(order) : void
+  +FindByOwner(ownerAccountId) : Order[]
+}
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+Customer "1" --> "0..*" Order : realiza
+Order "1" *-- "1..*" OrderLine : contiene
+ReplenishmentList "1" *-- "1..*" ReplenishmentItem : incluye
+Order ..> OrderStatus : estado
+OrderService ..> IInventoryPort : descuenta stock con
+OrderService ..> IOrderRepository : persiste con
+OrderService ..> ReplenishmentList : genera
+@enduml

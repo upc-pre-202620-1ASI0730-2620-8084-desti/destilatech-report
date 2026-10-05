@@ -1,0 +1,37 @@
+classDiagram
+direction LR
+class LandingNavigation {
+  -string locale
+  +NavigateToSection(id) void
+  +OpenRegistration(segment, plan) void
+}
+class ApiClient {
+  -string baseUrl
+  +Get(path) Promise
+  +Post(path, payload) Promise
+}
+class SessionStore {
+  -string accessToken
+  -string businessType
+  +SetSession(dto) void
+  +Clear() void
+}
+class LocaleService {
+  -string locale
+  +Translate(key) string
+  +SetLocale(locale) void
+}
+class InventoryViewModel {
+  -ApiClient api
+  -Array products
+  +LoadStock() Promise
+  +SubmitMovement(dto) Promise
+}
+class DashboardViewModel {
+  -ApiClient api
+  +LoadSummary() Promise
+}
+LandingNavigation ..> LocaleService : usa
+ApiClient ..> SessionStore : consulta token
+InventoryViewModel ..> ApiClient : usa
+DashboardViewModel ..> ApiClient : usa

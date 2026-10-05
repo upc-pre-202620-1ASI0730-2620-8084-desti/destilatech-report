@@ -1,0 +1,27 @@
+flowchart LR
+  iam["Identity / Subscriptions<br/>Componente: módulo C#<br/>Cuenta, acceso y vigencia del servicio"]:::component
+  production["Production / Monitoring<br/>Componente: módulo C#<br/>Lotes, reglas y lecturas simuladas"]:::component
+  alerts["Alerts / Notifications<br/>Componente: módulo C#<br/>Avisos internos y atención"]:::component
+  orders["Orders / Replenishment<br/>Componente: módulo C#<br/>Clientes y confirmación de ventas"]:::component
+  inventory["Inventory / Stock<br/>Componente: módulo C#<br/>Catálogo, saldo y movimientos"]:::component
+  analytics["Analytics / Estimations<br/>Componente: módulo C#<br/>Consultas y cálculo de reposición"]:::component
+iam -->|"AccessPolicy"| production
+production -->|"lectura anómala"| alerts
+orders -->|"salida atómica"| inventory
+inventory -->|"contrato de lectura"| analytics
+inventory -->|"StockChanged"| alerts
+analytics -->|"consulta indicadores"| production
+classDef actor fill:#fef3c7,stroke:#92400e,color:#172033
+classDef command fill:#dbeafe,stroke:#1d4ed8,color:#172033
+classDef event fill:#ffedd5,stroke:#c2410c,color:#172033
+classDef aggregate fill:#fef9c3,stroke:#854d0e,color:#172033
+classDef policy fill:#f3e8ff,stroke:#7e22ce,color:#172033
+classDef query fill:#dcfce7,stroke:#15803d,color:#172033
+classDef external fill:#f1f5f9,stroke:#475569,color:#172033
+classDef system fill:#dbeafe,stroke:#1e40af,color:#172033
+classDef container fill:#e0f2fe,stroke:#0369a1,color:#172033
+classDef component fill:#ecfeff,stroke:#0e7490,color:#172033
+classDef class fill:#f0fdfa,stroke:#115e59,color:#172033
+classDef enum fill:#faf5ff,stroke:#6b21a8,color:#172033
+classDef table fill:#eef2ff,stroke:#3730a3,color:#172033
+classDef hotspot fill:#fee2e2,stroke:#b91c1c,color:#172033

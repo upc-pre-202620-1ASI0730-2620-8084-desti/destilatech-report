@@ -1,0 +1,45 @@
+classDiagram
+direction LR
+class Customer {
+  -Guid id
+  -Guid businessId
+  -string name
+  -string contact
+  +UpdateContact(contact) void
+}
+class SalesOrder {
+  -Guid id
+  -Guid businessId
+  -Guid customerId
+  -OrderStatus status
+  -string idempotencyKey
+  +AddLine(product, qty, price) void
+  +Confirm() void
+}
+class SalesOrderLine {
+  -Guid id
+  -Guid productId
+  -string productNameSnapshot
+  -string unitSnapshot
+  -decimal quantity
+  -decimal unitPrice
+  +Subtotal() decimal
+}
+class OrderStatus {
+  <<enumeration>>
+  Draft
+  Confirmed
+}
+class OrderApplicationService {
+  -IInventoryPort inventory
+  +ConfirmOrder(id, key) void
+}
+class IInventoryPort {
+  <<interface>>
+  +IssueForOrder(lines, key) void
+}
+Customer "1" -- "0..*" SalesOrder : realiza
+SalesOrder "1" *-- "1..*" SalesOrderLine : contiene
+SalesOrder ..> OrderStatus : estado
+OrderApplicationService ..> SalesOrder : coordina
+OrderApplicationService ..> IInventoryPort : solicita salida

@@ -1,0 +1,34 @@
+erDiagram
+direction LR
+inventory_products {
+  uuid id PK
+  uuid business_id FK
+  varchar sku
+  varchar name
+  varchar presentation
+  varchar unit
+  decimal reorder_level
+  boolean active
+}
+inventory_stock_items {
+  uuid id PK
+  uuid business_id FK
+  uuid product_id FK
+  decimal quantity
+  bigint version
+}
+inventory_movements {
+  uuid id PK
+  uuid business_id FK
+  uuid stock_item_id FK
+  varchar direction
+  varchar reason
+  decimal quantity
+  varchar source_key
+  uuid order_line_id FK "nullable"
+  datetime occurred_at
+  uuid recorded_by FK
+  varchar note "nullable"
+}
+inventory_products ||--|| inventory_stock_items : saldo
+inventory_stock_items ||--o{ inventory_movements : historial
