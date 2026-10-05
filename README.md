@@ -5885,6 +5885,49 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 
 
+**Figura 144**
+
+*Centro de alertas*
+
+<p align="center"><img src="assets/webapp/11-alertas.png" alt="Centro de alertas" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Centro de alertas (`/alerts`, historias US16 y US48) con alertas por anomalía y por stock bajo, y filtros por tipo y estado.
+
+
+**Figura 145**
+
+*Planes y suscripción*
+
+<p align="center"><img src="assets/webapp/12-planes-suscripcion.png" alt="Planes y suscripción" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de planes (`/billing/plans`, historias US03, US40 y US54) con el estado de acceso, los planes Básico (S/ 60), Profesional (S/ 110) y Empresarial (S/ 200) por mes y el historial de pagos.
+
+
+**Figura 146**
+
+*Dashboard del comercializador*
+
+<p align="center"><img src="assets/webapp/13-dashboard-comercializador.png" alt="Dashboard del comercializador" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Dashboard del comercializador (`/dashboard`, historia US05) con indicadores de ventas, pedidos abiertos, stock bajo y productos, el gráfico de movimiento de inventario, los productos de reposición prioritaria y los pedidos recientes.
+
+
+**Figura 147**
+
+*Indicadores históricos*
+
+<p align="center"><img src="assets/webapp/14-indicadores-historicos.png" alt="Indicadores históricos" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de indicadores históricos (`/analytics/indicators`, historia US21) con selector de periodo (7, 30, 90 días o 12 meses), indicadores de entradas, salidas y ventas, la evolución del stock, los productos más vendidos y gráficos de entradas contra salidas y de ventas.
+
 
 
 
