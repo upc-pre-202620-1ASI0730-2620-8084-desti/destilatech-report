@@ -5330,7 +5330,7 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 | **Sum of Story Points** | 92 Story Points (29 historias de usuario). |
 
 
-
+##### 5.2.2.2. Aspect Leaders and Collaborators
 
 ## Conclusiones
 
