@@ -5344,6 +5344,116 @@ En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden co
 
 **Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Miguel Domenack lideró las pruebas funcionales de la aplicación, que abarcan todos los módulos y no registran commits en el repositorio. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
 
+##### 5.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Las horas son estimaciones de planificación, con una referencia de una hora por Story Point.
+
+**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
+
+**Figura 123**
+
+*Tablero del Sprint 2 en Trello*
+
+> **[CONFIRMAR: imagen pendiente]** Captura del tablero con las tarjetas del Sprint 2. Guardar como `assets/md-images-front-matter/trello-sprint2.png` y reemplazar este bloque por la imagen.
+
+*Nota.* Captura propia de Trello (2026).
+
+
+**Tabla 18**
+
+*Sprint Backlog 2*
+
+
+| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US04** | Ver dashboard de producción | TK-01 | Producer Dashboard View | `dashboard.vue` y `producer-dashboard.vue` con la distribución de bloques | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US04** | Ver dashboard de producción | TK-02 | Dashboard Indicators | `kpi-card.vue` y cálculo de los indicadores en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US04** | Ver dashboard de producción | TK-03 | Recent Activity & Chart | `recent-activity.vue` y gráfico de volumen por lote | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US05** | Ver dashboard comercial | TK-04 | Retailer Dashboard View | `retailer-dashboard.vue` con la distribución de bloques | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US05** | Ver dashboard comercial | TK-05 | Stock & Orders Indicators | Indicadores de ventas, pedidos abiertos, stock bajo y productos en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US05** | Ver dashboard comercial | TK-06 | Recent Orders Table | Tabla de pedidos recientes y gráfico de movimiento de inventario | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US12** | Registrar producto | TK-07 | Product Entity & API | `product.entity.js`, `product.assembler.js` y registro de productos en `inventory-api.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US12** | Registrar producto | TK-08 | Product Form Dialog | `product-form-dialog.vue` con validación de campos obligatorios | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US13** | Registrar movimiento de inventario | TK-09 | Stock Movement Domain | `stock-movement.entity.js`, `register-stock-movement.command.js` y `stock-movement.assembler.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US13** | Registrar movimiento de inventario | TK-10 | Movement Dialog | `stock-movement-dialog.vue` para entradas y salidas | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US13** | Registrar movimiento de inventario | TK-11 | Stock Update Rules | Regla de salida mayor al stock y actualización en `inventory.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US14** | Consultar stock disponible | TK-12 | Inventory Overview View | `inventory-overview.vue` con la lista y los indicadores de inventario | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US14** | Consultar stock disponible | TK-13 | Stock Status Tag | `stock-status-tag.vue` y filtros por estado óptimo, bajo y crítico | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US15** | Configurar umbral de stock bajo | TK-14 | Threshold Dialog | `threshold-dialog.vue` para configurar el umbral de stock bajo | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US15** | Configurar umbral de stock bajo | TK-15 | Threshold Persistence | Validación del umbral y actualización del `stock-item` en `inventory.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US16** | Visualizar y atender alertas | TK-16 | Alert Domain & API | `alert.entity.js`, `raise-alert.command.js`, `alert.assembler.js` y `alerts-api.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US16** | Visualizar y atender alertas | TK-17 | Alerts Inbox View | `alerts-inbox.vue` y `alert-item.vue` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US16** | Visualizar y atender alertas | TK-18 | Mark as Attended | Acción de marcar una alerta como atendida en `alerts.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US06** | Registrar lote de producción | TK-19 | Batch Domain | `production-batch.entity.js`, `register-batch.command.js` y `production-batch.assembler.js` | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US06** | Registrar lote de producción | TK-20 | Batch Form Dialog | `batch-form-dialog.vue` con validación | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US06** | Registrar lote de producción | TK-21 | Batch Management View | `batch-management.vue` con el listado de lotes | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US07** | Actualizar estado de un lote | TK-22 | Batch Stage Model | `batch-stage.js` con las etapas y las transiciones permitidas | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US07** | Actualizar estado de un lote | TK-23 | Advance Stage Dialog | `advance-stage-dialog.vue` y `batch-stage-tag.vue` | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US08** | Consultar historial de un lote | TK-24 | Batch Detail View | `batch-detail.vue` con el resumen del lote | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US08** | Consultar historial de un lote | TK-25 | Stage Timeline | Línea de tiempo con la trazabilidad de las etapas del lote | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US43** | Registrar el embotellado de un lote | TK-26 | Bottling Dialog | Registro de la cantidad embotellada y del producto vinculado en `advance-stage-dialog.vue` | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US43** | Registrar el embotellado de un lote | TK-27 | Add Stock on Bottling | Suma de las botellas al stock del producto vinculado | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US17** | Registrar cliente | TK-28 | Customer Domain & API | `customer.entity.js`, `customer.assembler.js` y registro de clientes en `orders-api.js` | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US17** | Registrar cliente | TK-29 | Customers View & Form | `customers-list.vue` y `customer-form-dialog.vue` | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US18** | Registrar pedido | TK-30 | Order Domain | `order.entity.js`, `order-line.js` y `order.assembler.js` | 2 | Santiago Atanacio, Jairo Mathias | Done |
+| **US18** | Registrar pedido | TK-31 | Order Form Dialog | `order-form-dialog.vue` con líneas de producto | 2 | Santiago Atanacio, Jairo Mathias | Done |
+| **US18** | Registrar pedido | TK-32 | Discount Stock on Order | Descuento del stock de cada línea al registrar el pedido | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US19** | Consultar historial de pedidos | TK-33 | Orders List View | `orders-list.vue` con la búsqueda por código o cliente | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US19** | Consultar historial de pedidos | TK-34 | Order Status Actions | `order-status-tag.vue` y cambio de estado del pedido | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US09** | Visualizar variables de proceso | TK-35 | IoT Sensor Simulator | `iot-sensor-simulator.js` con lecturas alrededor del centro del rango y probabilidad de anomalía | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US09** | Visualizar variables de proceso | TK-36 | Sensor Reading Domain | `sensor-reading.entity.js`, `sensor-reading.assembler.js` y acceso en `production-api.js` | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US09** | Visualizar variables de proceso | TK-37 | Monitoring View | `monitoring-dashboard.vue` y `variable-card.vue` | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US10** | Configurar rango normal de una variable | TK-38 | Variable Range Dialog | `variable-range-dialog.vue` para configurar el mínimo y el máximo | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US10** | Configurar rango normal de una variable | TK-39 | Range Validation | `process-variable.entity.js` con la validación del rango | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US11** | Recibir notificación de condición anómala | TK-40 | Reading Evaluation | Comparación de cada lectura contra el rango de la variable | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US11** | Recibir notificación de condición anómala | TK-41 | Anomaly Alert | Generación de la alerta hacia el contexto Alerts & Notifications | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US44** | Ver la tendencia de una variable | TK-42 | Readings Chart Component | `readings-chart.vue` con Chart.js | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US44** | Ver la tendencia de una variable | TK-43 | Range Lines | Líneas del mínimo y el máximo configurados en el gráfico | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US50** | Generar lista de compra para reposición | TK-44 | Replenishment Order Domain & API | `replenishment-order.entity.js`, `replenishment-order.assembler.js` y acceso en `orders-api.js` | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US50** | Generar lista de compra para reposición | TK-45 | Replenishment Orders View | `replenishment-orders.vue` y `replenishment-form-dialog.vue` con las sugerencias de compra | 2 | Condor Sandoval, Jean Pierre | Done |
+| **US20** | Ver estimación de reposición | TK-46 | Estimate Domain | `replenishment-estimate.entity.js` con fecha estimada, consumo promedio y cantidad sugerida | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US20** | Ver estimación de reposición | TK-47 | Estimate Calculation | Cálculo con el consumo de los últimos 30 días en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US20** | Ver estimación de reposición | TK-48 | Estimate Card | `replenishment-estimate-card.vue` en la ficha del producto | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US51** | Ver productos con riesgo de agotamiento | TK-49 | At-Risk Products Logic | Selección de productos con riesgo de agotamiento en `analytics.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US51** | Ver productos con riesgo de agotamiento | TK-50 | Priority Replenishment List | `priority-replenishment.vue` con la lista ordenada por urgencia | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-51 | Historical Indicator Domain | `historical-indicator.entity.js` y `analytics-record.assembler.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-52 | Indicators View | `historical-indicators.vue` con el selector de periodo | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-53 | Indicator Charts | Gráficos de stock, entradas contra salidas y ventas con `trend-chart.vue` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US03** | Recibir aviso de fin de periodo de prueba | TK-54 | Trial Banner Component | Componente `trial-banner.vue` con los días restantes de prueba y el acceso a los planes | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US03** | Recibir aviso de fin de periodo de prueba | TK-55 | Trial Period Logic | `trial-period.entity.js` y cálculo de los días restantes en `billing.store.js` | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US54** | Consultar mi plan y estado de suscripción | TK-56 | Subscription Entity & API | `subscription.entity.js`, `subscription.assembler.js` y consulta de la suscripción en `billing-api.js` | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US54** | Consultar mi plan y estado de suscripción | TK-57 | Access Status Panel | Tarjeta con el estado de acceso, el plan y la fecha de renovación en `subscription-plans.vue` | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-58 | Plan Catalog | `plan.entity.js`, `plan.assembler.js` y `plan-card.vue` con los tres planes | 2 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-59 | Checkout Flow | Inicio del pago con la pasarela en modo de pruebas y orquestación en `billing.store.js` | 3 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-60 | Checkout Result Views | `checkout-success.vue` y `checkout-cancelled.vue` para el resultado del pago | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-61 | Payment History | `payment.entity.js`, `payment.assembler.js` y `payment-history.vue` | 2 | Condor Sandoval, Jean Pierre | Done |
+| **US46** | Consultar el historial de movimientos de un producto | TK-62 | Product Detail View | `product-detail.vue` con los datos del producto | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US46** | Consultar el historial de movimientos de un producto | TK-63 | Movement History Table | Tabla paginada con el historial de movimientos del producto | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US47** | Ajustar el stock tras un conteo físico | TK-64 | Adjustment Movement Type | Tipo de movimiento `ADJUSTMENT` en el modelo de dominio | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US47** | Ajustar el stock tras un conteo físico | TK-65 | Adjustment Form | Cantidad contada y motivo del ajuste en `stock-movement-dialog.vue` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US48** | Filtrar alertas por tipo y estado | TK-66 | Type Filter | Filtro de alertas por tipo (producción o inventario) | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US48** | Filtrar alertas por tipo y estado | TK-67 | Status Filter | Filtro de alertas por estado (pendientes, atendidas o todas) | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US49** | Editar los datos de un cliente | TK-68 | Customer Edit Mode | Modo de edición en `customer-form-dialog.vue` | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US49** | Editar los datos de un cliente | TK-69 | Update Customer Request | Actualización del cliente en `orders-api.js` y `orders.store.js` | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-70 | Shared Kernel | `BaseApi`, `BaseEndpoint`, `BaseAssembler`, `error.interceptor`, `Money` y `DateTime` | 6 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-71 | Shared Layout | Layout, barra superior, navegación lateral, tarjeta KPI, estado vacío y página 404 | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-72 | App Bootstrap | `main.js`, `app.vue`, `router.js` y `pinia.js` | 2 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-73 | Fake API | Fake API con json-server (`db.json`, `routes.json`, `start.sh`) y configuración para Beeceptor | 3 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-74 | Internationalization | Configuración de vue-i18n y catálogos `es.json` y `en.json` | 3 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-75 | User Switcher | Selector Productor / Comercializador (`user-switcher`), tienda del usuario actual (`user.store`) y `users-api`; reemplaza al inicio de sesión mientras no exista IAM | 3 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica de pruebas | TK-76 | Functional Testing Billing & Users | Pruebas funcionales de planes, suscripción, pagos y cambio de perfil con el selector de usuario | 3 | Domenack Angeles, Miguel | Done |
+| — | Tarea técnica de pruebas | TK-77 | Functional Testing Production | Pruebas funcionales de lotes, etapas y monitoreo IoT simulado, incluida la detección de anomalías | 4 | Domenack Angeles, Miguel | Done |
+| — | Tarea técnica de pruebas | TK-78 | Functional Testing Inventory | Pruebas funcionales de productos, movimientos, umbrales y estimaciones de reposición | 3 | Domenack Angeles, Miguel | Done |
+| — | Tarea técnica de pruebas | TK-79 | Functional Testing Orders | Pruebas funcionales de clientes, pedidos y órdenes de reposición | 3 | Domenack Angeles, Miguel | Done |
+| — | Tarea técnica de pruebas | TK-80 | Functional Testing Alerts & Analytics | Pruebas funcionales de alertas, dashboards e indicadores históricos | 3 | Domenack Angeles, Miguel | Done |
+| — | Tarea técnica de pruebas | TK-81 | Language & Navigation Testing | Pruebas de cambio de idioma ES / EN, navegación entre vistas y rutas protegidas por perfil | 2 | Domenack Angeles, Miguel | Done |
+
+
+**Horas por integrante.** El Sprint Backlog suma 132 horas: Santiago Atanacio, Jairo Mathias, 32; Almandroz Carbajal, Pierina Marysabel, 43; Fernandez Seer, Mario Alonso, 24; Condor Sandoval, Jean Pierre, 15; y Domenack Angeles, Miguel, 18, dedicadas a las pruebas funcionales de la aplicación (TK-76 a TK-81). Cada historia de usuario se descompone en dos o más tareas, que se asignan al responsable del aspecto correspondiente.
+
+**Observación.** Las historias del contexto IAM (US01 registro, US02 inicio de sesión, US38 cierre de sesión, US39 recuperar contraseña y US41 perfil del negocio) no forman parte de este sprint porque el curso aún no aborda la autenticación; el equipo las había iniciado en la rama `feature/iam` y las retiró del alcance, por lo que vuelven al Product Backlog para un sprint posterior. Tampoco se incluyeron US42 (editar lote), US45 (editar o desactivar producto) y US55 (elegir las variables monitoreadas), que no se implementaron en la primera versión de la interfaz. Las historias técnicas de endpoints (EP10) se reservan para el sprint del *backend*.
+
+
 
 
 
