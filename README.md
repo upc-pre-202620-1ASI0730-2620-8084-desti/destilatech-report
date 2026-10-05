@@ -75,6 +75,14 @@ Proyecto<br>
 | 0.9.2 | 18/09/2026 | Domenack Angeles, Miguel | Auditoría de calidad, corrección ortográfica y estructural de los Capítulos I al V, y diseño de la presentación en Canva (`feat/report-review-and-canva`) |
 | 1.0.0 | 18/09/2026 | Todos los integrantes | Revisión general, unificación de ramas, verificación de despliegue en GitHub Pages y entrega final del Avance 1 (AV1 Report) (`main`) |
 | 1.1.0 | 04/10/2026 | Santiago Atanacio, Jairo Mathias | Revisión integral conforme a la rúbrica del curso: reestructuración de los capítulos II a V (análisis de entrevistas con estadísticas en Excel, 65 historias de usuario con 10 historias técnicas, arquitectura de información, diagramas con descripciones y Sprint 1), figuras con formato APA 7, conclusiones, bibliografía y anexos, y corrección de ortografía y terminología |
+| 1.1.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Sprint Planning 2 y base de la aplicación web: estructura del proyecto, Shared Kernel, Fake API, internacionalización ES / EN, módulo de pedidos y clientes, y selector de usuario que reemplaza al IAM, retirado del alcance del sprint (`main`, `feature/shared`, `feature/fake-api`, `feature/locales`, `feature/orders-replenishment`) |
+| 1.1.2 | 05/10/2026 | Condor Sandoval, Jean Pierre | Módulo Billing (planes, suscripción, pago e historial) y aviso de fin de la prueba gratuita de la aplicación web, y documentación de sus historias en el Sprint Backlog 2 (`feature/billing`) |
+| 1.1.3 | 05/10/2026 | Almandroz Carbajal, Pierina Marysabel | Módulos Inventory & Stock, Alerts & Notifications y Analytics & Estimations (dashboards e indicadores históricos), y su documentación en el Sprint Backlog 2 (`feature/inventory-stock`, `feature/alerts-notifications`, `feature/analytics-estimations`) |
+| 1.1.4 | 05/10/2026 | Fernandez Seer, Mario Alonso | Módulo Production & Monitoring (lotes, trazabilidad y monitoreo IoT simulado) y su documentación en el Sprint Backlog 2 (`feature/production-monitoring`) |
+| 1.1.5 | 05/10/2026 | Domenack Angeles, Miguel | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN) y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) |
+| 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
+| 1.2.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por las indicaciones del docente: assumptions redactados como creencias, hypothesis statements con la plantilla del curso, eventos pivote y lenguaje ubicuo en el Big Picture EventStorming, y criterios de separación de *bounded contexts* en el Design-Level EventStorming; Sprint 2 sin el contexto IAM (`main`) |
+| 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por el feedback general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
 
 
 <div style="page-break-after: always;"></div>
@@ -245,7 +253,8 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
     - [2.4.3. Flujo del Productor](#243-flujo-del-productor)
     - [2.4.4. Flujo del Comercializador](#244-flujo-del-comercializador)
     - [2.4.5. Áreas candidatas identificadas](#245-áreas-candidatas-identificadas)
-    - [2.4.6. Conclusiones del Big Picture](#246-conclusiones-del-big-picture)
+    - [2.4.6. Eventos pivote y lenguaje ubicuo descubierto](#246-eventos-pivote-y-lenguaje-ubicuo-descubierto)
+    - [2.4.7. Conclusiones del Big Picture](#247-conclusiones-del-big-picture)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
   - [3.1. User Stories](#31-user-stories)
@@ -287,6 +296,7 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
       - [5.1.4.1. Landing Page](#5141-landing-page)
+      - [5.1.4.2. Web Application](#5142-web-application)
   - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
@@ -297,6 +307,15 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -329,22 +348,28 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
 <b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de secciones como Lean UX Canvas, análisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories y product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
+<b>TB1</b><p>Lideré la planificación del Sprint 2 y la base técnica de la aplicación web: el Shared Kernel, el Fake API, la internacionalización y la estructura de ramas por <i>bounded context</i>, que permitió que cada integrante trabajara su módulo sin interferir con los demás. También coordiné la integración de los módulos y la documentación del Sprint 2 en el informe.</p>
   
 <h3>Fernandez Seer, Mario Alonso</h3>
 <b>AV1</b><p>Como líder del equipo, coordiné la definición de la propuesta de valor, los segmentos objetivo y el alcance funcional de Destilatech, procurando que las decisiones del proyecto respondieran a las necesidades identificadas en el sector pisquero. Realicé y documenté la Entrevista #2 del Segmento 1 a un productor de Pisco Don Ítalo, cuyos hallazgos permitieron validar necesidades relacionadas con el monitoreo de variables, la gestión de lotes y el control de inventario. Asimismo, lideré la elaboración de los wireframes, wireflows, mock-ups, user flows y el prototipo interactivo de la aplicación web, alineando estos artefactos con los requisitos y compartiéndolos con el equipo para su integración en el informe.</p>
+<b>TB1</b><p>Lideré el módulo de producción y monitoreo: el registro de lotes, el avance de etapas, el detalle y la trazabilidad del lote, y el monitoreo de variables con el simulador de lecturas IoT y la detección de anomalías. Coordiné con el equipo las reglas que conectan producción con alertas e inventario.</p>
 
 
 <h3>Almandroz Carbajal, Pierina Marysabel</h3>
 <b>AV1</b><p>Lideré la definición y especificación funcional del módulo de inventario y catálogo de productos (Épica EP05), asegurando que las historias de usuario reflejaran de manera precisa las necesidades comerciales del sector. Además, coordiné activamente la estructuración y diseño de la sección de Platform Features en la Landing Page, orientando al equipo en la diferenciación de vistas y funcionalidades para productores y comercializadores.</p>
+<b>TB1</b><p>Lideré los módulos de inventario, alertas y análisis: el catálogo y los movimientos de stock, el centro de alertas, los dashboards del productor y del comercializador, la estimación de reposición y los indicadores históricos. Definí con el equipo cómo se comunican estos módulos mediante eventos.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Lideré y gestioné activamente la fase de investigación de usuarios y diseño de experiencia del producto. Me encargué del análisis de las entrevistas realizadas a los usuarios clave y de la definición de los User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, garantizando una comprensión clara de sus necesidades. Asimismo, participé en la definición del Impact Mapping y en el establecimiento de los lineamientos de diseño (General Style Guidelines y Web Style Guidelines), además del diseño de los Landing Page Wireframes para asegurar la consistencia del sistema.</p>
+<b>TB1</b><p>Lideré el módulo de suscripciones y pagos (Billing): los planes, el flujo de contratación con la pasarela en modo de pruebas, el historial de pagos y el aviso de fin de la prueba gratuita. Colaboré en el Shared Kernel y en el módulo de pedidos y reposición.</p>
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Asumí el liderazgo en la verificación de la calidad del entregable mediante la auditoría continua y corrección de errores en la redacción y estructura del informe general. Asimismo, coordiné y estructuré el diseño de la presentación en Canva para la exposición académica del avance, y colaboré estrechamente en el modelado del Capítulo IV, aportando en la elaboración de las guías de estilo, la arquitectura de información y la especificación de los diagramas del sistema.</p>
+<b>TB1</b><p>Lideré las pruebas funcionales de la aplicación web, que abarcan los módulos de Billing, producción, inventario, pedidos, alertas e indicadores, y el cambio de idioma y la navegación por perfil. Los resultados de las pruebas se comunicaron al equipo para corregir los errores antes de la revisión del sprint.</p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>Se logró completar la primera parte del trabajo demostrando un liderazgo distribuido y eficaz. La asignación clara de roles estratégicos y técnicos permitió cumplir los objetivos de investigación, diseño conceptual y despliegue del Sprint 1 en los plazos previstos, manteniendo una comunicación constante y resolviendo impedimentos en equipo.</p>
+<b>TB1</b><p>En el Sprint 2 el liderazgo se distribuyó por módulos: cada integrante lideró uno o más <i>bounded contexts</i> de la aplicación web y un integrante lideró las pruebas. Esta asignación permitió construir en paralelo seis módulos y cerrar las historias de interfaz del sprint.</p>
 </td>
 </tr>
 <tr>
@@ -352,22 +377,28 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3" align="justify">
 <h3>Santiago Atanacio, Jairo Mathias</h3>
 <b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, logrando completar la primera parte del trabajo sin problemas mayores. Asumí un rol activo en la planificación de sprints, la redacción colaborativa de los requisitos y el despliegue del sitio web, asegurando que todos los integrantes contaran con tareas claras y plazos realistas.</p>
+<b>TB1</b><p>Asumí el módulo de clientes y pedidos y el selector de usuario que sustituye al inicio de sesión. Mantuve el Sprint Backlog y el tablero del equipo al día y planifiqué las tareas de cada integrante según su módulo, con plazos acordados en el Sprint Planning 2.</p>
 
 <h3>Fernandez Seer, Mario Alonso</h3>
 <b>AV1</b><p>Organicé mis entregables de acuerdo con los objetivos asignados y trabajé mediante ramas independientes para evitar interferir con los avances de mis compañeros. Cumplí con la realización, registro y síntesis de la entrevista del Segmento 1, así como con el desarrollo de los artefactos UX/UI de la aplicación web en Figma. Además, adapté la numeración, las rutas de las imágenes y la documentación al formato existente del informe, incorporando las observaciones del equipo y manteniendo la trazabilidad de los aportes mediante commits en GitHub. De esta manera, facilité que el trabajo pudiera revisarse, integrarse y reutilizarse por los demás integrantes.</p>
+<b>TB1</b><p>Trabajé en la rama independiente <code>feature/production-monitoring</code> y registré mis aportes desde mi propia cuenta, de modo que la rama se integró sin conflictos. Cumplí las tareas asignadas del módulo de producción dentro del Sprint 2.</p>
 
 
 <h3>Almandroz Carbajal, Pierina Marysabel</h3>
 <b>AV1</b><p>Promoví el trabajo colaborativo asegurando que los criterios de aceptación de las historias de usuario de inventario fueran comprendidos y validados por todos los miembros. Cumplí responsablemente con la maquetación de la sección de Platform Features y colaboré en la revisión de los flujos de interacción del comercializador, integrando las sugerencias del grupo en el backlog.</p>
+<b>TB1</b><p>Cumplí con la entrega de mis tres módulos y revisé con mis compañeros las reglas de stock bajo y de reposición para que coincidieran con los criterios de aceptación de las historias de usuario.</p>
 
 <h3>Condor Sandoval, Jean Pierre</h3>
 <b>AV1</b><p>Asumí la responsabilidad del cumplimiento en tiempo y forma de las tareas asignadas en las fases de investigación y diseño visual. Colaboré activamente con el equipo coordinando la validación del comportamiento y flujo de los usuarios mediante la matriz de tareas y mapas de empatía, asegurando que todos los miembros tuvieran una visión clara y compartida sobre el diseño UI/UX y la estructura del proyecto en la Landing Page Wireframe.</p>
+<b>TB1</b><p>Cumplí las tareas del módulo de Billing en la rama <code>feature/billing</code>. Además, inicié el módulo de IAM que luego el equipo retiró del alcance del sprint, y acepté el ajuste de alcance para mantener el foco en las historias de mayor valor.</p>
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Promoví un ambiente de trabajo transparente y colaborativo al revisar minuciosamente cada sección del informe y compartir retroalimentación oportuna con el equipo para subsanar inconsistencias antes de la entrega final. En la parte de desarrollo, cumplí cabalmente con la tarea asignada de diseño adaptativo (Responsive Design), garantizando que la Landing Page funcionara de manera óptima en dispositivos móviles y de escritorio, además de estructurar el soporte visual en Canva para el equipo.</p>
+<b>TB1</b><p>Cumplí con las tareas de pruebas registradas en el Sprint Backlog 2 y apoyé la verificación de que cada módulo respondiera a los criterios de aceptación antes de cerrar el sprint.</p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>El equipo consolidó un entorno inclusivo y de alta disciplina de trabajo, planificando tareas a través de tableros ágiles y cumpliendo el 100% de las historias asignadas para el primer hito del proyecto. Esto sienta una base sólida para afrontar las siguientes fases de desarrollo de la aplicación web y backend.</p>
+<b>TB1</b><p>El equipo planificó el Sprint 2 con un Sprint Backlog descompuesto en tareas, ramas <code>feature/*</code> por módulo y commits desde la cuenta de cada integrante. Ante el ajuste de alcance que retiró el contexto IAM, el equipo reorganizó sus tareas sin perder el objetivo del sprint.</p>
 </td>
 </tr>
 </tbody>
@@ -537,9 +568,9 @@ En una etapa posterior, el modelo de negocio podrá complementarse mediante serv
 
 ##### 1.2.2.1. Lean UX Problem Statements
 
-El estado actual del dominio de producción y comercialización de pisco se encuentra principalmente enfocado en la ejecución de procesos de producción, control de inventario, comercialización y reposición mediante diferentes procedimientos y herramientas.
+El estado actual del dominio de producción y comercialización de pisco en el Perú se ha enfocado principalmente en pequeños y medianos productores y en pequeños comercializadores (licorerías, bodegas comerciales y pequeños distribuidores), que gestionan el monitoreo de la producción, los lotes, el inventario, los pedidos y la reposición mediante flujos de trabajo manuales o dispersos, como cuadernos, hojas de cálculo, mensajería y supervisión presencial. Los puntos de dolor que se asumen son la dificultad para detectar a tiempo condiciones anómalas del proceso, los errores en los registros y los quiebres de stock.
 
-Lo que los procedimientos y soluciones existentes podrían no abordar adecuadamente es la centralización de información productiva, operativa y comercial dentro de una plataforma especializada que permita visualizar información relevante y apoyar decisiones relacionadas con producción e inventario.
+Lo que los productos y servicios existentes, de propósito general (sistemas de gestión empresarial y plataformas IoT genéricas), podrían no abordar adecuadamente es la centralización de información productiva, operativa y comercial dentro de una plataforma web especializada en el proceso del pisco y dimensionada para pequeñas empresas, que permita visualizar información relevante y apoyar decisiones relacionadas con producción e inventario.
 
 Nuestro producto abordará esta oportunidad mediante una plataforma web que integre monitoreo IoT, gestión de lotes, gestión de inventario, clientes, pedidos, alertas y herramientas de análisis.
 
@@ -562,14 +593,14 @@ Sabremos que la solución genera valor cuando estos usuarios utilicen Destilatec
 
 **Business Outcome Assumptions:**
 
-1. Esperamos conseguir usuarios que completen el periodo de prueba y posteriormente contraten una suscripción.
-2. Esperamos que los clientes consulten recurrentemente sus dashboards.
-3. Esperamos reducir el esfuerzo necesario para consultar información operativa.
-4. Esperamos incrementar el registro digital de lotes, productos, movimientos y pedidos.
-5. Esperamos reducir situaciones de inventario insuficiente que no hayan sido identificadas oportunamente.
-6. Esperamos que las funcionalidades de monitoreo generen interés por futuras integraciones con dispositivos IoT físicos.
-7. Esperamos que el monitoreo de variables productivas mediante IoT mejore la capacidad de supervisión y respuesta de los productores ante condiciones anómalas del proceso productivo.
-8. Esperamos que las estimaciones basadas en información histórica mejoren la planificación de reposición de inventario y de nuevos lotes de producción.
+1. Creemos que lograremos usuarios que completen el periodo de prueba y posteriormente contraten una suscripción.
+2. Creemos que los clientes consultarán recurrentemente sus dashboards.
+3. Creemos que se reducirá el esfuerzo necesario para consultar información operativa.
+4. Creemos que aumentará el registro digital de lotes, productos, movimientos y pedidos.
+5. Creemos que se reducirán las situaciones de inventario insuficiente que no se identifican oportunamente.
+6. Creemos que las funcionalidades de monitoreo generarán interés por futuras integraciones con dispositivos IoT físicos.
+7. Creemos que el monitoreo de variables productivas mediante IoT mejorará la capacidad de supervisión y respuesta de los productores ante condiciones anómalas del proceso productivo.
+8. Creemos que las estimaciones basadas en información histórica mejorarán la planificación de reposición de inventario y de nuevos lotes de producción.
 
 Estos resultados podrán medirse posteriormente mediante indicadores como usuarios activos, frecuencia de acceso, cantidad de registros de inventario, alertas atendidas, utilización de las funcionalidades principales y conversión del periodo de prueba hacia una suscripción.
 
@@ -585,14 +616,14 @@ Estos resultados podrán medirse posteriormente mediante indicadores como usuari
 
 **User Outcome and Benefit Assumptions:**
 
-1. Los productores desean tener mayor visibilidad sobre sus operaciones de producción.
-2. Los responsables de producción desean detectar oportunamente condiciones que requieren atención.
-3. Los productores desean conservar información organizada sobre sus lotes.
-4. Los usuarios desean conocer sus existencias de manera rápida.
-5. Los comercializadores desean identificar cuándo necesitan reponer un producto.
-6. Los usuarios desean reducir la necesidad de consultar diferentes registros para obtener información.
-7. Los usuarios desean recibir alertas relevantes sobre sus operaciones.
-8. Los responsables de los negocios desean disponer de información histórica que apoye sus decisiones.
+1. Creemos que los productores quieren tener mayor visibilidad sobre sus operaciones de producción.
+2. Creemos que los responsables de producción quieren detectar oportunamente las condiciones que requieren atención.
+3. Creemos que los productores quieren conservar información organizada sobre sus lotes.
+4. Creemos que los usuarios quieren conocer sus existencias de manera rápida.
+5. Creemos que los comercializadores quieren identificar cuándo necesitan reponer un producto.
+6. Creemos que los usuarios quieren reducir la necesidad de consultar diferentes registros para obtener información.
+7. Creemos que los usuarios quieren recibir alertas relevantes sobre sus operaciones.
+8. Creemos que los responsables de los negocios quieren disponer de información histórica que apoye sus decisiones.
 
 **Feature Assumptions:**
 
@@ -607,27 +638,28 @@ Estos resultados podrán medirse posteriormente mediante indicadores como usuari
 
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 
+Cada hipótesis sigue la plantilla del curso: *Creemos que lograremos* [resultado de negocio], *si* [personas] *alcanzan* [beneficio o resultado del usuario], *con* [funcionalidad o solución]. Los resultados de negocio provienen de los Business Outcome Assumptions, los beneficios de los User Outcome and Benefit Assumptions y las funcionalidades de los Feature Assumptions.
 
 **Hypothesis Statement 1 — Dashboard**
-Creemos que lograremos **reducir el esfuerzo necesario para consultar el estado general de una operación** si **productores y comercializadores** obtienen **una vista centralizada y adaptada a sus principales necesidades** mediante **dashboards personalizados según el tipo de usuario**.
+Creemos que lograremos **que los clientes consulten recurrentemente sus dashboards y que se reduzca el esfuerzo para consultar información operativa** si **productores y comercializadores** alcanzan **conocer rápidamente el estado general de su operación desde una vista centralizada** con **dashboards personalizados según el tipo de usuario**.
 
 **Hypothesis Statement 2 — Monitoreo IoT**
-Creemos que lograremos **mejorar la capacidad de supervisión y respuesta ante condiciones anómalas del proceso productivo** si **los productores y responsables de producción** obtienen **acceso centralizado a variables relevantes** mediante **un módulo de monitoreo conectado a fuentes de datos IoT**.
+Creemos que lograremos **mejorar la supervisión y la respuesta ante condiciones anómalas del proceso productivo y generar interés en futuras integraciones con dispositivos IoT físicos** si **los productores y responsables de producción** alcanzan **acceso centralizado a las variables relevantes del proceso** con **un módulo de monitoreo conectado a fuentes de datos IoT simuladas**.
 
-**Hypothesis Statement 3 — Gestión de lotes** 
-Creemos que lograremos **mejorar la organización del historial de producción** si **los productores** obtienen **una forma estructurada de registrar y consultar sus procesos productivos** mediante **un módulo de gestión de lotes**.
+**Hypothesis Statement 3 — Gestión de lotes**
+Creemos que lograremos **incrementar el registro digital de lotes de producción** si **los productores** alcanzan **conservar organizado el historial de sus procesos productivos** con **un módulo de gestión de lotes**.
 
-**Hypothesis Statement 4 — Inventario** 
-Creemos que lograremos **mejorar la visibilidad de las existencias** si **productores y comercializadores** obtienen **información organizada sobre productos, stock y movimientos** mediante **un módulo centralizado de inventario**.
+**Hypothesis Statement 4 — Inventario**
+Creemos que lograremos **incrementar el registro digital de productos y movimientos de stock** si **productores y comercializadores** alcanzan **conocer sus existencias de manera rápida y organizada** con **un módulo centralizado de inventario**.
 
-**Hypothesis Statement 5 — Alertas** 
-Creemos que lograremos **reducir situaciones relevantes que no sean detectadas oportunamente** si **productores y comercializadores** obtienen **avisos cuando una condición requiere atención** mediante **un sistema automático de alertas de producción e inventario**.
+**Hypothesis Statement 5 — Alertas**
+Creemos que lograremos **reducir las situaciones de inventario insuficiente y de condiciones anómalas que no se identifican oportunamente** si **productores y comercializadores** alcanzan **recibir avisos cuando una condición requiere atención** con **un sistema automático de alertas de producción e inventario**.
 
-**Hypothesis Statement 6 — Clientes y pedidos** 
-Creemos que lograremos **mejorar la organización de información comercial** si **los usuarios responsables de ventas y abastecimiento** obtienen **una manera sencilla de registrar operaciones comerciales** mediante **un módulo básico de clientes y pedidos**.
+**Hypothesis Statement 6 — Clientes y pedidos**
+Creemos que lograremos **incrementar el registro digital de pedidos** si **los usuarios responsables de ventas y abastecimiento** alcanzan **registrar y consultar con facilidad sus operaciones comerciales** con **un módulo básico de clientes y pedidos**.
 
-**Hypothesis Statement 7 — Estimaciones de inventario** 
-Creemos que lograremos **mejorar la planificación de reposición y de nueva producción** si **productores y comercializadores** obtienen **información anticipada sobre posibles necesidades futuras de inventario** mediante **estimaciones construidas a partir de información histórica**.
+**Hypothesis Statement 7 — Estimaciones de inventario**
+Creemos que lograremos **mejorar la planificación de la reposición de inventario y de nuevos lotes de producción** si **productores y comercializadores** alcanzan **anticipar sus necesidades futuras de inventario** con **estimaciones construidas a partir de información histórica**.
 
 ##### 1.2.2.4. Lean UX Canvas
 
@@ -1485,7 +1517,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Ricardo Donayre, productor de tipo «Artesanal / Innovador», con un tamaño de mercado estimado del 40 %. Es un administrador general y supervisor de producción de una bodega familiar de pisco, casado, de 33 años, que gestiona la parte comercial desde Lima mientras la destilería se ubica en el valle pisquero. Sus objetivos son automatizar el monitoreo de variables críticas, supervisar la producción de forma remota y centralizar el control de inventarios y lotes; sus frustraciones son enterarse tarde de fallas térmicas, el tiempo invertido en viajes y los descuadres entre el stock real y Excel. Usa WhatsApp, Excel, Google Chrome, Instagram y Facebook, con smartphone y laptop como dispositivos.
+*Descripción.* La ficha presenta a Ricardo Donayre como arquetipo del segmento Productor: administrador de una bodega familiar de pisco, de 33 años (promedio de edad de los tres productores entrevistados), que gestiona el negocio desde su sede comercial en Lima mientras la producción se realiza en un valle pisquero. Sus objetivos son monitorear a distancia las variables críticas del proceso y centralizar el control de lotes e inventario; sus frustraciones son enterarse tarde de una temperatura anómala, los viajes a la bodega y los descuadres entre el stock real y Excel. Usa el smartphone como dispositivo principal, Excel, WhatsApp, Instagram y Facebook. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
 
 
 **Segmento 2: Comercializador**
@@ -1498,7 +1530,43 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Carlos Mendoza, comercializador de tipo «Tradicional», con un tamaño de mercado estimado del 35 %. Es propietario de una licorería y bodega en Lima, soltero, que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son mantener un control claro del stock en tiempo real, evitar quiebres de stock en fines de semana y feriados, y automatizar las alertas de reposición; sus frustraciones son quedarse sin productos populares de forma imprevista, los sistemas complejos que consumen tiempo y los descuadres entre sus registros y la existencia real. Usa Excel y WhatsApp, con smartphone y laptop como dispositivos y Google Chrome como navegador.
+*Descripción.* La ficha presenta a Carlos Mendoza como arquetipo del segmento Comercializador: administrador de una licorería o bodega de Lima, de 29 años (promedio de edad de los cuatro comercializadores entrevistados), que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son saber cuánto stock tiene sin revisar el almacén, evitar quiebres de stock y recibir una alerta para reponer a tiempo; sus frustraciones son quedarse sin productos cuando el cliente los pide, los sistemas complejos que abandonó y la reposición decidida por intuición. Usa el smartphone como dispositivo principal, WhatsApp y Excel. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
+
+**Trazabilidad de las User Personas con las entrevistas.** La User Persona es un arquetipo: solo incluye los atributos que comparte la mayoría de los entrevistados de su segmento, tal como se registró en la sección 2.2.2 y se cuantificó en la sección 2.2.3. Los atributos que solo mencionó una persona, o que no se preguntaron, no se incluyen en la ficha; en particular, no se asignan estado civil, marca de dispositivo, sistema operativo, navegador ni tamaño de mercado, porque las entrevistas no los registran para la mayoría de los entrevistados.
+
+| Atributo de la ficha de Ricardo Donayre (Productor) | Respaldo en las entrevistas (n = 3) | Fuente |
+| :--- | :--- | :--- |
+| Edad de 33 años | Promedio de 32.7 años (edades 19, 20 y 59) | E1, E2, E3 |
+| Administrador de una bodega familiar | 2 de 3 son administradoras de negocio familiar; 1 es propietario y productor | E1, E3 (E2) |
+| Sede comercial en Lima y producción en un valle pisquero | 2 de 3 tienen la bodega fuera de Lima (Mala e Ica) y la sede en Lima | E2, E3 |
+| Smartphone como dispositivo principal | 3 de 3 | E1, E2, E3 |
+| Usa Excel | 3 de 3 | E1, E2, E3 |
+| Usa Instagram y Facebook | 3 de 3 | E1, E2, E3 |
+| Usa WhatsApp para pedidos y clientes | 2 de 3 (1 no registrado) | E1, E3 |
+| Objetivo: monitorear a distancia las variables críticas | 3 de 3 reportan dificultad para monitorear variables; 2 de 3 piden alertas en el celular o monitoreo remoto | E1, E2, E3 |
+| Objetivo: centralizar lotes e inventario | 2 de 3 reportan errores o desfases en registros de lotes o stock | E1, E3 |
+| Frustración: enterarse tarde de una temperatura anómala | 3 de 3 monitorean de forma manual; 1 perdió un lote | E1, E2, E3 |
+| Frustración: viajes y visitas a la bodega | 2 de 3 supervisan de forma presencial con frecuencia | E2, E3 |
+| Frustración: descuadres entre el stock real y Excel | 2 de 3 | E1, E3 |
+| Disposición de pago: S/ 50 a S/ 100 mensuales | 3 de 3; punto medio promedio S/ 78.3 | E1, E2, E3 |
+
+| Atributo de la ficha de Carlos Mendoza (Comercializador) | Respaldo en las entrevistas (n = 4) | Fuente |
+| :--- | :--- | :--- |
+| Edad de 29 años | Promedio de 29.0 años (edades 22, 24, 29 y 41) | E4, E5, E6, E7 |
+| Administrador de una licorería o bodega en Lima | 3 de 4 son administradores; 1 es propietario | E5, E6, E7 (E4) |
+| Maneja entre 80 y 150 productos | 3 de 4 precisaron su oferta: entre 80 y 150 productos | E5, E6, E7 |
+| Smartphone como dispositivo principal | 4 de 4 | E4, E5, E6, E7 |
+| Usa cuaderno para el inventario | 4 de 4 | E4, E5, E6, E7 |
+| Usa Excel | 3 de 4 | E4, E5, E6 |
+| Usa WhatsApp con proveedores | 4 de 4 | E4, E5, E6, E7 |
+| Objetivo: saber cuánto stock tiene sin revisar el almacén | 4 de 4 | E4, E5, E6, E7 |
+| Objetivo: recibir una alerta para reponer a tiempo | 4 de 4 desean alertas automáticas en el celular | E4, E5, E6, E7 |
+| Frustración: quedarse sin stock con clientes esperando | 4 de 4; promedio de 1.83 veces al mes (3 con dato) | E4, E5, E6, E7 |
+| Frustración: sistemas complejos que abandonó | 3 de 4 abandonaron una herramienta previa | E5, E6, E7 |
+| Frustración: reposición decidida por intuición | 4 de 4 | E4, E5, E6, E7 |
+| Disposición de pago: S/ 30 a S/ 80 mensuales | 4 de 4; punto medio promedio S/ 56.2 | E4, E5, E6, E7 |
+
+La laptop (1 de 3 productores y 1 de 4 comercializadores) no alcanza mayoría y por eso no figura como dispositivo del arquetipo. Tampoco hay un navegador mayoritario: solo un productor (E2) mencionó Google Chrome.
 
 
 #### 2.3.2. User Task Matrix
@@ -1592,9 +1660,9 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 ### 2.4. Big Picture EventStorming
 
-EventStorming es una técnica de modelado colaborativo creada por Alberto Brandolini en la que personas de negocio y de tecnología construyen, sobre una superficie compartida y con notas adhesivas, una línea de tiempo de los eventos relevantes de un dominio (Brandolini, 2021). Su variante *Big Picture* se utiliza al inicio de un proyecto para explorar toda la línea de negocio, descubrir el vocabulario común y detectar puntos de incertidumbre antes de entrar en el detalle del software.
+EventStorming es una técnica de modelado colaborativo creada por Alberto Brandolini en la que personas de negocio y de tecnología construyen, sobre una superficie compartida y con notas adhesivas, una línea de tiempo de los eventos relevantes de un dominio (Brandolini, 2021). Su variante *Big Picture* se utiliza al inicio de un proyecto para explorar toda la línea de negocio **tal como funciona hoy**, descubrir el vocabulario común y detectar los puntos de dolor antes de pensar en software.
 
-Para Destilatech se aplicó esta variante a los dos flujos principales de la plataforma: el del **productor de pisco** y el del **comercializador**. El resultado se documentó en dos tableros, uno por flujo, elaborados en Miro.
+Por esta razón, los tableros de Destilatech modelan el negocio **as-is**: los eventos corresponden a lo que los productores y comercializadores entrevistados hacen actualmente con su cuaderno, su hoja de Excel y WhatsApp. Los eventos que existirían solo gracias a la plataforma (por ejemplo, «usuario registrado», «alerta generada» o «suscripción contratada») no pertenecen al Big Picture; aparecen recién en el Design-Level EventStorming (sección 4.6.1), donde se analiza cómo la solución modifica este flujo. Cada evento de los tableros se sustenta en las entrevistas de la sección 2.2.2, identificadas como E1 a E7: E1 Luciana Cueva, E2 Mario Fernández y E3 Stacy Guerra (productores); E4 Marco Vargas, E5 Carlos Moreno, E6 Rubens Moreno y E7 Andrea Mendoza (comercializadores).
 
 #### 2.4.1. Pasos del Big Picture EventStorming
 
@@ -1602,121 +1670,164 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 | Paso | Qué se hace | Resultado en los tableros de Destilatech |
 | :---: | :--- | :--- |
-| 1. Definir el objetivo | Acordar el alcance del dominio que se va a explorar. | Alcance: producción, inventario y comercialización de pisco, y la contratación de la suscripción (modelo B2B SaaS con prueba gratuita de 14 días). Se modelan dos flujos: productor y comercializador. |
-| 2. Exploración caótica | Escribir sin orden la mayor cantidad posible de eventos de dominio en notas naranjas. | Eventos redactados en pasado (por ejemplo, «Lote de producción registrado», «Venta registrada»). |
-| 3. Línea de tiempo | Ordenar los eventos cronológicamente, eliminar duplicados y ajustar la redacción. | Cada flujo se presenta como una secuencia de izquierda a derecha: 10 eventos en el flujo del productor y 9 en el del comercializador. |
-| 4. Personas y sistemas | Identificar los sistemas externos (notas rosa) y los objetos del dominio que acompañan a cada evento. | Sensor IoT simulado, pasarela de pago y WhatsApp como sistemas; notas amarillas con los objetos (Lote de Producción, Inventario de Productor, Stock del Producto, Pedido a Proveedor, entre otros). |
-| 5. Recorrido explícito | Leer la línea de tiempo en orden, de principio a fin, y verificar que cada evento tenga sentido y no falten pasos. | Cada flujo se recorre desde la creación de la cuenta hasta la contratación de la suscripción. |
-| 6. Problemas y oportunidades | Marcar con notas rojas (hotspots) las dudas, conflictos y riesgos, y reconocer las oportunidades de mejora. | 5 hotspots en el flujo del productor y 4 en el del comercializador (secciones 2.4.3 y 2.4.4). |
-| 7. Agrupación | Reunir los eventos y objetos relacionados para reconocer áreas candidatas del dominio. | Seis áreas candidatas (sección 2.4.5). |
+| 1. Definir el objetivo | Acordar el alcance del dominio que se va a explorar. | Alcance: cómo se producen, registran, venden y reponen hoy el pisco de los entrevistados, sin considerar la plataforma. Se modelan dos flujos: productor y comercializador. |
+| 2. Exploración caótica | Escribir sin orden la mayor cantidad posible de eventos de dominio en notas naranjas, redactados en pasado. | Eventos extraídos de los resúmenes de las siete entrevistas (por ejemplo, «Mosto puesto a fermentar», «Venta perdida por producto agotado»). |
+| 3. Línea de tiempo | Ordenar los eventos cronológicamente, eliminar duplicados y ajustar la redacción. | Línea de tiempo de izquierda a derecha: 16 eventos en el flujo del productor y 10 en el del comercializador. |
+| 4. Eventos pivote | Reconocer los eventos que cierran una fase del proceso y abren otra. | Se identifican sobre las líneas de tiempo de cada flujo (sección 2.4.6). |
+| 5. Actores y sistemas | Identificar quién actúa en cada evento y qué herramientas externas usa (notas rosa). | Cuaderno, Excel, WhatsApp, Yape/Plin, termómetros y redes sociales como herramientas actuales; notas amarillas con los objetos (Lote, Mosto, Existencias, Pedido, entre otros). |
+| 6. Recorrido explícito | Leer la línea de tiempo en orden y verificar que cada evento tenga sentido y no falten pasos. | Cada flujo se recorre desde la recepción de la uva (productor) o de la mercadería (comercializador) hasta el punto donde el negocio vuelve a empezar su ciclo. |
+| 7. Problemas y oportunidades | Marcar con notas rojas (hotspots) los problemas reales que describieron los entrevistados y reconocer oportunidades. | 5 hotspots en el flujo del productor y 5 en el del comercializador (secciones 2.4.3 y 2.4.4). |
+| 8. Agrupación | Reunir los eventos y objetos relacionados para reconocer áreas candidatas del dominio. | Cuatro áreas candidatas del negocio actual (sección 2.4.5). |
 
 **Leyenda de notas.** Se usó la convención de colores de EventStorming (Baas-Schwegler & Richardson, s. f.), adaptada al alcance del Big Picture:
 
 | Nota | Elemento | Descripción | Ejemplo en Destilatech |
 | :--- | :--- | :--- | :--- |
-| Naranja | Evento de dominio | Hecho relevante ocurrido en el negocio, redactado en pasado. | «Lote de producción registrado» |
-| Amarillo pequeño | Actor | Persona, rol o departamento que provoca o recibe un evento. | Productor, Comercializador, Proveedor |
-| Amarillo claro (grande) | Objeto del dominio | Concepto o entidad sobre la que ocurre el evento. | «Lote de Producción», «Stock del Producto» |
-| Rosa (ancha) | Sistema externo | Solución de TI ajena a Destilatech que dispara o recibe eventos. | Sensor IoT (simulado), Pasarela de pago, WhatsApp |
-| Rojo / rosa intenso | Hotspot | Duda, conflicto o riesgo que requiere investigación. | «¿Cómo se detecta sin monitoreo automático?» |
-| Verde | Oportunidad | Mejora positiva identificada a partir de un hotspot. | Alertas automáticas de condición anómala |
+| Naranja | Evento de dominio | Hecho relevante ocurrido hoy en el negocio, redactado en pasado. | «Mosto puesto a fermentar» |
+| Amarillo pequeño | Actor | Persona o rol que provoca o recibe un evento. | Productor, Operario, Comercializador, Proveedor |
+| Amarillo claro (grande) | Objeto del dominio | Concepto sobre el que ocurre el evento. | «Lote», «Existencias» |
+| Rosa (ancha) | Sistema o herramienta externa | Herramienta ajena a Destilatech que se usa hoy en el proceso. | Cuaderno, Excel, WhatsApp |
+| Rojo / rosa intenso | Hotspot | Problema, duda o riesgo que los entrevistados vivieron o describieron. | «Lote malogrado por temperatura detectada tarde» |
+| Verde | Oportunidad | Mejora posible identificada a partir de un hotspot (no es un evento). | Conocer el stock sin revisar el almacén |
 
 #### 2.4.2. Actores identificados
 
-| Actor | Rol en el dominio | Eventos que provoca o recibe |
-| :--- | :--- | :--- |
-| Productor de pisco | Propietario o administrador de una bodega que elabora pisco. | Registra lotes, recibe alertas de condiciones anómalas, actualiza su inventario y contrata la suscripción. |
-| Comercializador | Propietario o administrador de una licorería, bodega o distribuidor. | Registra ventas, recibe alertas de reposición, envía pedidos al proveedor, recibe mercadería y contrata la suscripción. |
-| Proveedor | Productor o distribuidor que abastece al comercializador. | Confirma los pedidos del comercializador. |
-
-Los tableros de Miro representan los flujos mediante eventos, objetos y sistemas; los actores se identificaron a partir de los propios flujos y se documentan en esta sección.
+| Actor | Rol en el dominio actual | Eventos que provoca o recibe | Fuente |
+| :--- | :--- | :--- | :--- |
+| Productor de pisco (propietario o administrador) | Dirige la bodega, supervisa el proceso y administra lotes, inventario y pedidos. | Recibe la uva, supervisa la fermentación y la destilación, anota lotes y ventas, cuenta el producto terminado y atiende pedidos. | E1, E2, E3 |
+| Operario de bodega | Ejecuta tareas de producción: pesaje, despalillado, prensado y manejo del alambique. | Participa en los eventos de preparación de la uva y de destilación. | E2 |
+| Vendedor del productor | Visita periódicamente a los clientes para ofrecer degustaciones y recoger necesidades. | Provoca la recepción de pedidos de clientes. | E2 |
+| Comercializador (propietario o administrador) | Administra una licorería o bodega: ventas, revisión de existencias, compras e inventario. | Registra (o no) las ventas, revisa el almacén, decide la reposición y pide mercadería. | E4, E5, E6, E7 |
+| Cliente | Persona o negocio que compra pisco al productor o al comercializador. | Hace pedidos por WhatsApp o en mostrador; se va sin comprar si el producto está agotado. | E1 a E7 |
+| Proveedor o distribuidor | Abastece de pisco y otras bebidas al comercializador (distribuidores y productores artesanales). | Recibe el pedido por WhatsApp, responde (a veces con demora) y entrega la mercadería. | E4 a E7 |
 
 #### 2.4.3. Flujo del Productor
 
 **Figura 31**
 
-*Big Picture EventStorming: flujo del productor*
+*Big Picture EventStorming: flujo del productor (as-is)*
 
-<p align="center"><img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture EventStorming: flujo del productor" width="900"></p>
+<p align="center"><img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture EventStorming: flujo del productor (as-is)" width="900"></p>
 
 *Nota.* Elaboración propia en Miro (2026).
 
-*Descripción.* El tablero muestra, de izquierda a derecha, diez notas naranja con los eventos del flujo del productor, desde «Cuenta de productor creada» hasta «Suscripción contratada». Debajo de cada evento aparecen las notas amarillas con los objetos del dominio y, en rosa, los sistemas externos (sensor IoT simulado y pasarela de pago). Encima de cinco eventos se ubican notas rojas con preguntas abiertas sobre la pasarela de pago, la integración de sensores reales, la detección sin monitoreo automático, el conteo manual de stock y la confiabilidad de la estimación.
+*Descripción.* El tablero muestra, de izquierda a derecha, dieciséis notas naranja con los eventos que hoy ocurren en una bodega de pisco, desde «Uva cosechada» hasta «Venta anotada en Excel». Debajo de los eventos aparecen los actores (notas amarillas pequeñas), los objetos del dominio (amarillo claro) y, en rosa, las herramientas que se usan hoy (termómetro, alambique, cuaderno, Excel y WhatsApp); debajo de cada hotspot hay una oportunidad en verde y los eventos pivote se marcan con una línea vertical morada. Encima de cinco eventos se ubican notas rojas con los problemas descritos por los entrevistados: la detección tardía de la temperatura anómala, la supervisión presencial en bodegas lejanas, el registro doble en cuaderno y Excel, el conteo físico periódico y las ventas anotadas con retraso.
 
-
-| N.° | Evento de dominio | Objetos del dominio | Sistema externo |
-| :---: | :--- | :--- | :--- |
-| 1 | Cuenta de productor creada | Cuenta de Productor | — |
-| 2 | Prueba gratuita de 14 días iniciada | Periodo de Prueba; Prueba gratuita | — |
-| 3 | Lote de producción registrado | Lote de Producción | — |
-| 4 | Fermentación monitoreada (IoT simulado) | — | Sensor IoT (simulado) |
-| 5 | Condición anómala detectada | Lote de producción | — |
-| 6 | Destilación completada | Lote en Destilación | — |
-| 7 | Lote embotellado | Producto Embotellado | — |
-| 8 | Inventario de productor actualizado | Inventario de Productor | — |
-| 9 | Estimación de reposición generada | Estimación de Reposición; Historial de movimientos | — |
-| 10 | Suscripción contratada | — | Pasarela de pago |
+| N.° | Evento de dominio (as-is) | Objetos del dominio | Herramienta o sistema actual | Fuente |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | Uva cosechada | Uva | — | E2, E3 |
+| 2 | Uva recibida y pesada | Uva | — | E1, E2, E3 |
+| 3 | Uva despalillada y prensada; mosto obtenido | Mosto | — | E1, E2, E3 |
+| 4 | Mosto puesto a fermentar | Mosto; Lote | Tanque | E1, E2, E3 |
+| 5 | Temperatura del tanque revisada en visita presencial | Lote en fermentación | Termómetro | E2, E3 |
+| 6 | Lote malogrado por una temperatura anómala detectada tarde | Lote en fermentación | — | E1 |
+| 7 | Fermentación concluida | Lote | — | E1, E2, E3 |
+| 8 | Fermentado destilado; cabeza y cola separadas | Lote en destilación | Alambique | E1, E2, E3 |
+| 9 | Pisco puesto en reposo | Lote en reposo | Tanque | E1, E2, E3 |
+| 10 | Controles de calidad y filtrado realizados | Lote en reposo | — | E1, E2 |
+| 11 | Pisco embotellado y etiquetado | Lote; Botellas | — | E1, E2, E3 |
+| 12 | Lote anotado en cuaderno y luego en Excel | Lote | Cuaderno; Excel | E1, E2, E3 |
+| 13 | Producto terminado contado físicamente | Existencias | Cuaderno; Excel | E1, E3 |
+| 14 | Pedido de cliente recibido | Pedido; Cliente | WhatsApp | E1, E3 |
+| 15 | Pedido despachado al cliente | Pedido | — | E2 |
+| 16 | Venta anotada en Excel, a veces con retraso | Venta; Existencias | Excel | E1, E3 |
 
 **Hotspots del flujo del productor**
 
-| Evento asociado | Hotspot (nota roja) | Riesgo o incertidumbre | Oportunidad identificada |
+| Evento asociado | Hotspot (nota roja) | Evidencia en las entrevistas | Oportunidad identificada |
 | :--- | :--- | :--- | :--- |
-| Prueba gratuita de 14 días iniciada | ¿Qué pasarela de pago se integrará para las suscripciones? | No está definido el medio de cobro al terminar la prueba. | Evaluar una pasarela de pago antes de implementar la contratación de planes. |
-| Lote de producción registrado | ¿Qué pasa con los datos simulados al integrar sensores reales? | Los datos simulados podrían no representar el comportamiento de sensores físicos. | Definir un formato de lectura común para datos simulados y reales. |
-| Condición anómala detectada | ¿Cómo se detecta sin monitoreo automático? | Sin monitoreo automático, la detección depende de revisiones manuales (como en las entrevistas). | Alertas automáticas cuando una variable sale del rango configurado. |
-| Inventario de productor actualizado | El conteo de stock manual genera errores | El registro manual produce desfases entre el stock real y el registrado. | Registro de movimientos de inventario que actualice el stock automáticamente. |
-| Estimación de reposición generada | ¿Qué tan confiable es la estimación inicial? | Con poco historial, la estimación puede ser poco precisa. | Indicar el nivel de confianza o la falta de datos junto a cada estimación. |
+| 5 y 6. Temperatura revisada en visita presencial; lote malogrado | La condición anómala solo se detecta de forma manual, cuando ya afectó al lote. | Los 3 productores (3/3) describen dificultad para monitorear variables; E1 perdió un lote por la temperatura de la fermentación. | Enterarse de que una variable salió de su rango mientras todavía se puede corregir. |
+| 5. Temperatura del tanque revisada | La supervisión exige visitar la bodega varias veces al día, aunque la bodega esté lejos de la sede comercial. | E3 visita los tanques varias veces al día; las bodegas de E2 y E3 están en Mala (Cañete) e Ica, fuera de Lima (2/3). | Monitorear los tanques sin estar físicamente en la bodega. |
+| 12. Lote anotado en cuaderno y luego en Excel | El mismo dato se anota dos veces, lo que genera errores y demoras. | E1 describe errores y demoras sobre todo cuando entran varios pedidos a la vez (2/3 reportan errores o desfases). | Registrar el lote una sola vez. |
+| 13. Producto terminado contado físicamente | El stock real solo se conoce con un conteo físico periódico. | E1 lo hace cada semana; E3 revisa y actualiza el inventario de forma quincenal o mensual. | Conocer el stock sin contar físicamente. |
+| 16. Venta anotada en Excel, a veces con retraso | Algunas ventas no se registran de inmediato y aparecen discrepancias. | E3 reconoce pequeñas discrepancias por ventas no registradas a tiempo. | Registrar cada venta al momento en que ocurre. |
 
 #### 2.4.4. Flujo del Comercializador
 
 **Figura 32**
 
-*Big Picture EventStorming: flujo del comercializador*
+*Big Picture EventStorming: flujo del comercializador (as-is)*
 
-<p align="center"><img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture EventStorming: flujo del comercializador" width="900"></p>
+<p align="center"><img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture EventStorming: flujo del comercializador (as-is)" width="900"></p>
 
 *Nota.* Elaboración propia en Miro (2026).
 
-*Descripción.* El tablero presenta nueve eventos naranja del flujo del comercializador, desde «Cuenta de comercializador creada» hasta «Suscripción contratada», con los objetos de dominio en amarillo y los sistemas externos WhatsApp y pasarela de pago en rosa. Cuatro notas rojas señalan dudas sobre la detección oportuna del bajo stock, la confirmación de pedidos fuera de WhatsApp, la conciliación del inventario con un proveedor que también use Destilatech y la naturaleza del proveedor.
+*Descripción.* El tablero presenta diez eventos naranja del flujo de una licorería o bodega, desde «Mercadería recibida y guardada» hasta «Mercadería recibida tras el pedido», con los actores y objetos de dominio en amarillo y las herramientas actuales (cuaderno, Excel, WhatsApp, Yape y Plin) en rosa. Cinco notas rojas señalan los problemas descritos por los cuatro comercializadores: las ventas sin registrar en horas de mucha demanda, el producto agotado que se descubre cuando el cliente lo pide, la reposición decidida por intuición, la coordinación por WhatsApp con demoras y las herramientas digitales abandonadas; cada hotspot tiene su oportunidad en verde.
 
-
-| N.° | Evento de dominio | Objetos del dominio | Sistema externo |
-| :---: | :--- | :--- | :--- |
-| 1 | Cuenta de comercializador creada | Cuenta de Comercializador | — |
-| 2 | Inventario del comercializador actualizado | Producto | — |
-| 3 | Venta registrada | Venta | — |
-| 4 | Stock bajo detectado | Stock del Producto; Umbral de stock bajo | — |
-| 5 | Alerta de reposición generada | Alerta de Reposición; Nivel de stock | — |
-| 6 | Pedido a proveedor enviado | — | WhatsApp |
-| 7 | Pedido confirmado por el proveedor | Pedido a Proveedor | — |
-| 8 | Mercadería recibida | Mercadería Recibida; Pedido | — |
-| 9 | Suscripción contratada | — | Pasarela de pago |
+| N.° | Evento de dominio (as-is) | Objetos del dominio | Herramienta o sistema actual | Fuente |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | Mercadería recibida y guardada en el almacén | Mercadería; Existencias | — | E7 (y reposición en E4 a E6) |
+| 2 | Venta realizada en el mostrador | Venta; Cliente | Yape; Plin | E7 |
+| 3 | Venta anotada en cuaderno o Excel, cuando hay tiempo | Venta; Existencias | Cuaderno; Excel | E4, E5, E7 |
+| 4 | Existencias revisadas a ojo en el almacén | Existencias | Cuaderno; Excel | E4, E5, E6, E7 |
+| 5 | Producto agotado sin que el dueño lo note | Existencias | — | E4, E5, E6, E7 |
+| 6 | Cliente pide un producto agotado y la venta se pierde | Cliente; Venta perdida | — | E4, E5, E6, E7 |
+| 7 | Cantidad a reponer decidida por experiencia o por promociones | Reposición | — | E4, E5, E6, E7 |
+| 8 | Pedido enviado al proveedor | Pedido a proveedor | WhatsApp | E4, E5, E6, E7 |
+| 9 | Respuesta del proveedor recibida, a veces con demora o faltante | Pedido a proveedor | WhatsApp | E7 |
+| 10 | Mercadería recibida tras el pedido | Mercadería; Existencias | — | E7 (y reposición en E4 a E6) |
 
 **Hotspots del flujo del comercializador**
 
-| Evento asociado | Hotspot (nota roja) | Riesgo o incertidumbre | Oportunidad identificada |
+| Evento asociado | Hotspot (nota roja) | Evidencia en las entrevistas | Oportunidad identificada |
 | :--- | :--- | :--- | :--- |
-| Stock bajo detectado | No siempre se nota el bajo stock a tiempo | El quiebre se descubre cuando el cliente pide el producto (entrevistas #4 a #7). | Alerta de stock bajo basada en un umbral configurable por producto. |
-| Pedido a proveedor enviado | ¿Cómo confirmar pedidos fuera de WhatsApp? | La coordinación con proveedores ocurre hoy por WhatsApp, sin registro estructurado. | Registrar el pedido y su estado dentro de la plataforma, sin dejar de usar WhatsApp como canal. |
-| Pedido confirmado por el proveedor | ¿Cómo se concilia el inventario si el proveedor también usa Destilatech? | Un mismo movimiento podría registrarse dos veces, en la cuenta del proveedor y en la del comercializador. | Definir una regla de conciliación entre cuentas. |
-| Mercadería recibida | ¿El proveedor del comercializador es otro productor en Destilatech o uno externo? | Los flujos de abastecimiento difieren según el proveedor tenga o no cuenta. | Permitir registrar proveedores externos y, a futuro, vincular proveedores con cuenta. |
+| 3. Venta anotada en cuaderno o Excel | Las ventas no siempre se registran, sobre todo en horas de mayor demanda. | E4, E5 y E7 no registran todas las ventas por la carga de trabajo (3/4). | Registrar una venta con pocos pasos, desde el celular. |
+| 5 y 6. Producto agotado; venta perdida | El producto se agota sin que el dueño lo note y se descubre cuando el cliente lo pide. | Los 4 comercializadores (4/4) se quedaron sin stock con clientes esperando, entre 1 y 3 veces al mes; se agrava en fechas de alta demanda. | Saber que un producto está por agotarse antes de que ocurra. |
+| 7. Cantidad a reponer decidida por experiencia | La reposición se decide por experiencia, a ojo o según el espacio libre en los estantes. | 4/4 deciden por experiencia; E7 calcula a ojo según el espacio de los estantes. | Decidir la reposición con datos del propio negocio. |
+| 8 y 9. Pedido enviado y respuesta del proveedor | La coordinación por WhatsApp no deja un registro estructurado y hay demoras o faltantes. | 4/4 usan WhatsApp con sus proveedores; E7 enfrenta demoras y faltantes imprevistos. | Llevar el registro del pedido sin dejar de usar WhatsApp. |
+| General (herramientas actuales) | Las herramientas digitales probadas se abandonaron por complicadas o poco ágiles. | E5 y E6 dejaron un sistema de inventario y E7 una hoja de cálculo (3/4). | Una herramienta con pocos pasos que no frene la atención en el mostrador. |
 
 #### 2.4.5. Áreas candidatas identificadas
 
-Al agrupar los eventos y objetos de ambos tableros por afinidad, se reconocen seis áreas candidatas del dominio:
+Al agrupar los eventos y objetos de ambos tableros por afinidad, se reconocen cuatro áreas candidatas del negocio actual:
 
 | Área candidata | Eventos y objetos que agrupa |
 | :--- | :--- |
-| Cuentas y suscripción | Cuenta de productor y de comercializador creadas; prueba gratuita de 14 días; suscripción contratada; pasarela de pago. |
-| Producción y monitoreo | Lote de producción registrado; fermentación monitoreada; destilación completada; lote embotellado; sensor IoT simulado. |
-| Inventario y stock | Inventario del productor y del comercializador actualizados; producto; stock del producto; historial de movimientos; venta registrada. |
-| Pedidos y reposición | Pedido a proveedor enviado, confirmado y recibido; mercadería recibida; WhatsApp. |
-| Alertas y notificaciones | Condición anómala detectada; stock bajo detectado; alerta de reposición generada; umbral de stock bajo. |
-| Analítica y estimaciones | Estimación de reposición generada; historial de movimientos; nivel de stock. |
+| Producción del pisco | Productor, eventos 1 a 11: cosecha, recepción, prensado, fermentación, destilación, reposo, controles y embotellado; objetos Uva, Mosto, Lote, Botellas; herramientas termómetro y alambique. |
+| Registro de lotes y existencias | Productor, eventos 12, 13 y 16; comercializador, eventos 1, 3, 4 y 5: anotación de lotes y ventas, conteo físico y revisión del almacén; objetos Lote, Existencias; cuaderno y Excel. |
+| Ventas y atención al cliente | Productor, eventos 14 y 15; comercializador, eventos 2 y 6: pedidos de clientes, ventas en mostrador, venta perdida; objetos Pedido, Venta, Cliente; WhatsApp, Yape y Plin. |
+| Reposición y abastecimiento | Comercializador, eventos 7 a 10: decisión de cuánto reponer, pedido al proveedor, respuesta y recepción de la mercadería; objetos Reposición, Pedido a proveedor, Mercadería; WhatsApp. |
 
-#### 2.4.6. Conclusiones del Big Picture
+Estas áreas describen cómo se organiza hoy el negocio, no cómo se organizará el software. La relación entre ellas y los *bounded contexts* de la solución se explica en la sección 4.6.1.
 
-Los dos flujos comparten el inicio (creación de cuenta) y el cierre (suscripción contratada), pero se diferencian en el centro: el productor concentra eventos de producción y monitoreo, y el comercializador, eventos de detección de bajo stock y abastecimiento. Los nueve hotspots señalan que los mayores riesgos del dominio son la **detección tardía de condiciones anómalas y de bajo stock**, el **registro manual** del inventario y la **definición de la pasarela de pago y de la conciliación entre cuentas**. Las seis áreas candidatas muestran que el dominio puede organizarse en partes con responsabilidades diferenciadas, que comparten información como productos, inventario y alertas.
+#### 2.4.6. Eventos pivote y lenguaje ubicuo descubierto
+
+**Secuencia de los eventos.** En el flujo del productor los eventos siguen el orden del proceso productivo (de la uva al pisco embotellado) y luego el de la comercialización (del pedido a la venta anotada). En el flujo del comercializador el orden es el de un ciclo: se vende, se revisa lo que queda, se descubre lo que falta, se decide qué reponer, se pide, se recibe y se vuelve a vender. Los eventos pivote son los que cierran una fase de ese recorrido y abren otra; marcan dónde cambian el actor, el objeto del dominio o el significado de los términos y, por eso, son candidatos a frontera entre áreas.
+
+| Flujo | Evento pivote | Fase que cierra → fase que abre | Áreas candidatas que separa |
+| :--- | :--- | :--- | :--- |
+| Productor | 4. Mosto puesto a fermentar | Preparación de la uva → proceso en tanque | Producción del pisco (dos fases) |
+| Productor | 7. Fermentación concluida | Fermentación → destilación | Producción del pisco (dos fases) |
+| Productor | 11. Pisco embotellado y etiquetado | Producción → producto terminado en existencias | Producción del pisco / Registro de lotes y existencias |
+| Productor | 14. Pedido de cliente recibido | Producto terminado disponible → venta | Registro de lotes y existencias / Ventas y atención al cliente |
+| Comercializador | 6. Cliente pide un producto agotado | Venta y revisión del almacén → necesidad de reposición | Ventas y atención al cliente / Reposición y abastecimiento |
+| Comercializador | 8. Pedido enviado al proveedor | Decisión de reposición → abastecimiento | Reposición y abastecimiento (dos fases) |
+| Comercializador | 10. Mercadería recibida tras el pedido | Abastecimiento → existencias en el almacén | Reposición y abastecimiento / Registro de lotes y existencias |
+
+Los pivotes más relevantes para el diseño son los cuatro que cruzan de un área a otra: «Pisco embotellado y etiquetado», «Pedido de cliente recibido», «Cliente pide un producto agotado» y «Mercadería recibida tras el pedido». Sirven de punto de partida para definir los *bounded contexts* en el Design-Level EventStorming (sección 4.6.1).
+
+**Lenguaje ubicuo descubierto.** Los términos de la tabla son los que usan los entrevistados para nombrar su negocio; el equipo los recogió tal como los dicen. La tabla los relaciona con las entradas del glosario de la sección 2.5, donde se definen sin ambigüedad.
+
+| Término usado por los entrevistados | Quién lo usa | Término del glosario (sección 2.5) |
+| :--- | :--- | :--- |
+| Lote | E1, E2, E3 | Batch (Lote) |
+| Mosto, mosto verde | E2 (productos), E3 | Must (Mosto) |
+| Fermentación (tanques, temperatura) | E1, E2, E3 | Fermentation (Fermentación) |
+| Destilación; separación de cabeza y cola | E1, E2, E3 | Distillation (Destilación) y Heads and Tails (Cabeza y cola) |
+| Reposo | E1, E2, E3 | Resting Period (Reposo) |
+| Embotellado, etiquetado | E1, E2, E3 | Bottling (Embotellado) |
+| Existencias, stock | E1 a E7 | Inventory Item (Existencia) |
+| Conteo físico, revisar el almacén | E1, E3, E4 a E7 | Physical Count (Conteo físico) |
+| Quedarse sin stock, quiebre de stock | E4 a E7 | Stockout (Quiebre de stock) |
+| Reposición, reponer | E4 a E7 | Replenishment (Reposición) |
+| Pedido (de cliente o al proveedor) | E1 a E7 | Order (Pedido) |
+| Proveedor, distribuidor | E4 a E7 | Supplier (Proveedor) |
+| Cliente | E1 a E7 | Customer (Cliente) |
+| Productor, comercializador | E1 a E7 | Producer (Productor) y Retailer (Comercializador) |
+
+#### 2.4.7. Conclusiones del Big Picture
+
+En el negocio actual los dos flujos están conectados por el producto: lo que el productor embotella y vende al cliente es lo que el comercializador pide a su proveedor. Los diez hotspots señalan los mismos tres problemas de fondo: el **monitoreo manual del proceso** (la temperatura solo se detecta tarde y obliga a visitar la bodega), el **registro manual y tardío** de lotes, ventas y existencias en cuaderno y Excel, y la **reposición decidida a ojo**, que termina en productos agotados y ventas perdidas. Las cuatro áreas candidatas muestran que el negocio actual puede separarse en producción, registro de lotes y existencias, ventas y reposición, con la información de las existencias como punto de contacto entre todas. Estos hallazgos coinciden con las necesidades de los User Personas (sección 2.3.1) y son el punto de partida del Design-Level EventStorming, donde se define qué cambia la solución en este flujo.
 
 
 ### 2.5. Ubiquitous Language
@@ -1736,6 +1847,9 @@ El siguiente glosario recoge los términos del dominio de negocio de Destilatech
 | **Retailer** (Comercializador) | Segmento complementario de usuario: negocio (licorería, bodega, minimarket, distribuidor) que compra pisco y otras bebidas para revenderlas al consumidor final. |
 | **Inventory Item** (Ítem de inventario / Existencia) | Producto o presentación específica que se controla dentro del inventario de un productor o comercializador. |
 | **Stock Movement** (Movimiento de inventario) | Registro de una entrada o salida de cantidad de un ítem de inventario. |
+| **Stockout** (Quiebre de stock) | Situación en la que un producto se agota y no puede venderse cuando un cliente lo solicita. |
+| **Physical Count** (Conteo físico) | Revisión directa de las existencias en el almacén para verificar la cantidad real de cada producto. |
+| **Heads and Tails** (Cabeza y cola) | Fracciones inicial y final de la destilación que se separan del cuerpo del destilado que continúa hacia el reposo. |
 | **Replenishment** (Reposición) | Acción de reabastecer un ítem de inventario cuando su cantidad disponible cae por debajo de lo necesario. |
 | **Low-Stock Alert** (Alerta de stock bajo) | Notificación automática generada cuando el stock de un producto alcanza o cae por debajo del umbral configurado. |
 | **Anomaly Alert** (Alerta de anomalía) | Notificación automática generada cuando una variable monitoreada del proceso productivo se sale del rango configurado como normal. |
@@ -1751,87 +1865,87 @@ El siguiente glosario recoge los términos del dominio de negocio de Destilatech
 
 ### 3.1. User Stories
 
-Las historias de usuario describen una funcionalidad desde el punto de vista de quien la usa y del valor que obtiene; se redactan con la estructura «Como [rol] quiero [necesidad] para [beneficio]» (Cohn, 2004). Sus criterios de aceptación se escriben en lenguaje Gherkin (*Given*, *When*, *Then*), en tercera persona y en presente, con al menos dos escenarios por historia: uno principal y otro de excepción o validación.
+Las historias de usuario describen una funcionalidad desde el punto de vista de quien la usa y del valor que obtiene; se redactan con la estructura «Como [rol] quiero [necesidad] para [beneficio]» (Cohn, 2004). Sus criterios de aceptación se escriben en lenguaje Gherkin (*Given*, *When*, *Then*), en tercera persona y en presente, con al menos tres escenarios por historia. Los escenarios no se limitan al éxito y al fallo: cubren el flujo principal, las validaciones y excepciones, y otras condiciones de aceptación como estados vacíos, permisos por tipo de usuario, persistencia de los datos o comportamiento en distintos dispositivos.
 
 Las Épicas agrupan historias relacionadas. Además de las historias orientadas a visitantes, productores y comercializadores, se incluyen las **Technical Stories** (rol *Developer*), que especifican los endpoints del API REST necesarios para soportar las funcionalidades anteriores mediante solicitud y respuesta HTTP. Todas se presentan en una única tabla: 10 Épicas, 51 historias de usuario y 14 Technical Stories.
 
 | Epic/Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
 | **EP01** | **Autenticación y cuentas** | Registro, inicio de sesión, periodo de prueba gratuito y suscripción. | **Escenario 1**<br>Given que un visitante completa el registro con datos válidos,<br>When confirma el formulario,<br>Then el sistema crea la cuenta y activa el periodo de prueba de 14 días.<br><br>**Escenario 2**<br>Given que un usuario sin sesión iniciada intenta acceder a una función restringida,<br>When realiza la acción,<br>Then el sistema lo redirige a la pantalla de inicio de sesión. | — |
-| US01 | Registrarme como productor o comercializador | Como visitante quiero registrar una cuenta indicando mi tipo de negocio para comenzar mi periodo de prueba gratuito. | **Escenario 1: Registro exitoso**<br>Given que el visitante no está registrado,<br>When completa el formulario con datos válidos y selecciona su tipo de negocio,<br>Then el sistema crea la cuenta y activa un periodo de prueba de 14 días.<br><br>**Escenario 2: Correo duplicado**<br>Given que el correo ingresado ya está en uso,<br>When el visitante envía el formulario,<br>Then el sistema muestra un error y no crea una cuenta duplicada. | EP01 |
-| US02 | Iniciar sesión | Como usuario registrado quiero iniciar sesión para acceder a las funcionalidades de mi tipo de usuario. | **Escenario 1: Inicio de sesión correcto**<br>Given que el usuario tiene una cuenta activa,<br>When ingresa credenciales correctas,<br>Then el sistema lo redirige al dashboard de su tipo de usuario.<br><br>**Escenario 2: Contraseña incorrecta**<br>Given que el usuario ingresa una contraseña incorrecta,<br>When intenta iniciar sesión,<br>Then el sistema muestra un error sin indicar cuál dato es incorrecto. | EP01 |
-| US03 | Recibir aviso de fin de periodo de prueba | Como usuario en prueba quiero recibir un aviso antes de que finalice mi periodo gratuito para decidir si me suscribo. | **Escenario 1: Aviso previo**<br>Given que la prueba del usuario finaliza en 3 días,<br>When el usuario inicia sesión,<br>Then el sistema muestra un aviso con los días restantes y la opción de suscribirse.<br><br>**Escenario 2: Prueba vencida**<br>Given que la prueba finalizó sin suscripción,<br>When el usuario intenta acceder a una función restringida,<br>Then el sistema lo redirige a los planes de suscripción. | EP01 |
-| US38 | Cerrar sesión | Como usuario autenticado quiero cerrar mi sesión para proteger la información de mi negocio en dispositivos compartidos. | **Escenario 1: Cierre de sesión**<br>Given que el usuario tiene una sesión iniciada,<br>When selecciona la opción de cerrar sesión,<br>Then el sistema invalida la sesión y muestra la pantalla de inicio de sesión.<br><br>**Escenario 2: Acceso posterior bloqueado**<br>Given que el usuario cerró su sesión,<br>When intenta volver a una página interna con el botón de retroceso,<br>Then el sistema lo redirige al inicio de sesión. | EP01 |
-| US39 | Recuperar contraseña | Como usuario registrado quiero restablecer mi contraseña mediante mi correo para recuperar el acceso a mi cuenta si la olvido. | **Escenario 1: Solicitud de restablecimiento**<br>Given que el usuario registrado indica su correo,<br>When solicita restablecer la contraseña,<br>Then el sistema envía un enlace de restablecimiento con vigencia limitada.<br><br>**Escenario 2: Correo no registrado**<br>Given que el correo ingresado no pertenece a ninguna cuenta,<br>When el usuario solicita el restablecimiento,<br>Then el sistema muestra un mensaje neutro que no revela si la cuenta existe. | EP01 |
-| US40 | Contratar un plan de suscripción | Como usuario en prueba o con prueba vencida quiero contratar un plan de suscripción para continuar usando Destilatech al terminar el periodo de prueba. | **Escenario 1: Contratación exitosa**<br>Given que el usuario selecciona un plan y completa el pago,<br>When la pasarela de pago confirma la transacción,<br>Then el sistema activa la suscripción y habilita todas las funciones del plan.<br><br>**Escenario 2: Pago rechazado**<br>Given que la pasarela de pago rechaza la transacción,<br>When el usuario intenta contratar el plan,<br>Then el sistema muestra el motivo del rechazo y mantiene el estado anterior de la cuenta. | EP01 |
-| US41 | Actualizar los datos de mi negocio | Como productor o comercializador quiero actualizar el nombre, la ubicación y el tipo de mi negocio para mantener correcta la información de mi cuenta. | **Escenario 1: Actualización válida**<br>Given que el usuario autenticado edita los datos de su negocio con valores válidos,<br>When guarda los cambios,<br>Then el sistema actualiza los datos y muestra una confirmación.<br><br>**Escenario 2: Campo obligatorio vacío**<br>Given que el usuario deja vacío el nombre del negocio,<br>When intenta guardar,<br>Then el sistema muestra un error y no modifica los datos. | EP01 |
-| US54 | Consultar mi plan y estado de suscripción | Como productor o comercializador quiero consultar mi plan actual, el estado de mi suscripción y mi fecha de renovación o fin de prueba para planificar mi contratación. | **Escenario 1: Cuenta en prueba**<br>Given que la cuenta del usuario está en periodo de prueba,<br>When el usuario abre la sección de suscripción,<br>Then el sistema muestra los días restantes de prueba y los planes disponibles.<br><br>**Escenario 2: Cuenta suscrita**<br>Given que la cuenta del usuario tiene una suscripción activa,<br>When el usuario abre la sección de suscripción,<br>Then el sistema muestra el plan contratado y la fecha de renovación. | EP01 |
+| US01 | Registrarme como productor o comercializador | Como visitante quiero registrar una cuenta indicando mi tipo de negocio para comenzar mi periodo de prueba gratuito. | **Escenario 1: Registro exitoso**<br>Given que el visitante no está registrado,<br>When completa el formulario con datos válidos y selecciona su tipo de negocio,<br>Then el sistema crea la cuenta y activa un periodo de prueba de 14 días.<br><br>**Escenario 2: Correo duplicado**<br>Given que el correo ingresado ya está en uso,<br>When el visitante envía el formulario,<br>Then el sistema muestra un error y no crea una cuenta duplicada.<br><br>**Escenario 3: Tipo de negocio obligatorio**<br>Given que el visitante completa el formulario sin elegir su tipo de negocio,<br>When intenta enviarlo,<br>Then el sistema indica que el tipo de negocio es obligatorio y no crea la cuenta. | EP01 |
+| US02 | Iniciar sesión | Como usuario registrado quiero iniciar sesión para acceder a las funcionalidades de mi tipo de usuario. | **Escenario 1: Inicio de sesión correcto**<br>Given que el usuario tiene una cuenta activa,<br>When ingresa credenciales correctas,<br>Then el sistema lo redirige al dashboard de su tipo de usuario.<br><br>**Escenario 2: Contraseña incorrecta**<br>Given que el usuario ingresa una contraseña incorrecta,<br>When intenta iniciar sesión,<br>Then el sistema muestra un error sin indicar cuál dato es incorrecto.<br><br>**Escenario 3: Perfil según tipo de usuario**<br>Given que un productor y un comercializador tienen cuenta activa,<br>When cada uno inicia sesión,<br>Then el sistema muestra a cada uno el menú y el dashboard de su tipo de usuario. | EP01 |
+| US03 | Recibir aviso de fin de periodo de prueba | Como usuario en prueba quiero recibir un aviso antes de que finalice mi periodo gratuito para decidir si me suscribo. | **Escenario 1: Aviso previo**<br>Given que la prueba del usuario finaliza en 3 días,<br>When el usuario inicia sesión,<br>Then el sistema muestra un aviso con los días restantes y la opción de suscribirse.<br><br>**Escenario 2: Prueba vencida**<br>Given que la prueba finalizó sin suscripción,<br>When el usuario intenta acceder a una función restringida,<br>Then el sistema lo redirige a los planes de suscripción.<br><br>**Escenario 3: Sin aviso con prueba vigente**<br>Given que a la prueba del usuario le quedan más de 3 días,<br>When el usuario inicia sesión,<br>Then el sistema no muestra el aviso de fin de prueba. | EP01 |
+| US38 | Cerrar sesión | Como usuario autenticado quiero cerrar mi sesión para proteger la información de mi negocio en dispositivos compartidos. | **Escenario 1: Cierre de sesión**<br>Given que el usuario tiene una sesión iniciada,<br>When selecciona la opción de cerrar sesión,<br>Then el sistema invalida la sesión y muestra la pantalla de inicio de sesión.<br><br>**Escenario 2: Acceso posterior bloqueado**<br>Given que el usuario cerró su sesión,<br>When intenta volver a una página interna con el botón de retroceso,<br>Then el sistema lo redirige al inicio de sesión.<br><br>**Escenario 3: Sesión cerrada en todas las vistas**<br>Given que el usuario cerró su sesión,<br>When intenta abrir una URL interna directamente,<br>Then el sistema lo redirige al inicio de sesión. | EP01 |
+| US39 | Recuperar contraseña | Como usuario registrado quiero restablecer mi contraseña mediante mi correo para recuperar el acceso a mi cuenta si la olvido. | **Escenario 1: Solicitud de restablecimiento**<br>Given que el usuario registrado indica su correo,<br>When solicita restablecer la contraseña,<br>Then el sistema envía un enlace de restablecimiento con vigencia limitada.<br><br>**Escenario 2: Correo no registrado**<br>Given que el correo ingresado no pertenece a ninguna cuenta,<br>When el usuario solicita el restablecimiento,<br>Then el sistema muestra un mensaje neutro que no revela si la cuenta existe.<br><br>**Escenario 3: Enlace vencido**<br>Given que el enlace de restablecimiento ya venció,<br>When el usuario lo abre,<br>Then el sistema indica que expiró y ofrece solicitar uno nuevo. | EP01 |
+| US40 | Contratar un plan de suscripción | Como usuario en prueba o con prueba vencida quiero contratar un plan de suscripción para continuar usando Destilatech al terminar el periodo de prueba. | **Escenario 1: Contratación exitosa**<br>Given que el usuario selecciona un plan y completa el pago,<br>When la pasarela de pago confirma la transacción,<br>Then el sistema activa la suscripción y habilita todas las funciones del plan.<br><br>**Escenario 2: Pago rechazado**<br>Given que la pasarela de pago rechaza la transacción,<br>When el usuario intenta contratar el plan,<br>Then el sistema muestra el motivo del rechazo y mantiene el estado anterior de la cuenta.<br><br>**Escenario 3: Plan activo reflejado**<br>Given que el usuario contrató un plan,<br>When vuelve a la sección de suscripción,<br>Then el sistema muestra el plan activo, la fecha de renovación y el pago en el historial.<br><br>**Escenario 4: Pago cancelado**<br>Given que el usuario cancela el pago en la pasarela,<br>When regresa a Destilatech,<br>Then el sistema muestra un mensaje de cancelación y lo devuelve a los planes. | EP01 |
+| US41 | Actualizar los datos de mi negocio | Como productor o comercializador quiero actualizar el nombre, la ubicación y el tipo de mi negocio para mantener correcta la información de mi cuenta. | **Escenario 1: Actualización válida**<br>Given que el usuario autenticado edita los datos de su negocio con valores válidos,<br>When guarda los cambios,<br>Then el sistema actualiza los datos y muestra una confirmación.<br><br>**Escenario 2: Campo obligatorio vacío**<br>Given que el usuario deja vacío el nombre del negocio,<br>When intenta guardar,<br>Then el sistema muestra un error y no modifica los datos.<br><br>**Escenario 3: Cambio de tipo de negocio**<br>Given que el usuario cambia el tipo de su negocio,<br>When guarda los cambios,<br>Then el sistema actualiza el menú y el dashboard según el nuevo tipo. | EP01 |
+| US54 | Consultar mi plan y estado de suscripción | Como productor o comercializador quiero consultar mi plan actual, el estado de mi suscripción y mi fecha de renovación o fin de prueba para planificar mi contratación. | **Escenario 1: Cuenta en prueba**<br>Given que la cuenta del usuario está en periodo de prueba,<br>When el usuario abre la sección de suscripción,<br>Then el sistema muestra los días restantes de prueba y los planes disponibles.<br><br>**Escenario 2: Cuenta suscrita**<br>Given que la cuenta del usuario tiene una suscripción activa,<br>When el usuario abre la sección de suscripción,<br>Then el sistema muestra el plan contratado y la fecha de renovación.<br><br>**Escenario 3: Prueba vencida**<br>Given que la prueba terminó sin suscripción,<br>When el usuario abre la sección de suscripción,<br>Then el sistema muestra el estado vencido y los planes para contratar. | EP01 |
 | **EP02** | **Dashboard** | Vistas principales adaptadas por tipo de usuario. | **Escenario 1**<br>Given que un usuario autenticado ingresa a la plataforma,<br>When accede a su cuenta,<br>Then el sistema muestra el dashboard correspondiente a su tipo de usuario.<br><br>**Escenario 2**<br>Given que un usuario aún no tiene datos registrados,<br>When accede a su dashboard,<br>Then el sistema muestra un estado vacío que lo guía a registrar su primera información. | — |
-| US04 | Ver dashboard de producción | Como productor quiero ver un dashboard con el estado general de mi producción e inventario para tomar decisiones sin revisar cada módulo por separado. | **Escenario 1: Dashboard con datos**<br>Given que el productor autenticado tiene lotes e inventario registrados,<br>When accede al dashboard,<br>Then el sistema muestra los lotes activos, las alertas pendientes y los niveles de inventario.<br><br>**Escenario 2: Dashboard vacío**<br>Given que el productor no tiene lotes ni inventario,<br>When accede al dashboard,<br>Then el sistema muestra un estado vacío con una guía para registrar el primer lote. | EP02 |
-| US05 | Ver dashboard comercial | Como comercializador quiero ver un dashboard con el estado de mi inventario y pedidos para identificar rápidamente qué productos necesito reponer. | **Escenario 1: Dashboard con datos**<br>Given que el comercializador autenticado tiene productos y pedidos registrados,<br>When accede al dashboard,<br>Then el sistema muestra los productos con stock bajo, las alertas pendientes y los pedidos recientes.<br><br>**Escenario 2: Dashboard vacío**<br>Given que el comercializador aún no registró productos,<br>When accede al dashboard,<br>Then el sistema muestra un estado vacío con una guía para registrar el primer producto. | EP02 |
+| US04 | Ver dashboard de producción | Como productor quiero ver un dashboard con el estado general de mi producción e inventario para tomar decisiones sin revisar cada módulo por separado. | **Escenario 1: Dashboard con datos**<br>Given que el productor autenticado tiene lotes e inventario registrados,<br>When accede al dashboard,<br>Then el sistema muestra los lotes activos, las alertas pendientes y los niveles de inventario.<br><br>**Escenario 2: Dashboard vacío**<br>Given que el productor no tiene lotes ni inventario,<br>When accede al dashboard,<br>Then el sistema muestra un estado vacío con una guía para registrar el primer lote.<br><br>**Escenario 3: Alertas pendientes visibles**<br>Given que el productor tiene alertas sin atender,<br>When accede al dashboard,<br>Then el sistema muestra las alertas pendientes con acceso al centro de alertas.<br><br>**Escenario 4: Indicadores en el idioma elegido**<br>Given que el productor eligió el idioma inglés,<br>When accede al dashboard,<br>Then el sistema muestra los indicadores y los textos en inglés. | EP02 |
+| US05 | Ver dashboard comercial | Como comercializador quiero ver un dashboard con el estado de mi inventario y pedidos para identificar rápidamente qué productos necesito reponer. | **Escenario 1: Dashboard con datos**<br>Given que el comercializador autenticado tiene productos y pedidos registrados,<br>When accede al dashboard,<br>Then el sistema muestra los productos con stock bajo, las alertas pendientes y los pedidos recientes.<br><br>**Escenario 2: Dashboard vacío**<br>Given que el comercializador aún no registró productos,<br>When accede al dashboard,<br>Then el sistema muestra un estado vacío con una guía para registrar el primer producto.<br><br>**Escenario 3: Reposición prioritaria**<br>Given que el comercializador tiene productos con stock bajo,<br>When accede al dashboard,<br>Then el sistema lista los productos a reponer con la cantidad sugerida.<br><br>**Escenario 4: Acceso restringido al perfil**<br>Given que un usuario con perfil de productor intenta abrir el dashboard comercial,<br>When accede a su dashboard,<br>Then el sistema muestra solo el dashboard de su tipo de usuario. | EP02 |
 | **EP03** | **Gestión de lotes de producción** | Registro y seguimiento de lotes de producción. | **Escenario 1**<br>Given que un productor registra y actualiza un lote,<br>When guarda los cambios,<br>Then el sistema mantiene un historial trazable del lote.<br><br>**Escenario 2**<br>Given que un productor consulta un lote existente,<br>When lo selecciona,<br>Then el sistema muestra su historial completo de cambios. | — |
-| US06 | Registrar lote de producción | Como productor quiero registrar un nuevo lote para llevar un historial organizado de mis procesos. | **Escenario 1: Registro válido**<br>Given que el productor autenticado ingresa fecha de inicio, producto y cantidad estimada,<br>When guarda el lote,<br>Then el sistema registra el lote y lo muestra entre los lotes activos.<br><br>**Escenario 2: Fecha de inicio ausente**<br>Given que el productor no indica la fecha de inicio,<br>When envía el formulario,<br>Then el sistema muestra un error y no guarda el lote. | EP03 |
-| US07 | Actualizar estado de un lote | Como productor quiero actualizar el estado de un lote para reflejar el avance real del proceso. | **Escenario 1: Avance de etapa**<br>Given que el productor tiene un lote registrado,<br>When cambia su estado a la siguiente etapa,<br>Then el sistema registra la fecha del cambio y actualiza el historial del lote.<br><br>**Escenario 2: Etapa no permitida**<br>Given que el lote está en la etapa de fermentación,<br>When el productor intenta pasarlo directamente a embotellado,<br>Then el sistema rechaza el cambio y muestra las etapas permitidas. | EP03 |
-| US08 | Consultar historial de un lote | Como productor quiero consultar el historial completo de un lote para revisar su trazabilidad. | **Escenario 1: Historial disponible**<br>Given que el productor tiene lotes con cambios registrados,<br>When selecciona un lote,<br>Then el sistema muestra todos sus cambios de estado y las variables monitoreadas.<br><br>**Escenario 2: Lote sin cambios**<br>Given que el lote fue recién registrado,<br>When el productor consulta su historial,<br>Then el sistema muestra solo el registro inicial del lote. | EP03 |
-| US42 | Editar los datos de un lote | Como productor quiero corregir los datos de un lote registrado para mantener información exacta de mi producción. | **Escenario 1: Edición válida**<br>Given que el productor tiene un lote en proceso,<br>When modifica la cantidad estimada y guarda,<br>Then el sistema actualiza el lote y registra el cambio en su historial.<br><br>**Escenario 2: Cantidad inválida**<br>Given que el productor ingresa una cantidad menor o igual a cero,<br>When intenta guardar,<br>Then el sistema muestra un error de validación y conserva el valor anterior. | EP03 |
-| US43 | Registrar el embotellado de un lote | Como productor quiero registrar la cantidad embotellada de un lote para incorporar las botellas producidas a mi inventario. | **Escenario 1: Embotellado registrado**<br>Given que el lote está en la etapa de reposo,<br>When el productor registra la cantidad embotellada y el producto,<br>Then el sistema cierra el lote y suma la cantidad al stock del producto.<br><br>**Escenario 2: Producto no indicado**<br>Given que el productor no selecciona el producto terminado,<br>When intenta confirmar el embotellado,<br>Then el sistema muestra un error y no modifica el inventario. | EP03 |
+| US06 | Registrar lote de producción | Como productor quiero registrar un nuevo lote para llevar un historial organizado de mis procesos. | **Escenario 1: Registro válido**<br>Given que el productor autenticado ingresa fecha de inicio, producto y cantidad estimada,<br>When guarda el lote,<br>Then el sistema registra el lote y lo muestra entre los lotes activos.<br><br>**Escenario 2: Fecha de inicio ausente**<br>Given que el productor no indica la fecha de inicio,<br>When envía el formulario,<br>Then el sistema muestra un error y no guarda el lote.<br><br>**Escenario 3: Cantidad estimada inválida**<br>Given que el productor ingresa una cantidad estimada menor o igual a cero,<br>When envía el formulario,<br>Then el sistema muestra un error de validación y no guarda el lote. | EP03 |
+| US07 | Actualizar estado de un lote | Como productor quiero actualizar el estado de un lote para reflejar el avance real del proceso. | **Escenario 1: Avance de etapa**<br>Given que el productor tiene un lote registrado,<br>When cambia su estado a la siguiente etapa,<br>Then el sistema registra la fecha del cambio y actualiza el historial del lote.<br><br>**Escenario 2: Etapa no permitida**<br>Given que el lote está en la etapa de fermentación,<br>When el productor intenta pasarlo directamente a embotellado,<br>Then el sistema rechaza el cambio y muestra las etapas permitidas.<br><br>**Escenario 3: Lote embotellado cerrado**<br>Given que el lote ya está en la última etapa,<br>When el productor abre el lote,<br>Then el sistema no ofrece avanzar de etapa. | EP03 |
+| US08 | Consultar historial de un lote | Como productor quiero consultar el historial completo de un lote para revisar su trazabilidad. | **Escenario 1: Historial disponible**<br>Given que el productor tiene lotes con cambios registrados,<br>When selecciona un lote,<br>Then el sistema muestra todos sus cambios de estado y las variables monitoreadas.<br><br>**Escenario 2: Lote sin cambios**<br>Given que el lote fue recién registrado,<br>When el productor consulta su historial,<br>Then el sistema muestra solo el registro inicial del lote.<br><br>**Escenario 3: Orden cronológico**<br>Given que el lote tiene varios cambios de estado,<br>When el productor consulta su historial,<br>Then el sistema los muestra en orden cronológico con la fecha de cada etapa. | EP03 |
+| US42 | Editar los datos de un lote | Como productor quiero corregir los datos de un lote registrado para mantener información exacta de mi producción. | **Escenario 1: Edición válida**<br>Given que el productor tiene un lote en proceso,<br>When modifica la cantidad estimada y guarda,<br>Then el sistema actualiza el lote y registra el cambio en su historial.<br><br>**Escenario 2: Cantidad inválida**<br>Given que el productor ingresa una cantidad menor o igual a cero,<br>When intenta guardar,<br>Then el sistema muestra un error de validación y conserva el valor anterior.<br><br>**Escenario 3: Lote cerrado no editable**<br>Given que el lote ya fue embotellado,<br>When el productor intenta editarlo,<br>Then el sistema no permite modificar la cantidad estimada. | EP03 |
+| US43 | Registrar el embotellado de un lote | Como productor quiero registrar la cantidad embotellada de un lote para incorporar las botellas producidas a mi inventario. | **Escenario 1: Embotellado registrado**<br>Given que el lote está en la etapa de reposo,<br>When el productor registra la cantidad embotellada y el producto,<br>Then el sistema cierra el lote y suma la cantidad al stock del producto.<br><br>**Escenario 2: Producto no indicado**<br>Given que el productor no selecciona el producto terminado,<br>When intenta confirmar el embotellado,<br>Then el sistema muestra un error y no modifica el inventario.<br><br>**Escenario 3: Cantidad mayor a la producida**<br>Given que la cantidad embotellada supera la cantidad estimada del lote,<br>When el productor intenta confirmar,<br>Then el sistema muestra una advertencia y solicita confirmar la cantidad. | EP03 |
 | **EP04** | **Monitoreo IoT** | Visualización y configuración de variables de proceso (simuladas). | **Escenario 1**<br>Given que un productor tiene un lote activo con variables configuradas,<br>When el sistema recibe una lectura simulada fuera de rango,<br>Then el sistema genera una alerta de condición anómala.<br><br>**Escenario 2**<br>Given que un productor consulta el monitoreo de un lote,<br>When accede al módulo,<br>Then el sistema muestra las lecturas simuladas más recientes. | — |
-| US09 | Visualizar variables de proceso | Como productor quiero visualizar las variables de un lote (simuladas) para supervisar el proceso a distancia. | **Escenario 1: Lecturas recientes**<br>Given que el productor tiene un lote en fermentación o destilación,<br>When accede al monitoreo,<br>Then el sistema muestra las lecturas simuladas más recientes de ese lote.<br><br>**Escenario 2: Lote sin lecturas**<br>Given que el lote aún no recibió lecturas,<br>When el productor accede al monitoreo,<br>Then el sistema indica que todavía no hay lecturas disponibles. | EP04 |
-| US10 | Configurar rango normal de una variable | Como productor quiero definir el rango normal de una variable para que el sistema detecte anomalías automáticamente. | **Escenario 1: Rango válido**<br>Given que el productor tiene un lote activo,<br>When configura un valor mínimo y uno máximo,<br>Then el sistema guarda la configuración y la aplica a las siguientes lecturas.<br><br>**Escenario 2: Rango inválido**<br>Given que el valor mínimo es mayor que el máximo,<br>When el productor intenta guardar,<br>Then el sistema muestra un error y no guarda la configuración. | EP04 |
-| US11 | Recibir notificación de condición anómala | Como productor quiero ser notificado cuando una variable salga del rango normal para actuar a tiempo y evitar la pérdida del lote. | **Escenario 1: Lectura fuera de rango**<br>Given que el productor configuró un rango normal,<br>When una lectura simulada excede ese rango,<br>Then el sistema genera una alerta visible en el dashboard y en el módulo de alertas.<br><br>**Escenario 2: Lectura dentro de rango**<br>Given que una lectura simulada se encuentra dentro del rango,<br>When el sistema la procesa,<br>Then el sistema la almacena sin generar alerta. | EP04 |
-| US44 | Ver la tendencia de una variable | Como productor quiero ver en un gráfico la evolución de una variable de un lote en un rango de fechas para identificar desviaciones antes de que afecten al lote. | **Escenario 1: Gráfico disponible**<br>Given que el lote tiene lecturas en el rango de fechas elegido,<br>When el productor selecciona la variable y el rango,<br>Then el sistema muestra un gráfico de evolución con los valores mínimo y máximo configurados.<br><br>**Escenario 2: Rango sin lecturas**<br>Given que no existen lecturas en el rango seleccionado,<br>When el productor aplica el filtro,<br>Then el sistema informa que no hay datos para ese periodo. | EP04 |
-| US55 | Elegir las variables que se monitorean en un lote | Como productor quiero elegir qué variables monitorear (temperatura, grado de azúcar o grado alcohólico) en cada lote para ver solo la información relevante para mi proceso. | **Escenario 1: Selección de variables**<br>Given que el productor registra o edita un lote,<br>When marca las variables a monitorear,<br>Then el sistema muestra solo esas variables en el monitoreo del lote.<br><br>**Escenario 2: Sin variables seleccionadas**<br>Given que el productor no marca ninguna variable,<br>When guarda la configuración,<br>Then el sistema permite guardar el lote e indica que no se mostrarán lecturas. | EP04 |
+| US09 | Visualizar variables de proceso | Como productor quiero visualizar las variables de un lote (simuladas) para supervisar el proceso a distancia. | **Escenario 1: Lecturas recientes**<br>Given que el productor tiene un lote en fermentación o destilación,<br>When accede al monitoreo,<br>Then el sistema muestra las lecturas simuladas más recientes de ese lote.<br><br>**Escenario 2: Lote sin lecturas**<br>Given que el lote aún no recibió lecturas,<br>When el productor accede al monitoreo,<br>Then el sistema indica que todavía no hay lecturas disponibles.<br><br>**Escenario 3: Anomalía señalada**<br>Given que una lectura simulada está fuera del rango normal,<br>When el productor visualiza la variable,<br>Then el sistema destaca la variable como fuera de rango.<br><br>**Escenario 4: Cambio de lote**<br>Given que el productor tiene más de un lote activo,<br>When selecciona otro lote en el monitoreo,<br>Then el sistema actualiza las variables y el gráfico con las lecturas del lote elegido. | EP04 |
+| US10 | Configurar rango normal de una variable | Como productor quiero definir el rango normal de una variable para que el sistema detecte anomalías automáticamente. | **Escenario 1: Rango válido**<br>Given que el productor tiene un lote activo,<br>When configura un valor mínimo y uno máximo,<br>Then el sistema guarda la configuración y la aplica a las siguientes lecturas.<br><br>**Escenario 2: Rango inválido**<br>Given que el valor mínimo es mayor que el máximo,<br>When el productor intenta guardar,<br>Then el sistema muestra un error y no guarda la configuración.<br><br>**Escenario 3: Rango aplicado a nuevas lecturas**<br>Given que el productor guardó un nuevo rango para una variable,<br>When el sistema recibe una nueva lectura,<br>Then el sistema la evalúa con el rango actualizado y no con el anterior. | EP04 |
+| US11 | Recibir notificación de condición anómala | Como productor quiero ser notificado cuando una variable salga del rango normal para actuar a tiempo y evitar la pérdida del lote. | **Escenario 1: Lectura fuera de rango**<br>Given que el productor configuró un rango normal,<br>When una lectura simulada excede ese rango,<br>Then el sistema genera una alerta visible en el dashboard y en el módulo de alertas.<br><br>**Escenario 2: Lectura dentro de rango**<br>Given que una lectura simulada se encuentra dentro del rango,<br>When el sistema la procesa,<br>Then el sistema la almacena sin generar alerta.<br><br>**Escenario 3: Alerta sin duplicados**<br>Given que una variable permanece fuera de rango durante varias lecturas seguidas,<br>When el sistema procesa cada lectura,<br>Then el sistema mantiene una sola alerta pendiente para ese episodio. | EP04 |
+| US44 | Ver la tendencia de una variable | Como productor quiero ver en un gráfico la evolución de una variable de un lote en un rango de fechas para identificar desviaciones antes de que afecten al lote. | **Escenario 1: Gráfico disponible**<br>Given que el lote tiene lecturas en el rango de fechas elegido,<br>When el productor selecciona la variable y el rango,<br>Then el sistema muestra un gráfico de evolución con los valores mínimo y máximo configurados.<br><br>**Escenario 2: Rango sin lecturas**<br>Given que no existen lecturas en el rango seleccionado,<br>When el productor aplica el filtro,<br>Then el sistema informa que no hay datos para ese periodo.<br><br>**Escenario 3: Valores mínimo y máximo visibles**<br>Given que la variable tiene un rango configurado,<br>When el productor abre el gráfico,<br>Then el sistema dibuja las líneas del mínimo y del máximo junto con las lecturas. | EP04 |
+| US55 | Elegir las variables que se monitorean en un lote | Como productor quiero elegir qué variables monitorear (temperatura, grado de azúcar o grado alcohólico) en cada lote para ver solo la información relevante para mi proceso. | **Escenario 1: Selección de variables**<br>Given que el productor registra o edita un lote,<br>When marca las variables a monitorear,<br>Then el sistema muestra solo esas variables en el monitoreo del lote.<br><br>**Escenario 2: Sin variables seleccionadas**<br>Given que el productor no marca ninguna variable,<br>When guarda la configuración,<br>Then el sistema permite guardar el lote e indica que no se mostrarán lecturas.<br><br>**Escenario 3: Variables por defecto**<br>Given que el productor registra un lote sin cambiar la selección,<br>When abre el monitoreo,<br>Then el sistema muestra las variables configuradas por defecto. | EP04 |
 | **EP05** | **Gestión de inventario** | Catálogo de productos, movimientos y consulta de stock. | **Escenario 1**<br>Given que un usuario registra productos y movimientos,<br>When consulta su inventario,<br>Then el sistema refleja el stock actualizado.<br><br>**Escenario 2**<br>Given que un movimiento dejaría el stock en negativo,<br>When el usuario intenta registrarlo,<br>Then el sistema lo rechaza con una advertencia. | — |
-| US12 | Registrar producto | Como productor o comercializador quiero registrar mis productos para tener un catálogo organizado. | **Escenario 1: Producto válido**<br>Given que el usuario autenticado ingresa nombre, presentación y unidad,<br>When guarda el producto,<br>Then el sistema lo agrega a su catálogo.<br><br>**Escenario 2: Producto duplicado**<br>Given que ya existe un producto con el mismo nombre y presentación,<br>When el usuario intenta registrarlo de nuevo,<br>Then el sistema muestra un aviso y no crea el duplicado. | EP05 |
-| US13 | Registrar movimiento de inventario | Como productor o comercializador quiero registrar entradas y salidas de un producto para mantener mi stock actualizado. | **Escenario 1: Movimiento válido**<br>Given que el usuario tiene un producto registrado,<br>When registra una entrada o salida con una cantidad válida,<br>Then el sistema actualiza el stock disponible.<br><br>**Escenario 2: Salida mayor al stock**<br>Given que la salida supera el stock disponible,<br>When el usuario envía el movimiento,<br>Then el sistema muestra una advertencia y no aplica el movimiento. | EP05 |
-| US14 | Consultar stock disponible | Como productor o comercializador quiero consultar el stock disponible para no tener que revisar físicamente el almacén. | **Escenario 1: Stock consultado**<br>Given que el usuario tiene productos con movimientos registrados,<br>When accede al inventario,<br>Then el sistema muestra el stock actual ordenado por nivel de existencias.<br><br>**Escenario 2: Inventario vacío**<br>Given que el usuario aún no tiene productos,<br>When accede al inventario,<br>Then el sistema muestra un estado vacío con acceso al registro de productos. | EP05 |
-| US45 | Editar o desactivar un producto | Como productor o comercializador quiero editar los datos de un producto o desactivarlo para mantener actualizado mi catálogo. | **Escenario 1: Edición de producto**<br>Given que el usuario tiene un producto registrado,<br>When modifica su presentación y guarda,<br>Then el sistema actualiza el producto sin alterar su stock.<br><br>**Escenario 2: Desactivación**<br>Given que el usuario desactiva un producto,<br>When consulta su catálogo,<br>Then el sistema oculta el producto de los listados activos y conserva su historial. | EP05 |
-| US46 | Consultar el historial de movimientos de un producto | Como productor o comercializador quiero consultar el kardex de un producto para revisar de dónde proviene la diferencia de stock. | **Escenario 1: Kardex disponible**<br>Given que el producto tiene movimientos registrados,<br>When el usuario abre su historial,<br>Then el sistema muestra fecha, tipo, cantidad y saldo de cada movimiento.<br><br>**Escenario 2: Filtro por fechas**<br>Given que el usuario indica un rango de fechas,<br>When aplica el filtro,<br>Then el sistema muestra solo los movimientos de ese rango. | EP05 |
-| US47 | Ajustar el stock tras un conteo físico | Como productor o comercializador quiero registrar un ajuste de stock con el resultado de mi conteo físico para corregir diferencias entre el sistema y el almacén. | **Escenario 1: Ajuste registrado**<br>Given que el conteo físico difiere del stock registrado,<br>When el usuario ingresa la cantidad contada y un motivo,<br>Then el sistema registra un movimiento de ajuste y actualiza el stock.<br><br>**Escenario 2: Motivo ausente**<br>Given que el usuario no indica el motivo del ajuste,<br>When intenta confirmar,<br>Then el sistema solicita el motivo antes de aplicar el ajuste. | EP05 |
+| US12 | Registrar producto | Como productor o comercializador quiero registrar mis productos para tener un catálogo organizado. | **Escenario 1: Producto válido**<br>Given que el usuario autenticado ingresa nombre, presentación y unidad,<br>When guarda el producto,<br>Then el sistema lo agrega a su catálogo.<br><br>**Escenario 2: Producto duplicado**<br>Given que ya existe un producto con el mismo nombre y presentación,<br>When el usuario intenta registrarlo de nuevo,<br>Then el sistema muestra un aviso y no crea el duplicado.<br><br>**Escenario 3: Datos obligatorios**<br>Given que el usuario deja vacío el nombre del producto,<br>When intenta guardarlo,<br>Then el sistema marca el campo como obligatorio y no registra el producto. | EP05 |
+| US13 | Registrar movimiento de inventario | Como productor o comercializador quiero registrar entradas y salidas de un producto para mantener mi stock actualizado. | **Escenario 1: Movimiento válido**<br>Given que el usuario tiene un producto registrado,<br>When registra una entrada o salida con una cantidad válida,<br>Then el sistema actualiza el stock disponible.<br><br>**Escenario 2: Salida mayor al stock**<br>Given que la salida supera el stock disponible,<br>When el usuario envía el movimiento,<br>Then el sistema muestra una advertencia y no aplica el movimiento.<br><br>**Escenario 3: Cantidad inválida**<br>Given que el usuario ingresa una cantidad igual a cero o negativa,<br>When envía el movimiento,<br>Then el sistema muestra un error de validación y no modifica el stock. | EP05 |
+| US14 | Consultar stock disponible | Como productor o comercializador quiero consultar el stock disponible para no tener que revisar físicamente el almacén. | **Escenario 1: Stock consultado**<br>Given que el usuario tiene productos con movimientos registrados,<br>When accede al inventario,<br>Then el sistema muestra el stock actual ordenado por nivel de existencias.<br><br>**Escenario 2: Inventario vacío**<br>Given que el usuario aún no tiene productos,<br>When accede al inventario,<br>Then el sistema muestra un estado vacío con acceso al registro de productos.<br><br>**Escenario 3: Estado del stock**<br>Given que un producto tiene stock igual o menor a su umbral,<br>When el usuario consulta el inventario,<br>Then el sistema marca el producto con el estado bajo o crítico según corresponda. | EP05 |
+| US45 | Editar o desactivar un producto | Como productor o comercializador quiero editar los datos de un producto o desactivarlo para mantener actualizado mi catálogo. | **Escenario 1: Edición de producto**<br>Given que el usuario tiene un producto registrado,<br>When modifica su presentación y guarda,<br>Then el sistema actualiza el producto sin alterar su stock.<br><br>**Escenario 2: Desactivación**<br>Given que el usuario desactiva un producto,<br>When consulta su catálogo,<br>Then el sistema oculta el producto de los listados activos y conserva su historial.<br><br>**Escenario 3: Producto desactivado en pedidos**<br>Given que el usuario desactivó un producto,<br>When registra un pedido nuevo,<br>Then el sistema no ofrece ese producto entre las opciones. | EP05 |
+| US46 | Consultar el historial de movimientos de un producto | Como productor o comercializador quiero consultar el kardex de un producto para revisar de dónde proviene la diferencia de stock. | **Escenario 1: Kardex disponible**<br>Given que el producto tiene movimientos registrados,<br>When el usuario abre su historial,<br>Then el sistema muestra fecha, tipo, cantidad y saldo de cada movimiento.<br><br>**Escenario 2: Filtro por fechas**<br>Given que el usuario indica un rango de fechas,<br>When aplica el filtro,<br>Then el sistema muestra solo los movimientos de ese rango.<br><br>**Escenario 3: Saldo coherente**<br>Given que el producto tiene entradas y salidas,<br>When el usuario abre su historial,<br>Then el sistema muestra un saldo que coincide con el stock actual. | EP05 |
+| US47 | Ajustar el stock tras un conteo físico | Como productor o comercializador quiero registrar un ajuste de stock con el resultado de mi conteo físico para corregir diferencias entre el sistema y el almacén. | **Escenario 1: Ajuste registrado**<br>Given que el conteo físico difiere del stock registrado,<br>When el usuario ingresa la cantidad contada y un motivo,<br>Then el sistema registra un movimiento de ajuste y actualiza el stock.<br><br>**Escenario 2: Motivo ausente**<br>Given que el usuario no indica el motivo del ajuste,<br>When intenta confirmar,<br>Then el sistema solicita el motivo antes de aplicar el ajuste.<br><br>**Escenario 3: Ajuste visible en el historial**<br>Given que el usuario registró un ajuste de stock,<br>When abre el historial del producto,<br>Then el sistema muestra el ajuste como un movimiento de tipo ajuste con su motivo. | EP05 |
 | **EP06** | **Sistema de alertas** | Umbrales de stock y gestión de alertas. | **Escenario 1**<br>Given que el stock de un producto llega a su umbral mínimo,<br>When el sistema actualiza el inventario,<br>Then el sistema genera una alerta automática de stock bajo.<br><br>**Escenario 2**<br>Given que un usuario atiende una alerta,<br>When la marca como atendida,<br>Then el sistema actualiza su estado. | — |
-| US15 | Configurar umbral de stock bajo | Como productor o comercializador quiero definir un umbral mínimo por producto para recibir alertas antes de quedarme sin stock. | **Escenario 1: Alerta por umbral**<br>Given que el usuario configuró un umbral mínimo para un producto,<br>When el stock llega o cae por debajo de ese umbral,<br>Then el sistema genera una alerta automática de stock bajo.<br><br>**Escenario 2: Umbral inválido**<br>Given que el usuario ingresa un umbral negativo,<br>When intenta guardar,<br>Then el sistema muestra un error y no guarda el umbral. | EP06 |
-| US16 | Visualizar y atender alertas | Como productor o comercializador quiero visualizar mis alertas pendientes y marcarlas como atendidas para llevar control de lo que ya resolví. | **Escenario 1: Lista de alertas**<br>Given que el usuario tiene alertas generadas,<br>When accede al módulo de alertas,<br>Then el sistema muestra la lista ordenada por fecha, con pendientes y atendidas.<br><br>**Escenario 2: Alerta atendida**<br>Given que el usuario revisa una alerta pendiente,<br>When la marca como atendida,<br>Then el sistema actualiza su estado y la mueve a las atendidas. | EP06 |
-| US48 | Filtrar alertas por tipo y estado | Como productor o comercializador quiero filtrar mis alertas por tipo (stock bajo o condición anómala) y por estado para encontrar rápidamente las que requieren atención. | **Escenario 1: Filtro por tipo**<br>Given que el usuario tiene alertas de distintos tipos,<br>When selecciona el tipo stock bajo,<br>Then el sistema muestra solo las alertas de stock bajo.<br><br>**Escenario 2: Sin resultados**<br>Given que ninguna alerta cumple con el filtro,<br>When el usuario aplica el filtro,<br>Then el sistema muestra un mensaje indicando que no hay alertas con esos criterios. | EP06 |
+| US15 | Configurar umbral de stock bajo | Como productor o comercializador quiero definir un umbral mínimo por producto para recibir alertas antes de quedarme sin stock. | **Escenario 1: Alerta por umbral**<br>Given que el usuario configuró un umbral mínimo para un producto,<br>When el stock llega o cae por debajo de ese umbral,<br>Then el sistema genera una alerta automática de stock bajo.<br><br>**Escenario 2: Umbral inválido**<br>Given que el usuario ingresa un umbral negativo,<br>When intenta guardar,<br>Then el sistema muestra un error y no guarda el umbral.<br><br>**Escenario 3: Umbral modificado**<br>Given que el usuario cambia el umbral de un producto,<br>When guarda el nuevo valor,<br>Then el sistema evalúa el stock con el nuevo umbral y actualiza el estado del producto. | EP06 |
+| US16 | Visualizar y atender alertas | Como productor o comercializador quiero visualizar mis alertas pendientes y marcarlas como atendidas para llevar control de lo que ya resolví. | **Escenario 1: Lista de alertas**<br>Given que el usuario tiene alertas generadas,<br>When accede al módulo de alertas,<br>Then el sistema muestra la lista ordenada por fecha, con pendientes y atendidas.<br><br>**Escenario 2: Alerta atendida**<br>Given que el usuario revisa una alerta pendiente,<br>When la marca como atendida,<br>Then el sistema actualiza su estado y la mueve a las atendidas.<br><br>**Escenario 3: Alerta atendida**<br>Given que el usuario marca una alerta como atendida,<br>When consulta sus alertas,<br>Then el sistema la retira de las pendientes y la conserva en las atendidas. | EP06 |
+| US48 | Filtrar alertas por tipo y estado | Como productor o comercializador quiero filtrar mis alertas por tipo (stock bajo o condición anómala) y por estado para encontrar rápidamente las que requieren atención. | **Escenario 1: Filtro por tipo**<br>Given que el usuario tiene alertas de distintos tipos,<br>When selecciona el tipo stock bajo,<br>Then el sistema muestra solo las alertas de stock bajo.<br><br>**Escenario 2: Sin resultados**<br>Given que ninguna alerta cumple con el filtro,<br>When el usuario aplica el filtro,<br>Then el sistema muestra un mensaje indicando que no hay alertas con esos criterios.<br><br>**Escenario 3: Combinación de filtros**<br>Given que el usuario tiene alertas de ambos tipos y estados,<br>When aplica un filtro de tipo y otro de estado,<br>Then el sistema muestra solo las alertas que cumplen ambos. | EP06 |
 | **EP07** | **Clientes, pedidos y reposición** | Gestión comercial básica de clientes y pedidos de venta, y apoyo a la reposición con listas de compra. | **Escenario 1**<br>Given que un usuario registra un pedido de un cliente,<br>When lo confirma,<br>Then el sistema descuenta el stock correspondiente y agrega el pedido al historial.<br><br>**Escenario 2**<br>Given que un comercializador tiene productos por reponer,<br>When genera la lista de compra,<br>Then el sistema produce un texto listo para compartir con su proveedor. | — |
-| US17 | Registrar cliente | Como productor o comercializador quiero registrar información básica de mis clientes para tener sus datos disponibles al registrar pedidos. | **Escenario 1: Cliente válido**<br>Given que el usuario autenticado ingresa nombre y contacto,<br>When guarda el cliente,<br>Then el sistema lo agrega a su lista de clientes.<br><br>**Escenario 2: Nombre ausente**<br>Given que el usuario no ingresa el nombre del cliente,<br>When intenta guardar,<br>Then el sistema muestra un error y no registra al cliente. | EP07 |
-| US18 | Registrar pedido | Como productor o comercializador quiero registrar un pedido de un cliente para llevar control de mis ventas. | **Escenario 1: Pedido confirmado**<br>Given que el usuario tiene clientes y productos registrados,<br>When registra un pedido con cliente, productos y cantidades y lo confirma,<br>Then el sistema confirma el pedido y descuenta el stock correspondiente.<br><br>**Escenario 2: Pedido sobre el stock**<br>Given que el pedido excede el stock disponible,<br>When el usuario intenta confirmarlo,<br>Then el sistema muestra una advertencia antes de continuar. | EP07 |
-| US19 | Consultar historial de pedidos | Como productor o comercializador quiero consultar mis pedidos anteriores para revisar qué vendí y a quién. | **Escenario 1: Listado de pedidos**<br>Given que el usuario tiene pedidos registrados,<br>When accede al módulo de pedidos,<br>Then el sistema muestra fecha, cliente, productos y estado de cada pedido.<br><br>**Escenario 2: Filtro por estado**<br>Given que el usuario selecciona el estado borrador o confirmado,<br>When aplica el filtro,<br>Then el sistema muestra solo los pedidos con ese estado. | EP07 |
-| US49 | Editar los datos de un cliente | Como productor o comercializador quiero editar los datos de un cliente registrado para mantener actualizada mi información de contacto. | **Escenario 1: Edición válida**<br>Given que el usuario tiene un cliente registrado,<br>When modifica su contacto y guarda,<br>Then el sistema actualiza los datos del cliente.<br><br>**Escenario 2: Contacto inválido**<br>Given que el usuario ingresa un contacto con formato incorrecto,<br>When intenta guardar,<br>Then el sistema muestra un error y conserva los datos anteriores. | EP07 |
-| US50 | Generar lista de compra para reposición | Como comercializador quiero generar una lista de compra con los productos por reponer y compartirla como texto para agilizar mis pedidos de reposición por WhatsApp. | **Escenario 1: Lista generada**<br>Given que existen productos con alerta de stock bajo o con estimación de reposición,<br>When el comercializador selecciona los productos y las cantidades,<br>Then el sistema genera una lista de compra en texto lista para copiar o compartir por WhatsApp.<br><br>**Escenario 2: Sin productos por reponer**<br>Given que ningún producto tiene alerta de stock bajo ni estimación de reposición,<br>When el comercializador intenta generar la lista,<br>Then el sistema muestra un mensaje indicando que no hay productos por reponer. | EP07 |
+| US17 | Registrar cliente | Como productor o comercializador quiero registrar información básica de mis clientes para tener sus datos disponibles al registrar pedidos. | **Escenario 1: Cliente válido**<br>Given que el usuario autenticado ingresa nombre y contacto,<br>When guarda el cliente,<br>Then el sistema lo agrega a su lista de clientes.<br><br>**Escenario 2: Nombre ausente**<br>Given que el usuario no ingresa el nombre del cliente,<br>When intenta guardar,<br>Then el sistema muestra un error y no registra al cliente.<br><br>**Escenario 3: Nombre obligatorio**<br>Given que el usuario deja vacío el nombre del cliente,<br>When intenta guardarlo,<br>Then el sistema marca el campo como obligatorio y no registra al cliente. | EP07 |
+| US18 | Registrar pedido | Como productor o comercializador quiero registrar un pedido de un cliente para llevar control de mis ventas. | **Escenario 1: Pedido confirmado**<br>Given que el usuario tiene clientes y productos registrados,<br>When registra un pedido con cliente, productos y cantidades y lo confirma,<br>Then el sistema confirma el pedido y descuenta el stock correspondiente.<br><br>**Escenario 2: Pedido sobre el stock**<br>Given que el pedido excede el stock disponible,<br>When el usuario intenta confirmarlo,<br>Then el sistema muestra una advertencia antes de continuar.<br><br>**Escenario 3: Pedido sin productos**<br>Given que el usuario no agrega ninguna línea de producto,<br>When intenta registrar el pedido,<br>Then el sistema muestra un error y no registra el pedido.<br><br>**Escenario 4: Stock descontado**<br>Given que el pedido se registra con productos disponibles,<br>When el sistema lo guarda,<br>Then el sistema descuenta del inventario las unidades de cada línea. | EP07 |
+| US19 | Consultar historial de pedidos | Como productor o comercializador quiero consultar mis pedidos anteriores para revisar qué vendí y a quién. | **Escenario 1: Listado de pedidos**<br>Given que el usuario tiene pedidos registrados,<br>When accede al módulo de pedidos,<br>Then el sistema muestra fecha, cliente, productos y estado de cada pedido.<br><br>**Escenario 2: Filtro por estado**<br>Given que el usuario selecciona el estado borrador o confirmado,<br>When aplica el filtro,<br>Then el sistema muestra solo los pedidos con ese estado.<br><br>**Escenario 3: Búsqueda por cliente**<br>Given que el usuario tiene pedidos de varios clientes,<br>When busca por código o nombre del cliente,<br>Then el sistema muestra solo los pedidos que coinciden. | EP07 |
+| US49 | Editar los datos de un cliente | Como productor o comercializador quiero editar los datos de un cliente registrado para mantener actualizada mi información de contacto. | **Escenario 1: Edición válida**<br>Given que el usuario tiene un cliente registrado,<br>When modifica su contacto y guarda,<br>Then el sistema actualiza los datos del cliente.<br><br>**Escenario 2: Contacto inválido**<br>Given que el usuario ingresa un contacto con formato incorrecto,<br>When intenta guardar,<br>Then el sistema muestra un error y conserva los datos anteriores.<br><br>**Escenario 3: Cambios reflejados en pedidos**<br>Given que el usuario editó el nombre de un cliente,<br>When consulta el historial de pedidos,<br>Then el sistema muestra el nombre actualizado en los pedidos de ese cliente. | EP07 |
+| US50 | Generar lista de compra para reposición | Como comercializador quiero generar una lista de compra con los productos por reponer y compartirla como texto para agilizar mis pedidos de reposición por WhatsApp. | **Escenario 1: Lista generada**<br>Given que existen productos con alerta de stock bajo o con estimación de reposición,<br>When el comercializador selecciona los productos y las cantidades,<br>Then el sistema genera una lista de compra en texto lista para copiar o compartir por WhatsApp.<br><br>**Escenario 2: Sin productos por reponer**<br>Given que ningún producto tiene alerta de stock bajo ni estimación de reposición,<br>When el comercializador intenta generar la lista,<br>Then el sistema muestra un mensaje indicando que no hay productos por reponer.<br><br>**Escenario 3: Sin productos por reponer**<br>Given que ningún producto está bajo su umbral,<br>When el usuario abre la reposición,<br>Then el sistema indica que no hay productos por reponer.<br><br>**Escenario 4: Lista compartible**<br>Given que el usuario genera la lista de compra,<br>When la copia para compartirla,<br>Then el sistema entrega la lista como texto con producto y cantidad. | EP07 |
 | **EP08** | **Estimaciones y reposición** | Analítica básica sobre inventario y reposición. | **Escenario 1**<br>Given que un producto cuenta con historial suficiente de movimientos,<br>When un usuario consulta su ficha,<br>Then el sistema muestra una estimación de reposición.<br><br>**Escenario 2**<br>Given que un usuario consulta indicadores históricos,<br>When accede al módulo,<br>Then el sistema muestra la evolución de su inventario o producción. | — |
-| US20 | Ver estimación de reposición | Como productor o comercializador quiero ver una estimación de cuándo reponer un producto según mi historial para anticipar mis compras o mi producción. | **Escenario 1: Estimación disponible**<br>Given que el producto tiene historial suficiente,<br>When el usuario accede a su ficha,<br>Then el sistema muestra una estimación de fecha o cantidad de reposición.<br><br>**Escenario 2: Historial insuficiente**<br>Given que el producto no tiene historial suficiente,<br>When el usuario accede a su ficha,<br>Then el sistema indica que aún no hay datos suficientes. | EP08 |
-| US21 | Ver indicadores históricos | Como productor o comercializador quiero visualizar indicadores históricos de inventario y producción para evaluar la evolución de mi negocio. | **Escenario 1: Indicadores disponibles**<br>Given que el usuario tiene historial registrado,<br>When accede a los indicadores,<br>Then el sistema muestra gráficos de evolución en el periodo seleccionado.<br><br>**Escenario 2: Sin historial**<br>Given que el usuario no tiene historial registrado,<br>When accede a los indicadores,<br>Then el sistema muestra un estado vacío que explica qué registrar. | EP08 |
-| US51 | Ver productos con riesgo de agotamiento | Como productor o comercializador quiero ver una lista de los productos con riesgo de agotarse pronto para priorizar qué reponer primero. | **Escenario 1: Lista de riesgo**<br>Given que existen productos cuya estimación indica agotamiento próximo,<br>When el usuario abre la lista,<br>Then el sistema muestra los productos ordenados por menor tiempo estimado de agotamiento.<br><br>**Escenario 2: Sin riesgos**<br>Given que ningún producto presenta riesgo de agotamiento,<br>When el usuario abre la lista,<br>Then el sistema muestra un mensaje indicando que no hay productos en riesgo. | EP08 |
+| US20 | Ver estimación de reposición | Como productor o comercializador quiero ver una estimación de cuándo reponer un producto según mi historial para anticipar mis compras o mi producción. | **Escenario 1: Estimación disponible**<br>Given que el producto tiene historial suficiente,<br>When el usuario accede a su ficha,<br>Then el sistema muestra una estimación de fecha o cantidad de reposición.<br><br>**Escenario 2: Historial insuficiente**<br>Given que el producto no tiene historial suficiente,<br>When el usuario accede a su ficha,<br>Then el sistema indica que aún no hay datos suficientes.<br><br>**Escenario 3: Poco historial**<br>Given que el producto tiene pocas salidas registradas,<br>When el usuario consulta la estimación,<br>Then el sistema muestra la estimación con un nivel de confianza bajo o indica que faltan datos.<br><br>**Escenario 4: Fecha y cantidad sugerida**<br>Given que el producto tiene historial suficiente,<br>When el usuario abre su ficha,<br>Then el sistema muestra la fecha estimada de reposición y la cantidad sugerida. | EP08 |
+| US21 | Ver indicadores históricos | Como productor o comercializador quiero visualizar indicadores históricos de inventario y producción para evaluar la evolución de mi negocio. | **Escenario 1: Indicadores disponibles**<br>Given que el usuario tiene historial registrado,<br>When accede a los indicadores,<br>Then el sistema muestra gráficos de evolución en el periodo seleccionado.<br><br>**Escenario 2: Sin historial**<br>Given que el usuario no tiene historial registrado,<br>When accede a los indicadores,<br>Then el sistema muestra un estado vacío que explica qué registrar.<br><br>**Escenario 3: Cambio de periodo**<br>Given que el usuario elige otro periodo de análisis,<br>When selecciona 7 días, 30 días, 90 días o 12 meses,<br>Then el sistema recalcula los indicadores y los gráficos para ese periodo.<br><br>**Escenario 4: Periodo sin registros**<br>Given que no existen registros en el periodo elegido,<br>When el usuario abre los indicadores,<br>Then el sistema muestra los valores en cero y un mensaje de que no hay datos. | EP08 |
+| US51 | Ver productos con riesgo de agotamiento | Como productor o comercializador quiero ver una lista de los productos con riesgo de agotarse pronto para priorizar qué reponer primero. | **Escenario 1: Lista de riesgo**<br>Given que existen productos cuya estimación indica agotamiento próximo,<br>When el usuario abre la lista,<br>Then el sistema muestra los productos ordenados por menor tiempo estimado de agotamiento.<br><br>**Escenario 2: Sin riesgos**<br>Given que ningún producto presenta riesgo de agotamiento,<br>When el usuario abre la lista,<br>Then el sistema muestra un mensaje indicando que no hay productos en riesgo.<br><br>**Escenario 3: Orden por urgencia**<br>Given que varios productos tienen riesgo de agotarse,<br>When el usuario consulta la lista,<br>Then el sistema los ordena desde el que se agota primero. | EP08 |
 | **EP09** | **Landing Page (visitante)** | Sitio web público de Destilatech. | **Escenario 1**<br>Given que un visitante ingresa al sitio web,<br>When navega por sus secciones,<br>Then el sitio muestra la propuesta de valor, los planes, las funcionalidades y un call-to-action hacia el registro.<br><br>**Escenario 2**<br>Given que un visitante accede desde un dispositivo móvil,<br>When navega el sitio,<br>Then la interfaz se adapta a su pantalla. | — |
-| US22 | Conocer la propuesta de valor | Como visitante quiero conocer qué ofrece Destilatech para decidir si me interesa registrarme. | **Escenario 1: Propuesta visible**<br>Given que el visitante ingresa a la página de inicio,<br>When visualiza la sección principal,<br>Then el sitio muestra la propuesta de valor y las capacidades principales.<br><br>**Escenario 2: Acceso desde móvil**<br>Given que el visitante ingresa desde un smartphone,<br>When la página termina de cargar,<br>Then el sitio muestra la propuesta de valor sin elementos desbordados. | EP09 |
-| US23 | Conocer planes y periodo de prueba | Como visitante quiero conocer los planes y el periodo de prueba gratuito para evaluar el costo antes de registrarme. | **Escenario 1: Planes visibles**<br>Given que el visitante accede a la sección de planes,<br>When la visualiza,<br>Then el sitio muestra los planes, los precios y la duración del periodo de prueba.<br><br>**Escenario 2: Plan seleccionado**<br>Given que el visitante hace clic en el call-to-action de un plan,<br>When la página responde,<br>Then el sitio lo lleva al formulario de registro. | EP09 |
-| US24 | Registrarme desde la landing page | Como visitante quiero acceder al registro desde la página de inicio para crear mi cuenta sin buscar el formulario. | **Escenario 1: Call-to-action principal**<br>Given que el visitante está en la página de inicio,<br>When hace clic en el call-to-action principal,<br>Then el sitio lo redirige al formulario de registro.<br><br>**Escenario 2: Call-to-action del pie de página**<br>Given que el visitante llegó al final de la página,<br>When hace clic en el call-to-action del footer,<br>Then el sitio lo redirige al formulario de registro. | EP09 |
-| US25 | Conocer casos de uso por segmento | Como visitante de un segmento quiero ver contenido específico sobre cómo Destilatech resuelve mis necesidades para confirmar que la plataforma sirve para mi tipo de negocio. | **Escenario 1: Contenido para productores**<br>Given que el visitante navega a la sección de productores,<br>When la visualiza,<br>Then el sitio muestra contenido sobre monitoreo IoT, lotes e inventario.<br><br>**Escenario 2: Contenido para comercializadores**<br>Given que el visitante navega a la sección de comercializadores,<br>When la visualiza,<br>Then el sitio muestra contenido sobre inventario, pedidos y alertas de reposición. | EP09 |
-| US30 | Navegar desde el encabezado (Header) | Como visitante quiero ver el logo y los enlaces de navegación en el encabezado para identificar la marca y llegar rápido a cada sección. | **Escenario 1: Encabezado visible**<br>Given que el visitante carga la landing page,<br>When la página termina de renderizar,<br>Then el encabezado muestra el logo de Destilatech y los enlaces a las secciones principales.<br><br>**Escenario 2: Navegación por enlace**<br>Given que el visitante hace clic en un enlace del encabezado,<br>When la página responde,<br>Then el sitio se desplaza a la sección correspondiente sin recargar la página. | EP09 |
-| US31 | Entender qué es Destilatech (sección Description) | Como visitante quiero leer una descripción breve del producto y de sus usuarios para comprender a quién está dirigido. | **Escenario 1: Descripción del producto**<br>Given que el visitante llega a la sección Description,<br>When la visualiza,<br>Then el sitio muestra el nombre del producto, su propuesta de valor y los segmentos objetivo.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then el texto se muestra legible y sin desplazamiento horizontal. | EP09 |
-| US32 | Conocer los beneficios principales (sección Goals) | Como visitante quiero ver los principales beneficios de la plataforma para valorar qué problemas resuelve. | **Escenario 1: Beneficios visibles**<br>Given que el visitante llega a la sección Goals,<br>When la visualiza,<br>Then el sitio muestra los beneficios de monitoreo, inventario, alertas y estimaciones de forma clara.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then los beneficios se apilan en una sola columna sin elementos cortados. | EP09 |
-| US33 | Comparar planes de suscripción (sección Pricing) | Como visitante quiero comparar los planes y conocer la duración del periodo de prueba para elegir el plan que se ajusta a mi negocio. | **Escenario 1: Planes visibles**<br>Given que el visitante llega a la sección Pricing,<br>When la visualiza,<br>Then el sitio muestra los planes, sus precios y la duración del periodo de prueba gratuito.<br><br>**Escenario 2: Plan preseleccionado**<br>Given que el visitante hace clic en el call-to-action de un plan,<br>When la página responde,<br>Then el sitio lo lleva al formulario de registro con el plan preseleccionado. | EP09 |
-| US34 | Ver cifras del sector (sección Impact) | Como visitante quiero ver cifras del sector pisquero peruano para confirmar la relevancia de la solución. | **Escenario 1: Cifras visibles**<br>Given que el visitante llega a la sección Impact,<br>When la visualiza,<br>Then el sitio muestra cifras del sector (empresas formales y producción anual) con su fuente.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then las cifras se muestran en una disposición legible sin desbordes. | EP09 |
-| US35 | Conocer las funcionalidades por segmento (sección Platform Features) | Como visitante quiero ver las funcionalidades agrupadas para productor y para comercializador para saber qué módulos usaría mi negocio. | **Escenario 1: Funcionalidades por segmento**<br>Given que el visitante llega a la sección Platform Features,<br>When la visualiza,<br>Then el sitio muestra las funcionalidades agrupadas para productor y para comercializador.<br><br>**Escenario 2: Cambio de segmento**<br>Given que el visitante selecciona el segmento comercializador,<br>When la página responde,<br>Then el sitio muestra solo las funcionalidades de ese segmento. | EP09 |
-| US36 | Encontrar contacto y enlaces en el pie de página (Footer) | Como visitante quiero ver la información de contacto y los enlaces adicionales al final de la página para comunicarme con el equipo o consultar información legal. | **Escenario 1: Footer completo**<br>Given que el visitante llega al final de la landing page,<br>When visualiza el footer,<br>Then el sitio muestra la información de contacto, los enlaces legales, las redes sociales y el call-to-action de registro.<br><br>**Escenario 2: Enlace legal**<br>Given que el visitante hace clic en los términos y condiciones,<br>When la página responde,<br>Then el sitio muestra el documento correspondiente. | EP09 |
-| US37 | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | Como visitante quiero navegar la landing page desde mi teléfono, tablet o computadora para tener una experiencia consistente en cualquier pantalla. | **Escenario 1: Smartphone**<br>Given que el visitante accede desde un smartphone,<br>When la página carga,<br>Then todas las secciones se adaptan sin elementos cortados ni desbordados.<br><br>**Escenario 2: Tablet o escritorio**<br>Given que el visitante accede desde una tablet o computadora,<br>When la página carga,<br>Then el diseño aprovecha el espacio disponible y mantiene la misma jerarquía de contenido. | EP09 |
-| US52 | Cambiar el idioma de la landing page | Como visitante quiero cambiar entre inglés y español para leer el contenido en el idioma que prefiero. | **Escenario 1: Cambio a español**<br>Given que la landing page se muestra en inglés,<br>When el visitante selecciona español,<br>Then el sitio muestra todos los textos en español (es_419).<br><br>**Escenario 2: Idioma por defecto**<br>Given que el visitante ingresa por primera vez,<br>When la página carga,<br>Then el sitio se muestra en inglés (en_US), idioma predeterminado. | EP09 |
-| US53 | Consultar los términos y condiciones | Como visitante quiero consultar los términos y condiciones desde el pie de página para conocer las condiciones de uso antes de registrarme. | **Escenario 1: Enlace disponible**<br>Given que el visitante está en cualquier sección del sitio,<br>When revisa el footer,<br>Then el sitio muestra el enlace a los términos y condiciones.<br><br>**Escenario 2: Documento visible**<br>Given que el visitante hace clic en el enlace,<br>When la página responde,<br>Then el sitio muestra el contenido de los términos y condiciones. | EP09 |
+| US22 | Conocer la propuesta de valor | Como visitante quiero conocer qué ofrece Destilatech para decidir si me interesa registrarme. | **Escenario 1: Propuesta visible**<br>Given que el visitante ingresa a la página de inicio,<br>When visualiza la sección principal,<br>Then el sitio muestra la propuesta de valor y las capacidades principales.<br><br>**Escenario 2: Acceso desde móvil**<br>Given que el visitante ingresa desde un smartphone,<br>When la página termina de cargar,<br>Then el sitio muestra la propuesta de valor sin elementos desbordados.<br><br>**Escenario 3: Lectura rápida**<br>Given que el visitante llega a la página de inicio,<br>When revisa la primera sección,<br>Then el sistema le muestra qué es Destilatech y a quién se dirige sin necesidad de desplazarse mucho. | EP09 |
+| US23 | Conocer planes y periodo de prueba | Como visitante quiero conocer los planes y el periodo de prueba gratuito para evaluar el costo antes de registrarme. | **Escenario 1: Planes visibles**<br>Given que el visitante accede a la sección de planes,<br>When la visualiza,<br>Then el sitio muestra los planes, los precios y la duración del periodo de prueba.<br><br>**Escenario 2: Plan seleccionado**<br>Given que el visitante hace clic en el call-to-action de un plan,<br>When la página responde,<br>Then el sitio lo lleva al formulario de registro.<br><br>**Escenario 3: Duración de la prueba visible**<br>Given que el visitante revisa la sección de planes,<br>When busca información sobre la prueba gratuita,<br>Then el sistema indica que la prueba dura 14 días y que no requiere tarjeta de crédito. | EP09 |
+| US24 | Registrarme desde la landing page | Como visitante quiero acceder al registro desde la página de inicio para crear mi cuenta sin buscar el formulario. | **Escenario 1: Call-to-action principal**<br>Given que el visitante está en la página de inicio,<br>When hace clic en el call-to-action principal,<br>Then el sitio lo redirige al formulario de registro.<br><br>**Escenario 2: Call-to-action del pie de página**<br>Given que el visitante llegó al final de la página,<br>When hace clic en el call-to-action del footer,<br>Then el sitio lo redirige al formulario de registro.<br><br>**Escenario 3: Acceso desde móvil**<br>Given que el visitante usa un teléfono,<br>When pulsa el botón de prueba gratuita,<br>Then el sistema lo lleva al registro con el botón visible sin desplazamientos horizontales. | EP09 |
+| US25 | Conocer casos de uso por segmento | Como visitante de un segmento quiero ver contenido específico sobre cómo Destilatech resuelve mis necesidades para confirmar que la plataforma sirve para mi tipo de negocio. | **Escenario 1: Contenido para productores**<br>Given que el visitante navega a la sección de productores,<br>When la visualiza,<br>Then el sitio muestra contenido sobre monitoreo IoT, lotes e inventario.<br><br>**Escenario 2: Contenido para comercializadores**<br>Given que el visitante navega a la sección de comercializadores,<br>When la visualiza,<br>Then el sitio muestra contenido sobre inventario, pedidos y alertas de reposición.<br><br>**Escenario 3: Contenido por segmento**<br>Given que el visitante elige el segmento productor o comercializador,<br>When abre sus casos de uso,<br>Then el sistema muestra solo el contenido de ese segmento. | EP09 |
+| US30 | Navegar desde el encabezado (Header) | Como visitante quiero ver el logo y los enlaces de navegación en el encabezado para identificar la marca y llegar rápido a cada sección. | **Escenario 1: Encabezado visible**<br>Given que el visitante carga la landing page,<br>When la página termina de renderizar,<br>Then el encabezado muestra el logo de Destilatech y los enlaces a las secciones principales.<br><br>**Escenario 2: Navegación por enlace**<br>Given que el visitante hace clic en un enlace del encabezado,<br>When la página responde,<br>Then el sitio se desplaza a la sección correspondiente sin recargar la página.<br><br>**Escenario 3: Navegación en móvil**<br>Given que el visitante usa un teléfono,<br>When abre el encabezado,<br>Then el sistema muestra un menú compacto con los mismos enlaces. | EP09 |
+| US31 | Entender qué es Destilatech (sección Description) | Como visitante quiero leer una descripción breve del producto y de sus usuarios para comprender a quién está dirigido. | **Escenario 1: Descripción del producto**<br>Given que el visitante llega a la sección Description,<br>When la visualiza,<br>Then el sitio muestra el nombre del producto, su propuesta de valor y los segmentos objetivo.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then el texto se muestra legible y sin desplazamiento horizontal.<br><br>**Escenario 3: Descripción por tipo de usuario**<br>Given que el visitante lee la sección de descripción,<br>When revisa a quién se dirige el producto,<br>Then el sistema menciona a los productores y a los comercializadores de pisco. | EP09 |
+| US32 | Conocer los beneficios principales (sección Goals) | Como visitante quiero ver los principales beneficios de la plataforma para valorar qué problemas resuelve. | **Escenario 1: Beneficios visibles**<br>Given que el visitante llega a la sección Goals,<br>When la visualiza,<br>Then el sitio muestra los beneficios de monitoreo, inventario, alertas y estimaciones de forma clara.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then los beneficios se apilan en una sola columna sin elementos cortados.<br><br>**Escenario 3: Beneficios claros**<br>Given que el visitante llega a la sección de beneficios,<br>When la lee,<br>Then el sistema presenta cada beneficio con un título y una descripción breve. | EP09 |
+| US33 | Comparar planes de suscripción (sección Pricing) | Como visitante quiero comparar los planes y conocer la duración del periodo de prueba para elegir el plan que se ajusta a mi negocio. | **Escenario 1: Planes visibles**<br>Given que el visitante llega a la sección Pricing,<br>When la visualiza,<br>Then el sitio muestra los planes, sus precios y la duración del periodo de prueba gratuito.<br><br>**Escenario 2: Plan preseleccionado**<br>Given que el visitante hace clic en el call-to-action de un plan,<br>When la página responde,<br>Then el sitio lo lleva al formulario de registro con el plan preseleccionado.<br><br>**Escenario 3: Llamado a la acción del plan**<br>Given que el visitante compara los planes,<br>When selecciona un plan,<br>Then el sistema lo lleva al registro de la prueba gratuita. | EP09 |
+| US34 | Ver cifras del sector (sección Impact) | Como visitante quiero ver cifras del sector pisquero peruano para confirmar la relevancia de la solución. | **Escenario 1: Cifras visibles**<br>Given que el visitante llega a la sección Impact,<br>When la visualiza,<br>Then el sitio muestra cifras del sector (empresas formales y producción anual) con su fuente.<br><br>**Escenario 2: Lectura en móvil**<br>Given que el visitante accede desde un smartphone,<br>When visualiza la sección,<br>Then las cifras se muestran en una disposición legible sin desbordes.<br><br>**Escenario 3: Fuente de las cifras**<br>Given que el visitante revisa las cifras del sector,<br>When busca su origen,<br>Then el sistema indica la fuente de cada cifra. | EP09 |
+| US35 | Conocer las funcionalidades por segmento (sección Platform Features) | Como visitante quiero ver las funcionalidades agrupadas para productor y para comercializador para saber qué módulos usaría mi negocio. | **Escenario 1: Funcionalidades por segmento**<br>Given que el visitante llega a la sección Platform Features,<br>When la visualiza,<br>Then el sitio muestra las funcionalidades agrupadas para productor y para comercializador.<br><br>**Escenario 2: Cambio de segmento**<br>Given que el visitante selecciona el segmento comercializador,<br>When la página responde,<br>Then el sitio muestra solo las funcionalidades de ese segmento.<br><br>**Escenario 3: Cambio de segmento**<br>Given que el visitante está viendo las funcionalidades del productor,<br>When selecciona la pestaña del comercializador,<br>Then el sistema muestra las funcionalidades de ese segmento sin recargar la página. | EP09 |
+| US36 | Encontrar contacto y enlaces en el pie de página (Footer) | Como visitante quiero ver la información de contacto y los enlaces adicionales al final de la página para comunicarme con el equipo o consultar información legal. | **Escenario 1: Footer completo**<br>Given que el visitante llega al final de la landing page,<br>When visualiza el footer,<br>Then el sitio muestra la información de contacto, los enlaces legales, las redes sociales y el call-to-action de registro.<br><br>**Escenario 2: Enlace legal**<br>Given que el visitante hace clic en los términos y condiciones,<br>When la página responde,<br>Then el sitio muestra el documento correspondiente.<br><br>**Escenario 3: Enlaces del pie de página**<br>Given que el visitante llega al final de la página,<br>When revisa el pie de página,<br>Then el sistema muestra el contacto, las redes y el enlace a los términos y condiciones. | EP09 |
+| US37 | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | Como visitante quiero navegar la landing page desde mi teléfono, tablet o computadora para tener una experiencia consistente en cualquier pantalla. | **Escenario 1: Smartphone**<br>Given que el visitante accede desde un smartphone,<br>When la página carga,<br>Then todas las secciones se adaptan sin elementos cortados ni desbordados.<br><br>**Escenario 2: Tablet o escritorio**<br>Given que el visitante accede desde una tablet o computadora,<br>When la página carga,<br>Then el diseño aprovecha el espacio disponible y mantiene la misma jerarquía de contenido.<br><br>**Escenario 3: Sin desplazamiento horizontal**<br>Given que el visitante abre la página en un teléfono,<br>When recorre todas las secciones,<br>Then el sistema adapta el contenido al ancho de la pantalla sin desplazamiento horizontal. | EP09 |
+| US52 | Cambiar el idioma de la landing page | Como visitante quiero cambiar entre inglés y español para leer el contenido en el idioma que prefiero. | **Escenario 1: Cambio a español**<br>Given que la landing page se muestra en inglés,<br>When el visitante selecciona español,<br>Then el sitio muestra todos los textos en español (es_419).<br><br>**Escenario 2: Idioma por defecto**<br>Given que el visitante ingresa por primera vez,<br>When la página carga,<br>Then el sitio se muestra en inglés (en_US), idioma predeterminado.<br><br>**Escenario 3: Idioma recordado**<br>Given que el visitante cambió el idioma,<br>When recarga la página,<br>Then el sistema conserva el idioma elegido. | EP09 |
+| US53 | Consultar los términos y condiciones | Como visitante quiero consultar los términos y condiciones desde el pie de página para conocer las condiciones de uso antes de registrarme. | **Escenario 1: Enlace disponible**<br>Given que el visitante está en cualquier sección del sitio,<br>When revisa el footer,<br>Then el sitio muestra el enlace a los términos y condiciones.<br><br>**Escenario 2: Documento visible**<br>Given que el visitante hace clic en el enlace,<br>When la página responde,<br>Then el sitio muestra el contenido de los términos y condiciones.<br><br>**Escenario 3: Acceso desde el pie de página**<br>Given que el visitante está en cualquier sección,<br>When pulsa el enlace de términos y condiciones,<br>Then el sistema muestra el documento completo. | EP09 |
 | **EP10** | **Technical Stories (RESTful API)** | Endpoints necesarios para soportar las funcionalidades anteriores. | **Escenario 1**<br>Given que la Web Application consume los endpoints del API,<br>When envía una solicitud válida,<br>Then el API responde con el código HTTP y los datos esperados.<br><br>**Escenario 2**<br>Given que el API recibe una lectura simulada fuera de rango,<br>When la procesa,<br>Then el API almacena la lectura y genera la alerta correspondiente. | — |
-| US26 | Endpoint de autenticación | Como Developer quiero un endpoint de autenticación que devuelva un token para que la Web Application autentique usuarios. | **Escenario 1: Credenciales válidas**<br>Given un POST /auth/login con credenciales válidas,<br>When el servicio las valida,<br>Then responde 200 con un token y los datos básicos del usuario.<br><br>**Escenario 2: Credenciales inválidas**<br>Given un POST /auth/login con credenciales inválidas,<br>When el servicio las valida,<br>Then responde 401 sin indicar cuál dato es incorrecto. | EP10 |
-| US27 | Endpoint de movimientos de inventario | Como Developer quiero un endpoint que registre movimientos de inventario de forma consistente para que el stock refleje todas las entradas y salidas. | **Escenario 1: Movimiento válido**<br>Given un POST /inventory/movements válido,<br>When el servicio lo procesa,<br>Then responde 201 con el movimiento y el nuevo stock.<br><br>**Escenario 2: Stock negativo**<br>Given un POST /inventory/movements que dejaría el stock negativo,<br>When el servicio lo valida,<br>Then responde 409 y no aplica el movimiento. | EP10 |
-| US28 | Endpoint de lecturas IoT simuladas | Como Developer quiero un endpoint que reciba lecturas simuladas y las evalúe contra los rangos configurados para detectar condiciones anómalas durante la producción. | **Escenario 1: Lectura dentro de rango**<br>Given un POST /batches/{id}/readings dentro de rango,<br>When el servicio lo procesa,<br>Then responde 201 y almacena la lectura sin generar alerta.<br><br>**Escenario 2: Lectura fuera de rango**<br>Given un POST /batches/{id}/readings fuera de rango,<br>When el servicio lo procesa,<br>Then responde 201, almacena la lectura y genera una alerta asociada al lote. | EP10 |
-| US29 | Endpoint de estimaciones de reposición | Como Developer quiero un endpoint que devuelva la estimación de reposición de un producto para que la Web Application muestre cuándo reponer. | **Escenario 1: Historial suficiente**<br>Given un GET /products/{id}/replenishment-estimate con historial suficiente,<br>When el servicio lo calcula,<br>Then responde 200 con la estimación.<br><br>**Escenario 2: Historial insuficiente**<br>Given un GET /products/{id}/replenishment-estimate con historial insuficiente,<br>When el servicio lo evalúa,<br>Then responde 200 indicando que no hay datos suficientes. | EP10 |
-| US56 | Endpoint de registro de cuenta | Como Developer quiero un endpoint que registre cuentas de productor o comercializador para que la Web Application cree cuentas e inicie el periodo de prueba. | **Escenario 1: Registro válido**<br>Given un POST /auth/register con correo, contraseña y tipo de negocio válidos,<br>When el servicio lo procesa,<br>Then responde 201 con la cuenta creada y la fecha de fin del periodo de prueba.<br><br>**Escenario 2: Correo en uso**<br>Given un POST /auth/register con un correo ya registrado,<br>When el servicio lo valida,<br>Then responde 409 y no crea la cuenta. | EP10 |
-| US57 | Endpoints de suscripción | Como Developer quiero endpoints para consultar y contratar la suscripción para que la Web Application gestione el plan de cada cuenta. | **Escenario 1: Consulta de estado**<br>Given un GET /subscriptions/current de un usuario autenticado,<br>When el servicio lo procesa,<br>Then responde 200 con el plan, el estado y las fechas relevantes.<br><br>**Escenario 2: Contratación**<br>Given un POST /subscriptions con un plan válido y un pago confirmado,<br>When el servicio lo procesa,<br>Then responde 201 y activa la suscripción; si el pago fue rechazado, responde 402 y no cambia el estado. | EP10 |
-| US58 | Endpoints de productos | Como Developer quiero endpoints para crear y listar productos para que la Web Application administre el catálogo. | **Escenario 1: Creación válida**<br>Given un POST /products con nombre, presentación y unidad válidos,<br>When el servicio lo procesa,<br>Then responde 201 con el producto creado.<br><br>**Escenario 2: Listado paginado**<br>Given un GET /products de un usuario autenticado,<br>When el servicio lo procesa,<br>Then responde 200 con los productos de esa cuenta, paginados. | EP10 |
-| US59 | Endpoint de registro de lotes | Como Developer quiero un endpoint que registre lotes de producción para que la Web Application guarde el historial de producción. | **Escenario 1: Lote válido**<br>Given un POST /batches con fecha de inicio, producto y cantidad estimada,<br>When el servicio lo procesa,<br>Then responde 201 con el lote en estado inicial.<br><br>**Escenario 2: Datos incompletos**<br>Given un POST /batches sin fecha de inicio,<br>When el servicio lo valida,<br>Then responde 400 con el detalle de los campos faltantes. | EP10 |
-| US60 | Endpoint de cambio de estado de un lote | Como Developer quiero un endpoint que cambie el estado de un lote validando la secuencia de etapas para que el historial de cada lote sea consistente. | **Escenario 1: Transición válida**<br>Given un PATCH /batches/{id}/status con la siguiente etapa permitida,<br>When el servicio lo procesa,<br>Then responde 200 con el nuevo estado y registra el cambio en el historial.<br><br>**Escenario 2: Transición inválida**<br>Given un PATCH /batches/{id}/status con una etapa no permitida,<br>When el servicio lo valida,<br>Then responde 422 y no modifica el lote. | EP10 |
-| US61 | Endpoint de consulta de lecturas | Como Developer quiero un endpoint que devuelva las lecturas de un lote filtradas por variable y rango de fechas para que la Web Application grafique la evolución del proceso. | **Escenario 1: Consulta con filtros**<br>Given un GET /batches/{id}/readings?variable=temperatura&from=...&to=...,<br>When el servicio lo procesa,<br>Then responde 200 con las lecturas del periodo ordenadas por fecha.<br><br>**Escenario 2: Lote inexistente**<br>Given un GET /batches/{id}/readings con un identificador inexistente,<br>When el servicio lo procesa,<br>Then responde 404. | EP10 |
-| US62 | Endpoints de alertas | Como Developer quiero endpoints para listar alertas y cambiar su estado para que la Web Application muestre y gestione las alertas. | **Escenario 1: Listado con filtros**<br>Given un GET /alerts?type=stock_bajo&status=pendiente,<br>When el servicio lo procesa,<br>Then responde 200 con las alertas que cumplen el filtro.<br><br>**Escenario 2: Marcar como atendida**<br>Given un PATCH /alerts/{id} con el estado atendida,<br>When el servicio lo procesa,<br>Then responde 200 con la alerta actualizada. | EP10 |
-| US63 | Endpoint de pedidos | Como Developer quiero un endpoint que registre pedidos y descuente el stock para que las ventas queden reflejadas en el inventario. | **Escenario 1: Pedido válido**<br>Given un POST /orders con cliente, productos y cantidades dentro del stock,<br>When el servicio lo procesa,<br>Then responde 201 con el pedido y descuenta el stock.<br><br>**Escenario 2: Stock insuficiente**<br>Given un POST /orders con cantidades mayores al stock,<br>When el servicio lo valida,<br>Then responde 409 con el detalle de los productos sin stock suficiente. | EP10 |
-| US64 | Servicio simulador de lecturas IoT | Como Developer quiero un servicio simulador que envíe lecturas sintéticas identificadas por un source_id a POST /batches/{id}/readings para probar el monitoreo sin sensores físicos. | **Escenario 1: Envío periódico**<br>Given un escenario configurado con lote, métrica y frecuencia,<br>When transcurre el intervalo configurado,<br>Then el simulador envía un POST /batches/{id}/readings con un source_id y recibe 201.<br><br>**Escenario 2: Reintento tras error**<br>Given que la API no responde o devuelve un error temporal,<br>When el simulador reintenta,<br>Then el simulador reenvía el mismo payload con el mismo source_id y la API no registra la lectura duplicada. | EP10 |
-| US65 | Endpoint de resumen del dashboard | Como Developer quiero un endpoint que devuelva el resumen del dashboard según el tipo de usuario para que la Web Application cargue el dashboard con una sola solicitud. | **Escenario 1: Resumen de productor**<br>Given un GET /dashboard/summary de un usuario productor,<br>When el servicio lo procesa,<br>Then responde 200 con lotes activos, alertas pendientes y niveles de inventario.<br><br>**Escenario 2: Resumen de comercializador**<br>Given un GET /dashboard/summary de un usuario comercializador,<br>When el servicio lo procesa,<br>Then responde 200 con productos con stock bajo, alertas pendientes y pedidos recientes. | EP10 |
+| US26 | Endpoint de autenticación | Como Developer quiero un endpoint de autenticación que devuelva un token para que la Web Application autentique usuarios. | **Escenario 1: Credenciales válidas**<br>Given un POST /auth/login con credenciales válidas,<br>When el servicio las valida,<br>Then responde 200 con un token y los datos básicos del usuario.<br><br>**Escenario 2: Credenciales inválidas**<br>Given un POST /auth/login con credenciales inválidas,<br>When el servicio las valida,<br>Then responde 401 sin indicar cuál dato es incorrecto.<br><br>**Escenario 3: Solicitud sin credenciales**<br>Given que la solicitud no incluye correo o contraseña,<br>When el cliente llama al endpoint,<br>Then el sistema responde con un error 400 y no emite ningún token. | EP10 |
+| US27 | Endpoint de movimientos de inventario | Como Developer quiero un endpoint que registre movimientos de inventario de forma consistente para que el stock refleje todas las entradas y salidas. | **Escenario 1: Movimiento válido**<br>Given un POST /inventory/movements válido,<br>When el servicio lo procesa,<br>Then responde 201 con el movimiento y el nuevo stock.<br><br>**Escenario 2: Stock negativo**<br>Given un POST /inventory/movements que dejaría el stock negativo,<br>When el servicio lo valida,<br>Then responde 409 y no aplica el movimiento.<br><br>**Escenario 3: Solicitud sin autenticación**<br>Given que la solicitud no incluye un token válido,<br>When el cliente llama al endpoint de movimientos,<br>Then el sistema responde 401 y no registra el movimiento.<br><br>**Escenario 4: Reintento idempotente**<br>Given que el cliente reenvía un movimiento con la misma clave de idempotencia,<br>When el sistema lo recibe de nuevo,<br>Then el sistema devuelve el movimiento ya registrado sin duplicarlo. | EP10 |
+| US28 | Endpoint de lecturas IoT simuladas | Como Developer quiero un endpoint que reciba lecturas simuladas y las evalúe contra los rangos configurados para detectar condiciones anómalas durante la producción. | **Escenario 1: Lectura dentro de rango**<br>Given un POST /batches/{id}/readings dentro de rango,<br>When el servicio lo procesa,<br>Then responde 201 y almacena la lectura sin generar alerta.<br><br>**Escenario 2: Lectura fuera de rango**<br>Given un POST /batches/{id}/readings fuera de rango,<br>When el servicio lo procesa,<br>Then responde 201, almacena la lectura y genera una alerta asociada al lote.<br><br>**Escenario 3: Fuente no reconocida**<br>Given que la lectura llega con un source_id que no existe,<br>When el sistema la recibe,<br>Then el sistema responde con un error y no almacena la lectura.<br><br>**Escenario 4: Lectura duplicada**<br>Given que la lectura llega con una clave de origen ya registrada,<br>When el sistema la recibe de nuevo,<br>Then el sistema la ignora para evitar duplicados. | EP10 |
+| US29 | Endpoint de estimaciones de reposición | Como Developer quiero un endpoint que devuelva la estimación de reposición de un producto para que la Web Application muestre cuándo reponer. | **Escenario 1: Historial suficiente**<br>Given un GET /products/{id}/replenishment-estimate con historial suficiente,<br>When el servicio lo calcula,<br>Then responde 200 con la estimación.<br><br>**Escenario 2: Historial insuficiente**<br>Given un GET /products/{id}/replenishment-estimate con historial insuficiente,<br>When el servicio lo evalúa,<br>Then responde 200 indicando que no hay datos suficientes.<br><br>**Escenario 3: Producto inexistente**<br>Given que el identificador del producto no existe,<br>When el cliente consulta la estimación,<br>Then el sistema responde 404 sin datos de estimación. | EP10 |
+| US56 | Endpoint de registro de cuenta | Como Developer quiero un endpoint que registre cuentas de productor o comercializador para que la Web Application cree cuentas e inicie el periodo de prueba. | **Escenario 1: Registro válido**<br>Given un POST /auth/register con correo, contraseña y tipo de negocio válidos,<br>When el servicio lo procesa,<br>Then responde 201 con la cuenta creada y la fecha de fin del periodo de prueba.<br><br>**Escenario 2: Correo en uso**<br>Given un POST /auth/register con un correo ya registrado,<br>When el servicio lo valida,<br>Then responde 409 y no crea la cuenta.<br><br>**Escenario 3: Datos incompletos**<br>Given que la solicitud no incluye el tipo de negocio,<br>When el cliente llama al endpoint,<br>Then el sistema responde con un error 400 que indica el campo faltante. | EP10 |
+| US57 | Endpoints de suscripción | Como Developer quiero endpoints para consultar y contratar la suscripción para que la Web Application gestione el plan de cada cuenta. | **Escenario 1: Consulta de estado**<br>Given un GET /subscriptions/current de un usuario autenticado,<br>When el servicio lo procesa,<br>Then responde 200 con el plan, el estado y las fechas relevantes.<br><br>**Escenario 2: Contratación**<br>Given un POST /subscriptions con un plan válido y un pago confirmado,<br>When el servicio lo procesa,<br>Then responde 201 y activa la suscripción; si el pago fue rechazado, responde 402 y no cambia el estado.<br><br>**Escenario 3: Plan inexistente**<br>Given que el identificador del plan no existe,<br>When el cliente intenta contratarlo,<br>Then el sistema responde 404 y no crea la suscripción.<br><br>**Escenario 4: Pago idempotente**<br>Given que el cliente reintenta el pago con la misma clave de idempotencia,<br>When el sistema recibe la solicitud,<br>Then el sistema devuelve el resultado anterior sin generar un cobro nuevo. | EP10 |
+| US58 | Endpoints de productos | Como Developer quiero endpoints para crear y listar productos para que la Web Application administre el catálogo. | **Escenario 1: Creación válida**<br>Given un POST /products con nombre, presentación y unidad válidos,<br>When el servicio lo procesa,<br>Then responde 201 con el producto creado.<br><br>**Escenario 2: Listado paginado**<br>Given un GET /products de un usuario autenticado,<br>When el servicio lo procesa,<br>Then responde 200 con los productos de esa cuenta, paginados.<br><br>**Escenario 3: Solicitud sin autenticación**<br>Given que la solicitud no incluye un token válido,<br>When el cliente crea o lista productos,<br>Then el sistema responde 401 sin devolver datos. | EP10 |
+| US59 | Endpoint de registro de lotes | Como Developer quiero un endpoint que registre lotes de producción para que la Web Application guarde el historial de producción. | **Escenario 1: Lote válido**<br>Given un POST /batches con fecha de inicio, producto y cantidad estimada,<br>When el servicio lo procesa,<br>Then responde 201 con el lote en estado inicial.<br><br>**Escenario 2: Datos incompletos**<br>Given un POST /batches sin fecha de inicio,<br>When el servicio lo valida,<br>Then responde 400 con el detalle de los campos faltantes.<br><br>**Escenario 3: Solicitud sin autenticación**<br>Given que la solicitud no incluye un token válido,<br>When el cliente registra un lote,<br>Then el sistema responde 401 y no crea el lote. | EP10 |
+| US60 | Endpoint de cambio de estado de un lote | Como Developer quiero un endpoint que cambie el estado de un lote validando la secuencia de etapas para que el historial de cada lote sea consistente. | **Escenario 1: Transición válida**<br>Given un PATCH /batches/{id}/status con la siguiente etapa permitida,<br>When el servicio lo procesa,<br>Then responde 200 con el nuevo estado y registra el cambio en el historial.<br><br>**Escenario 2: Transición inválida**<br>Given un PATCH /batches/{id}/status con una etapa no permitida,<br>When el servicio lo valida,<br>Then responde 422 y no modifica el lote.<br><br>**Escenario 3: Lote inexistente**<br>Given que el identificador del lote no existe,<br>When el cliente solicita el cambio de estado,<br>Then el sistema responde 404 sin modificar datos. | EP10 |
+| US61 | Endpoint de consulta de lecturas | Como Developer quiero un endpoint que devuelva las lecturas de un lote filtradas por variable y rango de fechas para que la Web Application grafique la evolución del proceso. | **Escenario 1: Consulta con filtros**<br>Given un GET /batches/{id}/readings?variable=temperatura&from=...&to=...,<br>When el servicio lo procesa,<br>Then responde 200 con las lecturas del periodo ordenadas por fecha.<br><br>**Escenario 2: Lote inexistente**<br>Given un GET /batches/{id}/readings con un identificador inexistente,<br>When el servicio lo procesa,<br>Then responde 404.<br><br>**Escenario 3: Filtro por variable y fechas**<br>Given que el cliente indica una variable y un rango de fechas,<br>When consulta las lecturas,<br>Then el sistema devuelve solo las lecturas de esa variable dentro del rango. | EP10 |
+| US62 | Endpoints de alertas | Como Developer quiero endpoints para listar alertas y cambiar su estado para que la Web Application muestre y gestione las alertas. | **Escenario 1: Listado con filtros**<br>Given un GET /alerts?type=stock_bajo&status=pendiente,<br>When el servicio lo procesa,<br>Then responde 200 con las alertas que cumplen el filtro.<br><br>**Escenario 2: Marcar como atendida**<br>Given un PATCH /alerts/{id} con el estado atendida,<br>When el servicio lo procesa,<br>Then responde 200 con la alerta actualizada.<br><br>**Escenario 3: Alerta inexistente**<br>Given que el identificador de la alerta no existe,<br>When el cliente intenta cambiar su estado,<br>Then el sistema responde 404 sin modificar datos. | EP10 |
+| US63 | Endpoint de pedidos | Como Developer quiero un endpoint que registre pedidos y descuente el stock para que las ventas queden reflejadas en el inventario. | **Escenario 1: Pedido válido**<br>Given un POST /orders con cliente, productos y cantidades dentro del stock,<br>When el servicio lo procesa,<br>Then responde 201 con el pedido y descuenta el stock.<br><br>**Escenario 2: Stock insuficiente**<br>Given un POST /orders con cantidades mayores al stock,<br>When el servicio lo valida,<br>Then responde 409 con el detalle de los productos sin stock suficiente.<br><br>**Escenario 3: Stock insuficiente**<br>Given que una línea del pedido supera el stock disponible,<br>When el cliente registra el pedido,<br>Then el sistema rechaza el pedido y no descuenta stock.<br><br>**Escenario 4: Pedido idempotente**<br>Given que el cliente reenvía el pedido con la misma clave de idempotencia,<br>When el sistema lo recibe de nuevo,<br>Then el sistema devuelve el pedido ya registrado sin duplicarlo. | EP10 |
+| US64 | Servicio simulador de lecturas IoT | Como Developer quiero un servicio simulador que envíe lecturas sintéticas identificadas por un source_id a POST /batches/{id}/readings para probar el monitoreo sin sensores físicos. | **Escenario 1: Envío periódico**<br>Given un escenario configurado con lote, métrica y frecuencia,<br>When transcurre el intervalo configurado,<br>Then el simulador envía un POST /batches/{id}/readings con un source_id y recibe 201.<br><br>**Escenario 2: Reintento tras error**<br>Given que la API no responde o devuelve un error temporal,<br>When el simulador reintenta,<br>Then el simulador reenvía el mismo payload con el mismo source_id y la API no registra la lectura duplicada.<br><br>**Escenario 3: Identificación de la fuente**<br>Given que el simulador envía una lectura,<br>When el endpoint la recibe,<br>Then el sistema la asocia a la variable del lote mediante su source_id. | EP10 |
+| US65 | Endpoint de resumen del dashboard | Como Developer quiero un endpoint que devuelva el resumen del dashboard según el tipo de usuario para que la Web Application cargue el dashboard con una sola solicitud. | **Escenario 1: Resumen de productor**<br>Given un GET /dashboard/summary de un usuario productor,<br>When el servicio lo procesa,<br>Then responde 200 con lotes activos, alertas pendientes y niveles de inventario.<br><br>**Escenario 2: Resumen de comercializador**<br>Given un GET /dashboard/summary de un usuario comercializador,<br>When el servicio lo procesa,<br>Then responde 200 con productos con stock bajo, alertas pendientes y pedidos recientes.<br><br>**Escenario 3: Resumen por tipo de usuario**<br>Given que el cliente consulta el resumen como productor o como comercializador,<br>When recibe la respuesta,<br>Then el sistema devuelve solo los indicadores propios de ese tipo de usuario. | EP10 |
 
 **Resumen de historias por Épica**
 
@@ -1887,7 +2001,9 @@ El Impact Mapping conecta el objetivo de negocio con las funcionalidades que se 
 
 ### 3.3. Product Backlog
 
-El Product Backlog lista las 65 historias ordenadas por valor de negocio: primero la landing page (primer punto de contacto con los clientes potenciales y requisito para captar registros), luego el registro y la autenticación, el dashboard y el inventario (núcleo de ambos segmentos), la producción y el monitoreo, los pedidos y el abastecimiento, las estimaciones y, al final, la gestión de suscripción y las mejoras de gestión de datos. Los Story Points siguen la escala 1, 2, 3, 5 y 8, donde 1 corresponde a un cambio muy pequeño y 8 a una historia con dependencias externas (como la pasarela de pago).
+El Product Backlog lista las 65 historias (51 historias de usuario y 14 historias técnicas) ordenadas por **prioridad de negocio**. La prioridad la determina el Product Owner según el valor que cada historia aporta a los segmentos y al negocio, y no depende de los Story Points. El orden es: primero la landing page, que es el primer punto de contacto con los clientes potenciales; luego el núcleo de valor para ambos segmentos (dashboards, inventario, alertas, producción, monitoreo, pedidos y estimaciones de reposición); después la gestión de la suscripción, que sostiene el modelo de negocio; el registro y la autenticación (IAM), que se incorporan cuando el curso aborde la autenticación; y, al final, las mejoras de gestión de datos. Cada historia técnica del *backend* aparece justo antes de la historia de interfaz que la consume.
+
+Los Story Points los asigna el equipo de desarrollo, no el Product Owner, y expresan el esfuerzo relativo de cada historia a partir de tres factores: la complejidad, la frecuencia de uso y el riesgo. Se usa la escala 1, 2, 3, 5 y 8, donde 1 corresponde a un cambio muy pequeño y 8 a una historia con dependencias externas (como la pasarela de pago).
 
 Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page) y suman 18 Story Points.
 
@@ -1918,57 +2034,57 @@ Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page
 | 12 | US24 | Registrarme desde la landing page | Como visitante deseo acceder al registro desde la página de inicio para crear mi cuenta sin buscar el formulario. | 1 |
 | 13 | US52 | Cambiar el idioma de la landing page | Como visitante deseo cambiar entre inglés y español para leer el contenido en el idioma que prefiero. | 2 |
 | 14 | US53 | Consultar los términos y condiciones | Como visitante deseo consultar los términos y condiciones desde el pie de página para conocer las condiciones de uso antes de registrarme. | 1 |
-| 15 | US56 | Endpoint de registro de cuenta | Como Developer deseo un endpoint que registre cuentas de productor o comercializador para que la Web Application cree cuentas e inicie el periodo de prueba. | 3 |
-| 16 | US01 | Registrarme como productor o comercializador | Como visitante deseo registrar una cuenta indicando mi tipo de negocio para comenzar mi periodo de prueba gratuito. | 3 |
-| 17 | US26 | Endpoint de autenticación | Como Developer deseo un endpoint de autenticación que devuelva un token para que la Web Application autentique usuarios. | 3 |
-| 18 | US02 | Iniciar sesión | Como usuario registrado deseo iniciar sesión para acceder a las funcionalidades de mi tipo de usuario. | 2 |
-| 19 | US38 | Cerrar sesión | Como usuario autenticado deseo cerrar mi sesión para proteger la información de mi negocio en dispositivos compartidos. | 1 |
-| 20 | US65 | Endpoint de resumen del dashboard | Como Developer deseo un endpoint que devuelva el resumen del dashboard según el tipo de usuario para que la Web Application cargue el dashboard con una sola solicitud. | 3 |
-| 21 | US04 | Ver dashboard de producción | Como productor deseo ver un dashboard con el estado general de mi producción e inventario para tomar decisiones sin revisar cada módulo por separado. | 5 |
-| 22 | US05 | Ver dashboard comercial | Como comercializador deseo ver un dashboard con el estado de mi inventario y pedidos para identificar rápidamente qué productos necesito reponer. | 5 |
-| 23 | US58 | Endpoints de productos | Como Developer deseo endpoints para crear y listar productos para que la Web Application administre el catálogo. | 2 |
-| 24 | US12 | Registrar producto | Como productor o comercializador deseo registrar mis productos para tener un catálogo organizado. | 2 |
-| 25 | US27 | Endpoint de movimientos de inventario | Como Developer deseo un endpoint que registre movimientos de inventario de forma consistente para que el stock refleje todas las entradas y salidas. | 3 |
-| 26 | US13 | Registrar movimiento de inventario | Como productor o comercializador deseo registrar entradas y salidas de un producto para mantener mi stock actualizado. | 3 |
-| 27 | US14 | Consultar stock disponible | Como productor o comercializador deseo consultar el stock disponible para no tener que revisar físicamente el almacén. | 2 |
-| 28 | US15 | Configurar umbral de stock bajo | Como productor o comercializador deseo definir un umbral mínimo por producto para recibir alertas antes de quedarme sin stock. | 2 |
-| 29 | US62 | Endpoints de alertas | Como Developer deseo endpoints para listar alertas y cambiar su estado para que la Web Application muestre y gestione las alertas. | 3 |
-| 30 | US16 | Visualizar y atender alertas | Como productor o comercializador deseo visualizar mis alertas pendientes y marcarlas como atendidas para llevar control de lo que ya resolví. | 3 |
-| 31 | US59 | Endpoint de registro de lotes | Como Developer deseo un endpoint que registre lotes de producción para que la Web Application guarde el historial de producción. | 2 |
-| 32 | US06 | Registrar lote de producción | Como productor deseo registrar un nuevo lote para llevar un historial organizado de mis procesos. | 3 |
-| 33 | US60 | Endpoint de cambio de estado de un lote | Como Developer deseo un endpoint que cambie el estado de un lote validando la secuencia de etapas para que el historial de cada lote sea consistente. | 2 |
-| 34 | US07 | Actualizar estado de un lote | Como productor deseo actualizar el estado de un lote para reflejar el avance real del proceso. | 2 |
-| 35 | US08 | Consultar historial de un lote | Como productor deseo consultar el historial completo de un lote para revisar su trazabilidad. | 2 |
-| 36 | US43 | Registrar el embotellado de un lote | Como productor deseo registrar la cantidad embotellada de un lote para incorporar las botellas producidas a mi inventario. | 3 |
-| 37 | US63 | Endpoint de pedidos | Como Developer deseo un endpoint que registre pedidos y descuente el stock para que las ventas queden reflejadas en el inventario. | 3 |
-| 38 | US17 | Registrar cliente | Como productor o comercializador deseo registrar información básica de mis clientes para tener sus datos disponibles al registrar pedidos. | 2 |
-| 39 | US18 | Registrar pedido | Como productor o comercializador deseo registrar un pedido de un cliente para llevar control de mis ventas. | 5 |
-| 40 | US19 | Consultar historial de pedidos | Como productor o comercializador deseo consultar mis pedidos anteriores para revisar qué vendí y a quién. | 2 |
-| 41 | US28 | Endpoint de lecturas IoT simuladas | Como Developer deseo un endpoint que reciba lecturas simuladas y las evalúe contra los rangos configurados para detectar condiciones anómalas durante la producción. | 3 |
-| 42 | US09 | Visualizar variables de proceso | Como productor deseo visualizar las variables de un lote (simuladas) para supervisar el proceso a distancia. | 5 |
-| 43 | US10 | Configurar rango normal de una variable | Como productor deseo definir el rango normal de una variable para que el sistema detecte anomalías automáticamente. | 3 |
-| 44 | US11 | Recibir notificación de condición anómala | Como productor deseo ser notificado cuando una variable salga del rango normal para actuar a tiempo y evitar la pérdida del lote. | 3 |
-| 45 | US55 | Elegir las variables que se monitorean en un lote | Como productor deseo elegir qué variables monitorear (temperatura, grado de azúcar o grado alcohólico) en cada lote para ver solo la información relevante para mi proceso. | 3 |
-| 46 | US61 | Endpoint de consulta de lecturas | Como Developer deseo un endpoint que devuelva las lecturas de un lote filtradas por variable y rango de fechas para que la Web Application grafique la evolución del proceso. | 2 |
-| 47 | US44 | Ver la tendencia de una variable | Como productor deseo ver en un gráfico la evolución de una variable de un lote en un rango de fechas para identificar desviaciones antes de que afecten al lote. | 3 |
-| 48 | US50 | Generar lista de compra para reposición | Como comercializador deseo generar una lista de compra con los productos por reponer y compartirla como texto para agilizar mis pedidos de reposición por WhatsApp. | 3 |
-| 49 | US64 | Servicio simulador de lecturas IoT | Como Developer deseo un servicio simulador que envíe lecturas sintéticas identificadas por un source_id a POST /batches/{id}/readings para probar el monitoreo sin sensores físicos. | 3 |
-| 50 | US29 | Endpoint de estimaciones de reposición | Como Developer deseo un endpoint que devuelva la estimación de reposición de un producto para que la Web Application muestre cuándo reponer. | 3 |
-| 51 | US20 | Ver estimación de reposición | Como productor o comercializador deseo ver una estimación de cuándo reponer un producto según mi historial para anticipar mis compras o mi producción. | 5 |
-| 52 | US51 | Ver productos con riesgo de agotamiento | Como productor o comercializador deseo ver una lista de los productos con riesgo de agotarse pronto para priorizar qué reponer primero. | 3 |
-| 53 | US21 | Ver indicadores históricos | Como productor o comercializador deseo visualizar indicadores históricos de inventario y producción para evaluar la evolución de mi negocio. | 5 |
-| 54 | US57 | Endpoints de suscripción | Como Developer deseo endpoints para consultar y contratar la suscripción para que la Web Application gestione el plan de cada cuenta. | 5 |
-| 55 | US03 | Recibir aviso de fin de periodo de prueba | Como usuario en prueba deseo recibir un aviso antes de que finalice mi periodo gratuito para decidir si me suscribo. | 2 |
-| 56 | US54 | Consultar mi plan y estado de suscripción | Como productor o comercializador deseo consultar mi plan actual, el estado de mi suscripción y mi fecha de renovación o fin de prueba para planificar mi contratación. | 2 |
-| 57 | US40 | Contratar un plan de suscripción | Como usuario en prueba o con prueba vencida deseo contratar un plan de suscripción para continuar usando Destilatech al terminar el periodo de prueba. | 8 |
+| 15 | US65 | Endpoint de resumen del dashboard | Como Developer deseo un endpoint que devuelva el resumen del dashboard según el tipo de usuario para que la Web Application cargue el dashboard con una sola solicitud. | 3 |
+| 16 | US04 | Ver dashboard de producción | Como productor deseo ver un dashboard con el estado general de mi producción e inventario para tomar decisiones sin revisar cada módulo por separado. | 5 |
+| 17 | US05 | Ver dashboard comercial | Como comercializador deseo ver un dashboard con el estado de mi inventario y pedidos para identificar rápidamente qué productos necesito reponer. | 5 |
+| 18 | US58 | Endpoints de productos | Como Developer deseo endpoints para crear y listar productos para que la Web Application administre el catálogo. | 2 |
+| 19 | US12 | Registrar producto | Como productor o comercializador deseo registrar mis productos para tener un catálogo organizado. | 2 |
+| 20 | US27 | Endpoint de movimientos de inventario | Como Developer deseo un endpoint que registre movimientos de inventario de forma consistente para que el stock refleje todas las entradas y salidas. | 3 |
+| 21 | US13 | Registrar movimiento de inventario | Como productor o comercializador deseo registrar entradas y salidas de un producto para mantener mi stock actualizado. | 3 |
+| 22 | US14 | Consultar stock disponible | Como productor o comercializador deseo consultar el stock disponible para no tener que revisar físicamente el almacén. | 2 |
+| 23 | US15 | Configurar umbral de stock bajo | Como productor o comercializador deseo definir un umbral mínimo por producto para recibir alertas antes de quedarme sin stock. | 2 |
+| 24 | US62 | Endpoints de alertas | Como Developer deseo endpoints para listar alertas y cambiar su estado para que la Web Application muestre y gestione las alertas. | 3 |
+| 25 | US16 | Visualizar y atender alertas | Como productor o comercializador deseo visualizar mis alertas pendientes y marcarlas como atendidas para llevar control de lo que ya resolví. | 3 |
+| 26 | US59 | Endpoint de registro de lotes | Como Developer deseo un endpoint que registre lotes de producción para que la Web Application guarde el historial de producción. | 2 |
+| 27 | US06 | Registrar lote de producción | Como productor deseo registrar un nuevo lote para llevar un historial organizado de mis procesos. | 3 |
+| 28 | US60 | Endpoint de cambio de estado de un lote | Como Developer deseo un endpoint que cambie el estado de un lote validando la secuencia de etapas para que el historial de cada lote sea consistente. | 2 |
+| 29 | US07 | Actualizar estado de un lote | Como productor deseo actualizar el estado de un lote para reflejar el avance real del proceso. | 2 |
+| 30 | US08 | Consultar historial de un lote | Como productor deseo consultar el historial completo de un lote para revisar su trazabilidad. | 2 |
+| 31 | US43 | Registrar el embotellado de un lote | Como productor deseo registrar la cantidad embotellada de un lote para incorporar las botellas producidas a mi inventario. | 3 |
+| 32 | US63 | Endpoint de pedidos | Como Developer deseo un endpoint que registre pedidos y descuente el stock para que las ventas queden reflejadas en el inventario. | 3 |
+| 33 | US17 | Registrar cliente | Como productor o comercializador deseo registrar información básica de mis clientes para tener sus datos disponibles al registrar pedidos. | 2 |
+| 34 | US18 | Registrar pedido | Como productor o comercializador deseo registrar un pedido de un cliente para llevar control de mis ventas. | 5 |
+| 35 | US19 | Consultar historial de pedidos | Como productor o comercializador deseo consultar mis pedidos anteriores para revisar qué vendí y a quién. | 2 |
+| 36 | US28 | Endpoint de lecturas IoT simuladas | Como Developer deseo un endpoint que reciba lecturas simuladas y las evalúe contra los rangos configurados para detectar condiciones anómalas durante la producción. | 3 |
+| 37 | US09 | Visualizar variables de proceso | Como productor deseo visualizar las variables de un lote (simuladas) para supervisar el proceso a distancia. | 5 |
+| 38 | US10 | Configurar rango normal de una variable | Como productor deseo definir el rango normal de una variable para que el sistema detecte anomalías automáticamente. | 3 |
+| 39 | US11 | Recibir notificación de condición anómala | Como productor deseo ser notificado cuando una variable salga del rango normal para actuar a tiempo y evitar la pérdida del lote. | 3 |
+| 40 | US55 | Elegir las variables que se monitorean en un lote | Como productor deseo elegir qué variables monitorear (temperatura, grado de azúcar o grado alcohólico) en cada lote para ver solo la información relevante para mi proceso. | 3 |
+| 41 | US61 | Endpoint de consulta de lecturas | Como Developer deseo un endpoint que devuelva las lecturas de un lote filtradas por variable y rango de fechas para que la Web Application grafique la evolución del proceso. | 2 |
+| 42 | US44 | Ver la tendencia de una variable | Como productor deseo ver en un gráfico la evolución de una variable de un lote en un rango de fechas para identificar desviaciones antes de que afecten al lote. | 3 |
+| 43 | US50 | Generar lista de compra para reposición | Como comercializador deseo generar una lista de compra con los productos por reponer y compartirla como texto para agilizar mis pedidos de reposición por WhatsApp. | 3 |
+| 44 | US64 | Servicio simulador de lecturas IoT | Como Developer deseo un servicio simulador que envíe lecturas sintéticas identificadas por un source_id a POST /batches/{id}/readings para probar el monitoreo sin sensores físicos. | 3 |
+| 45 | US29 | Endpoint de estimaciones de reposición | Como Developer deseo un endpoint que devuelva la estimación de reposición de un producto para que la Web Application muestre cuándo reponer. | 3 |
+| 46 | US20 | Ver estimación de reposición | Como productor o comercializador deseo ver una estimación de cuándo reponer un producto según mi historial para anticipar mis compras o mi producción. | 5 |
+| 47 | US51 | Ver productos con riesgo de agotamiento | Como productor o comercializador deseo ver una lista de los productos con riesgo de agotarse pronto para priorizar qué reponer primero. | 3 |
+| 48 | US21 | Ver indicadores históricos | Como productor o comercializador deseo visualizar indicadores históricos de inventario y producción para evaluar la evolución de mi negocio. | 5 |
+| 49 | US57 | Endpoints de suscripción | Como Developer deseo endpoints para consultar y contratar la suscripción para que la Web Application gestione el plan de cada cuenta. | 5 |
+| 50 | US03 | Recibir aviso de fin de periodo de prueba | Como usuario en prueba deseo recibir un aviso antes de que finalice mi periodo gratuito para decidir si me suscribo. | 2 |
+| 51 | US54 | Consultar mi plan y estado de suscripción | Como productor o comercializador deseo consultar mi plan actual, el estado de mi suscripción y mi fecha de renovación o fin de prueba para planificar mi contratación. | 2 |
+| 52 | US40 | Contratar un plan de suscripción | Como usuario en prueba o con prueba vencida deseo contratar un plan de suscripción para continuar usando Destilatech al terminar el periodo de prueba. | 8 |
+| 53 | US56 | Endpoint de registro de cuenta | Como Developer deseo un endpoint que registre cuentas de productor o comercializador para que la Web Application cree cuentas e inicie el periodo de prueba. | 3 |
+| 54 | US01 | Registrarme como productor o comercializador | Como visitante deseo registrar una cuenta indicando mi tipo de negocio para comenzar mi periodo de prueba gratuito. | 3 |
+| 55 | US26 | Endpoint de autenticación | Como Developer deseo un endpoint de autenticación que devuelva un token para que la Web Application autentique usuarios. | 3 |
+| 56 | US02 | Iniciar sesión | Como usuario registrado deseo iniciar sesión para acceder a las funcionalidades de mi tipo de usuario. | 2 |
+| 57 | US38 | Cerrar sesión | Como usuario autenticado deseo cerrar mi sesión para proteger la información de mi negocio en dispositivos compartidos. | 1 |
 | 58 | US39 | Recuperar contraseña | Como usuario registrado deseo restablecer mi contraseña mediante mi correo para recuperar el acceso a mi cuenta si la olvido. | 3 |
 | 59 | US41 | Actualizar los datos de mi negocio | Como productor o comercializador deseo actualizar el nombre, la ubicación y el tipo de mi negocio para mantener correcta la información de mi cuenta. | 2 |
-| 60 | US42 | Editar los datos de un lote | Como productor deseo corregir los datos de un lote registrado para mantener información exacta de mi producción. | 2 |
-| 61 | US45 | Editar o desactivar un producto | Como productor o comercializador deseo editar los datos de un producto o desactivarlo para mantener actualizado mi catálogo. | 2 |
-| 62 | US46 | Consultar el historial de movimientos de un producto | Como productor o comercializador deseo consultar el kardex de un producto para revisar de dónde proviene la diferencia de stock. | 3 |
-| 63 | US47 | Ajustar el stock tras un conteo físico | Como productor o comercializador deseo registrar un ajuste de stock con el resultado de mi conteo físico para corregir diferencias entre el sistema y el almacén. | 3 |
-| 64 | US48 | Filtrar alertas por tipo y estado | Como productor o comercializador deseo filtrar mis alertas por tipo (stock bajo o condición anómala) y por estado para encontrar rápidamente las que requieren atención. | 2 |
-| 65 | US49 | Editar los datos de un cliente | Como productor o comercializador deseo editar los datos de un cliente registrado para mantener actualizada mi información de contacto. | 1 |
+| 60 | US46 | Consultar el historial de movimientos de un producto | Como productor o comercializador deseo consultar el kardex de un producto para revisar de dónde proviene la diferencia de stock. | 3 |
+| 61 | US47 | Ajustar el stock tras un conteo físico | Como productor o comercializador deseo registrar un ajuste de stock con el resultado de mi conteo físico para corregir diferencias entre el sistema y el almacén. | 3 |
+| 62 | US48 | Filtrar alertas por tipo y estado | Como productor o comercializador deseo filtrar mis alertas por tipo (stock bajo o condición anómala) y por estado para encontrar rápidamente las que requieren atención. | 2 |
+| 63 | US49 | Editar los datos de un cliente | Como productor o comercializador deseo editar los datos de un cliente registrado para mantener actualizada mi información de contacto. | 1 |
+| 64 | US42 | Editar los datos de un lote | Como productor deseo corregir los datos de un lote registrado para mantener información exacta de mi producción. | 2 |
+| 65 | US45 | Editar o desactivar un producto | Como productor o comercializador deseo editar los datos de un producto o desactivarlo para mantener actualizado mi catálogo. | 2 |
 
 **Total del backlog: 179 Story Points.**
 
@@ -2571,7 +2687,30 @@ Los diagramas se elaboraron como código: el Design-Level EventStorming, los dia
 
 #### 4.6.1. Design-Level EventStorming
 
-El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide). Partió de las seis áreas candidatas del Big Picture EventStorming y las refinó hasta llegar a siete *bounded contexts*. En cada uno se identificaron los *commands* (acciones que un actor o un sistema externo dispara), el *aggregate* que procesa el command y garantiza sus invariantes, los eventos de dominio resultantes, las políticas (reacciones automáticas del sistema ante un evento, que pueden disparar commands en el mismo contexto o en otro) y los *read models* (vistas de consulta que el sistema expone a partir de los eventos).
+El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide). Partió de las cuatro áreas candidatas del negocio actual identificadas en el Big Picture EventStorming (sección 2.4.5) y de lo que la solución añade, y llegó a siete *bounded contexts*. En cada uno se identificaron los *commands* (acciones que un actor o un sistema externo dispara), el *aggregate* que procesa el command y garantiza sus invariantes, los eventos de dominio resultantes, las políticas (reacciones automáticas del sistema ante un evento, que pueden disparar commands en el mismo contexto o en otro) y los *read models* (vistas de consulta que el sistema expone a partir de los eventos).
+
+**Qué incluye la solución y cómo modifica el flujo de eventos.** El Big Picture mostró cómo funciona hoy el negocio, con cuaderno, Excel y WhatsApp, y sus hotspots. La solución de Destilatech incorpora commands, eventos y vistas de consulta que cambian esos puntos del flujo de la siguiente manera:
+
+| Punto del flujo actual (Big Picture) | Cómo lo modifica Destilatech | Eventos de dominio que aparecen | Bounded context |
+| :--- | :--- | :--- | :--- |
+| La temperatura anómala se detecta tarde y obliga a visitar la bodega (eventos 5 y 6 del productor) | Las lecturas de los sensores (simulados) se comparan con el rango configurado de cada variable y se avisa al productor | `SensorReadingRecorded`, `AnomalyDetected`, `AlertRaised` | Production & Monitoring → Alerts & Notifications |
+| El lote se anota dos veces y el producto terminado se cuenta físicamente (eventos 12 y 13 del productor) | El lote se registra una vez y cada entrada, salida o ajuste se guarda como movimiento que actualiza el stock | `BatchRegistered`, `StockMovementRegistered`, `StockLevelUpdated` | Production & Monitoring, Inventory & Stock Management |
+| Las ventas se anotan con retraso o no se anotan (evento 16 del productor; evento 3 del comercializador) | Registrar el pedido descuenta el stock automáticamente | `OrderRegistered`, `StockLevelUpdated` | Orders & Replenishment → Inventory & Stock Management |
+| El producto se agota sin que el dueño lo note (eventos 5 y 6 del comercializador) | Un umbral por producto genera una alerta antes del quiebre | `LowStockDetected`, `AlertRaised` | Inventory & Stock Management → Alerts & Notifications |
+| La reposición se decide a ojo (evento 7 del comercializador) | La estimación se calcula con el historial de movimientos y se indica su nivel de confianza | `ReplenishmentEstimateCalculated` | Analytics & Estimations |
+| El pedido al proveedor se coordina por WhatsApp sin registro (eventos 8 y 9 del comercializador) | La lista de compra se genera dentro de la plataforma y el pedido queda registrado; WhatsApp sigue siendo el canal | `ReplenishmentListGenerated`, `OrderRegistered` | Orders & Replenishment |
+| No existe en el negocio actual: el acceso a la herramienta y su cobro | La plataforma identifica al usuario y, al terminar la prueba, cobra la suscripción mediante una pasarela externa en modo de pruebas | `CheckoutStarted`, `PaymentConfirmed`, `SubscriptionActivated` | IAM, Billing |
+
+**Criterios para separar los *bounded contexts*.** Las fronteras no se trazaron por módulos de pantalla, sino con cuatro criterios aplicados a las áreas candidatas del Big Picture y a las capacidades nuevas de la solución:
+
+| Criterio | Cómo se aplicó | Ejemplo |
+| :--- | :--- | :--- |
+| Eventos pivote | Una frontera se ubica donde un evento cierra una fase y abre otra (sección 2.4.6). | «Pisco embotellado y etiquetado» separa Production & Monitoring de Inventory & Stock Management. |
+| Lenguaje ubicuo | Un término tiene un solo significado dentro de un contexto; si cambia de significado, hay otro contexto. | «Lote» es una unidad en proceso en Production & Monitoring y «Existencia» es una cantidad disponible en Inventory; «Alerta» agrupa anomalías y stock bajo en Alerts & Notifications. |
+| Ciclo de cambio y responsabilidad | Las responsabilidades que cambian por razones distintas se separan. | El acceso del usuario (IAM) y el cobro de la suscripción (Billing) cambian por razones distintas y no existen en el negocio actual; por eso se separan de los contextos operativos. |
+| Datos propios | Cada contexto es dueño de sus agregados; los demás solo los consultan mediante eventos o commands. | Orders & Replenishment descuenta stock con el command `DiscountStock`, sin modificar los agregados de Inventory. |
+
+**Relación entre las áreas del Big Picture y los *bounded contexts*.** «Producción del pisco» origina Production & Monitoring; «Registro de lotes y existencias» origina Inventory & Stock Management; «Ventas y atención al cliente» y «Reposición y abastecimiento» se reúnen en Orders & Replenishment porque comparten el concepto de pedido. Alerts & Notifications y Analytics & Estimations no existen en el negocio actual: nacen de la solución para atender los hotspots de detección tardía y de reposición a ojo. IAM y Billing completan la plataforma como producto SaaS.
 
 **Leyenda utilizada en los diagramas**
 
@@ -2652,7 +2791,7 @@ flowchart LR
 *Descripción.* Diagrama de flujo de izquierda a derecha que ordena los commands, aggregates, eventos, políticas y read models del contexto Billing; las flechas punteadas indican interacciones con otros contextos o con sistemas externos.
 
 
-El comando `SubscribeToPlan` (US40) crea un `PaymentAttempt` con una clave de idempotencia y solicita el checkout a la Pasarela de Pago, sistema externo identificado como hotspot en el Big Picture EventStorming. Cuando la pasarela confirma el cobro, el comando `ConfirmPayment` marca el intento como pagado; la política `ActivateSubscriptionOnPayment` activa entonces la suscripción, y `SyncAccountAccessOnActivation` envía un Command hacia IAM para extender el acceso de la cuenta más allá del periodo de prueba. El acoplamiento entre ambos contextos es delgado: se comunican con eventos y commands, no con consultas directas a su modelo interno. `SubscriptionStatusView` alimenta la consulta del plan y del estado de la suscripción (US54) y `PlanCatalogView` los planes que se muestran al contratar.
+El comando `SubscribeToPlan` (US40) crea un `PaymentAttempt` con una clave de idempotencia y solicita el checkout a la Pasarela de Pago, sistema externo que aparece con la solución, ya que el negocio actual no cobra suscripciones. Cuando la pasarela confirma el cobro, el comando `ConfirmPayment` marca el intento como pagado; la política `ActivateSubscriptionOnPayment` activa entonces la suscripción, y `SyncAccountAccessOnActivation` envía un Command hacia IAM para extender el acceso de la cuenta más allá del periodo de prueba. El acoplamiento entre ambos contextos es delgado: se comunican con eventos y commands, no con consultas directas a su modelo interno. `SubscriptionStatusView` alimenta la consulta del plan y del estado de la suscripción (US54) y `PlanCatalogView` los planes que se muestran al contratar.
 
 **c. Production & Monitoring**
 
@@ -2869,7 +3008,7 @@ El diagrama de contexto presenta a Destilatech como un único recuadro al centro
 *Descripción.* Destilatech aparece como un sistema central. Tres personas lo usan: el visitante, que conoce la propuesta y se registra; el productor de pisco, que gestiona lotes, monitoreo e inventario; y el comercializador, que gestiona inventario, clientes y pedidos. Dos sistemas externos se conectan con él: la pasarela de pago, a la que se solicitan cobros y de la que se recibe la notificación del resultado, y el sensor IoT simulado, que envía lecturas.
 
 
-Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna ni la división en contextos. La pasarela de pago y el sensor IoT simulado son los dos únicos sistemas externos que el Big Picture EventStorming señaló como notas rosa (WhatsApp, el tercer sistema externo del Big Picture, no se integra con Destilatech: el usuario comparte por su cuenta el texto de la lista de compra).
+Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna ni la división en contextos. La pasarela de pago y el sensor IoT simulado son los dos sistemas externos con los que Destilatech se comunica; ambos aparecen con la solución y no existían en el negocio actual descrito en el Big Picture EventStorming. WhatsApp, el canal que hoy usan los entrevistados para coordinar pedidos, no se integra con Destilatech: el usuario comparte por su cuenta el texto de la lista de compra.
 
 | Origen | Destino | Descripción de la relación | Protocolo |
 | :--- | :--- | :--- | :--- |
@@ -2916,20 +3055,20 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
                 footer = component "Footer" "Contacto, enlaces, términos y condiciones y llamada a la acción de registro." "HTML, CSS, JavaScript"
             }
 
-            webapp = container "Web Application" "Interfaz web adaptable en la que productores y comercializadores operan la plataforma." "Vue.js, PrimeVue, JavaScript" "Web Browser" {
-                apiClient = component "API Client" "Centraliza las llamadas HTTP a la REST API y adjunta el token de sesión." "JavaScript service"
-                i18n = component "Internationalization" "Traduce la interfaz al inglés y al español latinoamericano." "JavaScript module"
-                auth = component "Auth Module" "Registro, inicio de sesión, recuperación de contraseña y estado de la sesión." "Vue components"
-                billingUi = component "Billing Module" "Selección de plan, estado de la suscripción y periodo de prueba." "Vue components"
-                dashboard = component "Dashboard Module" "Dashboard de producción o comercial según el tipo de negocio." "Vue components"
-                productionUi = component "Production Module" "Registro y seguimiento de lotes y de variables del proceso." "Vue components"
-                inventoryUi = component "Inventory Module" "Catálogo de productos, stock y movimientos." "Vue components"
-                ordersUi = component "Orders Module" "Clientes, pedidos, historial y lista de compra." "Vue components"
-                alertsUi = component "Alerts Module" "Bandeja de alertas de anomalía y de stock bajo." "Vue components"
-                analyticsUi = component "Analytics Module" "Estimaciones de reposición e indicadores históricos." "Vue components"
+            webStatic = container "Web Application Static Content" "Sirve al navegador los archivos estáticos de la aplicación (HTML, CSS y paquetes de JavaScript) desde un servicio de hosting." "Hosting de contenido estático" "Static Content"
+
+            spa = container "Single-Page Application" "Aplicación de una sola página que se ejecuta en el navegador del usuario; productores y comercializadores operan la plataforma desde ella." "Vue 3, PrimeVue, Pinia, Vue Router, JavaScript" "Web Browser" {
+                sharedKernel = component "Shared Kernel" "Layout, cliente HTTP base, internacionalización (es/en), conmutador de usuario de demostración y componentes comunes." "Vue components, JavaScript"
+                iamUi = component "IAM (planificado)" "Registro, inicio de sesión y recuperación de contraseña. No se aplica en el Sprint 2." "Vue components" "Planned"
+                billingUi = component "Billing" "Plan, estado de la suscripción, periodo de prueba e historial de pagos." "Vue components, Pinia"
+                productionUi = component "Production & Monitoring" "Lotes de producción, variables del proceso y lecturas simuladas." "Vue components, Pinia"
+                inventoryUi = component "Inventory & Stock Management" "Productos, stock, movimientos y umbrales." "Vue components, Pinia"
+                ordersUi = component "Orders & Replenishment" "Clientes, pedidos y lista de compra para reposición." "Vue components, Pinia"
+                alertsUi = component "Alerts & Notifications" "Bandeja de alertas de anomalía y de stock bajo." "Vue components, Pinia"
+                analyticsUi = component "Analytics & Estimations" "Dashboard, estimaciones de reposición e indicadores históricos." "Vue components, Pinia, Chart.js"
             }
 
-            api = container "REST API" "Expone los servicios de los siete bounded contexts: reglas de negocio, seguridad y acceso a datos." "ASP.NET Core, C#, Entity Framework Core" "API" {
+            api = container "REST API" "Un único contenedor que expone los servicios de los siete bounded contexts como módulos: reglas de negocio, seguridad y acceso a datos. En el Sprint 2 se simula con una Fake API (json-server)." "ASP.NET Core, C#, Entity Framework Core" "API" {
                 controllers = component "API Controllers" "Enruta, valida y autentica las peticiones HTTP y publica la documentación OpenAPI." "ASP.NET Core Controllers"
                 iam = component "IAM" "Identidad de la cuenta, autenticación, recuperación de contraseña y periodo de prueba." "C# module"
                 billing = component "Billing" "Planes, suscripciones e intentos de pago." "C# module"
@@ -2946,18 +3085,19 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
         # Contexto
         visitor -> destilatech.landing "Conoce la propuesta de valor y los planes" "HTTPS"
         visitor -> destilatech.landing.header "Navega entre secciones" "HTTPS"
-        producer -> destilatech.webapp "Registra lotes, monitorea variables y controla su inventario" "HTTPS"
-        retailer -> destilatech.webapp "Gestiona inventario, clientes y pedidos" "HTTPS"
-        destilatech.landing -> destilatech.webapp "Redirige al registro y al inicio de sesión" "HTTPS"
-        destilatech.webapp -> destilatech.api "Consume los servicios" "JSON/HTTPS"
+        producer -> destilatech.spa "Registra lotes, monitorea variables y controla su inventario" "HTTPS"
+        retailer -> destilatech.spa "Gestiona inventario, clientes y pedidos" "HTTPS"
+        destilatech.landing -> destilatech.webStatic "Enlaza a la aplicación" "HTTPS"
+        destilatech.webStatic -> destilatech.spa "Entrega la aplicación al navegador" "HTTPS"
+        destilatech.spa -> destilatech.api "Consume los servicios" "JSON/HTTPS"
         destilatech.api -> destilatech.db "Lee y escribe" "SQL/TLS (EF Core)"
         destilatech.api -> paymentGateway "Solicita el cobro de la suscripción y verifica el pago" "HTTPS/REST"
         paymentGateway -> destilatech.api "Notifica el resultado del pago" "HTTPS (webhook)"
         iotSensor -> destilatech.api "Envía lecturas simuladas" "HTTPS/REST"
 
         # Componentes de la Landing Page
-        destilatech.landing.pricing -> destilatech.webapp "Redirige con el plan preseleccionado" "HTTPS"
-        destilatech.landing.footer -> destilatech.webapp "Redirige al formulario de registro" "HTTPS"
+        destilatech.landing.pricing -> destilatech.webStatic "Enlaza a la aplicación con el plan preseleccionado" "HTTPS"
+        destilatech.landing.footer -> destilatech.webStatic "Enlaza a la aplicación (registro)" "HTTPS"
         destilatech.landing.header -> destilatech.landing.description "Enlaza"
         destilatech.landing.header -> destilatech.landing.goals "Enlaza"
         destilatech.landing.header -> destilatech.landing.pricing "Enlaza"
@@ -2965,18 +3105,22 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
         destilatech.landing.header -> destilatech.landing.features "Enlaza"
         destilatech.landing.header -> destilatech.landing.footer "Enlaza"
 
-        # Componentes de la Web Application
-        destilatech.webapp.auth -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.billingUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.dashboard -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.productionUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.inventoryUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.ordersUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.alertsUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.analyticsUi -> destilatech.webapp.apiClient "Usa"
-        destilatech.webapp.apiClient -> destilatech.api.controllers "Invoca" "JSON/HTTPS"
-        producer -> destilatech.webapp.dashboard "Consulta su dashboard" "HTTPS"
-        retailer -> destilatech.webapp.dashboard "Consulta su dashboard" "HTTPS"
+        # Componentes de la Single-Page Application (primer nivel: bounded contexts)
+        destilatech.spa.sharedKernel -> destilatech.spa.alertsUi "Muestra alertas pendientes en la barra superior"
+        destilatech.spa.sharedKernel -> destilatech.spa.billingUi "Muestra el estado de la prueba gratuita"
+        destilatech.spa.productionUi -> destilatech.spa.inventoryUi "Consulta productos al registrar el embotellado"
+        destilatech.spa.productionUi -> destilatech.spa.alertsUi "Genera alertas de anomalía"
+        destilatech.spa.inventoryUi -> destilatech.spa.alertsUi "Genera alertas de stock bajo"
+        destilatech.spa.ordersUi -> destilatech.spa.inventoryUi "Consulta y descuenta stock"
+        destilatech.spa.analyticsUi -> destilatech.spa.productionUi "Consulta lotes y lecturas"
+        destilatech.spa.analyticsUi -> destilatech.spa.inventoryUi "Consulta stock y movimientos"
+        destilatech.spa.analyticsUi -> destilatech.spa.ordersUi "Consulta pedidos"
+        destilatech.spa.analyticsUi -> destilatech.spa.alertsUi "Consulta alertas"
+        destilatech.spa.ordersUi -> destilatech.spa.analyticsUi "Consulta estimaciones de reposición"
+        destilatech.spa.inventoryUi -> destilatech.spa.analyticsUi "Consulta la estimación de un producto"
+        destilatech.spa.sharedKernel -> destilatech.api "Invoca los servicios de cada contexto" "JSON/HTTPS"
+        producer -> destilatech.spa.analyticsUi "Consulta su dashboard" "HTTPS"
+        retailer -> destilatech.spa.analyticsUi "Consulta su dashboard" "HTTPS"
 
         # Componentes de la REST API
         destilatech.api.controllers -> destilatech.api.iam "Enruta"
@@ -3010,27 +3154,31 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
 
         systemContext destilatech "C4-01-Contexto" "Diagrama de contexto de Destilatech" {
             include *
-            autolayout lr 350 200
+            autolayout tb 200 120
         }
 
         container destilatech "C4-02-Contenedores" "Diagrama de contenedores de Destilatech" {
             include *
-            autolayout lr 350 200
+            autolayout tb 200 150
         }
 
         component destilatech.landing "C4-03-Componentes-Landing" "Diagrama de componentes de la Landing Page" {
             include *
-            autolayout lr 300 150
+            autolayout tb 120 120
         }
 
-        component destilatech.webapp "C4-04-Componentes-WebApp" "Diagrama de componentes de la Web Application" {
+        component destilatech.spa "C4-04-Componentes-SPA" "Diagrama de componentes de la Single-Page Application (bounded contexts)" {
             include *
-            autolayout lr 300 150
+            autolayout tb 150 200
         }
 
         component destilatech.api "C4-05-Componentes-API" "Diagrama de componentes de la REST API" {
             include *
-            autolayout lr 300 200
+            autolayout tb 150 200
+        }
+
+        branding {
+            font "Arial"
         }
 
         styles {
@@ -3059,6 +3207,15 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
             element "Web Browser" {
                 shape WebBrowser
             }
+            element "Static Content" {
+                shape Folder
+            }
+            element "Planned" {
+                background #ffffff
+                stroke #a85c3f
+                strokeWidth 3
+                border dashed
+            }
             element "API" {
                 shape Hexagon
             }
@@ -3072,40 +3229,42 @@ workspace "Destilatech" "Arquitectura de software de Destilatech, plataforma Saa
 
 </details>
 
-Para visualizar los diagramas, el código se pega en https://playground.structurizr.com y cada vista se exporta como imagen (`C4-01-Contexto`, `C4-02-Contenedores`, `C4-03-Componentes-Landing`, `C4-04-Componentes-WebApp` y `C4-05-Componentes-API`).
+Para visualizar los diagramas, el código se pega en https://playground.structurizr.com y cada vista se exporta como imagen (`C4-01-Contexto`, `C4-02-Contenedores`, `C4-03-Componentes-Landing`, `C4-04-Componentes-SPA` y `C4-05-Componentes-API`).
 
 #### 4.6.3. Software Architecture Container Diagrams
 
-El diagrama de contenedores descompone a Destilatech en sus unidades de despliegue independientes y muestra las principales decisiones de tecnología y la forma en que los contenedores se comunican. Pertenece al mismo espacio de trabajo de Structurizr de la sección 4.6.2.
+El diagrama de contenedores descompone a Destilatech en sus unidades desplegables o ejecutables por separado y muestra las principales decisiones de tecnología y la forma en que se comunican. Pertenece al mismo espacio de trabajo de Structurizr de la sección 4.6.2.
 
 **Figura 67**
 
 *Diagrama de contenedores C4 de Destilatech*
 
-<p align="center"><img src="assets/arquitectura/c4-02-contenedores.png" alt="Diagrama de contenedores C4 de Destilatech" width="900"></p>
+<p align="center"><img src="assets/arquitectura/c4-02-contenedores.png" alt="Diagrama de contenedores C4 de Destilatech" width="560"></p>
 
 *Nota.* Elaboración propia en Structurizr (2026).
 
-*Descripción.* Dentro de Destilatech hay cuatro contenedores: la Landing Page (HTML5, CSS3 y JavaScript), la Web Application (Vue.js y PrimeVue), la REST API (ASP.NET Core, C# y Entity Framework Core) y la base de datos MySQL. El visitante usa la Landing Page, que redirige a la Web Application; el productor y el comercializador usan la Web Application, que consume la REST API en JSON por HTTPS. La API lee y escribe en MySQL, se comunica con la pasarela de pago y recibe las lecturas del sensor IoT simulado.
+*Descripción.* Dentro de Destilatech hay cinco contenedores. La Landing Page (HTML5, CSS3 y JavaScript) es contenido estático que se sirve desde un hosting. La aplicación web, al ser una aplicación Vue de una sola página, se representa con dos contenedores: *Web Application Static Content*, el hosting que entrega al navegador los archivos estáticos, y *Single-Page Application*, el código Vue que se ejecuta en el navegador del usuario. La REST API (ASP.NET Core, C# y Entity Framework Core) es un único contenedor, aunque contiene los siete *bounded contexts* como módulos, y la base de datos MySQL persiste la información. El visitante usa la Landing Page, que enlaza a la aplicación; el productor y el comercializador usan la SPA, que consume la REST API en JSON por HTTPS. La API lee y escribe en MySQL, se comunica con la pasarela de pago y recibe las lecturas del sensor IoT simulado.
 
 
 | Contenedor | Tecnología | Responsabilidad |
 | :--- | :--- | :--- |
-| Landing Page | HTML5, CSS3, JavaScript | Sitio estático con la propuesta de valor, los planes y el punto de entrada al registro; no requiere autenticación. |
-| Web Application | Vue.js, PrimeVue, JavaScript | Interfaz adaptable en la que productores y comercializadores operan la plataforma. |
-| REST API | ASP.NET Core, C#, Entity Framework Core | Reglas de negocio de los siete *bounded contexts*, seguridad y acceso a datos. |
+| Landing Page | HTML5, CSS3, JavaScript | Contenido estático con la propuesta de valor, los planes y el punto de entrada al registro; no requiere autenticación. |
+| Web Application Static Content | Hosting de contenido estático | Entrega al navegador los archivos estáticos (HTML, CSS y paquetes de JavaScript) de la aplicación. |
+| Single-Page Application | Vue 3, PrimeVue, Pinia, Vue Router, JavaScript | Aplicación que se ejecuta en el navegador y en la que productores y comercializadores operan la plataforma. |
+| REST API | ASP.NET Core, C#, Entity Framework Core | Un único contenedor con las reglas de negocio de los siete *bounded contexts*, la seguridad y el acceso a datos. En el Sprint 2 se simula con una Fake API (json-server). |
 | Database | MySQL | Persistencia de cada *bounded context* en tablas con prefijo de módulo. |
 
 **Tabla 8**
 
 *Contenedores de Destilatech.*
 
-La decisión tecnológica principal es separar la Landing Page (contenido estático y sin autenticación) de la Web Application (aplicación autenticada de una sola página), de modo que los llamados a la acción de la Landing Page lleven al usuario a la vista correspondiente de la Web Application y la experiencia sea consistente entre ambas, como exige el enunciado. La REST API se implementa en C# sobre ASP.NET Core y es el único contenedor que accede a la base de datos y a los dos sistemas externos. La división entre IAM y Billing no se representa como contenedores separados, porque ambos módulos se despliegan juntos dentro de la REST API (monolito modular); esa separación se detalla en el nivel de componentes (sección 4.6.4).
+La decisión tecnológica principal es separar la Landing Page (contenido estático y sin autenticación) de la aplicación autenticada de una sola página, de modo que los llamados a la acción de la Landing Page lleven al usuario a la vista correspondiente de la aplicación y la experiencia sea consistente entre ambas, como exige el enunciado. Una aplicación de una sola página se compone de dos contenedores porque el hosting que entrega los archivos y el código que corre en el navegador son elementos de ejecución distintos. En cambio, la REST API es un solo contenedor: los *bounded contexts* son módulos de un mismo despliegue (monolito modular) y se distinguen en el diagrama de componentes de la API, no como contenedores separados. La API es el único contenedor que accede a la base de datos y a los dos sistemas externos.
 
 | Origen | Destino | Descripción | Protocolo |
 | :--- | :--- | :--- | :--- |
-| Landing Page | Web Application | Redirige al registro y al inicio de sesión. | HTTPS |
-| Web Application | REST API | Consume los servicios de los siete contextos. | JSON/HTTPS |
+| Landing Page | Web Application Static Content | Enlaza a la aplicación (registro, inicio de sesión y plan preseleccionado). | HTTPS |
+| Web Application Static Content | Single-Page Application | Entrega la aplicación al navegador del usuario. | HTTPS |
+| Single-Page Application | REST API | Consume los servicios de los siete contextos. | JSON/HTTPS |
 | REST API | Database | Lee y escribe con Entity Framework Core. | SQL/TLS |
 | REST API | Pasarela de Pago | Solicita el cobro y verifica el pago. | HTTPS/REST |
 | Pasarela de Pago | REST API | Notifica el resultado del pago. | HTTPS (webhook) |
@@ -3117,7 +3276,7 @@ La decisión tecnológica principal es separar la Landing Page (contenido estát
 
 #### 4.6.4. Software Architecture Components Diagrams
 
-Se presentan los diagramas de componentes de los tres contenedores con lógica propia: la Landing Page, la Web Application y la REST API. El contenedor de base de datos se detalla en la sección 4.8 (Database Design).
+Se presentan los diagramas de componentes de los tres contenedores con lógica propia: la Landing Page, la Single-Page Application y la REST API. En la SPA y en la API, el primer nivel de componentes corresponde a los *bounded contexts* y a sus relaciones; los elementos de cada contexto (formularios, listas, servicios, entidades) se detallan en el nivel de código: en los diagramas de clases de la sección 4.7 para la API y, para la SPA, en la estructura por capas de cada contexto del repositorio del frontend. El contenedor de base de datos se detalla en la sección 4.8 (Database Design).
 
 **a. Componentes de la Landing Page**
 
@@ -3129,7 +3288,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 *Nota.* Elaboración propia en Structurizr (2026).
 
-*Descripción.* La Landing Page se compone de siete secciones: Header, Description, Goals, Pricing, Impact, Platform Features y Footer. El visitante navega desde el Header hacia las demás secciones; Pricing y Footer redirigen a la Web Application, el primero con el plan preseleccionado y el segundo al formulario de registro.
+*Descripción.* La Landing Page se compone de siete secciones: Header, Description, Goals, Pricing, Impact, Platform Features y Footer. El visitante navega desde el Header hacia las demás secciones; Pricing y Footer enlazan a la aplicación (Web Application Static Content), el primero con el plan preseleccionado y el segundo al formulario de registro.
 
 
 | Componente | Responsabilidad | Tecnología | Historia de usuario |
@@ -3146,39 +3305,39 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 *Componentes de la Landing Page.*
 
-**b. Componentes de la Web Application**
+**b. Componentes de la Single-Page Application**
+
+El primer nivel de componentes de la SPA son los *bounded contexts* que implementa el frontend y un *Shared Kernel* con los elementos comunes. Cada contexto se organiza internamente en las capas de presentación, aplicación, dominio e infraestructura, que corresponden al nivel de código y se pueden verificar en las carpetas de cada contexto del repositorio del frontend.
 
 **Figura 69**
 
-*Diagrama de componentes C4 de la Web Application*
+*Diagrama de componentes C4 de la Single-Page Application*
 
-<p align="center"><img src="assets/arquitectura/c4-04-componentes-webapp.png" alt="Diagrama de componentes C4 de la Web Application" width="900"></p>
+<p align="center"><img src="assets/arquitectura/c4-04-componentes-spa.png" alt="Diagrama de componentes C4 de la Single-Page Application" width="900"></p>
 
 *Nota.* Elaboración propia en Structurizr (2026).
 
-*Descripción.* La Web Application se compone de ocho módulos de interfaz (autenticación, suscripción, dashboard, producción, inventario, pedidos, alertas y analítica), un cliente de API y un módulo de internacionalización. Todos los módulos acceden a la REST API a través del cliente de API, que invoca los controladores en JSON por HTTPS.
+*Descripción.* La SPA se compone de siete componentes que representan los *bounded contexts* (Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications, Analytics & Estimations e IAM, este último planificado y sin aplicarse en el Sprint 2) y del Shared Kernel. Las flechas muestran las relaciones reales entre contextos: Analytics & Estimations consulta a Production, Inventory, Orders y Alerts para construir el dashboard; Production y Inventory generan alertas; Orders consulta y descuenta stock en Inventory; y el Shared Kernel muestra las alertas pendientes y el estado de la prueba gratuita. Todos los contextos usan el Shared Kernel, que invoca la REST API por HTTPS.
 
 
-| Componente | Responsabilidad | Tecnología | Contexto que consume |
+| Componente | Responsabilidad | Tecnología | Relaciones con otros contextos |
 | :--- | :--- | :--- | :--- |
-| Auth Module | Registro, inicio de sesión, recuperación de contraseña y estado de la sesión. | Vue components | IAM |
-| Billing Module | Selección de plan, estado de la suscripción y periodo de prueba. | Vue components | Billing |
-| Dashboard Module | Dashboard de producción o comercial según el tipo de negocio. | Vue components | Analytics & Estimations |
-| Production Module | Registro y seguimiento de lotes y de variables del proceso. | Vue components | Production & Monitoring |
-| Inventory Module | Catálogo de productos, stock y movimientos. | Vue components | Inventory & Stock Management |
-| Orders Module | Clientes, pedidos, historial y lista de compra. | Vue components | Orders & Replenishment |
-| Alerts Module | Bandeja de alertas de anomalía y de stock bajo. | Vue components | Alerts & Notifications |
-| Analytics Module | Estimaciones de reposición e indicadores históricos. | Vue components | Analytics & Estimations |
-| API Client | Centraliza las llamadas HTTP y adjunta el token de sesión. | JavaScript service | Todos |
-| Internationalization | Traduce la interfaz al inglés y al español latinoamericano. | JavaScript module | — |
+| Shared Kernel | Layout, cliente HTTP base, internacionalización (es/en), conmutador de usuario de demostración y componentes comunes. | Vue components, JavaScript | Lo usan todos los contextos; muestra alertas (Alerts) y el estado de la prueba (Billing); invoca la REST API. |
+| IAM (planificado) | Registro, inicio de sesión y recuperación de contraseña; no se aplica en el Sprint 2. | Vue components | Usa el Shared Kernel. |
+| Billing | Plan, estado de la suscripción, periodo de prueba e historial de pagos. | Vue components, Pinia | Lo consulta el Shared Kernel. |
+| Production & Monitoring | Lotes de producción, variables del proceso y lecturas simuladas. | Vue components, Pinia | Consulta productos en Inventory al registrar el embotellado; genera alertas en Alerts. |
+| Inventory & Stock Management | Productos, stock, movimientos y umbrales. | Vue components, Pinia | Genera alertas de stock bajo en Alerts; consulta la estimación de un producto en Analytics. |
+| Orders & Replenishment | Clientes, pedidos y lista de compra para reposición. | Vue components, Pinia | Consulta y descuenta stock en Inventory; consulta estimaciones en Analytics. |
+| Alerts & Notifications | Bandeja de alertas de anomalía y de stock bajo. | Vue components, Pinia | Recibe las alertas de Production e Inventory. |
+| Analytics & Estimations | Dashboard, estimaciones de reposición e indicadores históricos. | Vue components, Pinia, Chart.js | Consulta Production, Inventory, Orders y Alerts. |
 
 **Tabla 11**
 
-*Componentes de la Web Application.*
+*Componentes de la Single-Page Application.*
 
 **c. Componentes de la REST API**
 
-Cada módulo de la API corresponde exactamente a uno de los siete *bounded contexts* del Design-Level EventStorming (sección 4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
+La REST API es un único contenedor y cada uno de sus módulos corresponde exactamente a uno de los siete *bounded contexts* del Design-Level EventStorming (sección 4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
 
 **Figura 70**
 
@@ -3188,7 +3347,7 @@ Cada módulo de la API corresponde exactamente a uno de los siete *bounded conte
 
 *Nota.* Elaboración propia en Structurizr (2026).
 
-*Descripción.* Los controladores reciben las peticiones de la Web Application y las enrutan a los siete módulos: IAM, Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Entre módulos hay seis eventos de dominio (SubscriptionActivated, AnomalyDetected, LowStockDetected, OrderRegistered y BottlingRegistered) y tres lecturas de historial. Todos los módulos acceden a MySQL; Billing se comunica con la pasarela de pago y Production recibe las lecturas del sensor IoT simulado.
+*Descripción.* Los controladores reciben las peticiones de la Single-Page Application y las enrutan a los siete módulos: IAM, Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Entre módulos hay seis eventos de dominio (SubscriptionActivated, AnomalyDetected, LowStockDetected, OrderRegistered y BottlingRegistered) y tres lecturas de historial. Todos los módulos acceden a MySQL; Billing se comunica con la pasarela de pago y Production recibe las lecturas del sensor IoT simulado.
 
 
 | Componente | Responsabilidad | Tecnología |
@@ -4548,6 +4707,15 @@ Pasos realizados para publicar la landing page:
 
 GitHub Pages usa la rama `main` como origen de producción: cada integración en `main` vuelve a publicar el sitio mediante el flujo de trabajo automático `pages build and deployment`, que se ejecuta sin configuración adicional y tarda menos de un minuto.
 
+##### 5.1.4.2. Web Application
+
+La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila a archivos estáticos que se pueden alojar en cualquier servicio de hosting estático. La configuración de compilación está en el repositorio [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp):
+
+- **Compilación:** `npm run build` genera la carpeta `dist/` (`index.html` y `assets/`) usando las variables de `.env.production`.
+- **API en producción:** mientras no exista el *backend*, `.env.production` apunta a un CRUD API de Beeceptor (`https://<endpoint>.free.beeceptor.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
+- **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
+- **Estado:** al cierre del Sprint 2 la aplicación web aún no está desplegada en un servicio público; la URL se registrará en la sección 5.2.2.7 cuando se publique.
+
 ### 5.2. Landing Page, Services & Applications Implementation
 
 El trabajo de implementación se organiza en Sprints. El **Sprint 1** implementa y publica la primera versión de la landing page de Destilatech; la investigación, la especificación y el diseño que lo preceden se documentan en los capítulos I a IV. Cada sprint se documenta con las secciones del Sprint Planning, la matriz de líderes y colaboradores, el Sprint Backlog, las evidencias de desarrollo, ejecución, documentación de servicios y despliegue, y los analíticos de colaboración.
@@ -4572,17 +4740,17 @@ El Sprint 1 se dedicó a implementar y publicar la primera versión de la landin
 | **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel |
 | **Sprint -1 Review Summary** | No aplica: es el primer sprint. |
 | **Sprint -1 Retrospective Summary** | No aplica: es el primer sprint. |
-| **Sprint 1 Goal** | *Our focus is on* publicar la primera versión de la landing page de Destilatech con sus siete secciones (Header, Description, Goals, Pricing, Impact, Platform Features y Footer), adaptable a móvil. *We believe it delivers* confianza en la propuesta de valor y una vía clara para iniciar la prueba gratuita de 14 días a productores de pisco y a pequeños comercializadores. *This will be confirmed when* la página esté accesible públicamente en GitHub Pages con las siete secciones y se visualice correctamente en escritorio y en móvil. |
+| **Sprint 1 Goal** | *Our focus is on* que los productores de pisco y los pequeños comercializadores puedan conocer qué es Destilatech, qué beneficios les ofrece, cuánto cuestan sus planes y cómo comenzar la prueba gratuita de 14 días, desde su teléfono o su computadora. *We believe it delivers* claridad sobre la propuesta de valor y confianza para evaluar la plataforma antes de registrarse, sin necesidad de contactar a un asesor. *This will be confirmed when* un visitante de cada segmento, desde su teléfono o su computadora, pueda explicar qué hace Destilatech, identificar el plan que le corresponde y llegar al registro de la prueba gratuita. |
 | **Sprint 1 Velocity** | 20 horas de trabajo planificadas por el equipo. |
 | **Sum of Story Points** | 18 Story Points (US30 a US37). |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 
-En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y su adaptabilidad móvil. El líder de cada aspecto es el responsable de la tarea correspondiente en la sección 5.2.1.3.
+En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y su adaptabilidad móvil. El líder de cada aspecto es el responsable de las tareas correspondientes en la sección 5.2.1.3.
 
 | Team Member (Last Name, First Name) | GitHub Username | Header (US30) | Description (US31) | Goals (US32) | Pricing (US33) | Impact (US34) | Platform Features (US35) | Footer (US36) | Responsive Design (US37) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Fernandez Seer, Mario Alonso | MrbBaru | C | C | C | L | L | C | C | C |
+| Fernandez Seer, Mario Alonso | MrBaru | C | C | C | L | L | C | C | C |
 | Santiago Atanacio, Jairo Mathias | Msa-ware | L | C | C | C | C | C | L | C |
 | Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | C | C | C | C | C | L | C | C |
 | Condor Sandoval, Jean Pierre | jeanpcs | C | L | L | C | C | C | C | C |
@@ -4592,7 +4760,7 @@ En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y
 
 ##### 5.2.1.3. Sprint Backlog 1
 
-El objetivo del Sprint 1 es desplegar la versión inicial de la landing page para atraer el interés del mercado y abrir un canal de comunicación con los prospectos. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
+El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la propuesta de valor de Destilatech y puedan iniciar su prueba gratuita; para lograrlo se publica la versión inicial de la landing page. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
 
 **Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
 
@@ -4613,17 +4781,24 @@ El objetivo del Sprint 1 es desplegar la versión inicial de la landing page par
 
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Section | Implementación de la sección Header con logotipo y navegación | 2 | Santiago Atanacio, Jairo Mathias | Done |
-| **US31** | Entender qué es Destilatech (sección Description) | TK-02 | Description Section | Implementación de la sección Description (qué es Destilatech) | 2 | Condor Sandoval, Jean Pierre | Done |
-| **US32** | Conocer los beneficios principales (sección Goals) | TK-03 | Goals Section | Implementación de la sección Goals (beneficios principales) | 2 | Condor Sandoval, Jean Pierre | Done |
-| **US33** | Comparar planes de suscripción (sección Pricing) | TK-04 | Pricing Section | Implementación de la sección Pricing y de la prueba gratuita | 3 | Fernandez Seer, Mario Alonso | Done |
-| **US34** | Ver cifras del sector (sección Impact) | TK-05 | Impact Section | Implementación de la sección Impact (cifras del sector pisquero) | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-06 | Platform Features Section | Implementación de la sección Platform Features por segmento | 3 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-07 | Footer Section | Implementación de la sección Footer | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-08 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-09 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
+| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Markup and Styles | Estructura HTML y estilos CSS del Header con el logotipo | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US30** | Navegar desde el encabezado (Header) | TK-02 | Header Navigation | Enlaces de navegación hacia las secciones de la página | 1 | Santiago Atanacio, Jairo Mathias | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-03 | Description Markup and Styles | Estructura HTML y estilos CSS de la sección Description | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-04 | Description Content | Textos que explican qué es Destilatech | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-05 | Goals Markup and Styles | Estructura HTML y estilos CSS de la sección Goals | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-06 | Goals Content | Contenido de los beneficios principales de la plataforma | 1 | Condor Sandoval, Jean Pierre | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-07 | Pricing Cards Layout | Tarjetas de los planes de suscripción y sus estilos | 2 | Fernandez Seer, Mario Alonso | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-08 | Free Trial Highlight | Destacado de la prueba gratuita de 14 días y llamada a la acción | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-09 | Impact Layout | Estructura y estilos de la sección Impact | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-10 | Impact Figures | Cifras del sector pisquero peruano | 1 | Fernandez Seer, Mario Alonso | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-11 | Platform Features Layout | Estructura y estilos de la sección Platform Features | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-12 | Features by Segment Content | Funcionalidades presentadas por segmento objetivo | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-13 | Footer Layout | Estructura y estilos de la sección Footer | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-14 | Footer Links and Contact | Datos de contacto y enlaces del pie de página | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
 
-**Observación.** La tarea TK-09 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 92) se encuentra en la columna To Review, pendiente de revisión por el equipo.
+**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 92) se encuentra en la columna To Review, pendiente de revisión por el equipo.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -4651,7 +4826,7 @@ Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](htt
 
 **Commits del repositorio del informe.** Durante el mismo periodo el equipo avanzó en el informe, que se registra en el repositorio [destilatech-report](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report). El equipo trabajó con ramas `feature/*` integradas en `develop` mediante Pull Requests, como se describe en la sección 5.1.2. La tabla siguiente reúne los commits visibles en el historial de GitHub de cada rama; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la primera rama donde se observó.
 
-El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo que esa columna se indica con «—». Los nombres de rama terminados en «…» aparecen truncados en la captura de pantalla del historial.
+El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo que esa columna se indica con «—».
 
 **Tabla 16**
 
@@ -4660,57 +4835,57 @@ El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo q
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | destilatech-report | `feature/agregar-entrevistas-o-fix/corregir-readme` | [`a56bac5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a56bac5) | docs: add segment 2 interviews and images to README | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`10ba45f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/10ba45f) | Update README.md | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`1d8f888`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/1d8f888) | docs: agregar estructura de user stories y product backlog | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`341e6e6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/341e6e6) | Adjust image size in README | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`6e28ebe`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6e28ebe) | Merge branch 'feature/actualizar_tablas_entrevistas' into develop | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`962a753`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/962a753) | docs: actualizar estructura de registro de entrevistas | — | 2026-09-15 |
-| destilatech-report | `feature/big_pictu…` | [`c489e2d`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c489e2d) | Add files via upload | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`046034e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/046034e) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`46c1788`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/46c1788) | docs: actualizar capitulo 3 y product backlog | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`47767a5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/47767a5) | Merge branch 'feature/agregar-entrevistas-o-fix/corregir-readme' into develop | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`4fa13c8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/4fa13c8) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`772ef0f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/772ef0f) | docs: update README sections and add user journey map image | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`c491714`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c491714) | Update README.md | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`c64fdfd`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c64fdfd) | feat: agregar imagen UXPressia y actualizar readme | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`d1ca28f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/d1ca28f) | docs: actualizar secciones del README | — | 2026-09-15 |
-| destilatech-report | `feature/empathy_…` | [`ea01a93`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ea01a93) | docs: actualizar secciones del README | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`10ba45f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/10ba45f) | Update README.md | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`1d8f888`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/1d8f888) | docs: agregar estructura de user stories y product backlog | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`341e6e6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/341e6e6) | Adjust image size in README | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`6e28ebe`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6e28ebe) | Merge branch 'feature/actualizar_tablas_entrevistas' into develop | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`962a753`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/962a753) | docs: actualizar estructura de registro de entrevistas | — | 2026-09-15 |
+| destilatech-report | `feature/big_picture_eventstorming` | [`c489e2d`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c489e2d) | Add files via upload | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`046034e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/046034e) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`46c1788`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/46c1788) | docs: actualizar capitulo 3 y product backlog | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`47767a5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/47767a5) | Merge branch 'feature/agregar-entrevistas-o-fix/corregir-readme' into develop | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`4fa13c8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/4fa13c8) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`772ef0f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/772ef0f) | docs: update README sections and add user journey map image | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`c491714`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c491714) | Update README.md | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`c64fdfd`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c64fdfd) | feat: agregar imagen UXPressia y actualizar readme | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`d1ca28f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/d1ca28f) | docs: actualizar secciones del README | — | 2026-09-15 |
+| destilatech-report | `feature/empathy_mapping_2` | [`ea01a93`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ea01a93) | docs: actualizar secciones del README | — | 2026-09-15 |
 | destilatech-report | `feature/entrevistas` | [`c7e1c2f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c7e1c2f) | docs: agregar estructura del competidores | — | 2026-09-15 |
 | destilatech-report | `feature/entrevistas` | [`d89a80f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/d89a80f) | docs: agregar estructura de entrevistas | — | 2026-09-15 |
-| destilatech-report | `feature/segment…` | [`c5c6552`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c5c6552) | docs: agregar estructura de segmentos objetivo | — | 2026-09-15 |
-| destilatech-report | `feature/solution_…` | [`dbcf1fa`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/dbcf1fa) | docs: agregar estructura del solution profile | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`3700507`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3700507) | chore: agregar recursos e imagenes desde main | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`4ffa766`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/4ffa766) | Delete assets directory | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`6c018b5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6c018b5) | docs: agregar estructura del indice | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`84148af`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/84148af) | docs: agregar startup profile | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`ab668c8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ab668c8) | Merge pull request #1 from upc-pre-202620-1ASI0730-2620-8084-desti/feature/indice | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`b2f9ef9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b2f9ef9) | Create md-images-front-matter | — | 2026-09-15 |
-| destilatech-report | `feature/startup_p…` | [`d542fa3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/d542fa3) | chore: iniciar rama develop vacia | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`17886a4`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/17886a4) | docs: agregar big pivture eventstorming | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`35d68f8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/35d68f8) | docs: redactar y colocar imagenes de los big picture event storming | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`5cb1d76`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/5cb1d76) | Add files via upload | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`62f8e46`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/62f8e46) | docs: descripcion de ubiquitous-language | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`948f7f9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/948f7f9) | Adjust image sizes in README for Big Picture section | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`a3c85c2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a3c85c2) | Update README.md | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`a448ff6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a448ff6) | docs: agregar estrucutra de ubiquitous language | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`de7235f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/de7235f) | Remove Big Picture Event Storming section from README | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`f2b389b`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/f2b389b) | docs: update README sections and add empathy mapping image | — | 2026-09-15 |
-| destilatech-report | `feature/ubiquitou…` | [`f3f59f3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/f3f59f3) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
-| destilatech-report | `docs/chapter-4-w…` | [`c63b578`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c63b578) | add segment 1 producer interview | — | 2026-09-16 |
-| destilatech-report | `feature/LandingP…` | [`6593ccb`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6593ccb) | Add files via upload | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`0be6549`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/0be6549) | docs: add Class Diagram for Analytics & Estimations | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`228bfb1`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/228bfb1) | docs: add Event Storming diagram for Orders & Replenishment | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`32ff465`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/32ff465) | docs: add Class Diagram for Production & Monitoring | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`3ac965d`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3ac965d) | docs: add Event Storming diagram for Analytics & Estimations | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`423df99`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/423df99) | docs: add Class Diagram for Orders & Replenishment | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`7d9371c`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7d9371c) | docs: add Class Diagram for Identity/Access & Subscriptions | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`98cd696`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/98cd696) | docs: add Software Object-Oriented Design intro | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`aa69c20`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/aa69c20) | docs: add Class Diagram for Inventory & Stock Management | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`e7108e2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/e7108e2) | docs: add Class Diagram for Alerts & Notifications | — | 2026-09-16 |
-| destilatech-report | `feature/domain_…` | [`ff2cdde`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ff2cdde) | docs: add Event Storming diagram for Alerts & Notifications | — | 2026-09-16 |
-| destilatech-report | `feature/product-…` | [`69897f8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/69897f8) | docs: add product design sections 4.6 to 4.8 | — | 2026-09-16 |
-| destilatech-report | `feature/product-…` | [`ce5a4aa`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ce5a4aa) | docs: add architecture diagrams | — | 2026-09-16 |
-| destilatech-report | `docs/chapter-4-w…` | [`04bdbc7`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/04bdbc7) | Update team member details in README.md | — | 2026-09-17 |
+| destilatech-report | `feature/segmentos_objetivo` | [`c5c6552`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c5c6552) | docs: agregar estructura de segmentos objetivo | — | 2026-09-15 |
+| destilatech-report | `feature/solution_profile` | [`dbcf1fa`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/dbcf1fa) | docs: agregar estructura del solution profile | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`3700507`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3700507) | chore: agregar recursos e imagenes desde main | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`4ffa766`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/4ffa766) | Delete assets directory | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`6c018b5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6c018b5) | docs: agregar estructura del indice | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`84148af`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/84148af) | docs: agregar startup profile | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`ab668c8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ab668c8) | Merge pull request #1 from upc-pre-202620-1ASI0730-2620-8084-desti/feature/indice | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`b2f9ef9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b2f9ef9) | Create md-images-front-matter | — | 2026-09-15 |
+| destilatech-report | `feature/startup_profile` | [`d542fa3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/d542fa3) | chore: iniciar rama develop vacia | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`17886a4`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/17886a4) | docs: agregar big pivture eventstorming | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`35d68f8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/35d68f8) | docs: redactar y colocar imagenes de los big picture event storming | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`5cb1d76`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/5cb1d76) | Add files via upload | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`62f8e46`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/62f8e46) | docs: descripcion de ubiquitous-language | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`948f7f9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/948f7f9) | Adjust image sizes in README for Big Picture section | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`a3c85c2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a3c85c2) | Update README.md | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`a448ff6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a448ff6) | docs: agregar estrucutra de ubiquitous language | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`de7235f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/de7235f) | Remove Big Picture Event Storming section from README | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`f2b389b`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/f2b389b) | docs: update README sections and add empathy mapping image | — | 2026-09-15 |
+| destilatech-report | `feature/ubiquitous_language` | [`f3f59f3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/f3f59f3) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report into develop | — | 2026-09-15 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`c63b578`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c63b578) | add segment 1 producer interview | — | 2026-09-16 |
+| destilatech-report | `feature/LandingPageMock-up` | [`6593ccb`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6593ccb) | Add files via upload | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`0be6549`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/0be6549) | docs: add Class Diagram for Analytics & Estimations | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`228bfb1`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/228bfb1) | docs: add Event Storming diagram for Orders & Replenishment | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`32ff465`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/32ff465) | docs: add Class Diagram for Production & Monitoring | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`3ac965d`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3ac965d) | docs: add Event Storming diagram for Analytics & Estimations | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`423df99`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/423df99) | docs: add Class Diagram for Orders & Replenishment | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`7d9371c`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7d9371c) | docs: add Class Diagram for Identity/Access & Subscriptions | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`98cd696`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/98cd696) | docs: add Software Object-Oriented Design intro | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`aa69c20`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/aa69c20) | docs: add Class Diagram for Inventory & Stock Management | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`e7108e2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/e7108e2) | docs: add Class Diagram for Alerts & Notifications | — | 2026-09-16 |
+| destilatech-report | `feature/domain_driven_architecture` | [`ff2cdde`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ff2cdde) | docs: add Event Storming diagram for Alerts & Notifications | — | 2026-09-16 |
+| destilatech-report | `feature/product-design` | [`69897f8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/69897f8) | docs: add product design sections 4.6 to 4.8 | — | 2026-09-16 |
+| destilatech-report | `feature/product-design` | [`ce5a4aa`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/ce5a4aa) | docs: add architecture diagrams | — | 2026-09-16 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`04bdbc7`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/04bdbc7) | Update team member details in README.md | — | 2026-09-17 |
 | destilatech-report | `feature/chapter-4` | [`2bd2abc`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/2bd2abc) | Merge branch 'develop' of https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report | — | 2026-09-17 |
 | destilatech-report | `feature/chapter-4` | [`aa303d6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/aa303d6) | Revise timing and summary details in README | — | 2026-09-17 |
 | destilatech-report | `feature/chapter-4` | [`f22c0e4`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/f22c0e4) | Update video URL in README | — | 2026-09-17 |
@@ -4723,23 +4898,23 @@ El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo q
 | destilatech-report | `develop` | [`0fdf365`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/0fdf365) | fix: resolve merge conflicts in README | — | 2026-09-18 |
 | destilatech-report | `develop` | [`1dae533`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/1dae533) | fix: sync develop with resolved main | — | 2026-09-18 |
 | destilatech-report | `develop` | [`c2b87b0`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c2b87b0) | Merge pull request #5 from upc-pre-202620-1ASI0730-2620-8084-desti/feature/student-profile | — | 2026-09-18 |
-| destilatech-report | `docs/chapter-4-w…` | [`7686841`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7686841) | docs: add web application ux ui assets | — | 2026-09-18 |
-| destilatech-report | `docs/chapter-4-w…` | [`a58e500`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a58e500) | docs: add web application ux ui documentation | — | 2026-09-18 |
-| destilatech-report | `docs/chapter-4-w…` | [`b3a11f7`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b3a11f7) | docs: align web app ux ui section with chapter four | — | 2026-09-18 |
-| destilatech-report | `docs/chapter-4-w…` | [`c47bf41`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c47bf41) | Update README.md | — | 2026-09-18 |
-| destilatech-report | `feature/Source_C…` | [`7b8847e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7b8847e) | docs: agregar estructura de Source_Code_Management | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`023c9ea`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/023c9ea) | Revise Sprint 1 details in README | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`3cf7060`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3cf7060) | Add files via upload | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`494efc8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/494efc8) | Update README.md | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`521c7c9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/521c7c9) | Update README.md | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`61c83c2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/61c83c2) | docs: add Student Jean content | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`63264b3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/63264b3) | Add files via upload | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`9409eae`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/9409eae) | Update user stories and tasks in README | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`9aeb97c`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/9aeb97c) | Update README.md | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`bf9933f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/bf9933f) | Add files via upload | — | 2026-09-18 |
-| destilatech-report | `feature/Student_J…` | [`c669a0e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c669a0e) | Update README.md | — | 2026-09-18 |
-| destilatech-report | `feature/agregar_f…` | [`45967d5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/45967d5) | merge: integrar cambios en develop | — | 2026-09-18 |
-| destilatech-report | `feature/agregar_f…` | [`b47a668`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b47a668) | docs: completar capitulo 5.1.4 | — | 2026-09-18 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`7686841`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7686841) | docs: add web application ux ui assets | — | 2026-09-18 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`a58e500`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/a58e500) | docs: add web application ux ui documentation | — | 2026-09-18 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`b3a11f7`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b3a11f7) | docs: align web app ux ui section with chapter four | — | 2026-09-18 |
+| destilatech-report | `docs/chapter-4-webapp-ux-ui` | [`c47bf41`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c47bf41) | Update README.md | — | 2026-09-18 |
+| destilatech-report | `feature/Source_Code_Management` | [`7b8847e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/7b8847e) | docs: agregar estructura de Source_Code_Management | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`023c9ea`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/023c9ea) | Revise Sprint 1 details in README | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`3cf7060`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3cf7060) | Add files via upload | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`494efc8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/494efc8) | Update README.md | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`521c7c9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/521c7c9) | Update README.md | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`61c83c2`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/61c83c2) | docs: add Student Jean content | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`63264b3`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/63264b3) | Add files via upload | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`9409eae`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/9409eae) | Update user stories and tasks in README | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`9aeb97c`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/9aeb97c) | Update README.md | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`bf9933f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/bf9933f) | Add files via upload | — | 2026-09-18 |
+| destilatech-report | `feature/Student_Jean` | [`c669a0e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/c669a0e) | Update README.md | — | 2026-09-18 |
+| destilatech-report | `feature/agregar_fotos` | [`45967d5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/45967d5) | merge: integrar cambios en develop | — | 2026-09-18 |
+| destilatech-report | `feature/agregar_fotos` | [`b47a668`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b47a668) | docs: completar capitulo 5.1.4 | — | 2026-09-18 |
 | destilatech-report | `feature/chapter-4` | [`583a8c9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/583a8c9) | complete web application ux ui design | — | 2026-09-18 |
 | destilatech-report | `feature/chapter-4` | [`e0cdc23`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/e0cdc23) | Add files via upload | — | 2026-09-18 |
 | destilatech-report | `feature/code_style` | [`0f0a2d5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/0f0a2d5) | merge: integrar feature/code_management en develop | — | 2026-09-18 |
@@ -4777,13 +4952,13 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 93**
 
-*Historial de commits de la rama feature/ubiquitou…*
+*Historial de commits de la rama feature/ubiquitous_language*
 
-<p align="center"><img src="assets/commits/commits-01.png" alt="Historial de commits de la rama feature/ubiquitou…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-01.png" alt="Historial de commits de la rama feature/ubiquitous_language" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/ubiquitou…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/ubiquitous_language`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 94**
@@ -4799,46 +4974,46 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 95**
 
-*Historial de commits de la rama feature/startup_p…*
+*Historial de commits de la rama feature/startup_profile*
 
-<p align="center"><img src="assets/commits/commits-03.png" alt="Historial de commits de la rama feature/startup_p…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-03.png" alt="Historial de commits de la rama feature/startup_profile" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/startup_p…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/startup_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 96**
 
-*Historial de commits de la rama feature/solution_…*
+*Historial de commits de la rama feature/solution_profile*
 
-<p align="center"><img src="assets/commits/commits-04.png" alt="Historial de commits de la rama feature/solution_…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-04.png" alt="Historial de commits de la rama feature/solution_profile" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/solution_…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/solution_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 97**
 
-*Historial de commits de la rama feature/segment…*
+*Historial de commits de la rama feature/segmentos_objetivo*
 
-<p align="center"><img src="assets/commits/commits-05.png" alt="Historial de commits de la rama feature/segment…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-05.png" alt="Historial de commits de la rama feature/segmentos_objetivo" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/segment…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/segmentos_objetivo`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 98**
 
-*Historial de commits de la rama feature/product-…*
+*Historial de commits de la rama feature/product-design*
 
-<p align="center"><img src="assets/commits/commits-06.png" alt="Historial de commits de la rama feature/product-…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-06.png" alt="Historial de commits de la rama feature/product-design" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/product-…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/product-design`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 99**
@@ -4854,24 +5029,24 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 100**
 
-*Historial de commits de la rama feature/empathy_…*
+*Historial de commits de la rama feature/empathy_mapping_2*
 
-<p align="center"><img src="assets/commits/commits-08.png" alt="Historial de commits de la rama feature/empathy_…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-08.png" alt="Historial de commits de la rama feature/empathy_mapping_2" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/empathy_…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/empathy_mapping_2`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 101**
 
-*Historial de commits de la rama feature/domain_…*
+*Historial de commits de la rama feature/domain_driven_architecture*
 
-<p align="center"><img src="assets/commits/commits-09.png" alt="Historial de commits de la rama feature/domain_…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-09.png" alt="Historial de commits de la rama feature/domain_driven_architecture" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/domain_…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/domain_driven_architecture`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 102**
@@ -4887,13 +5062,13 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 103**
 
-*Historial de commits de la rama feature/competid…*
+*Historial de commits de la rama feature/competidores*
 
-<p align="center"><img src="assets/commits/commits-11.png" alt="Historial de commits de la rama feature/competid…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-11.png" alt="Historial de commits de la rama feature/competidores" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/competid…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/competidores`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 104**
@@ -4931,13 +5106,13 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 107**
 
-*Historial de commits de la rama feature/big_pictu…*
+*Historial de commits de la rama feature/big_picture_eventstorming*
 
-<p align="center"><img src="assets/commits/commits-15.png" alt="Historial de commits de la rama feature/big_pictu…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-15.png" alt="Historial de commits de la rama feature/big_picture_eventstorming" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/big_pictu…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/big_picture_eventstorming`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 108**
@@ -4953,13 +5128,13 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 109**
 
-*Historial de commits de la rama feature/agregar_f…*
+*Historial de commits de la rama feature/agregar_fotos*
 
-<p align="center"><img src="assets/commits/commits-17.png" alt="Historial de commits de la rama feature/agregar_f…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-17.png" alt="Historial de commits de la rama feature/agregar_fotos" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar_f…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar_fotos`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 110**
@@ -4975,57 +5150,57 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 
 **Figura 111**
 
-*Historial de commits de la rama feature/Student_J…*
+*Historial de commits de la rama feature/Student_Jean*
 
-<p align="center"><img src="assets/commits/commits-19.png" alt="Historial de commits de la rama feature/Student_J…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-19.png" alt="Historial de commits de la rama feature/Student_Jean" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Student_J…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Student_Jean`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 112**
 
-*Historial de commits de la rama feature/Source_C…*
+*Historial de commits de la rama feature/Source_Code_Management*
 
-<p align="center"><img src="assets/commits/commits-20.png" alt="Historial de commits de la rama feature/Source_C…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-20.png" alt="Historial de commits de la rama feature/Source_Code_Management" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Source_C…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Source_Code_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 113**
 
-*Historial de commits de la rama feature/Software_…*
+*Historial de commits de la rama feature/Software_Configuration_Management*
 
-<p align="center"><img src="assets/commits/commits-21.png" alt="Historial de commits de la rama feature/Software_…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-21.png" alt="Historial de commits de la rama feature/Software_Configuration_Management" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Software_…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Software_Configuration_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 114**
 
-*Historial de commits de la rama feature/LandingP…*
+*Historial de commits de la rama feature/LandingPageMock-up*
 
-<p align="center"><img src="assets/commits/commits-22.png" alt="Historial de commits de la rama feature/LandingP…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-22.png" alt="Historial de commits de la rama feature/LandingPageMock-up" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/LandingP…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/LandingPageMock-up`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 115**
 
-*Historial de commits de la rama docs/chapter-4-w…*
+*Historial de commits de la rama docs/chapter-4-webapp-ux-ui*
 
-<p align="center"><img src="assets/commits/commits-23.png" alt="Historial de commits de la rama docs/chapter-4-w…" width="760"></p>
+<p align="center"><img src="assets/commits/commits-23.png" alt="Historial de commits de la rama docs/chapter-4-webapp-ux-ui" width="760"></p>
 
 *Nota.* Captura de GitHub (2026).
 
-*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `docs/chapter-4-w…` (nombre truncado por GitHub), con el mensaje, el autor y el identificador de cada commit.
+*Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `docs/chapter-4-webapp-ux-ui`, con el mensaje, el autor y el identificador de cada commit.
 
 
 **Figura 116**
@@ -5131,13 +5306,15 @@ El equipo repartió las secciones de la landing page según la sección 5.2.1.3 
 El repositorio de la landing page no se muestra en un gráfico de Contributors porque todos sus commits se registraron desde una única cuenta del equipo (ver arriba).
 
 
+
+
 ## Conclusiones
 
 **Conclusiones**
 
 1. Las entrevistas a siete personas de los dos segmentos (tres productores y cuatro comercializadores) mostraron que el problema principal de los productores es la dificultad para monitorear las variables del proceso y llevar registros sin errores, y el de los comercializadores, quedarse sin stock con clientes esperando. Estas necesidades justifican las tres capacidades de Destilatech: monitoreo, gestión de inventario y estimaciones de reposición.
 2. El análisis estadístico de las entrevistas indica coincidencias entre los segmentos (todos usan teléfono inteligente y Excel o cuaderno, y todos los que respondieron estarían dispuestos a pagar una suscripción mensual), con un rango medio de pago cercano a S/ 66. Por la muestra pequeña (n = 7), estos resultados son indicativos y deben validarse con más usuarios.
-3. El Big Picture EventStorming permitió identificar seis áreas del dominio y el Design-Level EventStorming las refinó en siete *bounded contexts* (al separar Identity / Subscriptions en IAM y Billing), implementados como módulos de la API. Esto mantiene la coherencia entre el análisis del negocio, las historias de usuario (65 historias, 10 épicas) y el diseño de software.
+3. El Big Picture EventStorming, modelado como el negocio actual, permitió identificar cuatro áreas candidatas y el Design-Level EventStorming, al incorporar la solución, llegó a siete *bounded contexts* (con IAM y Billing como contextos nuevos de la plataforma), implementados como módulos de la API. Esto mantiene la coherencia entre el análisis del negocio, las historias de usuario (65 historias, 10 épicas) y el diseño de software.
 4. La arquitectura elegida —un monolito modular en ASP.NET Core con base de datos MySQL, una aplicación web en Vue.js y un simulador de lecturas IoT— es proporcionada al tamaño del equipo y permite incorporar sensores reales en el futuro sin cambiar la API.
 5. La landing page se publicó en GitHub Pages con sus siete secciones, lo que cumple el objetivo del Sprint 1 y deja un canal de presentación del producto a los prospectos.
 
@@ -5146,7 +5323,7 @@ El repositorio de la landing page no se muestra en un gráfico de Contributors p
 1. Validar los resultados de las entrevistas con una muestra mayor de productores y comercializadores, y realizar las entrevistas de validación de la landing page y de la aplicación con usuarios reales.
 2. Aplicar desde el siguiente sprint la convención de Conventional Commits, con el tipo correcto y mensajes en inglés, y hacer que cada integrante registre sus commits desde su propia cuenta en todos los repositorios.
 3. Definir el proveedor de la pasarela de pago y confirmar con los usuarios los precios de los planes antes de implementar la suscripción.
-4. Implementar primero los módulos de mayor valor del Product Backlog (registro, lotes, monitoreo simulado, inventario, pedidos y alertas) y documentar cada sprint con sus evidencias.
+4. Implementar primero los módulos de mayor valor del Product Backlog (lotes, monitoreo simulado, inventario, pedidos y alertas), incorporar el contexto IAM (registro e inicio de sesión) cuando el curso aborde la autenticación y documentar cada sprint con sus evidencias.
 
 ## Bibliografía
 
@@ -5215,7 +5392,8 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | [workspace.dsl](diagramas/structurizr/workspace.dsl) | Modelo de arquitectura en Structurizr DSL del que provienen los diagramas C4 (secciones 4.6.2 a 4.6.4). |
 | Carpeta `diagramas/plantuml/` | Código PlantUML de los diagramas de clases de los siete *bounded contexts* (sección 4.7). |
 | Carpeta `assets/arquitectura/` | Imágenes de los diagramas C4 exportadas desde Structurizr. |
-| Carpeta `assets/commits/` | Capturas del historial de commits del repositorio del informe (sección 5.2.1.4). |
+| Carpeta `assets/commits/` | Capturas del historial de commits del repositorio del informe (sección 5.2.1.4) y de la aplicación web (sección 5.2.2.4). |
+| Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
 
 ### Anexo B. Videos de Exposiciones
 
@@ -5225,9 +5403,11 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 
 ### Anexo C. Video de las entrevistas
 
-Las siete entrevistas (tres a productores y cuatro a comercializadores) se entregan en un único video continuo, como lo solicita el docente.
+Las siete entrevistas (tres a productores y cuatro a comercializadores) se entregan en un único video continuo.
 
 | Video | Contenido | Enlace |
 | :---: | :--- | :--- |
 | 1 | Entrevistas a Luciana Cueva, Mario Fernández y Stacy Guerra (productores) y a Marco Vargas, Carlos Moreno, Rubens Moreno y Andrea Mendoza (comercializadores) | [Ver video](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8a859f76%2D82ca%2D49cb%2D84d8%2D934b1dd892e3) |
+| 2 | Navegación de la landing page (Sprint 1) | **[CONFIRMAR: URL en Microsoft Stream]** |
+| 3 | Navegación de la landing page y de la aplicación web (Sprint 2) | **[CONFIRMAR: URL en Microsoft Stream]** |
 
