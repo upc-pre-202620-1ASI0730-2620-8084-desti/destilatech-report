@@ -5654,6 +5654,20 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp` | `main` | [`2592d5b`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/2592d5b) | feat: update en.json | — | 2026-10-05 |
 
 
+**Observaciones sobre los commits.** Del total de 187 commits, 183 usan los tipos `feat` o `chore` de Conventional Commits con descripción en inglés, lo que corrige la observación hecha en el Sprint 1. Las excepciones son los tres commits de configuración inicial del 29 de septiembre (variables de entorno, ícono y `money.js`) y el commit de integración de `feature/alerts-notifications` en `develop`. Los commits terminados en `v2` corresponden a una segunda versión del mismo archivo, subida de inmediato. Las ramas `feature/*` se crearon sobre un historial común, por lo que varios commits son visibles en más de una rama; cada uno se registra una sola vez en la tabla. Los commits de la rama `feature/iam` corresponden al contexto IAM, que el equipo implementó al inicio y retiró del alcance del sprint en el commit `7e4ffe0` («update correcciones»); se conservan porque forman parte del historial real del repositorio.
+
+**Historial de commits por rama.** Las capturas siguientes muestran, para cada rama, los commits más recientes registrados en GitHub, y la última muestra las ramas del repositorio.
+
+**Figura 124**
+
+*Historial de commits de la rama feature/alerts-notifications*
+
+<p align="center"><img src="assets/commits/webapp-commits-01-feature-alerts-notifications.png" alt="Historial de commits de la rama feature/alerts-notifications" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/alerts-notifications`. Commits de `pierinaaa29` con la entidad, el comando, el *assembler*, la API, los componentes y la bandeja de alertas, y la tienda `alerts.store.js`.
+
 
 
 ## Conclusiones
