@@ -5768,6 +5768,29 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/shared`. Commits de `Msa-ware` con la página 404, la barra superior, la navegación lateral, el encabezado de página, el layout, el selector de idioma, la tarjeta KPI, el pie de página y los estilos.
 
 
+**Figura 134**
+
+*Historial de commits de la rama develop*
+
+<p align="center"><img src="assets/commits/webapp-commits-11-develop.png" alt="Historial de commits de la rama develop" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `develop`. Commits de `Msa-ware` con la actualización del README, el enrutador, la tienda y la API de IAM, la corrección de `package.json`, la internacionalización, `main.js`, `app.vue` y `.gitattributes`.
+
+
+**Figura 135**
+
+*Ramas del repositorio de la aplicación web*
+
+<p align="center"><img src="assets/commits/webapp-ramas.png" alt="Ramas del repositorio de la aplicación web" width="300"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Branches» del repositorio destilatech-webapp con la rama predeterminada `main` y las ramas `develop`, `feature/locales`, `feature/orders-replenishment`, `feature/production-monitoring` y `feature/inventory-stock` entre las más activas.
+
+
+
 
 
 ## Conclusiones
