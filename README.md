@@ -5702,6 +5702,39 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/fake-api`. Commits de `Msa-ware` con el Fake API con Beeceptor, la licencia de PrimeUI en el entorno de desarrollo, `start.sh`, `routes.json` y `db.json`.
 
 
+**Figura 128**
+
+*Historial de commits de la rama feature/iam*
+
+<p align="center"><img src="assets/commits/webapp-commits-05-feature-iam.png" alt="Historial de commits de la rama feature/iam" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/iam`. Commits de `jeanpcs` con la tienda, las rutas, las vistas de registro e inicio de sesión, el perfil, el menú de usuario, el panel de autenticación, el guardián de rutas, el interceptor y la API de IAM.
+
+
+**Figura 129**
+
+*Historial de commits de la rama feature/inventory-stock*
+
+<p align="center"><img src="assets/commits/webapp-commits-06-feature-inventory-stock.png" alt="Historial de commits de la rama feature/inventory-stock" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/inventory-stock`. Commits de `pierinaaa29` con la tienda de inventario, las rutas, la ficha del producto, la vista de inventario, los diálogos de umbral, movimiento y producto, y las etiquetas de estado de stock.
+
+
+**Figura 130**
+
+*Historial de commits de la rama feature/locales*
+
+<p align="center"><img src="assets/commits/webapp-commits-07-feature-locales.png" alt="Historial de commits de la rama feature/locales" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/locales`. Commits de `Msa-ware` con los catálogos `locales/es.json` y `locales/en.json`, seguidos de los commits de pedidos y reposición de la rama anterior.
+
+
 
 
 
