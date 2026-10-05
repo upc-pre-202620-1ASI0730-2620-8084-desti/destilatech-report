@@ -5806,6 +5806,85 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Dashboard del productor (`/dashboard`, historia US04) con indicadores de lotes activos, inventario, alertas y pedidos, un gráfico del volumen por lote activo, la actividad reciente, las alertas pendientes y los productos de reposición prioritaria.
 
 
+**Figura 137**
+
+*Monitoreo IoT de la producción*
+
+<p align="center"><img src="assets/webapp/04-monitoreo-iot.png" alt="Monitoreo IoT de la producción" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de monitoreo (`/production/monitoring`, historias US09 y US44) con la selección del lote, las variables de proceso (temperatura, pH, humedad y densidad) y el gráfico de lecturas recientes generadas por el simulador IoT; las lecturas fuera del rango normal se señalan como anomalías (US11).
+
+
+**Figura 138**
+
+*Gestión de lotes de producción*
+
+<p align="center"><img src="assets/webapp/05-gestion-lotes.png" alt="Gestión de lotes de producción" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Listado de lotes (`/production/batches`, historias US06 y US07) con la etapa de cada lote, el registro de un lote nuevo y el avance de etapa.
+
+
+**Figura 139**
+
+*Detalle y trazabilidad de un lote*
+
+<p align="center"><img src="assets/webapp/06-detalle-lote.png" alt="Detalle y trazabilidad de un lote" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Detalle de un lote (`/production/batches/:batchId`, historias US08 y US43) con su historial de etapas, sus variables y el registro del embotellado.
+
+
+
+**Figura 140**
+
+*Inventario*
+
+<p align="center"><img src="assets/webapp/07-inventario.png" alt="Inventario" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de inventario (`/inventory`, historias US12, US14 y US15) con las unidades y el valor del inventario, el stock por producto, su estado (óptimo, bajo o crítico) y el acceso a la configuración del umbral de stock bajo.
+
+
+**Figura 141**
+
+*Ficha de producto con estimación de reposición*
+
+<p align="center"><img src="assets/webapp/08-detalle-producto.png" alt="Ficha de producto con estimación de reposición" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Ficha del producto (`/inventory/products/:id`, historias US13, US20, US46 y US47) con el historial de movimientos, el registro de movimientos y ajustes, y la estimación de reposición.
+
+
+**Figura 142**
+
+*Pedidos y clientes*
+
+<p align="center"><img src="assets/webapp/09-pedidos.png" alt="Pedidos y clientes" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de pedidos (`/orders`, historias US18 y US19) y de clientes (`/orders/customers`, historias US17 y US49) con sus formularios y el estado de cada pedido.
+
+
+**Figura 143**
+
+*Reposición a proveedores*
+
+<p align="center"><img src="assets/webapp/10-reposicion.png" alt="Reposición a proveedores" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Vista de reposición (`/orders/replenishment`, historia US50) con las sugerencias de compra y las órdenes de reposición a proveedores.
+
+
+
 
 
 
