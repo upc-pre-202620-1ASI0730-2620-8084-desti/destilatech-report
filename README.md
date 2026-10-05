@@ -5342,6 +5342,11 @@ En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden co
 | Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - | - |
 | Domenack Angeles, Miguel | midoan0805 | - | - | - | - | - | - | - | - | L |
 
+**Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Miguel Domenack lideró las pruebas funcionales de la aplicación, que abarcan todos los módulos y no registran commits en el repositorio. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
+
+
+
+
 ## Conclusiones
 
 **Conclusiones**
