@@ -5334,6 +5334,13 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden con los *bounded contexts* del capítulo IV más el *Shared Kernel*, el Fake API y la internacionalización. El líder de cada aspecto es el responsable de las tareas correspondientes en la sección 5.2.2.3; el rol de colaborador se asignó a quien registra commits en la rama del aspecto (sección 5.2.2.4).
 
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel | Fake API & i18n | Billing | Production & Monitoring | Inventory & Stock | Orders & Replenishment | Alerts & Notifications | Analytics & Estimations | Pruebas funcionales |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Fernandez Seer, Mario Alonso | MrBaru | - | - | - | L | - | - | - | - | - |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | L | L | - | - | - | L | - | - | - |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | - | - | - | - | L | - | L | L | - |
+| Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - | - |
+| Domenack Angeles, Miguel | midoan0805 | - | - | - | - | - | - | - | - | L |
 
 ## Conclusiones
 
