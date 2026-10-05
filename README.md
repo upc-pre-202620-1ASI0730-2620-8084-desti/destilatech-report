@@ -5928,6 +5928,12 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 *Descripción.* Vista de indicadores históricos (`/analytics/indicators`, historia US21) con selector de periodo (7, 30, 90 días o 12 meses), indicadores de entradas, salidas y ventas, la evolución del stock, los productos más vendidos y gráficos de entradas contra salidas y de ventas.
 
+##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server` (desarrollo local) y, para la compilación de producción, un CRUD API de Beeceptor. Ambos exponen los recursos con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
+
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://<endpoint>.free.beeceptor.com/api/v1`.
+
 
 
 
