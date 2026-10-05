@@ -5305,6 +5305,30 @@ El equipo repartió las secciones de la landing page según la sección 5.2.1.3 
 
 El repositorio de la landing page no se muestra en un gráfico de Contributors porque todos sus commits se registraron desde una única cuenta del equipo (ver arriba).
 
+#### 5.2.2. Sprint 2
+
+##### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*Web Application*) de Destilatech, con la landing page ya publicada en el Sprint 1. La aplicación implementa seis de los siete *bounded contexts* del diseño de software (capítulo IV): el contexto IAM (registro, inicio de sesión y perfil) queda para un sprint posterior porque el curso aún no aborda la autenticación. La aplicación consume un Fake API mientras se construye el *backend* en ASP.NET Core, que se reserva para el siguiente sprint.
+**Tabla 17**
+
+*Resumen de la reunión de Sprint Planning 2*
+
+
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts* (todos menos IAM, que el curso aún no aborda). Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
+| **Fecha** | 2026-09-29 |
+| **Hora** | 11:00 a.m. |
+| **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet); aún no hay URL de despliegue |
+| **Preparada por** | Santiago Atanacio, Jairo Mathias |
+| **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel |
+| **Sprint 1 Review Summary** | La landing page se publicó en GitHub Pages con las siete secciones previstas (Header, Description, Goals, Pricing, Impact, Platform Features y Footer), el selector de idioma ES / EN y el botón de prueba gratuita de 14 días. Al cierre del tablero quedaba en To Review la tarjeta «Mock-up móvil de la landing page». |
+| **Sprint 1 Retrospective Summary** | Funcionó el reparto de la landing page por secciones y la coordinación por Discord. A mejorar: los 11 commits de la landing se registraron desde una sola cuenta y con el tipo `docs`, lo que impidió medir aportes individuales. Para el Sprint 2 se trabaja con ramas `feature/*` por *bounded context*, cada integrante desde su propia cuenta y con mensajes en formato Conventional Commits. |
+| **Sprint 2 Goal** | *Our focus is on* que el productor y el comercializador de pisco puedan controlar su operación desde una sola plataforma: el productor, registrar sus lotes y vigilar las condiciones del proceso con lecturas simuladas; el comercializador, controlar su stock, registrar clientes y pedidos, y saber cuándo reponer. *We believe it delivers* visibilidad del estado de su producción y de su inventario sin cuadernos ni hojas de cálculo, y un aviso oportuno antes de perder un lote o de quedarse sin producto. *This will be confirmed when* un productor de demostración pueda registrar un lote, ver sus lecturas y recibir una alerta cuando una variable salga de su rango, y un comercializador de demostración pueda registrar un pedido, ver el stock descontado y recibir la sugerencia de reposición de un producto con stock bajo. |
+| **Sprint 2 Velocity** | 132 horas de trabajo planificadas por el equipo. |
+| **Sum of Story Points** | 92 Story Points (29 historias de usuario). |
+
 
 
 
