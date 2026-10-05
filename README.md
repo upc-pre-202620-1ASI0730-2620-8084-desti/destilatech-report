@@ -5962,6 +5962,13 @@ En el Sprint 2 no se implementaron servicios web propios: la aplicación consume
 Las lecturas de sensores se generan con el simulador `IotSensorSimulator`, que produce valores alrededor del centro del rango de cada variable con una probabilidad configurable de lectura anómala (15 % por defecto). Con esto se representa el comportamiento de los sensores sin dispositivos físicos, como establece el alcance académico del proyecto. Los recursos se acceden desde los adaptadores `*-api.js`, que extienden `BaseApi` y `BaseEndpoint` del *Shared Kernel*.
 
 
+##### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Al cierre del Sprint 2 la aplicación web se ejecuta localmente y cuenta con la configuración de compilación de producción (`npm run build`, que genera la carpeta `dist/` con `.env.production`), descrita en la sección 5.1.4.2. El despliegue en un servicio de alojamiento público queda pendiente.
+
+
+
+
 
 
 ## Conclusiones
