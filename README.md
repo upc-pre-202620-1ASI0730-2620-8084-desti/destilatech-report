@@ -5332,6 +5332,9 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators
 
+En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden con los *bounded contexts* del capítulo IV más el *Shared Kernel*, el Fake API y la internacionalización. El líder de cada aspecto es el responsable de las tareas correspondientes en la sección 5.2.2.3; el rol de colaborador se asignó a quien registra commits en la rama del aspecto (sección 5.2.2.4).
+
+
 ## Conclusiones
 
 **Conclusiones**
