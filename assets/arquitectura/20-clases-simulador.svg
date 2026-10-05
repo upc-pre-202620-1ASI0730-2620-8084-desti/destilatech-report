@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img">
+<rect x="0" y="0" width="1440" height="820" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="35" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">Clases · IoT Simulator</text>
+<text x="35" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">UML · − privado / + público · multiplicidad junto a la relación</text>
+<polyline points="405,242 535,242" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<text x="425" y="233" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1</text>
+<text x="515" y="233" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="end">1</text>
+<rect x="429.6" y="183" width="80.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="197" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">configura</text>
+<polyline points="905,242 1035,242" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="1023.0,248.0 1035,242 1023.0,236.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="947.6" y="183" width="44.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="970.0" y="197" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">crea</text>
+<polyline points="720.0,277 720.0,437 220.0,437 220.0,515" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="214.0,503.0 220.0,515 226.0,503.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="436.8" y="419" width="66.4" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="433" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">entrega</text>
+<polyline points="535,605 405,605" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<polyline points="417.0,599.0 405,605 417.0,611.0 417.0,599.0" fill="#ffffff" stroke="#64748b" stroke-width="1.8"/>
+<rect x="426.0" y="546" width="88.0" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="560" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">implementa</text>
+<rect x="35" y="130" width="370" height="235" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="36" y="131" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="51" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">SimulationScenario</text>
+<text x="51" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid businessId</text>
+<text x="51" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-Guid batchId</text>
+<text x="51" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-string metric</text>
+<text x="51" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-string unit</text>
+<text x="51" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-int intervalSeconds</text>
+<polyline points="47,307 393,307" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="51" y="338" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Validate() bool</text>
+<rect x="535" y="130" width="370" height="147" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="536" y="131" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="551" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">ReadingGenerator</text>
+<text x="551" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-SimulationScenario scenario</text>
+<polyline points="547,219 893,219" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="551" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Next() ReadingPayload</text>
+<rect x="1035" y="130" width="370" height="213" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="1036" y="131" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="1051" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">ReadingPayload</text>
+<text x="1051" y="206" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+string sourceId</text>
+<text x="1051" y="228" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Guid batchId</text>
+<text x="1051" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+string metric</text>
+<text x="1051" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+string unit</text>
+<text x="1051" y="294" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+decimal value</text>
+<text x="1051" y="316" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+DateTime observedAt</text>
+<rect x="35" y="515" width="370" height="125" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="36" y="516" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="51" y="542" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">IReadingSender «interface»</text>
+<polyline points="47,582 393,582" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="51" y="613" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Send(payload) Task</text>
+<rect x="535" y="515" width="370" height="169" rx="8" fill="#ffffff" stroke="#115e59" stroke-width="1.6"/>
+<rect x="536" y="516" width="368" height="51" rx="7" fill="#f0fdfa" stroke="none" stroke-width="1"/>
+<text x="551" y="542" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#115e59" text-anchor="start">HttpReadingSender</text>
+<text x="551" y="591" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">-HttpClient client</text>
+<polyline points="547,604 893,604" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="551" y="635" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+Send(payload) Task</text>
+<text x="551" y="657" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#172033" text-anchor="start">+RetrySamePayload(payload) Task</text>
+<text x="35" y="802" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">FUENTE: elaboración para Destilatech · Diseño propuesto, no evidencia de implementación.</text>
+</svg>

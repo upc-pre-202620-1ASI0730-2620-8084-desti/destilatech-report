@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="600" viewBox="0 0 1440 600" role="img">
+<rect x="0" y="0" width="1440" height="600" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="35" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">C4 · API: procesamiento y adaptadores</text>
+<text x="35" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Propuesta de diseño · Destilatech · 16 septiembre 2026</text>
+<polyline points="405,220 535,220" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<polyline points="523.0,226.0 535,220 523.0,214.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="411.6" y="161" width="116.8" height="36" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="470.0" y="175" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">invoca caso de</text>
+<text x="470.0" y="191" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">uso</text>
+<polyline points="905,220 1035,220" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<polyline points="1023.0,226.0 1035,220 1023.0,214.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="911.6" y="161" width="116.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="970.0" y="175" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">ejecuta reglas</text>
+<polyline points="701.0,255 701.0,327 220.0,327 220.0,405" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<polyline points="214.0,393.0 220.0,405 226.0,393.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="402.1" y="309" width="116.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="460.5" y="323" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">usa interfaces</text>
+<polyline points="739.0,255 739.0,349 720.0,349 720.0,405" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<polyline points="714.0,393.0 720.0,405 726.0,393.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="653.1" y="331" width="152.8" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="729.5" y="345" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">usa IPaymentGateway</text>
+<polyline points="220.0,405 220.0,371 1220.0,371 1220.0,405" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<polyline points="1214.0,393.0 1220.0,405 1226.0,393.0" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<rect x="650.8" y="354" width="138.4" height="20" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="720.0" y="368" font-family="Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle">SQL parametrizado</text>
+<rect x="35" y="130" width="370" height="125" rx="8" fill="#ffffff" stroke="#0e7490" stroke-width="1.6"/>
+<rect x="36" y="131" width="368" height="51" rx="7" fill="#ecfeff" stroke="none" stroke-width="1"/>
+<text x="51" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0e7490" text-anchor="start">HTTP Endpoints &amp; Middleware</text>
+<text x="51" y="206" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Componente: ASP.NET Core</text>
+<text x="51" y="228" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Token, business_id, DTO y OpenAPI</text>
+<rect x="535" y="130" width="370" height="125" rx="8" fill="#ffffff" stroke="#0e7490" stroke-width="1.6"/>
+<rect x="536" y="131" width="368" height="51" rx="7" fill="#ecfeff" stroke="none" stroke-width="1"/>
+<text x="551" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0e7490" text-anchor="start">Application Services</text>
+<text x="551" y="206" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Componente: C#</text>
+<text x="551" y="228" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Casos de uso y transacción local</text>
+<rect x="1035" y="130" width="370" height="125" rx="8" fill="#ffffff" stroke="#0e7490" stroke-width="1.6"/>
+<rect x="1036" y="131" width="368" height="51" rx="7" fill="#ecfeff" stroke="none" stroke-width="1"/>
+<text x="1051" y="157" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0e7490" text-anchor="start">Domain Model</text>
+<text x="1051" y="206" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Componente: C# puro</text>
+<text x="1051" y="228" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Agregados, invariantes y eventos</text>
+<rect x="35" y="405" width="370" height="125" rx="8" fill="#ffffff" stroke="#0e7490" stroke-width="1.6"/>
+<rect x="36" y="406" width="368" height="51" rx="7" fill="#ecfeff" stroke="none" stroke-width="1"/>
+<text x="51" y="432" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0e7490" text-anchor="start">Repositories &amp; Unit of Work</text>
+<text x="51" y="481" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Componente: EF Core</text>
+<text x="51" y="503" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Mapeo y persistencia por contexto</text>
+<rect x="535" y="405" width="370" height="125" rx="8" fill="#ffffff" stroke="#0e7490" stroke-width="1.6"/>
+<rect x="536" y="406" width="368" height="51" rx="7" fill="#ecfeff" stroke="none" stroke-width="1"/>
+<text x="551" y="432" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0e7490" text-anchor="start">Payment Gateway Adapter</text>
+<text x="551" y="481" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Componente: C# / HTTPS</text>
+<text x="551" y="503" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Checkout, webhook y verificación</text>
+<rect x="1035" y="405" width="370" height="125" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+<rect x="1036" y="406" width="368" height="51" rx="7" fill="#f1f5f9" stroke="none" stroke-width="1"/>
+<text x="1051" y="432" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#475569" text-anchor="start">MySQL</text>
+<text x="1051" y="481" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Contenedor externo al foco</text>
+<text x="1051" y="503" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#172033" text-anchor="start">Tablas por contexto</text>
+<text x="35" y="582" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">FUENTE: elaboración para Destilatech · Diseño propuesto, no evidencia de implementación.</text>
+</svg>
