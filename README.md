@@ -5935,6 +5935,32 @@ En el Sprint 2 no se implementaron servicios web propios: la aplicación consume
 **URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://<endpoint>.free.beeceptor.com/api/v1`.
 
 
+**Tabla 20**
+
+*Recursos del Fake API utilizados por la aplicación web*
+
+
+| Bounded Context | Recurso | Endpoint | Registros en `db.json` |
+| :--- | :--- | :--- | :---: |
+| Shared Kernel | Usuarios (perfil activo, sin autenticación) | `/users` | 2 |
+| Billing | Planes | `/plans` | 3 |
+| Billing | Suscripciones | `/subscriptions` | 1 |
+| Billing | Pagos | `/payments` | 1 |
+| Billing | Sesiones de pago | `/checkout-sessions` | — |
+| Production & Monitoring | Lotes | `/batches` | 7 |
+| Production & Monitoring | Variables de proceso | `/process-variables` | 28 |
+| Production & Monitoring | Lecturas de sensores | `/sensor-readings` | 384 |
+| Inventory & Stock Management | Productos | `/products` | 11 |
+| Inventory & Stock Management | Existencias | `/stock-items` | 11 |
+| Inventory & Stock Management | Movimientos de stock | `/stock-movements` | 325 |
+| Orders & Replenishment | Clientes | `/customers` | 8 |
+| Orders & Replenishment | Pedidos | `/orders` | 12 |
+| Orders & Replenishment | Órdenes de reposición | `/replenishment-orders` | 2 |
+| Alerts & Notifications | Alertas | `/alerts` | 7 |
+
+
+Las lecturas de sensores se generan con el simulador `IotSensorSimulator`, que produce valores alrededor del centro del rango de cada variable con una probabilidad configurable de lectura anómala (15 % por defecto). Con esto se representa el comportamiento de los sensores sin dispositivos físicos, como establece el alcance académico del proyecto. Los recursos se acceden desde los adaptadores `*-api.js`, que extienden `BaseApi` y `BaseEndpoint` del *Shared Kernel*.
+
 
 
 
