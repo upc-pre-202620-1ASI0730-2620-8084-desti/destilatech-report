@@ -5789,6 +5789,23 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 *Descripción.* Página «Branches» del repositorio destilatech-webapp con la rama predeterminada `main` y las ramas `develop`, `feature/locales`, `feature/orders-replenishment`, `feature/production-monitoring` y `feature/inventory-stock` entre las más activas.
 
+##### 5.2.2.5. Execution Evidence for Sprint Review
+
+El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecuta localmente con el Fake API (`json-server`) y ofrece dos perfiles de demostración: productor (lotes, monitoreo IoT simulado, inventario y pedidos) y comercializador (inventario, pedidos y reposición). Como el contexto IAM no forma parte del sprint, no hay inicio de sesión: el perfil se cambia con los botones Productor / Comercializador de la barra superior y la aplicación recuerda el perfil elegido. Las pantallas siguientes, con la interfaz en inglés, recorren los flujos principales de cada perfil. La aplicación está disponible en español e inglés.
+
+**Video de navegación:** **[CONFIRMAR: URL en Microsoft Stream del video que muestra la navegación de la landing page y de la aplicación web]**
+
+**Figura 136**
+
+*Dashboard del productor*
+
+<p align="center"><img src="assets/webapp/03-dashboard-productor.png" alt="Dashboard del productor" width="800"></p>
+
+*Nota.* Captura propia de la aplicación en ejecución con el Fake API (2026).
+
+*Descripción.* Dashboard del productor (`/dashboard`, historia US04) con indicadores de lotes activos, inventario, alertas y pedidos, un gráfico del volumen por lote activo, la actividad reciente, las alertas pendientes y los productos de reposición prioritaria.
+
+
 
 
 
