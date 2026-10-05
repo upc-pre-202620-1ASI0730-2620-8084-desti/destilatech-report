@@ -5669,6 +5669,41 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/alerts-notifications`. Commits de `pierinaaa29` con la entidad, el comando, el *assembler*, la API, los componentes y la bandeja de alertas, y la tienda `alerts.store.js`.
 
 
+**Figura 125**
+
+*Historial de commits de la rama feature/analytics-estimations*
+
+<p align="center"><img src="assets/commits/webapp-commits-02-feature-analytics-estimations.png" alt="Historial de commits de la rama feature/analytics-estimations" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/analytics-estimations`. Commits de `pierinaaa29` con la tienda de analíticas, los dashboards del productor y del comercializador, el gráfico de tendencia, las tarjetas de estimación y los indicadores históricos.
+
+
+**Figura 126**
+
+*Historial de commits de la rama feature/billing*
+
+<p align="center"><img src="assets/commits/webapp-commits-03-feature-billing.png" alt="Historial de commits de la rama feature/billing" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/billing`. Commits de `jeanpcs` con la tienda de facturación, las rutas, la vista de planes, las vistas de resultado del pago, el aviso de prueba, la tarjeta de plan, el historial de pagos y los *assemblers*.
+
+
+**Figura 127**
+
+*Historial de commits de la rama feature/fake-api*
+
+<p align="center"><img src="assets/commits/webapp-commits-04-feature-fake-api.png" alt="Historial de commits de la rama feature/fake-api" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/fake-api`. Commits de `Msa-ware` con el Fake API con Beeceptor, la licencia de PrimeUI en el entorno de desarrollo, `start.sh`, `routes.json` y `db.json`.
+
+
+
+
 
 ## Conclusiones
 
