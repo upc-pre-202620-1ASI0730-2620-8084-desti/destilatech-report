@@ -5735,6 +5735,38 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/locales`. Commits de `Msa-ware` con los catálogos `locales/es.json` y `locales/en.json`, seguidos de los commits de pedidos y reposición de la rama anterior.
 
 
+**Figura 131**
+
+*Historial de commits de la rama feature/orders-replenishment*
+
+<p align="center"><img src="assets/commits/webapp-commits-08-feature-orders-replenishment.png" alt="Historial de commits de la rama feature/orders-replenishment" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/orders-replenishment`. Commits de `jeanpcs` y `Msa-ware` con la tienda de pedidos, las rutas, las vistas de reposición, pedidos y clientes, y los diálogos de cliente, pedido y reposición.
+
+
+**Figura 132**
+
+*Historial de commits de la rama feature/production-monitoring*
+
+<p align="center"><img src="assets/commits/webapp-commits-09-feature-production-monitoring.png" alt="Historial de commits de la rama feature/production-monitoring" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/production-monitoring`. Commits de `MrBaru` con la tienda de producción, las rutas, el dashboard de monitoreo, la gestión y el detalle de lotes, los diálogos de rango y de lote, las tarjetas de variable y el gráfico de lecturas.
+
+
+**Figura 133**
+
+*Historial de commits de la rama feature/shared*
+
+<p align="center"><img src="assets/commits/webapp-commits-10-feature-shared.png" alt="Historial de commits de la rama feature/shared" width="760"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/shared`. Commits de `Msa-ware` con la página 404, la barra superior, la navegación lateral, el encabezado de página, el layout, el selector de idioma, la tarjeta KPI, el pie de página y los estilos.
+
 
 
 
