@@ -4707,14 +4707,16 @@ Pasos realizados para publicar la landing page:
 
 GitHub Pages usa la rama `main` como origen de producción: cada integración en `main` vuelve a publicar el sitio mediante el flujo de trabajo automático `pages build and deployment`, que se ejecuta sin configuración adicional y tarda menos de un minuto.
 
+
 ##### 5.1.4.2. Web Application
 
 La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila a archivos estáticos que se pueden alojar en cualquier servicio de hosting estático. La configuración de compilación está en el repositorio [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp):
 
 - **Compilación:** `npm run build` genera la carpeta `dist/` (`index.html` y `assets/`) usando las variables de `.env.production`.
-- **API en producción:** mientras no exista el *backend*, `.env.production` apunta a un CRUD API de Beeceptor (`https://<endpoint>.free.beeceptor.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
+- **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (`https://destilatech-api.onrender.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
+- **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** al cierre del Sprint 2 la aplicación web aún no está desplegada en un servicio público; la URL se registrará en la sección 5.2.2.7 cuando se publique.
+- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 148 a 155).
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
@@ -5930,10 +5932,9 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server` (desarrollo local) y, para la compilación de producción, un CRUD API de Beeceptor. Ambos exponen los recursos con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
+En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server`, que se ejecuta de forma local en desarrollo y se publica en Render como servicio web (`destilatech-api`) para la compilación de producción. En ambos casos los recursos se exponen con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
 
-**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://<endpoint>.free.beeceptor.com/api/v1`.
-
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 154).
 
 **Tabla 20**
 
@@ -5961,11 +5962,136 @@ En el Sprint 2 no se implementaron servicios web propios: la aplicación consume
 
 Las lecturas de sensores se generan con el simulador `IotSensorSimulator`, que produce valores alrededor del centro del rango de cada variable con una probabilidad configurable de lectura anómala (15 % por defecto). Con esto se representa el comportamiento de los sensores sin dispositivos físicos, como establece el alcance académico del proyecto. Los recursos se acceden desde los adaptadores `*-api.js`, que extienden `BaseApi` y `BaseEndpoint` del *Shared Kernel*.
 
-
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Al cierre del Sprint 2 la aplicación web se ejecuta localmente y cuenta con la configuración de compilación de producción (`npm run build`, que genera la carpeta `dist/` con `.env.production`), descrita en la sección 5.1.4.2. El despliegue en un servicio de alojamiento público queda pendiente.
+La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Render**, ambos con planes gratuitos. La aplicación es una SPA de Vue 3 que `npm run build` compila a archivos estáticos en la carpeta `dist/`, por lo que Firebase Hosting la sirve por HTTPS sin necesidad de un servidor propio. Como el *backend* en ASP.NET Core aún no existe, el Fake API (`json-server`, con `db.json` y `routes.json`) se publica como servicio web en Render para que la aplicación desplegada pueda consultar datos. La sección 5.1.4.2 resume la configuración; esta sección documenta los pasos con sus evidencias.
 
+**Enlaces de producción:**
+
+- **Aplicación web (Firebase Hosting):** [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app)
+- **Fake API (Render):** [https://destilatech-api.onrender.com/api/v1](https://destilatech-api.onrender.com/api/v1)
+- **Landing page (GitHub Pages):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+
+**Despliegue de la aplicación web en Firebase Hosting**
+
+**Paso 1. Creación del proyecto.** En la consola de Firebase se creó el proyecto `destilatech-webapp` con la cuenta del equipo, en el plan Spark (sin costo). No se registró ninguna aplicación (iOS, Android o web) porque Hosting no la requiere, y no se activó Firestore ni Functions.
+
+**Figura 148**
+
+*Proyecto destilatech-webapp en la consola de Firebase*
+
+<p align="center"><img src="assets/webapp/despliegue-01-firebase-proyecto.png" alt="Proyecto destilatech-webapp en la consola de Firebase" width="800"></p>
+
+*Nota.* Captura de la consola de Firebase (2026).
+
+*Descripción.* Pantalla «Configuración de proyecto» de Firebase con el nombre y el ID del proyecto (`destilatech-webapp`), el número del proyecto y el plan Spark sin costo en la esquina inferior izquierda. La sección «Tus apps» indica que no hay aplicaciones registradas, ya que Hosting no las necesita.
+
+**Paso 2. Inicialización de Hosting.** Desde la carpeta del proyecto se ejecutaron `firebase login` y `firebase init`. Se eligió la función Hosting, se usó el proyecto existente, se indicó `dist` como directorio público y se aceptó la configuración de aplicación de una sola página (reescribir todas las URL a `/index.html`). No se activaron las compilaciones automáticas con GitHub ni se sobrescribió `dist/index.html`. El asistente generó `firebase.json` y `.firebaserc`.
+
+**Figura 149**
+
+*Inicialización de Firebase Hosting con firebase init*
+
+<p align="center"><img src="assets/webapp/despliegue-02-firebase-init.png" alt="Terminal con la inicialización de Firebase Hosting" width="800"></p>
+
+*Nota.* Captura de la terminal del IDE (2026).
+
+*Descripción.* Terminal con `firebase login` (sesión ya iniciada) y `firebase init`: funcionalidad Hosting seleccionada, proyecto `destilatech-webapp`, directorio público `dist`, aplicación de una sola página con reescritura a `/index.html`, GitHub automático en «No», y creación de `firebase.json` y `.firebaserc`.
+
+El archivo `firebase.json` resultante es el siguiente:
+
+```json
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  }
+}
+```
+
+**Paso 3. Publicación.** Con `dist/` generada por `npm run build`, la configuración se registró en el repositorio con el commit `chore(deploy): add Firebase Hosting configuration` en la rama `main` y se publicó con `npx firebase-tools deploy`. Firebase encontró 58 archivos en `dist`, los subió, finalizó la versión y completó el *release*.
+
+**Figura 150**
+
+*Commit de la configuración y despliegue con firebase deploy*
+
+<p align="center"><img src="assets/webapp/despliegue-03-firebase-deploy.png" alt="Terminal con git push y firebase deploy" width="800"></p>
+
+*Nota.* Captura de la terminal del IDE (2026).
+
+*Descripción.* Terminal con `git add`, `git commit` y `git push` de la configuración de Hosting hacia `main`, seguidos de `npx firebase-tools deploy`: 58 archivos en `dist`, subida completa, versión finalizada y *release* completo. La salida termina con la URL de la consola del proyecto y la Hosting URL `https://destilatech-webapp.web.app`.
+
+**Paso 4. Verificación en la consola.** El panel de Hosting muestra la versión actual (`98f9a8`, publicada el 05/10/2026 a las 8:01 p. m.), una versión anterior (`13fbe4`, de las 7:57 p. m.) y los dominios asignados por Firebase: `destilatech-webapp.web.app` y `destilatech-webapp.firebaseapp.com`.
+
+**Figura 151**
+
+*Panel de Hosting en la consola de Firebase*
+
+<p align="center"><img src="assets/webapp/despliegue-04-firebase-hosting.png" alt="Panel de Hosting en la consola de Firebase" width="800"></p>
+
+*Nota.* Captura de la consola de Firebase (2026).
+
+*Descripción.* Pantalla «Administrar sitio» de Hosting con la versión actual, el historial de versiones anteriores y los dos dominios predeterminados del proyecto.
+
+**Despliegue del Fake API en Render**
+
+**Paso 5. Creación del servicio web.** En Render se creó un *Web Service* con el nombre `destilatech-api`, conectado al repositorio `destilatech-webapp` de la organización del curso en GitHub, con entorno Node, la rama `develop`, la región Oregon y una instancia gratuita (0,1 CPU y 512 MB de RAM, USD 0 al mes).
+
+**Figura 152**
+
+*Configuración del servicio web destilatech-api en Render*
+
+<p align="center"><img src="assets/webapp/despliegue-05-render-configuracion.png" alt="Formulario New Web Service de Render" width="800"></p>
+
+*Nota.* Captura de Render (2026).
+
+*Descripción.* Formulario «New Web Service» con el repositorio de origen, el nombre `destilatech-api`, el proyecto y el entorno de producción, el lenguaje Node, la rama `develop` y la región Oregon. El costo mostrado al pie es de USD 0 al mes.
+
+**Paso 6. Verificación del servicio.** El proyecto de Render muestra el servicio `destilatech-api` con estado *Deployed*, entorno Node y región Oregon. El panel de despliegues registra el primer despliegue, del commit `chore(config): point production API to json-server hosted on Render`, con estado *Live* y una duración de 34,3 segundos.
+
+**Figura 153**
+
+*Servicio destilatech-api desplegado en Render*
+
+<p align="center"><img src="assets/webapp/despliegue-06-render-servicio.png" alt="Proyecto de Render con el servicio destilatech-api desplegado" width="800"></p>
+
+*Nota.* Captura de Render (2026).
+
+*Descripción.* Lista de recursos del entorno Production del proyecto «My project», con el servicio web `destilatech-api` en estado *Deployed*.
+
+**Figura 154**
+
+*Despliegue del Fake API en Render*
+
+<p align="center"><img src="assets/webapp/despliegue-07-render-deploy.png" alt="Panel de despliegues del servicio destilatech-api" width="800"></p>
+
+*Nota.* Captura de Render (2026).
+
+*Descripción.* Panel «Deploys» del servicio con su identificador, el repositorio y la rama `develop`, el commit `ed3b72a` con estado *Live* y la URL pública `https://destilatech-api.onrender.com`. El aviso morado indica que la instancia gratuita se suspende por inactividad y que las solicitudes pueden demorar 50 segundos o más.
+
+**Paso 7. Conexión de la aplicación con el Fake API.** La variable `VITE_DESTILATECH_API_URL` de `.env.production` apunta a `https://destilatech-api.onrender.com/api/v1`, de modo que la compilación de producción consume el servicio publicado en Render.
+
+**Resultado**
+
+La aplicación está disponible en la URL pública de Firebase Hosting y carga sus datos desde el Fake API.
+
+**Figura 155**
+
+*Aplicación web desplegada en Firebase Hosting*
+
+<p align="center"><img src="assets/webapp/despliegue-08-webapp-publicada.png" alt="Dashboard del productor en destilatech-webapp.web.app" width="800"></p>
+
+*Nota.* Captura propia del navegador en `destilatech-webapp.web.app/dashboard` (2026).
+
+*Descripción.* Dashboard del productor abierto desde la URL pública, con los indicadores de lotes, inventario, alertas y pedidos, el gráfico de volumen por lote activo, la actividad reciente y las alertas pendientes.
+
+**Automatización y limitaciones**
+
+- **Firebase Hosting:** la publicación se ejecuta de forma manual con `npx firebase-tools deploy`; no se configuró un flujo de GitHub Actions (la opción de compilaciones automáticas se dejó en «No»). Cada publicación crea una versión nueva en el panel de Hosting y conserva las anteriores.
+- **Render:** el servicio queda enlazado a la rama `develop` del repositorio y sus despliegues se consultan en el panel «Deploys».
+- **Landing page:** se publica de forma automática con el flujo `pages build and deployment` de GitHub Pages (sección 5.2.1.7).
+- **Instancia gratuita de Render:** se suspende tras un periodo de inactividad, por lo que la primera consulta puede demorar. Además, los cambios que la aplicación escriba en `db.json` pueden perderse cuando el servicio se reinicie. Ambas limitaciones desaparecen cuando el Fake API se reemplace por la API en ASP.NET Core con su base de datos.
 
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
@@ -5987,7 +6113,6 @@ El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y 
 
 
 **Aportes por integrante.** Los commits de la tabla se contaron a partir del historial de GitHub del repositorio. Los 20 commits de Condor Sandoval en `feature/iam` y los 3 de Santiago Atanacio corresponden al contexto IAM, retirado del alcance del sprint; los aportes vigentes de Condor Sandoval en la aplicación son el módulo Billing y su colaboración en el *Shared Kernel* y en pedidos.
-
 
 
 
