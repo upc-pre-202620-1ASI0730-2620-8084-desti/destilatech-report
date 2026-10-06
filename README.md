@@ -5317,7 +5317,7 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 | Sprint # | Sprint 2 |
 | :--- | :--- |
-| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts* (todos menos IAM, que el curso aún no aborda). Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
+| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
 | **Fecha** | 2026-09-29 |
 | **Hora** | 11:00 a.m. |
 | **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet); aún no hay URL de despliegue |
