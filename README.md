@@ -6078,11 +6078,7 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | Carpeta `assets/commits/` | Capturas del historial de commits del repositorio del informe (sección 5.2.1.4) y de la aplicación web (sección 5.2.2.4). |
 | Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
 
-### Anexo B. Videos de Exposiciones
 
-| Entrega | Descripción | Enlace |
-| :--- | :--- | :--- |
-| AV1 | Exposición del avance 1 (Sprint Review) | Se entrega directamente al docente en el formato solicitado; no se publica un enlace. |
 
 ### Anexo C. Video de las entrevistas
 
