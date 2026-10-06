@@ -5354,7 +5354,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 *Tablero del Sprint 2 en Trello*
 
-> **[CONFIRMAR: imagen pendiente]** Captura del tablero con las tarjetas del Sprint 2. Guardar como `assets/md-images-front-matter/trello-sprint2.png` y reemplazar este bloque por la imagen.
+<p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero del Sprint 2 en Trello" width="720"></p>
 
 *Nota.* Captura propia de Trello (2026).
 
