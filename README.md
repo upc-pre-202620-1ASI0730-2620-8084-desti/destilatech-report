@@ -83,6 +83,7 @@ Proyecto<br>
 | 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
 | 1.2.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por las indicaciones del docente: assumptions redactados como creencias, hypothesis statements con la plantilla del curso, eventos pivote y lenguaje ubicuo en el Big Picture EventStorming, y criterios de separación de *bounded contexts* en el Design-Level EventStorming; Sprint 2 sin el contexto IAM (`main`) |
 | 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por el feedback general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
+| 1.2.3 | 06/10/2026 | Santiago Atanacio, Jairo Mathias | Despliegue de la aplicación web en Firebase Hosting y del Fake API en Render, con la evidencia de despliegue del Sprint 2 (sección 5.2.2.7), enlaces de los videos de navegación, actualización de la configuración de despliegue (sección 5.1.4) y de los datos de la API en producción, y capturas de GitHub Insights del TB1 en la sección Project Report Collaboration Insights (`develop`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -111,6 +112,8 @@ A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicaci
 
 ### Evidencias de Colaboración (GitHub Insights)
 
+Las capturas se presentan por entrega: las del AV1 corresponden al avance del Sprint 1 y las del TB1 al avance hasta el Sprint 2.
+
 #### 1. Analíticas Globales del Equipo
 
 **A. Pulse Insights (actividad general del repositorio del informe)**
@@ -125,10 +128,20 @@ A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicaci
 
 *Descripción.* Resumen de actividad entre el 18 de agosto y el 18 de septiembre de 2026: 4 Pull Requests activas (2 integradas y 2 abiertas) y ninguna incidencia. Cinco autores enviaron 56 commits a `main` y 105 commits a todas las ramas.
 
+**Figura 2**
+
+*Pulse Insights del repositorio del informe (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-pulse.png" alt="Pulse Insights del repositorio del informe (TB1)" width="700"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Resumen de actividad entre el 5 de septiembre y el 5 de octubre de 2026: 8 Pull Requests activas (6 integradas y 2 abiertas) y ninguna incidencia. Seis autores enviaron 122 commits a `main` y 196 commits a todas las ramas; en `main` cambiaron 177 archivos, con 5114 adiciones y 66 eliminaciones.
+
 
 **B. Contributors Insights (evolución de aportes)**
 
-**Figura 2**
+**Figura 3**
 
 *Contributors Insights del repositorio del informe (AV1)*
 
@@ -137,6 +150,16 @@ A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicaci
 *Nota.* Captura de GitHub Insights (2026).
 
 *Descripción.* Aportes de los cinco integrantes al repositorio del informe entre el 31 de agosto y el 28 de septiembre de 2026, con pico de actividad en torno al 14 de septiembre. Msa-ware registra 77 commits (4,736 líneas añadidas y 506 eliminadas), pierinaaa29 25 (398 y 40), Jean-pcs 18 (1,198 y 2,444), MrBaru 8 (557 y 11) y midoan0805 7 (3,204 y 63).
+
+**Figura 4**
+
+*Contributors Insights del repositorio del informe (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-contributors.png" alt="Contributors Insights del repositorio del informe (TB1)" width="700"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Aportes al repositorio del informe en el último mes, hasta el 5 de octubre de 2026, con la mayor parte de la actividad en la semana del 14 de septiembre. La captura muestra a los cuatro primeros aportantes por número de commits: Msa-ware con 65 commits (4,197 líneas añadidas y 398 eliminadas), pierinaaa29 con 25 (398 y 40), Jean-pcs con 18 (1,198 y 2,444) y MrBaru con 7 (167 y 9).
 
 
 ---
@@ -147,7 +170,7 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 **Fernandez Seer, Mario Alonso**
 
-**Figura 3**
+**Figura 5**
 
 *Commits de Fernandez Seer, Mario Alonso (AV1)*
 
@@ -157,10 +180,20 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 4 y el 16 de septiembre de 2026, con los mensajes «Updated team profiles and add startup overview (Chapter one)», «add segment 1 producer interview» (dos veces) y «Add files via upload».
 
+**Figura 6**
+
+*Commits de Fernandez Seer, Mario Alonso (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-commits-mario.png" alt="Commits de Fernandez Seer, Mario Alonso (TB1)" width="600"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Historial de commits del 5 de octubre de 2026, con la creación y edición de la sección 5.2.2.5 (Execution Evidence), el cierre de la sección 5.2.2.4 (Development Evidence), la adición de figuras y la revisión de los enlaces de los videos en el README.
+
 
 **Santiago Atanacio, Jairo Mathias**
 
-**Figura 4**
+**Figura 7**
 
 *Commits de Santiago Atanacio, Jairo Mathias (AV1)*
 
@@ -170,10 +203,20 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 15 y el 17 de septiembre de 2026, con mensajes sobre el Big Picture EventStorming, la descripción del Ubiquitous Language, actualizaciones del README y de la URL del video.
 
+**Figura 8**
+
+*Commits de Santiago Atanacio, Jairo Mathias (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-commits-jairo.png" alt="Commits de Santiago Atanacio, Jairo Mathias (TB1)" width="600"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Historial de commits del 5 de octubre de 2026, con el cierre de las secciones 5.2.2.6, 5.2.2.7 y 5.2.2.8, la integración de la rama `feature/sprint2` en `develop`, el retiro del Anexo B, la corrección del texto de planificación, la carga de archivos y la revisión de los detalles de despliegue y de las URL de la API en el README.
+
 
 **Almandroz Carbajal, Pierina Marysabel**
 
-**Figura 5**
+**Figura 9**
 
 *Commits de Almandroz Carbajal, Pierina Marysabel (AV1)*
 
@@ -183,10 +226,20 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 16 de septiembre de 2026, con los diagramas de clases de seis contextos del dominio, la introducción al diseño orientado a objetos y diagramas de Event Storming.
 
+**Figura 10**
+
+*Commits de Almandroz Carbajal, Pierina Marysabel (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-commits-pierina.png" alt="Commits de Almandroz Carbajal, Pierina Marysabel (TB1)" width="600"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Historial de commits del 5 de octubre de 2026, con la creación de la sección 5.2.2.4 (Development Evidence), las tablas del repositorio destilatech-webapp, las observaciones de los commits y la información e imágenes de la sección.
+
 
 **Condor Sandoval, Jean Pierre**
 
-**Figura 6**
+**Figura 11**
 
 *Commits de Condor Sandoval, Jean Pierre (AV1)*
 
@@ -196,10 +249,20 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 15 y el 17 de septiembre de 2026, con mensajes sobre el contenido del capítulo 4, el mock-up de la landing page, las User Personas, la User Task Matrix y el mapa de empatía, además de integraciones de la rama `develop`.
 
+**Figura 12**
+
+*Commits de Condor Sandoval, Jean Pierre (TB1)*
+
+<p align="center"><img src="assets/commits/tb1-commits-jean.png" alt="Commits de Condor Sandoval, Jean Pierre (TB1)" width="450"></p>
+
+*Nota.* Captura de GitHub (2026).
+
+*Descripción.* Historial de tres commits del 5 de octubre de 2026 con actualizaciones del README del informe.
+
 
 **Domenack Angeles, Miguel**
 
-**Figura 7**
+**Figura 13**
 
 *Commits de Domenack Angeles, Miguel (AV1)*
 
@@ -208,6 +271,8 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 *Nota.* Captura de GitHub (2026).
 
 *Descripción.* Historial de commits del 16 y el 18 de septiembre de 2026, con la integración de la Pull Request #2 de la rama `feature/product-design`, las secciones de diseño de producto, los diagramas de arquitectura y la revisión de detalles menores.
+
+Para el TB1 no se incluye una captura de commits de Domenack Angeles, Miguel en el informe: su aporte del sprint, las pruebas funcionales de la aplicación web (TK-76 a TK-81), no deja commits (sección 5.2.2.8).
 
 
 # Contenido
@@ -443,11 +508,11 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 
 | **Código** | **Nombre completo del integrante** | **Descripción de la carrera** | **Fotografía** | **Conocimientos y habilidades** |
 | :--- | :--- | :--- | :--- | :--- |
-| U202317807 | Fernandez Seer, Mario Alonso | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="https://github.com/user-attachments/assets/1a9dbe0b-f15c-4a42-ab1f-871cf0094a28" alt="Fotografía de Fernandez Seer, Mario Alonso" width="120"><br><b>Figura 8</b><br><i>Fotografía de Fernandez Seer, Mario Alonso</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Fernandez Seer, Mario Alonso del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requisitos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio. |
-| U202418755 | Santiago Atanacio, Jairo Mathias | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png" alt="Fotografía de Santiago Atanacio, Jairo Mathias" width="120"><br><b>Figura 9</b><br><i>Fotografía de Santiago Atanacio, Jairo Mathias</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Santiago Atanacio, Jairo Mathias del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo enfoques ágiles. |
-| U202316845 | Almandroz Carbajal, Pierina Marysabel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/pierina-almandroz.jpg" alt="Fotografía de Almandroz Carbajal, Pierina Marysabel" width="120"><br><b>Figura 10</b><br><i>Fotografía de Almandroz Carbajal, Pierina Marysabel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Almandroz Carbajal, Pierina Marysabel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Dentro del equipo me enfoco en el diseño de la arquitectura de software del proyecto, aplicando Domain-Driven Design, Event Storming a nivel de diseño y el C4 Model para representar los niveles de Context, Container y Component, así como los Class Diagrams y el modelo de base de datos de cada Bounded Context. También coordino el flujo de trabajo en Git y GitHub del equipo, cuidando la organización de ramas, commits y Pull Requests del repositorio. |
-| U202418405 | Condor Sandoval, Jean Pierre | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg" alt="Fotografía de Condor Sandoval, Jean Pierre" width="120"><br><b>Figura 11</b><br><i>Fotografía de Condor Sandoval, Jean Pierre</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Condor Sandoval, Jean Pierre del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requisitos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y enfoques de desarrollo. |
-| U202322404 | Domenack Angeles, Miguel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png" alt="Fotografía de Domenack Angeles, Miguel" width="120"><br><b>Figura 12</b><br><i>Fotografía de Domenack Angeles, Miguel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Domenack Angeles, Miguel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. |
+| U202317807 | Fernandez Seer, Mario Alonso | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="https://github.com/user-attachments/assets/1a9dbe0b-f15c-4a42-ab1f-871cf0094a28" alt="Fotografía de Fernandez Seer, Mario Alonso" width="120"><br><b>Figura 14</b><br><i>Fotografía de Fernandez Seer, Mario Alonso</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Fernandez Seer, Mario Alonso del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos relacionados con desarrollo de software, análisis de requisitos y diseño de soluciones tecnológicas. Como líder del proyecto, participa en la definición de la propuesta de Destilatech, organización del equipo y alineamiento de las funcionalidades del producto con las necesidades identificadas dentro del dominio. |
+| U202418755 | Santiago Atanacio, Jairo Mathias | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jairo-santiago.png" alt="Fotografía de Santiago Atanacio, Jairo Mathias" width="120"><br><b>Figura 15</b><br><i>Fotografía de Santiago Atanacio, Jairo Mathias</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Santiago Atanacio, Jairo Mathias del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo enfoques ágiles. |
+| U202316845 | Almandroz Carbajal, Pierina Marysabel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/pierina-almandroz.jpg" alt="Fotografía de Almandroz Carbajal, Pierina Marysabel" width="120"><br><b>Figura 16</b><br><i>Fotografía de Almandroz Carbajal, Pierina Marysabel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Almandroz Carbajal, Pierina Marysabel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Dentro del equipo me enfoco en el diseño de la arquitectura de software del proyecto, aplicando Domain-Driven Design, Event Storming a nivel de diseño y el C4 Model para representar los niveles de Context, Container y Component, así como los Class Diagrams y el modelo de base de datos de cada Bounded Context. También coordino el flujo de trabajo en Git y GitHub del equipo, cuidando la organización de ramas, commits y Pull Requests del repositorio. |
+| U202418405 | Condor Sandoval, Jean Pierre | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg" alt="Fotografía de Condor Sandoval, Jean Pierre" width="120"><br><b>Figura 17</b><br><i>Fotografía de Condor Sandoval, Jean Pierre</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Condor Sandoval, Jean Pierre del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requisitos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y enfoques de desarrollo. |
+| U202322404 | Domenack Angeles, Miguel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png" alt="Fotografía de Domenack Angeles, Miguel" width="120"><br><b>Figura 18</b><br><i>Fotografía de Domenack Angeles, Miguel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Domenack Angeles, Miguel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. |
 
 
 ### 1.2. Solution Profile
@@ -1038,7 +1103,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista1_Seg1.png" alt="Captura de la entrevista #1 (Luciana Cueva, productora)" width="180"><br><b>Figura 13</b><br><i>Captura de la entrevista #1 (Luciana Cueva, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Luciana Cueva, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista1_Seg1.png" alt="Captura de la entrevista #1 (Luciana Cueva, productora)" width="180"><br><b>Figura 19</b><br><i>Captura de la entrevista #1 (Luciana Cueva, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Luciana Cueva, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1092,7 +1157,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista2_Seg1.png" alt="Captura de la entrevista #2 (Mario Fernández, productor)" width="270"><br><b>Figura 14</b><br><i>Captura de la entrevista #2 (Mario Fernández, productor)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Mario Fernández, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista2_Seg1.png" alt="Captura de la entrevista #2 (Mario Fernández, productor)" width="270"><br><b>Figura 20</b><br><i>Captura de la entrevista #2 (Mario Fernández, productor)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Mario Fernández, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1138,7 +1203,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista3_Seg1.png" alt="Captura de la entrevista #3 (Stacy Guerra, productora)" width="180"><br><b>Figura 15</b><br><i>Captura de la entrevista #3 (Stacy Guerra, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Stacy Guerra, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista3_Seg1.png" alt="Captura de la entrevista #3 (Stacy Guerra, productora)" width="180"><br><b>Figura 21</b><br><i>Captura de la entrevista #3 (Stacy Guerra, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Stacy Guerra, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1186,7 +1251,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Captura de la entrevista #4 (Marco Vargas, comercializador)" width="180"><br><b>Figura 16</b><br><i>Captura de la entrevista #4 (Marco Vargas, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Marco Vargas, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Captura de la entrevista #4 (Marco Vargas, comercializador)" width="180"><br><b>Figura 22</b><br><i>Captura de la entrevista #4 (Marco Vargas, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Marco Vargas, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1232,7 +1297,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Captura de la entrevista #5 (Carlos Moreno, comercializador)" width="300"><br><b>Figura 17</b><br><i>Captura de la entrevista #5 (Carlos Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Carlos Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Captura de la entrevista #5 (Carlos Moreno, comercializador)" width="300"><br><b>Figura 23</b><br><i>Captura de la entrevista #5 (Carlos Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Carlos Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1278,7 +1343,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Captura de la entrevista #6 (Rubens Moreno, comercializador)" width="300"><br><b>Figura 18</b><br><i>Captura de la entrevista #6 (Rubens Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Rubens Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Captura de la entrevista #6 (Rubens Moreno, comercializador)" width="300"><br><b>Figura 24</b><br><i>Captura de la entrevista #6 (Rubens Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Rubens Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1328,7 +1393,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Captura de la entrevista #7 (Andrea Mendoza, comercializadora)" width="250"><br><b>Figura 19</b><br><i>Captura de la entrevista #7 (Andrea Mendoza, comercializadora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Andrea Mendoza, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Captura de la entrevista #7 (Andrea Mendoza, comercializadora)" width="250"><br><b>Figura 25</b><br><i>Captura de la entrevista #7 (Andrea Mendoza, comercializadora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Andrea Mendoza, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -1363,7 +1428,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 | Roles declarados | Administradora de negocio familiar (2), propietario y productor (1) | Propietario (1), administradores (3) |
 | Duración promedio de la entrevista | 17.2 min | 7.8 min |
 
-**Figura 20**
+**Figura 26**
 
 *Edad de los entrevistados por segmento*
 
@@ -1397,7 +1462,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Interpretación.** Los tres productores usan Excel y redes sociales, y los tres tienen el celular como dispositivo principal; solo uno (33 %) menciona la laptop. Ninguno usa sensores ni IoT (3 de 3) y los tres describen dificultad para monitorear variables del proceso (temperatura, grado de azúcar, grado alcohólico), un problema que dos de ellos (67 %) resuelven con supervisión presencial frecuente y que, según dos entrevistados, produce errores o desfases en los registros. Los tres estarían dispuestos a pagar una suscripción: el pago mínimo propuesto promedia S/ 63.3, el máximo S/ 93.3 y el punto medio del rango S/ 78.3 al mes.
 
-**Figura 21**
+**Figura 27**
 
 *Hallazgos del segmento Productor (porcentaje sobre n = 3)*
 
@@ -1430,7 +1495,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Interpretación.** Los cuatro comercializadores usan cuaderno, WhatsApp y celular, se han quedado sin stock con clientes esperando y deciden la reposición según su experiencia o intuición; los cuatro desean alertas de stock en el celular y estarían dispuestos a pagar. Tres de cuatro (75 %) abandonaron una herramienta digital previa (un sistema de inventario en dos casos y una hoja de cálculo en el tercero) por considerarla complicada o poco ágil, lo que indica que la facilidad de uso es un requisito crítico. El quiebre de stock se da, en promedio, 1.83 veces al mes entre los tres entrevistados que dieron una frecuencia. El pago mínimo propuesto promedia S/ 40.0, el máximo S/ 72.5 y el punto medio del rango S/ 56.2 al mes.
 
-**Figura 22**
+**Figura 28**
 
 *Hallazgos del segmento Comercializador (porcentaje sobre n = 4)*
 
@@ -1464,7 +1529,7 @@ La siguiente tabla compara los aspectos que se indagaron en ambos segmentos. Los
 | Considera promociones de proveedores | s/d | 50% | s/d |
 | Abandonó una herramienta digital previa | s/d | 75% | s/d |
 
-**Figura 23**
+**Figura 29**
 
 *Herramientas y dispositivos usados por segmento*
 
@@ -1475,7 +1540,7 @@ La siguiente tabla compara los aspectos que se indagaron en ambos segmentos. Los
 *Descripción.* Barras agrupadas que comparan, para productores (marrón) y comercializadores (dorado), el porcentaje que usa cuaderno, Excel, WhatsApp, smartphone y laptop. El smartphone es el dispositivo principal del 100 % de ambos segmentos; el cuaderno y WhatsApp son más frecuentes entre comercializadores (100 %) que entre productores (67 %), y la laptop es minoritaria en los dos (33 % y 25 %).
 
 
-**Figura 24**
+**Figura 30**
 
 *Rango de pago mensual propuesto por entrevistado*
 
@@ -1509,7 +1574,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 **Segmento 1: Productor de pisco**
 
-**Figura 25**
+**Figura 31**
 
 *User Persona del segmento Productor: Ricardo Donayre*
 
@@ -1522,7 +1587,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 **Segmento 2: Comercializador**
 
-**Figura 26**
+**Figura 32**
 
 *User Persona del segmento Comercializador: Carlos Mendoza*
 
@@ -1604,7 +1669,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 **Segmento 1: Productor de pisco**
 
-**Figura 27**
+**Figura 33**
 
 *User Journey Map del segmento Productor: Ricardo Donayre*
 
@@ -1617,7 +1682,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 **Segmento 2: Comercializador**
 
-**Figura 28**
+**Figura 34**
 
 *User Journey Map del segmento Comercializador: Carlos Mendoza*
 
@@ -1634,7 +1699,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 **Segmento 1: Productor de pisco**
 
-**Figura 29**
+**Figura 35**
 
 *Empathy Map del segmento Productor: Ricardo Donayre*
 
@@ -1647,7 +1712,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 **Segmento 2: Comercializador**
 
-**Figura 30**
+**Figura 36**
 
 *Empathy Map del segmento Comercializador: Carlos Mendoza*
 
@@ -1703,7 +1768,7 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 #### 2.4.3. Flujo del Productor
 
-**Figura 31**
+**Figura 37**
 
 *Big Picture EventStorming: flujo del productor (as-is)*
 
@@ -1744,7 +1809,7 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 #### 2.4.4. Flujo del Comercializador
 
-**Figura 32**
+**Figura 38**
 
 *Big Picture EventStorming: flujo del comercializador (as-is)*
 
@@ -1965,7 +2030,7 @@ Las Épicas agrupan historias relacionadas. Además de las historias orientadas 
 
 ### 3.2. Impact Mapping
 
-**Figura 33**
+**Figura 39**
 
 *Impact Mapping de Destilatech*
 
@@ -2009,7 +2074,7 @@ Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page
 
 **Herramienta de gestión del backlog:** [URL pública del tablero del Product Backlog: por completar]
 
-**Figura 34**
+**Figura 40**
 
 *Product Backlog de Destilatech en la herramienta de gestión*
 
@@ -2103,7 +2168,7 @@ Una guía de estilo (*style guideline*) reúne las normas de diseño que se apli
 
 La identidad visual de Destilatech busca combinar la tradición artesanal del pisco con la precisión del monitoreo digital. El logotipo está formado por el nombre de la marca en tipografía sans-serif de trazo grueso y un ícono lineal de copa de destilado, con un punto ámbar en el borde que representa el dato o la medición. Los colores del logotipo —cobre oscuro sobre fondo crema— transmiten calidez y confianza, y el trazo simple facilita su uso en tamaños pequeños, como el favicon o el encabezado de la aplicación.
 
-**Figura 35**
+**Figura 41**
 
 *Logotipo de Destilatech*
 
@@ -2155,7 +2220,7 @@ La paleta se definió a partir de los materiales y procesos del pisco: el cobre 
 | Success Green | #2f7a4f | `--color-success` | Estados normales o correctos. |
 | Warning Gold | #b8781f | `--color-warn` | Advertencias, como niveles bajos de stock. |
 
-**Figura 36**
+**Figura 42**
 
 *Paleta de colores de Destilatech*
 
@@ -2364,7 +2429,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 
 **Wireframes para escritorio**
 
-**Figura 37**
+**Figura 43**
 
 *Wireframe de la landing page: encabezado y sección inicial*
 
@@ -2375,7 +2440,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* En el encabezado se ubican el logotipo, el menú de secciones, el selector ES / EN y el botón «Prueba gratis 14 días». La sección inicial usa dos columnas: a la izquierda, el título, el resumen, los botones de acción y la nota «Sin tarjeta de crédito para empezar»; a la derecha, un marcador de imagen con dos tarjetas flotantes, una de temperatura de tanque (18.4 °C, Óptimo) y otra de inventario (42 uds., Reponer).
 
 
-**Figura 38**
+**Figura 44**
 
 *Wireframe de la landing page: sección de segmentos*
 
@@ -2386,7 +2451,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Dos perfiles, una misma plataforma» presenta dos tarjetas lado a lado, una para el Productor de pisco y otra para el Comercializador. Cada tarjeta tiene un marcador de fotografía, un texto breve y una lista de verificación con las funciones principales de su segmento.
 
 
-**Figura 39**
+**Figura 45**
 
 *Wireframe de la landing page: sección de beneficios*
 
@@ -2397,7 +2462,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Beneficios pensados para tu operación diaria» organiza cuatro tarjetas en una fila: Monitoreo de Producción, Gestión de Inventario, Alertas Automáticas y Estimaciones Predictivas. Cada tarjeta incluye un ícono, un título y una descripción corta.
 
 
-**Figura 40**
+**Figura 46**
 
 *Wireframe de la landing page: planes de suscripción e impacto*
 
@@ -2408,7 +2473,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección de planes muestra tres tarjetas —Plan Básico (S/ 60 al mes), Plan Profesional (S/ 110 al mes, destacado con la insignia «Más elegido») y Plan Empresarial (S/ 200 al mes)— con sus características y un botón de prueba gratuita. Debajo, un bloque de dos columnas presenta las cifras del sector: más de 527 empresas formales y 7.8 millones de litros de producción aproximada.
 
 
-**Figura 41**
+**Figura 47**
 
 *Wireframe de la landing page: funcionalidades por segmento y llamada a la acción*
 
@@ -2419,7 +2484,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Una plataforma, dos formas de trabajar» incluye pestañas para alternar entre Productor y Comercializador y tres tarjetas de funcionalidades por pestaña (Monitoreo IoT, Trazabilidad y Detección de condiciones anómalas). Debajo aparece un bloque oscuro con la llamada a la acción «Empieza a gestionar tu producción e inventario hoy» y el botón de prueba gratuita.
 
 
-**Figura 42**
+**Figura 48**
 
 *Wireframe de la landing page: llamada a la acción final y pie de página*
 
@@ -2434,7 +2499,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 
 En la versión móvil el contenido se apila en una sola columna y el menú se reduce a un botón tipo hamburguesa. Los wireframes siguientes muestran la secuencia de pantallas que ve el visitante al desplazarse.
 
-**Figura 43**
+**Figura 49**
 
 *Wireframes de la landing page para móvil*
 
@@ -2449,7 +2514,7 @@ En la versión móvil el contenido se apila en una sola columna y el menú se re
 
 Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes anteriores: paleta de cobre, ámbar y crema, tipografías Poppins e Inter, fotografías de bodegas y estantes de licorería, y tarjetas con ícono y lista de verificación.
 
-**Figura 44**
+**Figura 50**
 
 *Mock-up de la landing page: encabezado y sección inicial*
 
@@ -2460,7 +2525,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* El encabezado fijo contiene el logotipo, el menú de secciones, el selector ES / EN y el botón «Prueba gratis 14 días» en color cobre. La sección inicial muestra el título «Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar», dos botones de acción y, a la derecha, una fotografía de botellas de pisco con dos tarjetas flotantes: temperatura de tanque (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto).
 
 
-**Figura 45**
+**Figura 51**
 
 *Mock-up de la landing page: segmentos*
 
@@ -2471,7 +2536,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Dos tarjetas con fotografía presentan los segmentos. «Para bodegas productoras» (fondo arena) lista el monitoreo de variables, la trazabilidad de lotes y el control de inventario de insumos. «Para licorerías y distribuidores» lista el inventario simple desde el celular, las alertas de reposición y la gestión de pedidos a proveedores.
 
 
-**Figura 46**
+**Figura 52**
 
 *Mock-up de la landing page: beneficios*
 
@@ -2482,7 +2547,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Cuatro tarjetas blancas sobre fondo arena, cada una con un ícono, un título y una descripción: Monitoreo de producción, Gestión de inventario, Alertas automáticas y Estimaciones predictivas.
 
 
-**Figura 47**
+**Figura 53**
 
 *Mock-up de la landing page: planes de suscripción*
 
@@ -2493,7 +2558,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Tres tarjetas de planes: Básico (S/ 60 al mes), Profesional (S/ 110 al mes, con la insignia «Más elegido» y borde resaltado) y Empresarial (S/ 200 al mes). Cada plan lista sus características y un botón «Prueba gratis 14 días». Sobre las tarjetas se indica que todos los planes incluyen 14 días de prueba sin compromiso.
 
 
-**Figura 48**
+**Figura 54**
 
 *Mock-up de la landing page: impacto en el sector*
 
@@ -2504,7 +2569,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Sobre un fondo fotográfico oscuro de tonos cobre se muestran dos cifras destacadas en dorado: más de 527 empresas formales en la industria del pisco (2024) y 7.8 millones de litros de producción aproximada en 2024, con la fuente indicada al pie.
 
 
-**Figura 49**
+**Figura 55**
 
 *Mock-up de la landing page: funcionalidades por segmento*
 
@@ -2515,7 +2580,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Las pestañas «Productor» y «Comercializador» permiten alternar el contenido. Con la pestaña Productor activa se ven tres tarjetas: Monitoreo IoT de producción, Trazabilidad de lotes y Detección de condiciones anómalas. Debajo comienza el bloque de la llamada a la acción sobre fondo arena.
 
 
-**Figura 50**
+**Figura 56**
 
 *Mock-up de la landing page: llamada a la acción y pie de página*
 
@@ -2528,7 +2593,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 
 **Mock-up para móvil**
 
-**Figura 51**
+**Figura 57**
 
 *Mock-up de la landing page para móvil: inicio, menú desplegado y objetivos*
 
@@ -2538,7 +2603,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 
 *Descripción.* Tres pantallas de teléfono de 390 px de ancho. La pantalla 1 muestra el encabezado con el logotipo, el botón «Prueba gratis» siempre visible y el botón de menú; debajo, la etiqueta de la plataforma, el título principal, el texto de apoyo, los botones «Prueba gratis 14 días» y «Ver funcionalidades» a ancho completo, la nota «Sin tarjeta de crédito» y la fotografía de alambiques con las tarjetas de temperatura (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto). La pantalla 2 muestra el menú desplegado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), el selector de idioma ES / EN y el botón de prueba gratuita, con el contenido restante atenuado. La pantalla 3 apila en una sola columna las cuatro tarjetas de beneficios: Monitoreo de producción, Gestión de inventario, Alertas automáticas y Estimaciones predictivas.
 
-**Figura 52**
+**Figura 58**
 
 *Mock-up de la landing page para móvil: planes, funcionalidades, impacto y pie de página*
 
@@ -2564,7 +2629,7 @@ El archivo de diseño se encuentra en Figma: [Archivo completo de Destilatech](h
 
 Los wireframes definen la estructura de las pantallas antes de aplicar la identidad visual. Permiten validar la jerarquía de la información y las diferencias entre perfiles.
 
-**Figura 53**
+**Figura 59**
 
 *Wireframes de la aplicación web*
 
@@ -2577,7 +2642,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 **Wireframes para móvil**
 
-**Figura 54**
+**Figura 60**
 
 *Wireframes de la aplicación web para móvil*
 
@@ -2592,7 +2657,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa de una pantalla a otra para completar una tarea. El Productor inicia sesión, consulta su dashboard, supervisa las variables, revisa las alertas, consulta los lotes y actualiza el inventario. El Comercializador consulta su dashboard e inventario, identifica los productos con stock bajo y registra pedidos.
 
-**Figura 55**
+**Figura 61**
 
 *Wireflows de la aplicación web*
 
@@ -2607,7 +2672,7 @@ Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa
 
 Los mock-ups presentan la propuesta visual de alta fidelidad. Mantienen la paleta y la tipografía de la landing page y usan datos de ejemplo coherentes con el dominio (lotes, temperatura, pH, humedad, densidad, niveles de stock, pedidos y alertas). La etiqueta de rol en el encabezado y el contenido del menú lateral diferencian las funciones de cada perfil.
 
-**Figura 56**
+**Figura 62**
 
 *Mock-ups de la aplicación web*
 
@@ -2634,7 +2699,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 | Reposición | El producto no tiene umbral configurado. | No genera alerta de stock bajo y sugiere configurar el umbral. |
 | Pedido | El stock disponible es menor que la cantidad pedida. | Rechaza la confirmación e indica qué producto no alcanza; no modifica el stock. |
 
-**Figura 57**
+**Figura 63**
 
 *Diagramas de flujo de usuario de la aplicación web*
 
@@ -2651,7 +2716,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 
 El prototipo interactivo se construyó en Figma a partir de los mock-ups. Contiene doce pantallas y cuarenta y dos interacciones configuradas con eventos *On Click* y transiciones *Smart Animate* de 250 ms. Se definieron dos puntos de inicio, uno por perfil: el recorrido del Productor recorre inicio de sesión, dashboard, monitoreo IoT, alertas, lotes e inventario; el recorrido del Comercializador recorre dashboard comercial, inventario, pedidos y alertas.
 
-**Figura 58**
+**Figura 64**
 
 *Recorridos del prototipo interactivo*
 
@@ -2727,7 +2792,7 @@ El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 m
 
 Gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación, la recuperación de contraseña y el periodo de prueba de 14 días. Responde al Epic EP01.
 
-**Figura 59**
+**Figura 65**
 
 *Design-Level EventStorming del Bounded Context IAM*
 
@@ -2763,7 +2828,7 @@ El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, q
 
 Gestiona los planes, la suscripción de pago y los intentos de pago asociados a la cuenta. Responde al Epic EP01.
 
-**Figura 60**
+**Figura 66**
 
 *Design-Level EventStorming del Bounded Context Billing*
 
@@ -2797,7 +2862,7 @@ El comando `SubscribeToPlan` (US40) crea un `PaymentAttempt` con una clave de id
 
 Gestiona los lotes de producción y el monitoreo de las variables del proceso. Responde a los Epics EP03 y EP04.
 
-**Figura 61**
+**Figura 67**
 
 *Design-Level EventStorming del Bounded Context Production & Monitoring*
 
@@ -2839,7 +2904,7 @@ flowchart LR
 
 Gestiona el catálogo de productos y el control de stock. Responde a los Epics EP05 y EP06.
 
-**Figura 62**
+**Figura 68**
 
 *Design-Level EventStorming del Bounded Context Inventory & Stock Management*
 
@@ -2877,7 +2942,7 @@ flowchart LR
 
 Gestiona clientes, pedidos de venta y las listas de compra para la reposición. Responde al Epic EP07.
 
-**Figura 63**
+**Figura 69**
 
 *Design-Level EventStorming del Bounded Context Orders & Replenishment*
 
@@ -2912,7 +2977,7 @@ flowchart LR
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management. Responde a los Epics EP04 y EP06.
 
-**Figura 64**
+**Figura 70**
 
 *Design-Level EventStorming del Bounded Context Alerts & Notifications*
 
@@ -2945,7 +3010,7 @@ Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAtte
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts. Responde al Epic EP08 y al resumen del dashboard (EP02).
 
-**Figura 65**
+**Figura 71**
 
 *Design-Level EventStorming del Bounded Context Analytics & Estimations*
 
@@ -2997,7 +3062,7 @@ Los commands que cruzan contextos (`ExtendAccountAccess`, `RaiseAlert`, `Discoun
 
 El diagrama de contexto presenta a Destilatech como un único recuadro al centro, rodeado por sus usuarios y por los sistemas externos con los que interactúa. Se elaboró con Structurizr y su código fuente (Structurizr DSL) se incluye al final de esta sección.
 
-**Figura 66**
+**Figura 72**
 
 *Diagrama de contexto C4 de Destilatech*
 
@@ -3235,7 +3300,7 @@ Para visualizar los diagramas, el código se pega en https://playground.structur
 
 El diagrama de contenedores descompone a Destilatech en sus unidades desplegables o ejecutables por separado y muestra las principales decisiones de tecnología y la forma en que se comunican. Pertenece al mismo espacio de trabajo de Structurizr de la sección 4.6.2.
 
-**Figura 67**
+**Figura 73**
 
 *Diagrama de contenedores C4 de Destilatech*
 
@@ -3280,7 +3345,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 **a. Componentes de la Landing Page**
 
-**Figura 68**
+**Figura 74**
 
 *Diagrama de componentes C4 de la Landing Page*
 
@@ -3309,7 +3374,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 El primer nivel de componentes de la SPA son los *bounded contexts* que implementa el frontend y un *Shared Kernel* con los elementos comunes. Cada contexto se organiza internamente en las capas de presentación, aplicación, dominio e infraestructura, que corresponden al nivel de código y se pueden verificar en las carpetas de cada contexto del repositorio del frontend.
 
-**Figura 69**
+**Figura 75**
 
 *Diagrama de componentes C4 de la Single-Page Application*
 
@@ -3339,7 +3404,7 @@ El primer nivel de componentes de la SPA son los *bounded contexts* que implemen
 
 La REST API es un único contenedor y cada uno de sus módulos corresponde exactamente a uno de los siete *bounded contexts* del Design-Level EventStorming (sección 4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
 
-**Figura 70**
+**Figura 76**
 
 *Diagrama de componentes C4 de la REST API*
 
@@ -3375,7 +3440,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **a. IAM (Identity & Access Management)**
 
-**Figura 71**
+**Figura 77**
 
 *Diagrama de clases del Bounded Context IAM (Identity & Access Management)*
 
@@ -3476,7 +3541,7 @@ classDiagram
 
 **b. Billing**
 
-**Figura 72**
+**Figura 78**
 
 *Diagrama de clases del Bounded Context Billing*
 
@@ -3571,7 +3636,7 @@ classDiagram
 
 **c. Production & Monitoring**
 
-**Figura 73**
+**Figura 79**
 
 *Diagrama de clases del Bounded Context Production & Monitoring*
 
@@ -3665,7 +3730,7 @@ classDiagram
 
 **d. Inventory & Stock Management**
 
-**Figura 74**
+**Figura 80**
 
 *Diagrama de clases del Bounded Context Inventory & Stock Management*
 
@@ -3753,7 +3818,7 @@ classDiagram
 
 **e. Orders & Replenishment**
 
-**Figura 75**
+**Figura 81**
 
 *Diagrama de clases del Bounded Context Orders & Replenishment*
 
@@ -3843,7 +3908,7 @@ classDiagram
 
 **f. Alerts & Notifications**
 
-**Figura 76**
+**Figura 82**
 
 *Diagrama de clases del Bounded Context Alerts & Notifications*
 
@@ -3907,7 +3972,7 @@ classDiagram
 
 **g. Analytics & Estimations**
 
-**Figura 77**
+**Figura 83**
 
 *Diagrama de clases del Bounded Context Analytics & Estimations*
 
@@ -4005,7 +4070,7 @@ Se presenta un diagrama entidad-relación por cada *bounded context*, derivado d
 
 **a. IAM**
 
-**Figura 78**
+**Figura 84**
 
 *Diagrama entidad-relación del Bounded Context IAM*
 
@@ -4048,7 +4113,7 @@ Una cuenta (`iam_accounts`) tiene un único periodo de prueba (`iam_trial_period
 
 **b. Billing**
 
-**Figura 79**
+**Figura 85**
 
 *Diagrama entidad-relación del Bounded Context Billing*
 
@@ -4092,7 +4157,7 @@ Un plan (`billing_plans`) rige cero o más suscripciones (`billing_subscriptions
 
 **c. Production & Monitoring**
 
-**Figura 80**
+**Figura 86**
 
 *Diagrama entidad-relación del Bounded Context Production & Monitoring*
 
@@ -4144,7 +4209,7 @@ Un lote (`production_batches`) tiene uno o más cambios de etapa (`production_ba
 
 **d. Inventory & Stock Management**
 
-**Figura 81**
+**Figura 87**
 
 *Diagrama entidad-relación del Bounded Context Inventory & Stock Management*
 
@@ -4186,7 +4251,7 @@ Cada producto (`inventory_products`) tiene un único saldo (`inventory_stock_ite
 
 **e. Orders & Replenishment**
 
-**Figura 82**
+**Figura 88**
 
 *Diagrama entidad-relación del Bounded Context Orders & Replenishment*
 
@@ -4240,7 +4305,7 @@ Un cliente (`orders_customers`) realiza cero o más pedidos (`orders_orders`) y 
 
 **f. Alerts & Notifications**
 
-**Figura 83**
+**Figura 89**
 
 *Diagrama entidad-relación del Bounded Context Alerts & Notifications*
 
@@ -4268,7 +4333,7 @@ La tabla `alerts_alerts` guarda cada alerta con su tipo, el identificador del pr
 
 **g. Analytics & Estimations**
 
-**Figura 84**
+**Figura 90**
 
 *Diagrama entidad-relación del Bounded Context Analytics & Estimations*
 
@@ -4363,7 +4428,7 @@ El código se versiona con Git y se aloja en GitHub, dentro de la organización 
 
 **Sitio publicado (landing page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
-**Figura 85**
+**Figura 91**
 
 *Landing page publicada en GitHub Pages*
 
@@ -4406,7 +4471,7 @@ Los mensajes de commit siguen la especificación Conventional Commits (s. f.), c
 
 Las versiones del informe y del software siguen el versionado semántico (Preston-Werner, 2013), con el formato `MAJOR.MINOR.PATCH`: se incrementa `MAJOR` ante un cambio incompatible, `MINOR` al añadir funcionalidad compatible y `PATCH` al corregir errores. La versión del informe se registra en el *Registro de Versiones* al inicio de este documento.
 
-**Figura 86**
+**Figura 92**
 
 *Ramas del repositorio del informe*
 
@@ -4642,7 +4707,7 @@ Estas referencias serán aplicadas de manera complementaria. Si existiera confli
 
 #### 5.1.4. Software Deployment Configuration
 
-Esta sección describe cómo se publica la landing page. La landing page es un sitio estático (HTML, CSS y JavaScript), por lo que se despliega en **GitHub Pages**, un servicio de alojamiento gratuito integrado con el repositorio. El despliegue de la aplicación web y de la API se documentará cuando se implementen.
+Esta sección describe cómo se publica la landing page. La landing page es un sitio estático (HTML, CSS y JavaScript), por lo que se despliega en **GitHub Pages**, un servicio de alojamiento gratuito integrado con el repositorio. La aplicación web se despliega en **Firebase Hosting**, con el Fake API en **Render**, como se describe en la sección 5.1.4.2; la API real se documentará cuando se implemente.
 
 **URL de producción:** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
@@ -4650,7 +4715,7 @@ Esta sección describe cómo se publica la landing page. La landing page es un s
 
 Pasos realizados para publicar la landing page:
 
-**Figura 87**
+**Figura 93**
 
 *Despliegue en GitHub Pages, paso 1. Ingresamos al repositorio de la landing page*
 
@@ -4661,7 +4726,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página de la organización en GitHub con el listado «All» de repositorios. Se ven dos repositorios públicos: `destilatech-report` (actualizado hace 52 minutos) y `destilatech-website` (HTML, actualizado el día anterior), este último resaltado.
 
 
-**Figura 88**
+**Figura 94**
 
 *Despliegue en GitHub Pages, paso 2. Abrimos el repositorio y su configuración*
 
@@ -4672,7 +4737,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página principal del repositorio `destilatech-website`: rama `main`, 7 ramas, 11 commits y los archivos `.idea`, `assets/img`, `css`, `js`, `README.md` e `index.html`. En la barra superior se resalta la pestaña Settings.
 
 
-**Figura 89**
+**Figura 95**
 
 *Despliegue en GitHub Pages, paso 3. Ingresamos a la sección Pages*
 
@@ -4683,7 +4748,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página Settings > General del repositorio, con el nombre del repositorio, la rama por defecto `main` y la opción Pages resaltada en el menú lateral izquierdo.
 
 
-**Figura 90**
+**Figura 96**
 
 *Despliegue en GitHub Pages, paso 4. Seleccionamos la rama de origen y guardamos*
 
@@ -4694,7 +4759,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Sección GitHub Pages en Build and deployment: la fuente es «Deploy from a branch», la rama seleccionada es `main` con la carpeta `/ (root)` y el botón Save. El texto indica que GitHub Pages aún está deshabilitado antes de guardar.
 
 
-**Figura 91**
+**Figura 97**
 
 *Despliegue en GitHub Pages, paso 5. Verificamos el despliegue*
 
@@ -4716,7 +4781,7 @@ La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila
 - **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (`https://destilatech-api.onrender.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
 - **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 148 a 155).
+- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 154 a 161).
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
@@ -4766,7 +4831,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 **Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
 
-**Figura 92**
+**Figura 98**
 
 *Tablero del Sprint 1 en Trello*
 
@@ -4800,7 +4865,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 | **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
 | **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
 
-**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 92) se encuentra en la columna To Review, pendiente de revisión por el equipo.
+**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 98) se encuentra en la columna To Review, pendiente de revisión por el equipo.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -4952,7 +5017,7 @@ El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo q
 
 Las capturas siguientes muestran el historial de cada rama en GitHub, que respalda la tabla anterior.
 
-**Figura 93**
+**Figura 99**
 
 *Historial de commits de la rama feature/ubiquitous_language*
 
@@ -4963,7 +5028,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/ubiquitous_language`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 94**
+**Figura 100**
 
 *Historial de commits de la rama feature/student-profile*
 
@@ -4974,7 +5039,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/student-profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 95**
+**Figura 101**
 
 *Historial de commits de la rama feature/startup_profile*
 
@@ -4985,7 +5050,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/startup_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 96**
+**Figura 102**
 
 *Historial de commits de la rama feature/solution_profile*
 
@@ -4996,7 +5061,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/solution_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 97**
+**Figura 103**
 
 *Historial de commits de la rama feature/segmentos_objetivo*
 
@@ -5007,7 +5072,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/segmentos_objetivo`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 98**
+**Figura 104**
 
 *Historial de commits de la rama feature/product-design*
 
@@ -5018,7 +5083,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/product-design`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 99**
+**Figura 105**
 
 *Historial de commits de la rama feature/entrevistas*
 
@@ -5029,7 +5094,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 100**
+**Figura 106**
 
 *Historial de commits de la rama feature/empathy_mapping_2*
 
@@ -5040,7 +5105,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/empathy_mapping_2`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 101**
+**Figura 107**
 
 *Historial de commits de la rama feature/domain_driven_architecture*
 
@@ -5051,7 +5116,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/domain_driven_architecture`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 102**
+**Figura 108**
 
 *Historial de commits de la rama feature/dda_diagrams*
 
@@ -5062,7 +5127,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/dda_diagrams`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 103**
+**Figura 109**
 
 *Historial de commits de la rama feature/competidores*
 
@@ -5073,7 +5138,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/competidores`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 104**
+**Figura 110**
 
 *Historial de commits de la rama feature/code_style*
 
@@ -5084,7 +5149,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_style`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 105**
+**Figura 111**
 
 *Historial de commits de la rama feature/code_management*
 
@@ -5095,7 +5160,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 106**
+**Figura 112**
 
 *Historial de commits de la rama feature/chapter-4*
 
@@ -5106,7 +5171,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/chapter-4`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 107**
+**Figura 113**
 
 *Historial de commits de la rama feature/big_picture_eventstorming*
 
@@ -5117,7 +5182,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/big_picture_eventstorming`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 108**
+**Figura 114**
 
 *Historial de commits de la rama feature/agregar-entrevistas-o-fix/corregir-readme*
 
@@ -5128,7 +5193,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar-entrevistas-o-fix/corregir-readme`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 109**
+**Figura 115**
 
 *Historial de commits de la rama feature/agregar_fotos*
 
@@ -5139,7 +5204,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar_fotos`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 110**
+**Figura 116**
 
 *Historial de commits de la rama feature/actualizar_tablas_entrevistas*
 
@@ -5150,7 +5215,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/actualizar_tablas_entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 111**
+**Figura 117**
 
 *Historial de commits de la rama feature/Student_Jean*
 
@@ -5161,7 +5226,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Student_Jean`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 112**
+**Figura 118**
 
 *Historial de commits de la rama feature/Source_Code_Management*
 
@@ -5172,7 +5237,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Source_Code_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 113**
+**Figura 119**
 
 *Historial de commits de la rama feature/Software_Configuration_Management*
 
@@ -5183,7 +5248,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Software_Configuration_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 114**
+**Figura 120**
 
 *Historial de commits de la rama feature/LandingPageMock-up*
 
@@ -5194,7 +5259,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/LandingPageMock-up`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 115**
+**Figura 121**
 
 *Historial de commits de la rama docs/chapter-4-webapp-ux-ui*
 
@@ -5205,7 +5270,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `docs/chapter-4-webapp-ux-ui`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 116**
+**Figura 122**
 
 *Historial de commits de la rama develop*
 
@@ -5216,7 +5281,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `develop`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 117**
+**Figura 123**
 
 *Historial de commits de la rama main*
 
@@ -5234,10 +5299,10 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 **Video de navegación.** El equipo grabó un video de navegación de la landing page publicada, que consolida el flujo principal del visitante: ingreso a la página y lectura de la sección principal, recorrido de las secciones desde el menú del encabezado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), cambio de idioma ES / EN, revisión de las funcionalidades por segmento y acceso al botón «Prueba gratis 14 días», hasta llegar al pie de página con los datos de contacto. El video prioriza el flujo relacionado con el negocio central, que es la captación de prospectos para la prueba gratuita.
 
 - **Duración:** **[CONFIRMAR: duración mm:ss]**
-- **Enlace (Microsoft Stream, enlace privado):** **[CONFIRMAR: URL del video que muestra y explica la navegación de la landing page]**
+- **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
 - **Captura del video:** **[CONFIRMAR: captura del video con el enlace]**
 
-**Figura 118**
+**Figura 124**
 
 *Landing page: encabezado*
 
@@ -5248,7 +5313,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Encabezado de la landing page con el logotipo de Destilatech a la izquierda, el menú de secciones (Descripción, Objetivos, Precios, Impacto y Funcionalidades), el selector de idioma ES / EN con ES activo y el botón «Prueba gratis 14 días» a la derecha.
 
 
-**Figura 119**
+**Figura 125**
 
 *Landing page: sección principal*
 
@@ -5259,7 +5324,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Sección principal con la etiqueta «Plataforma SaaS para el ecosistema del pisco», el título «Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar», un párrafo de descripción, los botones «Prueba gratis 14 días» y «Ver funcionalidades», y a la derecha una fotografía de alambiques con tarjetas de temperatura (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto).
 
 
-**Figura 120**
+**Figura 126**
 
 *Landing page: pie de página*
 
@@ -5284,7 +5349,7 @@ En el Sprint 1 se desplegó la landing page en GitHub Pages desde la rama `main`
 
 El equipo repartió las secciones de la landing page según la sección 5.2.1.3 y coordinó el trabajo por Discord. Los 11 commits del repositorio de la landing page se registraron desde una única cuenta del equipo; por esta razón, los aportes individuales por integrante se muestran con el repositorio del informe (sección «Project Report Collaboration Insights» y sección 5.2.1.4), donde cada persona trabajó desde su propia cuenta y rama.
 
-**Figura 121**
+**Figura 127**
 
 *Commits del repositorio de la landing page*
 
@@ -5295,7 +5360,7 @@ El equipo repartió las secciones de la landing page según la sección 5.2.1.3 
 *Descripción.* Historial de commits del repositorio de la landing page del 17 de septiembre de 2026 y días anteriores, con los mensajes «agregar estructura de i18n», «agregar estructura de platform feature tabs», «agregar estructura de logo-icon», «agregar estructura de responsive design», «subiendo archivo html, js y css», «agregar parte del index, js», «subir imagenes», «subir imagenes a assets» y «eliminando».
 
 
-**Figura 122**
+**Figura 128**
 
 *Contributors Insights del repositorio del informe (Sprint 1)*
 
@@ -5311,7 +5376,7 @@ El repositorio de la landing page no se muestra en un gráfico de Contributors p
 
 ##### 5.2.2.1. Sprint Planning 2
 
-El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*Web Application*) de Destilatech, con la landing page ya publicada en el Sprint 1. La aplicación implementa seis de los siete *bounded contexts* del diseño de software (capítulo IV): el contexto IAM (registro, inicio de sesión y perfil) queda para un sprint posterior porque el curso aún no aborda la autenticación. La aplicación consume un Fake API mientras se construye el *backend* en ASP.NET Core, que se reserva para el siguiente sprint.
+El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*Web Application*) de Destilatech, con la landing page ya publicada en el Sprint 1. La aplicación implementa seis de los siete *bounded contexts* del diseño de software (capítulo IV): el contexto IAM (registro, inicio de sesión y perfil) queda para un sprint posterior porque el curso aún no aborda la autenticación. La aplicación consume un Fake API mientras se construye el *backend* en ASP.NET Core, que se reserva para el siguiente sprint. Al cierre del sprint la aplicación quedó desplegada en Firebase Hosting y el Fake API en Render (sección 5.2.2.7).
 **Tabla 17**
 
 *Resumen de la reunión de Sprint Planning 2*
@@ -5322,7 +5387,7 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 | **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
 | **Fecha** | 2026-09-29 |
 | **Hora** | 11:00 a.m. |
-| **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet); aún no hay URL de despliegue |
+| **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet) |
 | **Preparada por** | Santiago Atanacio, Jairo Mathias |
 | **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel |
 | **Sprint 1 Review Summary** | La landing page se publicó en GitHub Pages con las siete secciones previstas (Header, Description, Goals, Pricing, Impact, Platform Features y Footer), el selector de idioma ES / EN y el botón de prueba gratuita de 14 días. Al cierre del tablero quedaba en To Review la tarjeta «Mock-up móvil de la landing page». |
@@ -5352,7 +5417,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 **Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
 
-**Figura 123**
+**Figura 129**
 
 *Tablero del Sprint 2 en Trello*
 
@@ -5440,7 +5505,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 | — | Tarea técnica transversal | TK-70 | Shared Kernel | `BaseApi`, `BaseEndpoint`, `BaseAssembler`, `error.interceptor`, `Money` y `DateTime` | 6 | Santiago Atanacio, Jairo Mathias | Done |
 | — | Tarea técnica transversal | TK-71 | Shared Layout | Layout, barra superior, navegación lateral, tarjeta KPI, estado vacío y página 404 | 4 | Santiago Atanacio, Jairo Mathias | Done |
 | — | Tarea técnica transversal | TK-72 | App Bootstrap | `main.js`, `app.vue`, `router.js` y `pinia.js` | 2 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-73 | Fake API | Fake API con json-server (`db.json`, `routes.json`, `start.sh`) y configuración para Beeceptor | 3 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-73 | Fake API | Fake API con json-server (`db.json`, `routes.json`, `start.sh`) y su publicación para producción | 3 | Santiago Atanacio, Jairo Mathias | Done |
 | — | Tarea técnica transversal | TK-74 | Internationalization | Configuración de vue-i18n y catálogos `es.json` y `en.json` | 3 | Santiago Atanacio, Jairo Mathias | Done |
 | — | Tarea técnica transversal | TK-75 | User Switcher | Selector Productor / Comercializador (`user-switcher`), tienda del usuario actual (`user.store`) y `users-api`; reemplaza al inicio de sesión mientras no exista IAM | 3 | Santiago Atanacio, Jairo Mathias | Done |
 | — | Tarea técnica de pruebas | TK-76 | Functional Testing Billing & Users | Pruebas funcionales de planes, suscripción, pagos y cambio de perfil con el selector de usuario | 3 | Domenack Angeles, Miguel | Done |
@@ -5660,7 +5725,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 **Historial de commits por rama.** Las capturas siguientes muestran, para cada rama, los commits más recientes registrados en GitHub, y la última muestra las ramas del repositorio.
 
-**Figura 124**
+**Figura 130**
 
 *Historial de commits de la rama feature/alerts-notifications*
 
@@ -5671,7 +5736,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/alerts-notifications`. Commits de `pierinaaa29` con la entidad, el comando, el *assembler*, la API, los componentes y la bandeja de alertas, y la tienda `alerts.store.js`.
 
 
-**Figura 125**
+**Figura 131**
 
 *Historial de commits de la rama feature/analytics-estimations*
 
@@ -5682,7 +5747,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/analytics-estimations`. Commits de `pierinaaa29` con la tienda de analíticas, los dashboards del productor y del comercializador, el gráfico de tendencia, las tarjetas de estimación y los indicadores históricos.
 
 
-**Figura 126**
+**Figura 132**
 
 *Historial de commits de la rama feature/billing*
 
@@ -5693,7 +5758,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/billing`. Commits de `jeanpcs` con la tienda de facturación, las rutas, la vista de planes, las vistas de resultado del pago, el aviso de prueba, la tarjeta de plan, el historial de pagos y los *assemblers*.
 
 
-**Figura 127**
+**Figura 133**
 
 *Historial de commits de la rama feature/fake-api*
 
@@ -5704,7 +5769,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/fake-api`. Commits de `Msa-ware` con el Fake API con Beeceptor, la licencia de PrimeUI en el entorno de desarrollo, `start.sh`, `routes.json` y `db.json`.
 
 
-**Figura 128**
+**Figura 134**
 
 *Historial de commits de la rama feature/iam*
 
@@ -5715,7 +5780,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/iam`. Commits de `jeanpcs` con la tienda, las rutas, las vistas de registro e inicio de sesión, el perfil, el menú de usuario, el panel de autenticación, el guardián de rutas, el interceptor y la API de IAM.
 
 
-**Figura 129**
+**Figura 135**
 
 *Historial de commits de la rama feature/inventory-stock*
 
@@ -5726,7 +5791,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/inventory-stock`. Commits de `pierinaaa29` con la tienda de inventario, las rutas, la ficha del producto, la vista de inventario, los diálogos de umbral, movimiento y producto, y las etiquetas de estado de stock.
 
 
-**Figura 130**
+**Figura 136**
 
 *Historial de commits de la rama feature/locales*
 
@@ -5737,7 +5802,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/locales`. Commits de `Msa-ware` con los catálogos `locales/es.json` y `locales/en.json`, seguidos de los commits de pedidos y reposición de la rama anterior.
 
 
-**Figura 131**
+**Figura 137**
 
 *Historial de commits de la rama feature/orders-replenishment*
 
@@ -5748,7 +5813,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/orders-replenishment`. Commits de `jeanpcs` y `Msa-ware` con la tienda de pedidos, las rutas, las vistas de reposición, pedidos y clientes, y los diálogos de cliente, pedido y reposición.
 
 
-**Figura 132**
+**Figura 138**
 
 *Historial de commits de la rama feature/production-monitoring*
 
@@ -5759,7 +5824,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/production-monitoring`. Commits de `MrBaru` con la tienda de producción, las rutas, el dashboard de monitoreo, la gestión y el detalle de lotes, los diálogos de rango y de lote, las tarjetas de variable y el gráfico de lecturas.
 
 
-**Figura 133**
+**Figura 139**
 
 *Historial de commits de la rama feature/shared*
 
@@ -5770,7 +5835,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/shared`. Commits de `Msa-ware` con la página 404, la barra superior, la navegación lateral, el encabezado de página, el layout, el selector de idioma, la tarjeta KPI, el pie de página y los estilos.
 
 
-**Figura 134**
+**Figura 140**
 
 *Historial de commits de la rama develop*
 
@@ -5781,7 +5846,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `develop`. Commits de `Msa-ware` con la actualización del README, el enrutador, la tienda y la API de IAM, la corrección de `package.json`, la internacionalización, `main.js`, `app.vue` y `.gitattributes`.
 
 
-**Figura 135**
+**Figura 141**
 
 *Ramas del repositorio de la aplicación web*
 
@@ -5793,11 +5858,11 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
-El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecuta localmente con el Fake API (`json-server`) y ofrece dos perfiles de demostración: productor (lotes, monitoreo IoT simulado, inventario y pedidos) y comercializador (inventario, pedidos y reposición). Como el contexto IAM no forma parte del sprint, no hay inicio de sesión: el perfil se cambia con los botones Productor / Comercializador de la barra superior y la aplicación recuerda el perfil elegido. Las pantallas siguientes, con la interfaz en inglés, recorren los flujos principales de cada perfil. La aplicación está disponible en español e inglés.
+El logro del Sprint 2 es la primera versión de la aplicación web, que está publicada en Firebase Hosting, consume el Fake API (`json-server`) publicado en Render (y también puede ejecutarse de forma local) y ofrece dos perfiles de demostración: productor (lotes, monitoreo IoT simulado, inventario y pedidos) y comercializador (inventario, pedidos y reposición). Como el contexto IAM no forma parte del sprint, no hay inicio de sesión: el perfil se cambia con los botones Productor / Comercializador de la barra superior y la aplicación recuerda el perfil elegido. Las pantallas siguientes, con la interfaz en inglés, recorren los flujos principales de cada perfil. La aplicación está disponible en español e inglés.
 
-**Video de navegación:** **[CONFIRMAR: URL en Microsoft Stream del video que muestra la navegación de la landing page y de la aplicación web]**
+**Video de navegación:** [Ver video][video-sprint-2]
 
-**Figura 136**
+**Figura 142**
 
 *Dashboard del productor*
 
@@ -5808,7 +5873,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Dashboard del productor (`/dashboard`, historia US04) con indicadores de lotes activos, inventario, alertas y pedidos, un gráfico del volumen por lote activo, la actividad reciente, las alertas pendientes y los productos de reposición prioritaria.
 
 
-**Figura 137**
+**Figura 143**
 
 *Monitoreo IoT de la producción*
 
@@ -5819,7 +5884,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Vista de monitoreo (`/production/monitoring`, historias US09 y US44) con la selección del lote, las variables de proceso (temperatura, pH, humedad y densidad) y el gráfico de lecturas recientes generadas por el simulador IoT; las lecturas fuera del rango normal se señalan como anomalías (US11).
 
 
-**Figura 138**
+**Figura 144**
 
 *Gestión de lotes de producción*
 
@@ -5830,7 +5895,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Listado de lotes (`/production/batches`, historias US06 y US07) con la etapa de cada lote, el registro de un lote nuevo y el avance de etapa.
 
 
-**Figura 139**
+**Figura 145**
 
 *Detalle y trazabilidad de un lote*
 
@@ -5842,7 +5907,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 
 
-**Figura 140**
+**Figura 146**
 
 *Inventario*
 
@@ -5853,7 +5918,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Vista de inventario (`/inventory`, historias US12, US14 y US15) con las unidades y el valor del inventario, el stock por producto, su estado (óptimo, bajo o crítico) y el acceso a la configuración del umbral de stock bajo.
 
 
-**Figura 141**
+**Figura 147**
 
 *Ficha de producto con estimación de reposición*
 
@@ -5864,7 +5929,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Ficha del producto (`/inventory/products/:id`, historias US13, US20, US46 y US47) con el historial de movimientos, el registro de movimientos y ajustes, y la estimación de reposición.
 
 
-**Figura 142**
+**Figura 148**
 
 *Pedidos y clientes*
 
@@ -5875,7 +5940,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Vista de pedidos (`/orders`, historias US18 y US19) y de clientes (`/orders/customers`, historias US17 y US49) con sus formularios y el estado de cada pedido.
 
 
-**Figura 143**
+**Figura 149**
 
 *Reposición a proveedores*
 
@@ -5887,7 +5952,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 
 
-**Figura 144**
+**Figura 150**
 
 *Centro de alertas*
 
@@ -5898,7 +5963,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Centro de alertas (`/alerts`, historias US16 y US48) con alertas por anomalía y por stock bajo, y filtros por tipo y estado.
 
 
-**Figura 145**
+**Figura 151**
 
 *Planes y suscripción*
 
@@ -5909,7 +5974,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Vista de planes (`/billing/plans`, historias US03, US40 y US54) con el estado de acceso, los planes Básico (S/ 60), Profesional (S/ 110) y Empresarial (S/ 200) por mes y el historial de pagos.
 
 
-**Figura 146**
+**Figura 152**
 
 *Dashboard del comercializador*
 
@@ -5920,7 +5985,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 *Descripción.* Dashboard del comercializador (`/dashboard`, historia US05) con indicadores de ventas, pedidos abiertos, stock bajo y productos, el gráfico de movimiento de inventario, los productos de reposición prioritaria y los pedidos recientes.
 
 
-**Figura 147**
+**Figura 153**
 
 *Indicadores históricos*
 
@@ -5934,7 +5999,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que se ejecu
 
 En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server`, que se ejecuta de forma local en desarrollo y se publica en Render como servicio web (`destilatech-api`) para la compilación de producción. En ambos casos los recursos se exponen con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
 
-**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 154).
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 160).
 
 **Tabla 20**
 
@@ -5976,7 +6041,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 1. Creación del proyecto.** En la consola de Firebase se creó el proyecto `destilatech-webapp` con la cuenta del equipo, en el plan Spark (sin costo). No se registró ninguna aplicación (iOS, Android o web) porque Hosting no la requiere, y no se activó Firestore ni Functions.
 
-**Figura 148**
+**Figura 154**
 
 *Proyecto destilatech-webapp en la consola de Firebase*
 
@@ -5988,7 +6053,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 2. Inicialización de Hosting.** Desde la carpeta del proyecto se ejecutaron `firebase login` y `firebase init`. Se eligió la función Hosting, se usó el proyecto existente, se indicó `dist` como directorio público y se aceptó la configuración de aplicación de una sola página (reescribir todas las URL a `/index.html`). No se activaron las compilaciones automáticas con GitHub ni se sobrescribió `dist/index.html`. El asistente generó `firebase.json` y `.firebaserc`.
 
-**Figura 149**
+**Figura 155**
 
 *Inicialización de Firebase Hosting con firebase init*
 
@@ -6012,7 +6077,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 3. Publicación.** Con `dist/` generada por `npm run build`, la configuración se registró en el repositorio con el commit `chore(deploy): add Firebase Hosting configuration` en la rama `main` y se publicó con `npx firebase-tools deploy`. Firebase encontró 58 archivos en `dist`, los subió, finalizó la versión y completó el *release*.
 
-**Figura 150**
+**Figura 156**
 
 *Commit de la configuración y despliegue con firebase deploy*
 
@@ -6024,7 +6089,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 4. Verificación en la consola.** El panel de Hosting muestra la versión actual (`98f9a8`, publicada el 05/10/2026 a las 8:01 p. m.), una versión anterior (`13fbe4`, de las 7:57 p. m.) y los dominios asignados por Firebase: `destilatech-webapp.web.app` y `destilatech-webapp.firebaseapp.com`.
 
-**Figura 151**
+**Figura 157**
 
 *Panel de Hosting en la consola de Firebase*
 
@@ -6038,7 +6103,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 5. Creación del servicio web.** En Render se creó un *Web Service* con el nombre `destilatech-api`, conectado al repositorio `destilatech-webapp` de la organización del curso en GitHub, con entorno Node, la rama `develop`, la región Oregon y una instancia gratuita (0,1 CPU y 512 MB de RAM, USD 0 al mes).
 
-**Figura 152**
+**Figura 158**
 
 *Configuración del servicio web destilatech-api en Render*
 
@@ -6050,7 +6115,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 6. Verificación del servicio.** El proyecto de Render muestra el servicio `destilatech-api` con estado *Deployed*, entorno Node y región Oregon. El panel de despliegues registra el primer despliegue, del commit `chore(config): point production API to json-server hosted on Render`, con estado *Live* y una duración de 34,3 segundos.
 
-**Figura 153**
+**Figura 159**
 
 *Servicio destilatech-api desplegado en Render*
 
@@ -6060,7 +6125,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 *Descripción.* Lista de recursos del entorno Production del proyecto «My project», con el servicio web `destilatech-api` en estado *Deployed*.
 
-**Figura 154**
+**Figura 160**
 
 *Despliegue del Fake API en Render*
 
@@ -6076,7 +6141,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 La aplicación está disponible en la URL pública de Firebase Hosting y carga sus datos desde el Fake API.
 
-**Figura 155**
+**Figura 161**
 
 *Aplicación web desplegada en Firebase Hosting*
 
@@ -6124,7 +6189,7 @@ El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y 
 2. El análisis estadístico de las entrevistas indica coincidencias entre los segmentos (todos usan teléfono inteligente y Excel o cuaderno, y todos los que respondieron estarían dispuestos a pagar una suscripción mensual), con un rango medio de pago cercano a S/ 66. Por la muestra pequeña (n = 7), estos resultados son indicativos y deben validarse con más usuarios.
 3. El Big Picture EventStorming, modelado como el negocio actual, permitió identificar cuatro áreas candidatas y el Design-Level EventStorming, al incorporar la solución, llegó a siete *bounded contexts* (con IAM y Billing como contextos nuevos de la plataforma), implementados como módulos de la API. Esto mantiene la coherencia entre el análisis del negocio, las historias de usuario (65 historias, 10 épicas) y el diseño de software.
 4. La arquitectura elegida —un monolito modular en ASP.NET Core con base de datos MySQL, una aplicación web en Vue.js y un simulador de lecturas IoT— es proporcionada al tamaño del equipo y permite incorporar sensores reales en el futuro sin cambiar la API.
-5. La landing page se publicó en GitHub Pages con sus siete secciones, lo que cumple el objetivo del Sprint 1 y deja un canal de presentación del producto a los prospectos.
+5. La landing page se publicó en GitHub Pages con sus siete secciones, lo que cumple el objetivo del Sprint 1 y deja un canal de presentación del producto a los prospectos. En el Sprint 2 la aplicación web se desplegó en Firebase Hosting y consume un Fake API publicado en Render, de modo que la primera versión puede revisarse desde una URL pública.
 
 **Recomendaciones**
 
@@ -6204,7 +6269,7 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
 
 
-### Anexo C. Video de las entrevistas
+### Anexo B. Video de las entrevistas
 
 Las siete entrevistas (tres a productores y cuatro a comercializadores) se entregan en un único video continuo.
 
