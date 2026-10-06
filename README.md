@@ -5967,6 +5967,26 @@ Las lecturas de sensores se generan con el simulador `IotSensorSimulator`, que p
 Al cierre del Sprint 2 la aplicación web se ejecuta localmente y cuenta con la configuración de compilación de producción (`npm run build`, que genera la carpeta `dist/` con `.env.production`), descrita en la sección 5.1.4.2. El despliegue en un servicio de alojamiento público queda pendiente.
 
 
+##### 5.2.2.8. Team Collaboration Insights during Sprint
+
+El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y trabajó con una rama `feature/*` por *bounded context*. A diferencia del Sprint 1, cada integrante registró sus commits desde su propia cuenta, de modo que el repositorio permite medir los aportes individuales. La tabla resume los commits únicos de la sección 5.2.2.4 por integrante y por rama. Miguel Domenack se encargó de las pruebas funcionales de la aplicación (sección 5.2.2.3), una tarea que no deja commits en el repositorio.
+
+**Tabla 21**
+
+*Commits del repositorio de la aplicación web por integrante*
+
+
+| Team Member (Last Name, First Name) | GitHub Username | Ramas con commits | Commits |
+| :--- | :--- | :--- | :---: |
+| Fernandez Seer, Mario Alonso | MrBaru | `feature/production-monitoring` (30) | 30 |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | `main` (4), `feature/shared` (30), `feature/iam` (3), `feature/fake-api` (5), `feature/orders-replenishment` (22), `feature/locales` (2), `develop` (9) | 75 |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | `feature/alerts-notifications` (8), `feature/analytics-estimations` (15), `feature/inventory-stock` (17), `develop` (1) | 41 |
+| Condor Sandoval, Jean Pierre | jeanpcs | `feature/shared` (1), `feature/iam` (20), `feature/billing` (15), `feature/orders-replenishment` (5) | 41 |
+| Domenack Angeles, Miguel | midoan0805 | Sin commits; pruebas funcionales de la aplicación (TK-76 a TK-81) | 0 |
+| **Total** | | | **187** |
+
+
+**Aportes por integrante.** Los commits de la tabla se contaron a partir del historial de GitHub del repositorio. Los 20 commits de Condor Sandoval en `feature/iam` y los 3 de Santiago Atanacio corresponden al contexto IAM, retirado del alcance del sprint; los aportes vigentes de Condor Sandoval en la aplicación son el módulo Billing y su colaboración en el *Shared Kernel* y en pedidos.
 
 
 
