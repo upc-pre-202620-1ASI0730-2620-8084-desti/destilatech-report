@@ -1608,7 +1608,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 *User Journey Map del segmento Productor: Ricardo Donayre*
 
-<p align="center"><img src="assets/md-images-front-matter/user_journey_map_1.png" alt="User Journey Map del segmento Productor: Ricardo Donayre" width="900"></p>
+<p align="center"><img src="assets/md-images-front-matter/user-journey-map-1.png" alt="User Journey Map del segmento Productor: Ricardo Donayre" width="900"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
@@ -1621,7 +1621,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 *User Journey Map del segmento Comercializador: Carlos Mendoza*
 
-<p align="center"><img src="assets/md-images-front-matter/user_journey_map_2.png" alt="User Journey Map del segmento Comercializador: Carlos Mendoza" width="900"></p>
+<p align="center"><img src="assets/md-images-front-matter/user-journey-map-2.png" alt="User Journey Map del segmento Comercializador: Carlos Mendoza" width="900"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
@@ -1638,7 +1638,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 *Empathy Map del segmento Productor: Ricardo Donayre*
 
-<p align="center"><img src="assets/md-images-front-matter/Empathy_Mapping_1.png" alt="Empathy Map del segmento Productor: Ricardo Donayre" width="560"></p>
+<p align="center"><img src="assets/md-images-front-matter/Empathy-mapping-1.png" alt="Empathy Map del segmento Productor: Ricardo Donayre" width="560"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
@@ -1651,7 +1651,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 *Empathy Map del segmento Comercializador: Carlos Mendoza*
 
-<p align="center"><img src="assets/md-images-front-matter/Empathy_Mapping_2.png" alt="Empathy Map del segmento Comercializador: Carlos Mendoza" width="560"></p>
+<p align="center"><img src="assets/md-images-front-matter/Empathy-mapping-2.png" alt="Empathy Map del segmento Comercializador: Carlos Mendoza" width="560"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
