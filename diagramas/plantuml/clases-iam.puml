@@ -1,0 +1,83 @@
+@startuml
+title Diagrama de clases — IAM (Identity & Access Management)
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+left to right direction
+class Account {
+  -id : Guid
+  -fullName : string
+  -businessName : string
+  -email : string
+  -passwordHash : string
+  -businessType : BusinessType
+  -isActive : bool
+  -createdAt : DateTime
+  +Register(fullName, businessName, email, password, businessType) : Account
+  +Authenticate(password) : bool
+  +ChangePassword(newPassword) : void
+  +UpdateBusinessProfile(businessName) : void
+  #ValidateEmailUniqueness() : bool
+  -HashPassword(password) : string
+}
+class TrialPeriod {
+  -id : Guid
+  -accountId : Guid
+  -startDate : DateTime
+  -endDate : DateTime
+  -status : TrialStatus
+  +Start(accountId) : TrialPeriod
+  +DaysRemaining(today) : int
+  +IsExpiringSoon(today) : bool
+  +Expire() : void
+}
+class PasswordRecoveryToken {
+  -id : Guid
+  -accountId : Guid
+  -tokenHash : string
+  -expiresAt : DateTime
+  -used : bool
+  +Issue(accountId) : PasswordRecoveryToken
+  +IsValid(now) : bool
+  +MarkUsed() : void
+}
+class AccessToken <<value object>> {
+  -value : string
+  -expiresAt : DateTime
+  +IsExpired(now) : bool
+}
+class AuthenticationService <<service>> {
+  -accounts : IAccountRepository
+  -tokens : ITokenProvider
+  +Register(request) : Account
+  +Login(email, password) : AccessToken
+  +Logout(token) : void
+  +RequestPasswordRecovery(email) : void
+  +ResetPassword(token, newPassword) : void
+}
+interface IAccountRepository {
+  +FindByEmail(email) : Account
+  +FindById(id) : Account
+  +Save(account) : void
+}
+interface ITokenProvider {
+  +Issue(account) : AccessToken
+  +Revoke(token) : void
+}
+enum BusinessType {
+  PRODUCER
+  RETAILER
+}
+enum TrialStatus {
+  ACTIVE
+  EXPIRED
+}
+Account "1" --> "1" TrialPeriod : tiene
+Account "1" --> "0..*" PasswordRecoveryToken : solicita
+Account ..> BusinessType : clasificada como
+TrialPeriod ..> TrialStatus : estado
+AuthenticationService ..> IAccountRepository : consulta
+AuthenticationService ..> ITokenProvider : emite tokens con
+AuthenticationService ..> AccessToken : devuelve
+AuthenticationService ..> Account : autentica
+@enduml

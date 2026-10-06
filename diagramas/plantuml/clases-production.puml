@@ -1,0 +1,78 @@
+@startuml
+title Diagrama de clases — Production & Monitoring
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+left to right direction
+class ProductionBatch {
+  -id : Guid
+  -producerAccountId : Guid
+  -productName : string
+  -startDate : DateTime
+  -stage : BatchStage
+  -estimatedQuantity : decimal
+  -bottledQuantity : decimal
+  +Register(producerAccountId, productName, startDate, estimatedQuantity) : ProductionBatch
+  +Edit(productName, estimatedQuantity) : void
+  +UpdateStage(newStage) : BatchStageChange
+  +RegisterBottling(quantity) : void
+  -ValidateTransition(newStage) : bool
+}
+class BatchStageChange {
+  -id : Guid
+  -batchId : Guid
+  -fromStage : BatchStage
+  -toStage : BatchStage
+  -changedAt : DateTime
+  +Record(batchId, fromStage, toStage) : BatchStageChange
+}
+class ProcessVariable {
+  -id : Guid
+  -batchId : Guid
+  -name : string
+  -unit : string
+  -minRange : decimal
+  -maxRange : decimal
+  -isMonitored : bool
+  +ConfigureRange(min, max) : void
+  +SetMonitored(flag) : void
+  #IsWithinRange(value) : bool
+}
+class SensorReading {
+  -id : Guid
+  -processVariableId : Guid
+  -value : decimal
+  -recordedAt : DateTime
+  -sourceId : string
+  +Record(processVariableId, value, sourceId) : SensorReading
+  +IsAnomalous(variable) : bool
+}
+class MonitoringService <<service>> {
+  -readings : IReadingRepository
+  -alerts : IAlertPublisher
+  +Ingest(processVariableId, value, sourceId) : SensorReading
+  +GetTrend(processVariableId, from, to) : SensorReading[]
+}
+interface IReadingRepository {
+  +Save(reading) : void
+  +FindBySource(processVariableId, sourceId) : SensorReading
+  +FindRange(processVariableId, from, to) : SensorReading[]
+}
+interface IAlertPublisher {
+  +RaiseAnomaly(batchId, processVariableId, value) : void
+}
+enum BatchStage {
+  RECEIVED
+  FERMENTATION
+  DISTILLATION
+  RESTING
+  BOTTLED
+}
+ProductionBatch "1" --> "1..*" BatchStageChange : registra
+ProductionBatch "1" --> "0..*" ProcessVariable : monitorea
+ProcessVariable "1" --> "0..*" SensorReading : recibe
+ProductionBatch ..> BatchStage : etapa
+MonitoringService ..> SensorReading : procesa
+MonitoringService ..> IReadingRepository : persiste con
+MonitoringService ..> IAlertPublisher : notifica anomalías a
+@enduml

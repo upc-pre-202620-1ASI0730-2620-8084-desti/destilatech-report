@@ -1,0 +1,71 @@
+@startuml
+title Diagrama de clases — Inventory & Stock Management
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+left to right direction
+class Product {
+  -id : Guid
+  -ownerAccountId : Guid
+  -name : string
+  -presentation : string
+  -unit : string
+  -isActive : bool
+  +Register(ownerAccountId, name, presentation, unit) : Product
+  +Edit(name, presentation, unit) : void
+  +Deactivate() : void
+}
+class StockItem {
+  -id : Guid
+  -productId : Guid
+  -currentQuantity : decimal
+  -lowStockThreshold : decimal
+  +ConfigureThreshold(threshold) : void
+  +ApplyMovement(movement) : void
+  +IsBelowThreshold() : bool
+}
+class StockMovement {
+  -id : Guid
+  -stockItemId : Guid
+  -type : MovementType
+  -reason : MovementReason
+  -quantity : decimal
+  -movementDate : DateTime
+  -sourceKey : string
+  +Register(stockItemId, type, reason, quantity, sourceKey) : StockMovement
+}
+class InventoryService <<service>> {
+  -stock : IStockRepository
+  -alerts : IAlertPublisher
+  +RegisterMovement(productId, type, reason, quantity) : StockMovement
+  +AdjustAfterCount(productId, countedQuantity) : StockMovement
+  +DiscountStock(productId, quantity, sourceKey) : void
+  +AddBottledStock(productId, quantity, sourceKey) : void
+  +GetStock(productId) : StockItem
+}
+interface IStockRepository {
+  +FindByProduct(productId) : StockItem
+  +Save(stockItem) : void
+  +FindMovements(productId) : StockMovement[]
+}
+interface IAlertPublisher {
+  +RaiseLowStock(productId, currentQuantity) : void
+}
+enum MovementType {
+  IN
+  OUT
+}
+enum MovementReason {
+  PURCHASE
+  SALE
+  PRODUCTION
+  ADJUSTMENT
+}
+Product "1" --> "1" StockItem : tiene
+StockItem "1" --> "0..*" StockMovement : registra
+StockMovement ..> MovementType : tipo
+StockMovement ..> MovementReason : motivo
+InventoryService ..> IStockRepository : persiste con
+InventoryService ..> IAlertPublisher : notifica stock bajo a
+InventoryService ..> StockItem : actualiza
+@enduml
