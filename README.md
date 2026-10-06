@@ -1513,7 +1513,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *User Persona del segmento Productor: Ricardo Donayre*
 
-<p align="center"><img src="assets/md-images-front-matter/UXPressia_Seg1_UserPersona.png" alt="User Persona del segmento Productor: Ricardo Donayre" width="420"></p>
+<p align="center"><img src="assets/md-images-front-matter/UXPressia_Seg1_UserPersona.jpeg" alt="User Persona del segmento Productor: Ricardo Donayre" width="420"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
@@ -1526,7 +1526,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *User Persona del segmento Comercializador: Carlos Mendoza*
 
-<p align="center"><img src="assets/md-images-front-matter/UXPressia_Seg2_UserPersona.png" alt="User Persona del segmento Comercializador: Carlos Mendoza" width="420"></p>
+<p align="center"><img src="assets/md-images-front-matter/UXPressia_Seg2_UserPersona.jpeg" alt="User Persona del segmento Comercializador: Carlos Mendoza" width="420"></p>
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
