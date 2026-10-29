@@ -53,7 +53,7 @@ Proyecto<br>
 
 <strong>Período 202620</strong><br><br>
 
-<strong>Septiembre 2026</strong>
+<strong>Octubre 2026</strong>
 </div>
 <div style="page-break-after: always;"></div>
 
@@ -79,12 +79,11 @@ Proyecto<br>
 | 1.1.2 | 05/10/2026 | Condor Sandoval, Jean Pierre | Módulo Billing (planes, suscripción, pago e historial) y aviso de fin de la prueba gratuita de la aplicación web, y documentación de sus historias en el Sprint Backlog 2 (`feature/billing`) |
 | 1.1.3 | 05/10/2026 | Almandroz Carbajal, Pierina Marysabel | Módulos Inventory & Stock, Alerts & Notifications y Analytics & Estimations (dashboards e indicadores históricos), y su documentación en el Sprint Backlog 2 (`feature/inventory-stock`, `feature/alerts-notifications`, `feature/analytics-estimations`) |
 | 1.1.4 | 05/10/2026 | Fernandez Seer, Mario Alonso | Módulo Production & Monitoring (lotes, trazabilidad y monitoreo IoT simulado) y su documentación en el Sprint Backlog 2 (`feature/production-monitoring`) |
-| 1.1.5 | 05/10/2026 | Domenack Angeles, Miguel | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN) y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) |
-| 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
+| 1.1.5 | 05/10/2026 | Todos los integrantes | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN), a cargo de cada integrante sobre los módulos que desarrolló, y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) || 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
 | 1.2.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por las indicaciones del docente: assumptions redactados como creencias, hypothesis statements con la plantilla del curso, eventos pivote y lenguaje ubicuo en el Big Picture EventStorming, y criterios de separación de *bounded contexts* en el Design-Level EventStorming; Sprint 2 sin el contexto IAM (`main`) |
 | 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por el feedback general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
 | 1.2.3 | 06/10/2026 | Santiago Atanacio, Jairo Mathias | Despliegue de la aplicación web en Firebase Hosting y del Fake API en Render, con la evidencia de despliegue del Sprint 2 (sección 5.2.2.7), enlaces de los videos de navegación, actualización de la configuración de despliegue (sección 5.1.4) y de los datos de la API en producción, y capturas de GitHub Insights del TB1 en la sección Project Report Collaboration Insights (`develop`) |
-
+| 1.3.0 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Limpieza del informe (marcadores pendientes y numeración de figuras), actualización de la carátula a octubre de 2026 con la nota sobre el retiro de un integrante antes del Sprint 2 y corrección del registro de versiones (`feature/correcciones`) |
 
 <div style="page-break-after: always;"></div>
 
@@ -1582,8 +1581,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Ricardo Donayre como arquetipo del segmento Productor: administrador de una bodega familiar de pisco, de 33 años (promedio de edad de los tres productores entrevistados), que gestiona el negocio desde su sede comercial en Lima mientras la producción se realiza en un valle pisquero. Sus objetivos son monitorear a distancia las variables críticas del proceso y centralizar el control de lotes e inventario; sus frustraciones son enterarse tarde de una temperatura anómala, los viajes a la bodega y los descuadres entre el stock real y Excel. Usa el smartphone como dispositivo principal, Excel, WhatsApp, Instagram y Facebook. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
-
+*Descripción.* La ficha presenta a Ricardo Donayre como arquetipo del segmento Productor: administrador de una bodega familiar de pisco, de 33 años (promedio de edad de los tres productores entrevistados), que gestiona el negocio desde su sede comercial en Lima mientras la producción se realiza en un valle pisquero. Sus objetivos son monitorear a distancia las variables críticas del proceso y centralizar el control de lotes e inventario; sus frustraciones son enterarse tarde de una temperatura anómala, los viajes a la bodega y los descuadres entre el stock real y Excel. Usa el smartphone como dispositivo principal, Excel, WhatsApp, Instagram y Facebook. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente.
 
 **Segmento 2: Comercializador**
 
@@ -1595,8 +1593,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Carlos Mendoza como arquetipo del segmento Comercializador: administrador de una licorería o bodega de Lima, de 29 años (promedio de edad de los cuatro comercializadores entrevistados), que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son saber cuánto stock tiene sin revisar el almacén, evitar quiebres de stock y recibir una alerta para reponer a tiempo; sus frustraciones son quedarse sin productos cuando el cliente los pide, los sistemas complejos que abandonó y la reposición decidida por intuición. Usa el smartphone como dispositivo principal, WhatsApp y Excel. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
-
+*Descripción.* La ficha presenta a Carlos Mendoza como arquetipo del segmento Comercializador: administrador de una licorería o bodega de Lima, de 29 años (promedio de edad de los cuatro comercializadores entrevistados), que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son saber cuánto stock tiene sin revisar el almacén, evitar quiebres de stock y recibir una alerta para reponer a tiempo; sus frustraciones son quedarse sin productos cuando el cliente los pide, los sistemas complejos que abandonó y la reposición decidida por intuición. Usa el smartphone como dispositivo principal, WhatsApp y Excel. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente.
 **Trazabilidad de las User Personas con las entrevistas.** La User Persona es un arquetipo: solo incluye los atributos que comparte la mayoría de los entrevistados de su segmento, tal como se registró en la sección 2.2.2 y se cuantificó en la sección 2.2.3. Los atributos que solo mencionó una persona, o que no se preguntaron, no se incluyen en la ficha; en particular, no se asignan estado civil, marca de dispositivo, sistema operativo, navegador ni tamaño de mercado, porque las entrevistas no los registran para la mayoría de los entrevistados.
 
 | Atributo de la ficha de Ricardo Donayre (Productor) | Respaldo en las entrevistas (n = 3) | Fuente |
@@ -2071,17 +2068,6 @@ El Product Backlog lista las 65 historias (51 historias de usuario y 14 historia
 Los Story Points los asigna el equipo de desarrollo, no el Product Owner, y expresan el esfuerzo relativo de cada historia a partir de tres factores: la complejidad, la frecuencia de uso y el riesgo. Se usa la escala 1, 2, 3, 5 y 8, donde 1 corresponde a un cambio muy pequeño y 8 a una historia con dependencias externas (como la pasarela de pago).
 
 Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page) y suman 18 Story Points.
-
-**Herramienta de gestión del backlog:** [URL pública del tablero del Product Backlog: por completar]
-
-**Figura 40**
-
-*Product Backlog de Destilatech en la herramienta de gestión*
-
-> **[CONFIRMAR: imagen pendiente]** Captura del tablero con las historias ordenadas por prioridad y sus Story Points.
-
-*Nota.* Elaboración propia en la herramienta de gestión del backlog (2026).
-
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :--- | :--- | :--- | :---: |
@@ -4781,8 +4767,7 @@ La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila
 - **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (`https://destilatech-api.onrender.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
 - **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 154 a 161).
-
+- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 153 a 160).
 ### 5.2. Landing Page, Services & Applications Implementation
 
 El trabajo de implementación se organiza en Sprints. El **Sprint 1** implementa y publica la primera versión de la landing page de Destilatech; la investigación, la especificación y el diseño que lo preceden se documentan en los capítulos I a IV. Cada sprint se documenta con las secciones del Sprint Planning, la matriz de líderes y colaboradores, el Sprint Backlog, las evidencias de desarrollo, ejecución, documentación de servicios y despliegue, y los analíticos de colaboración.
@@ -4865,8 +4850,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 | **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
 | **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
 
-**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 98) se encuentra en la columna To Review, pendiente de revisión por el equipo.
-
+**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 97) se encuentra en la columna To Review, pendiente de revisión por el equipo.
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website) la estructura HTML, los estilos, la adaptabilidad móvil, el ícono del logotipo, las pestañas de funcionalidades por segmento y la estructura base de internacionalización (i18n). La tabla lista los commits en orden cronológico.
@@ -5298,9 +5282,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 
 **Video de navegación.** El equipo grabó un video de navegación de la landing page publicada, que consolida el flujo principal del visitante: ingreso a la página y lectura de la sección principal, recorrido de las secciones desde el menú del encabezado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), cambio de idioma ES / EN, revisión de las funcionalidades por segmento y acceso al botón «Prueba gratis 14 días», hasta llegar al pie de página con los datos de contacto. El video prioriza el flujo relacionado con el negocio central, que es la captación de prospectos para la prueba gratuita.
 
-- **Duración:** **[CONFIRMAR: duración mm:ss]**
 - **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
-- **Captura del video:** **[CONFIRMAR: captura del video con el enlace]**
 
 **Figura 124**
 
@@ -5999,8 +5981,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server`, que se ejecuta de forma local en desarrollo y se publica en Render como servicio web (`destilatech-api`) para la compilación de producción. En ambos casos los recursos se exponen con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
 
-**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 160).
-
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 159).
 **Tabla 20**
 
 *Recursos del Fake API utilizados por la aplicación web*
@@ -6269,8 +6250,7 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
 
 
-### Anexo B. Video de las entrevistas
-
+### Anexo C. Video de las entrevistas
 Las siete entrevistas (tres a productores y cuatro a comercializadores) se entregan en un único video continuo.
 
 | Video | Contenido | Enlace |
