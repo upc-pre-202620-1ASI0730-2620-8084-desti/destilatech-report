@@ -94,6 +94,7 @@ Proyecto<br>
 | 1.3.5 | 28/10/2026 | Fernandez Seer, Mario Alonso | Student Outcome y perfiles del equipo: Domenack Angeles, Miguel participa solo en el AV1, sin acciones en el TB1, y ajuste de las conclusiones del TB1 (`feature/correcciones`) |
 | 1.3.6 | 28/10/2026 | Fernandez Seer, Mario Alonso | Anexo B Videos de Exposiciones, exigido por el enunciado, con los videos del AV1 y del TB1 (`feature/correcciones`) |
 | 1.3.7 | 28/10/2026 | Condor Sandoval, Jean Pierre | Corrección de terminología según el Anexo E del enunciado: uso de «retroalimentación» y de «proceso de codificación» en el informe (`feature/correcciones`) |
+| 1.3.8 | 29/10/2026 | Santiago Atanacio, Jairo Mathias | Evidencia en Trello: URL pública del Product Backlog con su captura (Figura 40), capturas actualizadas de los tableros de los Sprints 1 y 2 con las tareas de ingeniería, descripciones de los tableros corregidas y renumeración de las figuras posteriores (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -2102,6 +2103,19 @@ Los Story Points los asigna el equipo de desarrollo, no el Product Owner, y expr
 
 Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page) y suman 18 Story Points.
 
+**Product Backlog público:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (lista «Product Backlog» del tablero «Destilatech - App Web», con las 65 historias ordenadas por prioridad de negocio)
+
+**Figura 40**
+
+*Product Backlog en Trello*
+
+<p align="center"><img src="assets/md-images-front-matter/trello-product-backlog.png" alt="Product Backlog en Trello" width="560"></p>
+
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+
+*Descripción.* La lista «Product Backlog» contiene las 65 historias de la tabla siguiente, numeradas según su orden de prioridad; la captura muestra las primeras seis (US30 a US35). Cada tarjeta indica el título de la historia con sus Story Points y la descripción en formato de historia de usuario. A su derecha se ven las listas To Do, In Process y To Review, vacías (0 tarjetas).
+
+
 | # Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :--- | :--- | :--- | :---: |
 | 1 | US30 | Navegar desde el encabezado (Header) | Como visitante deseo ver el logo y los enlaces de navegación en el encabezado para identificar la marca y llegar rápido a cada sección. | 2 |
@@ -2187,7 +2201,7 @@ Una guía de estilo (*style guideline*) reúne las normas de diseño que se apli
 
 La identidad visual de Destilatech busca combinar la tradición artesanal del pisco con la precisión del monitoreo digital. El logotipo está formado por el nombre de la marca en tipografía sans-serif de trazo grueso y un ícono lineal de copa de destilado, con un punto ámbar en el borde que representa el dato o la medición. Los colores del logotipo —cobre oscuro sobre fondo crema— transmiten calidez y confianza, y el trazo simple facilita su uso en tamaños pequeños, como el favicon o el encabezado de la aplicación.
 
-**Figura 40**
+**Figura 41**
 
 *Logotipo de Destilatech*
 
@@ -2239,7 +2253,7 @@ La paleta se definió a partir de los materiales y procesos del pisco: el cobre 
 | Success Green | #2f7a4f | `--color-success` | Estados normales o correctos. |
 | Warning Gold | #b8781f | `--color-warn` | Advertencias, como niveles bajos de stock. |
 
-**Figura 41**
+**Figura 42**
 
 *Paleta de colores de Destilatech*
 
@@ -2448,7 +2462,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 
 **Wireframes para escritorio**
 
-**Figura 42**
+**Figura 43**
 
 *Wireframe de la landing page: encabezado y sección inicial*
 
@@ -2459,7 +2473,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* En el encabezado se ubican el logotipo, el menú de secciones, el selector ES / EN y el botón «Prueba gratis 14 días». La sección inicial usa dos columnas: a la izquierda, el título, el resumen, los botones de acción y la nota «Sin tarjeta de crédito para empezar»; a la derecha, un marcador de imagen con dos tarjetas flotantes, una de temperatura de tanque (18.4 °C, Óptimo) y otra de inventario (42 uds., Reponer).
 
 
-**Figura 43**
+**Figura 44**
 
 *Wireframe de la landing page: sección de segmentos*
 
@@ -2470,7 +2484,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Dos perfiles, una misma plataforma» presenta dos tarjetas lado a lado, una para el Productor de pisco y otra para el Comercializador. Cada tarjeta tiene un marcador de fotografía, un texto breve y una lista de verificación con las funciones principales de su segmento.
 
 
-**Figura 44**
+**Figura 45**
 
 *Wireframe de la landing page: sección de beneficios*
 
@@ -2481,7 +2495,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Beneficios pensados para tu operación diaria» organiza cuatro tarjetas en una fila: Monitoreo de Producción, Gestión de Inventario, Alertas Automáticas y Estimaciones Predictivas. Cada tarjeta incluye un ícono, un título y una descripción corta.
 
 
-**Figura 45**
+**Figura 46**
 
 *Wireframe de la landing page: planes de suscripción e impacto*
 
@@ -2492,7 +2506,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección de planes muestra tres tarjetas —Plan Básico (S/ 60 al mes), Plan Profesional (S/ 110 al mes, destacado con la insignia «Más elegido») y Plan Empresarial (S/ 200 al mes)— con sus características y un botón de prueba gratuita. Debajo, un bloque de dos columnas presenta las cifras del sector: más de 527 empresas formales y 7.8 millones de litros de producción aproximada.
 
 
-**Figura 46**
+**Figura 47**
 
 *Wireframe de la landing page: funcionalidades por segmento y llamada a la acción*
 
@@ -2503,7 +2517,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 *Descripción.* La sección «Una plataforma, dos formas de trabajar» incluye pestañas para alternar entre Productor y Comercializador y tres tarjetas de funcionalidades por pestaña (Monitoreo IoT, Trazabilidad y Detección de condiciones anómalas). Debajo aparece un bloque oscuro con la llamada a la acción «Empieza a gestionar tu producción e inventario hoy» y el botón de prueba gratuita.
 
 
-**Figura 47**
+**Figura 48**
 
 *Wireframe de la landing page: llamada a la acción final y pie de página*
 
@@ -2518,7 +2532,7 @@ El diseño de la landing page busca causar una primera impresión clara y confia
 
 En la versión móvil el contenido se apila en una sola columna y el menú se reduce a un botón tipo hamburguesa. Los wireframes siguientes muestran la secuencia de pantallas que ve el visitante al desplazarse.
 
-**Figura 48**
+**Figura 49**
 
 *Wireframes de la landing page para móvil*
 
@@ -2533,7 +2547,7 @@ En la versión móvil el contenido se apila en una sola columna y el menú se re
 
 Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes anteriores: paleta de cobre, ámbar y crema, tipografías Poppins e Inter, fotografías de bodegas y estantes de licorería, y tarjetas con ícono y lista de verificación.
 
-**Figura 49**
+**Figura 50**
 
 *Mock-up de la landing page: encabezado y sección inicial*
 
@@ -2544,7 +2558,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* El encabezado fijo contiene el logotipo, el menú de secciones, el selector ES / EN y el botón «Prueba gratis 14 días» en color cobre. La sección inicial muestra el título «Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar», dos botones de acción y, a la derecha, una fotografía de botellas de pisco con dos tarjetas flotantes: temperatura de tanque (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto).
 
 
-**Figura 50**
+**Figura 51**
 
 *Mock-up de la landing page: segmentos*
 
@@ -2555,7 +2569,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Dos tarjetas con fotografía presentan los segmentos. «Para bodegas productoras» (fondo arena) lista el monitoreo de variables, la trazabilidad de lotes y el control de inventario de insumos. «Para licorerías y distribuidores» lista el inventario simple desde el celular, las alertas de reposición y la gestión de pedidos a proveedores.
 
 
-**Figura 51**
+**Figura 52**
 
 *Mock-up de la landing page: beneficios*
 
@@ -2566,7 +2580,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Cuatro tarjetas blancas sobre fondo arena, cada una con un ícono, un título y una descripción: Monitoreo de producción, Gestión de inventario, Alertas automáticas y Estimaciones predictivas.
 
 
-**Figura 52**
+**Figura 53**
 
 *Mock-up de la landing page: planes de suscripción*
 
@@ -2577,7 +2591,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Tres tarjetas de planes: Básico (S/ 60 al mes), Profesional (S/ 110 al mes, con la insignia «Más elegido» y borde resaltado) y Empresarial (S/ 200 al mes). Cada plan lista sus características y un botón «Prueba gratis 14 días». Sobre las tarjetas se indica que todos los planes incluyen 14 días de prueba sin compromiso.
 
 
-**Figura 53**
+**Figura 54**
 
 *Mock-up de la landing page: impacto en el sector*
 
@@ -2588,7 +2602,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Sobre un fondo fotográfico oscuro de tonos cobre se muestran dos cifras destacadas en dorado: más de 527 empresas formales en la industria del pisco (2024) y 7.8 millones de litros de producción aproximada en 2024, con la fuente indicada al pie.
 
 
-**Figura 54**
+**Figura 55**
 
 *Mock-up de la landing page: funcionalidades por segmento*
 
@@ -2599,7 +2613,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 *Descripción.* Las pestañas «Productor» y «Comercializador» permiten alternar el contenido. Con la pestaña Productor activa se ven tres tarjetas: Monitoreo IoT de producción, Trazabilidad de lotes y Detección de condiciones anómalas. Debajo comienza el bloque de la llamada a la acción sobre fondo arena.
 
 
-**Figura 55**
+**Figura 56**
 
 *Mock-up de la landing page: llamada a la acción y pie de página*
 
@@ -2612,7 +2626,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 
 **Mock-up para móvil**
 
-**Figura 56**
+**Figura 57**
 
 *Mock-up de la landing page para móvil: inicio, menú desplegado y objetivos*
 
@@ -2622,7 +2636,7 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 
 *Descripción.* Tres pantallas de teléfono de 390 px de ancho. La pantalla 1 muestra el encabezado con el logotipo, el botón «Prueba gratis» siempre visible y el botón de menú; debajo, la etiqueta de la plataforma, el título principal, el texto de apoyo, los botones «Prueba gratis 14 días» y «Ver funcionalidades» a ancho completo, la nota «Sin tarjeta de crédito» y la fotografía de alambiques con las tarjetas de temperatura (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto). La pantalla 2 muestra el menú desplegado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), el selector de idioma ES / EN y el botón de prueba gratuita, con el contenido restante atenuado. La pantalla 3 apila en una sola columna las cuatro tarjetas de beneficios: Monitoreo de producción, Gestión de inventario, Alertas automáticas y Estimaciones predictivas.
 
-**Figura 57**
+**Figura 58**
 
 *Mock-up de la landing page para móvil: planes, funcionalidades, impacto y pie de página*
 
@@ -2648,7 +2662,7 @@ El archivo de diseño se encuentra en Figma: [Archivo completo de Destilatech](h
 
 Los wireframes definen la estructura de las pantallas antes de aplicar la identidad visual. Permiten validar la jerarquía de la información y las diferencias entre perfiles.
 
-**Figura 58**
+**Figura 59**
 
 *Wireframes de la aplicación web*
 
@@ -2661,7 +2675,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 **Wireframes para móvil**
 
-**Figura 59**
+**Figura 60**
 
 *Wireframes de la aplicación web para móvil*
 
@@ -2676,7 +2690,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa de una pantalla a otra para completar una tarea. El Productor inicia sesión, consulta su dashboard, supervisa las variables, revisa las alertas, consulta los lotes y actualiza el inventario. El Comercializador consulta su dashboard e inventario, identifica los productos con stock bajo y registra pedidos.
 
-**Figura 60**
+**Figura 61**
 
 *Wireflows de la aplicación web*
 
@@ -2691,7 +2705,7 @@ Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa
 
 Los mock-ups presentan la propuesta visual de alta fidelidad. Mantienen la paleta y la tipografía de la landing page y usan datos de ejemplo coherentes con el dominio (lotes, temperatura, pH, humedad, densidad, niveles de stock, pedidos y alertas). La etiqueta de rol en el encabezado y el contenido del menú lateral diferencian las funciones de cada perfil.
 
-**Figura 61**
+**Figura 62**
 
 *Mock-ups de la aplicación web*
 
@@ -2718,7 +2732,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 | Reposición | El producto no tiene umbral configurado. | No genera alerta de stock bajo y sugiere configurar el umbral. |
 | Pedido | El stock disponible es menor que la cantidad pedida. | Rechaza la confirmación e indica qué producto no alcanza; no modifica el stock. |
 
-**Figura 62**
+**Figura 63**
 
 *Diagramas de flujo de usuario de la aplicación web*
 
@@ -2735,7 +2749,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 
 El prototipo interactivo se construyó en Figma a partir de los mock-ups. Contiene doce pantallas y cuarenta y dos interacciones configuradas con eventos *On Click* y transiciones *Smart Animate* de 250 ms. Se definieron dos puntos de inicio, uno por perfil: el recorrido del Productor recorre inicio de sesión, dashboard, monitoreo IoT, alertas, lotes e inventario; el recorrido del Comercializador recorre dashboard comercial, inventario, pedidos y alertas.
 
-**Figura 63**
+**Figura 64**
 
 *Recorridos del prototipo interactivo*
 
@@ -2811,7 +2825,7 @@ El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 m
 
 Gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación, la recuperación de contraseña y el periodo de prueba de 14 días. Responde al Epic EP01.
 
-**Figura 64**
+**Figura 65**
 
 *Design-Level EventStorming del Bounded Context IAM*
 
@@ -2847,7 +2861,7 @@ El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, q
 
 Gestiona los planes, la suscripción de pago y los intentos de pago asociados a la cuenta. Responde al Epic EP01.
 
-**Figura 65**
+**Figura 66**
 
 *Design-Level EventStorming del Bounded Context Billing*
 
@@ -2881,7 +2895,7 @@ El comando `SubscribeToPlan` (US40) crea un `PaymentAttempt` con una clave de id
 
 Gestiona los lotes de producción y el monitoreo de las variables del proceso. Responde a los Epics EP03 y EP04.
 
-**Figura 66**
+**Figura 67**
 
 *Design-Level EventStorming del Bounded Context Production & Monitoring*
 
@@ -2923,7 +2937,7 @@ flowchart LR
 
 Gestiona el catálogo de productos y el control de stock. Responde a los Epics EP05 y EP06.
 
-**Figura 67**
+**Figura 68**
 
 *Design-Level EventStorming del Bounded Context Inventory & Stock Management*
 
@@ -2961,7 +2975,7 @@ flowchart LR
 
 Gestiona clientes, pedidos de venta y las listas de compra para la reposición. Responde al Epic EP07.
 
-**Figura 68**
+**Figura 69**
 
 *Design-Level EventStorming del Bounded Context Orders & Replenishment*
 
@@ -2996,7 +3010,7 @@ flowchart LR
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management. Responde a los Epics EP04 y EP06.
 
-**Figura 69**
+**Figura 70**
 
 *Design-Level EventStorming del Bounded Context Alerts & Notifications*
 
@@ -3029,7 +3043,7 @@ Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAtte
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts. Responde al Epic EP08 y al resumen del dashboard (EP02).
 
-**Figura 70**
+**Figura 71**
 
 *Design-Level EventStorming del Bounded Context Analytics & Estimations*
 
@@ -3081,7 +3095,7 @@ Los commands que cruzan contextos (`ExtendAccountAccess`, `RaiseAlert`, `Discoun
 
 El diagrama de contexto presenta a Destilatech como un único recuadro al centro, rodeado por sus usuarios y por los sistemas externos con los que interactúa. Se elaboró con Structurizr y su código fuente (Structurizr DSL) se incluye al final de esta sección.
 
-**Figura 71**
+**Figura 72**
 
 *Diagrama de contexto C4 de Destilatech*
 
@@ -3319,7 +3333,7 @@ Para visualizar los diagramas, el código se pega en https://playground.structur
 
 El diagrama de contenedores descompone a Destilatech en sus unidades desplegables o ejecutables por separado y muestra las principales decisiones de tecnología y la forma en que se comunican. Pertenece al mismo espacio de trabajo de Structurizr de la sección 4.6.2.
 
-**Figura 72**
+**Figura 73**
 
 *Diagrama de contenedores C4 de Destilatech*
 
@@ -3364,7 +3378,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 **a. Componentes de la Landing Page**
 
-**Figura 73**
+**Figura 74**
 
 *Diagrama de componentes C4 de la Landing Page*
 
@@ -3393,7 +3407,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 El primer nivel de componentes de la SPA son los *bounded contexts* que implementa el frontend y un *Shared Kernel* con los elementos comunes. Cada contexto se organiza internamente en las capas de presentación, aplicación, dominio e infraestructura, que corresponden al nivel de código y se pueden verificar en las carpetas de cada contexto del repositorio del frontend.
 
-**Figura 74**
+**Figura 75**
 
 *Diagrama de componentes C4 de la Single-Page Application*
 
@@ -3423,7 +3437,7 @@ El primer nivel de componentes de la SPA son los *bounded contexts* que implemen
 
 La REST API es un único contenedor y cada uno de sus módulos corresponde exactamente a uno de los siete *bounded contexts* del Design-Level EventStorming (sección 4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
 
-**Figura 75**
+**Figura 76**
 
 *Diagrama de componentes C4 de la REST API*
 
@@ -3459,7 +3473,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **a. IAM (Identity & Access Management)**
 
-**Figura 76**
+**Figura 77**
 
 *Diagrama de clases del Bounded Context IAM (Identity & Access Management)*
 
@@ -3560,7 +3574,7 @@ classDiagram
 
 **b. Billing**
 
-**Figura 77**
+**Figura 78**
 
 *Diagrama de clases del Bounded Context Billing*
 
@@ -3655,7 +3669,7 @@ classDiagram
 
 **c. Production & Monitoring**
 
-**Figura 78**
+**Figura 79**
 
 *Diagrama de clases del Bounded Context Production & Monitoring*
 
@@ -3749,7 +3763,7 @@ classDiagram
 
 **d. Inventory & Stock Management**
 
-**Figura 79**
+**Figura 80**
 
 *Diagrama de clases del Bounded Context Inventory & Stock Management*
 
@@ -3837,7 +3851,7 @@ classDiagram
 
 **e. Orders & Replenishment**
 
-**Figura 80**
+**Figura 81**
 
 *Diagrama de clases del Bounded Context Orders & Replenishment*
 
@@ -3927,7 +3941,7 @@ classDiagram
 
 **f. Alerts & Notifications**
 
-**Figura 81**
+**Figura 82**
 
 *Diagrama de clases del Bounded Context Alerts & Notifications*
 
@@ -3991,7 +4005,7 @@ classDiagram
 
 **g. Analytics & Estimations**
 
-**Figura 82**
+**Figura 83**
 
 *Diagrama de clases del Bounded Context Analytics & Estimations*
 
@@ -4089,7 +4103,7 @@ Se presenta un diagrama entidad-relación por cada *bounded context*, derivado d
 
 **a. IAM**
 
-**Figura 83**
+**Figura 84**
 
 *Diagrama entidad-relación del Bounded Context IAM*
 
@@ -4132,7 +4146,7 @@ Una cuenta (`iam_accounts`) tiene un único periodo de prueba (`iam_trial_period
 
 **b. Billing**
 
-**Figura 84**
+**Figura 85**
 
 *Diagrama entidad-relación del Bounded Context Billing*
 
@@ -4176,7 +4190,7 @@ Un plan (`billing_plans`) rige cero o más suscripciones (`billing_subscriptions
 
 **c. Production & Monitoring**
 
-**Figura 85**
+**Figura 86**
 
 *Diagrama entidad-relación del Bounded Context Production & Monitoring*
 
@@ -4228,7 +4242,7 @@ Un lote (`production_batches`) tiene uno o más cambios de etapa (`production_ba
 
 **d. Inventory & Stock Management**
 
-**Figura 86**
+**Figura 87**
 
 *Diagrama entidad-relación del Bounded Context Inventory & Stock Management*
 
@@ -4270,7 +4284,7 @@ Cada producto (`inventory_products`) tiene un único saldo (`inventory_stock_ite
 
 **e. Orders & Replenishment**
 
-**Figura 87**
+**Figura 88**
 
 *Diagrama entidad-relación del Bounded Context Orders & Replenishment*
 
@@ -4324,7 +4338,7 @@ Un cliente (`orders_customers`) realiza cero o más pedidos (`orders_orders`) y 
 
 **f. Alerts & Notifications**
 
-**Figura 88**
+**Figura 89**
 
 *Diagrama entidad-relación del Bounded Context Alerts & Notifications*
 
@@ -4352,7 +4366,7 @@ La tabla `alerts_alerts` guarda cada alerta con su tipo, el identificador del pr
 
 **g. Analytics & Estimations**
 
-**Figura 89**
+**Figura 90**
 
 *Diagrama entidad-relación del Bounded Context Analytics & Estimations*
 
@@ -4447,7 +4461,7 @@ El código se versiona con Git y se aloja en GitHub, dentro de la organización 
 
 **Sitio publicado (landing page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
-**Figura 90**
+**Figura 91**
 
 *Landing page publicada en GitHub Pages*
 
@@ -4490,7 +4504,7 @@ Los mensajes de commit siguen la especificación Conventional Commits (s. f.), c
 
 Las versiones del informe y del software siguen el versionado semántico (Preston-Werner, 2013), con el formato `MAJOR.MINOR.PATCH`: se incrementa `MAJOR` ante un cambio incompatible, `MINOR` al añadir funcionalidad compatible y `PATCH` al corregir errores. La versión del informe se registra en el *Registro de Versiones* al inicio de este documento.
 
-**Figura 91**
+**Figura 92**
 
 *Ramas del repositorio del informe*
 
@@ -4556,18 +4570,18 @@ Ejemplo recomendado:
 ```html
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Account Settings</title>
-</head>
-<body>
-<main>
-  <h1>Account Settings</h1>
-  <img src="avatar.png" alt="Profile avatar preview">
-  <a href="/comments">All comments</a>
-</main>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Settings</title>
+  </head>
+  <body>
+    <main>
+      <h1>Account Settings</h1>
+      <img src="avatar.png" alt="Profile avatar preview">
+      <a href="/comments">All comments</a>
+    </main>
+  </body>
 </html>
 ```
 
@@ -4734,7 +4748,7 @@ Esta sección describe cómo se publica la landing page. La landing page es un s
 
 Pasos realizados para publicar la landing page:
 
-**Figura 92**
+**Figura 93**
 
 *Despliegue en GitHub Pages, paso 1. Ingresamos al repositorio de la landing page*
 
@@ -4745,7 +4759,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página de la organización en GitHub con el listado «All» de repositorios. Se ven dos repositorios públicos: `destilatech-report` (actualizado hace 52 minutos) y `destilatech-website` (HTML, actualizado el día anterior), este último resaltado.
 
 
-**Figura 93**
+**Figura 94**
 
 *Despliegue en GitHub Pages, paso 2. Abrimos el repositorio y su configuración*
 
@@ -4756,7 +4770,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página principal del repositorio `destilatech-website`: rama `main`, 7 ramas, 11 commits y los archivos `.idea`, `assets/img`, `css`, `js`, `README.md` e `index.html`. En la barra superior se resalta la pestaña Settings.
 
 
-**Figura 94**
+**Figura 95**
 
 *Despliegue en GitHub Pages, paso 3. Ingresamos a la sección Pages*
 
@@ -4767,7 +4781,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página Settings > General del repositorio, con el nombre del repositorio, la rama por defecto `main` y la opción Pages resaltada en el menú lateral izquierdo.
 
 
-**Figura 95**
+**Figura 96**
 
 *Despliegue en GitHub Pages, paso 4. Seleccionamos la rama de origen y guardamos*
 
@@ -4778,7 +4792,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Sección GitHub Pages en Build and deployment: la fuente es «Deploy from a branch», la rama seleccionada es `main` con la carpeta `/ (root)` y el botón Save. El texto indica que GitHub Pages aún está deshabilitado antes de guardar.
 
 
-**Figura 96**
+**Figura 97**
 
 *Despliegue en GitHub Pages, paso 5. Verificamos el despliegue*
 
@@ -4800,7 +4814,7 @@ La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila
 - **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (`https://destilatech-api.onrender.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
 - **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 153 a 160).
+- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 154 a 161).
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
@@ -4848,9 +4862,9 @@ En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y
 
 El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la propuesta de valor de Destilatech y puedan iniciar su prueba gratuita; para lograrlo se publica la versión inicial de la landing page. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
+**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
-**Figura 97**
+**Figura 98**
 
 *Tablero del Sprint 1 en Trello*
 
@@ -4858,7 +4872,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 *Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
 
-*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en cuatro columnas. To Do e In Process están vacías (0 tarjetas); To Review contiene la tarjeta «Mock-up móvil de la landing page» (1 tarjeta) y Done concentra las 8 tarjetas de las historias de usuario US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación de tareas de ingeniería.
+*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en seis listas: Product Backlog (65 tarjetas); To Do, In Process y To Review (0 tarjetas cada una); DONE - SPRINT 1 (8 tarjetas) y DONE - SPRINT 2. La captura muestra el Product Backlog y la lista DONE - SPRINT 1, que concentra las tarjetas de las historias US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación de tareas de ingeniería ya completada.
 
 
 **Tabla 15**
@@ -4886,7 +4900,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 **Horas por integrante.** El Sprint Backlog 1 suma 72 horas: Santiago Atanacio, Jairo Mathias, 16; Condor Sandoval, Jean Pierre, 16; Fernandez Seer, Mario Alonso, 22; Almandroz Carbajal, Pierina Marysabel, 10; Domenack Angeles, Miguel, 8.
 
-**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 98) se encuentra en la columna To Review, pendiente de revisión por el equipo.
+**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del Sprint 1 (Figura 98), todas las tarjetas del sprint están en la lista DONE - SPRINT 1.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -5038,7 +5052,7 @@ El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo q
 
 Las capturas siguientes muestran el historial de cada rama en GitHub, que respalda la tabla anterior.
 
-**Figura 98**
+**Figura 99**
 
 *Historial de commits de la rama feature/ubiquitous_language*
 
@@ -5049,7 +5063,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/ubiquitous_language`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 99**
+**Figura 100**
 
 *Historial de commits de la rama feature/student-profile*
 
@@ -5060,7 +5074,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/student-profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 100**
+**Figura 101**
 
 *Historial de commits de la rama feature/startup_profile*
 
@@ -5071,7 +5085,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/startup_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 101**
+**Figura 102**
 
 *Historial de commits de la rama feature/solution_profile*
 
@@ -5082,7 +5096,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/solution_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 102**
+**Figura 103**
 
 *Historial de commits de la rama feature/segmentos_objetivo*
 
@@ -5093,7 +5107,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/segmentos_objetivo`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 103**
+**Figura 104**
 
 *Historial de commits de la rama feature/product-design*
 
@@ -5104,7 +5118,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/product-design`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 104**
+**Figura 105**
 
 *Historial de commits de la rama feature/entrevistas*
 
@@ -5115,7 +5129,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 105**
+**Figura 106**
 
 *Historial de commits de la rama feature/empathy_mapping_2*
 
@@ -5126,7 +5140,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/empathy_mapping_2`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 106**
+**Figura 107**
 
 *Historial de commits de la rama feature/domain_driven_architecture*
 
@@ -5137,7 +5151,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/domain_driven_architecture`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 107**
+**Figura 108**
 
 *Historial de commits de la rama feature/dda_diagrams*
 
@@ -5148,7 +5162,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/dda_diagrams`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 108**
+**Figura 109**
 
 *Historial de commits de la rama feature/competidores*
 
@@ -5159,7 +5173,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/competidores`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 109**
+**Figura 110**
 
 *Historial de commits de la rama feature/code_style*
 
@@ -5170,7 +5184,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_style`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 110**
+**Figura 111**
 
 *Historial de commits de la rama feature/code_management*
 
@@ -5181,7 +5195,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 111**
+**Figura 112**
 
 *Historial de commits de la rama feature/chapter-4*
 
@@ -5192,7 +5206,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/chapter-4`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 112**
+**Figura 113**
 
 *Historial de commits de la rama feature/big_picture_eventstorming*
 
@@ -5203,7 +5217,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/big_picture_eventstorming`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 113**
+**Figura 114**
 
 *Historial de commits de la rama feature/agregar-entrevistas-o-fix/corregir-readme*
 
@@ -5214,7 +5228,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar-entrevistas-o-fix/corregir-readme`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 114**
+**Figura 115**
 
 *Historial de commits de la rama feature/agregar_fotos*
 
@@ -5225,7 +5239,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar_fotos`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 115**
+**Figura 116**
 
 *Historial de commits de la rama feature/actualizar_tablas_entrevistas*
 
@@ -5236,7 +5250,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/actualizar_tablas_entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 116**
+**Figura 117**
 
 *Historial de commits de la rama feature/Student_Jean*
 
@@ -5247,7 +5261,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Student_Jean`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 117**
+**Figura 118**
 
 *Historial de commits de la rama feature/Source_Code_Management*
 
@@ -5258,7 +5272,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Source_Code_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 118**
+**Figura 119**
 
 *Historial de commits de la rama feature/Software_Configuration_Management*
 
@@ -5269,7 +5283,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Software_Configuration_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 119**
+**Figura 120**
 
 *Historial de commits de la rama feature/LandingPageMock-up*
 
@@ -5280,7 +5294,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/LandingPageMock-up`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 120**
+**Figura 121**
 
 *Historial de commits de la rama docs/chapter-4-webapp-ux-ui*
 
@@ -5291,7 +5305,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `docs/chapter-4-webapp-ux-ui`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 121**
+**Figura 122**
 
 *Historial de commits de la rama develop*
 
@@ -5302,7 +5316,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `develop`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 122**
+**Figura 123**
 
 *Historial de commits de la rama main*
 
@@ -5321,7 +5335,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 
 - **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
 
-**Figura 123**
+**Figura 124**
 
 *Landing page: encabezado*
 
@@ -5332,7 +5346,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Encabezado de la landing page con el logotipo de Destilatech a la izquierda, el menú de secciones (Descripción, Objetivos, Precios, Impacto y Funcionalidades), el selector de idioma ES / EN con ES activo y el botón «Prueba gratis 14 días» a la derecha.
 
 
-**Figura 124**
+**Figura 125**
 
 *Landing page: sección principal*
 
@@ -5343,7 +5357,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Sección principal con la etiqueta «Plataforma SaaS para el ecosistema del pisco», el título «Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar», un párrafo de descripción, los botones «Prueba gratis 14 días» y «Ver funcionalidades», y a la derecha una fotografía de alambiques con tarjetas de temperatura (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto).
 
 
-**Figura 125**
+**Figura 126**
 
 *Landing page: pie de página*
 
@@ -5368,7 +5382,7 @@ En el Sprint 1 se desplegó la landing page en GitHub Pages desde la rama `main`
 
 El equipo repartió las secciones de la landing page según la sección 5.2.1.3 y coordinó el trabajo por Discord. Los 11 commits del repositorio de la landing page se registraron desde una única cuenta del equipo; por esta razón, los aportes individuales por integrante se muestran con el repositorio del informe (sección «Project Report Collaboration Insights» y sección 5.2.1.4), donde cada persona trabajó desde su propia cuenta y rama.
 
-**Figura 126**
+**Figura 127**
 
 *Commits del repositorio de la landing page*
 
@@ -5379,7 +5393,7 @@ El equipo repartió las secciones de la landing page según la sección 5.2.1.3 
 *Descripción.* Historial de commits del repositorio de la landing page del 17 de septiembre de 2026 y días anteriores, con los mensajes «agregar estructura de i18n», «agregar estructura de platform feature tabs», «agregar estructura de logo-icon», «agregar estructura de responsive design», «subiendo archivo html, js y css», «agregar parte del index, js», «subir imagenes», «subir imagenes a assets» y «eliminando».
 
 
-**Figura 127**
+**Figura 128**
 
 *Contributors Insights del repositorio del informe (Sprint 1)*
 
@@ -5433,15 +5447,17 @@ En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden co
 
 El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Cada tarea es una tarea de ingeniería (*Engineering Task*) estimada en horas de planificación, con un mínimo de 4 y un máximo de 8 horas por tarea.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
+**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
-**Figura 128**
+**Figura 129**
 
 *Tablero del Sprint 2 en Trello*
 
 <p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero del Sprint 2 en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026).
+*Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+
+*Descripción.* La captura muestra las seis listas del tablero. La lista DONE - SPRINT 2 concentra las 40 tarjetas del sprint: 29 historias de usuario, cada una con su lista de verificación de tareas de ingeniería completada (la columna se desplaza para ver todas las tarjetas); 5 tarjetas de tareas técnicas transversales (Shared Kernel, Shared Layout & App Bootstrap, Fake API, Internationalization y User Switcher); y 6 tarjetas de pruebas funcionales.
 
 
 **Tabla 19**
@@ -5734,7 +5750,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 **Historial de commits por rama.** Las capturas siguientes muestran, para cada rama, los commits más recientes registrados en GitHub, y la última muestra las ramas del repositorio.
 
-**Figura 129**
+**Figura 130**
 
 *Historial de commits de la rama feature/alerts-notifications*
 
@@ -5745,7 +5761,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/alerts-notifications`. Commits de `pierinaaa29` con la entidad, el comando, el *assembler*, la API, los componentes y la bandeja de alertas, y la tienda `alerts.store.js`.
 
 
-**Figura 130**
+**Figura 131**
 
 *Historial de commits de la rama feature/analytics-estimations*
 
@@ -5756,7 +5772,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/analytics-estimations`. Commits de `pierinaaa29` con la tienda de analíticas, los dashboards del productor y del comercializador, el gráfico de tendencia, las tarjetas de estimación y los indicadores históricos.
 
 
-**Figura 131**
+**Figura 132**
 
 *Historial de commits de la rama feature/billing*
 
@@ -5767,7 +5783,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/billing`. Commits de `jeanpcs` con la tienda de facturación, las rutas, la vista de planes, las vistas de resultado del pago, el aviso de prueba, la tarjeta de plan, el historial de pagos y los *assemblers*.
 
 
-**Figura 132**
+**Figura 133**
 
 *Historial de commits de la rama feature/fake-api*
 
@@ -5778,7 +5794,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/fake-api`. Commits de `Msa-ware` con el Fake API con Beeceptor, la licencia de PrimeUI en el entorno de desarrollo, `start.sh`, `routes.json` y `db.json`.
 
 
-**Figura 133**
+**Figura 134**
 
 *Historial de commits de la rama feature/iam*
 
@@ -5789,7 +5805,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/iam`. Commits de `jeanpcs` con la tienda, las rutas, las vistas de registro e inicio de sesión, el perfil, el menú de usuario, el panel de autenticación, el guardián de rutas, el interceptor y la API de IAM.
 
 
-**Figura 134**
+**Figura 135**
 
 *Historial de commits de la rama feature/inventory-stock*
 
@@ -5800,7 +5816,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/inventory-stock`. Commits de `pierinaaa29` con la tienda de inventario, las rutas, la ficha del producto, la vista de inventario, los diálogos de umbral, movimiento y producto, y las etiquetas de estado de stock.
 
 
-**Figura 135**
+**Figura 136**
 
 *Historial de commits de la rama feature/locales*
 
@@ -5811,7 +5827,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/locales`. Commits de `Msa-ware` con los catálogos `locales/es.json` y `locales/en.json`, seguidos de los commits de pedidos y reposición de la rama anterior.
 
 
-**Figura 136**
+**Figura 137**
 
 *Historial de commits de la rama feature/orders-replenishment*
 
@@ -5822,7 +5838,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/orders-replenishment`. Commits de `jeanpcs` y `Msa-ware` con la tienda de pedidos, las rutas, las vistas de reposición, pedidos y clientes, y los diálogos de cliente, pedido y reposición.
 
 
-**Figura 137**
+**Figura 138**
 
 *Historial de commits de la rama feature/production-monitoring*
 
@@ -5833,7 +5849,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/production-monitoring`. Commits de `MrBaru` con la tienda de producción, las rutas, el dashboard de monitoreo, la gestión y el detalle de lotes, los diálogos de rango y de lote, las tarjetas de variable y el gráfico de lecturas.
 
 
-**Figura 138**
+**Figura 139**
 
 *Historial de commits de la rama feature/shared*
 
@@ -5844,7 +5860,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/shared`. Commits de `Msa-ware` con la página 404, la barra superior, la navegación lateral, el encabezado de página, el layout, el selector de idioma, la tarjeta KPI, el pie de página y los estilos.
 
 
-**Figura 139**
+**Figura 140**
 
 *Historial de commits de la rama develop*
 
@@ -5855,7 +5871,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `develop`. Commits de `Msa-ware` con la actualización del README, el enrutador, la tienda y la API de IAM, la corrección de `package.json`, la internacionalización, `main.js`, `app.vue` y `.gitattributes`.
 
 
-**Figura 140**
+**Figura 141**
 
 *Ramas del repositorio de la aplicación web*
 
@@ -5871,7 +5887,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 **Video de navegación:** [Ver video][video-sprint-2]
 
-**Figura 141**
+**Figura 142**
 
 *Dashboard del productor*
 
@@ -5882,7 +5898,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Dashboard del productor (`/dashboard`, historia US04) con indicadores de lotes activos, inventario, alertas y pedidos, un gráfico del volumen por lote activo, la actividad reciente, las alertas pendientes y los productos de reposición prioritaria.
 
 
-**Figura 142**
+**Figura 143**
 
 *Monitoreo IoT de la producción*
 
@@ -5893,7 +5909,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de monitoreo (`/production/monitoring`, historias US09 y US44) con la selección del lote, las variables de proceso (temperatura, pH, humedad y densidad) y el gráfico de lecturas recientes generadas por el simulador IoT; las lecturas fuera del rango normal se señalan como anomalías (US11).
 
 
-**Figura 143**
+**Figura 144**
 
 *Gestión de lotes de producción*
 
@@ -5904,7 +5920,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Listado de lotes (`/production/batches`, historias US06 y US07) con la etapa de cada lote, el registro de un lote nuevo y el avance de etapa.
 
 
-**Figura 144**
+**Figura 145**
 
 *Detalle y trazabilidad de un lote*
 
@@ -5916,7 +5932,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 
 
-**Figura 145**
+**Figura 146**
 
 *Inventario*
 
@@ -5927,7 +5943,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de inventario (`/inventory`, historias US12, US14 y US15) con las unidades y el valor del inventario, el stock por producto, su estado (óptimo, bajo o crítico) y el acceso a la configuración del umbral de stock bajo.
 
 
-**Figura 146**
+**Figura 147**
 
 *Ficha de producto con estimación de reposición*
 
@@ -5938,7 +5954,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Ficha del producto (`/inventory/products/:id`, historias US13, US20, US46 y US47) con el historial de movimientos, el registro de movimientos y ajustes, y la estimación de reposición.
 
 
-**Figura 147**
+**Figura 148**
 
 *Pedidos y clientes*
 
@@ -5949,7 +5965,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de pedidos (`/orders`, historias US18 y US19) y de clientes (`/orders/customers`, historias US17 y US49) con sus formularios y el estado de cada pedido.
 
 
-**Figura 148**
+**Figura 149**
 
 *Reposición a proveedores*
 
@@ -5961,7 +5977,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 
 
-**Figura 149**
+**Figura 150**
 
 *Centro de alertas*
 
@@ -5972,7 +5988,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Centro de alertas (`/alerts`, historias US16 y US48) con alertas por anomalía y por stock bajo, y filtros por tipo y estado.
 
 
-**Figura 150**
+**Figura 151**
 
 *Planes y suscripción*
 
@@ -5983,7 +5999,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de planes (`/billing/plans`, historias US03, US40 y US54) con el estado de acceso, los planes Básico (S/ 60), Profesional (S/ 110) y Empresarial (S/ 200) por mes y el historial de pagos.
 
 
-**Figura 151**
+**Figura 152**
 
 *Dashboard del comercializador*
 
@@ -5994,7 +6010,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Dashboard del comercializador (`/dashboard`, historia US05) con indicadores de ventas, pedidos abiertos, stock bajo y productos, el gráfico de movimiento de inventario, los productos de reposición prioritaria y los pedidos recientes.
 
 
-**Figura 152**
+**Figura 153**
 
 *Indicadores históricos*
 
@@ -6008,7 +6024,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server`, que se ejecuta de forma local en desarrollo y se publica en Render como servicio web (`destilatech-api`) para la compilación de producción. En ambos casos los recursos se exponen con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
 
-**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 159).
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 160).
 
 **Tabla 21**
 
@@ -6050,7 +6066,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 1. Creación del proyecto.** En la consola de Firebase se creó el proyecto `destilatech-webapp` con la cuenta del equipo, en el plan Spark (sin costo). No se registró ninguna aplicación (iOS, Android o web) porque Hosting no la requiere, y no se activó Firestore ni Functions.
 
-**Figura 153**
+**Figura 154**
 
 *Proyecto destilatech-webapp en la consola de Firebase*
 
@@ -6062,7 +6078,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 2. Inicialización de Hosting.** Desde la carpeta del proyecto se ejecutaron `firebase login` y `firebase init`. Se eligió la función Hosting, se usó el proyecto existente, se indicó `dist` como directorio público y se aceptó la configuración de aplicación de una sola página (reescribir todas las URL a `/index.html`). No se activaron las compilaciones automáticas con GitHub ni se sobrescribió `dist/index.html`. El asistente generó `firebase.json` y `.firebaserc`.
 
-**Figura 154**
+**Figura 155**
 
 *Inicialización de Firebase Hosting con firebase init*
 
@@ -6086,7 +6102,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 3. Publicación.** Con `dist/` generada por `npm run build`, la configuración se registró en el repositorio con el commit `chore(deploy): add Firebase Hosting configuration` en la rama `main` y se publicó con `npx firebase-tools deploy`. Firebase encontró 58 archivos en `dist`, los subió, finalizó la versión y completó el *release*.
 
-**Figura 155**
+**Figura 156**
 
 *Commit de la configuración y despliegue con firebase deploy*
 
@@ -6098,7 +6114,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 4. Verificación en la consola.** El panel de Hosting muestra la versión actual (`98f9a8`, publicada el 05/10/2026 a las 8:01 p. m.), una versión anterior (`13fbe4`, de las 7:57 p. m.) y los dominios asignados por Firebase: `destilatech-webapp.web.app` y `destilatech-webapp.firebaseapp.com`.
 
-**Figura 156**
+**Figura 157**
 
 *Panel de Hosting en la consola de Firebase*
 
@@ -6112,7 +6128,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 5. Creación del servicio web.** En Render se creó un *Web Service* con el nombre `destilatech-api`, conectado al repositorio `destilatech-webapp` de la organización del curso en GitHub, con entorno Node, la rama `develop`, la región Oregon y una instancia gratuita (0,1 CPU y 512 MB de RAM, USD 0 al mes).
 
-**Figura 157**
+**Figura 158**
 
 *Configuración del servicio web destilatech-api en Render*
 
@@ -6124,7 +6140,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 6. Verificación del servicio.** El proyecto de Render muestra el servicio `destilatech-api` con estado *Deployed*, entorno Node y región Oregon. El panel de despliegues registra el primer despliegue, del commit `chore(config): point production API to json-server hosted on Render`, con estado *Live* y una duración de 34,3 segundos.
 
-**Figura 158**
+**Figura 159**
 
 *Servicio destilatech-api desplegado en Render*
 
@@ -6134,7 +6150,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 *Descripción.* Lista de recursos del entorno Production del proyecto «My project», con el servicio web `destilatech-api` en estado *Deployed*.
 
-**Figura 159**
+**Figura 160**
 
 *Despliegue del Fake API en Render*
 
@@ -6150,7 +6166,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 La aplicación está disponible en la URL pública de Firebase Hosting y carga sus datos desde el Fake API.
 
-**Figura 160**
+**Figura 161**
 
 *Aplicación web desplegada en Firebase Hosting*
 
