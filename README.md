@@ -84,7 +84,7 @@ Proyecto<br>
 | 1.1.5 | 05/10/2026 | Todos los integrantes | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN), a cargo de cada integrante sobre los módulos que desarrolló, y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) |
 | 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
 | 1.2.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por las indicaciones del docente: assumptions redactados como creencias, hypothesis statements con la plantilla del curso, eventos pivote y lenguaje ubicuo en el Big Picture EventStorming, y criterios de separación de *bounded contexts* en el Design-Level EventStorming; Sprint 2 sin el contexto IAM (`main`) |
-| 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por el feedback general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
+| 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por la retroalimentación general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
 | 1.2.3 | 06/10/2026 | Santiago Atanacio, Jairo Mathias | Despliegue de la aplicación web en Firebase Hosting y del Fake API en Render, con la evidencia de despliegue del Sprint 2 (sección 5.2.2.7), enlaces de los videos de navegación, actualización de la configuración de despliegue (sección 5.1.4) y de los datos de la API en producción, y capturas de GitHub Insights del TB1 en la sección Project Report Collaboration Insights (`develop`) |
 | 1.3.0 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Limpieza del informe (marcadores pendientes y numeración de figuras), actualización de la carátula a octubre de 2026 con la nota sobre el retiro de un integrante antes del Sprint 2 y corrección del registro de versiones (`feature/correcciones`) |
 | 1.3.1 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Proceso colaborativo: evidencia de las actividades de documentación, desarrollo, ejecución, pruebas y despliegue por repositorio, con commits de referencia y responsables (`feature/correcciones`) |
@@ -93,6 +93,7 @@ Proyecto<br>
 | 1.3.4 | 28/10/2026 | Condor Sandoval, Jean Pierre | Actualización del Sprint 2 por el retiro de un integrante: asistentes del Sprint Planning 2, retrospectiva, matriz de líderes y colaboradores sin la columna de pruebas y analíticas de colaboración (`feature/correcciones`) |
 | 1.3.5 | 28/10/2026 | Fernandez Seer, Mario Alonso | Student Outcome y perfiles del equipo: Domenack Angeles, Miguel participa solo en el AV1, sin acciones en el TB1, y ajuste de las conclusiones del TB1 (`feature/correcciones`) |
 | 1.3.6 | 28/10/2026 | Fernandez Seer, Mario Alonso | Anexo B Videos de Exposiciones, exigido por el enunciado, con los videos del AV1 y del TB1 (`feature/correcciones`) |
+| 1.3.7 | 28/10/2026 | Condor Sandoval, Jean Pierre | Corrección de terminología según el Anexo E del enunciado: uso de «retroalimentación» y de «proceso de codificación» en el informe (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -1443,7 +1444,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
 
 El análisis se realizó sobre las siete entrevistas registradas en la sección 2.2.2 (tres del segmento Productor y cuatro del segmento Comercializador). Las estadísticas se calcularon en Microsoft Excel con fórmulas (`COUNTIFS`, `AVERAGEIFS`, `MINIFS`, `MAXIFS`, `MEDIAN`) y están disponibles en el libro de trabajo [analisis_entrevistas_destilatech.xlsx](assets/analisis_entrevistas_destilatech.xlsx), que contiene las hojas *Datos*, *Segmento 1 Productor*, *Segmento 2 Comercializador*, *Comparativo* y *Disposición de pago*.
 
-**Metodología de codificación.** Cada resumen se tradujo a variables con tres valores posibles: **Sí** (el entrevistado lo afirmó), **No** (lo negó de forma explícita) y **No registrado** (el tema no aparece en el resumen de esa entrevista). Un «No registrado» no se interpreta como «No»: por eso se informa el porcentaje sobre el total de entrevistados del segmento (menciones) y, en el libro de Excel, también sobre los entrevistados con dato.
+**Proceso de codificación.** Cada resumen se tradujo a variables con tres valores posibles: **Sí** (el entrevistado lo afirmó), **No** (lo negó de forma explícita) y **No registrado** (el tema no aparece en el resumen de esa entrevista). Un «No registrado» no se interpreta como «No»: por eso se informa el porcentaje sobre el total de entrevistados del segmento (menciones) y, en el libro de Excel, también sobre los entrevistados con dato.
 
 **Alcance y limitaciones.** La muestra es pequeña (n = 7) y por conveniencia, de modo que los porcentajes describen a los entrevistados y no permiten inferencia estadística sobre toda la industria del pisco. Con n = 3 en el segmento Productor, cada entrevistado equivale a 33 puntos porcentuales; con n = 4 en el segmento Comercializador, a 25 puntos porcentuales. Las cifras se usan para identificar patrones y orientar decisiones de diseño, no para estimar proporciones poblacionales.
 
@@ -4555,18 +4556,18 @@ Ejemplo recomendado:
 ```html
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Account Settings</title>
-  </head>
-  <body>
-    <main>
-      <h1>Account Settings</h1>
-      <img src="avatar.png" alt="Profile avatar preview">
-      <a href="/comments">All comments</a>
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Settings</title>
+</head>
+<body>
+<main>
+  <h1>Account Settings</h1>
+  <img src="avatar.png" alt="Profile avatar preview">
+  <a href="/comments">All comments</a>
+</main>
+</body>
 </html>
 ```
 
