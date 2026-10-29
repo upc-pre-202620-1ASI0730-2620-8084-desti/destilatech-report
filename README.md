@@ -92,6 +92,7 @@ Proyecto<br>
 | 1.3.3 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 2 reescrito con tareas de ingeniería de 4 a 8 horas, nueva velocidad, horas por integrante y tareas de pruebas funcionales asignadas a quien desarrolló cada módulo (`feature/correcciones`) |
 | 1.3.4 | 28/10/2026 | Condor Sandoval, Jean Pierre | Actualización del Sprint 2 por el retiro de un integrante: asistentes del Sprint Planning 2, retrospectiva, matriz de líderes y colaboradores sin la columna de pruebas y analíticas de colaboración (`feature/correcciones`) |
 | 1.3.5 | 28/10/2026 | Fernandez Seer, Mario Alonso | Student Outcome y perfiles del equipo: Domenack Angeles, Miguel participa solo en el AV1, sin acciones en el TB1, y ajuste de las conclusiones del TB1 (`feature/correcciones`) |
+| 1.3.6 | 28/10/2026 | Fernandez Seer, Mario Alonso | Anexo B Videos de Exposiciones, exigido por el enunciado, con los videos del AV1 y del TB1 (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -4554,18 +4555,18 @@ Ejemplo recomendado:
 ```html
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Account Settings</title>
-</head>
-<body>
-<main>
-  <h1>Account Settings</h1>
-  <img src="avatar.png" alt="Profile avatar preview">
-  <a href="/comments">All comments</a>
-</main>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Settings</title>
+  </head>
+  <body>
+    <main>
+      <h1>Account Settings</h1>
+      <img src="avatar.png" alt="Profile avatar preview">
+      <a href="/comments">All comments</a>
+    </main>
+  </body>
 </html>
 ```
 
@@ -6273,6 +6274,16 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | Carpeta `assets/arquitectura/` | Imágenes de los diagramas C4 exportadas desde Structurizr. |
 | Carpeta `assets/commits/` | Capturas del historial de commits del repositorio del informe (sección 5.2.1.4) y de la aplicación web (sección 5.2.2.4). |
 | Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
+
+
+### Anexo B. Videos de Exposiciones
+
+La siguiente tabla reúne los videos de las exposiciones del proyecto en Microsoft Stream, uno por cada entrega, y se amplía en cada entrega.
+
+| Entrega | Título del video | Enlace |
+| :---: | :--- | :---: |
+| AV1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-av1 | [ENLACE POR COMPLETAR] |
+| TB1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-tb1 | [ENLACE POR COMPLETAR] |
 
 
 ### Anexo C. Video de las entrevistas
