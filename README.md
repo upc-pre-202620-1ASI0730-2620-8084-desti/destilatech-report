@@ -91,6 +91,7 @@ Proyecto<br>
 | 1.3.2 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 1 reescrito con tareas de ingeniería (*Engineering Tasks*) de 4 a 8 horas, nueva velocidad y horas por integrante (`feature/correcciones`) |
 | 1.3.3 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 2 reescrito con tareas de ingeniería de 4 a 8 horas, nueva velocidad, horas por integrante y tareas de pruebas funcionales asignadas a quien desarrolló cada módulo (`feature/correcciones`) |
 | 1.3.4 | 28/10/2026 | Condor Sandoval, Jean Pierre | Actualización del Sprint 2 por el retiro de un integrante: asistentes del Sprint Planning 2, retrospectiva, matriz de líderes y colaboradores sin la columna de pruebas y analíticas de colaboración (`feature/correcciones`) |
+| 1.3.5 | 28/10/2026 | Fernandez Seer, Mario Alonso | Student Outcome y perfiles del equipo: Domenack Angeles, Miguel participa solo en el AV1, sin acciones en el TB1, y ajuste de las conclusiones del TB1 (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -297,7 +298,7 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 16 y el 18 de septiembre de 2026, con la integración de la Pull Request #2 de la rama `feature/product-design`, las secciones de diseño de producto, los diagramas de arquitectura y la revisión de detalles menores.
 
-Para el TB1 no se incluye una captura de commits de Domenack Angeles, Miguel en el informe: su aporte del sprint, las pruebas funcionales de la aplicación web (TK-67 a TK-72), no deja commits (sección 5.2.2.8).
+Para el TB1 no se incluye una captura de commits de Domenack Angeles, Miguel, porque se retiró del equipo después del Sprint 1.
 
 
 # Contenido
@@ -455,11 +456,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Asumí el liderazgo en la verificación de la calidad del entregable mediante la auditoría continua y corrección de errores en la redacción y estructura del informe general. Asimismo, coordiné y estructuré el diseño de la presentación en Canva para la exposición académica del avance, y colaboré estrechamente en el modelado del Capítulo IV, aportando en la elaboración de las guías de estilo, la arquitectura de información y la especificación de los diagramas del sistema.</p>
-<b>TB1</b><p>Lideré las pruebas funcionales de la aplicación web, que abarcan los módulos de Billing, producción, inventario, pedidos, alertas e indicadores, y el cambio de idioma y la navegación por perfil. Los resultados de las pruebas se comunicaron al equipo para corregir los errores antes de la revisión del sprint.</p>
+<p><i>Se retiró del equipo después del Sprint 1; por eso no registra acciones en el TB1.</i></p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>Se logró completar la primera parte del trabajo demostrando un liderazgo distribuido y eficaz. La asignación clara de roles estratégicos y técnicos permitió cumplir los objetivos de investigación, diseño conceptual y despliegue del Sprint 1 en los plazos previstos, manteniendo una comunicación constante y resolviendo impedimentos en equipo.</p>
-<b>TB1</b><p>En el Sprint 2 el liderazgo se distribuyó por módulos: cada integrante lideró uno o más <i>bounded contexts</i> de la aplicación web y un integrante lideró las pruebas. Esta asignación permitió construir en paralelo seis módulos y cerrar las historias de interfaz del sprint.</p>
+<b>TB1</b><p>En el Sprint 2 el liderazgo se distribuyó por módulos: cada uno de los cuatro integrantes lideró uno o más <i>bounded contexts</i> de la aplicación web y probó los módulos que desarrolló. Esta asignación permitió construir en paralelo seis módulos y cerrar las historias de interfaz del sprint.</p>
 </td>
 </tr>
 <tr>
@@ -484,7 +485,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Promoví un ambiente de trabajo transparente y colaborativo al revisar minuciosamente cada sección del informe y compartir retroalimentación oportuna con el equipo para subsanar inconsistencias antes de la entrega final. En la parte de desarrollo, cumplí cabalmente con la tarea asignada de diseño adaptativo (Responsive Design), garantizando que la Landing Page funcionara de manera óptima en dispositivos móviles y de escritorio, además de estructurar el soporte visual en Canva para el equipo.</p>
-<b>TB1</b><p>Cumplí con las tareas de pruebas registradas en el Sprint Backlog 2 y apoyé la verificación de que cada módulo respondiera a los criterios de aceptación antes de cerrar el sprint.</p>
+<p><i>Se retiró del equipo después del Sprint 1; por eso no registra acciones en el TB1.</i></p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>El equipo consolidó un entorno inclusivo y de alta disciplina de trabajo, planificando tareas a través de tableros ágiles y cumpliendo el 100% de las historias asignadas para el primer hito del proyecto. Esto sienta una base sólida para afrontar las siguientes fases de desarrollo de la aplicación web y backend.</p>
@@ -539,6 +540,8 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 | U202418405 | Condor Sandoval, Jean Pierre | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg" alt="Fotografía de Condor Sandoval, Jean Pierre" width="120"><br><b>Figura 17</b><br><i>Fotografía de Condor Sandoval, Jean Pierre</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Condor Sandoval, Jean Pierre del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requisitos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y enfoques de desarrollo. |
 | U202322404 | Domenack Angeles, Miguel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png" alt="Fotografía de Domenack Angeles, Miguel" width="120"><br><b>Figura 18</b><br><i>Fotografía de Domenack Angeles, Miguel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Domenack Angeles, Miguel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. |
 
+
+*Nota.* Domenack Angeles, Miguel participó en el proyecto hasta el Sprint 1 (AV1) y se retiró del equipo antes del Sprint 2; desde entonces el equipo está conformado por cuatro integrantes.
 
 ### 1.2. Solution Profile
 
@@ -4551,18 +4554,18 @@ Ejemplo recomendado:
 ```html
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Account Settings</title>
-  </head>
-  <body>
-    <main>
-      <h1>Account Settings</h1>
-      <img src="avatar.png" alt="Profile avatar preview">
-      <a href="/comments">All comments</a>
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Settings</title>
+</head>
+<body>
+<main>
+  <h1>Account Settings</h1>
+  <img src="avatar.png" alt="Profile avatar preview">
+  <a href="/comments">All comments</a>
+</main>
+</body>
 </html>
 ```
 
