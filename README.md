@@ -88,6 +88,7 @@ Proyecto<br>
 | 1.2.3 | 06/10/2026 | Santiago Atanacio, Jairo Mathias | Despliegue de la aplicación web en Firebase Hosting y del Fake API en Render, con la evidencia de despliegue del Sprint 2 (sección 5.2.2.7), enlaces de los videos de navegación, actualización de la configuración de despliegue (sección 5.1.4) y de los datos de la API en producción, y capturas de GitHub Insights del TB1 en la sección Project Report Collaboration Insights (`develop`) |
 | 1.3.0 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Limpieza del informe (marcadores pendientes y numeración de figuras), actualización de la carátula a octubre de 2026 con la nota sobre el retiro de un integrante antes del Sprint 2 y corrección del registro de versiones (`feature/correcciones`) |
 | 1.3.1 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Proceso colaborativo: evidencia de las actividades de documentación, desarrollo, ejecución, pruebas y despliegue por repositorio, con commits de referencia y responsables (`feature/correcciones`) |
+| 1.3.2 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 1 reescrito con tareas de ingeniería (*Engineering Tasks*) de 4 a 8 horas, nueva velocidad y horas por integrante (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -4819,7 +4820,7 @@ El Sprint 1 se dedicó a implementar y publicar la primera versión de la landin
 | **Sprint -1 Review Summary** | No aplica: es el primer sprint. |
 | **Sprint -1 Retrospective Summary** | No aplica: es el primer sprint. |
 | **Sprint 1 Goal** | *Our focus is on* que los productores de pisco y los pequeños comercializadores puedan conocer qué es Destilatech, qué beneficios les ofrece, cuánto cuestan sus planes y cómo comenzar la prueba gratuita de 14 días, desde su teléfono o su computadora. *We believe it delivers* claridad sobre la propuesta de valor y confianza para evaluar la plataforma antes de registrarse, sin necesidad de contactar a un asesor. *This will be confirmed when* un visitante de cada segmento, desde su teléfono o su computadora, pueda explicar qué hace Destilatech, identificar el plan que le corresponde y llegar al registro de la prueba gratuita. |
-| **Sprint 1 Velocity** | 20 horas de trabajo planificadas por el equipo. |
+| **Sprint 1 Velocity** | 72 horas de trabajo planificadas por el equipo. |
 | **Sum of Story Points** | 18 Story Points (US30 a US37). |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
@@ -4850,7 +4851,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 *Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
 
-*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en cuatro columnas. To Do e In Process están vacías (0 tarjetas); To Review contiene la tarjeta «Mock-up móvil de la landing page» (1 tarjeta) y Done concentra las 8 tarjetas de las historias de usuario US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación completada (1/1).
+*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en cuatro columnas. To Do e In Process están vacías (0 tarjetas); To Review contiene la tarjeta «Mock-up móvil de la landing page» (1 tarjeta) y Done concentra las 8 tarjetas de las historias de usuario US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación de tareas de ingeniería.
 
 
 **Tabla 15**
@@ -4859,24 +4860,26 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Markup and Styles | Estructura HTML y estilos CSS del Header con el logotipo | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US30** | Navegar desde el encabezado (Header) | TK-02 | Header Navigation | Enlaces de navegación hacia las secciones de la página | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US31** | Entender qué es Destilatech (sección Description) | TK-03 | Description Markup and Styles | Estructura HTML y estilos CSS de la sección Description | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US31** | Entender qué es Destilatech (sección Description) | TK-04 | Description Content | Textos que explican qué es Destilatech | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US32** | Conocer los beneficios principales (sección Goals) | TK-05 | Goals Markup and Styles | Estructura HTML y estilos CSS de la sección Goals | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US32** | Conocer los beneficios principales (sección Goals) | TK-06 | Goals Content | Contenido de los beneficios principales de la plataforma | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US33** | Comparar planes de suscripción (sección Pricing) | TK-07 | Pricing Cards Layout | Tarjetas de los planes de suscripción y sus estilos | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US33** | Comparar planes de suscripción (sección Pricing) | TK-08 | Free Trial Highlight | Destacado de la prueba gratuita de 14 días y llamada a la acción | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US34** | Ver cifras del sector (sección Impact) | TK-09 | Impact Layout | Estructura y estilos de la sección Impact | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US34** | Ver cifras del sector (sección Impact) | TK-10 | Impact Figures | Cifras del sector pisquero peruano | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-11 | Platform Features Layout | Estructura y estilos de la sección Platform Features | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-12 | Features by Segment Content | Funcionalidades presentadas por segmento objetivo | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-13 | Footer Layout | Estructura y estilos de la sección Footer | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
-| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-14 | Footer Links and Contact | Datos de contacto y enlaces del pie de página | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
+| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Markup, Styles & Branding | Estructura HTML y estilos CSS del Header con el logotipo, adaptados a pantallas de escritorio y móviles. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US30** | Navegar desde el encabezado (Header) | TK-02 | Header Navigation & Anchor Links | Enlaces de navegación hacia las secciones de la página con desplazamiento suave y menú desplegable para móvil. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-03 | Description Section Layout | Estructura HTML y estilos CSS de la sección Description, con las tarjetas de segmento. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-04 | Description Content & Copy | Textos que explican qué es Destilatech para cada segmento, en inglés y en español. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-05 | Goals Section Layout | Estructura HTML y estilos CSS de la sección Goals con las tarjetas de beneficios. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-06 | Goals Content & Benefit Cards | Contenido de los beneficios principales de la plataforma, con sus iconos, en inglés y en español. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-07 | Pricing Cards Layout | Tarjetas de los tres planes de suscripción, con precios y características, y sus estilos. Incluye la revisión del código y la verificación en navegador. | 6 | Fernandez Seer, Mario Alonso | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-08 | Free Trial Highlight & CTA | Destacado de la prueba gratuita de 14 días y llamadas a la acción hacia la aplicación web. Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-09 | Impact Section Layout | Estructura y estilos de la sección Impact con la imagen de fondo. Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-10 | Impact Figures & Sources | Cifras del sector pisquero peruano y cita de la fuente (Ministerio de la Producción, 2025). Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-11 | Platform Features Layout & Tabs | Estructura, estilos y pestañas accesibles (roles ARIA) de la sección Platform Features. Incluye la revisión del código y la verificación en navegador. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-12 | Features by Segment Content | Funcionalidades presentadas por segmento objetivo (productor y comercializador). Incluye la revisión del código y la verificación en navegador. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-13 | Footer Layout | Estructura y estilos de la sección Footer con la marca y las columnas de navegación. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-14 | Footer Links & Legal Pages | Enlaces del pie de página y páginas de términos y condiciones y de política de privacidad. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design Implementation | Implementación de la adaptabilidad móvil de todas las secciones con puntos de quiebre para teléfono, tableta y escritorio. Incluye la revisión del código y la verificación en navegador. | 8 | Domenack Angeles, Miguel | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mobile Mock-up of the Landing Page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil. Incluye la revisión del diseño con el equipo. | 4 | Fernandez Seer, Mario Alonso | To Review |
 
-**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 97) se encuentra en la columna To Review, pendiente de revisión por el equipo.
+**Horas por integrante.** El Sprint Backlog 1 suma 72 horas: Santiago Atanacio, Jairo Mathias, 16; Condor Sandoval, Jean Pierre, 16; Fernandez Seer, Mario Alonso, 22; Almandroz Carbajal, Pierina Marysabel, 10; Domenack Angeles, Miguel, 8.
+
+**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 98) se encuentra en la columna To Review, pendiente de revisión por el equipo.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
