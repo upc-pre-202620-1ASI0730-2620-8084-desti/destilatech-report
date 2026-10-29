@@ -51,9 +51,11 @@ Proyecto<br>
   </tbody>
 </table> 
 
+<i>Domenack Angeles, Miguel participó hasta el Sprint 1 (AV1) y se retiró del equipo antes del Sprint 2.</i><br><br>
+
 <strong>Período 202620</strong><br><br>
 
-<strong>Septiembre 2026</strong>
+<strong>Octubre 2026</strong>
 </div>
 <div style="page-break-after: always;"></div>
 
@@ -79,11 +81,20 @@ Proyecto<br>
 | 1.1.2 | 05/10/2026 | Condor Sandoval, Jean Pierre | Módulo Billing (planes, suscripción, pago e historial) y aviso de fin de la prueba gratuita de la aplicación web, y documentación de sus historias en el Sprint Backlog 2 (`feature/billing`) |
 | 1.1.3 | 05/10/2026 | Almandroz Carbajal, Pierina Marysabel | Módulos Inventory & Stock, Alerts & Notifications y Analytics & Estimations (dashboards e indicadores históricos), y su documentación en el Sprint Backlog 2 (`feature/inventory-stock`, `feature/alerts-notifications`, `feature/analytics-estimations`) |
 | 1.1.4 | 05/10/2026 | Fernandez Seer, Mario Alonso | Módulo Production & Monitoring (lotes, trazabilidad y monitoreo IoT simulado) y su documentación en el Sprint Backlog 2 (`feature/production-monitoring`) |
-| 1.1.5 | 05/10/2026 | Domenack Angeles, Miguel | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN) y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) |
+| 1.1.5 | 05/10/2026 | Todos los integrantes | Pruebas funcionales de la aplicación web (Billing, producción, inventario, pedidos, alertas e indicadores, e idioma ES / EN), a cargo de cada integrante sobre los módulos que desarrolló, y registro de las tareas de pruebas en el Sprint Backlog 2 (`main`) |
 | 1.2.0 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Documentación del Sprint 2 (5.2.2): Sprint Planning, matriz de líderes, Sprint Backlog con 29 historias, 187 commits y 12 capturas de la aplicación web, exclusión del contexto IAM del alcance, recursos del Fake API y configuración de despliegue (`main`) |
 | 1.2.1 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por las indicaciones del docente: assumptions redactados como creencias, hypothesis statements con la plantilla del curso, eventos pivote y lenguaje ubicuo en el Big Picture EventStorming, y criterios de separación de *bounded contexts* en el Design-Level EventStorming; Sprint 2 sin el contexto IAM (`main`) |
-| 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por el feedback general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
+| 1.2.2 | 05/10/2026 | Santiago Atanacio, Jairo Mathias | Ajustes por la retroalimentación general del docente: Big Picture EventStorming rehecho como flujo *as-is* con sustento en las entrevistas, trazabilidad de las User Personas, diagramas C4 corregidos (SPA en dos contenedores, API como único contenedor y componentes de la SPA por *bounded context*), criterios de aceptación y tareas de los Sprint Backlog 1 y 2 (mínimo dos por historia), capturas de la aplicación web en inglés, orden del Product Backlog por prioridad y Sprint Goals orientados al valor para los segmentos |
 | 1.2.3 | 06/10/2026 | Santiago Atanacio, Jairo Mathias | Despliegue de la aplicación web en Firebase Hosting y del Fake API en Render, con la evidencia de despliegue del Sprint 2 (sección 5.2.2.7), enlaces de los videos de navegación, actualización de la configuración de despliegue (sección 5.1.4) y de los datos de la API en producción, y capturas de GitHub Insights del TB1 en la sección Project Report Collaboration Insights (`develop`) |
+| 1.3.0 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Limpieza del informe (marcadores pendientes y numeración de figuras), actualización de la carátula a octubre de 2026 con la nota sobre el retiro de un integrante antes del Sprint 2 y corrección del registro de versiones (`feature/correcciones`) |
+| 1.3.1 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Proceso colaborativo: evidencia de las actividades de documentación, desarrollo, ejecución, pruebas y despliegue por repositorio, con commits de referencia y responsables (`feature/correcciones`) |
+| 1.3.2 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 1 reescrito con tareas de ingeniería (*Engineering Tasks*) de 4 a 8 horas, nueva velocidad y horas por integrante (`feature/correcciones`) |
+| 1.3.3 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 2 reescrito con tareas de ingeniería de 4 a 8 horas, nueva velocidad, horas por integrante y tareas de pruebas funcionales asignadas a quien desarrolló cada módulo (`feature/correcciones`) |
+| 1.3.4 | 28/10/2026 | Condor Sandoval, Jean Pierre | Actualización del Sprint 2 por el retiro de un integrante: asistentes del Sprint Planning 2, retrospectiva, matriz de líderes y colaboradores sin la columna de pruebas y analíticas de colaboración (`feature/correcciones`) |
+| 1.3.5 | 28/10/2026 | Fernandez Seer, Mario Alonso | Student Outcome y perfiles del equipo: Domenack Angeles, Miguel participa solo en el AV1, sin acciones en el TB1, y ajuste de las conclusiones del TB1 (`feature/correcciones`) |
+| 1.3.6 | 28/10/2026 | Fernandez Seer, Mario Alonso | Anexo B Videos de Exposiciones, exigido por el enunciado, con los videos del AV1 y del TB1 (`feature/correcciones`) |
+| 1.3.7 | 28/10/2026 | Condor Sandoval, Jean Pierre | Corrección de terminología según el Anexo E del enunciado: uso de «retroalimentación» y de «proceso de codificación» en el informe (`feature/correcciones`) |
+| 1.3.8 | 29/10/2026 | Santiago Atanacio, Jairo Mathias | Evidencia en Trello: URL pública del Product Backlog con su captura (Figura 40), capturas actualizadas de los tableros de los Sprints 1 y 2 con las tareas de ingeniería, descripciones de los tableros corregidas y renumeración de las figuras posteriores (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -106,7 +117,25 @@ A continuación, se detallan los repositorios utilizados a lo largo del proyecto
 
 ### Desarrollo de Actividades
 
-A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicación constante utilizando canales de voz en Discord para las reuniones virtuales y coordinaciones generales. La carga de trabajo del informe y del desarrollo del software se distribuyó equitativamente con plazos adecuados para cada iteración, en este caso AV1. Finalmente, las sesiones presenciales fueron clave para obtener retroalimentación del docente, resolver impedimentos técnicos y optimizar el avance frente a los horarios limitados del grupo.
+A lo largo del ciclo de vida del proyecto, el equipo mantuvo una comunicación constante mediante canales de voz en Discord para las reuniones virtuales y las coordinaciones generales, y mediante WhatsApp para los avisos cotidianos. La carga de trabajo del informe y del desarrollo del software se distribuyó de forma equitativa, con plazos adecuados para cada iteración (AV1 y TB1). Las sesiones presenciales fueron clave para recibir la retroalimentación del docente, resolver impedimentos técnicos y optimizar el avance frente a los horarios limitados del grupo. Un integrante, Domenack Angeles, Miguel, se retiró del equipo después del Sprint 1; desde el Sprint 2 el equipo está conformado por cuatro integrantes y las tareas se redistribuyeron entre ellos.
+
+El trabajo siguió el flujo GitFlow descrito en la sección 5.1.2: una rama `feature/*` por actividad, integración a `develop` mediante Pull Request y mensajes de commit con el formato Conventional Commits desde el Sprint 2. La Tabla 1 resume, por actividad del ciclo de vida (documentación, desarrollo, ejecución, pruebas y despliegue), dónde se registró la evidencia y quiénes la produjeron.
+
+**Tabla 1**
+
+*Evidencia de las actividades del ciclo de vida por repositorio*
+
+| Actividad | Qué se hizo | Repositorio y ramas | Commits de referencia | Responsables | Sección del informe |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Documentación | Redacción del informe: capítulos I a V, Sprint Planning, Sprint Backlogs, evidencias y anexos. Cada capítulo se trabajó en una rama `feature/*` y se integró a `develop` mediante Pull Request. | `destilatech-report`: `feature/product-design`, `feature/sprint2`, `develop`, `main` | [`62f8e46`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/62f8e46) (lenguaje ubicuo), [`69897f8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/69897f8) (secciones 4.6 a 4.8), [`b3c44df`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b3c44df) (Sprint Backlog 2), [`0094f16`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/0094f16) (evidencia de desarrollo), [`b811839`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/b811839) (evidencia de ejecución), [`8c09a2e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/8c09a2e) (analíticos del Sprint 2) | Los cuatro integrantes del equipo; en el AV1 también Domenack Angeles, Miguel (revisión de calidad y perfiles, `bebfabb`, `265d16a`) | Capítulos I a V y Anexos |
+| Desarrollo de la Landing Page | Implementación de las secciones de la landing page (estructura, estilos, internacionalización, pestañas de funcionalidades, adaptabilidad móvil, testimonios y pie de página). | `destilatech-website`: `feature/landing-structure`, `feature/i18n`, `feature/responsive-design`, `feature/platform-features-tabs`, `develop`, `main` | [`5d16532`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/5d16532) (estructura), [`5be25df`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/5be25df) (adaptabilidad móvil), [`798b3b1`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/798b3b1) (i18n), [`ca54689`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/ca54689) (inglés como idioma por defecto), [`17fd993`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/17fd993) (testimonios), [`c636199`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/c636199) (pie de página) | Santiago Atanacio (Jairo), Fernandez Seer (Mario), Almandroz Carbajal (Pierina), Condor Sandoval (Jean Pierre) | 5.2.1.3 y 5.2.1.4 |
+| Desarrollo de la Web Application | Implementación de la aplicación web por *bounded context*: Shared Kernel, Fake API, internacionalización, Billing, Production & Monitoring, Inventory & Stock, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. | `destilatech-webapp`: `feature/shared`, `feature/fake-api`, `feature/locales`, `feature/billing`, `feature/production-monitoring`, `feature/inventory-stock`, `feature/orders-replenishment`, `feature/alerts-notifications`, `feature/analytics-estimations`, `develop` | [`2eab4bb`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/2eab4bb) (Shared Kernel), [`c3d927d`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/c3d927d) (Fake API), [`58bd501`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/58bd501) (Billing), [`c8be6ef`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/c8be6ef) (producción), [`353f6c5`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/353f6c5) (inventario), [`7312132`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/7312132) (pedidos), [`a624859`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/a624859) (alertas), [`c7eb23e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/c7eb23e) (analíticos) | Santiago Atanacio (Jairo), Fernandez Seer (Mario), Almandroz Carbajal (Pierina), Condor Sandoval (Jean Pierre) | 5.2.2.3 y 5.2.2.4 |
+| Desarrollo de los Web Services | Configuración inicial de la API en ASP.NET Core: paquetes de OpenAPI, Entity Framework Core y MySQL, contexto de base de datos, unidad de trabajo, repositorio base, convenciones de nombres y patrón `Result` del *Shared Kernel*. Se retoma en el Sprint 3. | `destilatech-platform`: `feature/project-configuration`, `feature/shared`, `develop` | [`13fc175`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/13fc175) (paquetes), [`49c4f98`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/49c4f98) (`AppDbContext`), [`f9a9a88`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/f9a9a88) (unidad de trabajo), [`3cbe420`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/3cbe420) (patrón `Result`), [`8882a2e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/8882a2e) (integración a `develop`) | Santiago Atanacio (Jairo) | Sprint 3 |
+| Ejecución | Ejecución local de la aplicación con el Fake API (`json-server`) y registro de capturas y videos de navegación de la landing page y de la aplicación web, con los dos perfiles de demostración. | `destilatech-report`: `assets/webapp/`, enlaces de video del Anexo B | [`3bc139f`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3bc139f) (evidencia de ejecución del Sprint 2), [`6028978`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/6028978) (enlaces de los videos) | Fernandez Seer (Mario), Santiago Atanacio (Jairo) | 5.2.1.5 y 5.2.2.5 |
+| Pruebas funcionales | Pruebas manuales de los módulos de la aplicación web según los criterios de aceptación; los defectos se comunicaron al equipo por Discord antes de la revisión del sprint. | Sin commits: el resultado se refleja en las tareas de pruebas del Sprint Backlog 2 | No aplica (las tareas de pruebas no generan commits; desde el Sprint 3 los casos de prueba se registran en el repositorio) | Cada integrante, sobre los módulos que desarrolló | 5.2.2.3 |
+| Despliegue | Publicación de la landing page en GitHub Pages, de la aplicación web en Firebase Hosting y del Fake API en Render. | `destilatech-website` (`main`), `destilatech-webapp` (`develop`, `main`) | [`34c7c91`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/34c7c91) (configuración de Firebase), [`ed3b72a`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/ed3b72a) (API de producción en Render), [`000428e`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/000428e) (`firebase.json`), [`3863ecc`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/commit/3863ecc) (documentación del despliegue) | Santiago Atanacio (Jairo) | 5.1.4, 5.2.1.7 y 5.2.2.7 |
+
+*Nota.* Elaboración propia a partir del historial de commits de los cuatro repositorios de la organización (2026). Los identificadores enlazan al commit en GitHub.
 
 ---
 
@@ -272,7 +301,7 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 *Descripción.* Historial de commits del 16 y el 18 de septiembre de 2026, con la integración de la Pull Request #2 de la rama `feature/product-design`, las secciones de diseño de producto, los diagramas de arquitectura y la revisión de detalles menores.
 
-Para el TB1 no se incluye una captura de commits de Domenack Angeles, Miguel en el informe: su aporte del sprint, las pruebas funcionales de la aplicación web (TK-76 a TK-81), no deja commits (sección 5.2.2.8).
+Para el TB1 no se incluye una captura de commits de Domenack Angeles, Miguel, porque se retiró del equipo después del Sprint 1.
 
 
 # Contenido
@@ -414,7 +443,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <h3>Santiago Atanacio, Jairo Mathias</h3>
 <b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de secciones como Lean UX Canvas, análisis competitivo, la implementación del Big Picture Event Storming, elaboración de user stories y product backlog, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
 <b>TB1</b><p>Lideré la planificación del Sprint 2 y la base técnica de la aplicación web: el Shared Kernel, el Fake API, la internacionalización y la estructura de ramas por <i>bounded context</i>, que permitió que cada integrante trabajara su módulo sin interferir con los demás. También coordiné la integración de los módulos y la documentación del Sprint 2 en el informe.</p>
-  
+
 <h3>Fernandez Seer, Mario Alonso</h3>
 <b>AV1</b><p>Como líder del equipo, coordiné la definición de la propuesta de valor, los segmentos objetivo y el alcance funcional de Destilatech, procurando que las decisiones del proyecto respondieran a las necesidades identificadas en el sector pisquero. Realicé y documenté la Entrevista #2 del Segmento 1 a un productor de Pisco Don Ítalo, cuyos hallazgos permitieron validar necesidades relacionadas con el monitoreo de variables, la gestión de lotes y el control de inventario. Asimismo, lideré la elaboración de los wireframes, wireflows, mock-ups, user flows y el prototipo interactivo de la aplicación web, alineando estos artefactos con los requisitos y compartiéndolos con el equipo para su integración en el informe.</p>
 <b>TB1</b><p>Lideré el módulo de producción y monitoreo: el registro de lotes, el avance de etapas, el detalle y la trazabilidad del lote, y el monitoreo de variables con el simulador de lecturas IoT y la detección de anomalías. Coordiné con el equipo las reglas que conectan producción con alertas e inventario.</p>
@@ -430,11 +459,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Asumí el liderazgo en la verificación de la calidad del entregable mediante la auditoría continua y corrección de errores en la redacción y estructura del informe general. Asimismo, coordiné y estructuré el diseño de la presentación en Canva para la exposición académica del avance, y colaboré estrechamente en el modelado del Capítulo IV, aportando en la elaboración de las guías de estilo, la arquitectura de información y la especificación de los diagramas del sistema.</p>
-<b>TB1</b><p>Lideré las pruebas funcionales de la aplicación web, que abarcan los módulos de Billing, producción, inventario, pedidos, alertas e indicadores, y el cambio de idioma y la navegación por perfil. Los resultados de las pruebas se comunicaron al equipo para corregir los errores antes de la revisión del sprint.</p>
+<p><i>Se retiró del equipo después del Sprint 1; por eso no registra acciones en el TB1.</i></p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>Se logró completar la primera parte del trabajo demostrando un liderazgo distribuido y eficaz. La asignación clara de roles estratégicos y técnicos permitió cumplir los objetivos de investigación, diseño conceptual y despliegue del Sprint 1 en los plazos previstos, manteniendo una comunicación constante y resolviendo impedimentos en equipo.</p>
-<b>TB1</b><p>En el Sprint 2 el liderazgo se distribuyó por módulos: cada integrante lideró uno o más <i>bounded contexts</i> de la aplicación web y un integrante lideró las pruebas. Esta asignación permitió construir en paralelo seis módulos y cerrar las historias de interfaz del sprint.</p>
+<b>TB1</b><p>En el Sprint 2 el liderazgo se distribuyó por módulos: cada uno de los cuatro integrantes lideró uno o más <i>bounded contexts</i> de la aplicación web y probó los módulos que desarrolló. Esta asignación permitió construir en paralelo seis módulos y cerrar las historias de interfaz del sprint.</p>
 </td>
 </tr>
 <tr>
@@ -459,7 +488,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 <h3>Domenack Angeles, Miguel</h3>
 <b>AV1</b><p>Promoví un ambiente de trabajo transparente y colaborativo al revisar minuciosamente cada sección del informe y compartir retroalimentación oportuna con el equipo para subsanar inconsistencias antes de la entrega final. En la parte de desarrollo, cumplí cabalmente con la tarea asignada de diseño adaptativo (Responsive Design), garantizando que la Landing Page funcionara de manera óptima en dispositivos móviles y de escritorio, además de estructurar el soporte visual en Canva para el equipo.</p>
-<b>TB1</b><p>Cumplí con las tareas de pruebas registradas en el Sprint Backlog 2 y apoyé la verificación de que cada módulo respondiera a los criterios de aceptación antes de cerrar el sprint.</p>
+<p><i>Se retiró del equipo después del Sprint 1; por eso no registra acciones en el TB1.</i></p>
 </td>
 <td colspan="3" align="justify">
 <b>AV1</b><p>El equipo consolidó un entorno inclusivo y de alta disciplina de trabajo, planificando tareas a través de tableros ágiles y cumpliendo el 100% de las historias asignadas para el primer hito del proyecto. Esto sienta una base sólida para afrontar las siguientes fases de desarrollo de la aplicación web y backend.</p>
@@ -514,6 +543,8 @@ La solución se enfocará inicialmente en el pisco con la finalidad de mantener 
 | U202418405 | Condor Sandoval, Jean Pierre | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/jean-pierre.jpeg" alt="Fotografía de Condor Sandoval, Jean Pierre" width="120"><br><b>Figura 17</b><br><i>Fotografía de Condor Sandoval, Jean Pierre</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Condor Sandoval, Jean Pierre del equipo FuturosSeniors. | Estudiante de Ingeniería de Software con conocimientos en desarrollo de software, programación, análisis de requisitos y diseño de soluciones tecnológicas. Cuenta con experiencia académica en el desarrollo de aplicaciones y gestión de proyectos de software. Se caracteriza por su capacidad para resolver problemas, trabajar en equipo y adaptarse a diferentes tecnologías y enfoques de desarrollo. |
 | U202322404 | Domenack Angeles, Miguel | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-front-matter/miguel.png" alt="Fotografía de Domenack Angeles, Miguel" width="120"><br><b>Figura 18</b><br><i>Fotografía de Domenack Angeles, Miguel</i><br><i>Nota.</i> Fotografía proporcionada por el integrante.<br><i>Descripción.</i> Retrato del integrante Domenack Angeles, Miguel del equipo FuturosSeniors. | Soy estudiante de Ingeniería de Software y actualmente estoy cursando el 6to ciclo en la Universidad de Ciencias Aplicadas. Tengo conocimientos en lenguaje de programación de Python y experiencia con una gran cantidad de grupos de trabajo. Me presento como una persona que desea aprender todo lo relacionado a la programación, redes móviles y la tecnología del futuro, mientras me esfuerzo tanto de manera individual como con mis compañeros de grupos al realizar trabajos que pidan disciplina organización y resiliencia. |
 
+
+*Nota.* Domenack Angeles, Miguel participó en el proyecto hasta el Sprint 1 (AV1) y se retiró del equipo antes del Sprint 2; desde entonces el equipo está conformado por cuatro integrantes.
 
 ### 1.2. Solution Profile
 
@@ -1414,7 +1445,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
 
 El análisis se realizó sobre las siete entrevistas registradas en la sección 2.2.2 (tres del segmento Productor y cuatro del segmento Comercializador). Las estadísticas se calcularon en Microsoft Excel con fórmulas (`COUNTIFS`, `AVERAGEIFS`, `MINIFS`, `MAXIFS`, `MEDIAN`) y están disponibles en el libro de trabajo [analisis_entrevistas_destilatech.xlsx](assets/analisis_entrevistas_destilatech.xlsx), que contiene las hojas *Datos*, *Segmento 1 Productor*, *Segmento 2 Comercializador*, *Comparativo* y *Disposición de pago*.
 
-**Metodología de codificación.** Cada resumen se tradujo a variables con tres valores posibles: **Sí** (el entrevistado lo afirmó), **No** (lo negó de forma explícita) y **No registrado** (el tema no aparece en el resumen de esa entrevista). Un «No registrado» no se interpreta como «No»: por eso se informa el porcentaje sobre el total de entrevistados del segmento (menciones) y, en el libro de Excel, también sobre los entrevistados con dato.
+**Proceso de codificación.** Cada resumen se tradujo a variables con tres valores posibles: **Sí** (el entrevistado lo afirmó), **No** (lo negó de forma explícita) y **No registrado** (el tema no aparece en el resumen de esa entrevista). Un «No registrado» no se interpreta como «No»: por eso se informa el porcentaje sobre el total de entrevistados del segmento (menciones) y, en el libro de Excel, también sobre los entrevistados con dato.
 
 **Alcance y limitaciones.** La muestra es pequeña (n = 7) y por conveniencia, de modo que los porcentajes describen a los entrevistados y no permiten inferencia estadística sobre toda la industria del pisco. Con n = 3 en el segmento Productor, cada entrevistado equivale a 33 puntos porcentuales; con n = 4 en el segmento Comercializador, a 25 puntos porcentuales. Las cifras se usan para identificar patrones y orientar decisiones de diseño, no para estimar proporciones poblacionales.
 
@@ -1582,7 +1613,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Ricardo Donayre como arquetipo del segmento Productor: administrador de una bodega familiar de pisco, de 33 años (promedio de edad de los tres productores entrevistados), que gestiona el negocio desde su sede comercial en Lima mientras la producción se realiza en un valle pisquero. Sus objetivos son monitorear a distancia las variables críticas del proceso y centralizar el control de lotes e inventario; sus frustraciones son enterarse tarde de una temperatura anómala, los viajes a la bodega y los descuadres entre el stock real y Excel. Usa el smartphone como dispositivo principal, Excel, WhatsApp, Instagram y Facebook. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
+*Descripción.* La ficha presenta a Ricardo Donayre como arquetipo del segmento Productor: administrador de una bodega familiar de pisco, de 33 años (promedio de edad de los tres productores entrevistados), que gestiona el negocio desde su sede comercial en Lima mientras la producción se realiza en un valle pisquero. Sus objetivos son monitorear a distancia las variables críticas del proceso y centralizar el control de lotes e inventario; sus frustraciones son enterarse tarde de una temperatura anómala, los viajes a la bodega y los descuadres entre el stock real y Excel. Usa el smartphone como dispositivo principal, Excel, WhatsApp, Instagram y Facebook. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente.
 
 
 **Segmento 2: Comercializador**
@@ -1595,7 +1626,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 *Nota.* Elaboración propia en UXPressia (2026).
 
-*Descripción.* La ficha presenta a Carlos Mendoza como arquetipo del segmento Comercializador: administrador de una licorería o bodega de Lima, de 29 años (promedio de edad de los cuatro comercializadores entrevistados), que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son saber cuánto stock tiene sin revisar el almacén, evitar quiebres de stock y recibir una alerta para reponer a tiempo; sus frustraciones son quedarse sin productos cuando el cliente los pide, los sistemas complejos que abandonó y la reposición decidida por intuición. Usa el smartphone como dispositivo principal, WhatsApp y Excel. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente. [CONFIRMAR: actualizar la ficha de UXPressia para que coincida con esta descripción y la tabla de trazabilidad, y reemplazar la captura].
+*Descripción.* La ficha presenta a Carlos Mendoza como arquetipo del segmento Comercializador: administrador de una licorería o bodega de Lima, de 29 años (promedio de edad de los cuatro comercializadores entrevistados), que maneja entre 80 y 150 productos y controla su inventario con cuaderno y Excel. Sus objetivos son saber cuánto stock tiene sin revisar el almacén, evitar quiebres de stock y recibir una alerta para reponer a tiempo; sus frustraciones son quedarse sin productos cuando el cliente los pide, los sistemas complejos que abandonó y la reposición decidida por intuición. Usa el smartphone como dispositivo principal, WhatsApp y Excel. Cada atributo se respalda en las entrevistas según la tabla de trazabilidad siguiente.
 
 **Trazabilidad de las User Personas con las entrevistas.** La User Persona es un arquetipo: solo incluye los atributos que comparte la mayoría de los entrevistados de su segmento, tal como se registró en la sección 2.2.2 y se cuantificó en la sección 2.2.3. Los atributos que solo mencionó una persona, o que no se preguntaron, no se incluyen en la ficha; en particular, no se asignan estado civil, marca de dispositivo, sistema operativo, navegador ni tamaño de mercado, porque las entrevistas no los registran para la mayoría de los entrevistados.
 
@@ -2072,15 +2103,17 @@ Los Story Points los asigna el equipo de desarrollo, no el Product Owner, y expr
 
 Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page) y suman 18 Story Points.
 
-**Herramienta de gestión del backlog:** [URL pública del tablero del Product Backlog: por completar]
+**Product Backlog público:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (lista «Product Backlog» del tablero «Destilatech - App Web», con las 65 historias ordenadas por prioridad de negocio)
 
 **Figura 40**
 
-*Product Backlog de Destilatech en la herramienta de gestión*
+*Product Backlog en Trello*
 
-> **[CONFIRMAR: imagen pendiente]** Captura del tablero con las historias ordenadas por prioridad y sus Story Points.
+<p align="center"><img src="assets/md-images-front-matter/trello-product-backlog.png" alt="Product Backlog en Trello" width="560"></p>
 
-*Nota.* Elaboración propia en la herramienta de gestión del backlog (2026).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+
+*Descripción.* La lista «Product Backlog» contiene las 65 historias de la tabla siguiente, numeradas según su orden de prioridad; la captura muestra las primeras seis (US30 a US35). Cada tarjeta indica el título de la historia con sus Story Points y la descripción en formato de historia de usuario. A su derecha se ven las listas To Do, In Process y To Review, vacías (0 tarjetas).
 
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
@@ -2185,7 +2218,7 @@ Se utilizan dos familias de la biblioteca Google Fonts. **Poppins** se emplea en
 
 La siguiente tabla resume las especificaciones tipográficas para escritorio. Las especificaciones para móvil se detallan en la sección 4.1.3.
 
-**Tabla 1**
+**Tabla 2**
 
 *Especificaciones tipográficas de Destilatech para escritorio*
 
@@ -2203,7 +2236,7 @@ La siguiente tabla resume las especificaciones tipográficas para escritorio. La
 
 La paleta se definió a partir de los materiales y procesos del pisco: el cobre del alambique, el ámbar del destilado y el crema del fondo de barrica. Los verdes y dorados de estado se reservan para comunicar el estado operativo (normal, advertencia). La siguiente tabla lista cada color con su variable CSS.
 
-**Tabla 2**
+**Tabla 3**
 
 *Paleta de colores de Destilatech*
 
@@ -2235,7 +2268,7 @@ La paleta se definió a partir de los materiales y procesos del pisco: el cobre 
 
 El espaciado sigue una escala de cinco valores que mantiene el orden visual y asegura áreas táctiles adecuadas en dispositivos móviles.
 
-**Tabla 3**
+**Tabla 4**
 
 *Escala de espaciado*
 
@@ -2265,7 +2298,7 @@ Destilatech se diseña como un sitio adaptable (*responsive*), de modo que la mi
 
 Esta sección establece las reglas para pantallas menores a 768 px. Los valores son decisiones de diseño del equipo orientadas a uso con una mano y a lectura en exteriores.
 
-**Tabla 4**
+**Tabla 5**
 
 *Especificaciones tipográficas para móvil*
 
@@ -2277,7 +2310,7 @@ Esta sección establece las reglas para pantallas menores a 768 px. Los valores 
 | Párrafo | Inter | Regular (400) | 16 px | 1.5 |
 | Texto pequeño | Inter | Light (300) | 12 px | 1.5 |
 
-**Tabla 5**
+**Tabla 6**
 
 *Reglas de diseño para móvil*
 
@@ -3052,7 +3085,7 @@ Este contexto se suscribe al evento `StockMovementRegistered`, publicado por Inv
 | Alerts & Notifications | `RaiseAlert`, `MarkAlertAsAttended` | `Alert` | `AlertRaised`, `OwnerNotified`, `AlertAttended` | `AlertsInboxView` | `AvoidDuplicateEpisode`, `NotifyOwnerOnAlert` |
 | Analytics & Estimations | `CalculateReplenishmentEstimate`, `GenerateHistoricalIndicators` | `ReplenishmentEstimate`, `HistoricalIndicator` | `ReplenishmentEstimateCalculated`, `HistoricalIndicatorsGenerated` | `ReplenishmentEstimateView`, `AtRiskProductsView`, `HistoricalIndicatorsView`, `DashboardSummaryView` | `RecalculateEstimateOnMovement` |
 
-**Tabla 6**
+**Tabla 7**
 
 *Resumen de commands, aggregates, eventos, consultas y políticas por *bounded context*.*
 
@@ -3084,7 +3117,7 @@ Los tres actores acceden a Destilatech como un único sistema, sin necesidad de 
 | Pasarela de Pago | Destilatech | Notifica el resultado del pago. | HTTPS (webhook) |
 | Sensor IoT (simulado) | Destilatech | Envía lecturas simuladas de las variables del proceso. | HTTPS/REST |
 
-**Tabla 7**
+**Tabla 8**
 
 *Relaciones del diagrama de contexto.*
 
@@ -3319,7 +3352,7 @@ El diagrama de contenedores descompone a Destilatech en sus unidades desplegable
 | REST API | ASP.NET Core, C#, Entity Framework Core | Un único contenedor con las reglas de negocio de los siete *bounded contexts*, la seguridad y el acceso a datos. En el Sprint 2 se simula con una Fake API (json-server). |
 | Database | MySQL | Persistencia de cada *bounded context* en tablas con prefijo de módulo. |
 
-**Tabla 8**
+**Tabla 9**
 
 *Contenedores de Destilatech.*
 
@@ -3335,7 +3368,7 @@ La decisión tecnológica principal es separar la Landing Page (contenido estát
 | Pasarela de Pago | REST API | Notifica el resultado del pago. | HTTPS (webhook) |
 | Sensor IoT (simulado) | REST API | Envía lecturas simuladas. | HTTPS/REST |
 
-**Tabla 9**
+**Tabla 10**
 
 *Comunicación entre contenedores.*
 
@@ -3366,7 +3399,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 | Platform Features | Describe las funcionalidades por segmento objetivo. | HTML, CSS, JavaScript | US35 |
 | Footer | Contacto, enlaces, términos y condiciones y llamada a la acción de registro. | HTML, CSS, JavaScript | US36, US53 |
 
-**Tabla 10**
+**Tabla 11**
 
 *Componentes de la Landing Page.*
 
@@ -3396,7 +3429,7 @@ El primer nivel de componentes de la SPA son los *bounded contexts* que implemen
 | Alerts & Notifications | Bandeja de alertas de anomalía y de stock bajo. | Vue components, Pinia | Recibe las alertas de Production e Inventory. |
 | Analytics & Estimations | Dashboard, estimaciones de reposición e indicadores históricos. | Vue components, Pinia, Chart.js | Consulta Production, Inventory, Orders y Alerts. |
 
-**Tabla 11**
+**Tabla 12**
 
 *Componentes de la Single-Page Application.*
 
@@ -3426,7 +3459,7 @@ La REST API es un único contenedor y cada uno de sus módulos corresponde exact
 | Alerts & Notifications | Centraliza y gestiona las alertas. | C# module |
 | Analytics & Estimations | Estimaciones de reposición, indicadores históricos y resumen del dashboard. | C# module |
 
-**Tabla 12**
+**Tabla 13**
 
 *Componentes de la REST API.*
 
@@ -4388,31 +4421,31 @@ Para el desarrollo del ecosistema de Destilatech, el equipo integró las siguien
 + **Product UX/UI Design**<br>El diseño de experiencia (UX) e interfaz (UI) se apoya en el modelo de diseño centrado en el humano (Norman, 2013), buscando optimizar la forma en que los usuarios interactúan con el sistema en momentos de alta carga cognitiva.<br><br>
   + **Figma:** Herramienta colaborativa en la nube para la creación de interfaces y prototipos de alta fidelidad, vital para validar flujos antes del desarrollo de código.<br>https://www.figma.com/ <br><br>
   + **UXPressia:** Plataforma empleada para mapear el *Customer Journey* y construir *User Personas*, traduciendo la investigación cualitativa en artefactos visuales de diseño.<br>https://uxpressia.com/ <br><br>
-  + **MIRO:** Tablero digital colaborativo utilizado para las sesiones de *Big Picture Event Storming* y *Domain-Driven Design*.<br>https://miro.com/ <br><br> 
-  + **Canva:** Herramienta de diseño gráfico en línea utilizada para la elaboración de la identidad visual de la marca y la estructuración de la presentación final del proyecto.<br>https://www.canva.com/<br><br> 
+  + **MIRO:** Tablero digital colaborativo utilizado para las sesiones de *Big Picture Event Storming* y *Domain-Driven Design*.<br>https://miro.com/ <br><br>
+  + **Canva:** Herramienta de diseño gráfico en línea utilizada para la elaboración de la identidad visual de la marca y la estructuración de la presentación final del proyecto.<br>https://www.canva.com/<br><br>
   + **Structurizr:** Plataforma basada en el modelo C4 para visualizar los contenedores, componentes y contextos delimitados (*Bounded Contexts*) del sistema (Brown, 2018).<br>https://structurizr.com/ <br><br>
   + **Lucidchart:** Herramienta de diagramación empleada para los esquemas lógicos, flujos de base de datos y arquitectura preliminar.<br>https://www.lucidchart.com/<br><br>
   + **PlantUML:** Herramienta de código abierto que implementa *Diagrams as Code*, permitiendo que la arquitectura del sistema evolucione y se versione junto con el código fuente en GitHub.<br>https://plantuml.com/es/<br><br>
   + **Mermaid:** Biblioteca JavaScript utilizada para los diagramas del Capítulo IV (Event Storming de diseño, C4, clases y entidad-relación) mediante sintaxis textual versionable, soportada directamente por GitHub (Mermaid, 2023).<br>https://mermaid.js.org/<br><br>
 
-+ **Software Development**<br>Etapa donde se materializa la arquitectura de software. Se seleccionaron lenguajes y marcos de trabajo (*frameworks*) de uso extendido en la industria para garantizar la mantenibilidad y la fiabilidad del sistema.<br><br> 
-  + **GitHub:** Plataforma base para el control de versiones distribuido mediante Git, permitiendo la integración y revisión de código asíncrona.<br>https://github.com/ <br><br> 
++ **Software Development**<br>Etapa donde se materializa la arquitectura de software. Se seleccionaron lenguajes y marcos de trabajo (*frameworks*) de uso extendido en la industria para garantizar la mantenibilidad y la fiabilidad del sistema.<br><br>
+  + **GitHub:** Plataforma base para el control de versiones distribuido mediante Git, permitiendo la integración y revisión de código asíncrona.<br>https://github.com/ <br><br>
   + **Visual Studio Code:** Editor de código fuente ligero y versátil (Microsoft, 2024a), utilizado por parte del equipo gracias a su amplio ecosistema de extensiones para múltiples lenguajes.<br>https://code.visualstudio.com/ <br><br>
   + **JetBrains Rider:** Entorno de Desarrollo Integrado (IDE) multiplataforma y de alto rendimiento (JetBrains, 2024a), utilizado como herramienta principal para el desarrollo de la lógica de negocio y la API en C# / .NET.<br>https://www.jetbrains.com/rider/<br><br>
   + **JetBrains WebStorm:** IDE especializado en el desarrollo web moderno (JetBrains, 2024b), empleado para la programación y depuración de todo el ecosistema frontend con Vue.js y JavaScript.<br>https://www.jetbrains.com/webstorm/<br><br>
-  + **HTML & CSS:** Lenguajes estándar web utilizados para estructurar el contenido (HTML) y definir la apariencia y diseño visual (CSS) de la Landing Page y la Web App.<br>https://developer.mozilla.org/es/docs/Web/HTML<br><br> 
+  + **HTML & CSS:** Lenguajes estándar web utilizados para estructurar el contenido (HTML) y definir la apariencia y diseño visual (CSS) de la Landing Page y la Web App.<br>https://developer.mozilla.org/es/docs/Web/HTML<br><br>
   + **JavaScript:** Lenguaje del cliente web, utilizado en la landing page (JavaScript puro) y en la aplicación web (Vue.js).<br>https://developer.mozilla.org/es/docs/Web/JavaScript<br><br>
   + **Vue.js y PrimeVue:** Framework progresivo para construir la interfaz de la aplicación web y biblioteca de componentes visuales.<br>https://vuejs.org/ · https://primevue.org/<br><br>
   + **C# y ASP.NET Core:** Lenguaje y marco de trabajo del servicio REST (API), con Entity Framework Core para el acceso a datos.<br>https://learn.microsoft.com/es-es/aspnet/core/<br><br>
   + **MySQL:** Sistema de gestión de base de datos relacional que almacena los datos operativos.<br>https://www.mysql.com/<br><br>
 
-+ **Software Testing**<br>La evaluación de la calidad del software garantiza que la solución cumpla los criterios de aceptación acordados.<br><br> 
-  + **Lenguaje Gherkin (Cucumber):** Lenguaje de dominio (DSL) implementado para el *Behavior-Driven Development* (BDD) (Smart, 2014). Permite traducir criterios de aceptación en pruebas legibles por negocio mediante sintaxis *Given-When-Then*.<br>https://cucumber.io/<br><br> 
++ **Software Testing**<br>La evaluación de la calidad del software garantiza que la solución cumpla los criterios de aceptación acordados.<br><br>
+  + **Lenguaje Gherkin (Cucumber):** Lenguaje de dominio (DSL) implementado para el *Behavior-Driven Development* (BDD) (Smart, 2014). Permite traducir criterios de aceptación en pruebas legibles por negocio mediante sintaxis *Given-When-Then*.<br>https://cucumber.io/<br><br>
 
-+ **Software Deployment**<br>Consiste en la automatización y alojamiento de los artefactos compilados para su consumo público.<br><br> 
++ **Software Deployment**<br>Consiste en la automatización y alojamiento de los artefactos compilados para su consumo público.<br><br>
   + **Github Pages:** Servicio de *hosting* estático aprovechado para el despliegue automático de la *Landing Page* institucional.<br>https://pages.github.com/ <br><br>
 
-+ **Software Documentation**<br>Mantenimiento de la información técnica esencial para reducir la curva de aprendizaje de nuevos desarrolladores e interesados en el proyecto.<br><br> 
++ **Software Documentation**<br>Mantenimiento de la información técnica esencial para reducir la curva de aprendizaje de nuevos desarrolladores e interesados en el proyecto.<br><br>
   + **Markdown:** Lenguaje de marcado ligero, pilar de la documentación técnica moderna en repositorios, facilitando legibilidad humana y renderización web.<br>https://www.markdownguide.org/getting-started/<br><br>
   + **Microsoft Office 365:** Suite colaborativa en la nube para la gestión del reporte académico final y documentación adjunta.<br>https://www.microsoft.com/microsoft-365<br><br>
 
@@ -4793,7 +4826,7 @@ El trabajo de implementación se organiza en Sprints. El **Sprint 1** implementa
 
 El Sprint 1 se dedicó a implementar y publicar la primera versión de la landing page, con el fin de presentar la propuesta de valor de Destilatech a productores y comercializadores. El desarrollo de la aplicación web y del backend se reservó para sprints posteriores.
 
-**Tabla 13**
+**Tabla 14**
 
 *Resumen de la reunión de Sprint Planning 1*
 
@@ -4808,7 +4841,7 @@ El Sprint 1 se dedicó a implementar y publicar la primera versión de la landin
 | **Sprint -1 Review Summary** | No aplica: es el primer sprint. |
 | **Sprint -1 Retrospective Summary** | No aplica: es el primer sprint. |
 | **Sprint 1 Goal** | *Our focus is on* que los productores de pisco y los pequeños comercializadores puedan conocer qué es Destilatech, qué beneficios les ofrece, cuánto cuestan sus planes y cómo comenzar la prueba gratuita de 14 días, desde su teléfono o su computadora. *We believe it delivers* claridad sobre la propuesta de valor y confianza para evaluar la plataforma antes de registrarse, sin necesidad de contactar a un asesor. *This will be confirmed when* un visitante de cada segmento, desde su teléfono o su computadora, pueda explicar qué hace Destilatech, identificar el plan que le corresponde y llegar al registro de la prueba gratuita. |
-| **Sprint 1 Velocity** | 20 horas de trabajo planificadas por el equipo. |
+| **Sprint 1 Velocity** | 72 horas de trabajo planificadas por el equipo. |
 | **Sum of Story Points** | 18 Story Points (US30 a US37). |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
@@ -4829,7 +4862,7 @@ En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y
 
 El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la propuesta de valor de Destilatech y puedan iniciar su prueba gratuita; para lograrlo se publica la versión inicial de la landing page. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
+**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
 **Figura 98**
 
@@ -4839,39 +4872,41 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 *Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
 
-*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en cuatro columnas. To Do e In Process están vacías (0 tarjetas); To Review contiene la tarjeta «Mock-up móvil de la landing page» (1 tarjeta) y Done concentra las 8 tarjetas de las historias de usuario US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación completada (1/1).
+*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en seis listas: Product Backlog (65 tarjetas); To Do, In Process y To Review (0 tarjetas cada una); DONE - SPRINT 1 (8 tarjetas) y DONE - SPRINT 2. La captura muestra el Product Backlog y la lista DONE - SPRINT 1, que concentra las tarjetas de las historias US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación de tareas de ingeniería ya completada.
 
 
-**Tabla 14**
+**Tabla 15**
 
 *Sprint Backlog 1*
 
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Markup and Styles | Estructura HTML y estilos CSS del Header con el logotipo | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US30** | Navegar desde el encabezado (Header) | TK-02 | Header Navigation | Enlaces de navegación hacia las secciones de la página | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US31** | Entender qué es Destilatech (sección Description) | TK-03 | Description Markup and Styles | Estructura HTML y estilos CSS de la sección Description | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US31** | Entender qué es Destilatech (sección Description) | TK-04 | Description Content | Textos que explican qué es Destilatech | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US32** | Conocer los beneficios principales (sección Goals) | TK-05 | Goals Markup and Styles | Estructura HTML y estilos CSS de la sección Goals | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US32** | Conocer los beneficios principales (sección Goals) | TK-06 | Goals Content | Contenido de los beneficios principales de la plataforma | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US33** | Comparar planes de suscripción (sección Pricing) | TK-07 | Pricing Cards Layout | Tarjetas de los planes de suscripción y sus estilos | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US33** | Comparar planes de suscripción (sección Pricing) | TK-08 | Free Trial Highlight | Destacado de la prueba gratuita de 14 días y llamada a la acción | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US34** | Ver cifras del sector (sección Impact) | TK-09 | Impact Layout | Estructura y estilos de la sección Impact | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US34** | Ver cifras del sector (sección Impact) | TK-10 | Impact Figures | Cifras del sector pisquero peruano | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-11 | Platform Features Layout | Estructura y estilos de la sección Platform Features | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-12 | Features by Segment Content | Funcionalidades presentadas por segmento objetivo | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-13 | Footer Layout | Estructura y estilos de la sección Footer | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
-| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-14 | Footer Links and Contact | Datos de contacto y enlaces del pie de página | 0.5 | Santiago Atanacio, Jairo Mathias | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design | Implementación de la adaptabilidad móvil de todas las secciones | 3 | Domenack Angeles, Miguel | Done |
-| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mock-up móvil de la landing page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil | 2 | Fernandez Seer, Mario Alonso | To Review |
+| **US30** | Navegar desde el encabezado (Header) | TK-01 | Header Markup, Styles & Branding | Estructura HTML y estilos CSS del Header con el logotipo, adaptados a pantallas de escritorio y móviles. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US30** | Navegar desde el encabezado (Header) | TK-02 | Header Navigation & Anchor Links | Enlaces de navegación hacia las secciones de la página con desplazamiento suave y menú desplegable para móvil. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-03 | Description Section Layout | Estructura HTML y estilos CSS de la sección Description, con las tarjetas de segmento. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US31** | Entender qué es Destilatech (sección Description) | TK-04 | Description Content & Copy | Textos que explican qué es Destilatech para cada segmento, en inglés y en español. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-05 | Goals Section Layout | Estructura HTML y estilos CSS de la sección Goals con las tarjetas de beneficios. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US32** | Conocer los beneficios principales (sección Goals) | TK-06 | Goals Content & Benefit Cards | Contenido de los beneficios principales de la plataforma, con sus iconos, en inglés y en español. Incluye la revisión del código y la verificación en navegador. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-07 | Pricing Cards Layout | Tarjetas de los tres planes de suscripción, con precios y características, y sus estilos. Incluye la revisión del código y la verificación en navegador. | 6 | Fernandez Seer, Mario Alonso | Done |
+| **US33** | Comparar planes de suscripción (sección Pricing) | TK-08 | Free Trial Highlight & CTA | Destacado de la prueba gratuita de 14 días y llamadas a la acción hacia la aplicación web. Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-09 | Impact Section Layout | Estructura y estilos de la sección Impact con la imagen de fondo. Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US34** | Ver cifras del sector (sección Impact) | TK-10 | Impact Figures & Sources | Cifras del sector pisquero peruano y cita de la fuente (Ministerio de la Producción, 2025). Incluye la revisión del código y la verificación en navegador. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-11 | Platform Features Layout & Tabs | Estructura, estilos y pestañas accesibles (roles ARIA) de la sección Platform Features. Incluye la revisión del código y la verificación en navegador. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US35** | Conocer las funcionalidades por segmento (sección Platform Features) | TK-12 | Features by Segment Content | Funcionalidades presentadas por segmento objetivo (productor y comercializador). Incluye la revisión del código y la verificación en navegador. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-13 | Footer Layout | Estructura y estilos de la sección Footer con la marca y las columnas de navegación. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US36** | Encontrar contacto y enlaces en el pie de página (Footer) | TK-14 | Footer Links & Legal Pages | Enlaces del pie de página y páginas de términos y condiciones y de política de privacidad. Incluye la revisión del código y la verificación en navegador. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-15 | Responsive Design Implementation | Implementación de la adaptabilidad móvil de todas las secciones con puntos de quiebre para teléfono, tableta y escritorio. Incluye la revisión del código y la verificación en navegador. | 8 | Domenack Angeles, Miguel | Done |
+| **US37** | Usar la landing page en cualquier dispositivo (adaptabilidad móvil) | TK-16 | Mobile Mock-up of the Landing Page | Diseño del mock-up de la landing page para smartphone, como referencia visual de la adaptabilidad móvil. Incluye la revisión del diseño con el equipo. | 4 | Fernandez Seer, Mario Alonso | To Review |
 
-**Observación.** Cada historia se descompone en al menos dos tareas, que se registran como una checklist dentro de su tarjeta en Trello; las dos tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del tablero (Figura 98) se encuentra en la columna To Review, pendiente de revisión por el equipo.
+**Horas por integrante.** El Sprint Backlog 1 suma 72 horas: Santiago Atanacio, Jairo Mathias, 16; Condor Sandoval, Jean Pierre, 16; Fernandez Seer, Mario Alonso, 22; Almandroz Carbajal, Pierina Marysabel, 10; Domenack Angeles, Miguel, 8.
+
+**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del Sprint 1 (Figura 98), todas las tarjetas del sprint están en la lista DONE - SPRINT 1.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website) la estructura HTML, los estilos, la adaptabilidad móvil, el ícono del logotipo, las pestañas de funcionalidades por segmento y la estructura base de internacionalización (i18n). La tabla lista los commits en orden cronológico.
 
-**Tabla 15**
+**Tabla 16**
 
 *Commits del repositorio de la landing page*
 
@@ -4895,7 +4930,7 @@ Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](htt
 
 El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo que esa columna se indica con «—».
 
-**Tabla 16**
+**Tabla 17**
 
 *Commits del repositorio del informe*
 
@@ -5298,9 +5333,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 
 **Video de navegación.** El equipo grabó un video de navegación de la landing page publicada, que consolida el flujo principal del visitante: ingreso a la página y lectura de la sección principal, recorrido de las secciones desde el menú del encabezado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), cambio de idioma ES / EN, revisión de las funcionalidades por segmento y acceso al botón «Prueba gratis 14 días», hasta llegar al pie de página con los datos de contacto. El video prioriza el flujo relacionado con el negocio central, que es la captación de prospectos para la prueba gratuita.
 
-- **Duración:** **[CONFIRMAR: duración mm:ss]**
 - **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
-- **Captura del video:** **[CONFIRMAR: captura del video con el enlace]**
 
 **Figura 124**
 
@@ -5377,23 +5410,23 @@ El repositorio de la landing page no se muestra en un gráfico de Contributors p
 ##### 5.2.2.1. Sprint Planning 2
 
 El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*Web Application*) de Destilatech, con la landing page ya publicada en el Sprint 1. La aplicación implementa seis de los siete *bounded contexts* del diseño de software (capítulo IV): el contexto IAM (registro, inicio de sesión y perfil) queda para un sprint posterior porque el curso aún no aborda la autenticación. La aplicación consume un Fake API mientras se construye el *backend* en ASP.NET Core, que se reserva para el siguiente sprint. Al cierre del sprint la aplicación quedó desplegada en Firebase Hosting y el Fake API en Render (sección 5.2.2.7).
-**Tabla 17**
+**Tabla 18**
 
 *Resumen de la reunión de Sprint Planning 2*
 
 
 | Sprint # | Sprint 2 |
 | :--- | :--- |
-| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
+| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. Antes de este sprint se retiró del equipo Domenack Angeles, Miguel; desde el Sprint 2 el equipo está conformado por cuatro integrantes. |
 | **Fecha** | 2026-09-29 |
 | **Hora** | 11:00 a.m. |
 | **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet) |
 | **Preparada por** | Santiago Atanacio, Jairo Mathias |
-| **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel |
+| **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre |
 | **Sprint 1 Review Summary** | La landing page se publicó en GitHub Pages con las siete secciones previstas (Header, Description, Goals, Pricing, Impact, Platform Features y Footer), el selector de idioma ES / EN y el botón de prueba gratuita de 14 días. Al cierre del tablero quedaba en To Review la tarjeta «Mock-up móvil de la landing page». |
 | **Sprint 1 Retrospective Summary** | Funcionó el reparto de la landing page por secciones y la coordinación por Discord. A mejorar: los 11 commits de la landing se registraron desde una sola cuenta y con el tipo `docs`, lo que impidió medir aportes individuales. Para el Sprint 2 se trabaja con ramas `feature/*` por *bounded context*, cada integrante desde su propia cuenta y con mensajes en formato Conventional Commits. |
 | **Sprint 2 Goal** | *Our focus is on* que el productor y el comercializador de pisco puedan controlar su operación desde una sola plataforma: el productor, registrar sus lotes y vigilar las condiciones del proceso con lecturas simuladas; el comercializador, controlar su stock, registrar clientes y pedidos, y saber cuándo reponer. *We believe it delivers* visibilidad del estado de su producción y de su inventario sin cuadernos ni hojas de cálculo, y un aviso oportuno antes de perder un lote o de quedarse sin producto. *This will be confirmed when* un productor de demostración pueda registrar un lote, ver sus lecturas y recibir una alerta cuando una variable salga de su rango, y un comercializador de demostración pueda registrar un pedido, ver el stock descontado y recibir la sugerencia de reposición de un producto con stock bajo. |
-| **Sprint 2 Velocity** | 132 horas de trabajo planificadas por el equipo. |
+| **Sprint 2 Velocity** | 347 horas de trabajo planificadas por el equipo. |
 | **Sum of Story Points** | 92 Story Points (29 historias de usuario). |
 
 
@@ -5401,21 +5434,20 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden con los *bounded contexts* del capítulo IV más el *Shared Kernel*, el Fake API y la internacionalización. El líder de cada aspecto es el responsable de las tareas correspondientes en la sección 5.2.2.3; el rol de colaborador se asignó a quien registra commits en la rama del aspecto (sección 5.2.2.4).
 
-| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel | Fake API & i18n | Billing | Production & Monitoring | Inventory & Stock | Orders & Replenishment | Alerts & Notifications | Analytics & Estimations | Pruebas funcionales |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Fernandez Seer, Mario Alonso | MrBaru | - | - | - | L | - | - | - | - | - |
-| Santiago Atanacio, Jairo Mathias | Msa-ware | L | L | - | - | - | L | - | - | - |
-| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | - | - | - | - | L | - | L | L | - |
-| Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - | - |
-| Domenack Angeles, Miguel | midoan0805 | - | - | - | - | - | - | - | - | L |
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel | Fake API & i18n | Billing | Production & Monitoring | Inventory & Stock | Orders & Replenishment | Alerts & Notifications | Analytics & Estimations |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Fernandez Seer, Mario Alonso | MrBaru | - | - | - | L | - | - | - | - |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | L | L | - | - | - | L | - | - |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | - | - | - | - | L | - | L | L |
+| Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - |
 
-**Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Miguel Domenack lideró las pruebas funcionales de la aplicación, que abarcan todos los módulos y no registran commits en el repositorio. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
+**Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Las pruebas funcionales de cada módulo (TK-67 a TK-72) las hizo el integrante que lo desarrolló, por lo que no tienen una columna propia. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
 
 ##### 5.2.2.3. Sprint Backlog 2
 
-El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Las horas son estimaciones de planificación, con una referencia de una hora por Story Point.
+El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Cada tarea es una tarea de ingeniería (*Engineering Task*) estimada en horas de planificación, con un mínimo de 4 y un máximo de 8 horas por tarea.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (columnas To Do, In Process, To Review y Done)
+**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
 **Figura 129**
 
@@ -5423,100 +5455,93 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 <p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero del Sprint 2 en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026).
+*Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+
+*Descripción.* La captura muestra las seis listas del tablero. La lista DONE - SPRINT 2 concentra las 40 tarjetas del sprint: 29 historias de usuario, cada una con su lista de verificación de tareas de ingeniería completada (la columna se desplaza para ver todas las tarjetas); 5 tarjetas de tareas técnicas transversales (Shared Kernel, Shared Layout & App Bootstrap, Fake API, Internationalization y User Switcher); y 6 tarjetas de pruebas funcionales.
 
 
-**Tabla 18**
+**Tabla 19**
 
 *Sprint Backlog 2*
 
 
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US04** | Ver dashboard de producción | TK-01 | Producer Dashboard View | `dashboard.vue` y `producer-dashboard.vue` con la distribución de bloques | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US04** | Ver dashboard de producción | TK-02 | Dashboard Indicators | `kpi-card.vue` y cálculo de los indicadores en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US04** | Ver dashboard de producción | TK-03 | Recent Activity & Chart | `recent-activity.vue` y gráfico de volumen por lote | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US05** | Ver dashboard comercial | TK-04 | Retailer Dashboard View | `retailer-dashboard.vue` con la distribución de bloques | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US05** | Ver dashboard comercial | TK-05 | Stock & Orders Indicators | Indicadores de ventas, pedidos abiertos, stock bajo y productos en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US05** | Ver dashboard comercial | TK-06 | Recent Orders Table | Tabla de pedidos recientes y gráfico de movimiento de inventario | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US12** | Registrar producto | TK-07 | Product Entity & API | `product.entity.js`, `product.assembler.js` y registro de productos en `inventory-api.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US12** | Registrar producto | TK-08 | Product Form Dialog | `product-form-dialog.vue` con validación de campos obligatorios | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US13** | Registrar movimiento de inventario | TK-09 | Stock Movement Domain | `stock-movement.entity.js`, `register-stock-movement.command.js` y `stock-movement.assembler.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US13** | Registrar movimiento de inventario | TK-10 | Movement Dialog | `stock-movement-dialog.vue` para entradas y salidas | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US13** | Registrar movimiento de inventario | TK-11 | Stock Update Rules | Regla de salida mayor al stock y actualización en `inventory.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US14** | Consultar stock disponible | TK-12 | Inventory Overview View | `inventory-overview.vue` con la lista y los indicadores de inventario | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US14** | Consultar stock disponible | TK-13 | Stock Status Tag | `stock-status-tag.vue` y filtros por estado óptimo, bajo y crítico | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US15** | Configurar umbral de stock bajo | TK-14 | Threshold Dialog | `threshold-dialog.vue` para configurar el umbral de stock bajo | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US15** | Configurar umbral de stock bajo | TK-15 | Threshold Persistence | Validación del umbral y actualización del `stock-item` en `inventory.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US16** | Visualizar y atender alertas | TK-16 | Alert Domain & API | `alert.entity.js`, `raise-alert.command.js`, `alert.assembler.js` y `alerts-api.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US16** | Visualizar y atender alertas | TK-17 | Alerts Inbox View | `alerts-inbox.vue` y `alert-item.vue` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US16** | Visualizar y atender alertas | TK-18 | Mark as Attended | Acción de marcar una alerta como atendida en `alerts.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US06** | Registrar lote de producción | TK-19 | Batch Domain | `production-batch.entity.js`, `register-batch.command.js` y `production-batch.assembler.js` | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US06** | Registrar lote de producción | TK-20 | Batch Form Dialog | `batch-form-dialog.vue` con validación | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US06** | Registrar lote de producción | TK-21 | Batch Management View | `batch-management.vue` con el listado de lotes | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US07** | Actualizar estado de un lote | TK-22 | Batch Stage Model | `batch-stage.js` con las etapas y las transiciones permitidas | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US07** | Actualizar estado de un lote | TK-23 | Advance Stage Dialog | `advance-stage-dialog.vue` y `batch-stage-tag.vue` | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US08** | Consultar historial de un lote | TK-24 | Batch Detail View | `batch-detail.vue` con el resumen del lote | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US08** | Consultar historial de un lote | TK-25 | Stage Timeline | Línea de tiempo con la trazabilidad de las etapas del lote | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US43** | Registrar el embotellado de un lote | TK-26 | Bottling Dialog | Registro de la cantidad embotellada y del producto vinculado en `advance-stage-dialog.vue` | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US43** | Registrar el embotellado de un lote | TK-27 | Add Stock on Bottling | Suma de las botellas al stock del producto vinculado | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US17** | Registrar cliente | TK-28 | Customer Domain & API | `customer.entity.js`, `customer.assembler.js` y registro de clientes en `orders-api.js` | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US17** | Registrar cliente | TK-29 | Customers View & Form | `customers-list.vue` y `customer-form-dialog.vue` | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US18** | Registrar pedido | TK-30 | Order Domain | `order.entity.js`, `order-line.js` y `order.assembler.js` | 2 | Santiago Atanacio, Jairo Mathias | Done |
-| **US18** | Registrar pedido | TK-31 | Order Form Dialog | `order-form-dialog.vue` con líneas de producto | 2 | Santiago Atanacio, Jairo Mathias | Done |
-| **US18** | Registrar pedido | TK-32 | Discount Stock on Order | Descuento del stock de cada línea al registrar el pedido | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US19** | Consultar historial de pedidos | TK-33 | Orders List View | `orders-list.vue` con la búsqueda por código o cliente | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US19** | Consultar historial de pedidos | TK-34 | Order Status Actions | `order-status-tag.vue` y cambio de estado del pedido | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US09** | Visualizar variables de proceso | TK-35 | IoT Sensor Simulator | `iot-sensor-simulator.js` con lecturas alrededor del centro del rango y probabilidad de anomalía | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US09** | Visualizar variables de proceso | TK-36 | Sensor Reading Domain | `sensor-reading.entity.js`, `sensor-reading.assembler.js` y acceso en `production-api.js` | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US09** | Visualizar variables de proceso | TK-37 | Monitoring View | `monitoring-dashboard.vue` y `variable-card.vue` | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US10** | Configurar rango normal de una variable | TK-38 | Variable Range Dialog | `variable-range-dialog.vue` para configurar el mínimo y el máximo | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US10** | Configurar rango normal de una variable | TK-39 | Range Validation | `process-variable.entity.js` con la validación del rango | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US11** | Recibir notificación de condición anómala | TK-40 | Reading Evaluation | Comparación de cada lectura contra el rango de la variable | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US11** | Recibir notificación de condición anómala | TK-41 | Anomaly Alert | Generación de la alerta hacia el contexto Alerts & Notifications | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US44** | Ver la tendencia de una variable | TK-42 | Readings Chart Component | `readings-chart.vue` con Chart.js | 2 | Fernandez Seer, Mario Alonso | Done |
-| **US44** | Ver la tendencia de una variable | TK-43 | Range Lines | Líneas del mínimo y el máximo configurados en el gráfico | 1 | Fernandez Seer, Mario Alonso | Done |
-| **US50** | Generar lista de compra para reposición | TK-44 | Replenishment Order Domain & API | `replenishment-order.entity.js`, `replenishment-order.assembler.js` y acceso en `orders-api.js` | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US50** | Generar lista de compra para reposición | TK-45 | Replenishment Orders View | `replenishment-orders.vue` y `replenishment-form-dialog.vue` con las sugerencias de compra | 2 | Condor Sandoval, Jean Pierre | Done |
-| **US20** | Ver estimación de reposición | TK-46 | Estimate Domain | `replenishment-estimate.entity.js` con fecha estimada, consumo promedio y cantidad sugerida | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US20** | Ver estimación de reposición | TK-47 | Estimate Calculation | Cálculo con el consumo de los últimos 30 días en `analytics.store.js` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US20** | Ver estimación de reposición | TK-48 | Estimate Card | `replenishment-estimate-card.vue` en la ficha del producto | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US51** | Ver productos con riesgo de agotamiento | TK-49 | At-Risk Products Logic | Selección de productos con riesgo de agotamiento en `analytics.store.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US51** | Ver productos con riesgo de agotamiento | TK-50 | Priority Replenishment List | `priority-replenishment.vue` con la lista ordenada por urgencia | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US21** | Ver indicadores históricos | TK-51 | Historical Indicator Domain | `historical-indicator.entity.js` y `analytics-record.assembler.js` | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US21** | Ver indicadores históricos | TK-52 | Indicators View | `historical-indicators.vue` con el selector de periodo | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US21** | Ver indicadores históricos | TK-53 | Indicator Charts | Gráficos de stock, entradas contra salidas y ventas con `trend-chart.vue` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US03** | Recibir aviso de fin de periodo de prueba | TK-54 | Trial Banner Component | Componente `trial-banner.vue` con los días restantes de prueba y el acceso a los planes | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US03** | Recibir aviso de fin de periodo de prueba | TK-55 | Trial Period Logic | `trial-period.entity.js` y cálculo de los días restantes en `billing.store.js` | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US54** | Consultar mi plan y estado de suscripción | TK-56 | Subscription Entity & API | `subscription.entity.js`, `subscription.assembler.js` y consulta de la suscripción en `billing-api.js` | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US54** | Consultar mi plan y estado de suscripción | TK-57 | Access Status Panel | Tarjeta con el estado de acceso, el plan y la fecha de renovación en `subscription-plans.vue` | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US40** | Contratar un plan de suscripción | TK-58 | Plan Catalog | `plan.entity.js`, `plan.assembler.js` y `plan-card.vue` con los tres planes | 2 | Condor Sandoval, Jean Pierre | Done |
-| **US40** | Contratar un plan de suscripción | TK-59 | Checkout Flow | Inicio del pago con la pasarela en modo de pruebas y orquestación en `billing.store.js` | 3 | Condor Sandoval, Jean Pierre | Done |
-| **US40** | Contratar un plan de suscripción | TK-60 | Checkout Result Views | `checkout-success.vue` y `checkout-cancelled.vue` para el resultado del pago | 1 | Condor Sandoval, Jean Pierre | Done |
-| **US40** | Contratar un plan de suscripción | TK-61 | Payment History | `payment.entity.js`, `payment.assembler.js` y `payment-history.vue` | 2 | Condor Sandoval, Jean Pierre | Done |
-| **US46** | Consultar el historial de movimientos de un producto | TK-62 | Product Detail View | `product-detail.vue` con los datos del producto | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US46** | Consultar el historial de movimientos de un producto | TK-63 | Movement History Table | Tabla paginada con el historial de movimientos del producto | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US47** | Ajustar el stock tras un conteo físico | TK-64 | Adjustment Movement Type | Tipo de movimiento `ADJUSTMENT` en el modelo de dominio | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US47** | Ajustar el stock tras un conteo físico | TK-65 | Adjustment Form | Cantidad contada y motivo del ajuste en `stock-movement-dialog.vue` | 2 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US48** | Filtrar alertas por tipo y estado | TK-66 | Type Filter | Filtro de alertas por tipo (producción o inventario) | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US48** | Filtrar alertas por tipo y estado | TK-67 | Status Filter | Filtro de alertas por estado (pendientes, atendidas o todas) | 1 | Almandroz Carbajal, Pierina Marysabel | Done |
-| **US49** | Editar los datos de un cliente | TK-68 | Customer Edit Mode | Modo de edición en `customer-form-dialog.vue` | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| **US49** | Editar los datos de un cliente | TK-69 | Update Customer Request | Actualización del cliente en `orders-api.js` y `orders.store.js` | 1 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-70 | Shared Kernel | `BaseApi`, `BaseEndpoint`, `BaseAssembler`, `error.interceptor`, `Money` y `DateTime` | 6 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-71 | Shared Layout | Layout, barra superior, navegación lateral, tarjeta KPI, estado vacío y página 404 | 4 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-72 | App Bootstrap | `main.js`, `app.vue`, `router.js` y `pinia.js` | 2 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-73 | Fake API | Fake API con json-server (`db.json`, `routes.json`, `start.sh`) y su publicación para producción | 3 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-74 | Internationalization | Configuración de vue-i18n y catálogos `es.json` y `en.json` | 3 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica transversal | TK-75 | User Switcher | Selector Productor / Comercializador (`user-switcher`), tienda del usuario actual (`user.store`) y `users-api`; reemplaza al inicio de sesión mientras no exista IAM | 3 | Santiago Atanacio, Jairo Mathias | Done |
-| — | Tarea técnica de pruebas | TK-76 | Functional Testing Billing & Users | Pruebas funcionales de planes, suscripción, pagos y cambio de perfil con el selector de usuario | 3 | Domenack Angeles, Miguel | Done |
-| — | Tarea técnica de pruebas | TK-77 | Functional Testing Production | Pruebas funcionales de lotes, etapas y monitoreo IoT simulado, incluida la detección de anomalías | 4 | Domenack Angeles, Miguel | Done |
-| — | Tarea técnica de pruebas | TK-78 | Functional Testing Inventory | Pruebas funcionales de productos, movimientos, umbrales y estimaciones de reposición | 3 | Domenack Angeles, Miguel | Done |
-| — | Tarea técnica de pruebas | TK-79 | Functional Testing Orders | Pruebas funcionales de clientes, pedidos y órdenes de reposición | 3 | Domenack Angeles, Miguel | Done |
-| — | Tarea técnica de pruebas | TK-80 | Functional Testing Alerts & Analytics | Pruebas funcionales de alertas, dashboards e indicadores históricos | 3 | Domenack Angeles, Miguel | Done |
-| — | Tarea técnica de pruebas | TK-81 | Language & Navigation Testing | Pruebas de cambio de idioma ES / EN, navegación entre vistas y rutas protegidas por perfil | 2 | Domenack Angeles, Miguel | Done |
+| **US04** | Ver dashboard de producción | TK-01 | Producer Dashboard View & KPI Indicators | Alcance: `dashboard.vue` y `producer-dashboard.vue` con la distribución de bloques; `kpi-card.vue` y cálculo de los indicadores en `analytics.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US04** | Ver dashboard de producción | TK-02 | Recent Activity Feed & Volume Chart | Alcance: `recent-activity.vue` y gráfico de volumen por lote. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US05** | Ver dashboard comercial | TK-03 | Retailer Dashboard View & Indicators | Alcance: `retailer-dashboard.vue` con la distribución de bloques; Indicadores de ventas, pedidos abiertos, stock bajo y productos en `analytics.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US05** | Ver dashboard comercial | TK-04 | Recent Orders Table & Inventory Movement Chart | Alcance: Tabla de pedidos recientes y gráfico de movimiento de inventario. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US12** | Registrar producto | TK-05 | Product Domain & Inventory API | Alcance: `product.entity.js`, `product.assembler.js` y registro de productos en `inventory-api.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US12** | Registrar producto | TK-06 | Product Form Dialog & Validation | Alcance: `product-form-dialog.vue` con validación de campos obligatorios. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US13** | Registrar movimiento de inventario | TK-07 | Stock Movement Domain & Update Rules | Alcance: `stock-movement.entity.js`, `register-stock-movement.command.js` y `stock-movement.assembler.js`; Regla de salida mayor al stock y actualización en `inventory.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US13** | Registrar movimiento de inventario | TK-08 | Stock Movement Dialog | Alcance: `stock-movement-dialog.vue` para entradas y salidas. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US14** | Consultar stock disponible | TK-09 | Inventory Overview View | Alcance: `inventory-overview.vue` con la lista y los indicadores de inventario. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US14** | Consultar stock disponible | TK-10 | Stock Status Tag & Filters | Alcance: `stock-status-tag.vue` y filtros por estado óptimo, bajo y crítico. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US15** | Configurar umbral de stock bajo | TK-11 | Threshold Dialog | Alcance: `threshold-dialog.vue` para configurar el umbral de stock bajo. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US15** | Configurar umbral de stock bajo | TK-12 | Threshold Validation & Persistence | Alcance: Validación del umbral y actualización del `stock-item` en `inventory.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US16** | Visualizar y atender alertas | TK-13 | Alert Domain & API | Alcance: `alert.entity.js`, `raise-alert.command.js`, `alert.assembler.js` y `alerts-api.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US16** | Visualizar y atender alertas | TK-14 | Alerts Inbox View & Mark as Attended | Alcance: `alerts-inbox.vue` y `alert-item.vue`; Acción de marcar una alerta como atendida en `alerts.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US06** | Registrar lote de producción | TK-15 | Batch Domain & Registration Rules | Alcance: `production-batch.entity.js`, `register-batch.command.js` y `production-batch.assembler.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US06** | Registrar lote de producción | TK-16 | Batch Form Dialog & Management View | Alcance: `batch-form-dialog.vue` con validación; `batch-management.vue` con el listado de lotes. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Fernandez Seer, Mario Alonso | Done |
+| **US07** | Actualizar estado de un lote | TK-17 | Batch Stage Model & Transitions | Alcance: `batch-stage.js` con las etapas y las transiciones permitidas. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US07** | Actualizar estado de un lote | TK-18 | Advance Stage Dialog & Stage Tag | Alcance: `advance-stage-dialog.vue` y `batch-stage-tag.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US08** | Consultar historial de un lote | TK-19 | Batch Detail View | Alcance: `batch-detail.vue` con el resumen del lote. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US08** | Consultar historial de un lote | TK-20 | Stage Timeline & Traceability | Alcance: Línea de tiempo con la trazabilidad de las etapas del lote. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US43** | Registrar el embotellado de un lote | TK-21 | Bottling Dialog | Alcance: Registro de la cantidad embotellada y del producto vinculado en `advance-stage-dialog.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US43** | Registrar el embotellado de un lote | TK-22 | Add Stock on Bottling | Alcance: Suma de las botellas al stock del producto vinculado. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US17** | Registrar cliente | TK-23 | Customer Domain & API | Alcance: `customer.entity.js`, `customer.assembler.js` y registro de clientes en `orders-api.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US17** | Registrar cliente | TK-24 | Customers View & Form | Alcance: `customers-list.vue` y `customer-form-dialog.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Santiago Atanacio, Jairo Mathias | Done |
+| **US18** | Registrar pedido | TK-25 | Order Domain & Stock Discount | Alcance: `order.entity.js`, `order-line.js` y `order.assembler.js`; Descuento del stock de cada línea al registrar el pedido. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Santiago Atanacio, Jairo Mathias | Done |
+| **US18** | Registrar pedido | TK-26 | Order Form Dialog with Product Lines | Alcance: `order-form-dialog.vue` con líneas de producto. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Santiago Atanacio, Jairo Mathias | Done |
+| **US19** | Consultar historial de pedidos | TK-27 | Orders List View & Search | Alcance: `orders-list.vue` con la búsqueda por código o cliente. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Santiago Atanacio, Jairo Mathias | Done |
+| **US19** | Consultar historial de pedidos | TK-28 | Order Status Actions | Alcance: `order-status-tag.vue` y cambio de estado del pedido. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US09** | Visualizar variables de proceso | TK-29 | IoT Sensor Simulator | Alcance: `iot-sensor-simulator.js` con lecturas alrededor del centro del rango y probabilidad de anomalía. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Fernandez Seer, Mario Alonso | Done |
+| **US09** | Visualizar variables de proceso | TK-30 | Sensor Reading Domain & Monitoring View | Alcance: `sensor-reading.entity.js`, `sensor-reading.assembler.js` y acceso en `production-api.js`; `monitoring-dashboard.vue` y `variable-card.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 8 | Fernandez Seer, Mario Alonso | Done |
+| **US10** | Configurar rango normal de una variable | TK-31 | Variable Range Dialog | Alcance: `variable-range-dialog.vue` para configurar el mínimo y el máximo. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US10** | Configurar rango normal de una variable | TK-32 | Range Validation Rules | Alcance: `process-variable.entity.js` con la validación del rango. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US11** | Recibir notificación de condición anómala | TK-33 | Reading Evaluation Against Range | Alcance: Comparación de cada lectura contra el rango de la variable. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Fernandez Seer, Mario Alonso | Done |
+| **US11** | Recibir notificación de condición anómala | TK-34 | Anomaly Alert Generation | Alcance: Generación de la alerta hacia el contexto Alerts & Notifications. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US44** | Ver la tendencia de una variable | TK-35 | Readings Chart Component | Alcance: `readings-chart.vue` con Chart.js. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Fernandez Seer, Mario Alonso | Done |
+| **US44** | Ver la tendencia de una variable | TK-36 | Range Lines on Chart | Alcance: Líneas del mínimo y el máximo configurados en el gráfico. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Fernandez Seer, Mario Alonso | Done |
+| **US50** | Generar lista de compra para reposición | TK-37 | Replenishment Order Domain & API | Alcance: `replenishment-order.entity.js`, `replenishment-order.assembler.js` y acceso en `orders-api.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US50** | Generar lista de compra para reposición | TK-38 | Replenishment Orders View & Suggestions | Alcance: `replenishment-orders.vue` y `replenishment-form-dialog.vue` con las sugerencias de compra. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Condor Sandoval, Jean Pierre | Done |
+| **US20** | Ver estimación de reposición | TK-39 | Replenishment Estimate Domain & Calculation | Alcance: `replenishment-estimate.entity.js` con fecha estimada, consumo promedio y cantidad sugerida; Cálculo con el consumo de los últimos 30 días en `analytics.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 8 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US20** | Ver estimación de reposición | TK-40 | Estimate Card in Product Detail | Alcance: `replenishment-estimate-card.vue` en la ficha del producto. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US51** | Ver productos con riesgo de agotamiento | TK-41 | At-Risk Products Logic | Alcance: Selección de productos con riesgo de agotamiento en `analytics.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US51** | Ver productos con riesgo de agotamiento | TK-42 | Priority Replenishment List View | Alcance: `priority-replenishment.vue` con la lista ordenada por urgencia. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-43 | Historical Indicator Domain | Alcance: `historical-indicator.entity.js` y `analytics-record.assembler.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-44 | Indicators View with Period Selector | Alcance: `historical-indicators.vue` con el selector de periodo. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US21** | Ver indicadores históricos | TK-45 | Indicator Charts | Alcance: Gráficos de stock, entradas contra salidas y ventas con `trend-chart.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 6 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US03** | Recibir aviso de fin de periodo de prueba | TK-46 | Trial Banner Component | Alcance: Componente `trial-banner.vue` con los días restantes de prueba y el acceso a los planes. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US03** | Recibir aviso de fin de periodo de prueba | TK-47 | Trial Period Logic | Alcance: `trial-period.entity.js` y cálculo de los días restantes en `billing.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US54** | Consultar mi plan y estado de suscripción | TK-48 | Subscription Entity & API | Alcance: `subscription.entity.js`, `subscription.assembler.js` y consulta de la suscripción en `billing-api.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US54** | Consultar mi plan y estado de suscripción | TK-49 | Access Status Panel | Alcance: Tarjeta con el estado de acceso, el plan y la fecha de renovación en `subscription-plans.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-50 | Plan Catalog & Plan Cards | Alcance: `plan.entity.js`, `plan.assembler.js` y `plan-card.vue` con los tres planes. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-51 | Checkout Flow with Payment Gateway (Test Mode) | Alcance: Inicio del pago con la pasarela en modo de pruebas y orquestación en `billing.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 8 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-52 | Checkout Result Views | Alcance: `checkout-success.vue` y `checkout-cancelled.vue` para el resultado del pago. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Condor Sandoval, Jean Pierre | Done |
+| **US40** | Contratar un plan de suscripción | TK-53 | Payment History | Alcance: `payment.entity.js`, `payment.assembler.js` y `payment-history.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Condor Sandoval, Jean Pierre | Done |
+| **US46** | Consultar el historial de movimientos de un producto | TK-54 | Product Detail View | Alcance: `product-detail.vue` con los datos del producto. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US46** | Consultar el historial de movimientos de un producto | TK-55 | Movement History Table | Alcance: Tabla paginada con el historial de movimientos del producto. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US47** | Ajustar el stock tras un conteo físico | TK-56 | Adjustment Movement Type | Alcance: Tipo de movimiento `ADJUSTMENT` en el modelo de dominio. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US47** | Ajustar el stock tras un conteo físico | TK-57 | Adjustment Form | Alcance: Cantidad contada y motivo del ajuste en `stock-movement-dialog.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 5 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US48** | Filtrar alertas por tipo y estado | TK-58 | Alert Type Filter | Alcance: Filtro de alertas por tipo (producción o inventario). Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US48** | Filtrar alertas por tipo y estado | TK-59 | Alert Status Filter | Alcance: Filtro de alertas por estado (pendientes, atendidas o todas). Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| **US49** | Editar los datos de un cliente | TK-60 | Customer Edit Mode | Alcance: Modo de edición en `customer-form-dialog.vue`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| **US49** | Editar los datos de un cliente | TK-61 | Update Customer Request | Alcance: Actualización del cliente en `orders-api.js` y `orders.store.js`. Incluye la revisión del código y la verificación funcional contra los criterios de aceptación. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-62 | Shared Kernel | `BaseApi`, `BaseEndpoint`, `BaseAssembler`, `error.interceptor`, `Money` y `DateTime`. Incluye la revisión del código y la verificación funcional. | 6 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-63 | Shared Layout & App Bootstrap | Layout, barra superior, navegación lateral, tarjeta KPI, estado vacío y página 404; `main.js`, `app.vue`, `router.js` y `pinia.js`. Incluye la revisión del código y la verificación funcional. | 6 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-64 | Fake API | Fake API con json-server (`db.json`, `routes.json`, `start.sh`) y su publicación para producción. Incluye la revisión del código y la verificación funcional. | 5 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-65 | Internationalization | Configuración de vue-i18n y catálogos `es.json` y `en.json`. Incluye la revisión del código y la verificación funcional. | 5 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica transversal | TK-66 | User Switcher | Selector Productor / Comercializador (`user-switcher`), tienda del usuario actual (`user.store`) y `users-api`; reemplaza al inicio de sesión mientras no exista IAM. Incluye la revisión del código y la verificación funcional. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica de pruebas | TK-67 | Functional Testing Billing & Users | Pruebas funcionales de planes, suscripción, pagos y cambio de perfil con el selector de usuario. Incluye el registro de los defectos encontrados y su reprueba. | 4 | Condor Sandoval, Jean Pierre | Done |
+| — | Tarea técnica de pruebas | TK-68 | Functional Testing Production | Pruebas funcionales de lotes, etapas y monitoreo IoT simulado, incluida la detección de anomalías. Incluye el registro de los defectos encontrados y su reprueba. | 6 | Fernandez Seer, Mario Alonso | Done |
+| — | Tarea técnica de pruebas | TK-69 | Functional Testing Inventory | Pruebas funcionales de productos, movimientos, umbrales y estimaciones de reposición. Incluye el registro de los defectos encontrados y su reprueba. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| — | Tarea técnica de pruebas | TK-70 | Functional Testing Orders | Pruebas funcionales de clientes, pedidos y órdenes de reposición. Incluye el registro de los defectos encontrados y su reprueba. | 4 | Santiago Atanacio, Jairo Mathias | Done |
+| — | Tarea técnica de pruebas | TK-71 | Functional Testing Alerts & Analytics | Pruebas funcionales de alertas, dashboards e indicadores históricos. Incluye el registro de los defectos encontrados y su reprueba. | 4 | Almandroz Carbajal, Pierina Marysabel | Done |
+| — | Tarea técnica de pruebas | TK-72 | Language & Navigation Testing | Pruebas de cambio de idioma ES / EN, navegación entre vistas y rutas protegidas por perfil. Incluye el registro de los defectos encontrados y su reprueba. | 4 | Santiago Atanacio, Jairo Mathias | Done |
 
 
-**Horas por integrante.** El Sprint Backlog suma 132 horas: Santiago Atanacio, Jairo Mathias, 32; Almandroz Carbajal, Pierina Marysabel, 43; Fernandez Seer, Mario Alonso, 24; Condor Sandoval, Jean Pierre, 15; y Domenack Angeles, Miguel, 18, dedicadas a las pruebas funcionales de la aplicación (TK-76 a TK-81). Cada historia de usuario se descompone en dos o más tareas, que se asignan al responsable del aspecto correspondiente.
+**Horas por integrante.** El Sprint Backlog suma 347 horas: Santiago Atanacio, Jairo Mathias, 72; Almandroz Carbajal, Pierina Marysabel, 137; Fernandez Seer, Mario Alonso, 86; y Condor Sandoval, Jean Pierre, 52. Cada historia de usuario se descompone en dos o más tareas de ingeniería de 4 a 8 horas, que se asignan al responsable del aspecto correspondiente. Las tareas de pruebas funcionales (TK-67 a TK-72) se asignaron a quien desarrolló cada módulo.
 
 **Observación.** Las historias del contexto IAM (US01 registro, US02 inicio de sesión, US38 cierre de sesión, US39 recuperar contraseña y US41 perfil del negocio) no forman parte de este sprint porque el curso aún no aborda la autenticación; el equipo las había iniciado en la rama `feature/iam` y las retiró del alcance, por lo que vuelven al Product Backlog para un sprint posterior. Tampoco se incluyeron US42 (editar lote), US45 (editar o desactivar producto) y US55 (elegir las variables monitoreadas), que no se implementaron en la primera versión de la interfaz. Las historias técnicas de endpoints (EP10) se reservan para el sprint del *backend*.
 
@@ -5525,7 +5550,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp) la aplicación web con Vue 3 (Composition API) y Vite, PrimeVue para los componentes de interfaz, Pinia para el estado, Vue Router, vue-i18n y Chart.js para los gráficos. Cada *bounded context* se organiza en las capas `domain`, `infrastructure`, `application` y `presentation`, y el repositorio sigue el flujo de ramas `main`, `develop` y `feature/*` descrito en la sección 5.1.2. La tabla reúne los commits únicos visibles en las ramas del repositorio al 2026-10-05, en orden cronológico; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la rama más antigua que lo contiene.
 
-**Tabla 19**
+**Tabla 20**
 
 *Commits del repositorio de la aplicación web*
 
@@ -6001,7 +6026,7 @@ En el Sprint 2 no se implementaron servicios web propios: la aplicación consume
 
 **URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 160).
 
-**Tabla 20**
+**Tabla 21**
 
 *Recursos del Fake API utilizados por la aplicación web*
 
@@ -6160,9 +6185,9 @@ La aplicación está disponible en la URL pública de Firebase Hosting y carga s
 
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
-El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y trabajó con una rama `feature/*` por *bounded context*. A diferencia del Sprint 1, cada integrante registró sus commits desde su propia cuenta, de modo que el repositorio permite medir los aportes individuales. La tabla resume los commits únicos de la sección 5.2.2.4 por integrante y por rama. Miguel Domenack se encargó de las pruebas funcionales de la aplicación (sección 5.2.2.3), una tarea que no deja commits en el repositorio.
+El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y trabajó con una rama `feature/*` por *bounded context*. A diferencia del Sprint 1, cada integrante registró sus commits desde su propia cuenta, de modo que el repositorio permite medir los aportes individuales. La tabla resume los commits únicos de la sección 5.2.2.4 por integrante y por rama. Las pruebas funcionales se repartieron entre los cuatro integrantes (sección 5.2.2.3) y no dejan commits en el repositorio.
 
-**Tabla 21**
+**Tabla 22**
 
 *Commits del repositorio de la aplicación web por integrante*
 
@@ -6173,7 +6198,6 @@ El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y 
 | Santiago Atanacio, Jairo Mathias | Msa-ware | `main` (4), `feature/shared` (30), `feature/iam` (3), `feature/fake-api` (5), `feature/orders-replenishment` (22), `feature/locales` (2), `develop` (9) | 75 |
 | Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | `feature/alerts-notifications` (8), `feature/analytics-estimations` (15), `feature/inventory-stock` (17), `develop` (1) | 41 |
 | Condor Sandoval, Jean Pierre | jeanpcs | `feature/shared` (1), `feature/iam` (20), `feature/billing` (15), `feature/orders-replenishment` (5) | 41 |
-| Domenack Angeles, Miguel | midoan0805 | Sin commits; pruebas funcionales de la aplicación (TK-76 a TK-81) | 0 |
 | **Total** | | | **187** |
 
 
@@ -6269,7 +6293,17 @@ Vue.js. (2024). *Style guide*. https://vuejs.org/style-guide/
 | Carpeta `assets/webapp/` | Capturas de la aplicación web en ejecución (sección 5.2.2.5). |
 
 
-### Anexo B. Video de las entrevistas
+### Anexo B. Videos de Exposiciones
+
+La siguiente tabla reúne los videos de las exposiciones del proyecto en Microsoft Stream, uno por cada entrega, y se amplía en cada entrega.
+
+| Entrega | Título del video | Enlace |
+| :---: | :--- | :---: |
+| AV1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-av1 | [ENLACE POR COMPLETAR] |
+| TB1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-tb1 | [ENLACE POR COMPLETAR] |
+
+
+### Anexo C. Video de las entrevistas
 
 Las siete entrevistas (tres a productores y cuatro a comercializadores) se entregan en un único video continuo.
 
