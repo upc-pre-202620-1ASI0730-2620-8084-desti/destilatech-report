@@ -90,6 +90,7 @@ Proyecto<br>
 | 1.3.1 | 28/10/2026 | Santiago Atanacio, Jairo Mathias | Proceso colaborativo: evidencia de las actividades de documentación, desarrollo, ejecución, pruebas y despliegue por repositorio, con commits de referencia y responsables (`feature/correcciones`) |
 | 1.3.2 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 1 reescrito con tareas de ingeniería (*Engineering Tasks*) de 4 a 8 horas, nueva velocidad y horas por integrante (`feature/correcciones`) |
 | 1.3.3 | 28/10/2026 | Almandroz Carbajal, Pierina Marysabel | Sprint Backlog 2 reescrito con tareas de ingeniería de 4 a 8 horas, nueva velocidad, horas por integrante y tareas de pruebas funcionales asignadas a quien desarrolló cada módulo (`feature/correcciones`) |
+| 1.3.4 | 28/10/2026 | Condor Sandoval, Jean Pierre | Actualización del Sprint 2 por el retiro de un integrante: asistentes del Sprint Planning 2, retrospectiva, matriz de líderes y colaboradores sin la columna de pruebas y analíticas de colaboración (`feature/correcciones`) |
 
 
 <div style="page-break-after: always;"></div>
@@ -5397,12 +5398,12 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 | Sprint # | Sprint 2 |
 | :--- | :--- |
-| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. |
+| **Antecedentes de la planificación** | Con la landing page publicada y el Product Backlog priorizado (sección 3.3), el equipo decidió construir la primera versión de la aplicación web con las historias de interfaz de seis *bounded contexts*. Los endpoints de la RESTful API (épica EP10) se dejaron para el sprint del *backend*. Antes de este sprint se retiró del equipo Domenack Angeles, Miguel; desde el Sprint 2 el equipo está conformado por cuatro integrantes. |
 | **Fecha** | 2026-09-29 |
 | **Hora** | 11:00 a.m. |
 | **Ubicación** | Reunión virtual (WhatsApp, Discord y Google Meet) |
 | **Preparada por** | Santiago Atanacio, Jairo Mathias |
-| **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre; Domenack Angeles, Miguel |
+| **Asistentes** | Fernandez Seer, Mario Alonso; Santiago Atanacio, Jairo Mathias; Almandroz Carbajal, Pierina Marysabel; Condor Sandoval, Jean Pierre |
 | **Sprint 1 Review Summary** | La landing page se publicó en GitHub Pages con las siete secciones previstas (Header, Description, Goals, Pricing, Impact, Platform Features y Footer), el selector de idioma ES / EN y el botón de prueba gratuita de 14 días. Al cierre del tablero quedaba en To Review la tarjeta «Mock-up móvil de la landing page». |
 | **Sprint 1 Retrospective Summary** | Funcionó el reparto de la landing page por secciones y la coordinación por Discord. A mejorar: los 11 commits de la landing se registraron desde una sola cuenta y con el tipo `docs`, lo que impidió medir aportes individuales. Para el Sprint 2 se trabaja con ramas `feature/*` por *bounded context*, cada integrante desde su propia cuenta y con mensajes en formato Conventional Commits. |
 | **Sprint 2 Goal** | *Our focus is on* que el productor y el comercializador de pisco puedan controlar su operación desde una sola plataforma: el productor, registrar sus lotes y vigilar las condiciones del proceso con lecturas simuladas; el comercializador, controlar su stock, registrar clientes y pedidos, y saber cuándo reponer. *We believe it delivers* visibilidad del estado de su producción y de su inventario sin cuadernos ni hojas de cálculo, y un aviso oportuno antes de perder un lote o de quedarse sin producto. *This will be confirmed when* un productor de demostración pueda registrar un lote, ver sus lecturas y recibir una alerta cuando una variable salga de su rango, y un comercializador de demostración pueda registrar un pedido, ver el stock descontado y recibir la sugerencia de reposición de un producto con stock bajo. |
@@ -5414,15 +5415,14 @@ El Sprint 2 se dedicó a construir la primera versión de la aplicación web (*W
 
 En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden con los *bounded contexts* del capítulo IV más el *Shared Kernel*, el Fake API y la internacionalización. El líder de cada aspecto es el responsable de las tareas correspondientes en la sección 5.2.2.3; el rol de colaborador se asignó a quien registra commits en la rama del aspecto (sección 5.2.2.4).
 
-| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel | Fake API & i18n | Billing | Production & Monitoring | Inventory & Stock | Orders & Replenishment | Alerts & Notifications | Analytics & Estimations | Pruebas funcionales |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Fernandez Seer, Mario Alonso | MrBaru | - | - | - | L | - | - | - | - | - |
-| Santiago Atanacio, Jairo Mathias | Msa-ware | L | L | - | - | - | L | - | - | - |
-| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | - | - | - | - | L | - | L | L | - |
-| Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - | - |
-| Domenack Angeles, Miguel | midoan0805 | - | - | - | - | - | - | - | - | L |
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel | Fake API & i18n | Billing | Production & Monitoring | Inventory & Stock | Orders & Replenishment | Alerts & Notifications | Analytics & Estimations |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Fernandez Seer, Mario Alonso | MrBaru | - | - | - | L | - | - | - | - |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | L | L | - | - | - | L | - | - |
+| Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | - | - | - | - | L | - | L | L |
+| Condor Sandoval, Jean Pierre | jeanpcs | C | C | L | - | - | C | - | - |
 
-**Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Miguel Domenack lideró las pruebas funcionales de la aplicación, que abarcan todos los módulos y no registran commits en el repositorio. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
+**Leyenda:** L = Líder (*Leader*); C = Colaborador (*Collaborator*); - = sin participación registrada en el aspecto. Las pruebas funcionales de cada módulo (TK-67 a TK-72) las hizo el integrante que lo desarrolló, por lo que no tienen una columna propia. Los dashboards (US04 y US05) pertenecen al contexto Analytics & Estimations.
 
 ##### 5.2.2.3. Sprint Backlog 2
 
@@ -6164,7 +6164,7 @@ La aplicación está disponible en la URL pública de Firebase Hosting y carga s
 
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
-El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y trabajó con una rama `feature/*` por *bounded context*. A diferencia del Sprint 1, cada integrante registró sus commits desde su propia cuenta, de modo que el repositorio permite medir los aportes individuales. La tabla resume los commits únicos de la sección 5.2.2.4 por integrante y por rama. Miguel Domenack se encargó de las pruebas funcionales de la aplicación (sección 5.2.2.3), una tarea que no deja commits en el repositorio.
+El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y trabajó con una rama `feature/*` por *bounded context*. A diferencia del Sprint 1, cada integrante registró sus commits desde su propia cuenta, de modo que el repositorio permite medir los aportes individuales. La tabla resume los commits únicos de la sección 5.2.2.4 por integrante y por rama. Las pruebas funcionales se repartieron entre los cuatro integrantes (sección 5.2.2.3) y no dejan commits en el repositorio.
 
 **Tabla 22**
 
@@ -6177,7 +6177,6 @@ El equipo repartió los módulos de la aplicación según la sección 5.2.2.3 y 
 | Santiago Atanacio, Jairo Mathias | Msa-ware | `main` (4), `feature/shared` (30), `feature/iam` (3), `feature/fake-api` (5), `feature/orders-replenishment` (22), `feature/locales` (2), `develop` (9) | 75 |
 | Almandroz Carbajal, Pierina Marysabel | pierinaaa29 | `feature/alerts-notifications` (8), `feature/analytics-estimations` (15), `feature/inventory-stock` (17), `develop` (1) | 41 |
 | Condor Sandoval, Jean Pierre | jeanpcs | `feature/shared` (1), `feature/iam` (20), `feature/billing` (15), `feature/orders-replenishment` (5) | 41 |
-| Domenack Angeles, Miguel | midoan0805 | Sin commits; pruebas funcionales de la aplicación (TK-67 a TK-72) | 0 |
 | **Total** | | | **187** |
 
 
