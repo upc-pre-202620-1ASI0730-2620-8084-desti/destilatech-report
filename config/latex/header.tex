@@ -1,0 +1,26 @@
+% Preámbulo adicional del informe (se agrega con include-in-header)
+\usepackage{xurl}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\},fontsize=\footnotesize}
+\usepackage{longtable,booktabs,multirow,array,colortbl,float}
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.25}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Destilatech --- FuturosSeniors}
+\fancyhead[R]{\footnotesize 1ASI0730 Aplicaciones Web}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+\AtBeginDocument{\thispagestyle{empty}}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-20pt}{18pt}
+\usepackage{newunicodechar}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
