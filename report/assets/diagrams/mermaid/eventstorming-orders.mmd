@@ -1,0 +1,17 @@
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterCustomer"]:::command --> A1{{"Aggregate:\nCustomer"}}:::aggregate --> E1(["Event:\nCustomerRegistered"]):::event
+    C1b["Command:\nEditCustomer"]:::command --> A1 --> E1b(["Event:\nCustomerUpdated"]):::event
+    C2["Command:\nRegisterOrder"]:::command --> A2{{"Aggregate:\nOrder"}}:::aggregate --> E2(["Event:\nOrderRegistered"]):::event
+    E2 --> P1{"Policy:\nDiscountStockOnOrder"}:::policy --> XC1["Command hacia\nInventory & Stock Management:\nDiscountStock"]:::command
+    C3["Command:\nGenerateReplenishmentList"]:::command --> A3{{"Aggregate:\nReplenishmentList"}}:::aggregate --> E3(["Event:\nReplenishmentListGenerated"]):::event
+    XQ1["Consulta a\nInventory & Stock Management:\nproductos por reponer"]:::readmodel -.-> C3
+    E3 -.->|"el usuario comparte el texto"| EXT1(["Sistema externo:\nWhatsApp"]):::external
+    E2 --> RM1[/"Read Model:\nOrderHistoryView"/]:::readmodel
+    E1 --> RM2[/"Read Model:\nCustomerListView"/]:::readmodel

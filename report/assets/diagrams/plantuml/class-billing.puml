@@ -1,0 +1,101 @@
+@startuml
+title Diagrama de clases — Billing
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide empty members
+skinparam classAttributeIconSize 0
+left to right direction
+
+class Plan {
+  -id : Guid
+  -name : string
+  -price : decimal
+  -billingCycle : BillingCycle
+  -description : string
+  +IsAvailable() : bool
+}
+class Subscription {
+  -id : Guid
+  -accountId : Guid
+  -planId : Guid
+  -status : SubscriptionStatus
+  -startDate : DateTime
+  -renewalDate : DateTime
+  +Activate(planId) : void
+  +Renew() : void
+  +Cancel() : void
+  +IsActive(today) : bool
+}
+class PaymentAttempt {
+  -id : Guid
+  -subscriptionId : Guid
+  -amount : decimal
+  -status : PaymentStatus
+  -idempotencyKey : string
+  -providerPaymentId : string
+  -createdAt : DateTime
+  -paidAt : DateTime
+  +Create(subscriptionId, amount, idempotencyKey) : PaymentAttempt
+  +MarkPaid(providerPaymentId) : void
+  +MarkFailed(reason) : void
+}
+class SubscriptionService <<service>> {
+  -gateway : IPaymentGateway
+  -subscriptions : ISubscriptionRepository
+  +Subscribe(accountId, planId, idempotencyKey) : PaymentAttempt
+  +ConfirmPayment(providerPaymentId) : void
+  +GetStatus(accountId) : Subscription
+}
+interface IPaymentGateway {
+  +CreateCheckout(amount, idempotencyKey) : string
+  +VerifyPayment(providerPaymentId) : bool
+}
+interface ISubscriptionRepository {
+  +FindByAccount(accountId) : Subscription
+  +Save(subscription) : void
+}
+enum BillingCycle {
+  MONTHLY
+}
+enum SubscriptionStatus {
+  PENDING
+  ACTIVE
+  CANCELLED
+  EXPIRED
+}
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+}
+
+Plan "1" --> "0..*" Subscription : rige
+Subscription "1" --> "0..*" PaymentAttempt : recibe
+Plan ..> BillingCycle : se factura
+Subscription ..> SubscriptionStatus : estado
+PaymentAttempt ..> PaymentStatus : estado
+SubscriptionService ..> IPaymentGateway : cobra con
+SubscriptionService ..> ISubscriptionRepository : persiste con
+SubscriptionService ..> Subscription : gestiona
+@enduml

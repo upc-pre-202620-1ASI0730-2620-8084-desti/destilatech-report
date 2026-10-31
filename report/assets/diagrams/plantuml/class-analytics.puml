@@ -1,0 +1,89 @@
+@startuml
+title Diagrama de clases — Analytics & Estimations
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide empty members
+skinparam classAttributeIconSize 0
+left to right direction
+
+class ReplenishmentEstimate {
+  -id : Guid
+  -ownerAccountId : Guid
+  -productId : Guid
+  -estimatedDate : DateTime
+  -estimatedQuantity : decimal
+  -confidence : decimal
+  -status : EstimateStatus
+  +Calculate(productId, history) : ReplenishmentEstimate
+  +IsAtRisk(today) : bool
+}
+class HistoricalIndicator {
+  -id : Guid
+  -ownerAccountId : Guid
+  -period : string
+  -metricType : MetricType
+  -value : decimal
+  +Generate(ownerAccountId, period, metricType) : HistoricalIndicator
+}
+class DashboardSummary <<valueobject>> {
+  -businessType : BusinessType
+  -activeBatches : int
+  -openAlerts : int
+  -productsAtRisk : int
+  +ForProducer(ownerAccountId) : DashboardSummary
+  +ForRetailer(ownerAccountId) : DashboardSummary
+}
+class EstimationService <<service>> {
+  -history : IInventoryHistoryReader
+  -estimates : IEstimateRepository
+  +CalculateEstimate(ownerAccountId, productId) : ReplenishmentEstimate
+  +GetProductsAtRisk(ownerAccountId) : ReplenishmentEstimate[]
+  +GenerateIndicators(ownerAccountId, period) : HistoricalIndicator[]
+}
+interface IInventoryHistoryReader {
+  +GetMovements(productId, from, to) : StockMovement[]
+}
+interface IEstimateRepository {
+  +Save(estimate) : void
+  +FindAtRisk(ownerAccountId) : ReplenishmentEstimate[]
+}
+enum EstimateStatus {
+  ESTIMATED
+  INSUFFICIENT_DATA
+  NO_DEMAND
+}
+enum MetricType {
+  PRODUCTION_VOLUME
+  STOCK_LEVEL
+  SALES_VOLUME
+}
+
+ReplenishmentEstimate ..> EstimateStatus : estado
+HistoricalIndicator ..> MetricType : métrica
+EstimationService ..> IInventoryHistoryReader : lee historial con
+EstimationService ..> IEstimateRepository : persiste con
+EstimationService ..> ReplenishmentEstimate : calcula
+EstimationService ..> HistoricalIndicator : genera
+DashboardSummary ..> EstimationService : consulta riesgo con
+@enduml

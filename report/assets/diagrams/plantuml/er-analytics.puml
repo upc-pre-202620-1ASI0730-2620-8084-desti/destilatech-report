@@ -1,0 +1,52 @@
+@startuml
+title Diagrama entidad-relación — Analytics & Estimations
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity analytics_replenishment_estimates {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  product_id : char(36) (referencia lógica a inventory_products)
+  estimated_date : datetime (nullable)
+  estimated_quantity : decimal
+  confidence : decimal
+  status : varchar(20)
+  calculated_at : datetime
+}
+
+entity analytics_historical_indicators {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  period : varchar(20)
+  metric_type : varchar(30)
+  value : decimal
+  generated_at : datetime
+}
+
+@enduml

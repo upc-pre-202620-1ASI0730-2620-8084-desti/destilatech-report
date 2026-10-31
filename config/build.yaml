@@ -1,0 +1,54 @@
+# Configuración declarativa de Pandoc para compilar el informe.
+# Uso (desde la raíz del repositorio):  pandoc --defaults=config/build.yaml
+# El orden de input-files es el orden de los capítulos en el PDF.
+from: markdown+pipe_tables+backtick_code_blocks+raw_html+fenced_divs+yaml_metadata_block-smart-raw_tex-native_divs-markdown_in_html_blocks
+to: pdf
+pdf-engine: xelatex
+output-file: dist/destilatech-informe.pdf
+file-scope: true
+standalone: true
+toc: false                  # el índice se inserta en front-matter/04-table-of-contents.md
+top-level-division: chapter
+shift-heading-level-by: -1  # los títulos de capítulo del Markdown son nivel 2 (##)
+number-sections: false      # la numeración ya está escrita en los títulos
+highlight-style: tango
+resource-path:
+  - .
+  - report
+  - report/front-matter
+  - report/annexes
+metadata-files:
+  - config/metadata.yaml
+include-in-header:
+  - config/latex/header.tex
+filters:
+  - config/filters/html-to-ast.lua
+input-files:
+  - report/front-matter/01-cover.md
+  - report/front-matter/02-version-history.md
+  - report/front-matter/03-collaboration-insights.md
+  - report/front-matter/04-table-of-contents.md
+  - report/front-matter/05-student-outcome.md
+  - report/10-introduction.md
+  - report/20-requirements-elicitation.md
+  - report/30-requirements-specification.md
+  - report/40-product-design.md
+  - report/41-style-guidelines.md
+  - report/42-information-architecture.md
+  - report/43-landing-page-ui-design.md
+  - report/44-web-applications-ux-ui-design.md
+  - report/45-web-applications-prototyping.md
+  - report/46-domain-driven-software-architecture.md
+  - report/47-software-object-oriented-design.md
+  - report/48-database-design.md
+  - report/50-product-implementation.md
+  - report/51-software-configuration-management.md
+  - report/52-implementation-overview.md
+  - report/53-sprint-1.md
+  - report/54-sprint-2.md
+  - report/90-conclusions.md
+  - report/99-bibliography.md
+  - report/annexes/00-annexes.md
+  - report/annexes/annex-a-supplementary-files.md
+  - report/annexes/annex-b-presentation-videos.md
+  - report/annexes/annex-c-interview-videos.md

@@ -1,0 +1,1774 @@
+{
+  "configuration": {},
+  "description": "Arquitectura de software de Destilatech, plataforma SaaS para el monitoreo de producción, el control de inventario y la gestión comercial de pisco.",
+  "documentation": {},
+  "id": 0,
+  "model": {
+    "people": [
+      {
+        "description": "Productor o comercializador que conoce la propuesta de valor, los planes y se registra.",
+        "id": "1",
+        "name": "Visitante",
+        "properties": {
+          "structurizr.dsl.identifier": "visitor"
+        },
+        "relationships": [
+          {
+            "description": "Conoce la propuesta y los planes",
+            "destinationId": "7",
+            "id": "35",
+            "sourceId": "1",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Conoce la propuesta y los planes",
+            "destinationId": "6",
+            "id": "36",
+            "linkedRelationshipId": "35",
+            "sourceId": "1",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Navega entre secciones",
+            "destinationId": "8",
+            "id": "51",
+            "sourceId": "1",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          }
+        ],
+        "tags": "Element,Person"
+      },
+      {
+        "description": "Pequeño o mediano productor que registra lotes, monitorea variables del proceso y controla su inventario.",
+        "id": "2",
+        "name": "Productor de pisco",
+        "properties": {
+          "structurizr.dsl.identifier": "producer"
+        },
+        "relationships": [
+          {
+            "description": "Gestiona lotes, monitoreo e inventario",
+            "destinationId": "16",
+            "id": "39",
+            "sourceId": "2",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Gestiona lotes, monitoreo e inventario",
+            "destinationId": "6",
+            "id": "40",
+            "linkedRelationshipId": "39",
+            "sourceId": "2",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Consulta su dashboard",
+            "destinationId": "24",
+            "id": "60",
+            "sourceId": "2",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          }
+        ],
+        "tags": "Element,Person"
+      },
+      {
+        "description": "Bodega, licorería o distribuidor que gestiona inventario, clientes y pedidos.",
+        "id": "3",
+        "name": "Comercializador",
+        "properties": {
+          "structurizr.dsl.identifier": "retailer"
+        },
+        "relationships": [
+          {
+            "description": "Gestiona inventario, clientes y pedidos",
+            "destinationId": "16",
+            "id": "41",
+            "sourceId": "3",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Gestiona inventario, clientes y pedidos",
+            "destinationId": "6",
+            "id": "42",
+            "linkedRelationshipId": "41",
+            "sourceId": "3",
+            "technology": "HTTPS"
+          },
+          {
+            "description": "Consulta su dashboard",
+            "destinationId": "24",
+            "id": "61",
+            "sourceId": "3",
+            "tags": "Relationship",
+            "technology": "HTTPS"
+          }
+        ],
+        "tags": "Element,Person"
+      }
+    ],
+    "softwareSystems": [
+      {
+        "description": "Procesa el cobro de las suscripciones. Se usa en modo de pruebas (sandbox).",
+        "documentation": {},
+        "id": "4",
+        "name": "Pasarela de Pago",
+        "properties": {
+          "structurizr.dsl.identifier": "paymentGateway"
+        },
+        "relationships": [
+          {
+            "description": "Notifica el resultado del pago",
+            "destinationId": "25",
+            "id": "47",
+            "sourceId": "4",
+            "tags": "Relationship",
+            "technology": "HTTPS (webhook)"
+          },
+          {
+            "description": "Notifica el resultado del pago",
+            "destinationId": "6",
+            "id": "48",
+            "linkedRelationshipId": "47",
+            "sourceId": "4",
+            "technology": "HTTPS (webhook)"
+          },
+          {
+            "description": "Notifica el resultado del pago",
+            "destinationId": "28",
+            "id": "98",
+            "sourceId": "4",
+            "tags": "Relationship",
+            "technology": "HTTPS (webhook)"
+          }
+        ],
+        "tags": "Element,Software System,External"
+      },
+      {
+        "description": "Emite lecturas de variables del proceso como temperatura, pH y nivel.",
+        "documentation": {},
+        "id": "5",
+        "name": "Sensor IoT (simulado)",
+        "properties": {
+          "structurizr.dsl.identifier": "iotSensor"
+        },
+        "relationships": [
+          {
+            "description": "Envía lecturas simuladas",
+            "destinationId": "25",
+            "id": "49",
+            "sourceId": "5",
+            "tags": "Relationship",
+            "technology": "HTTPS/REST"
+          },
+          {
+            "description": "Envía lecturas simuladas",
+            "destinationId": "6",
+            "id": "50",
+            "linkedRelationshipId": "49",
+            "sourceId": "5",
+            "technology": "HTTPS/REST"
+          },
+          {
+            "description": "Envía lecturas simuladas",
+            "destinationId": "29",
+            "id": "99",
+            "sourceId": "5",
+            "tags": "Relationship",
+            "technology": "HTTPS/REST"
+          }
+        ],
+        "tags": "Element,Software System,External"
+      },
+      {
+        "containers": [
+          {
+            "components": [
+              {
+                "description": "Logo, navegación entre secciones y selector de idioma.",
+                "documentation": {},
+                "id": "8",
+                "name": "Header",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.header"
+                },
+                "relationships": [
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "9",
+                    "id": "52",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "10",
+                    "id": "53",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "11",
+                    "id": "54",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "12",
+                    "id": "55",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "13",
+                    "id": "56",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enlaza",
+                    "destinationId": "14",
+                    "id": "57",
+                    "sourceId": "8",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Explica qué es Destilatech y su propuesta de valor.",
+                "documentation": {},
+                "id": "9",
+                "name": "Description",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.description"
+                },
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Presenta los beneficios principales de la plataforma.",
+                "documentation": {},
+                "id": "10",
+                "name": "Goals",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.goals"
+                },
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Muestra los planes de suscripción y la prueba gratuita de 14 días.",
+                "documentation": {},
+                "id": "11",
+                "name": "Pricing",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.pricing"
+                },
+                "relationships": [
+                  {
+                    "description": "Enlaza a la aplicación con el plan preseleccionado",
+                    "destinationId": "15",
+                    "id": "58",
+                    "sourceId": "11",
+                    "tags": "Relationship",
+                    "technology": "HTTPS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Muestra cifras del sector pisquero peruano.",
+                "documentation": {},
+                "id": "12",
+                "name": "Impact",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.impact"
+                },
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Describe las funcionalidades por segmento objetivo.",
+                "documentation": {},
+                "id": "13",
+                "name": "Platform Features",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.features"
+                },
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              },
+              {
+                "description": "Contacto, enlaces, términos y condiciones y llamada a la acción de registro.",
+                "documentation": {},
+                "id": "14",
+                "name": "Footer",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.website.footer"
+                },
+                "relationships": [
+                  {
+                    "description": "Enlaza al registro",
+                    "destinationId": "15",
+                    "id": "59",
+                    "sourceId": "14",
+                    "tags": "Relationship",
+                    "technology": "HTTPS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "HTML, CSS, JavaScript"
+              }
+            ],
+            "description": "Sitio web estático con la propuesta de valor, los planes y el punto de entrada al registro.",
+            "documentation": {},
+            "id": "7",
+            "name": "Website",
+            "properties": {
+              "structurizr.dsl.identifier": "destilatech.website"
+            },
+            "relationships": [
+              {
+                "description": "Enlaza a la aplicación",
+                "destinationId": "15",
+                "id": "37",
+                "sourceId": "7",
+                "tags": "Relationship",
+                "technology": "HTTPS"
+              }
+            ],
+            "tags": "Element,Container,Website",
+            "technology": "HTML5, CSS3, JavaScript"
+          },
+          {
+            "description": "Sirve al navegador los archivos estáticos de la aplicación (HTML, CSS y paquetes de JavaScript) desde un servicio de hosting.",
+            "documentation": {},
+            "id": "15",
+            "name": "Web Application Static Content",
+            "properties": {
+              "structurizr.dsl.identifier": "destilatech.webStatic"
+            },
+            "relationships": [
+              {
+                "description": "Entrega la aplicación al navegador",
+                "destinationId": "16",
+                "id": "38",
+                "sourceId": "15",
+                "tags": "Relationship",
+                "technology": "HTTPS"
+              }
+            ],
+            "tags": "Element,Container,Static Content",
+            "technology": "Hosting de contenido estático"
+          },
+          {
+            "components": [
+              {
+                "description": "Layout, cliente HTTP base, internacionalización (es/en), conmutador de usuario de demostración y componentes comunes.",
+                "documentation": {},
+                "id": "17",
+                "name": "Shared Kernel",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.sharedKernel"
+                },
+                "relationships": [
+                  {
+                    "description": "Muestra las alertas pendientes",
+                    "destinationId": "23",
+                    "id": "62",
+                    "sourceId": "17",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Muestra el estado de la prueba gratuita",
+                    "destinationId": "19",
+                    "id": "63",
+                    "sourceId": "17",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Invoca los servicios de cada contexto",
+                    "destinationId": "25",
+                    "id": "74",
+                    "sourceId": "17",
+                    "tags": "Relationship",
+                    "technology": "JSON/HTTPS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "Vue components, JavaScript"
+              },
+              {
+                "description": "Registro, inicio de sesión y recuperación de contraseña. No se aplica en el Sprint 2.",
+                "documentation": {},
+                "id": "18",
+                "name": "IAM (planificado)",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.iamUi"
+                },
+                "tags": "Element,Component,Planned",
+                "technology": "Vue components"
+              },
+              {
+                "description": "Plan, estado de la suscripción, periodo de prueba e historial de pagos.",
+                "documentation": {},
+                "id": "19",
+                "name": "Billing",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.billingUi"
+                },
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia"
+              },
+              {
+                "description": "Lotes de producción, variables del proceso y lecturas simuladas.",
+                "documentation": {},
+                "id": "20",
+                "name": "Production & Monitoring",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.productionUi"
+                },
+                "relationships": [
+                  {
+                    "description": "Consulta productos al registrar el embotellado",
+                    "destinationId": "21",
+                    "id": "64",
+                    "sourceId": "20",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Genera alertas de anomalía",
+                    "destinationId": "23",
+                    "id": "65",
+                    "sourceId": "20",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia"
+              },
+              {
+                "description": "Productos, stock, movimientos y umbrales.",
+                "documentation": {},
+                "id": "21",
+                "name": "Inventory & Stock Management",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.inventoryUi"
+                },
+                "relationships": [
+                  {
+                    "description": "Genera alertas de stock bajo",
+                    "destinationId": "23",
+                    "id": "66",
+                    "sourceId": "21",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Consulta la estimación de un producto",
+                    "destinationId": "24",
+                    "id": "73",
+                    "sourceId": "21",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia"
+              },
+              {
+                "description": "Clientes, pedidos y lista de compra para reposición.",
+                "documentation": {},
+                "id": "22",
+                "name": "Orders & Replenishment",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.ordersUi"
+                },
+                "relationships": [
+                  {
+                    "description": "Consulta y descuenta stock",
+                    "destinationId": "21",
+                    "id": "67",
+                    "sourceId": "22",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Consulta estimaciones de reposición",
+                    "destinationId": "24",
+                    "id": "72",
+                    "sourceId": "22",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia"
+              },
+              {
+                "description": "Bandeja de alertas de anomalía y de stock bajo.",
+                "documentation": {},
+                "id": "23",
+                "name": "Alerts & Notifications",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.alertsUi"
+                },
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia"
+              },
+              {
+                "description": "Dashboard, estimaciones de reposición e indicadores históricos.",
+                "documentation": {},
+                "id": "24",
+                "name": "Analytics & Estimations",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.spa.analyticsUi"
+                },
+                "relationships": [
+                  {
+                    "description": "Consulta lotes y lecturas",
+                    "destinationId": "20",
+                    "id": "68",
+                    "sourceId": "24",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Consulta stock y movimientos",
+                    "destinationId": "21",
+                    "id": "69",
+                    "sourceId": "24",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Consulta pedidos",
+                    "destinationId": "22",
+                    "id": "70",
+                    "sourceId": "24",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Consulta alertas",
+                    "destinationId": "23",
+                    "id": "71",
+                    "sourceId": "24",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "Vue components, Pinia, Chart.js"
+              }
+            ],
+            "description": "Aplicación de una sola página que se ejecuta en el navegador del usuario; productores y comercializadores operan la plataforma desde ella.",
+            "documentation": {},
+            "id": "16",
+            "name": "Single-Page Application",
+            "properties": {
+              "structurizr.dsl.identifier": "destilatech.spa"
+            },
+            "relationships": [
+              {
+                "description": "Consume los servicios",
+                "destinationId": "25",
+                "id": "43",
+                "sourceId": "16",
+                "tags": "Relationship",
+                "technology": "JSON/HTTPS"
+              }
+            ],
+            "tags": "Element,Container,Web Browser",
+            "technology": "Vue 3, PrimeVue, Pinia, Vue Router, JavaScript"
+          },
+          {
+            "components": [
+              {
+                "description": "Enruta, valida y autentica las peticiones HTTP y publica la documentación OpenAPI.",
+                "documentation": {},
+                "id": "26",
+                "name": "API Controllers",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.controllers"
+                },
+                "relationships": [
+                  {
+                    "description": "Enruta",
+                    "destinationId": "27",
+                    "id": "75",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "28",
+                    "id": "76",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "29",
+                    "id": "77",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "30",
+                    "id": "78",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "31",
+                    "id": "79",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "32",
+                    "id": "80",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  },
+                  {
+                    "description": "Enruta",
+                    "destinationId": "33",
+                    "id": "81",
+                    "sourceId": "26",
+                    "tags": "Relationship"
+                  }
+                ],
+                "tags": "Element,Component,Controllers",
+                "technology": "ASP.NET Core Controllers"
+              },
+              {
+                "description": "Identidad de la cuenta, autenticación, recuperación de contraseña y periodo de prueba.",
+                "documentation": {},
+                "id": "27",
+                "name": "IAM",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.iam"
+                },
+                "relationships": [
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "90",
+                    "sourceId": "27",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Planes, suscripciones e intentos de pago.",
+                "documentation": {},
+                "id": "28",
+                "name": "Billing",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.billing"
+                },
+                "relationships": [
+                  {
+                    "description": "SubscriptionActivated (extiende el acceso)",
+                    "destinationId": "27",
+                    "id": "82",
+                    "sourceId": "28",
+                    "tags": "Relationship,Domain",
+                    "technology": "Evento de dominio"
+                  },
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "91",
+                    "sourceId": "28",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  },
+                  {
+                    "description": "Solicita el cobro y verifica el pago",
+                    "destinationId": "4",
+                    "id": "97",
+                    "sourceId": "28",
+                    "tags": "Relationship",
+                    "technology": "HTTPS/REST"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Lotes de producción, variables del proceso y lecturas.",
+                "documentation": {},
+                "id": "29",
+                "name": "Production & Monitoring",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.production"
+                },
+                "relationships": [
+                  {
+                    "description": "AnomalyDetected",
+                    "destinationId": "32",
+                    "id": "83",
+                    "sourceId": "29",
+                    "tags": "Relationship,Domain",
+                    "technology": "Evento de dominio"
+                  },
+                  {
+                    "description": "BottlingRegistered (agrega stock)",
+                    "destinationId": "30",
+                    "id": "86",
+                    "sourceId": "29",
+                    "tags": "Relationship,Domain",
+                    "technology": "Evento de dominio"
+                  },
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "92",
+                    "sourceId": "29",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Productos, stock, umbrales y movimientos.",
+                "documentation": {},
+                "id": "30",
+                "name": "Inventory & Stock Management",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.inventory"
+                },
+                "relationships": [
+                  {
+                    "description": "LowStockDetected",
+                    "destinationId": "32",
+                    "id": "84",
+                    "sourceId": "30",
+                    "tags": "Relationship,Domain",
+                    "technology": "Evento de dominio"
+                  },
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "93",
+                    "sourceId": "30",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Clientes, pedidos y listas de compra para reposición.",
+                "documentation": {},
+                "id": "31",
+                "name": "Orders & Replenishment",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.orders"
+                },
+                "relationships": [
+                  {
+                    "description": "OrderRegistered (descuenta stock)",
+                    "destinationId": "30",
+                    "id": "85",
+                    "sourceId": "31",
+                    "tags": "Relationship,Domain",
+                    "technology": "Evento de dominio"
+                  },
+                  {
+                    "description": "Consulta productos por reponer",
+                    "destinationId": "30",
+                    "id": "89",
+                    "sourceId": "31",
+                    "tags": "Relationship,Domain",
+                    "technology": "Interfaz de lectura"
+                  },
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "94",
+                    "sourceId": "31",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Centraliza y gestiona las alertas.",
+                "documentation": {},
+                "id": "32",
+                "name": "Alerts & Notifications",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.alerts"
+                },
+                "relationships": [
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "95",
+                    "sourceId": "32",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              },
+              {
+                "description": "Estimaciones de reposición, indicadores históricos y resumen del dashboard.",
+                "documentation": {},
+                "id": "33",
+                "name": "Analytics & Estimations",
+                "properties": {
+                  "structurizr.dsl.identifier": "destilatech.api.analytics"
+                },
+                "relationships": [
+                  {
+                    "description": "Lee el historial de movimientos",
+                    "destinationId": "30",
+                    "id": "87",
+                    "sourceId": "33",
+                    "tags": "Relationship,Domain",
+                    "technology": "Interfaz de lectura"
+                  },
+                  {
+                    "description": "Lee el historial de lotes",
+                    "destinationId": "29",
+                    "id": "88",
+                    "sourceId": "33",
+                    "tags": "Relationship,Domain",
+                    "technology": "Interfaz de lectura"
+                  },
+                  {
+                    "description": "Lee y escribe",
+                    "destinationId": "34",
+                    "id": "96",
+                    "sourceId": "33",
+                    "tags": "Relationship",
+                    "technology": "SQL/TLS"
+                  }
+                ],
+                "tags": "Element,Component",
+                "technology": "C# module"
+              }
+            ],
+            "description": "Un único contenedor que expone los servicios de los siete bounded contexts como módulos: reglas de negocio, seguridad y acceso a datos. En el Sprint 2 se simula con una Fake API (json-server).",
+            "documentation": {},
+            "id": "25",
+            "name": "REST API",
+            "properties": {
+              "structurizr.dsl.identifier": "destilatech.api"
+            },
+            "relationships": [
+              {
+                "description": "Lee y escribe",
+                "destinationId": "34",
+                "id": "44",
+                "sourceId": "25",
+                "tags": "Relationship",
+                "technology": "SQL/TLS (EF Core)"
+              },
+              {
+                "description": "Solicita el cobro y verifica el pago",
+                "destinationId": "4",
+                "id": "45",
+                "sourceId": "25",
+                "tags": "Relationship",
+                "technology": "HTTPS/REST"
+              }
+            ],
+            "tags": "Element,Container,API",
+            "technology": "ASP.NET Core, C#, Entity Framework Core"
+          },
+          {
+            "description": "Persiste la información de cada bounded context en tablas con prefijo de módulo.",
+            "documentation": {},
+            "id": "34",
+            "name": "Database",
+            "properties": {
+              "structurizr.dsl.identifier": "destilatech.db"
+            },
+            "tags": "Element,Container,Database",
+            "technology": "MySQL"
+          }
+        ],
+        "description": "Centraliza el monitoreo de producción, la gestión de inventario y las operaciones comerciales de pisco.",
+        "documentation": {},
+        "id": "6",
+        "name": "Destilatech",
+        "properties": {
+          "structurizr.dsl.identifier": "destilatech"
+        },
+        "relationships": [
+          {
+            "description": "Solicita el cobro y verifica el pago",
+            "destinationId": "4",
+            "id": "46",
+            "linkedRelationshipId": "45",
+            "sourceId": "6",
+            "technology": "HTTPS/REST"
+          }
+        ],
+        "tags": "Element,Software System"
+      }
+    ]
+  },
+  "name": "Destilatech",
+  "properties": {
+    "structurizr.inspection.error": "29",
+    "structurizr.dsl": "d29ya3NwYWNlICJEZXN0aWxhdGVjaCIgIkFycXVpdGVjdHVyYSBkZSBzb2Z0d2FyZSBkZSBEZXN0aWxhdGVjaCwgcGxhdGFmb3JtYSBTYWFTIHBhcmEgZWwgbW9uaXRvcmVvIGRlIHByb2R1Y2Npw7NuLCBlbCBjb250cm9sIGRlIGludmVudGFyaW8geSBsYSBnZXN0acOzbiBjb21lcmNpYWwgZGUgcGlzY28uIiB7CgogICAgIWlkZW50aWZpZXJzIGhpZXJhcmNoaWNhbAoKICAgIG1vZGVsIHsKCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAjIFBlcnNvbmFzCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICB2aXNpdG9yID0gcGVyc29uICJWaXNpdGFudGUiICJQcm9kdWN0b3IgbyBjb21lcmNpYWxpemFkb3IgcXVlIGNvbm9jZSBsYSBwcm9wdWVzdGEgZGUgdmFsb3IsIGxvcyBwbGFuZXMgeSBzZSByZWdpc3RyYS4iCiAgICAgICAgcHJvZHVjZXIgPSBwZXJzb24gIlByb2R1Y3RvciBkZSBwaXNjbyIgIlBlcXVlw7FvIG8gbWVkaWFubyBwcm9kdWN0b3IgcXVlIHJlZ2lzdHJhIGxvdGVzLCBtb25pdG9yZWEgdmFyaWFibGVzIGRlbCBwcm9jZXNvIHkgY29udHJvbGEgc3UgaW52ZW50YXJpby4iCiAgICAgICAgcmV0YWlsZXIgPSBwZXJzb24gIkNvbWVyY2lhbGl6YWRvciIgIkJvZGVnYSwgbGljb3JlcsOtYSBvIGRpc3RyaWJ1aWRvciBxdWUgZ2VzdGlvbmEgaW52ZW50YXJpbywgY2xpZW50ZXMgeSBwZWRpZG9zLiIKCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAjIFNpc3RlbWFzIGV4dGVybm9zCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICBwYXltZW50R2F0ZXdheSA9IHNvZnR3YXJlU3lzdGVtICJQYXNhcmVsYSBkZSBQYWdvIiAiUHJvY2VzYSBlbCBjb2JybyBkZSBsYXMgc3VzY3JpcGNpb25lcy4gU2UgdXNhIGVuIG1vZG8gZGUgcHJ1ZWJhcyAoc2FuZGJveCkuIiAiRXh0ZXJuYWwiCiAgICAgICAgaW90U2Vuc29yID0gc29mdHdhcmVTeXN0ZW0gIlNlbnNvciBJb1QgKHNpbXVsYWRvKSIgIkVtaXRlIGxlY3R1cmFzIGRlIHZhcmlhYmxlcyBkZWwgcHJvY2VzbyBjb21vIHRlbXBlcmF0dXJhLCBwSCB5IG5pdmVsLiIgIkV4dGVybmFsIgoKICAgICAgICAjIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICMgU2lzdGVtYSBkZSBzb2Z0d2FyZQogICAgICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgZGVzdGlsYXRlY2ggPSBzb2Z0d2FyZVN5c3RlbSAiRGVzdGlsYXRlY2giICJDZW50cmFsaXphIGVsIG1vbml0b3JlbyBkZSBwcm9kdWNjacOzbiwgbGEgZ2VzdGnDs24gZGUgaW52ZW50YXJpbyB5IGxhcyBvcGVyYWNpb25lcyBjb21lcmNpYWxlcyBkZSBwaXNjby4iIHsKCiAgICAgICAgICAgIHdlYnNpdGUgPSBjb250YWluZXIgIldlYnNpdGUiICJTaXRpbyB3ZWIgZXN0w6F0aWNvIGNvbiBsYSBwcm9wdWVzdGEgZGUgdmFsb3IsIGxvcyBwbGFuZXMgeSBlbCBwdW50byBkZSBlbnRyYWRhIGFsIHJlZ2lzdHJvLiIgIkhUTUw1LCBDU1MzLCBKYXZhU2NyaXB0IiAiV2Vic2l0ZSIgewogICAgICAgICAgICAgICAgaGVhZGVyID0gY29tcG9uZW50ICJIZWFkZXIiICJMb2dvLCBuYXZlZ2FjacOzbiBlbnRyZSBzZWNjaW9uZXMgeSBzZWxlY3RvciBkZSBpZGlvbWEuIiAiSFRNTCwgQ1NTLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gPSBjb21wb25lbnQgIkRlc2NyaXB0aW9uIiAiRXhwbGljYSBxdcOpIGVzIERlc3RpbGF0ZWNoIHkgc3UgcHJvcHVlc3RhIGRlIHZhbG9yLiIgIkhUTUwsIENTUywgSmF2YVNjcmlwdCIKICAgICAgICAgICAgICAgIGdvYWxzID0gY29tcG9uZW50ICJHb2FscyIgIlByZXNlbnRhIGxvcyBiZW5lZmljaW9zIHByaW5jaXBhbGVzIGRlIGxhIHBsYXRhZm9ybWEuIiAiSFRNTCwgQ1NTLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgcHJpY2luZyA9IGNvbXBvbmVudCAiUHJpY2luZyIgIk11ZXN0cmEgbG9zIHBsYW5lcyBkZSBzdXNjcmlwY2nDs24geSBsYSBwcnVlYmEgZ3JhdHVpdGEgZGUgMTQgZMOtYXMuIiAiSFRNTCwgQ1NTLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgaW1wYWN0ID0gY29tcG9uZW50ICJJbXBhY3QiICJNdWVzdHJhIGNpZnJhcyBkZWwgc2VjdG9yIHBpc3F1ZXJvIHBlcnVhbm8uIiAiSFRNTCwgQ1NTLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgZmVhdHVyZXMgPSBjb21wb25lbnQgIlBsYXRmb3JtIEZlYXR1cmVzIiAiRGVzY3JpYmUgbGFzIGZ1bmNpb25hbGlkYWRlcyBwb3Igc2VnbWVudG8gb2JqZXRpdm8uIiAiSFRNTCwgQ1NTLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgZm9vdGVyID0gY29tcG9uZW50ICJGb290ZXIiICJDb250YWN0bywgZW5sYWNlcywgdMOpcm1pbm9zIHkgY29uZGljaW9uZXMgeSBsbGFtYWRhIGEgbGEgYWNjacOzbiBkZSByZWdpc3Ryby4iICJIVE1MLCBDU1MsIEphdmFTY3JpcHQiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHdlYlN0YXRpYyA9IGNvbnRhaW5lciAiV2ViIEFwcGxpY2F0aW9uIFN0YXRpYyBDb250ZW50IiAiU2lydmUgYWwgbmF2ZWdhZG9yIGxvcyBhcmNoaXZvcyBlc3TDoXRpY29zIGRlIGxhIGFwbGljYWNpw7NuIChIVE1MLCBDU1MgeSBwYXF1ZXRlcyBkZSBKYXZhU2NyaXB0KSBkZXNkZSB1biBzZXJ2aWNpbyBkZSBob3N0aW5nLiIgIkhvc3RpbmcgZGUgY29udGVuaWRvIGVzdMOhdGljbyIgIlN0YXRpYyBDb250ZW50IgoKICAgICAgICAgICAgc3BhID0gY29udGFpbmVyICJTaW5nbGUtUGFnZSBBcHBsaWNhdGlvbiIgIkFwbGljYWNpw7NuIGRlIHVuYSBzb2xhIHDDoWdpbmEgcXVlIHNlIGVqZWN1dGEgZW4gZWwgbmF2ZWdhZG9yIGRlbCB1c3VhcmlvOyBwcm9kdWN0b3JlcyB5IGNvbWVyY2lhbGl6YWRvcmVzIG9wZXJhbiBsYSBwbGF0YWZvcm1hIGRlc2RlIGVsbGEuIiAiVnVlIDMsIFByaW1lVnVlLCBQaW5pYSwgVnVlIFJvdXRlciwgSmF2YVNjcmlwdCIgIldlYiBCcm93c2VyIiB7CiAgICAgICAgICAgICAgICBzaGFyZWRLZXJuZWwgPSBjb21wb25lbnQgIlNoYXJlZCBLZXJuZWwiICJMYXlvdXQsIGNsaWVudGUgSFRUUCBiYXNlLCBpbnRlcm5hY2lvbmFsaXphY2nDs24gKGVzL2VuKSwgY29ubXV0YWRvciBkZSB1c3VhcmlvIGRlIGRlbW9zdHJhY2nDs24geSBjb21wb25lbnRlcyBjb211bmVzLiIgIlZ1ZSBjb21wb25lbnRzLCBKYXZhU2NyaXB0IgogICAgICAgICAgICAgICAgaWFtVWkgPSBjb21wb25lbnQgIklBTSAocGxhbmlmaWNhZG8pIiAiUmVnaXN0cm8sIGluaWNpbyBkZSBzZXNpw7NuIHkgcmVjdXBlcmFjacOzbiBkZSBjb250cmFzZcOxYS4gTm8gc2UgYXBsaWNhIGVuIGVsIFNwcmludCAyLiIgIlZ1ZSBjb21wb25lbnRzIiAiUGxhbm5lZCIKICAgICAgICAgICAgICAgIGJpbGxpbmdVaSA9IGNvbXBvbmVudCAiQmlsbGluZyIgIlBsYW4sIGVzdGFkbyBkZSBsYSBzdXNjcmlwY2nDs24sIHBlcmlvZG8gZGUgcHJ1ZWJhIGUgaGlzdG9yaWFsIGRlIHBhZ29zLiIgIlZ1ZSBjb21wb25lbnRzLCBQaW5pYSIKICAgICAgICAgICAgICAgIHByb2R1Y3Rpb25VaSA9IGNvbXBvbmVudCAiUHJvZHVjdGlvbiAmIE1vbml0b3JpbmciICJMb3RlcyBkZSBwcm9kdWNjacOzbiwgdmFyaWFibGVzIGRlbCBwcm9jZXNvIHkgbGVjdHVyYXMgc2ltdWxhZGFzLiIgIlZ1ZSBjb21wb25lbnRzLCBQaW5pYSIKICAgICAgICAgICAgICAgIGludmVudG9yeVVpID0gY29tcG9uZW50ICJJbnZlbnRvcnkgJiBTdG9jayBNYW5hZ2VtZW50IiAiUHJvZHVjdG9zLCBzdG9jaywgbW92aW1pZW50b3MgeSB1bWJyYWxlcy4iICJWdWUgY29tcG9uZW50cywgUGluaWEiCiAgICAgICAgICAgICAgICBvcmRlcnNVaSA9IGNvbXBvbmVudCAiT3JkZXJzICYgUmVwbGVuaXNobWVudCIgIkNsaWVudGVzLCBwZWRpZG9zIHkgbGlzdGEgZGUgY29tcHJhIHBhcmEgcmVwb3NpY2nDs24uIiAiVnVlIGNvbXBvbmVudHMsIFBpbmlhIgogICAgICAgICAgICAgICAgYWxlcnRzVWkgPSBjb21wb25lbnQgIkFsZXJ0cyAmIE5vdGlmaWNhdGlvbnMiICJCYW5kZWphIGRlIGFsZXJ0YXMgZGUgYW5vbWFsw61hIHkgZGUgc3RvY2sgYmFqby4iICJWdWUgY29tcG9uZW50cywgUGluaWEiCiAgICAgICAgICAgICAgICBhbmFseXRpY3NVaSA9IGNvbXBvbmVudCAiQW5hbHl0aWNzICYgRXN0aW1hdGlvbnMiICJEYXNoYm9hcmQsIGVzdGltYWNpb25lcyBkZSByZXBvc2ljacOzbiBlIGluZGljYWRvcmVzIGhpc3TDs3JpY29zLiIgIlZ1ZSBjb21wb25lbnRzLCBQaW5pYSwgQ2hhcnQuanMiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwaSA9IGNvbnRhaW5lciAiUkVTVCBBUEkiICJVbiDDum5pY28gY29udGVuZWRvciBxdWUgZXhwb25lIGxvcyBzZXJ2aWNpb3MgZGUgbG9zIHNpZXRlIGJvdW5kZWQgY29udGV4dHMgY29tbyBtw7NkdWxvczogcmVnbGFzIGRlIG5lZ29jaW8sIHNlZ3VyaWRhZCB5IGFjY2VzbyBhIGRhdG9zLiBFbiBlbCBTcHJpbnQgMiBzZSBzaW11bGEgY29uIHVuYSBGYWtlIEFQSSAoanNvbi1zZXJ2ZXIpLiIgIkFTUC5ORVQgQ29yZSwgQyMsIEVudGl0eSBGcmFtZXdvcmsgQ29yZSIgIkFQSSIgewogICAgICAgICAgICAgICAgY29udHJvbGxlcnMgPSBjb21wb25lbnQgIkFQSSBDb250cm9sbGVycyIgIkVucnV0YSwgdmFsaWRhIHkgYXV0ZW50aWNhIGxhcyBwZXRpY2lvbmVzIEhUVFAgeSBwdWJsaWNhIGxhIGRvY3VtZW50YWNpw7NuIE9wZW5BUEkuIiAiQVNQLk5FVCBDb3JlIENvbnRyb2xsZXJzIiAiQ29udHJvbGxlcnMiCiAgICAgICAgICAgICAgICBpYW0gPSBjb21wb25lbnQgIklBTSIgIklkZW50aWRhZCBkZSBsYSBjdWVudGEsIGF1dGVudGljYWNpw7NuLCByZWN1cGVyYWNpw7NuIGRlIGNvbnRyYXNlw7FhIHkgcGVyaW9kbyBkZSBwcnVlYmEuIiAiQyMgbW9kdWxlIgogICAgICAgICAgICAgICAgYmlsbGluZyA9IGNvbXBvbmVudCAiQmlsbGluZyIgIlBsYW5lcywgc3VzY3JpcGNpb25lcyBlIGludGVudG9zIGRlIHBhZ28uIiAiQyMgbW9kdWxlIgogICAgICAgICAgICAgICAgcHJvZHVjdGlvbiA9IGNvbXBvbmVudCAiUHJvZHVjdGlvbiAmIE1vbml0b3JpbmciICJMb3RlcyBkZSBwcm9kdWNjacOzbiwgdmFyaWFibGVzIGRlbCBwcm9jZXNvIHkgbGVjdHVyYXMuIiAiQyMgbW9kdWxlIgogICAgICAgICAgICAgICAgaW52ZW50b3J5ID0gY29tcG9uZW50ICJJbnZlbnRvcnkgJiBTdG9jayBNYW5hZ2VtZW50IiAiUHJvZHVjdG9zLCBzdG9jaywgdW1icmFsZXMgeSBtb3ZpbWllbnRvcy4iICJDIyBtb2R1bGUiCiAgICAgICAgICAgICAgICBvcmRlcnMgPSBjb21wb25lbnQgIk9yZGVycyAmIFJlcGxlbmlzaG1lbnQiICJDbGllbnRlcywgcGVkaWRvcyB5IGxpc3RhcyBkZSBjb21wcmEgcGFyYSByZXBvc2ljacOzbi4iICJDIyBtb2R1bGUiCiAgICAgICAgICAgICAgICBhbGVydHMgPSBjb21wb25lbnQgIkFsZXJ0cyAmIE5vdGlmaWNhdGlvbnMiICJDZW50cmFsaXphIHkgZ2VzdGlvbmEgbGFzIGFsZXJ0YXMuIiAiQyMgbW9kdWxlIgogICAgICAgICAgICAgICAgYW5hbHl0aWNzID0gY29tcG9uZW50ICJBbmFseXRpY3MgJiBFc3RpbWF0aW9ucyIgIkVzdGltYWNpb25lcyBkZSByZXBvc2ljacOzbiwgaW5kaWNhZG9yZXMgaGlzdMOzcmljb3MgeSByZXN1bWVuIGRlbCBkYXNoYm9hcmQuIiAiQyMgbW9kdWxlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBkYiA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICJQZXJzaXN0ZSBsYSBpbmZvcm1hY2nDs24gZGUgY2FkYSBib3VuZGVkIGNvbnRleHQgZW4gdGFibGFzIGNvbiBwcmVmaWpvIGRlIG3Ds2R1bG8uIiAiTXlTUUwiICJEYXRhYmFzZSIKICAgICAgICB9CgogICAgICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgIyBSZWxhY2lvbmVzIGVudHJlIHBlcnNvbmFzLCBjb250ZW5lZG9yZXMgeSBzaXN0ZW1hcyBleHRlcm5vcwogICAgICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgdmlzaXRvciAtPiBkZXN0aWxhdGVjaC53ZWJzaXRlICJDb25vY2UgbGEgcHJvcHVlc3RhIHkgbG9zIHBsYW5lcyIgIkhUVFBTIgogICAgICAgIGRlc3RpbGF0ZWNoLndlYnNpdGUgLT4gZGVzdGlsYXRlY2gud2ViU3RhdGljICJFbmxhemEgYSBsYSBhcGxpY2FjacOzbiIgIkhUVFBTIgogICAgICAgIGRlc3RpbGF0ZWNoLndlYlN0YXRpYyAtPiBkZXN0aWxhdGVjaC5zcGEgIkVudHJlZ2EgbGEgYXBsaWNhY2nDs24gYWwgbmF2ZWdhZG9yIiAiSFRUUFMiCiAgICAgICAgcHJvZHVjZXIgLT4gZGVzdGlsYXRlY2guc3BhICJHZXN0aW9uYSBsb3RlcywgbW9uaXRvcmVvIGUgaW52ZW50YXJpbyIgIkhUVFBTIgogICAgICAgIHJldGFpbGVyIC0+IGRlc3RpbGF0ZWNoLnNwYSAiR2VzdGlvbmEgaW52ZW50YXJpbywgY2xpZW50ZXMgeSBwZWRpZG9zIiAiSFRUUFMiCiAgICAgICAgZGVzdGlsYXRlY2guc3BhIC0+IGRlc3RpbGF0ZWNoLmFwaSAiQ29uc3VtZSBsb3Mgc2VydmljaW9zIiAiSlNPTi9IVFRQUyIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkgLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIChFRiBDb3JlKSIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkgLT4gcGF5bWVudEdhdGV3YXkgIlNvbGljaXRhIGVsIGNvYnJvIHkgdmVyaWZpY2EgZWwgcGFnbyIgIkhUVFBTL1JFU1QiCiAgICAgICAgcGF5bWVudEdhdGV3YXkgLT4gZGVzdGlsYXRlY2guYXBpICJOb3RpZmljYSBlbCByZXN1bHRhZG8gZGVsIHBhZ28iICJIVFRQUyAod2ViaG9vaykiCiAgICAgICAgaW90U2Vuc29yIC0+IGRlc3RpbGF0ZWNoLmFwaSAiRW52w61hIGxlY3R1cmFzIHNpbXVsYWRhcyIgIkhUVFBTL1JFU1QiCgogICAgICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgIyBDb21wb25lbnRlcyBkZWwgV2Vic2l0ZQogICAgICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgdmlzaXRvciAtPiBkZXN0aWxhdGVjaC53ZWJzaXRlLmhlYWRlciAiTmF2ZWdhIGVudHJlIHNlY2Npb25lcyIgIkhUVFBTIgogICAgICAgIGRlc3RpbGF0ZWNoLndlYnNpdGUuaGVhZGVyIC0+IGRlc3RpbGF0ZWNoLndlYnNpdGUuZGVzY3JpcHRpb24gIkVubGF6YSIKICAgICAgICBkZXN0aWxhdGVjaC53ZWJzaXRlLmhlYWRlciAtPiBkZXN0aWxhdGVjaC53ZWJzaXRlLmdvYWxzICJFbmxhemEiCiAgICAgICAgZGVzdGlsYXRlY2gud2Vic2l0ZS5oZWFkZXIgLT4gZGVzdGlsYXRlY2gud2Vic2l0ZS5wcmljaW5nICJFbmxhemEiCiAgICAgICAgZGVzdGlsYXRlY2gud2Vic2l0ZS5oZWFkZXIgLT4gZGVzdGlsYXRlY2gud2Vic2l0ZS5pbXBhY3QgIkVubGF6YSIKICAgICAgICBkZXN0aWxhdGVjaC53ZWJzaXRlLmhlYWRlciAtPiBkZXN0aWxhdGVjaC53ZWJzaXRlLmZlYXR1cmVzICJFbmxhemEiCiAgICAgICAgZGVzdGlsYXRlY2gud2Vic2l0ZS5oZWFkZXIgLT4gZGVzdGlsYXRlY2gud2Vic2l0ZS5mb290ZXIgIkVubGF6YSIKICAgICAgICBkZXN0aWxhdGVjaC53ZWJzaXRlLnByaWNpbmcgLT4gZGVzdGlsYXRlY2gud2ViU3RhdGljICJFbmxhemEgYSBsYSBhcGxpY2FjacOzbiBjb24gZWwgcGxhbiBwcmVzZWxlY2Npb25hZG8iICJIVFRQUyIKICAgICAgICBkZXN0aWxhdGVjaC53ZWJzaXRlLmZvb3RlciAtPiBkZXN0aWxhdGVjaC53ZWJTdGF0aWMgIkVubGF6YSBhbCByZWdpc3RybyIgIkhUVFBTIgoKICAgICAgICAjIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICMgQ29tcG9uZW50ZXMgZGUgbGEgU2luZ2xlLVBhZ2UgQXBwbGljYXRpb24gKGJvdW5kZWQgY29udGV4dHMpCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICBwcm9kdWNlciAtPiBkZXN0aWxhdGVjaC5zcGEuYW5hbHl0aWNzVWkgIkNvbnN1bHRhIHN1IGRhc2hib2FyZCIgIkhUVFBTIgogICAgICAgIHJldGFpbGVyIC0+IGRlc3RpbGF0ZWNoLnNwYS5hbmFseXRpY3NVaSAiQ29uc3VsdGEgc3UgZGFzaGJvYXJkIiAiSFRUUFMiCiAgICAgICAgZGVzdGlsYXRlY2guc3BhLnNoYXJlZEtlcm5lbCAtPiBkZXN0aWxhdGVjaC5zcGEuYWxlcnRzVWkgIk11ZXN0cmEgbGFzIGFsZXJ0YXMgcGVuZGllbnRlcyIKICAgICAgICBkZXN0aWxhdGVjaC5zcGEuc2hhcmVkS2VybmVsIC0+IGRlc3RpbGF0ZWNoLnNwYS5iaWxsaW5nVWkgIk11ZXN0cmEgZWwgZXN0YWRvIGRlIGxhIHBydWViYSBncmF0dWl0YSIKICAgICAgICBkZXN0aWxhdGVjaC5zcGEucHJvZHVjdGlvblVpIC0+IGRlc3RpbGF0ZWNoLnNwYS5pbnZlbnRvcnlVaSAiQ29uc3VsdGEgcHJvZHVjdG9zIGFsIHJlZ2lzdHJhciBlbCBlbWJvdGVsbGFkbyIKICAgICAgICBkZXN0aWxhdGVjaC5zcGEucHJvZHVjdGlvblVpIC0+IGRlc3RpbGF0ZWNoLnNwYS5hbGVydHNVaSAiR2VuZXJhIGFsZXJ0YXMgZGUgYW5vbWFsw61hIgogICAgICAgIGRlc3RpbGF0ZWNoLnNwYS5pbnZlbnRvcnlVaSAtPiBkZXN0aWxhdGVjaC5zcGEuYWxlcnRzVWkgIkdlbmVyYSBhbGVydGFzIGRlIHN0b2NrIGJham8iCiAgICAgICAgZGVzdGlsYXRlY2guc3BhLm9yZGVyc1VpIC0+IGRlc3RpbGF0ZWNoLnNwYS5pbnZlbnRvcnlVaSAiQ29uc3VsdGEgeSBkZXNjdWVudGEgc3RvY2siCiAgICAgICAgZGVzdGlsYXRlY2guc3BhLmFuYWx5dGljc1VpIC0+IGRlc3RpbGF0ZWNoLnNwYS5wcm9kdWN0aW9uVWkgIkNvbnN1bHRhIGxvdGVzIHkgbGVjdHVyYXMiCiAgICAgICAgZGVzdGlsYXRlY2guc3BhLmFuYWx5dGljc1VpIC0+IGRlc3RpbGF0ZWNoLnNwYS5pbnZlbnRvcnlVaSAiQ29uc3VsdGEgc3RvY2sgeSBtb3ZpbWllbnRvcyIKICAgICAgICBkZXN0aWxhdGVjaC5zcGEuYW5hbHl0aWNzVWkgLT4gZGVzdGlsYXRlY2guc3BhLm9yZGVyc1VpICJDb25zdWx0YSBwZWRpZG9zIgogICAgICAgIGRlc3RpbGF0ZWNoLnNwYS5hbmFseXRpY3NVaSAtPiBkZXN0aWxhdGVjaC5zcGEuYWxlcnRzVWkgIkNvbnN1bHRhIGFsZXJ0YXMiCiAgICAgICAgZGVzdGlsYXRlY2guc3BhLm9yZGVyc1VpIC0+IGRlc3RpbGF0ZWNoLnNwYS5hbmFseXRpY3NVaSAiQ29uc3VsdGEgZXN0aW1hY2lvbmVzIGRlIHJlcG9zaWNpw7NuIgogICAgICAgIGRlc3RpbGF0ZWNoLnNwYS5pbnZlbnRvcnlVaSAtPiBkZXN0aWxhdGVjaC5zcGEuYW5hbHl0aWNzVWkgIkNvbnN1bHRhIGxhIGVzdGltYWNpw7NuIGRlIHVuIHByb2R1Y3RvIgogICAgICAgIGRlc3RpbGF0ZWNoLnNwYS5zaGFyZWRLZXJuZWwgLT4gZGVzdGlsYXRlY2guYXBpICJJbnZvY2EgbG9zIHNlcnZpY2lvcyBkZSBjYWRhIGNvbnRleHRvIiAiSlNPTi9IVFRQUyIKCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAjIENvbXBvbmVudGVzIGRlIGxhIFJFU1QgQVBJCiAgICAgICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICBkZXN0aWxhdGVjaC5hcGkuY29udHJvbGxlcnMgLT4gZGVzdGlsYXRlY2guYXBpLmlhbSAiRW5ydXRhIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5jb250cm9sbGVycyAtPiBkZXN0aWxhdGVjaC5hcGkuYmlsbGluZyAiRW5ydXRhIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5jb250cm9sbGVycyAtPiBkZXN0aWxhdGVjaC5hcGkucHJvZHVjdGlvbiAiRW5ydXRhIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5jb250cm9sbGVycyAtPiBkZXN0aWxhdGVjaC5hcGkuaW52ZW50b3J5ICJFbnJ1dGEiCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLmNvbnRyb2xsZXJzIC0+IGRlc3RpbGF0ZWNoLmFwaS5vcmRlcnMgIkVucnV0YSIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkuY29udHJvbGxlcnMgLT4gZGVzdGlsYXRlY2guYXBpLmFsZXJ0cyAiRW5ydXRhIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5jb250cm9sbGVycyAtPiBkZXN0aWxhdGVjaC5hcGkuYW5hbHl0aWNzICJFbnJ1dGEiCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLmJpbGxpbmcgLT4gZGVzdGlsYXRlY2guYXBpLmlhbSAiU3Vic2NyaXB0aW9uQWN0aXZhdGVkIChleHRpZW5kZSBlbCBhY2Nlc28pIiAiRXZlbnRvIGRlIGRvbWluaW8iICJEb21haW4iCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLnByb2R1Y3Rpb24gLT4gZGVzdGlsYXRlY2guYXBpLmFsZXJ0cyAiQW5vbWFseURldGVjdGVkIiAiRXZlbnRvIGRlIGRvbWluaW8iICJEb21haW4iCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLmludmVudG9yeSAtPiBkZXN0aWxhdGVjaC5hcGkuYWxlcnRzICJMb3dTdG9ja0RldGVjdGVkIiAiRXZlbnRvIGRlIGRvbWluaW8iICJEb21haW4iCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLm9yZGVycyAtPiBkZXN0aWxhdGVjaC5hcGkuaW52ZW50b3J5ICJPcmRlclJlZ2lzdGVyZWQgKGRlc2N1ZW50YSBzdG9jaykiICJFdmVudG8gZGUgZG9taW5pbyIgIkRvbWFpbiIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkucHJvZHVjdGlvbiAtPiBkZXN0aWxhdGVjaC5hcGkuaW52ZW50b3J5ICJCb3R0bGluZ1JlZ2lzdGVyZWQgKGFncmVnYSBzdG9jaykiICJFdmVudG8gZGUgZG9taW5pbyIgIkRvbWFpbiIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkuYW5hbHl0aWNzIC0+IGRlc3RpbGF0ZWNoLmFwaS5pbnZlbnRvcnkgIkxlZSBlbCBoaXN0b3JpYWwgZGUgbW92aW1pZW50b3MiICJJbnRlcmZheiBkZSBsZWN0dXJhIiAiRG9tYWluIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5hbmFseXRpY3MgLT4gZGVzdGlsYXRlY2guYXBpLnByb2R1Y3Rpb24gIkxlZSBlbCBoaXN0b3JpYWwgZGUgbG90ZXMiICJJbnRlcmZheiBkZSBsZWN0dXJhIiAiRG9tYWluIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5vcmRlcnMgLT4gZGVzdGlsYXRlY2guYXBpLmludmVudG9yeSAiQ29uc3VsdGEgcHJvZHVjdG9zIHBvciByZXBvbmVyIiAiSW50ZXJmYXogZGUgbGVjdHVyYSIgIkRvbWFpbiIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkuaWFtIC0+IGRlc3RpbGF0ZWNoLmRiICJMZWUgeSBlc2NyaWJlIiAiU1FML1RMUyIKICAgICAgICBkZXN0aWxhdGVjaC5hcGkuYmlsbGluZyAtPiBkZXN0aWxhdGVjaC5kYiAiTGVlIHkgZXNjcmliZSIgIlNRTC9UTFMiCiAgICAgICAgZGVzdGlsYXRlY2guYXBpLnByb2R1Y3Rpb24gLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5pbnZlbnRvcnkgLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5vcmRlcnMgLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5hbGVydHMgLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5hbmFseXRpY3MgLT4gZGVzdGlsYXRlY2guZGIgIkxlZSB5IGVzY3JpYmUiICJTUUwvVExTIgogICAgICAgIGRlc3RpbGF0ZWNoLmFwaS5iaWxsaW5nIC0+IHBheW1lbnRHYXRld2F5ICJTb2xpY2l0YSBlbCBjb2JybyB5IHZlcmlmaWNhIGVsIHBhZ28iICJIVFRQUy9SRVNUIgogICAgICAgIHBheW1lbnRHYXRld2F5IC0+IGRlc3RpbGF0ZWNoLmFwaS5iaWxsaW5nICJOb3RpZmljYSBlbCByZXN1bHRhZG8gZGVsIHBhZ28iICJIVFRQUyAod2ViaG9vaykiCiAgICAgICAgaW90U2Vuc29yIC0+IGRlc3RpbGF0ZWNoLmFwaS5wcm9kdWN0aW9uICJFbnbDrWEgbGVjdHVyYXMgc2ltdWxhZGFzIiAiSFRUUFMvUkVTVCIKICAgIH0KCiAgICB2aWV3cyB7CgogICAgICAgIHN5c3RlbUNvbnRleHQgZGVzdGlsYXRlY2ggIkM0LTAxLUNvbnRleHRvIiAiRGlhZ3JhbWEgZGUgY29udGV4dG8gZGUgRGVzdGlsYXRlY2giIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgdGIgMjAwIDEyMAogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIGRlc3RpbGF0ZWNoICJDNC0wMi1Db250ZW5lZG9yZXMiICJEaWFncmFtYSBkZSBjb250ZW5lZG9yZXMgZGUgRGVzdGlsYXRlY2giIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIgMjAwIDE1MAogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGRlc3RpbGF0ZWNoLndlYnNpdGUgIkM0LTAzLUNvbXBvbmVudGVzLVdlYnNpdGUiICJEaWFncmFtYSBkZSBjb21wb25lbnRlcyBkZWwgV2Vic2l0ZSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCB0YiAxMjAgMTIwCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgZGVzdGlsYXRlY2guc3BhICJDNC0wNC1Db21wb25lbnRlcy1TUEEiICJEaWFncmFtYSBkZSBjb21wb25lbnRlcyBkZSBsYSBTaW5nbGUtUGFnZSBBcHBsaWNhdGlvbiAoYm91bmRlZCBjb250ZXh0cykiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIgMTUwIDIwMAogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGRlc3RpbGF0ZWNoLmFwaSAiQzQtMDUtQ29tcG9uZW50ZXMtQVBJIiAiTcOzZHVsb3MgZGUgbGEgUkVTVCBBUEk6IGVucnV0YW1pZW50bywgZXZlbnRvcyBkZSBkb21pbmlvIGUgaW50ZXJmYWNlcyBkZSBsZWN0dXJhIiB7CiAgICAgICAgICAgIGluY2x1ZGUgZGVzdGlsYXRlY2guYXBpLmNvbnRyb2xsZXJzIGRlc3RpbGF0ZWNoLmFwaS5pYW0gZGVzdGlsYXRlY2guYXBpLmJpbGxpbmcgZGVzdGlsYXRlY2guYXBpLnByb2R1Y3Rpb24gZGVzdGlsYXRlY2guYXBpLmludmVudG9yeSBkZXN0aWxhdGVjaC5hcGkub3JkZXJzIGRlc3RpbGF0ZWNoLmFwaS5hbGVydHMgZGVzdGlsYXRlY2guYXBpLmFuYWx5dGljcwogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGRlc3RpbGF0ZWNoLmFwaSAiQzQtMDYtQ29tcG9uZW50ZXMtQVBJLURhdG9zIiAiQWNjZXNvIGEgZGF0b3MgZSBpbnRlZ3JhY2lvbmVzIGV4dGVybmFzIGRlIGxhIFJFU1QgQVBJIiB7CiAgICAgICAgICAgIGluY2x1ZGUgZGVzdGlsYXRlY2guYXBpLmlhbSBkZXN0aWxhdGVjaC5hcGkuYmlsbGluZyBkZXN0aWxhdGVjaC5hcGkucHJvZHVjdGlvbiBkZXN0aWxhdGVjaC5hcGkuaW52ZW50b3J5IGRlc3RpbGF0ZWNoLmFwaS5vcmRlcnMgZGVzdGlsYXRlY2guYXBpLmFsZXJ0cyBkZXN0aWxhdGVjaC5hcGkuYW5hbHl0aWNzIGRlc3RpbGF0ZWNoLmRiIHBheW1lbnRHYXRld2F5IGlvdFNlbnNvcgogICAgICAgICAgICBleGNsdWRlICJyZWxhdGlvbnNoaXAudGFnPT1Eb21haW4iCiAgICAgICAgfQoKICAgICAgICBicmFuZGluZyB7CiAgICAgICAgICAgIGZvbnQgIkFyaWFsIgogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiUGVyc29uIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgICAgIHdpZHRoIDQwMAogICAgICAgICAgICAgICAgaGVpZ2h0IDQwMAogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjN2EzYjJlCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNhODVjM2YKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJFeHRlcm5hbCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNmI1ZDU1CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNkOTliM2YKICAgICAgICAgICAgICAgIGNvbG9yICMyYzIzMjAKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI2Y3ZWZlNAogICAgICAgICAgICAgICAgY29sb3IgIzJjMjMyMAogICAgICAgICAgICAgICAgc3Ryb2tlICNhODVjM2YKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJXZWIgQnJvd3NlciIgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIldlYnNpdGUiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEZvbGRlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIlN0YXRpYyBDb250ZW50IiB7CiAgICAgICAgICAgICAgICBzaGFwZSBGb2xkZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQbGFubmVkIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICAgICAgICAgIHN0cm9rZSAjYTg1YzNmCiAgICAgICAgICAgICAgICBzdHJva2VXaWR0aCAzCiAgICAgICAgICAgICAgICBib3JkZXIgZGFzaGVkCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQ29udHJvbGxlcnMiIHsKICAgICAgICAgICAgICAgIHdpZHRoIDM2NTAKICAgICAgICAgICAgICAgIGhlaWdodCAyMDAKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICByZWxhdGlvbnNoaXAgIlJlbGF0aW9uc2hpcCIgewogICAgICAgICAgICAgICAgdGhpY2tuZXNzIDMKICAgICAgICAgICAgICAgIGNvbG9yICM0YTNiMzQKICAgICAgICAgICAgICAgIGRhc2hlZCBmYWxzZQogICAgICAgICAgICAgICAgZm9udFNpemUgMjIKICAgICAgICAgICAgICAgIHdpZHRoIDMwMAogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9",
+    "structurizr.inspection.info": "0",
+    "structurizr.inspection.ignore": "0",
+    "structurizr.inspection.warning": "0"
+  },
+  "views": {
+    "componentViews": [
+      {
+        "containerId": "7",
+        "description": "Diagrama de componentes del Website",
+        "elements": [
+          {
+            "id": "1",
+            "x": 500,
+            "y": 1500
+          },
+          {
+            "id": "8",
+            "x": 1300,
+            "y": 1550
+          },
+          {
+            "id": "9",
+            "x": 2200,
+            "y": 500
+          },
+          {
+            "id": "10",
+            "x": 2200,
+            "y": 920
+          },
+          {
+            "id": "11",
+            "x": 2200,
+            "y": 1340
+          },
+          {
+            "id": "12",
+            "x": 2200,
+            "y": 1760
+          },
+          {
+            "id": "13",
+            "x": 2200,
+            "y": 2180
+          },
+          {
+            "id": "14",
+            "x": 2200,
+            "y": 2600
+          },
+          {
+            "id": "15",
+            "x": 3150,
+            "y": 1970
+          }
+        ],
+        "externalContainerBoundariesVisible": false,
+        "key": "C4-03-Componentes-Website",
+        "name": "Component View: Destilatech - Website",
+        "order": 3,
+        "relationships": [
+          {
+            "id": "51",
+            "routing": "Direct"
+          },
+          {
+            "id": "52",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "53",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "54",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "55",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "56",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "57",
+            "position": 65,
+            "routing": "Direct"
+          },
+          {
+            "id": "58",
+            "routing": "Direct"
+          },
+          {
+            "id": "59",
+            "routing": "Direct"
+          }
+        ],
+        "dimensions": {
+          "width": 4000,
+          "height": 3300
+        }
+      },
+      {
+        "containerId": "16",
+        "description": "Diagrama de componentes de la Single-Page Application (bounded contexts)",
+        "elements": [
+          {
+            "id": "2",
+            "x": 900,
+            "y": 2250
+          },
+          {
+            "id": "3",
+            "x": 1500,
+            "y": 2250
+          },
+          {
+            "id": "17",
+            "x": 2200,
+            "y": 1100
+          },
+          {
+            "id": "18",
+            "x": 500,
+            "y": 1700
+          },
+          {
+            "id": "19",
+            "x": 2200,
+            "y": 1700
+          },
+          {
+            "id": "20",
+            "x": 500,
+            "y": 500
+          },
+          {
+            "id": "21",
+            "x": 1350,
+            "y": 500
+          },
+          {
+            "id": "22",
+            "x": 500,
+            "y": 1100
+          },
+          {
+            "id": "23",
+            "x": 2200,
+            "y": 500
+          },
+          {
+            "id": "24",
+            "x": 1350,
+            "y": 1100
+          },
+          {
+            "id": "25",
+            "x": 3050,
+            "y": 1100
+          }
+        ],
+        "externalContainerBoundariesVisible": false,
+        "key": "C4-04-Componentes-SPA",
+        "name": "Component View: Destilatech - Single-Page Application",
+        "order": 4,
+        "relationships": [
+          {
+            "id": "60",
+            "routing": "Direct"
+          },
+          {
+            "id": "61",
+            "routing": "Direct"
+          },
+          {
+            "id": "62",
+            "routing": "Direct"
+          },
+          {
+            "id": "63",
+            "routing": "Direct"
+          },
+          {
+            "id": "64",
+            "routing": "Direct"
+          },
+          {
+            "id": "65",
+            "vertices": [
+              {
+                "x": 725,
+                "y": 250
+              },
+              {
+                "x": 2425,
+                "y": 250
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "66",
+            "routing": "Direct"
+          },
+          {
+            "id": "67",
+            "position": 70,
+            "routing": "Direct"
+          },
+          {
+            "id": "68",
+            "position": 30,
+            "routing": "Direct"
+          },
+          {
+            "id": "69",
+            "vertices": [
+              {
+                "x": 1445,
+                "y": 950
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "70",
+            "vertices": [
+              {
+                "x": 1150,
+                "y": 1150
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "71",
+            "routing": "Direct"
+          },
+          {
+            "id": "72",
+            "vertices": [
+              {
+                "x": 1150,
+                "y": 1360
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "73",
+            "vertices": [
+              {
+                "x": 1705,
+                "y": 950
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "74",
+            "routing": "Direct"
+          }
+        ],
+        "dimensions": {
+          "width": 3900,
+          "height": 3050
+        }
+      },
+      {
+        "containerId": "25",
+        "description": "Módulos de la REST API: enrutamiento, eventos de dominio e interfaces de lectura",
+        "elements": [
+          {
+            "id": "26",
+            "x": 500,
+            "y": 1200
+          },
+          {
+            "id": "27",
+            "x": 2450,
+            "y": 1800
+          },
+          {
+            "id": "28",
+            "x": 1400,
+            "y": 1800
+          },
+          {
+            "id": "29",
+            "x": 1300,
+            "y": 500
+          },
+          {
+            "id": "30",
+            "x": 2100,
+            "y": 500
+          },
+          {
+            "id": "31",
+            "x": 2900,
+            "y": 500
+          },
+          {
+            "id": "32",
+            "x": 3700,
+            "y": 500
+          },
+          {
+            "id": "33",
+            "x": 500,
+            "y": 500
+          }
+        ],
+        "externalContainerBoundariesVisible": false,
+        "key": "C4-05-Componentes-API",
+        "name": "Component View: Destilatech - REST API",
+        "order": 5,
+        "relationships": [
+          {
+            "id": "75",
+            "routing": "Direct"
+          },
+          {
+            "id": "76",
+            "routing": "Direct"
+          },
+          {
+            "id": "77",
+            "routing": "Direct"
+          },
+          {
+            "id": "78",
+            "routing": "Direct"
+          },
+          {
+            "id": "79",
+            "routing": "Direct"
+          },
+          {
+            "id": "80",
+            "routing": "Direct"
+          },
+          {
+            "id": "81",
+            "routing": "Direct"
+          },
+          {
+            "id": "82",
+            "routing": "Direct"
+          },
+          {
+            "id": "83",
+            "vertices": [
+              {
+                "x": 1525,
+                "y": 80
+              },
+              {
+                "x": 4060,
+                "y": 80
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "84",
+            "vertices": [
+              {
+                "x": 2450,
+                "y": 330
+              },
+              {
+                "x": 3925,
+                "y": 330
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "85",
+            "vertices": [
+              {
+                "x": 2725,
+                "y": 540
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "86",
+            "routing": "Direct"
+          },
+          {
+            "id": "87",
+            "vertices": [
+              {
+                "x": 725,
+                "y": 330
+              },
+              {
+                "x": 2200,
+                "y": 330
+              }
+            ],
+            "position": 80,
+            "routing": "Direct"
+          },
+          {
+            "id": "88",
+            "routing": "Direct"
+          },
+          {
+            "id": "89",
+            "vertices": [
+              {
+                "x": 2725,
+                "y": 760
+              }
+            ],
+            "routing": "Direct"
+          }
+        ],
+        "dimensions": {
+          "width": 4550,
+          "height": 2500
+        }
+      },
+      {
+        "containerId": "25",
+        "description": "Acceso a datos e integraciones externas de la REST API",
+        "elements": [
+          {
+            "id": "4",
+            "x": 500,
+            "y": 500
+          },
+          {
+            "id": "5",
+            "x": 500,
+            "y": 1340
+          },
+          {
+            "id": "27",
+            "x": 1500,
+            "y": 920
+          },
+          {
+            "id": "28",
+            "x": 1500,
+            "y": 500
+          },
+          {
+            "id": "29",
+            "x": 1500,
+            "y": 1340
+          },
+          {
+            "id": "30",
+            "x": 1500,
+            "y": 1760
+          },
+          {
+            "id": "31",
+            "x": 1500,
+            "y": 2180
+          },
+          {
+            "id": "32",
+            "x": 1500,
+            "y": 2600
+          },
+          {
+            "id": "33",
+            "x": 1500,
+            "y": 3020
+          },
+          {
+            "id": "34",
+            "x": 2650,
+            "y": 1760
+          }
+        ],
+        "externalContainerBoundariesVisible": false,
+        "key": "C4-06-Componentes-API-Datos",
+        "name": "Component View: Destilatech - REST API",
+        "order": 6,
+        "relationships": [
+          {
+            "id": "90",
+            "routing": "Direct"
+          },
+          {
+            "id": "91",
+            "routing": "Direct"
+          },
+          {
+            "id": "92",
+            "routing": "Direct"
+          },
+          {
+            "id": "93",
+            "routing": "Direct"
+          },
+          {
+            "id": "94",
+            "routing": "Direct"
+          },
+          {
+            "id": "95",
+            "routing": "Direct"
+          },
+          {
+            "id": "96",
+            "routing": "Direct"
+          },
+          {
+            "id": "97",
+            "vertices": [
+              {
+                "x": 1100,
+                "y": 560
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "98",
+            "vertices": [
+              {
+                "x": 1100,
+                "y": 740
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "99",
+            "routing": "Direct"
+          }
+        ],
+        "dimensions": {
+          "width": 3500,
+          "height": 3720
+        }
+      }
+    ],
+    "configuration": {
+      "branding": {
+        "font": {
+          "name": "Arial"
+        }
+      },
+      "styles": {
+        "elements": [
+          {
+            "background": "#f7efe4",
+            "color": "#2c2320",
+            "stroke": "#a85c3f",
+            "tag": "Component"
+          },
+          {
+            "background": "#d99b3f",
+            "color": "#2c2320",
+            "tag": "Container"
+          },
+          {
+            "height": 200,
+            "tag": "Controllers",
+            "width": 3650
+          },
+          {
+            "shape": "Cylinder",
+            "tag": "Database"
+          },
+          {
+            "background": "#6b5d55",
+            "color": "#ffffff",
+            "tag": "External"
+          },
+          {
+            "background": "#7a3b2e",
+            "color": "#ffffff",
+            "height": 400,
+            "shape": "Person",
+            "tag": "Person",
+            "width": 400
+          },
+          {
+            "background": "#ffffff",
+            "border": "Dashed",
+            "stroke": "#a85c3f",
+            "strokeWidth": 3,
+            "tag": "Planned"
+          },
+          {
+            "background": "#a85c3f",
+            "color": "#ffffff",
+            "tag": "Software System"
+          },
+          {
+            "shape": "Folder",
+            "tag": "Static Content"
+          },
+          {
+            "shape": "WebBrowser",
+            "tag": "Web Browser"
+          },
+          {
+            "shape": "Folder",
+            "tag": "Website"
+          }
+        ],
+        "relationships": [
+          {
+            "color": "#4a3b34",
+            "dashed": false,
+            "fontSize": 22,
+            "tag": "Relationship",
+            "thickness": 3,
+            "width": 300
+          }
+        ]
+      },
+      "terminology": {}
+    },
+    "containerViews": [
+      {
+        "description": "Diagrama de contenedores de Destilatech",
+        "elements": [
+          {
+            "id": "1",
+            "x": 500,
+            "y": 450
+          },
+          {
+            "id": "2",
+            "x": 3100,
+            "y": 600
+          },
+          {
+            "id": "3",
+            "x": 3100,
+            "y": 1150
+          },
+          {
+            "id": "4",
+            "x": 500,
+            "y": 1700
+          },
+          {
+            "id": "5",
+            "x": 500,
+            "y": 1100
+          },
+          {
+            "id": "7",
+            "x": 1300,
+            "y": 500
+          },
+          {
+            "id": "15",
+            "x": 2200,
+            "y": 500
+          },
+          {
+            "id": "16",
+            "x": 2200,
+            "y": 1100
+          },
+          {
+            "id": "25",
+            "x": 1300,
+            "y": 1100
+          },
+          {
+            "id": "34",
+            "x": 1300,
+            "y": 1700
+          }
+        ],
+        "externalSoftwareSystemBoundariesVisible": false,
+        "key": "C4-02-Contenedores",
+        "name": "Container View: Destilatech",
+        "order": 2,
+        "relationships": [
+          {
+            "id": "35",
+            "routing": "Direct"
+          },
+          {
+            "id": "37",
+            "routing": "Direct"
+          },
+          {
+            "id": "38",
+            "routing": "Direct"
+          },
+          {
+            "id": "39",
+            "routing": "Direct"
+          },
+          {
+            "id": "41",
+            "routing": "Direct"
+          },
+          {
+            "id": "43",
+            "routing": "Direct"
+          },
+          {
+            "id": "44",
+            "routing": "Direct"
+          },
+          {
+            "id": "45",
+            "vertices": [
+              {
+                "x": 1179,
+                "y": 1622
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "47",
+            "vertices": [
+              {
+                "x": 1071,
+                "y": 1478
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "49",
+            "routing": "Direct"
+          }
+        ],
+        "softwareSystemId": "6",
+        "dimensions": {
+          "width": 3900,
+          "height": 2400
+        }
+      }
+    ],
+    "systemContextViews": [
+      {
+        "description": "Diagrama de contexto de Destilatech",
+        "elements": [
+          {
+            "id": "1",
+            "x": 500,
+            "y": 500
+          },
+          {
+            "id": "2",
+            "x": 1200,
+            "y": 500
+          },
+          {
+            "id": "3",
+            "x": 1900,
+            "y": 500
+          },
+          {
+            "id": "4",
+            "x": 1175,
+            "y": 1900
+          },
+          {
+            "id": "5",
+            "x": 2000,
+            "y": 1250
+          },
+          {
+            "id": "6",
+            "x": 1175,
+            "y": 1250
+          }
+        ],
+        "enterpriseBoundaryVisible": true,
+        "key": "C4-01-Contexto",
+        "name": "System Context View: Destilatech",
+        "order": 1,
+        "relationships": [
+          {
+            "id": "36",
+            "routing": "Direct"
+          },
+          {
+            "id": "40",
+            "routing": "Direct"
+          },
+          {
+            "id": "42",
+            "routing": "Direct"
+          },
+          {
+            "id": "46",
+            "vertices": [
+              {
+                "x": 1290,
+                "y": 1675
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "48",
+            "vertices": [
+              {
+                "x": 1510,
+                "y": 1675
+              }
+            ],
+            "routing": "Direct"
+          },
+          {
+            "id": "50",
+            "routing": "Direct"
+          }
+        ],
+        "softwareSystemId": "6",
+        "dimensions": {
+          "width": 2850,
+          "height": 2600
+        }
+      }
+    ]
+  }
+}

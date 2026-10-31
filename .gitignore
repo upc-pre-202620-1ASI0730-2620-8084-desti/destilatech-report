@@ -1,1 +1,15 @@
+# Salida de la compilación
+dist/*
+!dist/.gitkeep
+
+# Archivos temporales de LaTeX y del sistema
+*.aux
+*.log
+*.toc
+*.out
+.DS_Store
+Thumbs.db
+
+# IDE
 .idea/
+.vscode/
