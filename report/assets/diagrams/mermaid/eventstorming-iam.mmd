@@ -1,0 +1,18 @@
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterAccount"]:::command --> A1{{"Aggregate:\nAccount"}}:::aggregate --> E1(["Event:\nAccountRegistered"]):::event
+    C1b["Command:\nLogin"]:::command --> A1 --> E1b(["Event:\nUserAuthenticated"]):::event
+    C1c["Command:\nLogout"]:::command --> A1 --> E1c(["Event:\nSessionClosed"]):::event
+    C1d["Command:\nRequestPasswordRecovery"]:::command --> A3{{"Aggregate:\nPasswordRecoveryToken"}}:::aggregate --> E1d(["Event:\nPasswordRecoveryRequested"]):::event
+    C1e["Command:\nUpdateBusinessProfile"]:::command --> A1 --> E1e(["Event:\nBusinessProfileUpdated"]):::event
+    E1 --> P1{"Policy:\nStartTrialOnRegistration"}:::policy --> C2["Command:\nStartTrialPeriod"]:::command --> A2{{"Aggregate:\nTrialPeriod"}}:::aggregate --> E2(["Event:\nTrialPeriodStarted"]):::event
+    E2 --> P2{"Policy:\nNotifyBeforeExpiration"}:::policy --> E3(["Event:\nTrialEndingSoonNotified"]):::event
+    E1 --> RM1[/"Read Model:\nAccountStatusView"/]:::readmodel
+    E2 --> RM1
+    E3 --> RM1
