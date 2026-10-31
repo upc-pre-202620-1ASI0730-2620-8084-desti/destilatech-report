@@ -1,0 +1,77 @@
+@startuml
+title Diagrama entidad-relación — Orders & Replenishment
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity orders_customers {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  name : varchar(120)
+  contact : varchar(120)
+}
+
+entity orders_orders {
+  * id : char(36) <<PK>>
+  --
+  customer_id : char(36) <<FK>>
+  order_date : datetime
+  status : varchar(20)
+  idempotency_key : varchar(80) <<UK>>
+}
+
+entity orders_order_lines {
+  * id : char(36) <<PK>>
+  --
+  order_id : char(36) <<FK>>
+  product_id : char(36) (referencia lógica a inventory_products)
+  product_name_snapshot : varchar(120)
+  unit_snapshot : varchar(20)
+  quantity : decimal
+}
+
+entity orders_replenishment_lists {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  generated_at : datetime
+  shareable_text : text
+}
+
+entity orders_replenishment_items {
+  * id : char(36) <<PK>>
+  --
+  list_id : char(36) <<FK>>
+  product_id : char(36) (referencia lógica a inventory_products)
+  product_name : varchar(120)
+  suggested_quantity : decimal
+}
+
+orders_customers ||--o{ orders_orders : realiza
+orders_orders ||--|{ orders_order_lines : contiene
+orders_replenishment_lists ||--|{ orders_replenishment_items : incluye
+@enduml

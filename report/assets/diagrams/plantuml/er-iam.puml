@@ -1,0 +1,62 @@
+@startuml
+title Diagrama entidad-relación — IAM (Identity & Access Management)
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity iam_accounts {
+  * id : char(36) <<PK>>
+  --
+  full_name : varchar(120)
+  business_name : varchar(120)
+  email : varchar(160) <<UK>>
+  password_hash : varchar(255)
+  business_type : varchar(20) (PRODUCER o RETAILER)
+  is_active : boolean
+  created_at : datetime
+}
+
+entity iam_trial_periods {
+  * id : char(36) <<PK>>
+  --
+  account_id : char(36) <<FK>> <<UK>>
+  start_date : datetime
+  end_date : datetime
+  status : varchar(20)
+}
+
+entity iam_password_recovery_tokens {
+  * id : char(36) <<PK>>
+  --
+  account_id : char(36) <<FK>>
+  token_hash : varchar(255) <<UK>>
+  expires_at : datetime
+  used : boolean
+}
+
+iam_accounts ||--|| iam_trial_periods : tiene
+iam_accounts ||--o{ iam_password_recovery_tokens : solicita
+@enduml
