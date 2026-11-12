@@ -18,3 +18,41 @@
 4. Implementar primero los módulos de mayor valor del Product Backlog (lotes, monitoreo simulado, inventario, pedidos y alertas), incorporar el contexto IAM (registro e inicio de sesión) cuando el curso aborde la autenticación y documentar cada sprint con sus evidencias.
 5. Implementar la autenticación (US26), agregar pruebas unitarias y de integración al repositorio de los Web Services y pasar la API y su base de datos a un plan que no se apague por inactividad.
 6. Realizar las entrevistas de validación con 3 a 5 usuarios por segmento y corregir los problemas de mayor severidad antes de la entrega final.
+
+### Video About-the-Team
+
+El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors durante los tres Sprints: la retrospectiva del grupo, narrada sobre escenas de las reuniones reales del equipo, y el testimonio ante cámara de cada integrante sobre las actividades realizadas, el logro de los outcomes y las competencias desarrolladas. [COMPLETAR: resumen de los aspectos más relevantes del video, en dos o tres oraciones]
+
+**Tabla 34**
+
+*Pauta de secuencias del video About-the-Team*
+
+| Sección | Inicio (hh:mm:ss) |
+| :---------- | :----------: |
+| Presentación del equipo | [COMPLETAR] |
+| Retrospectiva: Sprint 1 | [COMPLETAR] |
+| Retrospectiva: Sprint 2 | [COMPLETAR] |
+| Retrospectiva: Sprint 3 | [COMPLETAR] |
+| Retrospectiva: qué salió bien, qué salió mal y qué haríamos distinto | [COMPLETAR] |
+| Testimonio de Fernandez Seer, Mario Alonso | [COMPLETAR] |
+| Testimonio de Santiago Atanacio, Jairo Mathias | [COMPLETAR] |
+| Testimonio de Almandroz Carbajal, Pierina Marysabel | [COMPLETAR] |
+| Testimonio de Condor Sandoval, Jean Pierre | [COMPLETAR] |
+
+| Dato | Valor |
+| :---------- | :---------- |
+| Nombre del archivo | upc-pre-202620-1asi0730-8084-futurosseniors-about-the-team-sprint-3.mp4 |
+| Duración | 08:52 |
+| Enlace en Microsoft Stream | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x) |
+| Enlace en YouTube (no listado, el que se incrusta en la landing page) | [https://youtu.be/unnZ-w0I7SU](https://youtu.be/unnZ-w0I7SU) |
+
+**Figura 210**
+
+*Cuadro representativo del video About-the-Team*
+
+<p align="center"><img src="assets/sprint3/about-the-team-frame.png" alt="Cuadro del video About-the-Team" width="760"></p>
+
+*Nota.* Captura del video About-the-Team del equipo (2026).
+
+*Descripción.* Portada del video (0:02 de 8:52) con el título «Retrospectiva del equipo»: FuturosSeniors presenta Destilatech, Sprint 1 al 3, curso Aplicaciones Web 1ASI0730, con la cámara del integrante que narra. El video está publicado en YouTube y se incorpora en la sección «About the Team» de la landing page.
+
