@@ -46,6 +46,14 @@ input-files:
   - report/52-implementation-overview.md
   - report/53-sprint-1.md
   - report/54-sprint-2.md
+  - report/55-sprint-3-1-planning.md
+  - report/55-sprint-3-2-aspect-leaders.md
+  - report/55-sprint-3-3-sprint-backlog.md
+  - report/55-sprint-3-4-development-evidence.md
+  - report/55-sprint-3-5-execution-evidence.md
+  - report/55-sprint-3-6-services-documentation.md
+  - report/55-sprint-3-7-deployment-evidence.md
+  - report/55-sprint-3-8-team-collaboration.md
   - report/90-conclusions.md
   - report/99-bibliography.md
   - report/annexes/00-annexes.md

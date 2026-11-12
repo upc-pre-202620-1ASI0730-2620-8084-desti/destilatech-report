@@ -8,7 +8,7 @@ El archivo de diseño se encuentra en Figma: [Archivo completo de Destilatech](h
 
 Los wireframes definen la estructura de las pantallas antes de aplicar la identidad visual. Permiten validar la jerarquía de la información y las diferencias entre perfiles.
 
-**Figura 59**
+**Figura 65**
 
 *Wireframes de la aplicación web*
 
@@ -21,7 +21,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 **Wireframes para móvil**
 
-**Figura 60**
+**Figura 66**
 
 *Wireframes de la aplicación web para móvil*
 
@@ -36,7 +36,7 @@ Los wireframes definen la estructura de las pantallas antes de aplicar la identi
 
 Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa de una pantalla a otra para completar una tarea. El Productor inicia sesión, consulta su dashboard, supervisa las variables, revisa las alertas, consulta los lotes y actualiza el inventario. El Comercializador consulta su dashboard e inventario, identifica los productos con stock bajo y registra pedidos.
 
-**Figura 61**
+**Figura 67**
 
 *Wireflows de la aplicación web*
 
@@ -51,7 +51,7 @@ Los wireflows combinan wireframes con flechas que muestran cómo el usuario pasa
 
 Los mock-ups presentan la propuesta visual de alta fidelidad. Mantienen la paleta y la tipografía de la landing page y usan datos de ejemplo coherentes con el dominio (lotes, temperatura, pH, humedad, densidad, niveles de stock, pedidos y alertas). La etiqueta de rol en el encabezado y el contenido del menú lateral diferencian las funciones de cada perfil.
 
-**Figura 62**
+**Figura 68**
 
 *Mock-ups de la aplicación web*
 
@@ -78,7 +78,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 | Reposición | El producto no tiene umbral configurado. | No genera alerta de stock bajo y sugiere configurar el umbral. |
 | Pedido | El stock disponible es menor que la cantidad pedida. | Rechaza la confirmación e indica qué producto no alcanza; no modifica el stock. |
 
-**Figura 63**
+**Figura 69**
 
 *Diagramas de flujo de usuario de la aplicación web*
 

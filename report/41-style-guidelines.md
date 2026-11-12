@@ -8,7 +8,7 @@ Una guía de estilo (*style guideline*) reúne las normas de diseño que se apli
 
 La identidad visual de Destilatech busca combinar la tradición artesanal del pisco con la precisión del monitoreo digital. El logotipo está formado por el nombre de la marca en tipografía sans-serif de trazo grueso y un ícono lineal de copa de destilado, con un punto ámbar en el borde que representa el dato o la medición. Los colores del logotipo —cobre oscuro sobre fondo crema— transmiten calidez y confianza, y el trazo simple facilita su uso en tamaños pequeños, como el favicon o el encabezado de la aplicación.
 
-**Figura 41**
+**Figura 47**
 
 *Logotipo de Destilatech*
 
@@ -60,7 +60,7 @@ La paleta se definió a partir de los materiales y procesos del pisco: el cobre 
 | Success Green | #2f7a4f | `--color-success` | Estados normales o correctos. |
 | Warning Gold | #b8781f | `--color-warn` | Advertencias, como niveles bajos de stock. |
 
-**Figura 42**
+**Figura 48**
 
 *Paleta de colores de Destilatech*
 

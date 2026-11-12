@@ -224,7 +224,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista1_Seg1.png" alt="Captura de la entrevista #1 (Luciana Cueva, productora)" width="180"><br><b>Figura 19</b><br><i>Captura de la entrevista #1 (Luciana Cueva, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Luciana Cueva, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista1_Seg1.png" alt="Captura de la entrevista #1 (Luciana Cueva, productora)" width="180"><br><b>Figura 25</b><br><i>Captura de la entrevista #1 (Luciana Cueva, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Luciana Cueva, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -278,7 +278,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista2_Seg1.png" alt="Captura de la entrevista #2 (Mario Fernández, productor)" width="270"><br><b>Figura 20</b><br><i>Captura de la entrevista #2 (Mario Fernández, productor)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Mario Fernández, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista2_Seg1.png" alt="Captura de la entrevista #2 (Mario Fernández, productor)" width="270"><br><b>Figura 26</b><br><i>Captura de la entrevista #2 (Mario Fernández, productor)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Mario Fernández, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -324,7 +324,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista3_Seg1.png" alt="Captura de la entrevista #3 (Stacy Guerra, productora)" width="180"><br><b>Figura 21</b><br><i>Captura de la entrevista #3 (Stacy Guerra, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Stacy Guerra, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista3_Seg1.png" alt="Captura de la entrevista #3 (Stacy Guerra, productora)" width="180"><br><b>Figura 27</b><br><i>Captura de la entrevista #3 (Stacy Guerra, productora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Stacy Guerra, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -372,7 +372,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Captura de la entrevista #4 (Marco Vargas, comercializador)" width="180"><br><b>Figura 22</b><br><i>Captura de la entrevista #4 (Marco Vargas, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Marco Vargas, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista1_Seg2.png" alt="Captura de la entrevista #4 (Marco Vargas, comercializador)" width="180"><br><b>Figura 28</b><br><i>Captura de la entrevista #4 (Marco Vargas, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Marco Vargas, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -418,7 +418,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Captura de la entrevista #5 (Carlos Moreno, comercializador)" width="300"><br><b>Figura 23</b><br><i>Captura de la entrevista #5 (Carlos Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Carlos Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista2_Seg2.png" alt="Captura de la entrevista #5 (Carlos Moreno, comercializador)" width="300"><br><b>Figura 29</b><br><i>Captura de la entrevista #5 (Carlos Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Carlos Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -464,7 +464,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Captura de la entrevista #6 (Rubens Moreno, comercializador)" width="300"><br><b>Figura 24</b><br><i>Captura de la entrevista #6 (Rubens Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Rubens Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista3_Seg2.png" alt="Captura de la entrevista #6 (Rubens Moreno, comercializador)" width="300"><br><b>Figura 30</b><br><i>Captura de la entrevista #6 (Rubens Moreno, comercializador)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Rubens Moreno, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -514,7 +514,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
     <tr>
       <td><b>Evidencia</b></td>
       <td>
-<img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Captura de la entrevista #7 (Andrea Mendoza, comercializadora)" width="250"><br><b>Figura 25</b><br><i>Captura de la entrevista #7 (Andrea Mendoza, comercializadora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Andrea Mendoza, que evidencia su participación y el consentimiento para registrar la sesión en video.
+<img src="assets/md-images-front-matter/Entrevista7_Segmento2.jpg" alt="Captura de la entrevista #7 (Andrea Mendoza, comercializadora)" width="250"><br><b>Figura 31</b><br><i>Captura de la entrevista #7 (Andrea Mendoza, comercializadora)</i><br><i>Nota.</i> Captura de la grabación de la entrevista (2026).<br><i>Descripción.</i> Fotograma de la grabación de la entrevista a Andrea Mendoza, que evidencia su participación y el consentimiento para registrar la sesión en video.
       </td>
     </tr>
     <tr>
@@ -549,7 +549,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 | Roles declarados | Administradora de negocio familiar (2), propietario y productor (1) | Propietario (1), administradores (3) |
 | Duración promedio de la entrevista | 17.2 min | 7.8 min |
 
-**Figura 26**
+**Figura 32**
 
 *Edad de los entrevistados por segmento*
 
@@ -583,7 +583,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Interpretación.** Los tres productores usan Excel y redes sociales, y los tres tienen el celular como dispositivo principal; solo uno (33 %) menciona la laptop. Ninguno usa sensores ni IoT (3 de 3) y los tres describen dificultad para monitorear variables del proceso (temperatura, grado de azúcar, grado alcohólico), un problema que dos de ellos (67 %) resuelven con supervisión presencial frecuente y que, según dos entrevistados, produce errores o desfases en los registros. Los tres estarían dispuestos a pagar una suscripción: el pago mínimo propuesto promedia S/ 63.3, el máximo S/ 93.3 y el punto medio del rango S/ 78.3 al mes.
 
-**Figura 27**
+**Figura 33**
 
 *Hallazgos del segmento Productor (porcentaje sobre n = 3)*
 
@@ -616,7 +616,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Interpretación.** Los cuatro comercializadores usan cuaderno, WhatsApp y celular, se han quedado sin stock con clientes esperando y deciden la reposición según su experiencia o intuición; los cuatro desean alertas de stock en el celular y estarían dispuestos a pagar. Tres de cuatro (75 %) abandonaron una herramienta digital previa (un sistema de inventario en dos casos y una hoja de cálculo en el tercero) por considerarla complicada o poco ágil, lo que indica que la facilidad de uso es un requisito crítico. El quiebre de stock se da, en promedio, 1.83 veces al mes entre los tres entrevistados que dieron una frecuencia. El pago mínimo propuesto promedia S/ 40.0, el máximo S/ 72.5 y el punto medio del rango S/ 56.2 al mes.
 
-**Figura 28**
+**Figura 34**
 
 *Hallazgos del segmento Comercializador (porcentaje sobre n = 4)*
 
@@ -650,7 +650,7 @@ La siguiente tabla compara los aspectos que se indagaron en ambos segmentos. Los
 | Considera promociones de proveedores | s/d | 50% | s/d |
 | Abandonó una herramienta digital previa | s/d | 75% | s/d |
 
-**Figura 29**
+**Figura 35**
 
 *Herramientas y dispositivos usados por segmento*
 
@@ -661,7 +661,7 @@ La siguiente tabla compara los aspectos que se indagaron en ambos segmentos. Los
 *Descripción.* Barras agrupadas que comparan, para productores (marrón) y comercializadores (dorado), el porcentaje que usa cuaderno, Excel, WhatsApp, smartphone y laptop. El smartphone es el dispositivo principal del 100 % de ambos segmentos; el cuaderno y WhatsApp son más frecuentes entre comercializadores (100 %) que entre productores (67 %), y la laptop es minoritaria en los dos (33 % y 25 %).
 
 
-**Figura 30**
+**Figura 36**
 
 *Rango de pago mensual propuesto por entrevistado*
 
@@ -695,7 +695,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 **Segmento 1: Productor de pisco**
 
-**Figura 31**
+**Figura 37**
 
 *User Persona del segmento Productor: Ricardo Donayre*
 
@@ -708,7 +708,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 **Segmento 2: Comercializador**
 
-**Figura 32**
+**Figura 38**
 
 *User Persona del segmento Comercializador: Carlos Mendoza*
 
@@ -790,7 +790,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 **Segmento 1: Productor de pisco**
 
-**Figura 33**
+**Figura 39**
 
 *User Journey Map del segmento Productor: Ricardo Donayre*
 
@@ -803,7 +803,7 @@ Los User Journey Maps representan el recorrido de cada User Persona en su situac
 
 **Segmento 2: Comercializador**
 
-**Figura 34**
+**Figura 40**
 
 *User Journey Map del segmento Comercializador: Carlos Mendoza*
 
@@ -820,7 +820,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 **Segmento 1: Productor de pisco**
 
-**Figura 35**
+**Figura 41**
 
 *Empathy Map del segmento Productor: Ricardo Donayre*
 
@@ -833,7 +833,7 @@ Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, oye
 
 **Segmento 2: Comercializador**
 
-**Figura 36**
+**Figura 42**
 
 *Empathy Map del segmento Comercializador: Carlos Mendoza*
 
@@ -889,7 +889,7 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 #### 2.4.3. Flujo del Productor
 
-**Figura 37**
+**Figura 43**
 
 *Big Picture EventStorming: flujo del productor (as-is)*
 
@@ -930,7 +930,7 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 #### 2.4.4. Flujo del Comercializador
 
-**Figura 38**
+**Figura 44**
 
 *Big Picture EventStorming: flujo del comercializador (as-is)*
 

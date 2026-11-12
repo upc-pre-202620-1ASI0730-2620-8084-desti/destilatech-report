@@ -15,7 +15,7 @@ Se presenta un diagrama entidad-relación por cada *bounded context*, derivado d
 
 **a. IAM**
 
-**Figura 85**
+**Figura 91**
 
 *Diagrama entidad-relación del Bounded Context IAM*
 
@@ -30,7 +30,7 @@ Una cuenta (`iam_accounts`) tiene un único periodo de prueba (`iam_trial_period
 
 **b. Billing**
 
-**Figura 86**
+**Figura 92**
 
 *Diagrama entidad-relación del Bounded Context Billing*
 
@@ -45,7 +45,7 @@ Un plan (`billing_plans`) rige cero o más suscripciones (`billing_subscriptions
 
 **c. Production & Monitoring**
 
-**Figura 87**
+**Figura 93**
 
 *Diagrama entidad-relación del Bounded Context Production & Monitoring*
 
@@ -60,7 +60,7 @@ Un lote (`production_batches`) tiene uno o más cambios de etapa (`production_ba
 
 **d. Inventory & Stock Management**
 
-**Figura 88**
+**Figura 94**
 
 *Diagrama entidad-relación del Bounded Context Inventory & Stock Management*
 
@@ -75,7 +75,7 @@ Cada producto (`inventory_products`) tiene un único saldo (`inventory_stock_ite
 
 **e. Orders & Replenishment**
 
-**Figura 89**
+**Figura 95**
 
 *Diagrama entidad-relación del Bounded Context Orders & Replenishment*
 
@@ -90,7 +90,7 @@ Un cliente (`orders_customers`) realiza cero o más pedidos (`orders_orders`) y 
 
 **f. Alerts & Notifications**
 
-**Figura 90**
+**Figura 96**
 
 *Diagrama entidad-relación del Bounded Context Alerts & Notifications*
 
@@ -105,7 +105,7 @@ La tabla `alerts_alerts` guarda cada alerta con su tipo, el identificador del pr
 
 **g. Analytics & Estimations**
 
-**Figura 91**
+**Figura 97**
 
 *Diagrama entidad-relación del Bounded Context Analytics & Estimations*
 

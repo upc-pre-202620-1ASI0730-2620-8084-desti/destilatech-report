@@ -58,7 +58,7 @@ El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 m
 
 Gestiona la identidad de la cuenta del usuario (productor o comercializador), su autenticación, la recuperación de contraseña y el periodo de prueba de 14 días. Responde al Epic EP01.
 
-**Figura 65**
+**Figura 71**
 
 *Design-Level EventStorming del Bounded Context IAM*
 
@@ -75,7 +75,7 @@ El evento `AccountRegistered` dispara la política `StartTrialOnRegistration`, q
 
 Gestiona los planes, la suscripción de pago y los intentos de pago asociados a la cuenta. Responde al Epic EP01.
 
-**Figura 66**
+**Figura 72**
 
 *Design-Level EventStorming del Bounded Context Billing*
 
@@ -92,7 +92,7 @@ El comando `SubscribeToPlan` (US40) crea un `PaymentAttempt` con una clave de id
 
 Gestiona los lotes de producción y el monitoreo de las variables del proceso. Responde a los Epics EP03 y EP04.
 
-**Figura 67**
+**Figura 73**
 
 *Design-Level EventStorming del Bounded Context Production & Monitoring*
 
@@ -109,7 +109,7 @@ Gestiona los lotes de producción y el monitoreo de las variables del proceso. R
 
 Gestiona el catálogo de productos y el control de stock. Responde a los Epics EP05 y EP06.
 
-**Figura 68**
+**Figura 74**
 
 *Design-Level EventStorming del Bounded Context Inventory & Stock Management*
 
@@ -126,7 +126,7 @@ Gestiona el catálogo de productos y el control de stock. Responde a los Epics E
 
 Gestiona clientes, pedidos de venta y las listas de compra para la reposición. Responde al Epic EP07.
 
-**Figura 69**
+**Figura 75**
 
 *Design-Level EventStorming del Bounded Context Orders & Replenishment*
 
@@ -143,7 +143,7 @@ Gestiona clientes, pedidos de venta y las listas de compra para la reposición. 
 
 Actúa como un Bounded Context transversal que centraliza las alertas generadas por Production & Monitoring e Inventory & Stock Management. Responde a los Epics EP04 y EP06.
 
-**Figura 70**
+**Figura 76**
 
 *Design-Level EventStorming del Bounded Context Alerts & Notifications*
 
@@ -160,7 +160,7 @@ Este Bounded Context no origina Commands desde el usuario salvo `MarkAlertAsAtte
 
 Calcula estimaciones de reposición e indicadores históricos a partir del historial de otros Bounded Contexts. Responde al Epic EP08 y al resumen del dashboard (EP02).
 
-**Figura 71**
+**Figura 77**
 
 *Design-Level EventStorming del Bounded Context Analytics & Estimations*
 
@@ -195,7 +195,7 @@ Los commands que cruzan contextos (`ExtendAccountAccess`, `RaiseAlert`, `Discoun
 
 El diagrama de contexto presenta a Destilatech como un único recuadro al centro, rodeado por sus usuarios y por los sistemas externos con los que interactúa. Se elaboró con Structurizr y su código fuente (Structurizr DSL) se incluye al final de esta sección.
 
-**Figura 72**
+**Figura 78**
 
 *Diagrama de contexto C4 de Destilatech*
 
@@ -461,7 +461,7 @@ El código está en `assets/diagrams/structurizr/workspace.dsl` y el diseño de 
 
 El diagrama de contenedores descompone a Destilatech en sus unidades desplegables o ejecutables por separado y muestra las principales decisiones de tecnología y la forma en que se comunican. Pertenece al mismo espacio de trabajo de Structurizr de la sección 4.6.2.
 
-**Figura 73**
+**Figura 79**
 
 *Diagrama de contenedores C4 de Destilatech*
 
@@ -506,7 +506,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 **a. Componentes del Website**
 
-**Figura 74**
+**Figura 80**
 
 *Diagrama de componentes C4 del Website*
 
@@ -535,7 +535,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 
 El primer nivel de componentes de la SPA son los *bounded contexts* que implementa el frontend y un *Shared Kernel* con los elementos comunes. Cada contexto se organiza internamente en las capas de presentación, aplicación, dominio e infraestructura, que corresponden al nivel de código y se pueden verificar en las carpetas de cada contexto del repositorio del frontend.
 
-**Figura 75**
+**Figura 81**
 
 *Diagrama de componentes C4 de la Single-Page Application*
 
@@ -565,7 +565,7 @@ El primer nivel de componentes de la SPA son los *bounded contexts* que implemen
 
 La REST API es un único contenedor y cada uno de sus módulos corresponde exactamente a uno de los siete *bounded contexts* del Design-Level EventStorming (sección 4.6.1), lo que evidencia la trazabilidad entre el modelo de dominio y la arquitectura de software.
 
-**Figura 76**
+**Figura 82**
 
 *Diagrama de componentes C4 de la REST API: módulos y comunicación entre contextos*
 
@@ -576,7 +576,7 @@ La REST API es un único contenedor y cada uno de sus módulos corresponde exact
 *Descripción.* Los controladores reciben las peticiones de la Single-Page Application y las enrutan a los siete módulos: IAM, Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications y Analytics & Estimations. Entre módulos hay cinco eventos de dominio (SubscriptionActivated, AnomalyDetected, LowStockDetected, OrderRegistered y BottlingRegistered) y tres lecturas de historial. El acceso a la base de datos y a los sistemas externos se muestra en el diagrama siguiente.
 
 
-**Figura 77**
+**Figura 83**
 
 *Diagrama de componentes C4 de la REST API: acceso a datos e integraciones externas*
 

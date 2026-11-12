@@ -57,7 +57,7 @@ El código se versiona con Git y se aloja en GitHub, dentro de la organización 
 
 **Sitio publicado (landing page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
 
-**Figura 92**
+**Figura 98**
 
 *Landing page publicada en GitHub Pages*
 
@@ -100,7 +100,7 @@ Los mensajes de commit siguen la especificación Conventional Commits (s. f.), c
 
 Las versiones del informe y del software siguen el versionado semántico (Preston-Werner, 2013), con el formato `MAJOR.MINOR.PATCH`: se incrementa `MAJOR` ante un cambio incompatible, `MINOR` al añadir funcionalidad compatible y `PATCH` al corregir errores. La versión del informe se registra en el *Registro de Versiones* al inicio de este documento.
 
-**Figura 93**
+**Figura 99**
 
 *Ramas del repositorio del informe*
 
@@ -344,7 +344,7 @@ Esta sección describe cómo se publica la landing page. La landing page es un s
 
 Pasos realizados para publicar la landing page:
 
-**Figura 94**
+**Figura 100**
 
 *Despliegue en GitHub Pages, paso 1. Ingresamos al repositorio de la landing page*
 
@@ -355,7 +355,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página de la organización en GitHub con el listado «All» de repositorios. Se ven dos repositorios públicos: `destilatech-report` (actualizado hace 52 minutos) y `destilatech-website` (HTML, actualizado el día anterior), este último resaltado.
 
 
-**Figura 95**
+**Figura 101**
 
 *Despliegue en GitHub Pages, paso 2. Abrimos el repositorio y su configuración*
 
@@ -366,7 +366,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página principal del repositorio `destilatech-website`: rama `main`, 7 ramas, 11 commits y los archivos `.idea`, `assets/img`, `css`, `js`, `README.md` e `index.html`. En la barra superior se resalta la pestaña Settings.
 
 
-**Figura 96**
+**Figura 102**
 
 *Despliegue en GitHub Pages, paso 3. Ingresamos a la sección Pages*
 
@@ -377,7 +377,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Página Settings > General del repositorio, con el nombre del repositorio, la rama por defecto `main` y la opción Pages resaltada en el menú lateral izquierdo.
 
 
-**Figura 97**
+**Figura 103**
 
 *Despliegue en GitHub Pages, paso 4. Seleccionamos la rama de origen y guardamos*
 
@@ -388,7 +388,7 @@ Pasos realizados para publicar la landing page:
 *Descripción.* Sección GitHub Pages en Build and deployment: la fuente es «Deploy from a branch», la rama seleccionada es `main` con la carpeta `/ (root)` y el botón Save. El texto indica que GitHub Pages aún está deshabilitado antes de guardar.
 
 
-**Figura 98**
+**Figura 104**
 
 *Despliegue en GitHub Pages, paso 5. Verificamos el despliegue*
 
@@ -410,4 +410,4 @@ La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila
 - **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (`https://destilatech-api.onrender.com/api/v1`); en desarrollo, `.env.development` apunta al Fake API local (`http://localhost:3000/api/v1`).
 - **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 155 a 162).
+- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 161 a 168).
