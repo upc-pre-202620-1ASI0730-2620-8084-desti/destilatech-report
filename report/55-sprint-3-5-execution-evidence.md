@@ -4,7 +4,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 **Video de navegación:** [COMPLETAR: enlace al video de navegación del Sprint 3 en Microsoft Stream]
 
-**Figura 182**
+**Figura 188**
 
 *Base de datos de la API en MySQL Workbench*
 
@@ -14,7 +14,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* Conexión `root@localhost:3306` con el esquema `destilatech` creado por las migraciones de la API. Contiene la tabla de historial de migraciones (`__efmigrationshistory`) y las 17 tablas de los *bounded contexts*: `alerts`, `batch_stage_changes`, `customers`, `order_lines`, `orders`, `payments`, `plans`, `process_variables`, `production_batches`, `products`, `replenishment_estimates`, `replenishment_orders`, `sensor_readings`, `stock_items`, `stock_movements`, `subscriptions` y `users`.
 
-**Figura 183**
+**Figura 189**
 
 *Documentación interactiva de la API en Scalar*
 
@@ -24,7 +24,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* Página de inicio de Scalar (`/scalar`) de `DestilatechPlatform.API` v1 (OpenAPI 3.1.1) con los grupos de endpoints (Production, Customers, Orders, Replenishment Orders, Inventory, User, Checkout, Payment, Plan y Subscription, Historical Indicators, Replenishment Estimates y Alerts) y las once operaciones del grupo Production.
 
-**Figura 184**
+**Figura 190**
 
 *Prueba del endpoint GET /api/v1/plans en Scalar*
 
@@ -36,7 +36,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 **Aplicación web 2.0.0.** La versión 2.0.0 de la aplicación web está publicada en Firebase Hosting (`https://destilatech-webapp.web.app`); las siguientes capturas muestran las vistas nuevas del Sprint 3 sobre esa URL, con el perfil de demostración *Bodega Santa Rosa* (productor). Esa versión todavía consumía el Fake API y el pago simulado; la versión 2.1.0 los reemplazó por la API real y por Stripe Checkout (sección 5.2.3.7), y conserva las demás vistas.
 
-**Figura 185**
+**Figura 191**
 
 *Contratación de un plan con pago simulado*
 
@@ -46,7 +46,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* Vista *Subscription* con el diálogo «Pay subscription» para el plan Professional (S/ 110.00 al mes). El aviso indica que es un pago simulado para la demostración académica y que no se realiza ningún cargo real; el formulario pide titular, número de tarjeta (con la marca detectada), vencimiento y CVC.
 
-**Figura 186**
+**Figura 192**
 
 *Suscripción activa e historial de pagos*
 
@@ -56,7 +56,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* Después del pago, la vista *Subscription* muestra «Professional Plan active · renews on Dec 10, 2026», el plan actual marcado en la tarjeta correspondiente y el texto «Simulated card payment: no real charge is made and only the card brand and its last 4 digits are saved». Debajo aparece el historial de pagos (*Payment history*) con la pasarela *Simulated*.
 
-**Figura 187**
+**Figura 193**
 
 *Atención masiva de alertas*
 
@@ -66,7 +66,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* El *Alerts center* muestra tres alertas pendientes y el botón «Mark all as attended (3)». El diálogo de confirmación indica que las tres alertas pendientes visibles se marcarán como atendidas; la lista incluye alertas de condición anómala y de stock bajo.
 
-**Figura 188**
+**Figura 194**
 
 *Exportación de clientes a CSV*
 

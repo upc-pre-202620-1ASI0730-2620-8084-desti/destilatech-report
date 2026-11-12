@@ -42,7 +42,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 **Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
-**Figura 130**
+**Figura 136**
 
 *Tablero del Sprint 2 en Trello*
 
@@ -343,7 +343,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 **Historial de commits por rama.** Las capturas siguientes muestran, para cada rama, los commits más recientes registrados en GitHub, y la última muestra las ramas del repositorio.
 
-**Figura 131**
+**Figura 137**
 
 *Historial de commits de la rama feature/alerts-notifications*
 
@@ -354,7 +354,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/alerts-notifications`. Commits de `pierinaaa29` con la entidad, el comando, el *assembler*, la API, los componentes y la bandeja de alertas, y la tienda `alerts.store.js`.
 
 
-**Figura 132**
+**Figura 138**
 
 *Historial de commits de la rama feature/analytics-estimations*
 
@@ -365,7 +365,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/analytics-estimations`. Commits de `pierinaaa29` con la tienda de analíticas, los dashboards del productor y del comercializador, el gráfico de tendencia, las tarjetas de estimación y los indicadores históricos.
 
 
-**Figura 133**
+**Figura 139**
 
 *Historial de commits de la rama feature/billing*
 
@@ -376,7 +376,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/billing`. Commits de `jeanpcs` con la tienda de facturación, las rutas, la vista de planes, las vistas de resultado del pago, el aviso de prueba, la tarjeta de plan, el historial de pagos y los *assemblers*.
 
 
-**Figura 134**
+**Figura 140**
 
 *Historial de commits de la rama feature/fake-api*
 
@@ -387,7 +387,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/fake-api`. Commits de `Msa-ware` con el Fake API con Beeceptor, la licencia de PrimeUI en el entorno de desarrollo, `start.sh`, `routes.json` y `db.json`.
 
 
-**Figura 135**
+**Figura 141**
 
 *Historial de commits de la rama feature/iam*
 
@@ -398,7 +398,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/iam`. Commits de `jeanpcs` con la tienda, las rutas, las vistas de registro e inicio de sesión, el perfil, el menú de usuario, el panel de autenticación, el guardián de rutas, el interceptor y la API de IAM.
 
 
-**Figura 136**
+**Figura 142**
 
 *Historial de commits de la rama feature/inventory-stock*
 
@@ -409,7 +409,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/inventory-stock`. Commits de `pierinaaa29` con la tienda de inventario, las rutas, la ficha del producto, la vista de inventario, los diálogos de umbral, movimiento y producto, y las etiquetas de estado de stock.
 
 
-**Figura 137**
+**Figura 143**
 
 *Historial de commits de la rama feature/locales*
 
@@ -420,7 +420,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/locales`. Commits de `Msa-ware` con los catálogos `locales/es.json` y `locales/en.json`, seguidos de los commits de pedidos y reposición de la rama anterior.
 
 
-**Figura 138**
+**Figura 144**
 
 *Historial de commits de la rama feature/orders-replenishment*
 
@@ -431,7 +431,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/orders-replenishment`. Commits de `jeanpcs` y `Msa-ware` con la tienda de pedidos, las rutas, las vistas de reposición, pedidos y clientes, y los diálogos de cliente, pedido y reposición.
 
 
-**Figura 139**
+**Figura 145**
 
 *Historial de commits de la rama feature/production-monitoring*
 
@@ -442,7 +442,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/production-monitoring`. Commits de `MrBaru` con la tienda de producción, las rutas, el dashboard de monitoreo, la gestión y el detalle de lotes, los diálogos de rango y de lote, las tarjetas de variable y el gráfico de lecturas.
 
 
-**Figura 140**
+**Figura 146**
 
 *Historial de commits de la rama feature/shared*
 
@@ -453,7 +453,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `feature/shared`. Commits de `Msa-ware` con la página 404, la barra superior, la navegación lateral, el encabezado de página, el layout, el selector de idioma, la tarjeta KPI, el pie de página y los estilos.
 
 
-**Figura 141**
+**Figura 147**
 
 *Historial de commits de la rama develop*
 
@@ -464,7 +464,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 *Descripción.* Página «Commits» del repositorio destilatech-webapp filtrada por la rama `develop`. Commits de `Msa-ware` con la actualización del README, el enrutador, la tienda y la API de IAM, la corrección de `package.json`, la internacionalización, `main.js`, `app.vue` y `.gitattributes`.
 
 
-**Figura 142**
+**Figura 148**
 
 *Ramas del repositorio de la aplicación web*
 
@@ -480,7 +480,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 **Video de navegación:** [Ver video][video-sprint-2]
 
-**Figura 143**
+**Figura 149**
 
 *Dashboard del productor*
 
@@ -491,7 +491,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Dashboard del productor (`/dashboard`, historia US04) con indicadores de lotes activos, inventario, alertas y pedidos, un gráfico del volumen por lote activo, la actividad reciente, las alertas pendientes y los productos de reposición prioritaria.
 
 
-**Figura 144**
+**Figura 150**
 
 *Monitoreo IoT de la producción*
 
@@ -502,7 +502,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de monitoreo (`/production/monitoring`, historias US09 y US44) con la selección del lote, las variables de proceso (temperatura, pH, humedad y densidad) y el gráfico de lecturas recientes generadas por el simulador IoT; las lecturas fuera del rango normal se señalan como anomalías (US11).
 
 
-**Figura 145**
+**Figura 151**
 
 *Gestión de lotes de producción*
 
@@ -513,7 +513,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Listado de lotes (`/production/batches`, historias US06 y US07) con la etapa de cada lote, el registro de un lote nuevo y el avance de etapa.
 
 
-**Figura 146**
+**Figura 152**
 
 *Detalle y trazabilidad de un lote*
 
@@ -525,7 +525,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 
 
-**Figura 147**
+**Figura 153**
 
 *Inventario*
 
@@ -536,7 +536,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de inventario (`/inventory`, historias US12, US14 y US15) con las unidades y el valor del inventario, el stock por producto, su estado (óptimo, bajo o crítico) y el acceso a la configuración del umbral de stock bajo.
 
 
-**Figura 148**
+**Figura 154**
 
 *Ficha de producto con estimación de reposición*
 
@@ -547,7 +547,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Ficha del producto (`/inventory/products/:id`, historias US13, US20, US46 y US47) con el historial de movimientos, el registro de movimientos y ajustes, y la estimación de reposición.
 
 
-**Figura 149**
+**Figura 155**
 
 *Pedidos y clientes*
 
@@ -558,7 +558,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de pedidos (`/orders`, historias US18 y US19) y de clientes (`/orders/customers`, historias US17 y US49) con sus formularios y el estado de cada pedido.
 
 
-**Figura 150**
+**Figura 156**
 
 *Reposición a proveedores*
 
@@ -570,7 +570,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 
 
-**Figura 151**
+**Figura 157**
 
 *Centro de alertas*
 
@@ -581,7 +581,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Centro de alertas (`/alerts`, historias US16 y US48) con alertas por anomalía y por stock bajo, y filtros por tipo y estado.
 
 
-**Figura 152**
+**Figura 158**
 
 *Planes y suscripción*
 
@@ -592,7 +592,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Vista de planes (`/billing/plans`, historias US03, US40 y US54) con el estado de acceso, los planes Básico (S/ 60), Profesional (S/ 110) y Empresarial (S/ 200) por mes y el historial de pagos.
 
 
-**Figura 153**
+**Figura 159**
 
 *Dashboard del comercializador*
 
@@ -603,7 +603,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 *Descripción.* Dashboard del comercializador (`/dashboard`, historia US05) con indicadores de ventas, pedidos abiertos, stock bajo y productos, el gráfico de movimiento de inventario, los productos de reposición prioritaria y los pedidos recientes.
 
 
-**Figura 154**
+**Figura 160**
 
 *Indicadores históricos*
 
@@ -617,7 +617,7 @@ El logro del Sprint 2 es la primera versión de la aplicación web, que está pu
 
 En el Sprint 2 no se implementaron servicios web propios: la aplicación consume un **Fake API** con `json-server`, que se ejecuta de forma local en desarrollo y se publica en Render como servicio web (`destilatech-api`) para la compilación de producción. En ambos casos los recursos se exponen con el prefijo `/api/v1`, que `routes.json` agrega a cada colección de `db.json`. La API real en ASP.NET Core y su documentación OpenAPI corresponden al sprint del *backend*; los endpoints previstos están especificados como historias técnicas en el capítulo III (épica EP10).
 
-**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 161).
+**URL base en desarrollo:** `http://localhost:3000/api/v1`. **URL base en producción:** `https://destilatech-api.onrender.com/api/v1` (por ejemplo, `https://destilatech-api.onrender.com/api/v1/plans`). El servicio de Render usa una instancia gratuita, que se suspende tras un periodo de inactividad y puede demorar la primera solicitud (Figura 167).
 
 **Tabla 21**
 
@@ -659,7 +659,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 1. Creación del proyecto.** En la consola de Firebase se creó el proyecto `destilatech-webapp` con la cuenta del equipo, en el plan Spark (sin costo). No se registró ninguna aplicación (iOS, Android o web) porque Hosting no la requiere, y no se activó Firestore ni Functions.
 
-**Figura 155**
+**Figura 161**
 
 *Proyecto destilatech-webapp en la consola de Firebase*
 
@@ -671,7 +671,7 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Paso 2. Inicialización de Hosting.** Desde la carpeta del proyecto se ejecutaron `firebase login` y `firebase init`. Se eligió la función Hosting, se usó el proyecto existente, se indicó `dist` como directorio público y se aceptó la configuración de aplicación de una sola página (reescribir todas las URL a `/index.html`). No se activaron las compilaciones automáticas con GitHub ni se sobrescribió `dist/index.html`. El asistente generó `firebase.json` y `.firebaserc`.
 
-**Figura 156**
+**Figura 162**
 
 *Inicialización de Firebase Hosting con firebase init*
 
@@ -695,7 +695,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 3. Publicación.** Con `dist/` generada por `npm run build`, la configuración se registró en el repositorio con el commit `chore(deploy): add Firebase Hosting configuration` en la rama `main` y se publicó con `npx firebase-tools deploy`. Firebase encontró 58 archivos en `dist`, los subió, finalizó la versión y completó el *release*.
 
-**Figura 157**
+**Figura 163**
 
 *Commit de la configuración y despliegue con firebase deploy*
 
@@ -707,7 +707,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 4. Verificación en la consola.** El panel de Hosting muestra la versión actual (`98f9a8`, publicada el 05/10/2026 a las 8:01 p. m.), una versión anterior (`13fbe4`, de las 7:57 p. m.) y los dominios asignados por Firebase: `destilatech-webapp.web.app` y `destilatech-webapp.firebaseapp.com`.
 
-**Figura 158**
+**Figura 164**
 
 *Panel de Hosting en la consola de Firebase*
 
@@ -721,7 +721,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 5. Creación del servicio web.** En Render se creó un *Web Service* con el nombre `destilatech-api`, conectado al repositorio `destilatech-webapp` de la organización del curso en GitHub, con entorno Node, la rama `develop`, la región Oregon y una instancia gratuita (0,1 CPU y 512 MB de RAM, USD 0 al mes).
 
-**Figura 159**
+**Figura 165**
 
 *Configuración del servicio web destilatech-api en Render*
 
@@ -733,7 +733,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 **Paso 6. Verificación del servicio.** El proyecto de Render muestra el servicio `destilatech-api` con estado *Deployed*, entorno Node y región Oregon. El panel de despliegues registra el primer despliegue, del commit `chore(config): point production API to json-server hosted on Render`, con estado *Live* y una duración de 34,3 segundos.
 
-**Figura 160**
+**Figura 166**
 
 *Servicio destilatech-api desplegado en Render*
 
@@ -743,7 +743,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 *Descripción.* Lista de recursos del entorno Production del proyecto «My project», con el servicio web `destilatech-api` en estado *Deployed*.
 
-**Figura 161**
+**Figura 167**
 
 *Despliegue del Fake API en Render*
 
@@ -759,7 +759,7 @@ El archivo `firebase.json` resultante es el siguiente:
 
 La aplicación está disponible en la URL pública de Firebase Hosting y carga sus datos desde el Fake API.
 
-**Figura 162**
+**Figura 168**
 
 *Aplicación web desplegada en Firebase Hosting*
 

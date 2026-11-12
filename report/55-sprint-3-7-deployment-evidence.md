@@ -31,9 +31,9 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 **Aplicación web.** Las versiones 2.0.0 y 2.1.0 se publican en Firebase Hosting (`https://destilatech-webapp.web.app`) con `npm run build` y `firebase deploy`. En producción el archivo `.env.production` apunta a `https://destilatech-platform.onrender.com/api/v1`, y el script `npm run seed-api` carga los datos de demostración mediante los endpoints de la API desplegada.
 
-**Despliegue de la API en Render.** La API se despliega con el `Dockerfile` del repositorio. La Figura 189 muestra el despliegue del Pull Request #8 (commit `c78e41d`), que terminó con el estado *Deploy succeeded* en 1 minuto 33 segundos; los registros muestran a Entity Framework Core consultando la tabla `plans`, es decir, la API ya atiende solicitudes con la base de datos.
+**Despliegue de la API en Render.** La API se despliega con el `Dockerfile` del repositorio. La Figura 195 muestra el despliegue del Pull Request #8 (commit `c78e41d`), que terminó con el estado *Deploy succeeded* en 1 minuto 33 segundos; los registros muestran a Entity Framework Core consultando la tabla `plans`, es decir, la API ya atiende solicitudes con la base de datos.
 
-**Figura 189**
+**Figura 195**
 
 *Despliegue de la API en Render*
 
@@ -43,7 +43,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* Despliegue `dep-dbqk92brjlhs738i9hq0` del servicio `destilatech-platform` con estado *Deploy succeeded* y *Live*, duración de 1 m 33 s, origen `c78e41d` y registros de las consultas de Entity Framework Core a la tabla `plans`. Render avisa que la instancia gratuita se apaga por inactividad y puede demorar 50 segundos o más en responder.
 
-**Figura 190**
+**Figura 196**
 
 *Documentación de la API desplegada en Scalar*
 
@@ -55,7 +55,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 **Base de datos en Railway.** La base de datos es un servicio MySQL de Railway, en línea, con un volumen. La API aplica las migraciones al iniciar: el esquema `destilatech` contiene la tabla `__EFMigrationsHistory` y las 17 tablas de los *bounded contexts*, y los planes se cargan como datos iniciales.
 
-**Figura 191**
+**Figura 197**
 
 *Planes cargados en la base de datos de Railway*
 
@@ -65,7 +65,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* Consulta `SELECT * FROM destilatech.plans` que devuelve los tres planes: Basic (S/ 60.00 al mes, 1 usuario), Professional (S/ 110.00, 5 usuarios, recomendado) y Enterprise (S/ 200.00, sin límite de usuarios).
 
-**Figura 192**
+**Figura 198**
 
 *Tablas del esquema destilatech en Railway*
 
@@ -75,7 +75,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* Consulta a `information_schema.tables` con 18 filas (la tabla de historial de migraciones y las 17 tablas de los *bounded contexts*).
 
-**Figura 193**
+**Figura 199**
 
 *Historial de migraciones en Railway*
 
@@ -85,7 +85,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* La tabla `__EFMigrationsHistory` registra las seis migraciones aplicadas por la API al iniciar (`AddAlertsNotifications`, `AddInventoryStock`, `AddProductionMonitoring`, `AddOrdersReplenishment`, `AddAnalyticsEstimations` y `AddIamAndBilling`) con la versión 10.0.14 de Entity Framework Core.
 
-**Figura 194**
+**Figura 200**
 
 *Base de datos de Railway en MySQL Workbench*
 
@@ -97,7 +97,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 **Pago con Stripe Checkout en la aplicación web desplegada.** La versión 2.1.0 paga la suscripción con Stripe Checkout en modo de prueba a través de la API desplegada: la aplicación pide la sesión de pago a `POST /api/v1/checkout-sessions`, redirige a Stripe y, al volver, confirma el pago en `POST /api/v1/checkout-sessions/{sessionId}/confirmation`. No se realiza ningún cargo real y se usa la tarjeta de prueba de Stripe.
 
-**Figura 195**
+**Figura 201**
 
 *Página de pago de Stripe Checkout en modo de prueba*
 
@@ -107,7 +107,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* Página de pago de Stripe (entorno de prueba) para «Destilatech Professional» por PEN 110.00, abierta desde la vista Subscription de la aplicación desplegada, con la tarjeta de prueba `4242 4242 4242 4242`.
 
-**Figura 196**
+**Figura 202**
 
 *Pago confirmado en la aplicación web*
 
@@ -117,7 +117,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Descripción.* Al volver de Stripe (`/billing/checkout/success`), la aplicación confirma el pago con la API y muestra «Payment confirmed! Your Professional Plan is active until Dec 12, 2026» para la cuenta de *Bodega Santa Rosa*.
 
-**Figura 197**
+**Figura 203**
 
 *Suscripción activa y pago registrado en la aplicación web*
 

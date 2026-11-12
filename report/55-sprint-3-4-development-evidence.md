@@ -437,7 +437,7 @@ Durante el Sprint 3 se implementó en el repositorio [destilatech-platform](http
 
 El *merge* de las ramas a `develop` se registró con commits de integración y con los *Pull Request* #1 a #8 (`feature/inventory-stock`, `feature/analytics-estimations`, `feature/billing-work`, `feature/cors-and-project-files`, `refactor/inventory-stock`, `refactor/production-monitoring`, `feature/dashboard-summary` y `feature/iot-sensor-simulator`); los commits de integración no se listan en la tabla. La rama `feature/billing` conserva un commit con la estructura inicial de IAM y Billing (`8947f72`) que no se integró a `develop`; el trabajo de esos contextos continuó en `feature/billing-work`.
 
-**Figura 164**
+**Figura 170**
 
 *Ramas del repositorio de la API*
 
@@ -447,7 +447,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Página «Branches» del repositorio destilatech-platform con la rama `develop` y las ramas `feature/project-configuration`, `feature/shared`, `feature/api-configuration`, `feature/shared-domain-events`, `feature/iam`, `feature/alerts-notifications`, `refactor/alerts-notifications-result`, `feature/inventory-stock`, `feature/production-monitoring`, `feature/orders-replenishment`, `feature/analytics-estimations`, `feature/billing`, `feature/billing-work` y `feature/cors-and-project-files`.
 
-**Figura 165**
+**Figura 171**
 
 *Commits de la rama feature/project-configuration*
 
@@ -457,7 +457,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/project-configuration` del repositorio destilatech-platform. Configuración inicial del proyecto ASP.NET Core con los paquetes de OpenAPI, Entity Framework Core, MySQL y Humanizer (27 de octubre de 2026).
 
-**Figura 166**
+**Figura 172**
 
 *Commits de la rama feature/shared*
 
@@ -467,7 +467,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/shared` del repositorio destilatech-platform. Repositorio base, unidad de trabajo, contexto de base de datos, convenciones `snake_case` y `kebab-case` y registro `Result` del *Shared Kernel* (27 de octubre de 2026).
 
-**Figura 167**
+**Figura 173**
 
 *Commits de la rama feature/api-configuration*
 
@@ -477,7 +477,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/api-configuration` del repositorio destilatech-platform. Archivos de recursos de localización, cadenas de conexión por entorno y configuración de OpenAPI con Scalar y de las migraciones al iniciar (29 de octubre de 2026).
 
-**Figura 168**
+**Figura 174**
 
 *Commits de la rama feature/shared-domain-events*
 
@@ -487,7 +487,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/shared-domain-events` del repositorio destilatech-platform. Mediador, comportamientos del *pipeline* de comandos (registro, excepciones y transacción), manejo global de excepciones y títulos de error localizados (5 de noviembre de 2026).
 
-**Figura 169**
+**Figura 175**
 
 *Commits de la rama feature/iam*
 
@@ -497,7 +497,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/iam` del repositorio destilatech-platform. Contexto IAM (5 de noviembre de 2026) y configuración heredada de `feature/api-configuration`.
 
-**Figura 170**
+**Figura 176**
 
 *Commits de la rama feature/alerts-notifications*
 
@@ -507,7 +507,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/alerts-notifications` del repositorio destilatech-platform. Contexto Alerts & Notifications: controlador, mensajes localizados, metadatos OpenAPI localizados y migración de la tabla de alertas (5 de noviembre de 2026).
 
-**Figura 171**
+**Figura 177**
 
 *Commits de la rama refactor/alerts-notifications-result*
 
@@ -517,7 +517,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `refactor/alerts-notifications-result` del repositorio destilatech-platform. Migración de Alerts al modelo `Result` compartido, errores tipados y fábrica de `ProblemDetails` (7 y 8 de noviembre de 2026).
 
-**Figura 172**
+**Figura 178**
 
 *Commits de la rama feature/inventory-stock*
 
@@ -527,7 +527,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/inventory-stock` del repositorio destilatech-platform. Entidades, reglas de stock y umbral, operaciones, endpoints y migración del contexto Inventory & Stock (7 de noviembre de 2026).
 
-**Figura 173**
+**Figura 179**
 
 *Commits de la rama feature/production-monitoring*
 
@@ -537,7 +537,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/production-monitoring` del repositorio destilatech-platform. Operaciones de lotes y monitoreo, endpoints, migración y corrección de la resolución de la cuenta (7 y 10 de noviembre de 2026).
 
-**Figura 174**
+**Figura 180**
 
 *Commits de la rama feature/orders-replenishment*
 
@@ -547,7 +547,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/orders-replenishment` del repositorio destilatech-platform. Servicios de comandos de clientes, pedidos y órdenes de reposición con el modelo `Result` compartido y regeneración de la migración (10 de noviembre de 2026).
 
-**Figura 175**
+**Figura 181**
 
 *Commits de la rama feature/analytics-estimations*
 
@@ -557,7 +557,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/analytics-estimations` del repositorio destilatech-platform. Servicios de consulta de indicadores históricos y de estimación de reposición con el modelo `Result` compartido y regeneración de la migración (10 de noviembre de 2026).
 
-**Figura 176**
+**Figura 182**
 
 *Commits de la rama feature/billing-work*
 
@@ -567,7 +567,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la rama `feature/billing-work` del repositorio destilatech-platform. Contextos IAM y Billing: agregados, servicios de comandos, pasarela de pago y controladores con el modelo `Result` compartido (10 de noviembre de 2026).
 
-**Figura 177**
+**Figura 183**
 
 *Commits de la rama feature/cors-and-project-files*
 
@@ -627,7 +627,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp` | `feature/platform-integration` | [`48ed877`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/48ed877) | docs(readme): document the platform API, Stripe Checkout and demo data | — | 2026-11-12 |
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp` | `release/v2.1.0` | [`3675349`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/3675349) | chore(release): bump version to 2.1.0 | — | 2026-11-12 |
 
-**Figura 178**
+**Figura 184**
 
 *Commits de la aplicación web (10 de noviembre)*
 
@@ -637,7 +637,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de `develop` del repositorio destilatech-webapp con la integración de la versión 2.0.0, la documentación del README y la exportación a CSV del inventario y de los indicadores históricos.
 
-**Figura 179**
+**Figura 185**
 
 *Commits de la aplicación web (9 de noviembre)*
 
@@ -674,7 +674,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website` | `feature/project-structure` | [`30bfcb8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/30bfcb8) | ci(pages): add GitHub Actions workflow to deploy the public folder | — | 2026-10-30 |
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website` | `feature/project-structure` | [`03047bd`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/03047bd) | docs(readme): document public/assets project structure and deployment | — | 2026-10-30 |
 
-**Figura 180**
+**Figura 186**
 
 *Commits de la landing page*
 
@@ -684,7 +684,7 @@ El *merge* de las ramas a `develop` se registró con commits de integración y c
 
 *Descripción.* Historial de la landing page con el *partial* de encabezado y pie de página, el cargador `main.js`, el traslado de la página principal y de las páginas legales a `public`, el flujo de GitHub Actions que publica la carpeta `public` y la documentación de la estructura y del despliegue.
 
-**Figura 181**
+**Figura 187**
 
 *Commits del repositorio del informe*
 

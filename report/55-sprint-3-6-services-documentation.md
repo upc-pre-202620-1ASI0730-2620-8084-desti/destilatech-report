@@ -64,7 +64,7 @@ La API documenta sus endpoints con OpenAPI (`Microsoft.AspNetCore.OpenApi`) y lo
 
 *Nota.* Elaboración propia a partir de los controladores del repositorio destilatech-platform (2026). Los códigos de estado corresponden a los declarados en cada controlador; el detalle de cada esquema está en Scalar. Los endpoints de Inventory, Production, Orders y Analytics reciben la cuenta mediante el parámetro `userId` y los de Alerts mediante `accountId`, porque la autenticación (US26) todavía no está implementada; si no se envía la cuenta, el endpoint responde `400`.
 
-**Ejemplo de response (`GET /api/v1/plans`).** La respuesta es una lista de planes; el siguiente fragmento corresponde a la captura de la Figura 184:
+**Ejemplo de response (`GET /api/v1/plans`).** La respuesta es una lista de planes; el siguiente fragmento corresponde a la captura de la Figura 190:
 
 ```json
 [

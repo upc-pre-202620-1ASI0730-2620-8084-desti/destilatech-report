@@ -42,7 +42,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 **Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
 
-**Figura 99**
+**Figura 105**
 
 *Tablero del Sprint 1 en Trello*
 
@@ -78,7 +78,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 **Horas por integrante.** El Sprint Backlog 1 suma 72 horas: Santiago Atanacio, Jairo Mathias, 16; Condor Sandoval, Jean Pierre, 16; Fernandez Seer, Mario Alonso, 22; Almandroz Carbajal, Pierina Marysabel, 10; Domenack Angeles, Miguel, 8.
 
-**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del Sprint 1 (Figura 99), todas las tarjetas del sprint están en la lista DONE - SPRINT 1.
+**Observación.** Cada tarea es una tarea de ingeniería (*Engineering Task*) de 4 a 8 horas, y cada historia se descompone en al menos dos de ellas, que se registran como una checklist dentro de su tarjeta en Trello; las tareas de una misma historia las ejecuta el responsable del aspecto. La tarea TK-16 es de apoyo a la historia US37 y no modifica su responsable: el líder del aspecto Responsive Design sigue siendo Domenack Angeles, Miguel. Al cierre del Sprint 1 (Figura 105), todas las tarjetas del sprint están en la lista DONE - SPRINT 1.
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -230,7 +230,7 @@ El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo q
 
 Las capturas siguientes muestran el historial de cada rama en GitHub, que respalda la tabla anterior.
 
-**Figura 100**
+**Figura 106**
 
 *Historial de commits de la rama feature/ubiquitous_language*
 
@@ -241,7 +241,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/ubiquitous_language`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 101**
+**Figura 107**
 
 *Historial de commits de la rama feature/student-profile*
 
@@ -252,7 +252,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/student-profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 102**
+**Figura 108**
 
 *Historial de commits de la rama feature/startup_profile*
 
@@ -263,7 +263,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/startup_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 103**
+**Figura 109**
 
 *Historial de commits de la rama feature/solution_profile*
 
@@ -274,7 +274,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/solution_profile`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 104**
+**Figura 110**
 
 *Historial de commits de la rama feature/segmentos_objetivo*
 
@@ -285,7 +285,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/segmentos_objetivo`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 105**
+**Figura 111**
 
 *Historial de commits de la rama feature/product-design*
 
@@ -296,7 +296,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/product-design`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 106**
+**Figura 112**
 
 *Historial de commits de la rama feature/entrevistas*
 
@@ -307,7 +307,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 107**
+**Figura 113**
 
 *Historial de commits de la rama feature/empathy_mapping_2*
 
@@ -318,7 +318,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/empathy_mapping_2`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 108**
+**Figura 114**
 
 *Historial de commits de la rama feature/domain_driven_architecture*
 
@@ -329,7 +329,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/domain_driven_architecture`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 109**
+**Figura 115**
 
 *Historial de commits de la rama feature/dda_diagrams*
 
@@ -340,7 +340,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/dda_diagrams`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 110**
+**Figura 116**
 
 *Historial de commits de la rama feature/competidores*
 
@@ -351,7 +351,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/competidores`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 111**
+**Figura 117**
 
 *Historial de commits de la rama feature/code_style*
 
@@ -362,7 +362,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_style`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 112**
+**Figura 118**
 
 *Historial de commits de la rama feature/code_management*
 
@@ -373,7 +373,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/code_management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 113**
+**Figura 119**
 
 *Historial de commits de la rama feature/chapter-4*
 
@@ -384,7 +384,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/chapter-4`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 114**
+**Figura 120**
 
 *Historial de commits de la rama feature/big_picture_eventstorming*
 
@@ -395,7 +395,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/big_picture_eventstorming`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 115**
+**Figura 121**
 
 *Historial de commits de la rama feature/agregar-entrevistas-o-fix/corregir-readme*
 
@@ -406,7 +406,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar-entrevistas-o-fix/corregir-readme`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 116**
+**Figura 122**
 
 *Historial de commits de la rama feature/agregar_fotos*
 
@@ -417,7 +417,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/agregar_fotos`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 117**
+**Figura 123**
 
 *Historial de commits de la rama feature/actualizar_tablas_entrevistas*
 
@@ -428,7 +428,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/actualizar_tablas_entrevistas`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 118**
+**Figura 124**
 
 *Historial de commits de la rama feature/Student_Jean*
 
@@ -439,7 +439,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Student_Jean`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 119**
+**Figura 125**
 
 *Historial de commits de la rama feature/Source_Code_Management*
 
@@ -450,7 +450,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Source_Code_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 120**
+**Figura 126**
 
 *Historial de commits de la rama feature/Software_Configuration_Management*
 
@@ -461,7 +461,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/Software_Configuration_Management`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 121**
+**Figura 127**
 
 *Historial de commits de la rama feature/LandingPageMock-up*
 
@@ -472,7 +472,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `feature/LandingPageMock-up`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 122**
+**Figura 128**
 
 *Historial de commits de la rama docs/chapter-4-webapp-ux-ui*
 
@@ -483,7 +483,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `docs/chapter-4-webapp-ux-ui`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 123**
+**Figura 129**
 
 *Historial de commits de la rama develop*
 
@@ -494,7 +494,7 @@ Las capturas siguientes muestran el historial de cada rama en GitHub, que respal
 *Descripción.* Página «Commits» del repositorio destilatech-report filtrada por la rama `develop`, con el mensaje, el autor y el identificador de cada commit.
 
 
-**Figura 124**
+**Figura 130**
 
 *Historial de commits de la rama main*
 
@@ -513,7 +513,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 
 - **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
 
-**Figura 125**
+**Figura 131**
 
 *Landing page: encabezado*
 
@@ -524,7 +524,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Encabezado de la landing page con el logotipo de Destilatech a la izquierda, el menú de secciones (Descripción, Objetivos, Precios, Impacto y Funcionalidades), el selector de idioma ES / EN con ES activo y el botón «Prueba gratis 14 días» a la derecha.
 
 
-**Figura 126**
+**Figura 132**
 
 *Landing page: sección principal*
 
@@ -535,7 +535,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 *Descripción.* Sección principal con la etiqueta «Plataforma SaaS para el ecosistema del pisco», el título «Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar», un párrafo de descripción, los botones «Prueba gratis 14 días» y «Ver funcionalidades», y a la derecha una fotografía de alambiques con tarjetas de temperatura (18.4 °C, Óptimo) e inventario (42 uds., Reponer pronto).
 
 
-**Figura 127**
+**Figura 133**
 
 *Landing page: pie de página*
 
@@ -560,7 +560,7 @@ En el Sprint 1 se desplegó la landing page en GitHub Pages desde la rama `main`
 
 El equipo repartió las secciones de la landing page según la sección 5.2.1.3 y coordinó el trabajo por Discord. Los 11 commits del repositorio de la landing page se registraron desde una única cuenta del equipo; por esta razón, los aportes individuales por integrante se muestran con el repositorio del informe (sección «Project Report Collaboration Insights» y sección 5.2.1.4), donde cada persona trabajó desde su propia cuenta y rama.
 
-**Figura 128**
+**Figura 134**
 
 *Commits del repositorio de la landing page*
 
@@ -571,7 +571,7 @@ El equipo repartió las secciones de la landing page según la sección 5.2.1.3 
 *Descripción.* Historial de commits del repositorio de la landing page del 17 de septiembre de 2026 y días anteriores, con los mensajes «agregar estructura de i18n», «agregar estructura de platform feature tabs», «agregar estructura de logo-icon», «agregar estructura de responsive design», «subiendo archivo html, js y css», «agregar parte del index, js», «subir imagenes», «subir imagenes a assets» y «eliminando».
 
 
-**Figura 129**
+**Figura 135**
 
 *Contributors Insights del repositorio del informe (Sprint 1)*
 
