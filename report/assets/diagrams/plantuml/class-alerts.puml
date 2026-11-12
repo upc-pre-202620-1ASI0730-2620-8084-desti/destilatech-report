@@ -1,0 +1,71 @@
+@startuml
+title Diagrama de clases — Alerts & Notifications
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide empty members
+skinparam classAttributeIconSize 0
+left to right direction
+
+class Alert {
+  -id : Guid
+  -ownerAccountId : Guid
+  -type : AlertType
+  -sourceId : Guid
+  -message : string
+  -status : AlertStatus
+  -episodeKey : string
+  -createdAt : DateTime
+  -attendedAt : DateTime
+  +Raise(ownerAccountId, type, sourceId, message, episodeKey) : Alert
+  +MarkAsAttended() : void
+}
+class AlertPolicy <<service>> {
+  -alerts : IAlertRepository
+  +RaiseIfNew(ownerAccountId, type, sourceId, message) : Alert
+  #FindOpenEpisode(episodeKey) : Alert
+}
+class AlertQueryService <<service>> {
+  -alerts : IAlertRepository
+  +GetInbox(ownerAccountId, type, status) : Alert[]
+}
+interface IAlertRepository {
+  +Save(alert) : void
+  +FindOpenByEpisode(episodeKey) : Alert
+  +Find(ownerAccountId, type, status) : Alert[]
+}
+enum AlertType {
+  LOW_STOCK
+  ANOMALY
+}
+enum AlertStatus {
+  PENDING
+  ATTENDED
+}
+
+Alert ..> AlertType : tipo
+Alert ..> AlertStatus : estado
+AlertPolicy ..> Alert : crea
+AlertPolicy ..> IAlertRepository : consulta episodios con
+AlertQueryService ..> IAlertRepository : lista con
+@enduml

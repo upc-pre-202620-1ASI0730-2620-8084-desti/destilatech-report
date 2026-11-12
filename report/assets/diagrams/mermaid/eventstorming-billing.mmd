@@ -1,0 +1,16 @@
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nSubscribeToPlan"]:::command --> A1{{"Aggregate:\nPaymentAttempt"}}:::aggregate --> E1(["Event:\nCheckoutStarted"]):::event
+    EXT1(["Sistema externo:\nPasarela de Pago (sandbox)"]):::external -.->|"webhook de confirmación"| C2["Command:\nConfirmPayment"]:::command
+    C2 --> A1 --> E2(["Event:\nPaymentConfirmed"]):::event
+    E1 -.->|"solicita checkout"| EXT1
+    E2 --> P1{"Policy:\nActivateSubscriptionOnPayment"}:::policy --> C3["Command:\nActivateSubscription"]:::command --> A2{{"Aggregate:\nSubscription"}}:::aggregate --> E3(["Event:\nSubscriptionActivated"]):::event
+    E3 --> P2{"Policy:\nSyncAccountAccessOnActivation"}:::policy --> XC1["Command hacia IAM:\nExtendAccountAccess"]:::command
+    E3 --> RM1[/"Read Model:\nSubscriptionStatusView"/]:::readmodel
+    A3{{"Aggregate:\nPlan"}}:::aggregate -.-> RM2[/"Read Model:\nPlanCatalogView"/]:::readmodel

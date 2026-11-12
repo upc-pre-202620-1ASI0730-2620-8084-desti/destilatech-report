@@ -1,0 +1,19 @@
+# Metadatos y variables de maquetación del informe (se pasan con --metadata-file)
+title-meta: "Destilatech — Informe del Trabajo Final"
+author-meta:
+  - Fernandez Seer, Mario Alonso
+  - Santiago Atanacio, Jairo Mathias
+  - Almandroz Carbajal, Pierina Marysabel
+  - Condor Sandoval, Jean Pierre
+  - Domenack Angeles, Miguel
+subject: "1ASI0730 Aplicaciones Web — UPC (2026-20)"
+keywords: [Destilatech, FuturosSeniors, pisco, IoT, SaaS]
+lang: es-PE
+date: "Octubre 2026"
+documentclass: report
+classoption: [11pt, a4paper, oneside, openany]
+geometry: [margin=2.5cm]
+colorlinks: true
+linkcolor: black
+urlcolor: blue
+toccolor: black

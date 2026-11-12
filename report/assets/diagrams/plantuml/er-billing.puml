@@ -1,0 +1,63 @@
+@startuml
+title Diagrama entidad-relación — Billing
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity billing_plans {
+  * id : char(36) <<PK>>
+  --
+  name : varchar(60) <<UK>>
+  price : decimal
+  billing_cycle : varchar(20)
+  description : varchar(255)
+}
+
+entity billing_subscriptions {
+  * id : char(36) <<PK>>
+  --
+  account_id : char(36) <<UK>> (referencia lógica a iam_accounts)
+  plan_id : char(36) <<FK>>
+  status : varchar(20)
+  start_date : datetime
+  renewal_date : datetime
+}
+
+entity billing_payment_attempts {
+  * id : char(36) <<PK>>
+  --
+  subscription_id : char(36) <<FK>>
+  amount : decimal
+  status : varchar(20)
+  idempotency_key : varchar(80) <<UK>>
+  provider_payment_id : varchar(80) <<UK>> (nullable)
+  created_at : datetime
+  paid_at : datetime (nullable)
+}
+
+billing_plans ||--o{ billing_subscriptions : rige
+billing_subscriptions ||--o{ billing_payment_attempts : recibe
+@enduml

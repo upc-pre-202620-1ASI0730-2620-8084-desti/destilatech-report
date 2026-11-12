@@ -1,0 +1,73 @@
+@startuml
+title Diagrama entidad-relación — Production & Monitoring
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity production_batches {
+  * id : char(36) <<PK>>
+  --
+  producer_account_id : char(36) (referencia lógica a iam_accounts)
+  product_name : varchar(120)
+  start_date : datetime
+  stage : varchar(20)
+  estimated_quantity : decimal
+  bottled_quantity : decimal
+}
+
+entity production_batch_stage_changes {
+  * id : char(36) <<PK>>
+  --
+  batch_id : char(36) <<FK>>
+  from_stage : varchar(20) (nullable)
+  to_stage : varchar(20)
+  changed_at : datetime
+}
+
+entity production_process_variables {
+  * id : char(36) <<PK>>
+  --
+  batch_id : char(36) <<FK>>
+  name : varchar(60)
+  unit : varchar(20)
+  min_range : decimal
+  max_range : decimal
+  is_monitored : boolean
+}
+
+entity production_sensor_readings {
+  * id : char(36) <<PK>>
+  --
+  process_variable_id : char(36) <<FK>> <<UK>>
+  source_id : varchar(80) <<UK>>
+  value : decimal
+  recorded_at : datetime
+}
+
+production_batches ||--|{ production_batch_stage_changes : registra
+production_batches ||--o{ production_process_variables : monitorea
+production_process_variables ||--o{ production_sensor_readings : recibe
+@enduml

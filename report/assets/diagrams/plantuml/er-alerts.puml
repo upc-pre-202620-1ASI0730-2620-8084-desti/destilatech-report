@@ -1,0 +1,43 @@
+@startuml
+title Diagrama entidad-relación — Alerts & Notifications
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity alerts_alerts {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  type : varchar(20) (LOW_STOCK o ANOMALY)
+  source_id : char(36) (producto o variable de origen)
+  message : varchar(255)
+  status : varchar(20)
+  episode_key : varchar(120) <<UK>> (nullable)
+  created_at : datetime
+  attended_at : datetime (nullable)
+}
+
+@enduml

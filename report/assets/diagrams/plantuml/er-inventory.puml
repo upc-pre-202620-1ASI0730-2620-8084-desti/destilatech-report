@@ -1,0 +1,61 @@
+@startuml
+title Diagrama entidad-relación — Inventory & Stock Management
+skinparam dpi 180
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #4a3b34
+skinparam ArrowThickness 1.2
+skinparam roundCorner 0
+skinparam class {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+  AttributeFontColor #2b211c
+  HeaderBackgroundColor #EBD9BF
+}
+skinparam entity {
+  BackgroundColor #F7EEE1
+  BorderColor #A0522D
+  FontColor #2b211c
+}
+skinparam stereotypeCBackgroundColor #D99B3C
+skinparam stereotypeIBackgroundColor #8FA6B8
+skinparam stereotypeEBackgroundColor #B5A17C
+hide circle
+skinparam linetype ortho
+left to right direction
+
+entity inventory_products {
+  * id : char(36) <<PK>>
+  --
+  owner_account_id : char(36) (referencia lógica a iam_accounts)
+  name : varchar(120)
+  presentation : varchar(60)
+  unit : varchar(20)
+  is_active : boolean
+}
+
+entity inventory_stock_items {
+  * id : char(36) <<PK>>
+  --
+  product_id : char(36) <<FK>> <<UK>>
+  current_quantity : decimal
+  low_stock_threshold : decimal
+}
+
+entity inventory_stock_movements {
+  * id : char(36) <<PK>>
+  --
+  stock_item_id : char(36) <<FK>>
+  type : varchar(10) (IN u OUT)
+  reason : varchar(20)
+  quantity : decimal
+  movement_date : datetime
+  source_key : varchar(80) <<UK>> (evita duplicados)
+}
+
+inventory_products ||--|| inventory_stock_items : tiene
+inventory_stock_items ||--o{ inventory_stock_movements : registra
+@enduml

@@ -1,0 +1,24 @@
+flowchart LR
+    classDef command fill:#5DADE2,stroke:#2E6DA4,color:#000
+    classDef aggregate fill:#F7DC6F,stroke:#B7950B,color:#000
+    classDef event fill:#F5A623,stroke:#B9770E,color:#000
+    classDef policy fill:#AF7AC5,stroke:#6C3483,color:#fff
+    classDef readmodel fill:#82E0AA,stroke:#1E8449,color:#000
+    classDef external fill:#F1948A,stroke:#943126,color:#000
+
+    C1["Command:\nRegisterBatch"]:::command --> A1{{"Aggregate:\nProductionBatch"}}:::aggregate --> E1(["Event:\nBatchRegistered"]):::event
+    C1b["Command:\nEditBatch"]:::command --> A1 --> E1b(["Event:\nBatchEdited"]):::event
+    C2["Command:\nUpdateBatchStage"]:::command --> A1
+    A1 --> E2(["Event:\nBatchStageUpdated"]):::event
+    C2b["Command:\nRegisterBottling"]:::command --> A1 --> E2b(["Event:\nBottlingRegistered"]):::event
+    E2b --> P0{"Policy:\nAddStockOnBottling"}:::policy --> XC0["Command hacia\nInventory & Stock Management:\nAddBottledStock"]:::command
+    C3["Command:\nConfigureVariableRange"]:::command --> A2{{"Aggregate:\nProcessVariable"}}:::aggregate --> E3(["Event:\nVariableRangeConfigured"]):::event
+    C3b["Command:\nSelectMonitoredVariables"]:::command --> A2 --> E3b(["Event:\nMonitoredVariablesSelected"]):::event
+    EXT1(["Sistema externo:\nSensor IoT (simulado)"]):::external -.->|"lectura"| C4["Command:\nRecordSensorReading"]:::command --> A2 --> E4(["Event:\nSensorReadingRecorded"]):::event
+    E4 --> P1{"Policy:\nEvaluateReadingAgainstRange"}:::policy --> E5(["Event:\nAnomalyDetected"]):::event
+    E5 --> P2{"Policy:\nRaiseAlertOnAnomaly"}:::policy --> XC1["Command hacia\nAlerts & Notifications:\nRaiseAlert"]:::command
+    E1 --> RM1[/"Read Model:\nProductionDashboardView"/]:::readmodel
+    E2 --> RM1
+    E1 --> RM3[/"Read Model:\nBatchHistoryView"/]:::readmodel
+    E2 --> RM3
+    E4 --> RM2[/"Read Model:\nVariableTrendView"/]:::readmodel
