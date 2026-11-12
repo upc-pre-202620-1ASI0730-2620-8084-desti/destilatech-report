@@ -6,3 +6,4 @@ La siguiente tabla reúne los videos de las exposiciones del proyecto en Microso
 | :----------: | :------------- | :----------: |
 | AV1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-av1 | [ENLACE POR COMPLETAR] |
 | TB1 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-tb1 | [ENLACE POR COMPLETAR] |
+| AV2 | upc-pre-202620-1asi0730-8084-futurosseniors-expo-av2 | [ENLACE POR COMPLETAR] |
