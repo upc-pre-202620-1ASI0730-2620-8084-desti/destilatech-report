@@ -2,7 +2,7 @@
 
 El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta de forma local con MySQL (con `docker compose up -d --build` o con `dotnet run`), aplica las migraciones al iniciar y publica su documentación interactiva en Scalar. La versión 2.0.0 de la aplicación web incorporó el pago simulado, la atención masiva de alertas y la exportación a CSV, y la versión 2.1.0 la conectó con la API desplegada en Render: los productos, lotes, pedidos, alertas y suscripciones se guardan en la base de datos MySQL y la suscripción se paga con Stripe Checkout en modo de prueba.
 
-**Video de navegación:** [COMPLETAR: enlace al video de navegación del Sprint 3 en Microsoft Stream]
+**Video de navegación:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQDEBmjbnDXGTprl2XOkf-LtAeb1KTbCVViEdDfjgcFIGLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=JLtnvC)
 
 **Figura 188**
 
