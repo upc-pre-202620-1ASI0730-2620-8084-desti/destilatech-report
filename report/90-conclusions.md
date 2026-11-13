@@ -21,7 +21,7 @@
 
 ### Video About-the-Team
 
-El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors durante los tres Sprints: la retrospectiva del grupo, narrada sobre escenas de las reuniones reales del equipo, y el testimonio ante cámara de cada integrante sobre las actividades realizadas, el logro de los outcomes y las competencias desarrolladas. [COMPLETAR: resumen de los aspectos más relevantes del video, en dos o tres oraciones]
+El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors durante los tres Sprints: la retrospectiva del grupo, narrada sobre escenas de las reuniones reales del equipo, y el testimonio ante cámara de cada integrante sobre las actividades realizadas, el logro de los outcomes y las competencias desarrolladas. En la retrospectiva, el equipo recorre los tres Sprints: en el Sprint 1 definió el producto con el Lean UX Canvas, el análisis competitivo, el Big Picture Event Storming, las User Stories y el Product Backlog, adoptó GitFlow y publicó la landing page; en el Sprint 2 construyó la aplicación web con Vue y PrimeVue sobre un Fake API con JSON Server, publicada en Firebase Hosting; y en el Sprint 3 desarrolló la RESTful API en .NET con Entity Framework Core y MySQL, organizada en *bounded contexts*, con 49 endpoints documentados con Scalar, desplegada en Render con la base de datos en Railway, con el pago de Stripe Checkout en modo de prueba y un simulador de lecturas IoT. Como aciertos, destaca la comunicación diaria por WhatsApp y Discord, el trabajo con ramas, *pull requests* y Conventional Commits, y la división de la API por contextos, que permitió trabajar en paralelo y desplegar el producto de punta a punta; como aspectos por mejorar, reconoce un reparto desigual de los commits, la falta de actas de las reuniones, la ausencia de autenticación y de pruebas automáticas, y la demora de la primera petición en el plan gratuito de Render, y propone registrar cada reunión desde el primer Sprint, repartir las tareas por módulos desde el inicio y agregar pruebas automáticas y autenticación en el siguiente ciclo. En los testimonios, cada integrante explica su aporte y lo que aprendió: Mario Fernandez, los contextos de inventario y monitoreo de producción y su integración; Jairo Santiago, el diseño de producto, el *shared kernel* de la API y los despliegues; Jean Pierre Condor, la investigación de usuarios y los contextos IAM y Billing; y Pierina Almandroz, los diagramas de diseño y los contextos Orders & Replenishment y Analytics & Estimations.
 
 **Tabla 34**
 
@@ -29,15 +29,15 @@ El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors d
 
 | Sección | Inicio (hh:mm:ss) |
 | :---------- | :----------: |
-| Presentación del equipo | [COMPLETAR] |
-| Retrospectiva: Sprint 1 | [COMPLETAR] |
-| Retrospectiva: Sprint 2 | [COMPLETAR] |
-| Retrospectiva: Sprint 3 | [COMPLETAR] |
-| Retrospectiva: qué salió bien, qué salió mal y qué haríamos distinto | [COMPLETAR] |
-| Testimonio de Fernandez Seer, Mario Alonso | [COMPLETAR] |
-| Testimonio de Santiago Atanacio, Jairo Mathias | [COMPLETAR] |
-| Testimonio de Almandroz Carbajal, Pierina Marysabel | [COMPLETAR] |
-| Testimonio de Condor Sandoval, Jean Pierre | [COMPLETAR] |
+| Presentación del equipo | 00:00:00 |
+| Retrospectiva: Sprint 1 | 00:00:31 |
+| Retrospectiva: Sprint 2 | 00:01:06 |
+| Retrospectiva: Sprint 3 | 00:01:41 |
+| Retrospectiva: qué salió bien, qué salió mal y qué haríamos distinto | 00:02:34 |
+| Testimonio de Fernandez Seer, Mario Alonso | 00:04:05 |
+| Testimonio de Santiago Atanacio, Jairo Mathias | 00:05:09 |
+| Testimonio de Condor Sandoval, Jean Pierre | 00:06:53 |
+| Testimonio de Almandroz Carbajal, Pierina Marysabel | 00:07:48 |
 
 | Dato | Valor |
 | :---------- | :---------- |
