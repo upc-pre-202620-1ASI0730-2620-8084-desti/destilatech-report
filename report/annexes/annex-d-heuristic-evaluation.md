@@ -85,7 +85,7 @@ No se encontraron problemas de nivel 4.
 
 *Primera carga de la aplicación web*
 
-<p align="center"><img src="assets/annex-d/webapp-first-load-blank.png" alt="Primera carga de la aplicación web" width="720"></p>
+<p align="center"><img src="../assets/annex-d/webapp-first-load-blank.png" alt="Primera carga de la aplicación web" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
@@ -95,7 +95,7 @@ No se encontraron problemas de nivel 4.
 
 *Dashboard del productor durante la carga de los datos*
 
-<p align="center"><img src="assets/annex-d/producer-dashboard-provisional.png" alt="Dashboard del productor durante la carga de los datos" width="720"></p>
+<p align="center"><img src="../assets/annex-d/producer-dashboard-provisional.png" alt="Dashboard del productor durante la carga de los datos" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
@@ -105,7 +105,7 @@ No se encontraron problemas de nivel 4.
 
 *Pantalla de suscripción abierta con el parámetro plan=basic*
 
-<p align="center"><img src="assets/annex-d/billing-plans-basic.png" alt="Pantalla de suscripción abierta con el parámetro plan=basic" width="720"></p>
+<p align="center"><img src="../assets/annex-d/billing-plans-basic.png" alt="Pantalla de suscripción abierta con el parámetro plan=basic" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
@@ -115,7 +115,7 @@ No se encontraron problemas de nivel 4.
 
 *Dashboard del comercializador*
 
-<p align="center"><img src="assets/annex-d/retailer-dashboard.png" alt="Dashboard del comercializador" width="720"></p>
+<p align="center"><img src="../assets/annex-d/retailer-dashboard.png" alt="Dashboard del comercializador" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
@@ -125,7 +125,7 @@ No se encontraron problemas de nivel 4.
 
 *Gestión de lotes del productor*
 
-<p align="center"><img src="assets/annex-d/batches-table.png" alt="Gestión de lotes del productor" width="720"></p>
+<p align="center"><img src="../assets/annex-d/batches-table.png" alt="Gestión de lotes del productor" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
@@ -135,7 +135,7 @@ No se encontraron problemas de nivel 4.
 
 *Reposición del comercializador*
 
-<p align="center"><img src="assets/annex-d/retailer-replenishment.png" alt="Reposición del comercializador" width="720"></p>
+<p align="center"><img src="../assets/annex-d/retailer-replenishment.png" alt="Reposición del comercializador" width="720"></p>
 
 *Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
 
