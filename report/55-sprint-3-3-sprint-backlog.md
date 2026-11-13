@@ -2,17 +2,17 @@
 
 El Sprint Backlog 3 contiene las 13 historias técnicas de la épica EP10 que la API implementa en este sprint, divididas en dos o más tareas de ingeniería, y las tareas sin historia de usuario: soporte de los contextos, tareas transversales del *Shared Kernel* y de la configuración de la API, mejoras de la aplicación web (versiones 2.0.0 y 2.1.0) y mejoras de la landing page. Cada tarea es una tarea de ingeniería (*Engineering Task*) estimada en horas de planificación, con un mínimo de 4 y un máximo de 8 horas por tarea.
 
-**Tablero del equipo en Trello:** https://trello.com/b/4HZaQ3o7/destilatech-app-web (lista DONE - SPRINT 3)
+**Tablero del equipo en Trello:** [https://trello.com/b/11yAZnma/sprint-backlog-3-destilatech](https://trello.com/b/11yAZnma/sprint-backlog-3-destilatech) (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
 **Figura 169**
 
 *Tablero del Sprint 3 en Trello*
 
-<p align="center"><img src="assets/sprint3/trello-board-sprint3.png" alt="Tablero de Trello con las listas del Product Backlog y de los Sprints 1, 2 y 3" width="760"></p>
+<p align="center"><img src="assets/sprint3/trello-board-sprint3.png" alt="Tablero Sprint Backlog 3 - Destilatech en Trello" width="760"></p>
 
-*Nota.* Captura del tablero Destilatech - App Web en Trello (2026).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/11yAZnma/sprint-backlog-3-destilatech](https://trello.com/b/11yAZnma/sprint-backlog-3-destilatech).
 
-*Descripción.* El tablero conserva el Product Backlog (65 historias) y las listas DONE - SPRINT 1 (8 tarjetas), DONE - SPRINT 2 (40 tarjetas) y DONE - SPRINT 3, que contiene las 13 historias técnicas y las 31 tareas sin historia del Sprint Backlog 3; las listas To Do, In Process y To Review están vacías.
+*Descripción.* El tablero «Sprint Backlog 3 - Destilatech» tiene siete listas: Goal, con la meta del sprint; Stories, con 17 tarjetas (13 historias técnicas de la épica EP10 con su puntaje en Story Points y 4 tarjetas de tareas sin historia: soporte del contexto, tareas transversales, mejora de la Web Application y mejora de la Landing Page); To-Do, In-Process, To-Review y To-Fix, sin tarjetas; y Done, con las 64 tarjetas de tareas de ingeniería (TK-73 a TK-136) terminadas, cada una con su fecha de entrega y su responsable. La captura muestra el inicio de la lista Done; la columna se desplaza para ver las demás tarjetas.
 
 **Tabla 24**
 

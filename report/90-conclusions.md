@@ -14,8 +14,8 @@
 
 1. Validar los resultados de las entrevistas con una muestra mayor de productores y comercializadores, y realizar las entrevistas de validación de la landing page y de la aplicación con usuarios reales.
 2. Aplicar desde el siguiente sprint la convención de Conventional Commits, con el tipo correcto y mensajes en inglés, y hacer que cada integrante registre sus commits desde su propia cuenta en todos los repositorios.
-3. Definir el proveedor de la pasarela de pago y confirmar con los usuarios los precios de los planes antes de implementar la suscripción.
-4. Implementar primero los módulos de mayor valor del Product Backlog (lotes, monitoreo simulado, inventario, pedidos y alertas), incorporar el contexto IAM (registro e inicio de sesión) cuando el curso aborde la autenticación y documentar cada sprint con sus evidencias.
+3. Confirmar con los usuarios los precios de los planes Básico, Profesional y Empresarial, y pasar el pago de la suscripción de Stripe, hoy en modo de prueba, a un entorno de producción.
+4. Reemplazar el simulador de lecturas por sensores IoT reales, manteniendo la API actual, e implementar las historias del Product Backlog que aún no se desarrollaron, documentando cada sprint con sus evidencias.
 5. Implementar la autenticación (US26), agregar pruebas unitarias y de integración al repositorio de los Web Services y pasar la API y su base de datos a un plan que no se apague por inactividad.
 6. Realizar las entrevistas de validación con 3 a 5 usuarios por segmento y corregir los problemas de mayor severidad antes de la entrega final.
 
