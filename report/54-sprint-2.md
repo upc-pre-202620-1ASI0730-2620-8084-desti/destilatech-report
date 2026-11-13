@@ -40,17 +40,17 @@ En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden co
 
 El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Cada tarea es una tarea de ingeniería (*Engineering Task*) estimada en horas de planificación, con un mínimo de 4 y un máximo de 8 horas por tarea.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
+**Tablero del equipo en Trello:** [https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech](https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech) (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
 **Figura 136**
 
 *Tablero del Sprint 2 en Trello*
 
-<p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero del Sprint 2 en Trello" width="720"></p>
+<p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero Sprint Backlog 2 - Destilatech en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech](https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech).
 
-*Descripción.* La captura muestra las seis listas del tablero. La lista DONE - SPRINT 2 concentra las 40 tarjetas del sprint: 29 historias de usuario, cada una con su lista de verificación de tareas de ingeniería completada (la columna se desplaza para ver todas las tarjetas); 5 tarjetas de tareas técnicas transversales (Shared Kernel, Shared Layout & App Bootstrap, Fake API, Internationalization y User Switcher); y 6 tarjetas de pruebas funcionales.
+*Descripción.* El tablero «Sprint Backlog 2 - Destilatech» tiene siete listas: Goal, con la meta del sprint; Stories, con 31 tarjetas (29 historias de usuario con su puntaje en Story Points y 2 tarjetas de tareas técnicas sin historia: las transversales y las de pruebas); To-Do, In-Process, To-Review y To-Fix, sin tarjetas; y Done, con las 72 tarjetas de tareas de ingeniería (TK-01 a TK-72) terminadas, cada una con su fecha de entrega y su responsable. La captura muestra el final de la lista Done; la columna se desplaza para ver las demás tarjetas.
 
 
 **Tabla 19**

@@ -40,17 +40,17 @@ En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y
 
 El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la propuesta de valor de Destilatech y puedan iniciar su prueba gratuita; para lograrlo se publica la versión inicial de la landing page. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (listas Product Backlog, To Do, In Process, To Review, DONE - SPRINT 1 y DONE - SPRINT 2)
+**Tablero del equipo en Trello:** [https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech](https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech) (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
 **Figura 105**
 
 *Tablero del Sprint 1 en Trello*
 
-<p align="center"><img src="assets/md-images-front-matter/trello-sprint1.png" alt="Tablero del Sprint 1 en Trello" width="720"></p>
+<p align="center"><img src="assets/md-images-front-matter/trello-sprint1.png" alt="Tablero Sprint Backlog 1 - Destilatech en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026). Tablero disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech](https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech).
 
-*Descripción.* El tablero «Destilatech - App Web» organiza el trabajo en seis listas: Product Backlog (65 tarjetas); To Do, In Process y To Review (0 tarjetas cada una); DONE - SPRINT 1 (8 tarjetas) y DONE - SPRINT 2. La captura muestra el Product Backlog y la lista DONE - SPRINT 1, que concentra las tarjetas de las historias US30 a US37 (Header, Description, Goals, Pricing, Impact, Platform Features, Footer y Responsive Design; esta última queda oculta bajo el desplazamiento de la columna), cada una con su lista de verificación de tareas de ingeniería ya completada.
+*Descripción.* El tablero «Sprint Backlog 1 - Destilatech» organiza el trabajo en siete listas: Goal, con la meta del sprint; Stories, con las 8 historias de usuario del sprint (US30 a US37) y su puntaje en Story Points; To-Do, In-Process y To-Fix, sin tarjetas; To-Review, con 1 tarjeta (TK-16, el mock-up móvil de la landing page, pendiente de revisión); y Done, con las 15 tarjetas de tareas de ingeniería terminadas, cada una con su fecha de entrega y su responsable. La captura muestra el inicio de la lista Done; la columna se desplaza para ver las demás tarjetas.
 
 
 **Tabla 15**
