@@ -46,7 +46,7 @@ El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors d
 | Enlace en Microsoft Stream | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x) |
 | Enlace en YouTube (no listado, el que se incrusta en la landing page) | [https://youtu.be/unnZ-w0I7SU](https://youtu.be/unnZ-w0I7SU) |
 
-**Figura 210**
+**Figura 215**
 
 *Cuadro representativo del video About-the-Team*
 

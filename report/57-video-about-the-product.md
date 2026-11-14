@@ -9,7 +9,7 @@ El video About-the-Product presenta el modelo de negocio, las características y
 | Enlace en Microsoft Stream | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCFhi4_Hi0TTqML9k6Pzdo0AcH_rJm_2Y7to8P2PCnmnwE?e=ENdebx) |
 | Enlace en YouTube (no listado, el que se incrusta en la landing page) | [https://youtu.be/5oqDkvLjRj4](https://youtu.be/5oqDkvLjRj4) |
 
-**Figura 209**
+**Figura 214**
 
 *Cuadro representativo del video About-the-Product*
 
