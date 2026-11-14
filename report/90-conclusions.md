@@ -14,7 +14,45 @@
 
 1. Validar los resultados de las entrevistas con una muestra mayor de productores y comercializadores, y realizar las entrevistas de validación de la landing page y de la aplicación con usuarios reales.
 2. Aplicar desde el siguiente sprint la convención de Conventional Commits, con el tipo correcto y mensajes en inglés, y hacer que cada integrante registre sus commits desde su propia cuenta en todos los repositorios.
-3. Definir el proveedor de la pasarela de pago y confirmar con los usuarios los precios de los planes antes de implementar la suscripción.
-4. Implementar primero los módulos de mayor valor del Product Backlog (lotes, monitoreo simulado, inventario, pedidos y alertas), incorporar el contexto IAM (registro e inicio de sesión) cuando el curso aborde la autenticación y documentar cada sprint con sus evidencias.
+3. Confirmar con los usuarios los precios de los planes Básico, Profesional y Empresarial, y pasar el pago de la suscripción de Stripe, hoy en modo de prueba, a un entorno de producción.
+4. Reemplazar el simulador de lecturas por sensores IoT reales, manteniendo la API actual, e implementar las historias del Product Backlog que aún no se desarrollaron, documentando cada sprint con sus evidencias.
 5. Implementar la autenticación (US26), agregar pruebas unitarias y de integración al repositorio de los Web Services y pasar la API y su base de datos a un plan que no se apague por inactividad.
 6. Realizar las entrevistas de validación con 3 a 5 usuarios por segmento y corregir los problemas de mayor severidad antes de la entrega final.
+
+### Video About-the-Team
+
+El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors durante los tres Sprints: la retrospectiva del grupo, narrada sobre escenas de las reuniones reales del equipo, y el testimonio ante cámara de cada integrante sobre las actividades realizadas, el logro de los outcomes y las competencias desarrolladas. En la retrospectiva, el equipo recorre los tres Sprints: en el Sprint 1 definió el producto con el Lean UX Canvas, el análisis competitivo, el Big Picture Event Storming, las User Stories y el Product Backlog, adoptó GitFlow y publicó la landing page; en el Sprint 2 construyó la aplicación web con Vue y PrimeVue sobre un Fake API con JSON Server, publicada en Firebase Hosting; y en el Sprint 3 desarrolló la RESTful API en .NET con Entity Framework Core y MySQL, organizada en *bounded contexts*, con 49 endpoints documentados con Scalar, desplegada en Render con la base de datos en Railway, con el pago de Stripe Checkout en modo de prueba y un simulador de lecturas IoT. Como aciertos, destaca la comunicación diaria por WhatsApp y Discord, el trabajo con ramas, *pull requests* y Conventional Commits, y la división de la API por contextos, que permitió trabajar en paralelo y desplegar el producto de punta a punta; como aspectos por mejorar, reconoce un reparto desigual de los commits, la falta de actas de las reuniones, la ausencia de autenticación y de pruebas automáticas, y la demora de la primera petición en el plan gratuito de Render, y propone registrar cada reunión desde el primer Sprint, repartir las tareas por módulos desde el inicio y agregar pruebas automáticas y autenticación en el siguiente ciclo. En los testimonios, cada integrante explica su aporte y lo que aprendió: Mario Fernandez, los contextos de inventario y monitoreo de producción y su integración; Jairo Santiago, el diseño de producto, el *shared kernel* de la API y los despliegues; Jean Pierre Condor, la investigación de usuarios y los contextos IAM y Billing; y Pierina Almandroz, los diagramas de diseño y los contextos Orders & Replenishment y Analytics & Estimations.
+
+**Tabla 34**
+
+*Pauta de secuencias del video About-the-Team*
+
+| Sección | Inicio (hh:mm:ss) |
+| :---------- | :----------: |
+| Presentación del equipo | 00:00:00 |
+| Retrospectiva: Sprint 1 | 00:00:31 |
+| Retrospectiva: Sprint 2 | 00:01:06 |
+| Retrospectiva: Sprint 3 | 00:01:41 |
+| Retrospectiva: qué salió bien, qué salió mal y qué haríamos distinto | 00:02:34 |
+| Testimonio de Fernandez Seer, Mario Alonso | 00:04:05 |
+| Testimonio de Santiago Atanacio, Jairo Mathias | 00:05:09 |
+| Testimonio de Condor Sandoval, Jean Pierre | 00:06:53 |
+| Testimonio de Almandroz Carbajal, Pierina Marysabel | 00:07:48 |
+
+| Dato | Valor |
+| :---------- | :---------- |
+| Nombre del archivo | upc-pre-202620-1asi0730-8084-futurosseniors-about-the-team-sprint-3.mp4 |
+| Duración | 08:52 |
+| Enlace en Microsoft Stream | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x) |
+| Enlace en YouTube (no listado, el que se incrusta en la landing page) | [https://youtu.be/unnZ-w0I7SU](https://youtu.be/unnZ-w0I7SU) |
+
+**Figura 215**
+
+*Cuadro representativo del video About-the-Team*
+
+<p align="center"><img src="assets/sprint3/about-the-team-frame.png" alt="Cuadro del video About-the-Team" width="760"></p>
+
+*Nota.* Captura del video About-the-Team del equipo (2026).
+
+*Descripción.* Portada del video (0:02 de 8:52) con el título «Retrospectiva del equipo»: FuturosSeniors presenta Destilatech, Sprint 1 al 3, curso Aplicaciones Web 1ASI0730, con la cámara del integrante que narra. El video está publicado en YouTube y se incorpora en la sección «About the Team» de la landing page.
+
