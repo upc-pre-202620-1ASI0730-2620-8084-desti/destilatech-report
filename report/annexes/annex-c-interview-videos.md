@@ -16,6 +16,6 @@ Las siete entrevistas de la sección 2.2 (tres a productores y cuatro a comercia
 [video-sprint-1]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202317807_upc_edu_pe/IQBfZtnS6Ud8QrXVi-lT_fF-AZRpWqqZXanHJkwEA1mCgHo?e=FivmRX>
 [video-sprint-2]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202317807_upc_edu_pe/IQBZP-iiEeF3T7LrCHYj5VQeAQu02ddGx_B0ODeAi1-2X4Y?e=wlCwUT>
 [video-sprint-3]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQDEBmjbnDXGTprl2XOkf-LtAeb1KTbCVViEdDfjgcFIGLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=JLtnvC>
-[video-validacion]: <https://completar.pendiente>
+[video-validacion]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd>
 [video-about-the-product]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCFhi4_Hi0TTqML9k6Pzdo0AcH_rJm_2Y7to8P2PCnmnwE?e=ENdebx>
 [video-about-the-team]: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x>
