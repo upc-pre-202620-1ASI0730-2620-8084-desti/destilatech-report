@@ -28,13 +28,17 @@ Las entrevistas de validación evalúan con usuarios de los dos segmentos objeti
 
 Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura de un cuadro del video, enlace al video en Microsoft Stream con el tiempo de inicio y la duración, y un resumen de las apreciaciones del participante sobre las tareas asignadas. Las entrevistas de los dos segmentos (de 3 a 5 por segmento) se consolidan en un único video, con un título que indica el entrevistado, el segmento y la fecha de cada sesión.
 
-**Video de las entrevistas de validación:** [PENDIENTE: enlace en Microsoft Stream; el video consolidado aún se está editando y subiendo]
+**Video de las entrevistas de validación:** [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd) (duración total: 59:51)
 
 **Figura 209**
 
 *Cuadro representativo del video de las entrevistas de validación*
 
-[PENDIENTE: captura del video consolidado, con su descripción y su duración total; la última entrevista termina en el minuto 59:51 del video]
+<p align="center"><img src="assets/validation/validation-video-frame.png" alt="Cuadro del video consolidado de las entrevistas de validación" width="720"></p>
+
+*Nota.* Captura del video de las entrevistas de validación en Microsoft Stream (2026).
+
+*Descripción.* Cuadro de la entrevista #2: Luciana Cueva comparte su pantalla con el Dashboard Productor de la aplicación web publicada (perfil Productor, Bodega Santa Rosa, en inglés), con los indicadores de lotes activos, inventario, alertas y pedidos, el gráfico de volumen por lote activo y la actividad reciente. El video consolidado dura 59:51 y reúne las cuatro sesiones, cuyo inicio se indica en la Tabla 32.
 
 **Tabla 32**
 
@@ -47,7 +51,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 | 3 | Comercializador | Rubens Bendezú | 24 | Comas | 00:33:17 / 11:30 (aprox.) |
 | 4 | Comercializador | Andrea Mendoza | 41 | Surquillo | 00:44:59 / 14:52 |
 
-**Entrevista #1.** Marco Vargas, 22 años, San Miguel, segmento Comercializador (familiar con una pequeña licorería). Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: [PENDIENTE: URL de Microsoft Stream con el tiempo de inicio 00:00:00].
+**Entrevista #1.** Marco Vargas, 22 años, San Miguel, segmento Comercializador (familiar con una pequeña licorería). Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd), desde el minuto 00:00:00.
 
 **Figura 210**
 
@@ -61,7 +65,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 *Resumen.* Marco Vargas navegó la landing page sin ayuda: cambió el idioma entre español e inglés, vio la versión móvil y conoció al equipo. En la aplicación registró un cliente nuevo y simuló un pedido y una reposición con ayuda de la interfaz. Le confundió que la landing page sea de una sola página, en lugar de abrir páginas distintas al usar los enlaces de la barra de navegación, y que al registrar un pedido con el stock agotado no se enlazara de forma más automática con las sugerencias de reposición o con un chat con el proveedor. Esperaba una comunicación más directa, como un chatbot que enviara los pedidos o las reposiciones al WhatsApp del proveedor. Sí pagaría por la plataforma, porque considera que los precios (entre S/ 60 y S/ 200 mensuales) se acomodan a su bolsillo, e incluso se suscribiría al plan Empresarial. Lo primero que cambiaría es la estructura de navegación de la landing page, para que abra páginas independientes, y el flujo de inventario cuando los pedidos se cruzan con el stock bajo.
 
-**Entrevista #2.** Luciana Daniela Cueva Valdés, 20 años, Lima, segmento Productor. Fecha de la sesión: [CONFIRMAR: fecha]. Enlace al video con el tiempo de inicio: [PENDIENTE: URL de Microsoft Stream con el tiempo de inicio 00:16:59].
+**Entrevista #2.** Luciana Daniela Cueva Valdés, 20 años, Lima, segmento Productor. Fecha de la sesión: [CONFIRMAR: fecha]. Enlace al video con el tiempo de inicio: [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd), desde el minuto 00:16:59.
 
 **Figura 211**
 
@@ -75,7 +79,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 *Resumen.* Sin ayuda, Luciana Cueva entendió que la página sirve para administrar la producción de pisco. Encontró los planes y le parecieron muy accesibles, identificó el monitoreo y las alertas como lo que más le serviría, interpretó bien el dashboard (lotes activos, inventario, alertas, pedidos y actividad reciente) y encontró la temperatura y su rango de 16 a 24 °C. Le confundió que todo estuviera en inglés y le costó ubicar dónde registrar lotes, actualizar la etapa de un lote y ver las alertas. No esperaba que el monitoreo se actualizara solo con la simulación en vivo, y le gustó porque así puede vigilar la temperatura. Dijo que la plataforma se ve fácil de usar y que sí la usaría en su negocio; no indicó un monto, pero los precios le parecieron accesibles. Lo primero que cambiaría es tenerla en español y que las alertas sean más fáciles de encontrar. Se calificó con 3 sobre 5 en comodidad con aplicaciones web y busca algo simple y rápido.
 
-**Entrevista #3.** Rubens Bendezú, 24 años, Comas, segmento Comercializador. Fecha de la sesión: 12 de noviembre de 2026. Enlace al video con el tiempo de inicio: [PENDIENTE: URL de Microsoft Stream con el tiempo de inicio 00:33:17].
+**Entrevista #3.** Rubens Bendezú, 24 años, Comas, segmento Comercializador. Fecha de la sesión: 12 de noviembre de 2026. Enlace al video con el tiempo de inicio: [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd), desde el minuto 00:33:17.
 
 **Figura 212**
 
@@ -89,7 +93,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 *Resumen.* Sin ayuda, Rubens Bendezú entendió que la plataforma es para licorerías, distribuidores y productores, y encontró las funciones para el comercializador («justo lo que necesito»). Cambió el idioma, entendió el dashboard (ventas, pedidos abiertos, stock bajo y reposición), encontró los productos con poco stock, registró el cliente y el pedido, cambió el estado del pedido y generó la reposición, que fue lo más fácil para él («cosa de 2 clics»). Le confundieron la configuración del umbral de stock y no ver la cantidad al armar el pedido, y no notó la prueba gratuita. Esperaba una función de proyección de ventas: si la semana pasada vendió cierta cantidad, cuánto se proyecta para esta. Elegiría el plan Básico porque administra la licorería solo, y recomendaría la plataforma con un 8 o 9 sobre 10. Lo primero que cambiaría es que los botones se noten más y agregar la proyección de ventas. Su comodidad con aplicaciones web es de 4 sobre 5; usa celular o laptop con Chrome, y hoy lleva el stock en Excel y en un cuaderno. Testimonio: «Me parece un sistema súper fácil de usar… es bastante rápido».
 
-**Entrevista #4.** Andrea Mendoza, 41 años, Surquillo, segmento Comercializador. Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: [PENDIENTE: URL de Microsoft Stream con el tiempo de inicio 00:44:59].
+**Entrevista #4.** Andrea Mendoza, 41 años, Surquillo, segmento Comercializador. Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=N0aKrd), desde el minuto 00:44:59.
 
 **Figura 213**
 
