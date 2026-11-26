@@ -188,7 +188,7 @@ Como táctica transversal, dado que ninguno de los tres competidores identificad
 
 Se realizaron siete entrevistas en video, previo consentimiento de los participantes: tres al segmento de productores de pisco y cuatro al segmento de comercializadores. Cada registro presenta los datos del entrevistado, la evidencia, la duración, el minuto del video donde inicia la entrevista y un resumen organizado según los bloques de las guías de la sección 2.2.1. Los resúmenes solo recogen lo que cada entrevistado expresó; cuando un tema no fue tratado en una entrevista, no se completa con suposiciones.
 
-URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8a859f76%2D82ca%2D49cb%2D84d8%2D934b1dd892e3)
+URL del video: <https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8a859f76%2D82ca%2D49cb%2D84d8%2D934b1dd892e3>
 
 <br>
 
@@ -533,7 +533,7 @@ URL del video: [Entrevistas (OneDrive UPC)](https://upcedupe-my.sharepoint.com/p
 
 #### 2.2.3. Análisis de entrevistas
 
-El análisis se realizó sobre las siete entrevistas registradas en la sección 2.2.2 (tres del segmento Productor y cuatro del segmento Comercializador). Las estadísticas se calcularon en Microsoft Excel con fórmulas (`COUNTIFS`, `AVERAGEIFS`, `MINIFS`, `MAXIFS`, `MEDIAN`) y están disponibles en el libro de trabajo [analisis_entrevistas_destilatech.xlsx](assets/analisis_entrevistas_destilatech.xlsx), que contiene las hojas *Datos*, *Segmento 1 Productor*, *Segmento 2 Comercializador*, *Comparativo* y *Disposición de pago*.
+El análisis se realizó sobre las siete entrevistas registradas en la sección 2.2.2 (tres del segmento Productor y cuatro del segmento Comercializador). Las estadísticas se calcularon en Microsoft Excel con fórmulas (`COUNTIFS`, `AVERAGEIFS`, `MINIFS`, `MAXIFS`, `MEDIAN`) y están disponibles en el libro de trabajo analisis_entrevistas_destilatech.xlsx (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report/blob/main/report/assets/analisis_entrevistas_destilatech.xlsx>), que contiene las hojas *Datos*, *Segmento 1 Productor*, *Segmento 2 Comercializador*, *Comparativo* y *Disposición de pago*.
 
 **Proceso de codificación.** Cada resumen se tradujo a variables con tres valores posibles: **Sí** (el entrevistado lo afirmó), **No** (lo negó de forma explícita) y **No registrado** (el tema no aparece en el resumen de esa entrevista). Un «No registrado» no se interpreta como «No»: por eso se informa el porcentaje sobre el total de entrevistados del segmento (menciones) y, en el libro de Excel, también sobre los entrevistados con dato.
 
