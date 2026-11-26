@@ -148,7 +148,7 @@ Los Story Points los asigna el equipo de desarrollo, no el Product Owner, y expr
 
 Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page) y suman 18 Story Points.
 
-**Product Backlog público:** [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web) (lista «Product Backlog» del tablero «Destilatech - App Web», con las 65 historias ordenadas por prioridad de negocio)
+**Product Backlog público:** <https://trello.com/b/4HZaQ3o7/destilatech-app-web> (lista «Product Backlog» del tablero «Destilatech - App Web», con las 65 historias ordenadas por prioridad de negocio)
 
 **Figura 46**
 
@@ -156,7 +156,7 @@ Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page
 
 <p align="center"><img src="assets/md-images-front-matter/trello-product-backlog.png" alt="Product Backlog en Trello" width="560"></p>
 
-*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/4HZaQ3o7/destilatech-app-web](https://trello.com/b/4HZaQ3o7/destilatech-app-web).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en <https://trello.com/b/4HZaQ3o7/destilatech-app-web>.
 
 *Descripción.* La lista «Product Backlog» contiene las 65 historias de la tabla siguiente, numeradas según su orden de prioridad; la captura muestra las primeras seis (US30 a US35). Cada tarjeta indica el título de la historia con sus Story Points y la descripción en formato de historia de usuario. A su derecha se ven las listas To Do, In Process y To Review, vacías (0 tarjetas).
 

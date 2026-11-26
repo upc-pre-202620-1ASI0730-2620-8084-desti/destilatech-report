@@ -4,31 +4,31 @@ A continuación, se detallan los repositorios utilizados a lo largo del proyecto
 
 #### Link del repositorio del Reporte
 
-- [destilatech-report](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report)
+- destilatech-report (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report>)
 
 #### Link del repositorio del Website
 
-- [destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website)
+- destilatech-website (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website>)
 
 #### Link del Website
 
-- [destilatech-website](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+- destilatech-website (<https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>)
 
 #### Link del repositorio de la Web Application
 
-- [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp)
+- destilatech-webapp (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp>)
 
 #### Link de la Web Application
 
-- [destilatech-webapp](https://destilatech-webapp.web.app)
+- destilatech-webapp (<https://destilatech-webapp.web.app>)
 
 #### Link del repositorio de los Web Services
 
-- [destilatech-platform](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform)
+- destilatech-platform (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform>)
 
 #### Link de la documentación de los Web Services
 
-- [destilatech-platform](https://destilatech-platform.onrender.com/scalar)
+- destilatech-platform (<https://destilatech-platform.onrender.com/scalar>)
 
 ### Desarrollo de Actividades
 

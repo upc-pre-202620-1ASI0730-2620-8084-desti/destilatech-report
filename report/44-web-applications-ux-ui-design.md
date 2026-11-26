@@ -2,7 +2,7 @@
 
 El diseño de la aplicación web atiende a los dos segmentos del producto con una estructura visual común y una navegación adaptada a cada perfil. El Productor accede a monitoreo, lotes, inventario, pedidos y alertas; el Comercializador usa una navegación reducida centrada en inventario, pedidos y alertas.
 
-El archivo de diseño se encuentra en Figma: [Archivo completo de Destilatech](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2007-2).
+El archivo de diseño se encuentra en Figma: Archivo completo de Destilatech (<https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2007-2>).
 
 #### 4.4.1. Web Applications Wireframes
 

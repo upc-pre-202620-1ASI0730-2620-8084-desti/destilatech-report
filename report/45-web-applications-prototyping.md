@@ -15,5 +15,5 @@ El prototipo interactivo se construyó en Figma a partir de los mock-ups. Contie
 
 **Enlaces del prototipo interactivo**
 
-- [Flujo del Productor](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-525)
-- [Flujo del Comercializador](https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-874)
+- Flujo del Productor (<https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-525>)
+- Flujo del Comercializador (<https://www.figma.com/design/l1g2fiZCTh5QYzOwzvGh9n/Untitled--Copy-?node-id=2031-874>)
