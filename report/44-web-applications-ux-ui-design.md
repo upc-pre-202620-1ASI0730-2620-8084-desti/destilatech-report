@@ -70,7 +70,7 @@ Los diagramas de flujo de usuario describen las decisiones que toma el usuario e
 
 **Rutas alternativas (unhappy paths).**
 
-| Flujo | Situación | Respuesta del sistema |
+| Flujo | Situation | System response |
 | :---------- | :------------ | :----------------------- |
 | Inicio de sesión | Credenciales incorrectas o prueba gratuita vencida. | Muestra un mensaje de error genérico y no revela cuál campo falló; si la prueba venció, ofrece contratar un plan. |
 | Monitoreo | No hay lecturas recientes del lote. | Indica que no hay datos y no muestra el estado «Operación estable». |

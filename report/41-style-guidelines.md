@@ -29,7 +29,7 @@ La siguiente tabla resume las especificaciones tipográficas para escritorio. La
 
 *Especificaciones tipográficas de Destilatech para escritorio*
 
-| Elemento | Color del texto | Fondo | Fuente | Peso | Tamaño | Interlineado | Alineación |
+| Element | Text color | Background | Font | Weight | Size | Line spacing | Alignment |
 | :---------- | :---------- | :---------- | :---------- | :---------- | :---------- | :---------- | :---------- |
 | **H1** | #5c2b21 | Ninguno | Poppins | Bold (700) | 48 px | 1.2 | Izquierda |
 | **H2** | #5c2b21 | Ninguno | Poppins | SemiBold (600) | 36 px | 1.3 | Izquierda |
@@ -109,7 +109,7 @@ Esta sección establece las reglas para pantallas menores a 768 px. Los valores 
 
 *Especificaciones tipográficas para móvil*
 
-| Elemento | Fuente | Peso | Tamaño | Interlineado |
+| Element | Font | Weight | Size | Line spacing |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | H1 | Poppins | Bold (700) | 32 px | 1.2 |
 | H2 | Poppins | SemiBold (600) | 24 px | 1.3 |
