@@ -566,7 +566,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Características subjetivas** (herramientas, canales y actitud hacia la tecnología):
 
-| Aspecto analizado | Sí | No | No registrado | % de menciones (sobre n = 3) |
+| Aspect analyzed | Yes | No | Not recorded | % of mentions (n = 3) |
 | :----------- | :----------: | :----------: | :----------: | :----------: |
 | Usa cuaderno/papel | 2 | 0 | 1 | 67% |
 | Usa Excel/hoja de cálculo | 3 | 0 | 0 | 100% |
@@ -600,7 +600,7 @@ El análisis se realizó sobre las siete entrevistas registradas en la sección 
 
 **Características subjetivas** (herramientas, canales y actitud hacia la tecnología):
 
-| Aspecto analizado | Sí | No | No registrado | % de menciones (sobre n = 4) |
+| Aspect analyzed | Yes | No | Not recorded | % of mentions (n = 4) |
 | :---------- | :----------: | :----------: | :----------: | :----------: |
 | Usa cuaderno/papel | 4 | 0 | 0 | 100% |
 | Usa Excel/hoja de cálculo | 3 | 1 | 0 | 75% |
@@ -720,7 +720,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 
 **Trazabilidad de las User Personas con las entrevistas.** La User Persona es un arquetipo: solo incluye los atributos que comparte la mayoría de los entrevistados de su segmento, tal como se registró en la sección 2.2.2 y se cuantificó en la sección 2.2.3. Los atributos que solo mencionó una persona, o que no se preguntaron, no se incluyen en la ficha; en particular, no se asignan estado civil, marca de dispositivo, sistema operativo, navegador ni tamaño de mercado, porque las entrevistas no los registran para la mayoría de los entrevistados. Las marcas e influencias que muestra cada ficha se incorporaron al actualizar las User Personas con la retroalimentación del docente y no se cuantifican en las tablas siguientes.
 
-| Atributo de la ficha de Ricardo Donayre (Productor) | Respaldo en las entrevistas (n = 3) | Fuente |
+| Attribute of the card of Ricardo Donayre (Producer) | Support in the interviews (n = 3) | Source |
 | :------------- | :-------------- | :---------- |
 | Edad de 33 años | Promedio de 32.7 años (edades 19, 20 y 59) | E1, E2, E3 |
 | Administrador de una bodega familiar | 2 de 3 son administradoras de negocio familiar; 1 es propietario y productor | E1, E3 (E2) |
@@ -736,7 +736,7 @@ Las fichas de User Persona se elaboraron en UXPressia, una para cada segmento ob
 | Frustración: descuadres entre el stock real y Excel | 2 de 3 | E1, E3 |
 | Disposición de pago: S/ 50 a S/ 100 mensuales | 3 de 3; punto medio promedio S/ 78.3 | E1, E2, E3 |
 
-| Atributo de la ficha de Carlos Mendoza (Comercializador) | Respaldo en las entrevistas (n = 4) | Fuente |
+| Attribute of the card of Carlos Mendoza (Reseller) | Support in the interviews (n = 4) | Source |
 | :------------- | :---------- | :---------- |
 | Edad de 29 años | Promedio de 29.0 años (edades 22, 24, 29 y 41) | E4, E5, E6, E7 |
 | Administrador de una licorería o bodega en Lima | 3 de 4 son administradores; 1 es propietario | E5, E6, E7 (E4) |
@@ -759,7 +759,7 @@ La laptop (1 de 3 productores y 1 de 4 comercializadores) no alcanza mayoría y 
 
 La User Task Matrix compara las tareas que cada segmento realiza para cumplir sus objetivos, junto con su frecuencia e importancia. Las tareas se identificaron a partir de las entrevistas de la sección 2.2.2.
 
-| Tarea | **Productor de pisco** (Frecuencia / Importancia) | **Comercializador** (Frecuencia / Importancia) |
+| Task | **Pisco producer (Frequency / Importance)** | **Reseller (Frequency / Importance)** |
 | :---------------- | :----------: | :----------: |
 | **Monitorear variables IoT (temperatura, pH, nivel)** | Horaria / Alta | N/A / N/A |
 | **Atender alertas críticas de producción / stock** | Horaria / Alta | Diaria / Alta |
@@ -854,38 +854,38 @@ Por esta razón, los tableros de Destilatech modelan el negocio **as-is**: los e
 
 El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandolini (2021) y por la guía de Baas-Schwegler y Richardson (s. f.). La siguiente tabla indica cada paso, el elemento que se produce y cómo se refleja en los tableros de Destilatech.
 
-| Paso | Qué se hace | Resultado en los tableros de Destilatech |
+| Step | What is done | Result on the Destilatech boards |
 | :----------: | :-------------------------- | :-------------------------------------- |
-| 1. Definir el objetivo | Acordar el alcance del dominio que se va a explorar. | Alcance: cómo se producen, registran, venden y reponen hoy el pisco de los entrevistados, sin considerar la plataforma. Se modelan dos flujos: productor y comercializador. |
-| 2. Exploración caótica | Escribir sin orden la mayor cantidad posible de eventos de dominio en notas naranjas, redactados en pasado. | Eventos extraídos de los resúmenes de las siete entrevistas (por ejemplo, «Mosto puesto a fermentar», «Venta perdida por producto agotado»). |
-| 3. Línea de tiempo | Ordenar los eventos cronológicamente, eliminar duplicados y ajustar la redacción. | Línea de tiempo de izquierda a derecha: 16 eventos en el flujo del productor y 10 en el del comercializador. |
-| 4. Eventos pivote | Reconocer los eventos que cierran una fase del proceso y abren otra. | Se identifican sobre las líneas de tiempo de cada flujo (sección 2.4.6). |
-| 5. Actores y sistemas | Identificar quién actúa en cada evento y qué herramientas externas usa (notas rosa). | Cuaderno, Excel, WhatsApp, Yape/Plin, termómetros y redes sociales como herramientas actuales; notas amarillas con los objetos (Lote, Mosto, Existencias, Pedido, entre otros). |
-| 6. Recorrido explícito | Leer la línea de tiempo en orden y verificar que cada evento tenga sentido y no falten pasos. | Cada flujo se recorre desde la recepción de la uva (productor) o de la mercadería (comercializador) hasta el punto donde el negocio vuelve a empezar su ciclo. |
-| 7. Problemas y oportunidades | Marcar con notas rojas (hotspots) los problemas reales que describieron los entrevistados y reconocer oportunidades. | 5 hotspots en el flujo del productor y 5 en el del comercializador (secciones 2.4.3 y 2.4.4). |
-| 8. Agrupación | Reunir los eventos y objetos relacionados para reconocer áreas candidatas del dominio. | Cuatro áreas candidatas del negocio actual (sección 2.4.5). |
+| 1. Define the goal | Agree on the scope of the domain to explore. | Scope: how the pisco of the interviewees is produced, recorded, sold and replenished today, without considering the platform. Two flows are modeled: producer and reseller. |
+| 2. Chaotic exploration | Write, without order, as many domain events as possible on orange notes, in the past tense. | Events extracted from the summaries of the seven interviews (for example, "Must put to ferment", "Sale lost because the product ran out"). |
+| 3. Timeline | Order the events chronologically, remove duplicates and adjust the wording. | Timeline from left to right: 16 events in the producer flow and 10 in the reseller flow. |
+| 4. Pivotal events | Recognize the events that close one phase of the process and open another. | They are identified on the timelines of each flow (section 2.4.6). |
+| 5. Actors and systems | Identify who acts in each event and which external tools they use (pink notes). | Notebook, Excel, WhatsApp, Yape/Plin, thermometers and social networks as current tools; yellow notes with the objects (Batch, Must, Stock, Order, among others). |
+| 6. Explicit walkthrough | Read the timeline in order and verify that each event makes sense and no steps are missing. | Each flow is walked from the reception of the grape (producer) or the merchandise (reseller) to the point where the business starts its cycle again. |
+| 7. Problems and opportunities | Mark with red notes (hotspots) the real problems described by the interviewees and recognize opportunities. | 5 hotspots in the producer flow and 5 in the reseller flow (sections 2.4.3 and 2.4.4). |
+| 8. Grouping | Gather related events and objects to recognize candidate areas of the domain. | Four candidate areas of the current business (section 2.4.5). |
 
 **Leyenda de notas.** Se usó la convención de colores de EventStorming (Baas-Schwegler & Richardson, s. f.), adaptada al alcance del Big Picture:
 
-| Nota | Elemento | Descripción | Ejemplo en Destilatech |
+| Note | Element | Description | Example in Destilatech |
 | :---------- | :---------- | :----------------- | :----------- |
-| Naranja | Evento de dominio | Hecho relevante ocurrido hoy en el negocio, redactado en pasado. | «Mosto puesto a fermentar» |
-| Amarillo pequeño | Actor | Persona o rol que provoca o recibe un evento. | Productor, Operario, Comercializador, Proveedor |
-| Amarillo claro (grande) | Objeto del dominio | Concepto sobre el que ocurre el evento. | «Lote», «Existencias» |
-| Rosa (ancha) | Sistema o herramienta externa | Herramienta ajena a Destilatech que se usa hoy en el proceso. | Cuaderno, Excel, WhatsApp |
-| Rojo / rosa intenso | Hotspot | Problema, duda o riesgo que los entrevistados vivieron o describieron. | «Lote malogrado por temperatura detectada tarde» |
-| Verde | Oportunidad | Mejora posible identificada a partir de un hotspot (no es un evento). | Conocer el stock sin revisar el almacén |
+| Orange | Domain event | Relevant fact that happens today in the business, written in the past tense. | "Must put to ferment" |
+| Small yellow | Actor | Person or role that triggers or receives an event. | Producer, Operator, Reseller, Supplier |
+| Light yellow (large) | Domain object | Concept on which the event happens. | "Batch", "Stock" |
+| Pink (wide) | External system or tool | Tool outside Destilatech that is used today in the process. | Notebook, Excel, WhatsApp |
+| Red | Hotspot | Problem, doubt or risk that the interviewees experienced or described. | "Batch spoiled by an abnormal temperature detected late" |
+| Green | Opportunity | Possible improvement identified from a hotspot (it is not an event). | Know the stock without checking the warehouse |
 
 #### 2.4.2. Actores identificados
 
-| Actor | Rol en el dominio actual | Eventos que provoca o recibe | Fuente |
+| Actor | Role in the current domain | Events it triggers or receives | Source |
 | :---------- | :------------------------- | :------------------------- | :---------- |
-| Productor de pisco (propietario o administrador) | Dirige la bodega, supervisa el proceso y administra lotes, inventario y pedidos. | Recibe la uva, supervisa la fermentación y la destilación, anota lotes y ventas, cuenta el producto terminado y atiende pedidos. | E1, E2, E3 |
-| Operario de bodega | Ejecuta tareas de producción: pesaje, despalillado, prensado y manejo del alambique. | Participa en los eventos de preparación de la uva y de destilación. | E2 |
-| Vendedor del productor | Visita periódicamente a los clientes para ofrecer degustaciones y recoger necesidades. | Provoca la recepción de pedidos de clientes. | E2 |
-| Comercializador (propietario o administrador) | Administra una licorería o bodega: ventas, revisión de existencias, compras e inventario. | Registra (o no) las ventas, revisa el almacén, decide la reposición y pide mercadería. | E4, E5, E6, E7 |
-| Cliente | Persona o negocio que compra pisco al productor o al comercializador. | Hace pedidos por WhatsApp o en mostrador; se va sin comprar si el producto está agotado. | E1 a E7 |
-| Proveedor o distribuidor | Abastece de pisco y otras bebidas al comercializador (distribuidores y productores artesanales). | Recibe el pedido por WhatsApp, responde (a veces con demora) y entrega la mercadería. | E4 a E7 |
+| Pisco producer (owner or manager) | Runs the winery, supervises the process and manages batches, inventory and orders. | Receives the grape, supervises fermentation and distillation, records batches and sales, counts the finished product and handles orders. | E1, E2, E3 |
+| Winery operator | Performs production tasks: weighing, destemming, pressing and handling the still. | Takes part in the grape preparation and distillation events. | E2 |
+| Producer's salesperson | Periodically visits customers to offer tastings and collect needs. | Triggers the reception of customer orders. | E2 |
+| Reseller (owner or manager) | Manages a liquor store or small shop: sales, stock checks, purchases and inventory. | Records (or not) the sales, checks the warehouse, decides the replenishment and orders merchandise. | E4, E5, E6, E7 |
+| Customer | Person or business that buys pisco from the producer or the reseller. | Places orders through WhatsApp or at the counter; leaves without buying if the product is sold out. | E1 to E7 |
+| Supplier or distributor | Supplies pisco and other beverages to the reseller (distributors and artisanal producers). | Receives the order through WhatsApp, answers (sometimes late) and delivers the merchandise. | E4 to E7 |
 
 #### 2.4.3. Flujo del Productor
 
@@ -895,38 +895,38 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 <p align="center"><img src="assets/md-images-front-matter/big_picture1.png" alt="Big Picture EventStorming: flujo del productor (as-is)" width="900"></p>
 
-*Nota.* Elaboración propia en Miro (2026).
+*Nota.* Elaboración propia (2026), a partir de los tableros de Miro del equipo.
 
-*Descripción.* El tablero muestra, de izquierda a derecha, dieciséis notas naranja con los eventos que hoy ocurren en una bodega de pisco, desde «Uva cosechada» hasta «Venta anotada en Excel». Debajo de los eventos aparecen los actores (notas amarillas pequeñas), los objetos del dominio (amarillo claro) y, en rosa, las herramientas que se usan hoy (termómetro, alambique, cuaderno, Excel y WhatsApp); debajo de cada hotspot hay una oportunidad en verde y los eventos pivote se marcan con una línea vertical morada. Encima de cinco eventos se ubican notas rojas con los problemas descritos por los entrevistados: la detección tardía de la temperatura anómala, la supervisión presencial en bodegas lejanas, el registro doble en cuaderno y Excel, el conteo físico periódico y las ventas anotadas con retraso.
+*Descripción.* El tablero muestra, de izquierda a derecha, dieciséis notas naranja con los eventos que hoy ocurren en una bodega de pisco, desde «Grape harvested» hasta «Sale recorded in Excel, sometimes late». Debajo de los eventos aparecen los actores (notas amarillas pequeñas), los objetos del dominio (amarillo claro) y, en rosa, las herramientas que se usan hoy (termómetro, alambique, cuaderno, Excel y WhatsApp); debajo de cada hotspot hay una oportunidad en verde y los eventos pivote se marcan con una línea vertical morada. Encima de cinco eventos se ubican notas rojas con los problemas descritos por los entrevistados: la detección tardía de la temperatura anómala, la supervisión presencial en bodegas lejanas, el registro doble en cuaderno y Excel, el conteo físico periódico y las ventas anotadas con retraso.
 
-| N.° | Evento de dominio (as-is) | Objetos del dominio | Herramienta o sistema actual | Fuente |
+| No. | Domain event (as-is) | Domain objects | Current tool or system | Source |
 | :----------: | :----------- | :---------- | :---------- | :---------- |
-| 1 | Uva cosechada | Uva | — | E2, E3 |
-| 2 | Uva recibida y pesada | Uva | — | E1, E2, E3 |
-| 3 | Uva despalillada y prensada; mosto obtenido | Mosto | — | E1, E2, E3 |
-| 4 | Mosto puesto a fermentar | Mosto; Lote | Tanque | E1, E2, E3 |
-| 5 | Temperatura del tanque revisada en visita presencial | Lote en fermentación | Termómetro | E2, E3 |
-| 6 | Lote malogrado por una temperatura anómala detectada tarde | Lote en fermentación | — | E1 |
-| 7 | Fermentación concluida | Lote | — | E1, E2, E3 |
-| 8 | Fermentado destilado; cabeza y cola separadas | Lote en destilación | Alambique | E1, E2, E3 |
-| 9 | Pisco puesto en reposo | Lote en reposo | Tanque | E1, E2, E3 |
-| 10 | Controles de calidad y filtrado realizados | Lote en reposo | — | E1, E2 |
-| 11 | Pisco embotellado y etiquetado | Lote; Botellas | — | E1, E2, E3 |
-| 12 | Lote anotado en cuaderno y luego en Excel | Lote | Cuaderno; Excel | E1, E2, E3 |
-| 13 | Producto terminado contado físicamente | Existencias | Cuaderno; Excel | E1, E3 |
-| 14 | Pedido de cliente recibido | Pedido; Cliente | WhatsApp | E1, E3 |
-| 15 | Pedido despachado al cliente | Pedido | — | E2 |
-| 16 | Venta anotada en Excel, a veces con retraso | Venta; Existencias | Excel | E1, E3 |
+| 1 | Grape harvested | Grape | — | E2, E3 |
+| 2 | Grape received and weighed | Grape | — | E1, E2, E3 |
+| 3 | Grape destemmed and pressed; must obtained | Must | — | E1, E2, E3 |
+| 4 | Must put to ferment | Must; Batch | Tank | E1, E2, E3 |
+| 5 | Tank temperature checked in an on-site visit | Batch in fermentation | Thermometer | E2, E3 |
+| 6 | Batch spoiled by an abnormal temperature detected late | Batch in fermentation | — | E1 |
+| 7 | Fermentation completed | Batch | — | E1, E2, E3 |
+| 8 | Fermented must distilled; head and tail separated | Batch in distillation | Still | E1, E2, E3 |
+| 9 | Pisco put to rest | Batch at rest | Tank | E1, E2, E3 |
+| 10 | Quality controls and filtering performed | Batch at rest | — | E1, E2 |
+| 11 | Pisco bottled and labeled | Batch; Bottles | — | E1, E2, E3 |
+| 12 | Batch recorded in a notebook and then in Excel | Batch | Notebook; Excel | E1, E2, E3 |
+| 13 | Finished product counted physically | Stock | Notebook; Excel | E1, E3 |
+| 14 | Customer order received | Order; Customer | WhatsApp | E1, E3 |
+| 15 | Order dispatched to the customer | Order | — | E2 |
+| 16 | Sale recorded in Excel, sometimes late | Sale; Stock | Excel | E1, E3 |
 
 **Hotspots del flujo del productor**
 
-| Evento asociado | Hotspot (nota roja) | Evidencia en las entrevistas | Oportunidad identificada |
+| Related event | Hotspot (red note) | Evidence in the interviews | Identified opportunity |
 | :-------------- | :---------------------- | :------------------------------ | :---------------- |
-| 5 y 6. Temperatura revisada en visita presencial; lote malogrado | La condición anómala solo se detecta de forma manual, cuando ya afectó al lote. | Los 3 productores (3/3) describen dificultad para monitorear variables; E1 perdió un lote por la temperatura de la fermentación. | Enterarse de que una variable salió de su rango mientras todavía se puede corregir. |
-| 5. Temperatura del tanque revisada | La supervisión exige visitar la bodega varias veces al día, aunque la bodega esté lejos de la sede comercial. | E3 visita los tanques varias veces al día; las bodegas de E2 y E3 están en Mala (Cañete) e Ica, fuera de Lima (2/3). | Monitorear los tanques sin estar físicamente en la bodega. |
-| 12. Lote anotado en cuaderno y luego en Excel | El mismo dato se anota dos veces, lo que genera errores y demoras. | E1 describe errores y demoras sobre todo cuando entran varios pedidos a la vez (2/3 reportan errores o desfases). | Registrar el lote una sola vez. |
-| 13. Producto terminado contado físicamente | El stock real solo se conoce con un conteo físico periódico. | E1 lo hace cada semana; E3 revisa y actualiza el inventario de forma quincenal o mensual. | Conocer el stock sin contar físicamente. |
-| 16. Venta anotada en Excel, a veces con retraso | Algunas ventas no se registran de inmediato y aparecen discrepancias. | E3 reconoce pequeñas discrepancias por ventas no registradas a tiempo. | Registrar cada venta al momento en que ocurre. |
+| 5 and 6. Temperature checked in an on-site visit; batch spoiled | The abnormal condition is only detected manually, when it has already affected the batch. | The 3 producers (3/3) describe difficulty monitoring variables; E1 lost a batch because of the fermentation temperature. | Learn that a variable left its range while it can still be corrected. |
+| 5. Tank temperature checked | Supervision requires visiting the winery several times a day, even when the winery is far from the commercial office. | E3 visits the tanks several times a day; the wineries of E2 and E3 are in Mala (Cañete) and Ica, outside Lima (2/3). | Monitor the tanks without being physically at the winery. |
+| 12. Batch recorded in a notebook and then in Excel | The same data is recorded twice, which causes errors and delays. | E1 describes errors and delays, mostly when several orders arrive at once (2/3 report errors or mismatches). | Record the batch only once. |
+| 13. Finished product counted physically | The real stock is only known through a periodic physical count. | E1 does it every week; E3 reviews and updates the inventory every two weeks or monthly. | Know the stock without counting physically. |
+| 16. Sale recorded in Excel, sometimes late | Some sales are not recorded immediately and discrepancies appear. | E3 acknowledges small discrepancies caused by sales not recorded on time. | Record each sale at the moment it happens. |
 
 #### 2.4.4. Flujo del Comercializador
 
@@ -936,43 +936,43 @@ El ejercicio sigue los pasos del Big Picture EventStorming descritos por Brandol
 
 <p align="center"><img src="assets/md-images-front-matter/big_picture2.png" alt="Big Picture EventStorming: flujo del comercializador (as-is)" width="900"></p>
 
-*Nota.* Elaboración propia en Miro (2026).
+*Nota.* Elaboración propia (2026), a partir de los tableros de Miro del equipo.
 
-*Descripción.* El tablero presenta diez eventos naranja del flujo de una licorería o bodega, desde «Mercadería recibida y guardada» hasta «Mercadería recibida tras el pedido», con los actores y objetos de dominio en amarillo y las herramientas actuales (cuaderno, Excel, WhatsApp, Yape y Plin) en rosa. Cinco notas rojas señalan los problemas descritos por los cuatro comercializadores: las ventas sin registrar en horas de mucha demanda, el producto agotado que se descubre cuando el cliente lo pide, la reposición decidida por intuición, la coordinación por WhatsApp con demoras y las herramientas digitales abandonadas; cada hotspot tiene su oportunidad en verde.
+*Descripción.* El tablero presenta diez eventos naranja del flujo de una licorería o bodega, desde «Merchandise received and stored in the warehouse» hasta «Merchandise received after the order», con los actores y objetos de dominio en amarillo y las herramientas actuales (cuaderno, Excel, WhatsApp, Yape y Plin) en rosa. Cinco notas rojas señalan los problemas descritos por los cuatro comercializadores: las ventas sin registrar en horas de mucha demanda, el producto agotado que se descubre cuando el cliente lo pide, la reposición decidida por intuición, la coordinación por WhatsApp con demoras y las herramientas digitales abandonadas; cada hotspot tiene su oportunidad en verde.
 
-| N.° | Evento de dominio (as-is) | Objetos del dominio | Herramienta o sistema actual | Fuente |
+| No. | Domain event (as-is) | Domain objects | Current tool or system | Source |
 | :----------: | :-------------- | :---------- | :---------- | :---------- |
-| 1 | Mercadería recibida y guardada en el almacén | Mercadería; Existencias | — | E7 (y reposición en E4 a E6) |
-| 2 | Venta realizada en el mostrador | Venta; Cliente | Yape; Plin | E7 |
-| 3 | Venta anotada en cuaderno o Excel, cuando hay tiempo | Venta; Existencias | Cuaderno; Excel | E4, E5, E7 |
-| 4 | Existencias revisadas a ojo en el almacén | Existencias | Cuaderno; Excel | E4, E5, E6, E7 |
-| 5 | Producto agotado sin que el dueño lo note | Existencias | — | E4, E5, E6, E7 |
-| 6 | Cliente pide un producto agotado y la venta se pierde | Cliente; Venta perdida | — | E4, E5, E6, E7 |
-| 7 | Cantidad a reponer decidida por experiencia o por promociones | Reposición | — | E4, E5, E6, E7 |
-| 8 | Pedido enviado al proveedor | Pedido a proveedor | WhatsApp | E4, E5, E6, E7 |
-| 9 | Respuesta del proveedor recibida, a veces con demora o faltante | Pedido a proveedor | WhatsApp | E7 |
-| 10 | Mercadería recibida tras el pedido | Mercadería; Existencias | — | E7 (y reposición en E4 a E6) |
+| 1 | Merchandise received and stored in the warehouse | Merchandise; Stock | — | E7 (and replenishment in E4 to E6) |
+| 2 | Sale made at the counter | Sale; Customer | Yape; Plin | E7 |
+| 3 | Sale recorded in a notebook or Excel, when there is time | Sale; Stock | Notebook; Excel | E4, E5, E7 |
+| 4 | Stock checked by eye in the warehouse | Stock | Notebook; Excel | E4, E5, E6, E7 |
+| 5 | Product sold out without the owner noticing | Stock | — | E4, E5, E6, E7 |
+| 6 | Customer asks for a product and the sale is lost | Customer; Lost sale | — | E4, E5, E6, E7 |
+| 7 | Quantity to replenish decided by experience or promotions | Replenishment | — | E4, E5, E6, E7 |
+| 8 | Order sent to the supplier | Supplier order | WhatsApp | E4, E5, E6, E7 |
+| 9 | Supplier response received, sometimes late or incomplete | Supplier order | WhatsApp | E7 |
+| 10 | Merchandise received after the order | Merchandise; Stock | — | E7 (and replenishment in E4 to E6) |
 
 **Hotspots del flujo del comercializador**
 
-| Evento asociado | Hotspot (nota roja) | Evidencia en las entrevistas | Oportunidad identificada |
+| Related event | Hotspot (red note) | Evidence in the interviews | Identified opportunity |
 | :------------ | :------------------------ | :-------------------------- | :------------------ |
-| 3. Venta anotada en cuaderno o Excel | Las ventas no siempre se registran, sobre todo en horas de mayor demanda. | E4, E5 y E7 no registran todas las ventas por la carga de trabajo (3/4). | Registrar una venta con pocos pasos, desde el celular. |
-| 5 y 6. Producto agotado; venta perdida | El producto se agota sin que el dueño lo note y se descubre cuando el cliente lo pide. | Los 4 comercializadores (4/4) se quedaron sin stock con clientes esperando, entre 1 y 3 veces al mes; se agrava en fechas de alta demanda. | Saber que un producto está por agotarse antes de que ocurra. |
-| 7. Cantidad a reponer decidida por experiencia | La reposición se decide por experiencia, a ojo o según el espacio libre en los estantes. | 4/4 deciden por experiencia; E7 calcula a ojo según el espacio de los estantes. | Decidir la reposición con datos del propio negocio. |
-| 8 y 9. Pedido enviado y respuesta del proveedor | La coordinación por WhatsApp no deja un registro estructurado y hay demoras o faltantes. | 4/4 usan WhatsApp con sus proveedores; E7 enfrenta demoras y faltantes imprevistos. | Llevar el registro del pedido sin dejar de usar WhatsApp. |
-| General (herramientas actuales) | Las herramientas digitales probadas se abandonaron por complicadas o poco ágiles. | E5 y E6 dejaron un sistema de inventario y E7 una hoja de cálculo (3/4). | Una herramienta con pocos pasos que no frene la atención en el mostrador. |
+| 3. Sale recorded in a notebook or Excel | Sales are not always recorded, especially at peak hours. | E4, E5 and E7 do not record all sales because of the workload (3/4). | Record a sale in few steps from the phone. |
+| 5 and 6. Product sold out; sale lost | The product runs out without the owner noticing and it is discovered when the customer asks for it. | The 4 resellers (4/4) ran out of stock with customers waiting, 1 to 3 times a month; it worsens on high-demand dates. | Know that a product is about to run out before it happens. |
+| 7. Quantity to replenish decided by experience | Replenishment is decided by experience, by eye or according to the free space on the shelves. | 4/4 decide by experience; E7 estimates by eye according to the shelf space. | Decide the replenishment with data from the own business. |
+| 8 and 9. Order sent and supplier response | Coordination through WhatsApp leaves no structured record and there are delays or missing items. | 4/4 use WhatsApp with their suppliers; E7 faces delays and unexpected missing items. | Keep the order record without giving up WhatsApp. |
+| General (current tools) | The digital tools tried were abandoned for being complicated or slow. | E5 and E6 left an inventory system and E7 a spreadsheet (3/4). | A tool with few steps that does not slow down the service at the counter. |
 
 #### 2.4.5. Áreas candidatas identificadas
 
 Al agrupar los eventos y objetos de ambos tableros por afinidad, se reconocen cuatro áreas candidatas del negocio actual:
 
-| Área candidata | Eventos y objetos que agrupa |
+| Candidate area | Events and objects it groups |
 | :---------- | :------------------------------------------- |
-| Producción del pisco | Productor, eventos 1 a 11: cosecha, recepción, prensado, fermentación, destilación, reposo, controles y embotellado; objetos Uva, Mosto, Lote, Botellas; herramientas termómetro y alambique. |
-| Registro de lotes y existencias | Productor, eventos 12, 13 y 16; comercializador, eventos 1, 3, 4 y 5: anotación de lotes y ventas, conteo físico y revisión del almacén; objetos Lote, Existencias; cuaderno y Excel. |
-| Ventas y atención al cliente | Productor, eventos 14 y 15; comercializador, eventos 2 y 6: pedidos de clientes, ventas en mostrador, venta perdida; objetos Pedido, Venta, Cliente; WhatsApp, Yape y Plin. |
-| Reposición y abastecimiento | Comercializador, eventos 7 a 10: decisión de cuánto reponer, pedido al proveedor, respuesta y recepción de la mercadería; objetos Reposición, Pedido a proveedor, Mercadería; WhatsApp. |
+| Pisco production | Producer, events 1 to 11: harvest, reception, pressing, fermentation, distillation, resting, controls and bottling; objects Grape, Must, Batch, Bottles; tools thermometer and still. |
+| Batch and stock records | Producer, events 12, 13 and 16; reseller, events 1, 3, 4 and 5: recording of batches and sales, physical count and warehouse check; objects Batch, Stock; notebook and Excel. |
+| Sales and customer service | Producer, events 14 and 15; reseller, events 2 and 6: customer orders, counter sales, lost sale; objects Order, Sale, Customer; WhatsApp, Yape and Plin. |
+| Replenishment and supply | Reseller, events 7 to 10: decision on how much to replenish, supplier order, response and reception of the merchandise; objects Replenishment, Supplier order, Merchandise; WhatsApp. |
 
 Estas áreas describen cómo se organiza hoy el negocio, no cómo se organizará el software. La relación entre ellas y los *bounded contexts* de la solución se explica en la sección 4.6.1.
 
@@ -980,36 +980,36 @@ Estas áreas describen cómo se organiza hoy el negocio, no cómo se organizará
 
 **Secuencia de los eventos.** En el flujo del productor los eventos siguen el orden del proceso productivo (de la uva al pisco embotellado) y luego el de la comercialización (del pedido a la venta anotada). En el flujo del comercializador el orden es el de un ciclo: se vende, se revisa lo que queda, se descubre lo que falta, se decide qué reponer, se pide, se recibe y se vuelve a vender. Los eventos pivote son los que cierran una fase de ese recorrido y abren otra; marcan dónde cambian el actor, el objeto del dominio o el significado de los términos y, por eso, son candidatos a frontera entre áreas.
 
-| Flujo | Evento pivote | Fase que cierra → fase que abre | Áreas candidatas que separa |
+| Flow | Pivotal event | Phase it closes → phase it opens | Candidate areas it separates |
 | :---------- | :---------- | :------------- | :--------------- |
-| Productor | 4. Mosto puesto a fermentar | Preparación de la uva → proceso en tanque | Producción del pisco (dos fases) |
-| Productor | 7. Fermentación concluida | Fermentación → destilación | Producción del pisco (dos fases) |
-| Productor | 11. Pisco embotellado y etiquetado | Producción → producto terminado en existencias | Producción del pisco / Registro de lotes y existencias |
-| Productor | 14. Pedido de cliente recibido | Producto terminado disponible → venta | Registro de lotes y existencias / Ventas y atención al cliente |
-| Comercializador | 6. Cliente pide un producto agotado | Venta y revisión del almacén → necesidad de reposición | Ventas y atención al cliente / Reposición y abastecimiento |
-| Comercializador | 8. Pedido enviado al proveedor | Decisión de reposición → abastecimiento | Reposición y abastecimiento (dos fases) |
-| Comercializador | 10. Mercadería recibida tras el pedido | Abastecimiento → existencias en el almacén | Reposición y abastecimiento / Registro de lotes y existencias |
+| Producer | 4. Must put to ferment | Grape preparation → process in the tank | Pisco production (two phases) |
+| Producer | 7. Fermentation completed | Fermentation → distillation | Pisco production (two phases) |
+| Producer | 11. Pisco bottled and labeled | Production → finished product in stock | Pisco production / Batch and stock records |
+| Producer | 14. Customer order received | Finished product available → sale | Batch and stock records / Sales and customer service |
+| Reseller | 6. Customer asks for a product that is sold out | Sale and warehouse check → need for replenishment | Sales and customer service / Replenishment and supply |
+| Reseller | 8. Order sent to the supplier | Replenishment decision → supply | Replenishment and supply (two phases) |
+| Reseller | 10. Merchandise received after the order | Supply → stock in the warehouse | Replenishment and supply / Batch and stock records |
 
 Los pivotes más relevantes para el diseño son los cuatro que cruzan de un área a otra: «Pisco embotellado y etiquetado», «Pedido de cliente recibido», «Cliente pide un producto agotado» y «Mercadería recibida tras el pedido». Sirven de punto de partida para definir los *bounded contexts* en el Design-Level EventStorming (sección 4.6.1).
 
 **Lenguaje ubicuo descubierto.** Los términos de la tabla son los que usan los entrevistados para nombrar su negocio; el equipo los recogió tal como los dicen. La tabla los relaciona con las entradas del glosario de la sección 2.5, donde se definen sin ambigüedad.
 
-| Término usado por los entrevistados | Quién lo usa | Término del glosario (sección 2.5) |
+| Term used by the interviewees | Who uses it | Glossary term (section 2.5) |
 | :---------- | :---------- | :---------- |
-| Lote | E1, E2, E3 | Batch (Lote) |
-| Mosto, mosto verde | E2 (productos), E3 | Must (Mosto) |
-| Fermentación (tanques, temperatura) | E1, E2, E3 | Fermentation (Fermentación) |
-| Destilación; separación de cabeza y cola | E1, E2, E3 | Distillation (Destilación) y Heads and Tails (Cabeza y cola) |
-| Reposo | E1, E2, E3 | Resting Period (Reposo) |
-| Embotellado, etiquetado | E1, E2, E3 | Bottling (Embotellado) |
-| Existencias, stock | E1 a E7 | Inventory Item (Existencia) |
-| Conteo físico, revisar el almacén | E1, E3, E4 a E7 | Physical Count (Conteo físico) |
-| Quedarse sin stock, quiebre de stock | E4 a E7 | Stockout (Quiebre de stock) |
-| Reposición, reponer | E4 a E7 | Replenishment (Reposición) |
-| Pedido (de cliente o al proveedor) | E1 a E7 | Order (Pedido) |
-| Proveedor, distribuidor | E4 a E7 | Supplier (Proveedor) |
-| Cliente | E1 a E7 | Customer (Cliente) |
-| Productor, comercializador | E1 a E7 | Producer (Productor) y Retailer (Comercializador) |
+| Batch (lote) | E1, E2, E3 | Batch |
+| Must (mosto, mosto verde) | E2 (products), E3 | Must |
+| Fermentation (tanks, temperature) | E1, E2, E3 | Fermentation |
+| Distillation; separation of head and tail | E1, E2, E3 | Distillation and Heads and Tails |
+| Resting | E1, E2, E3 | Resting Period |
+| Bottling, labeling | E1, E2, E3 | Bottling |
+| Stock (existencias) | E1 to E7 | Inventory Item |
+| Physical count, checking the warehouse | E1, E3, E4 to E7 | Physical Count |
+| Running out of stock | E4 to E7 | Stockout |
+| Replenishment (reposición) | E4 to E7 | Replenishment |
+| Order (from a customer or to the supplier) | E1 to E7 | Order |
+| Supplier, distributor | E4 to E7 | Supplier |
+| Customer | E1 to E7 | Customer |
+| Producer, reseller | E1 to E7 | Producer and Retailer |
 
 #### 2.4.7. Conclusiones del Big Picture
 
@@ -1020,28 +1020,28 @@ En el negocio actual los dos flujos están conectados por el producto: lo que el
 
 El siguiente glosario recoge los términos del dominio de negocio de Destilatech (producción, almacenamiento y comercialización de pisco).
 
-| Term | Definición |
+| Term | Definition |
 | :---------- | :------------------------------------- |
-| **Batch** (Lote) | Cantidad específica de pisco producida en conjunto bajo condiciones uniformes, que se rastrea como una unidad trazable desde la recepción de la materia prima hasta el embotellado. |
-| **Must** (Mosto) | Jugo de uva obtenido antes de la fermentación, materia prima base del proceso productivo. |
-| **Fermentation** (Fermentación) | Proceso bioquímico mediante el cual el mosto se transforma en un líquido alcohólico base, previo a la destilación. |
-| **Distillation** (Destilación) | Proceso de separación y concentración del alcohol a partir del fermentado, mediante el cual se obtiene el pisco. |
-| **Resting Period** (Reposo) | Periodo posterior a la destilación durante el cual el pisco reposa en recipientes de material neutro antes de su envasado, según el Reglamento de la Denominación de Origen Pisco. |
-| **Bottling** (Embotellado) | Proceso de envasado del pisco terminado en botellas listas para su comercialización. |
-| **Denomination of Origin** (Denominación de Origen) | Designación oficial que restringe el uso del término "Pisco" al producto elaborado en las zonas peruanas autorizadas, bajo un reglamento específico. |
-| **Producer** (Productor) | Segmento principal de usuario: pequeño o mediano negocio que elabora pisco, desde la recepción de uva hasta el embotellado. |
-| **Retailer** (Comercializador) | Segmento complementario de usuario: negocio (licorería, bodega, minimarket, distribuidor) que compra pisco y otras bebidas para revenderlas al consumidor final. |
-| **Inventory Item** (Ítem de inventario / Existencia) | Producto o presentación específica que se controla dentro del inventario de un productor o comercializador. |
-| **Stock Movement** (Movimiento de inventario) | Registro de una entrada o salida de cantidad de un ítem de inventario. |
-| **Stockout** (Quiebre de stock) | Situación en la que un producto se agota y no puede venderse cuando un cliente lo solicita. |
-| **Physical Count** (Conteo físico) | Revisión directa de las existencias en el almacén para verificar la cantidad real de cada producto. |
-| **Heads and Tails** (Cabeza y cola) | Fracciones inicial y final de la destilación que se separan del cuerpo del destilado que continúa hacia el reposo. |
-| **Replenishment** (Reposición) | Acción de reabastecer un ítem de inventario cuando su cantidad disponible cae por debajo de lo necesario. |
-| **Low-Stock Alert** (Alerta de stock bajo) | Notificación automática generada cuando el stock de un producto alcanza o cae por debajo del umbral configurado. |
-| **Anomaly Alert** (Alerta de anomalía) | Notificación automática generada cuando una variable monitoreada del proceso productivo se sale del rango configurado como normal. |
-| **Sensor Reading** (Lectura de sensor) | Valor capturado de una variable de proceso monitoreada, proveniente de un dispositivo IoT (simulado en el MVP). |
-| **Trial Period** (Periodo de prueba) | Periodo gratuito de hasta 14 días durante el cual un nuevo cliente puede usar Destilatech antes de requerir una suscripción paga. |
-| **Subscription** (Suscripción) | Plan de pago recurrente que un cliente debe contratar para continuar usando Destilatech al finalizar el periodo de prueba. |
-| **Order** (Pedido) | Solicitud de productos realizada por un cliente a un productor o a un comercializador, que el negocio registra en Destilatech. |
-| **Customer** (Cliente) | Parte que adquiere pisco u otro producto de un productor o comercializador. |
-| **Supplier** (Proveedor) | Parte a la que un comercializador (o un productor, para insumos) solicita el abastecimiento de un producto. |
+| **Batch** | Specific quantity of pisco produced together under uniform conditions, tracked as a traceable unit from the reception of the raw material to bottling. |
+| **Must** | Grape juice obtained before fermentation; base raw material of the production process. |
+| **Fermentation** | Biochemical process by which the must is transformed into a base alcoholic liquid, before distillation. |
+| **Distillation** | Process of separation and concentration of the alcohol from the fermented liquid, through which the pisco is obtained. |
+| **Resting Period** | Period after distillation during which the pisco rests in containers of neutral material before being packed, according to the Regulation of the Pisco Denomination of Origin. |
+| **Bottling** | Process of packing the finished pisco in bottles ready to be sold. |
+| **Denomination of Origin** | Official designation that restricts the use of the term "Pisco" to the product made in the authorized Peruvian zones, under a specific regulation. |
+| **Producer** | Main user segment: small or medium business that makes pisco, from the reception of the grape to bottling. |
+| **Retailer** | Complementary user segment: business (liquor store, small shop, minimarket, distributor) that buys pisco and other beverages to resell them to the final consumer. |
+| **Inventory Item** | Specific product or presentation that is controlled within the inventory of a producer or a retailer. |
+| **Stock Movement** | Record of an entry or exit of quantity of an inventory item. |
+| **Stockout** | Situation in which a product runs out and cannot be sold when a customer asks for it. |
+| **Physical Count** | Direct review of the stock in the warehouse to verify the real quantity of each product. |
+| **Heads and Tails** | Initial and final fractions of the distillation that are separated from the body of the distillate that continues to the resting period. |
+| **Replenishment** | Action of resupplying an inventory item when its available quantity falls below what is needed. |
+| **Low-Stock Alert** | Automatic notification generated when the stock of a product reaches or falls below the configured threshold. |
+| **Anomaly Alert** | Automatic notification generated when a monitored variable of the production process leaves the range configured as normal. |
+| **Sensor Reading** | Value captured from a monitored process variable, coming from an IoT device (simulated in the MVP). |
+| **Trial Period** | Free period of up to 14 days during which a new customer can use Destilatech before requiring a subscription. |
+| **Subscription** | Recurring paid plan that a customer must contract to keep using Destilatech when the trial period ends. |
+| **Order** | Request for products made by a customer to a producer or a retailer, which the business registers in Destilatech. |
+| **Customer** | Party that acquires pisco or another product from a producer or a retailer. |
+| **Supplier** | Party from which a retailer (or a producer, for supplies) requests the supply of a product. |

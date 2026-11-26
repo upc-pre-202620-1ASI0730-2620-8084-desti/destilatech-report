@@ -27,7 +27,7 @@ El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors d
 
 *Pauta de secuencias del video About-the-Team*
 
-| Sección | Inicio (hh:mm:ss) |
+| Section | Inicio (hh:mm:ss) |
 | :---------- | :----------: |
 | Presentación del equipo | 00:00:00 |
 | Retrospectiva: Sprint 1 | 00:00:31 |

@@ -193,5 +193,5 @@ Los mock-ups aplican la guía de estilo de la sección 4.1 sobre los wireframes 
 
 **Enlaces de la landing page**
 
-- Sitio publicado: https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/
-- Repositorio: https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website
+- Sitio publicado: <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>
+- Repositorio: <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website>

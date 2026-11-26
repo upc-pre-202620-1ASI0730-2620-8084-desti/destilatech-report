@@ -1,8 +1,10 @@
+<div style="page-break-after: always;"></div>
+
 ### Anexo C. Video de las entrevistas
 
 Las siete entrevistas de la sección 2.2 (tres a productores y cuatro a comercializadores) se entregan en un único video continuo. Los videos de navegación, de entrevistas de validación, About-the-Product y About-the-Team se agregan en cada entrega.
 
-| Video | Contenido | Enlace |
+| Video | Content | Link |
 | :----------: | :---------------------- | :----------: |
 | 1 | Entrevistas a Luciana Cueva, Mario Fernández y Stacy Guerra (productores) y a Marco Vargas, Carlos Moreno, Rubens Moreno y Andrea Mendoza (comercializadores) | [Ver video][video-entrevistas] |
 | 2 | Navegación de la landing page (Sprint 1) | [Ver video][video-sprint-1] |

@@ -1,6 +1,6 @@
 ### Anexo A. Archivos complementarios
 
-| Archivo | Descripción |
+| File | Description |
 | :------------- | :-------------------------------- |
 | [analisis_entrevistas_destilatech.xlsx](../assets/analisis_entrevistas_destilatech.xlsx) | Libro de Excel con los datos codificados de las entrevistas, las estadísticas por segmento, el comparativo y los gráficos (sección 2.2.3). |
 | [workspace.dsl](../assets/diagrams/structurizr/workspace.dsl) | Modelo de arquitectura en Structurizr DSL del que provienen los diagramas C4 (secciones 4.6.2 a 4.6.4). |

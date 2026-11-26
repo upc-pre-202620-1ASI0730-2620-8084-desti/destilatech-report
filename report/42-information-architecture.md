@@ -8,7 +8,7 @@ Un sistema de organización agrupa el contenido bajo **esquemas** (criterios par
 
 **Esquemas de organización**
 
-| Esquema | Tipo | Dónde se aplica en Destilatech |
+| Esquema | Tipo | Where it applies in Destilatech |
 | :---------- | :---------- | :-------------------------------------- |
 | Cronológico | Exacto | Historial de un lote y sus cambios de estado (US08); historial de movimientos de inventario (US46) y de pedidos (US19); lecturas de variables ordenadas por fecha y hora (US09). |
 | Alfabético | Exacto | Listas de productos (US12) y de clientes (US17) ordenadas por nombre; selector de lotes por código. |
@@ -28,7 +28,7 @@ Un sistema de organización agrupa el contenido bajo **esquemas** (criterios par
 
 El etiquetado usa un lenguaje coherente con el Ubiquitous Language (sección 2.5) y adaptado a cada perfil. Cada etiqueta indica la acción o el contenido de forma directa y, cuando corresponde, incluye su unidad de medida.
 
-| Perfil | Criterio de etiquetado | Ejemplos |
+| Perfil | Labeling criterion | Ejemplos |
 | :---------- | :-------------- | :------------------------ |
 | Visitante | Llamadas a la acción claras y campos de formulario breves. | «Prueba gratis 14 días», «Ver funcionalidades», «Nombre», «Nombre del negocio», «Correo electrónico». |
 | Productor | Términos técnicos del proceso con unidades explícitas. | «Temperatura (°C)», «Densidad», «pH», «Humedad (%)», «Lote», «Etapa», «+ Nuevo lote». |

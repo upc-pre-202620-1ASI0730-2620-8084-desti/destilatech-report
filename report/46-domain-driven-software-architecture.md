@@ -6,7 +6,7 @@ Los diagramas se elaboraron como código y se guardan en `assets/diagrams/`: los
 
 **Decisiones de diseño que organizan toda la sección**
 
-| Decisión | Motivo |
+| Decision | Motivo |
 | :--------------------------- | :------------------------ |
 | Siete *bounded contexts* implementados como módulos de una sola API (monolito modular). | El equipo es pequeño y el alcance es acotado; se evita la complejidad operativa de los microservicios sin renunciar a los límites entre contextos. |
 | Comunicación entre contextos mediante eventos de dominio y commands, no compartiendo agregados. | Mantiene los contextos desacoplados y permite evolucionar cada uno por separado. |
@@ -18,11 +18,11 @@ Los diagramas se elaboraron como código y se guardan en `assets/diagrams/`: los
 
 #### 4.6.1. Design-Level EventStorming
 
-El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (https://bit.ly/dles-guide). Partió de las cuatro áreas candidatas del negocio actual identificadas en el Big Picture EventStorming (sección 2.4.5) y de lo que la solución añade, y llegó a siete *bounded contexts*. En cada uno se identificaron los *commands* (acciones que un actor o un sistema externo dispara), el *aggregate* que procesa el command y garantiza sus invariantes, los eventos de dominio resultantes, las políticas (reacciones automáticas del sistema ante un evento, que pueden disparar commands en el mismo contexto o en otro) y los *read models* (vistas de consulta que el sistema expone a partir de los eventos).
+El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 minutos, siguiendo la guía de referencia del curso (<https://bit.ly/dles-guide>). Partió de las cuatro áreas candidatas del negocio actual identificadas en el Big Picture EventStorming (sección 2.4.5) y de lo que la solución añade, y llegó a siete *bounded contexts*. En cada uno se identificaron los *commands* (acciones que un actor o un sistema externo dispara), el *aggregate* que procesa el command y garantiza sus invariantes, los eventos de dominio resultantes, las políticas (reacciones automáticas del sistema ante un evento, que pueden disparar commands en el mismo contexto o en otro) y los *read models* (vistas de consulta que el sistema expone a partir de los eventos).
 
 **Qué incluye la solución y cómo modifica el flujo de eventos.** El Big Picture mostró cómo funciona hoy el negocio, con cuaderno, Excel y WhatsApp, y sus hotspots. La solución de Destilatech incorpora commands, eventos y vistas de consulta que cambian esos puntos del flujo de la siguiente manera:
 
-| Punto del flujo actual (Big Picture) | Cómo lo modifica Destilatech | Eventos de dominio que aparecen | Bounded context |
+| Point of the current flow (Big Picture) | How Destilatech changes it | Domain events that appear | Bounded context |
 | :--------------------------- | :----------------------------- | :--------------- | :------------ |
 | La temperatura anómala se detecta tarde y obliga a visitar la bodega (eventos 5 y 6 del productor) | Las lecturas de los sensores (simulados) se comparan con el rango configurado de cada variable y se avisa al productor | `SensorReadingRecorded`, `AnomalyDetected`, `AlertRaised` | Production & Monitoring → Alerts & Notifications |
 | El lote se anota dos veces y el producto terminado se cuenta físicamente (eventos 12 y 13 del productor) | El lote se registra una vez y cada entrada, salida o ajuste se guarda como movimiento que actualiza el stock | `BatchRegistered`, `StockMovementRegistered`, `StockLevelUpdated` | Production & Monitoring, Inventory & Stock Management |
@@ -34,7 +34,7 @@ El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 m
 
 **Criterios para separar los *bounded contexts*.** Las fronteras no se trazaron por módulos de pantalla, sino con cuatro criterios aplicados a las áreas candidatas del Big Picture y a las capacidades nuevas de la solución:
 
-| Criterio | Cómo se aplicó | Ejemplo |
+| Criterio | How it was applied | Ejemplo |
 | :---------- | :------------------------ | :-------------------------------------- |
 | Eventos pivote | Una frontera se ubica donde un evento cierra una fase y abre otra (sección 2.4.6). | «Pisco embotellado y etiquetado» separa Production & Monitoring de Inventory & Stock Management. |
 | Lenguaje ubicuo | Un término tiene un solo significado dentro de un contexto; si cambia de significado, hay otro contexto. | «Lote» es una unidad en proceso en Production & Monitoring y «Existencia» es una cantidad disponible en Inventory; «Alerta» agrupa anomalías y stock bajo en Alerts & Notifications. |
@@ -45,7 +45,7 @@ El equipo organizó una sesión de Design-Level EventStorming de 1 hora con 45 m
 
 **Leyenda utilizada en los diagramas**
 
-| Elemento | Forma y color | Descripción |
+| Element | Shape and color | Description |
 | :---------- | :---------- | :------------------- |
 | Command | Rectángulo azul | Acción o intención disparada por un actor o un sistema externo. |
 | Aggregate | Hexágono amarillo | Objeto del dominio que procesa el command y mantiene su consistencia. |
@@ -175,7 +175,7 @@ Este contexto se suscribe al evento `StockMovementRegistered`, publicado por Inv
 
 **Resumen del Design-Level EventStorming**
 
-| Bounded Context | Commands | Aggregates | Eventos de dominio | Consultas (*read models*) | Políticas |
+| Bounded Context | Commands | Aggregates | Domain events | Consultas (*read models*) | Policies |
 | :---------- | :-------------------------- | :---------- | :------------------------------- | :-------------- | :--------------- |
 | IAM | `RegisterAccount`, `Login`, `Logout`, `RequestPasswordRecovery`, `UpdateBusinessProfile`, `StartTrialPeriod` | `Account`, `TrialPeriod`, `PasswordRecoveryToken` | `AccountRegistered`, `UserAuthenticated`, `SessionClosed`, `PasswordRecoveryRequested`, `BusinessProfileUpdated`, `TrialPeriodStarted`, `TrialEndingSoonNotified` | `AccountStatusView` | `StartTrialOnRegistration`, `NotifyBeforeExpiration` |
 | Billing | `SubscribeToPlan`, `ConfirmPayment`, `ActivateSubscription` | `PaymentAttempt`, `Subscription`, `Plan` | `CheckoutStarted`, `PaymentConfirmed`, `SubscriptionActivated` | `SubscriptionStatusView`, `PlanCatalogView` | `ActivateSubscriptionOnPayment`, `SyncAccountAccessOnActivation` |
@@ -208,7 +208,7 @@ El diagrama de contexto presenta a Destilatech como un único recuadro al centro
 
 Los tres actores acceden a Destilatech como un único sistema, sin necesidad de conocer su composición interna ni la división en contextos. La pasarela de pago y el sensor IoT simulado son los dos sistemas externos con los que Destilatech se comunica; ambos aparecen con la solución y no existían en el negocio actual descrito en el Big Picture EventStorming. WhatsApp, el canal que hoy usan los entrevistados para coordinar pedidos, no se integra con Destilatech: el usuario comparte por su cuenta el texto de la lista de compra.
 
-| Origen | Destino | Descripción de la relación | Protocolo |
+| Origen | Destino | Description of the relationship | Protocolo |
 | :---------- | :---------- | :---------------- | :---------- |
 | Visitante | Destilatech | Conoce la propuesta de valor y los planes, y se registra. | HTTPS |
 | Productor de pisco | Destilatech | Registra lotes, monitorea variables del proceso y controla su inventario. | HTTPS |
@@ -472,7 +472,7 @@ El diagrama de contenedores descompone a Destilatech en sus unidades desplegable
 *Descripción.* Dentro de Destilatech hay cinco contenedores. El Website (HTML5, CSS3 y JavaScript) es contenido estático que se sirve desde un hosting. La aplicación web, al ser una aplicación Vue de una sola página, se representa con dos contenedores: *Web Application Static Content*, el hosting que entrega al navegador los archivos estáticos, y *Single-Page Application*, el código Vue que se ejecuta en el navegador del usuario. La REST API (ASP.NET Core, C# y Entity Framework Core) es un único contenedor, aunque contiene los siete *bounded contexts* como módulos, y la base de datos MySQL persiste la información. El visitante usa el Website, que enlaza a la aplicación; el productor y el comercializador usan la SPA, que consume la REST API en JSON por HTTPS. La API lee y escribe en MySQL, se comunica con la pasarela de pago y recibe las lecturas del sensor IoT simulado.
 
 
-| Contenedor | Tecnología | Responsabilidad |
+| Contenedor | Technology | Responsabilidad |
 | :---------- | :---------- | :-------------------------------- |
 | Website | HTML5, CSS3, JavaScript | Contenido estático con la propuesta de valor, los planes y el punto de entrada al registro; no requiere autenticación. |
 | Web Application Static Content | Hosting de contenido estático | Entrega al navegador los archivos estáticos (HTML, CSS y paquetes de JavaScript) de la aplicación. |
@@ -486,7 +486,7 @@ El diagrama de contenedores descompone a Destilatech en sus unidades desplegable
 
 La decisión tecnológica principal es separar el Website (contenido estático y sin autenticación) de la aplicación autenticada de una sola página, de modo que los llamados a la acción del Website lleven al usuario a la vista correspondiente de la aplicación y la experiencia sea consistente entre ambas, como exige el enunciado. Una aplicación de una sola página se compone de dos contenedores porque el hosting que entrega los archivos y el código que corre en el navegador son elementos de ejecución distintos. En cambio, la REST API es un solo contenedor: los *bounded contexts* son módulos de un mismo despliegue (monolito modular) y se distinguen en el diagrama de componentes de la API, no como contenedores separados. La API es el único contenedor que accede a la base de datos y a los dos sistemas externos.
 
-| Origen | Destino | Descripción | Protocolo |
+| Origen | Destino | Description | Protocolo |
 | :---------- | :---------- | :------------- | :---------- |
 | Website | Web Application Static Content | Enlaza a la aplicación (registro, inicio de sesión y plan preseleccionado). | HTTPS |
 | Web Application Static Content | Single-Page Application | Entrega la aplicación al navegador del usuario. | HTTPS |
@@ -517,7 +517,7 @@ Se presentan los diagramas de componentes de los tres contenedores con lógica p
 *Descripción.* El Website se compone de siete secciones: Header, Description, Goals, Pricing, Impact, Platform Features y Footer. El visitante navega desde el Header hacia las demás secciones; Pricing y Footer enlazan a la aplicación (Web Application Static Content), el primero con el plan preseleccionado y el segundo al formulario de registro.
 
 
-| Componente | Responsabilidad | Tecnología | Historia de usuario |
+| Componente | Responsabilidad | Technology | User story |
 | :---------- | :----------------- | :---------- | :---------- |
 | Header | Logo, navegación entre secciones y selector de idioma. | HTML, CSS, JavaScript | US30, US52 |
 | Description | Explica qué es Destilatech y su propuesta de valor. | HTML, CSS, JavaScript | US31 |
@@ -546,7 +546,7 @@ El primer nivel de componentes de la SPA son los *bounded contexts* que implemen
 *Descripción.* La SPA se compone de siete componentes que representan los *bounded contexts* (Billing, Production & Monitoring, Inventory & Stock Management, Orders & Replenishment, Alerts & Notifications, Analytics & Estimations e IAM, este último planificado y sin aplicarse en el Sprint 2) y del Shared Kernel. Las flechas muestran las relaciones reales entre contextos: Analytics & Estimations consulta a Production, Inventory, Orders y Alerts para construir el dashboard; Production y Inventory generan alertas; Orders consulta y descuenta stock en Inventory; y el Shared Kernel muestra las alertas pendientes y el estado de la prueba gratuita. Todos los contextos usan el Shared Kernel, que invoca la REST API por HTTPS.
 
 
-| Componente | Responsabilidad | Tecnología | Relaciones con otros contextos |
+| Componente | Responsabilidad | Technology | Relationships with other contexts |
 | :---------- | :--------------------- | :---------- | :-------------------- |
 | Shared Kernel | Layout, cliente HTTP base, internacionalización (es/en), conmutador de usuario de demostración y componentes comunes. | Vue components, JavaScript | Lo usan todos los contextos; muestra alertas (Alerts) y el estado de la prueba (Billing); invoca la REST API. |
 | IAM (planificado) | Registro, inicio de sesión y recuperación de contraseña; no se aplica en el Sprint 2. | Vue components | Usa el Shared Kernel. |
@@ -586,7 +586,7 @@ La REST API es un único contenedor y cada uno de sus módulos corresponde exact
 
 *Descripción.* Los siete módulos leen y escriben en la base de datos MySQL a través de Entity Framework Core. Billing solicita el cobro a la pasarela de pago y recibe la notificación del resultado mediante un webhook, y Production recibe las lecturas del sensor IoT simulado. Esta vista omite las relaciones entre módulos, que se muestran en la figura anterior, para que ambos diagramas permanezcan legibles.
 
-| Componente | Responsabilidad | Tecnología |
+| Componente | Responsabilidad | Technology |
 | :---------- | :------------------ | :---------- |
 | API Controllers | Enruta, valida y autentica las peticiones HTTP y publica la documentación OpenAPI. | ASP.NET Core Controllers |
 | IAM | Identidad de la cuenta, autenticación, recuperación de contraseña y periodo de prueba. | C# module |
