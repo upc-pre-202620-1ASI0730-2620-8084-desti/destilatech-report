@@ -44,14 +44,9 @@ Proyecto<br>
       <td>u202418405</td>
       <td>Condor Sandoval, Jean Pierre</td>
     </tr>
-    <tr>
-      <td>u202322404</td>
-      <td>Domenack Angeles, Miguel</td>
-    </tr>
   </tbody>
 </table> 
 
-<i>Domenack Angeles, Miguel participó hasta el Sprint 1 (AV1) y se retiró del equipo antes del Sprint 2.</i><br><br>
 
 <strong>Período 202620</strong><br><br>
 
