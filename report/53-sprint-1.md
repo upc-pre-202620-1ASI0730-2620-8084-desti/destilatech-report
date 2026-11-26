@@ -40,7 +40,7 @@ En el Sprint 1 los aspectos son las secciones de la landing page (épica EP09) y
 
 El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la propuesta de valor de Destilatech y puedan iniciar su prueba gratuita; para lograrlo se publica la versión inicial de la landing page. Cada sección de la página se asignó a un integrante, de modo que todos participaran en la implementación.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech](https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech) (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
+**Tablero del equipo en Trello:** <https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech> (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
 **Figura 105**
 
@@ -48,7 +48,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 <p align="center"><img src="assets/md-images-front-matter/trello-sprint1.png" alt="Tablero Sprint Backlog 1 - Destilatech en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech](https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en <https://trello.com/b/fM2X3O4p/sprint-backlog-1-destilatech>.
 
 *Descripción.* El tablero «Sprint Backlog 1 - Destilatech» organiza el trabajo en siete listas: Goal, con la meta del sprint; Stories, con las 8 historias de usuario del sprint (US30 a US37) y su puntaje en Story Points; To-Do, In-Process y To-Fix, sin tarjetas; To-Review, con 1 tarjeta (TK-16, el mock-up móvil de la landing page, pendiente de revisión); y Done, con las 15 tarjetas de tareas de ingeniería terminadas, cada una con su fecha de entrega y su responsable. La captura muestra el inicio de la lista Done; la columna se desplaza para ver las demás tarjetas.
 
@@ -82,7 +82,7 @@ El objetivo del Sprint 1 es que los visitantes de ambos segmentos entiendan la p
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website) la estructura HTML, los estilos, la adaptabilidad móvil, el ícono del logotipo, las pestañas de funcionalidades por segmento y la estructura base de internacionalización (i18n). La tabla lista los commits en orden cronológico.
+Durante el Sprint 1 se implementaron en el repositorio destilatech-website (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website>) la estructura HTML, los estilos, la adaptabilidad móvil, el ícono del logotipo, las pestañas de funcionalidades por segmento y la estructura base de internacionalización (i18n). La tabla lista los commits en orden cronológico.
 
 **Tabla 16**
 
@@ -104,7 +104,7 @@ Durante el Sprint 1 se implementaron en el repositorio [destilatech-website](htt
 
 **Observaciones sobre los commits.** Los mensajes de este sprint están redactados en español y usan el tipo `docs`, aunque la mayoría de los cambios corresponde a funcionalidad (`feat`) o estilos (`style`). Los mensajes se conservan tal como quedaron registrados en GitHub; a partir del siguiente sprint el equipo aplicará la convención de la sección 5.1.2 (tipo adecuado y descripción en inglés). La estructura base de i18n se inició en este sprint, pero la historia US52 (cambio de idioma) no forma parte del Sprint Backlog 1.
 
-**Commits del repositorio del informe.** Durante el mismo periodo el equipo avanzó en el informe, que se registra en el repositorio [destilatech-report](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report). El equipo trabajó con ramas `feature/*` integradas en `develop` mediante Pull Requests, como se describe en la sección 5.1.2. La tabla siguiente reúne los commits visibles en el historial de GitHub de cada rama; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la primera rama donde se observó.
+**Commits del repositorio del informe.** Durante el mismo periodo el equipo avanzó en el informe, que se registra en el repositorio destilatech-report (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report>). El equipo trabajó con ramas `feature/*` integradas en `develop` mediante Pull Requests, como se describe en la sección 5.1.2. La tabla siguiente reúne los commits visibles en el historial de GitHub de cada rama; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la primera rama donde se observó.
 
 El historial de GitHub no muestra el cuerpo del mensaje de los commits, por lo que esa columna se indica con «—».
 
@@ -511,7 +511,7 @@ El logro del Sprint 1 es la primera versión de la landing page publicada, con l
 
 **Video de navegación.** El equipo grabó un video de navegación de la landing page publicada, que consolida el flujo principal del visitante: ingreso a la página y lectura de la sección principal, recorrido de las secciones desde el menú del encabezado (Descripción, Objetivos, Precios, Impacto y Funcionalidades), cambio de idioma ES / EN, revisión de las funcionalidades por segmento y acceso al botón «Prueba gratis 14 días», hasta llegar al pie de página con los datos de contacto. El video prioriza el flujo relacionado con el negocio central, que es la captación de prospectos para la prueba gratuita.
 
-- **Enlace (Microsoft Stream, enlace privado):** [Ver video][video-sprint-1]
+- **Enlace (Microsoft Stream, enlace privado):** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202317807_upc_edu_pe/IQBfZtnS6Ud8QrXVi-lT_fF-AZRpWqqZXanHJkwEA1mCgHo?e=FivmRX>
 
 **Figura 131**
 
@@ -554,7 +554,7 @@ El Sprint 1 se centró en la landing page, por lo que no se implementaron servic
 
 En el Sprint 1 se desplegó la landing page en GitHub Pages desde la rama `main` del repositorio `destilatech-website`, con los pasos documentados en la sección 5.1.4. El despliegue se ejecuta de forma automática con el flujo `pages build and deployment` en cada integración en `main`.
 
-**Enlace de producción:** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+**Enlace de producción:** <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 

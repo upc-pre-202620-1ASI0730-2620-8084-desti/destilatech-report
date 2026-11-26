@@ -40,7 +40,7 @@ En el Sprint 2 los aspectos son los módulos de la aplicación, que coinciden co
 
 El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts* que forman la primera versión de la aplicación web, divididas en tareas, más las tareas técnicas transversales (*Shared Kernel*, estructura de la aplicación, Fake API, internacionalización y selector de usuario) y las tareas de pruebas funcionales de la aplicación. Cada tarea es una tarea de ingeniería (*Engineering Task*) estimada en horas de planificación, con un mínimo de 4 y un máximo de 8 horas por tarea.
 
-**Tablero del equipo en Trello:** [https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech](https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech) (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
+**Tablero del equipo en Trello:** <https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech> (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
 **Figura 136**
 
@@ -48,7 +48,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 
 <p align="center"><img src="assets/md-images-front-matter/trello-sprint2.png" alt="Tablero Sprint Backlog 2 - Destilatech en Trello" width="720"></p>
 
-*Nota.* Captura propia de Trello (2026). Tablero público disponible en [https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech](https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech).
+*Nota.* Captura propia de Trello (2026). Tablero público disponible en <https://trello.com/b/iWweMlhI/sprint-backlog-2-destilatech>.
 
 *Descripción.* El tablero «Sprint Backlog 2 - Destilatech» tiene siete listas: Goal, con la meta del sprint; Stories, con 31 tarjetas (29 historias de usuario con su puntaje en Story Points y 2 tarjetas de tareas técnicas sin historia: las transversales y las de pruebas); To-Do, In-Process, To-Review y To-Fix, sin tarjetas; y Done, con las 72 tarjetas de tareas de ingeniería (TK-01 a TK-72) terminadas, cada una con su fecha de entrega y su responsable. La captura muestra el final de la lista Done; la columna se desplaza para ver las demás tarjetas.
 
@@ -141,7 +141,7 @@ El Sprint Backlog 2 contiene las historias de interfaz de seis *bounded contexts
 ##### 5.2.2.4. Development Evidence for Sprint Review
 
 
-Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp) la aplicación web con Vue 3 (Composition API) y Vite, PrimeVue para los componentes de interfaz, Pinia para el estado, Vue Router, vue-i18n y Chart.js para los gráficos. Cada *bounded context* se organiza en las capas `domain`, `infrastructure`, `application` y `presentation`, y el repositorio sigue el flujo de ramas `main`, `develop` y `feature/*` descrito en la sección 5.1.2. La tabla reúne los commits únicos visibles en las ramas del repositorio al 2026-10-05, en orden cronológico; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la rama más antigua que lo contiene.
+Durante el Sprint 2 se implementó en el repositorio destilatech-webapp (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp>) la aplicación web con Vue 3 (Composition API) y Vite, PrimeVue para los componentes de interfaz, Pinia para el estado, Vue Router, vue-i18n y Chart.js para los gráficos. Cada *bounded context* se organiza en las capas `domain`, `infrastructure`, `application` y `presentation`, y el repositorio sigue el flujo de ramas `main`, `develop` y `feature/*` descrito en la sección 5.1.2. La tabla reúne los commits únicos visibles en las ramas del repositorio al 2026-10-05, en orden cronológico; cuando un commit aparece en varias ramas por compartir historial, se registra una sola vez, en la rama más antigua que lo contiene.
 
 **Tabla 20**
 
@@ -478,7 +478,7 @@ Durante el Sprint 2 se implementó en el repositorio [destilatech-webapp](https:
 
 El logro del Sprint 2 es la primera versión de la aplicación web, que está publicada en Firebase Hosting, consume el Fake API (`json-server`) publicado en Render (y también puede ejecutarse de forma local) y ofrece dos perfiles de demostración: productor (lotes, monitoreo IoT simulado, inventario y pedidos) y comercializador (inventario, pedidos y reposición). Como el contexto IAM no forma parte del sprint, no hay inicio de sesión: el perfil se cambia con los botones Productor / Comercializador de la barra superior y la aplicación recuerda el perfil elegido. Las pantallas siguientes, con la interfaz en inglés, recorren los flujos principales de cada perfil. La aplicación está disponible en español e inglés.
 
-**Video de navegación:** [Ver video][video-sprint-2]
+**Video de navegación:** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202317807_upc_edu_pe/IQBZP-iiEeF3T7LrCHYj5VQeAQu02ddGx_B0ODeAi1-2X4Y?e=wlCwUT>
 
 **Figura 149**
 
@@ -651,9 +651,9 @@ La aplicación web se desplegó en **Firebase Hosting** y el Fake API en **Rende
 
 **Enlaces de producción:**
 
-- **Aplicación web (Firebase Hosting):** [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app)
-- **Fake API (Render):** [https://destilatech-api.onrender.com/api/v1](https://destilatech-api.onrender.com/api/v1)
-- **Landing page (GitHub Pages):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+- **Aplicación web (Firebase Hosting):** <https://destilatech-webapp.web.app>
+- **Fake API (Render):** <https://destilatech-api.onrender.com/api/v1>
+- **Landing page (GitHub Pages):** <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>
 
 **Despliegue de la aplicación web en Firebase Hosting**
 

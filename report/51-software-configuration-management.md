@@ -52,10 +52,10 @@ El código se versiona con Git y se aloja en GitHub, dentro de la organización 
 
 | Repositorio | Content | Link |
 | :---------- | :------------ | :------------------------------------ |
-| destilatech-report | Informe del trabajo final (README, imágenes y diagramas). | [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report) |
-| destilatech-website | Landing page (HTML, CSS y JavaScript). | [https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website) |
+| destilatech-report | Informe del trabajo final (README, imágenes y diagramas). | <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-report> |
+| destilatech-website | Landing page (HTML, CSS y JavaScript). | <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website> |
 
-**Sitio publicado (landing page):** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+**Sitio publicado (landing page):** <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>
 
 **Figura 98**
 
@@ -338,7 +338,7 @@ Estas referencias serán aplicadas de manera complementaria. Si existiera confli
 
 Esta sección describe cómo se publica la landing page. La landing page es un sitio estático (HTML, CSS y JavaScript), por lo que se despliega en **GitHub Pages**, un servicio de alojamiento gratuito integrado con el repositorio. La aplicación web se despliega en **Firebase Hosting**, con el Fake API en **Render**, como se describe en la sección 5.1.4.2; la API real se documentará cuando se implemente.
 
-**URL de producción:** [https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/](https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/)
+**URL de producción:** <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>
 
 ##### 5.1.4.1. Landing Page
 
@@ -404,10 +404,10 @@ GitHub Pages usa la rama `main` como origen de producción: cada integración en
 
 ##### 5.1.4.2. Web Application
 
-La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila a archivos estáticos que se pueden alojar en cualquier servicio de hosting estático. La configuración de compilación está en el repositorio [destilatech-webapp](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp):
+La aplicación web es una SPA construida con Vue 3 y Vite, por lo que se compila a archivos estáticos que se pueden alojar en cualquier servicio de hosting estático. La configuración de compilación está en el repositorio destilatech-webapp (<https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp>):
 
 - **Compilación:** `npm run build` genera la carpeta `dist/` (`index.html` y `assets/`) usando las variables de `.env.production`.
 - **API en producción:** mientras no exista el *backend*, `.env.production` apunta al Fake API (`json-server`) publicado en Render (<https://destilatech-api.onrender.com/api/v1>); en desarrollo, `.env.development` apunta al Fake API local (<http://localhost:3000/api/v1>).
 - **Hosting:** la carpeta `dist/` se publica en Firebase Hosting (proyecto `destilatech-webapp`, plan Spark sin costo). `firebase.json` define `dist` como directorio público y reescribe todas las rutas a `/index.html`, necesario para que Vue Router (`createWebHistory`) resuelva las rutas de la SPA al recargar la página.
 - **Enlace con la landing page:** la variable `VITE_LANDING_PAGE_URL` apunta a la landing page publicada y la landing page enlaza al registro de la aplicación (`/registro?plan=...`).
-- **Estado:** la aplicación web está desplegada en [https://destilatech-webapp.web.app](https://destilatech-webapp.web.app). Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 161 a 168).
+- **Estado:** la aplicación web está desplegada en <https://destilatech-webapp.web.app>. Los pasos, con sus capturas, están en la sección 5.2.2.7 (Figuras 161 a 168).
