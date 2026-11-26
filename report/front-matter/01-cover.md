@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="../assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
+<br><br><img src="../assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
 
 Universidad Peruana de Ciencias Aplicadas<br>
 Carrera de Ingeniería de Software<br><br>
@@ -11,7 +11,7 @@ NRC<br>
 <strong>8084</strong><br>
 <strong>Informe del Trabajo Final</strong><br>
 Docente<br>
-<strong>Velasquez Nuñez, Angel Augusto</strong><br>
+<strong>Velásquez Núñez, Ángel Augusto</strong><br><br>
 Equipo<br>
 <strong>FuturosSeniors</strong><br><br>
 
@@ -23,29 +23,29 @@ Proyecto<br>
 <table>
   <thead>
     <tr>
-      <th>Código</th>
-      <th>Apellidos y Nombres</th>
+      <th><strong>Código</strong></th>
+      <th><strong>Apellidos y Nombres</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>U202317807</td>
-      <td>Fernandez Seer Mario Alonso</td>
+      <td>u202317807</td>
+      <td>Fernandez Seer, Mario Alonso</td>
     </tr>
     <tr>
-      <td>U202418755</td>
+      <td>u202418755</td>
       <td>Santiago Atanacio, Jairo Mathias</td>
     </tr>
     <tr>
-      <td>U202316845</td>
+      <td>u202316845</td>
       <td>Almandroz Carbajal, Pierina Marysabel</td>
     </tr>
     <tr>
-      <td>U202418405</td>
+      <td>u202418405</td>
       <td>Condor Sandoval, Jean Pierre</td>
     </tr>
     <tr>
-      <td>U202322404</td>
+      <td>u202322404</td>
       <td>Domenack Angeles, Miguel</td>
     </tr>
   </tbody>
