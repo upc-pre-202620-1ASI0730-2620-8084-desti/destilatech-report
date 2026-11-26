@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 ### Anexo D. Evaluación de User Experience según heurísticas
 
 *Evaluación heurística del producto Destilatech, revisada y aprobada por el grupo auditor Developers el 13 de noviembre de 2026, con el formato del Anexo D del Project Statement. No se basa en las entrevistas de validación: esas sesiones se evalúan aparte en la sección 5.3.3 (Tabla 33).*
@@ -11,7 +13,7 @@
 | Auditor | Developers |
 | Cliente(s) | Elizabeth Noelia Apaza Bocanegra; Mathias Andree Cardenas Huaman; Leonardo Gabriel López Torres; Elias Daniel Ramos Cerdan; Fabián Jesus Sandoval Cueto |
 
-**Sitio o aplicación a evaluar.** La landing page (website) de Destilatech (https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/) y la aplicación web (https://destilatech-webapp.web.app), con los perfiles de demostración de productor (Bodega Santa Rosa) y de comercializador (Licorería El Cóndor), en inglés y en español.
+**Sitio o aplicación a evaluar.** La landing page (website) de Destilatech (<https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>) y la aplicación web (<https://destilatech-webapp.web.app>), con los perfiles de demostración de productor (Bodega Santa Rosa) y de comercializador (Licorería El Cóndor), en inglés y en español.
 
 **Cómo se evaluó.** Recorrido de las pantallas en navegador de escritorio (1440 x 900 px) y en ancho móvil (375 px), con inspección del código renderizado para revisar nombres accesibles, idioma del documento, puntos de referencia (*landmarks*) y desbordamiento horizontal. Para no alterar los datos de demostración usados en el video, no se enviaron formularios ni se ejecutaron acciones que cambian datos (avanzar etapa de lote, crear producto, pedido o reposición, cancelar suscripción).
 
@@ -44,7 +46,7 @@ No se encontraron problemas de nivel 4.
 
 *Resumen de problemas encontrados en la evaluación*
 
-| # | Problema | Escala de severidad | Heurística / principio violado(a) |
+| # | Problema | Severity scale | Heuristic / violated principle |
 | :----------: | :---------- | :----------: | :---------- |
 | 1 | La aplicación web se muestra en blanco varios segundos en la primera carga, sin indicador de progreso | 2 | Usabilidad: visibilidad del estado del sistema |
 | 2 | El dashboard del productor muestra valores provisionales (ceros, "no tienes lotes activos", "Variable 23") antes de cargar los datos reales | 3 | Usabilidad: visibilidad del estado del sistema; Arquitectura de información: creíble |
@@ -58,7 +60,7 @@ No se encontraron problemas de nivel 4.
 | 10 | En "Lotes", la tarjeta "En destilación" muestra el subtítulo "1 en reposo", que describe otra etapa | 1 | Usabilidad: coincidencia entre el sistema y el mundo real |
 | 11 | Los testimonios de la landing page usan nombres inventados (rotulados como ilustrativos) | 1 | Arquitectura de información: creíble |
 
-**Problema #1:** Pantalla en blanco en la primera carga de la aplicación web. **Severidad:** 2. **Heurística violada:** Usabilidad, visibilidad del estado del sistema. **Problema:** al abrir https://destilatech-webapp.web.app (raíz y `/billing/plans`) la pantalla quedó en blanco, con solo el fondo, sin pantalla de carga ni mensaje. La duración varía: superó los 10 s en la primera revisión y fue menor a 1 s al repetir la prueba con la API ya activa. Una persona que llega desde el botón "Subscribe" de la landing page puede pensar que el enlace está roto. El HTML inicial de la aplicación solo contiene un contenedor vacío (`<div id="app">`), por lo que no existe ningún indicador de carga mientras Vue monta la aplicación. No se aisló la causa de la variación de la duración (carga diferida de módulos o arranque en frío de la platform alojada), y no todos los evaluadores la observaron. La Figura 223 muestra la pantalla a los 0,3 s de abrir la raíz. **Recomendación:** mostrar un *splash* o esqueleto de carga desde el HTML inicial (antes de que Vue monte la aplicación), con el logotipo y un mensaje de "Cargando"; precargar los módulos de la ruta de entrada.
+**Problema #1:** Pantalla en blanco en la primera carga de la aplicación web. **Severidad:** 2. **Heurística violada:** Usabilidad, visibilidad del estado del sistema. **Problema:** al abrir <https://destilatech-webapp.web.app> (raíz y `/billing/plans`) la pantalla quedó en blanco, con solo el fondo, sin pantalla de carga ni mensaje. La duración varía: superó los 10 s en la primera revisión y fue menor a 1 s al repetir la prueba con la API ya activa. Una persona que llega desde el botón "Subscribe" de la landing page puede pensar que el enlace está roto. El HTML inicial de la aplicación solo contiene un contenedor vacío (`<div id="app">`), por lo que no existe ningún indicador de carga mientras Vue monta la aplicación. No se aisló la causa de la variación de la duración (carga diferida de módulos o arranque en frío de la platform alojada), y no todos los evaluadores la observaron. La Figura 223 muestra la pantalla a los 0,3 s de abrir la raíz. **Recomendación:** mostrar un *splash* o esqueleto de carga desde el HTML inicial (antes de que Vue monte la aplicación), con el logotipo y un mensaje de "Cargando"; precargar los módulos de la ruta de entrada.
 
 **Problema #2:** Valores provisionales en el dashboard del productor. **Severidad:** 3. **Heurística violada:** Usabilidad, visibilidad del estado del sistema; Arquitectura de información, creíble. **Problema:** al entrar a "Dashboard", durante la carga se mostraron "0 en fermentación", "0 pedidos por despachar", "You have no active batches" y alertas recientes como "Variable 23 is outside its configured range"; segundos después los mismos elementos cambian a 5 lotes activos, 3 pedidos y "Humidity of batch LT-2026-019 read 80 %...". El estado vacío es indistinguible de un estado real y puede llevar a una decisión equivocada. La Figura 224 muestra el dashboard a los 0,6 s de entrar. El grupo auditor observó el mismo efecto en el gráfico "Movimiento de inventario" del comercializador, que aparece vacío hasta que cargan los movimientos. **Recomendación:** mostrar esqueletos (*skeletons*) hasta que lleguen los datos y reservar el mensaje de estado vacío para respuestas vacías confirmadas; no renderizar mensajes de alerta hasta resolver el nombre del lote y de la variable.
 
@@ -87,9 +89,9 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/webapp-first-load-blank.png" alt="Primera carga de la aplicación web" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
-*Descripción.* Al abrir https://destilatech-webapp.web.app solo se ve el color de fondo, sin logotipo, mensaje ni indicador de carga (problema #1).
+*Descripción.* Al abrir <https://destilatech-webapp.web.app> solo se ve el color de fondo, sin logotipo, mensaje ni indicador de carga (problema #1).
 
 **Figura 224**
 
@@ -97,7 +99,7 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/producer-dashboard-provisional.png" alt="Dashboard del productor durante la carga de los datos" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
 *Descripción.* Antes de recibir las respuestas de la API, las tarjetas muestran "0 en fermentación", "0 productos" y "0 por despachar", y los paneles dicen "No tienes lotes activos" y "Aún no hay actividad registrada"; segundos después aparecen 5 lotes activos, 2349 unidades en inventario y 4 alertas (problema #2).
 
@@ -107,7 +109,7 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/billing-plans-basic.png" alt="Pantalla de suscripción abierta con el parámetro plan=basic" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
 *Descripción.* La ruta /billing/plans?plan=basic muestra los tres planes sin resaltar el Básico; los botones de los planes Básico y Empresarial tienen el mismo texto, "Suscribirme" (problemas #3 y #4).
 
@@ -117,7 +119,7 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/retailer-dashboard.png" alt="Dashboard del comercializador" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
 *Descripción.* La tarjeta "Stock bajo" marca 0 y "Todo en orden", mientras "Reposición prioritaria" sugiere reponer 30 unidades de Pisco Quebranta Santa Rosa en 6 días (problema #5); entre los pedidos recientes figura el cliente de prueba "JEAN" (problema #7).
 
@@ -127,7 +129,7 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/batches-table.png" alt="Gestión de lotes del productor" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
 *Descripción.* La columna Acciones muestra solo íconos para avanzar la etapa y abrir el monitoreo IoT (problema #6); la tarjeta "En destilación: 1" tiene el subtítulo "1 en reposo" (problema #10).
 
@@ -137,7 +139,7 @@ No se encontraron problemas de nivel 4.
 
 <p align="center"><img src="../assets/annex-d/retailer-replenishment.png" alt="Reposición del comercializador" width="720"></p>
 
-*Nota.* Captura propia de la aplicación web publicada (https://destilatech-webapp.web.app), 13 de noviembre de 2026.
+*Nota.* Captura propia de la aplicación web publicada (<https://destilatech-webapp.web.app>), 13 de noviembre de 2026.
 
 *Descripción.* Las sugerencias dicen "No hay productos pendientes de reposición", en contraste con el dashboard (problema #5); la orden RP-0002 está "Solicitada" con registro el 12 nov 2026 y llegada el 03 oct 2026, y un proveedor tiene el contacto "123456789" (problema #7).
 
