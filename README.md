@@ -86,6 +86,5 @@ El repositorio sigue GitFlow: `main` contiene versiones entregadas, `develop` in
 | U202418755 | Santiago Atanacio, Jairo Mathias |
 | U202316845 | Almandroz Carbajal, Pierina Marysabel |
 | U202418405 | Condor Sandoval, Jean Pierre |
-| U202322404 | Domenack Angeles, Miguel (hasta el Sprint 1) |
 
 Docente: Velasquez Nuñez, Angel Augusto.
