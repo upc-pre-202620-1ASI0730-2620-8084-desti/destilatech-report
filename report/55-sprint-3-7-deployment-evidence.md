@@ -8,10 +8,10 @@ En el Sprint 3 la RESTful API se desplegó como contenedor en Render, con su bas
 
 | Parte | Servicio | URL |
 | :---------- | :---------- | :---------- |
-| RESTful API (`destilatech-platform`) | Render (contenedor Docker, plan gratuito) | `https://destilatech-platform.onrender.com/scalar` |
+| RESTful API (`destilatech-platform`) | Render (contenedor Docker, plan gratuito) | <https://destilatech-platform.onrender.com/scalar> |
 | Base de datos | Railway (MySQL 8.4) | Esquema `destilatech`, sin URL pública de consulta |
-| Aplicación web (`destilatech-webapp`) | Firebase Hosting | `https://destilatech-webapp.web.app` |
-| Landing page (`destilatech-website`) | GitHub Pages | `https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/` |
+| Aplicación web (`destilatech-webapp`) | Firebase Hosting | <https://destilatech-webapp.web.app> |
+| Landing page (`destilatech-website`) | GitHub Pages | <https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/> |
 
 *Nota.* Elaboración propia a partir de los README de los repositorios y de las capturas de los servicios (2026). La API se publicó a partir del commit `c78e41d` de `main` (Pull Request #8) y, por el plan gratuito, se apaga cuando no recibe solicitudes: la primera petición puede tardar cerca de un minuto.
 
@@ -23,13 +23,13 @@ En el Sprint 3 la RESTful API se desplegó como contenedor en Render, con su bas
 docker compose up -d --build
 ```
 
-La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `localhost:3307` (usuario `root`, base de datos `destilatech`); se usa el puerto 3307 para no chocar con una instalación local de MySQL. Para detener los servicios se usa `docker compose down` (los datos se conservan) o `docker compose down -v` (borra la base de datos).
+La API y su documentación quedan en <http://localhost:8080/scalar> y MySQL en `localhost:3307` (usuario `root`, base de datos `destilatech`); se usa el puerto 3307 para no chocar con una instalación local de MySQL. Para detener los servicios se usa `docker compose down` (los datos se conservan) o `docker compose down -v` (borra la base de datos).
 
 **Variables de entorno en producción.** La cadena de conexión se arma con las variables `DATABASE_URL`, `DATABASE_USER`, `DATABASE_PASSWORD` y `DATABASE_SCHEMA` (`appsettings.Production.json`), de modo que no se guardan credenciales en el repositorio; la clave de Stripe en modo de prueba se guarda con *user secrets*.
 
 **Landing page.** El flujo de GitHub Actions `ci(pages)` ([`30bfcb8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/30bfcb8)) publica la carpeta `public` en GitHub Pages y reemplaza al flujo `pages build and deployment` del Sprint 1.
 
-**Aplicación web.** Las versiones 2.0.0 y 2.1.0 se publican en Firebase Hosting (`https://destilatech-webapp.web.app`) con `npm run build` y `firebase deploy`. En producción el archivo `.env.production` apunta a `https://destilatech-platform.onrender.com/api/v1`, y el script `npm run seed-api` carga los datos de demostración mediante los endpoints de la API desplegada.
+**Aplicación web.** Las versiones 2.0.0 y 2.1.0 se publican en Firebase Hosting (<https://destilatech-webapp.web.app>) con `npm run build` y `firebase deploy`. En producción el archivo `.env.production` apunta a <https://destilatech-platform.onrender.com/api/v1>, y el script `npm run seed-api` carga los datos de demostración mediante los endpoints de la API desplegada.
 
 **Despliegue de la API en Render.** La API se despliega con el `Dockerfile` del repositorio. La Figura 195 muestra el despliegue del Pull Request #8 (commit `c78e41d`), que terminó con el estado *Deploy succeeded* en 1 minuto 33 segundos; los registros muestran a Entity Framework Core consultando la tabla `plans`, es decir, la API ya atiende solicitudes con la base de datos.
 
@@ -51,7 +51,7 @@ La API y su documentación quedan en `http://localhost:8080/scalar` y MySQL en `
 
 *Nota.* Captura propia de la API desplegada (2026).
 
-*Descripción.* Página `https://destilatech-platform.onrender.com/scalar` con `DestilatechPlatform.API` v1 (OpenAPI 3.1.1), los grupos de endpoints (incluido Dashboard) y las operaciones del grupo Production.
+*Descripción.* Página <https://destilatech-platform.onrender.com/scalar> con `DestilatechPlatform.API` v1 (OpenAPI 3.1.1), los grupos de endpoints (incluido Dashboard) y las operaciones del grupo Production.
 
 **Base de datos en Railway.** La base de datos es un servicio MySQL de Railway, en línea, con un volumen. La API aplica las migraciones al iniciar: el esquema `destilatech` contiene la tabla `__EFMigrationsHistory` y las 17 tablas de los *bounded contexts*, y los planes se cargan como datos iniciales.
 

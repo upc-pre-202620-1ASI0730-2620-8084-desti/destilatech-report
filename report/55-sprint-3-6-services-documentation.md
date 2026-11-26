@@ -2,7 +2,7 @@
 
 La API documenta sus endpoints con OpenAPI (`Microsoft.AspNetCore.OpenApi`) y los publica en Scalar. Cada controlador se agrupa con una etiqueta por *bounded context*; las rutas usan el prefijo `/api/v1` y están en `kebab-case`, y los errores se devuelven como `ProblemDetails` con el título localizado según el idioma de la solicitud (inglés y español). La documentación de los endpoints de Alerts incluye metadatos localizados mediante un ensamblador de OpenAPI.
 
-**URL de la documentación en ejecución local:** `http://localhost:5273/scalar` (con Docker: `http://localhost:8080/scalar`). **URL de la documentación desplegada:** `https://destilatech-platform.onrender.com/scalar` (sección 5.2.3.7).
+**URL de la documentación en ejecución local:** <http://localhost:5273/scalar> (con Docker: <http://localhost:8080/scalar>). **URL de la documentación desplegada:** <https://destilatech-platform.onrender.com/scalar> (sección 5.2.3.7).
 
 **Repositorio de los Web Services:** [destilatech-platform](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform). **Commits de documentación del sprint:** [`ffb948a`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/ffb948a), [`863a908`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/863a908), [`9538486`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/9538486), [`71a702c`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/71a702c), [`a8690b1`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/a8690b1).
 
@@ -10,7 +10,7 @@ La API documenta sus endpoints con OpenAPI (`Microsoft.AspNetCore.OpenApi`) y lo
 
 *Endpoints documentados de la API (OpenAPI)*
 
-| Bounded Context | Acción (HTTP) | Endpoint (sintaxis de llamada) | Parámetros | Response | Historia |
+| Bounded Context | Action (HTTP) | Endpoint (call syntax) | Parameters | Response | Historia |
 | :---------- | :----------: | :---------- | :---------- | :---------- | :----------: |
 | Alerts | `POST` | `/api/v1/alerts` | Cuerpo `RaiseAlertResource` (cuenta, tipo, origen, mensaje y severidad). | `201` con `AlertResource`; `400`, `409`, `500` con `ProblemDetails`. | US62 |
 | Alerts | `GET` | `/api/v1/alerts` | Consulta: `accountId` (obligatorio), `type`, `status`. | `200` con la lista de `AlertResource`; `400`. | US62 |

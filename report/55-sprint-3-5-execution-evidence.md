@@ -34,7 +34,7 @@ El logro del Sprint 3 es la primera versión de la RESTful API, que se ejecuta d
 
 *Descripción.* Solicitud `GET /api/v1/plans` enviada desde el cliente de Scalar, con respuesta `200 OK` en 408 ms y la lista de planes (`BASIC` a S/ 60.00 por mes para un usuario y `PROFESSIONAL` a S/ 110.00 por mes para cinco usuarios, recomendado), con las claves de las funcionalidades de cada plan.
 
-**Aplicación web 2.0.0.** La versión 2.0.0 de la aplicación web está publicada en Firebase Hosting (`https://destilatech-webapp.web.app`); las siguientes capturas muestran las vistas nuevas del Sprint 3 sobre esa URL, con el perfil de demostración *Bodega Santa Rosa* (productor). Esa versión todavía consumía el Fake API y el pago simulado; la versión 2.1.0 los reemplazó por la API real y por Stripe Checkout (sección 5.2.3.7), y conserva las demás vistas.
+**Aplicación web 2.0.0.** La versión 2.0.0 de la aplicación web está publicada en Firebase Hosting (<https://destilatech-webapp.web.app>); las siguientes capturas muestran las vistas nuevas del Sprint 3 sobre esa URL, con el perfil de demostración *Bodega Santa Rosa* (productor). Esa versión todavía consumía el Fake API y el pago simulado; la versión 2.1.0 los reemplazó por la API real y por Stripe Checkout (sección 5.2.3.7), y conserva las demás vistas.
 
 **Figura 191**
 
