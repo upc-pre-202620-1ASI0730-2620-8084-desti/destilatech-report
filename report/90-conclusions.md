@@ -43,8 +43,8 @@ El video About-the-Team resume el proceso de trabajo del equipo FuturosSeniors d
 | :---------- | :---------- |
 | Nombre del archivo | upc-pre-202620-1asi0730-8084-futurosseniors-about-the-team-sprint-3.mp4 |
 | Duración | 08:52 |
-| Enlace en Microsoft Stream | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x) |
-| Enlace en YouTube (no listado, el que se incrusta en la landing page) | [https://youtu.be/unnZ-w0I7SU](https://youtu.be/unnZ-w0I7SU) |
+| Enlace en Microsoft Stream | <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCtZKxZW1N-R5tM5o5bXInSAcEr14D9nnV8576NdhseK2A?e=IZzn6x> |
+| Enlace en YouTube (no listado, el que se incrusta en la landing page) | <https://youtu.be/unnZ-w0I7SU> |
 
 **Figura 222**
 
