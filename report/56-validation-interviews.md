@@ -12,7 +12,7 @@ Las entrevistas de validación evalúan con usuarios de los dos segmentos objeti
 
 *Tareas de las sesiones de validación por segmento*
 
-| Segmento | Tarea | User flow evaluado | Historia relacionada |
+| Segmento | Task | User flow evaluado | Historia relacionada |
 | :---------- | :---------- | :---------- | :----------: |
 | Ambos | Entender qué ofrece Destilatech y qué plan le conviene | Landing page: Header, Description, Pricing y selector de idioma | US22, US23, US52 |
 | Ambos | Contratar un plan con el pago simulado | Planes de suscripción, formulario de pago e historial de pagos | US40 |
@@ -44,7 +44,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 *Registro de las entrevistas de validación*
 
-| # | Segmento | Nombres y apellidos | Edad | Distrito | Inicio y duración en el video |
+| # | Segmento | Full name | Age | Distrito | Start and duration in the video |
 | :----------: | :---------- | :---------- | :----------: | :---------- | :----------: |
 | 1 | Comercializador | Marcos Esteban Vargas Paredes | 22 | San Miguel | 00:00:00 / 16:00 (aprox.) |
 | 2 | Productor | Luciana Daniela Cueva Valdés | 20 | Lima | 00:16:59 / 16:17 |
@@ -120,7 +120,7 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 | Auditor | FuturosSeniors, grupo que ejecuta las sesiones de evaluación |
 | Cliente(s) | Marcos Esteban Vargas Paredes; Luciana Daniela Cueva Valdés; Rubens Bendezú; Andrea Mendoza |
 
-**Sitio o aplicación a evaluar.** La landing page de Destilatech (https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/) y la aplicación web (https://destilatech-webapp.web.app), con los perfiles de demostración de productor y de comercializador.
+**Sitio o aplicación a evaluar.** La landing page de Destilatech (<https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>) y la aplicación web (<https://destilatech-webapp.web.app>), con los perfiles de demostración de productor y de comercializador.
 
 **Tareas a evaluar.** El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas, que corresponden a la Tabla 31:
 
@@ -156,7 +156,7 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 
 *Resumen de problemas encontrados en las sesiones de validación*
 
-| # | Problema | Escala de severidad | Heurística / principio violado(a) |
+| # | Problema | Severity scale | Heuristic / violated principle |
 | :----------: | :---------- | :----------: | :---------- |
 | 1 | En el formulario «Registrar pedido» no se aprecia la cantidad de cada producto | 3 | Usabilidad: visibilidad del estado del sistema y prevención de errores; Arquitectura de información: ¿es útil (*useful*)? |
 | 2 | No se encuentra el selector de idioma y la página se muestra en inglés | 3 | Arquitectura de información: ¿es encontrable (*findable*)? |
