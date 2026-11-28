@@ -6,9 +6,9 @@ Las entrevistas de validación evalúan con usuarios de los dos segmentos objeti
 
 **Segmentos y participantes.** Se realizan de 3 a 5 entrevistas por segmento: productores de pisco y comercializadores (licorerías, bodegas y pequeños distribuidores). Cada participante interactúa con la landing page y con la aplicación web en el perfil que corresponde a su segmento.
 
-**Elementos de la sesión.** La sesión dura alrededor de 30 minutos: presentación del participante, exploración libre de la landing page, ejecución de las tareas de la Tabla 31 con la aplicación web y preguntas finales sobre claridad, utilidad y confianza.
+**Elementos de la sesión.** La sesión dura alrededor de 30 minutos: presentación del participante, exploración libre de la landing page, ejecución de las tareas de la Tabla 41 con la aplicación web y preguntas finales sobre claridad, utilidad y confianza.
 
-**Tabla 31**
+**Tabla 41**
 
 *Tareas de las sesiones de validación por segmento*
 
@@ -30,7 +30,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 **Video de las entrevistas de validación:** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?e=N0aKrd> (duración total: 59:51)
 
-**Figura 209**
+**Figura 241**
 
 *Cuadro representativo del video de las entrevistas de validación*
 
@@ -38,9 +38,9 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 *Nota.* Captura del video de las entrevistas de validación en Microsoft Stream (2026).
 
-*Descripción.* Cuadro de la entrevista #2: Luciana Cueva comparte su pantalla con el Dashboard Productor de la aplicación web publicada (perfil Productor, Bodega Santa Rosa, en inglés), con los indicadores de lotes activos, inventario, alertas y pedidos, el gráfico de volumen por lote activo y la actividad reciente. El video consolidado dura 59:51 y reúne las cuatro sesiones, cuyo inicio se indica en la Tabla 32.
+*Descripción.* Cuadro de la entrevista #2: Luciana Cueva comparte su pantalla con el Dashboard Productor de la aplicación web publicada (perfil Productor, Bodega Santa Rosa, en inglés), con los indicadores de lotes activos, inventario, alertas y pedidos, el gráfico de volumen por lote activo y la actividad reciente. El video consolidado dura 59:51 y reúne las cuatro sesiones, cuyo inicio se indica en la Tabla 42.
 
-**Tabla 32**
+**Tabla 42**
 
 *Registro de las entrevistas de validación*
 
@@ -53,7 +53,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 **Entrevista #1.** Marcos Esteban Vargas Paredes, 22 años, San Miguel, segmento Comercializador (familiar con una pequeña licorería). Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?e=N0aKrd>, desde el minuto 00:00:00.
 
-**Figura 210**
+**Figura 242**
 
 *Cuadro del video de la entrevista #1*
 
@@ -67,7 +67,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 **Entrevista #2.** Luciana Daniela Cueva Valdés, 20 años, Lima, segmento Productor. Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?e=N0aKrd>, desde el minuto 00:16:59.
 
-**Figura 211**
+**Figura 243**
 
 *Cuadro del video de la entrevista #2*
 
@@ -81,7 +81,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 **Entrevista #3.** Rubens Bendezú, 24 años, Comas, segmento Comercializador. Fecha de la sesión: 12 de noviembre de 2026. Enlace al video con el tiempo de inicio: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?e=N0aKrd>, desde el minuto 00:33:17.
 
-**Figura 212**
+**Figura 244**
 
 *Cuadro del video de la entrevista #3*
 
@@ -95,7 +95,7 @@ Para cada entrevista se registra: nombres y apellidos, edad, distrito, captura d
 
 **Entrevista #4.** Andrea Mendoza, 41 años, Surquillo, segmento Comercializador. Fecha de la sesión: 13 de noviembre de 2026. Enlace al video con el tiempo de inicio: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCaCL2ACxsDSbr-WKq53s3kARrmlS8JWk_jU4IbjG0eRKU?e=N0aKrd>, desde el minuto 00:44:59.
 
-**Figura 213**
+**Figura 245**
 
 *Cuadro del video de la entrevista #4*
 
@@ -122,7 +122,7 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 
 **Sitio o aplicación a evaluar.** La landing page de Destilatech (<https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>) y la aplicación web (<https://destilatech-webapp.web.app>), con los perfiles de demostración de productor y de comercializador.
 
-**Tareas a evaluar.** El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas, que corresponden a la Tabla 31:
+**Tareas a evaluar.** El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas, que corresponden a la Tabla 41:
 
 1. Entender qué ofrece Destilatech y qué plan le conviene en la landing page.
 2. Contratar un plan de suscripción con el pago simulado.
@@ -134,7 +134,7 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 
 **Tareas no incluidas.** No están incluidas en esta versión de la evaluación:
 
-1. Inicio de sesión y recuperación de contraseña: la API aún no autentica solicitudes (US26) y el perfil se elige con el selector de usuario de demostración.
+1. Inicio de sesión y recuperación de contraseña: la versión evaluada aún no autenticaba solicitudes (US26, que se implementó en el Sprint 4) y el perfil se elegía con el selector de usuario de demostración.
 2. Conexión con sensores IoT físicos: las lecturas de la aplicación son simuladas.
 3. Configuración del umbral de stock bajo y de los rangos normales de las variables del proceso.
 4. Registro y edición de clientes.
@@ -152,7 +152,7 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 - **Arquitectura de información:** ¿es encontrable (*findable*)?, ¿es usable (*usable*)?, ¿es útil (*useful*)?, ¿es creíble (*credible*)?, ¿es deseable (*desirable*)?, ¿es accesible (*accessible*)?, ¿aporta valor (*valuable*)?
 - **Diseño inclusivo:** proporciona experiencias comparables; considera la situación del usuario; es consistente; da control al usuario; ofrece opciones; prioriza el contenido; añade valor.
 
-**Tabla 33**
+**Tabla 43**
 
 *Resumen de problemas encontrados en las sesiones de validación*
 
@@ -169,9 +169,9 @@ Las sesiones se evalúan con el formato del Anexo D del enunciado (*UX Heuristic
 
 Los minutos de cada problema se cuentan desde el inicio de la entrevista correspondiente. Las capturas de los problemas se toman de los cuadros del video de las entrevistas de validación.
 
-**Problema #1:** Cantidad no visible al armar un pedido. **Sesión(es) en que se observó:** 1 y 3. **Severidad:** 3 (3 en la sesión 1 y 2 en la sesión 3). **Heurística violada:** Usabilidad, visibilidad del estado del sistema y prevención de errores; Arquitectura de información, ¿es útil (*useful*)?. **Problema:** En la sesión 1 (minutos 6:15 a 6:45), al agregar los productos de un pedido, el entrevistado no vio de forma clara cuántas botellas había elegido y, al superar el stock disponible de 18 unidades, se encontró con limitaciones y notificaciones de cantidad no confirmada. En la sesión 3 (minuto 6:16), el entrevistado dijo «me parece que hay un pequeño error porque no veo la cantidad» y siguió con el pedido. En una revisión posterior del formulario, la cantidad es un control numérico estrecho sin etiqueta visible; solo el nombre accesible la identifica. Ver la Figura 214. **Recomendación:** Mostrar la cantidad y el subtotal de cada producto en la línea del pedido, con una etiqueta visible «Cantidad», y advertir con un mensaje claro cuando la cantidad supera el stock disponible.
+**Problema #1:** Cantidad no visible al armar un pedido. **Sesión(es) en que se observó:** 1 y 3. **Severidad:** 3 (3 en la sesión 1 y 2 en la sesión 3). **Heurística violada:** Usabilidad, visibilidad del estado del sistema y prevención de errores; Arquitectura de información, ¿es útil (*useful*)?. **Problema:** En la sesión 1 (minutos 6:15 a 6:45), al agregar los productos de un pedido, el entrevistado no vio de forma clara cuántas botellas había elegido y, al superar el stock disponible de 18 unidades, se encontró con limitaciones y notificaciones de cantidad no confirmada. En la sesión 3 (minuto 6:16), el entrevistado dijo «me parece que hay un pequeño error porque no veo la cantidad» y siguió con el pedido. En una revisión posterior del formulario, la cantidad es un control numérico estrecho sin etiqueta visible; solo el nombre accesible la identifica. Ver la Figura 246. **Recomendación:** Mostrar la cantidad y el subtotal de cada producto en la línea del pedido, con una etiqueta visible «Cantidad», y advertir con un mensaje claro cuando la cantidad supera el stock disponible.
 
-**Figura 214**
+**Figura 246**
 
 *Formulario «Registrar pedido» en la entrevista #3*
 
@@ -181,9 +181,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 6:16 de la entrevista #3: Rubens Bendezú abre el formulario «Registrar pedido» del perfil Comercializador y elige un producto de la lista; la línea del pedido no muestra con claridad la cantidad elegida.
 
-**Problema #2:** Selector de idioma no encontrado. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque no lo encontró sin ayuda. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Al recorrer la página, la entrevistada dijo que todo estaba en inglés y que no sabía si había una función para traducirla (minuto 4:38). En la tarea de cambiar el idioma preguntó «¿Cómo podría hacerlo?» y el entrevistador le indicó dónde estaba el selector (minuto 6:35). Ver la Figura 215. **Recomendación:** Hacer más visible el selector de idioma, con el texto «ES | EN» junto al menú principal, o detectar el idioma del navegador.
+**Problema #2:** Selector de idioma no encontrado. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque no lo encontró sin ayuda. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Al recorrer la página, la entrevistada dijo que todo estaba en inglés y que no sabía si había una función para traducirla (minuto 4:38). En la tarea de cambiar el idioma preguntó «¿Cómo podría hacerlo?» y el entrevistador le indicó dónde estaba el selector (minuto 6:35). Ver la Figura 247. **Recomendación:** Hacer más visible el selector de idioma, con el texto «ES | EN» junto al menú principal, o detectar el idioma del navegador.
 
-**Figura 215**
+**Figura 247**
 
 *Landing page en inglés durante la entrevista #2*
 
@@ -193,9 +193,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 6:35 de la entrevista #2: la landing page se muestra en inglés (sección de beneficios) mientras la entrevistada pregunta cómo cambiar el idioma.
 
-**Problema #3:** Registro de un lote nuevo no encontrado. **Sesión(es) en que se observó:** 2. **Severidad:** 4, porque no pudo continuar con la tarea. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 9:19 y 9:50, la entrevistada preguntó «¿Dónde lo coloco?». Le pidieron que lo intentara y respondió «No, no puedo». Se pasó a la siguiente tarea sin registrar el lote. Ver la Figura 216. **Recomendación:** Poner un botón visible «Registrar lote» en el dashboard y encima de la lista de lotes.
+**Problema #3:** Registro de un lote nuevo no encontrado. **Sesión(es) en que se observó:** 2. **Severidad:** 4, porque no pudo continuar con la tarea. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 9:19 y 9:50, la entrevistada preguntó «¿Dónde lo coloco?». Le pidieron que lo intentara y respondió «No, no puedo». Se pasó a la siguiente tarea sin registrar el lote. Ver la Figura 248. **Recomendación:** Poner un botón visible «Registrar lote» en el dashboard y encima de la lista de lotes.
 
-**Figura 216**
+**Figura 248**
 
 *Dashboard del productor al buscar dónde registrar un lote*
 
@@ -205,9 +205,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 9:19 de la entrevista #2: el Dashboard Productor (Bodega Santa Rosa) en español, sin un acceso directo para registrar un lote nuevo.
 
-**Problema #4:** Actualización de la etapa de un lote no encontrada. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque necesitó una indicación del entrevistador. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 9:50 y 11:14, la entrevistada no encontró dónde actualizar el lote. El entrevistador le indicó que entrara a la sección «Lotes» y pasó cerca de un minuto (de 10:20 a 11:14) antes de continuar. Ver la Figura 217. **Recomendación:** Que los lotes del dashboard se puedan abrir con un clic y lleven a su detalle, con el botón para avanzar de etapa a la vista.
+**Problema #4:** Actualización de la etapa de un lote no encontrada. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque necesitó una indicación del entrevistador. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 9:50 y 11:14, la entrevistada no encontró dónde actualizar el lote. El entrevistador le indicó que entrara a la sección «Lotes» y pasó cerca de un minuto (de 10:20 a 11:14) antes de continuar. Ver la Figura 249. **Recomendación:** Que los lotes del dashboard se puedan abrir con un clic y lleven a su detalle, con el botón para avanzar de etapa a la vista.
 
-**Figura 217**
+**Figura 249**
 
 *Gestión de lotes al buscar cómo avanzar la etapa*
 
@@ -217,9 +217,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 10:20 de la entrevista #2: la tabla de lotes activos, donde la acción para avanzar la etapa es solo un ícono en la columna Acciones.
 
-**Problema #5:** Sección de alertas no encontrada. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque no lo logró sin ayuda. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 12:24 y 14:46, la entrevistada no encontró la sección de alertas. El entrevistador le indicó varias veces dónde estaba y cómo marcar una alerta como atendida y usar los filtros; le tomó unos dos minutos y medio. Al final ella misma dijo que tuvo problemas para encontrar el botón de alertas. Ver la Figura 218. **Recomendación:** Que la campana con el contador y la tarjeta «Alertas» del dashboard lleven directo a la bandeja de alertas.
+**Problema #5:** Sección de alertas no encontrada. **Sesión(es) en que se observó:** 2. **Severidad:** 3, porque no lo logró sin ayuda. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 12:24 y 14:46, la entrevistada no encontró la sección de alertas. El entrevistador le indicó varias veces dónde estaba y cómo marcar una alerta como atendida y usar los filtros; le tomó unos dos minutos y medio. Al final ella misma dijo que tuvo problemas para encontrar el botón de alertas. Ver la Figura 250. **Recomendación:** Que la campana con el contador y la tarjeta «Alertas» del dashboard lleven directo a la bandeja de alertas.
 
-**Figura 218**
+**Figura 250**
 
 *Monitoreo IoT al buscar la sección de alertas*
 
@@ -229,9 +229,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 13:05 de la entrevista #2: la entrevistada está en Monitoreo IoT (lote LT-2026-023) mientras busca la bandeja de alertas.
 
-**Problema #6:** Prueba gratuita no notada. **Sesión(es) en que se observó:** 3. **Severidad:** 3, porque no se dio cuenta solo de que había prueba gratuita. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** En el minuto 2:49, el entrevistado encontró los planes pero dijo «veo que no hay un plan gratuito» y que los planes empiezan en 60 soles; no vio la prueba gratuita. Ver la Figura 219. **Recomendación:** Poner «Prueba gratis de 14 días» dentro de cada tarjeta de plan y en el botón principal de la sección de precios.
+**Problema #6:** Prueba gratuita no notada. **Sesión(es) en que se observó:** 3. **Severidad:** 3, porque no se dio cuenta solo de que había prueba gratuita. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** En el minuto 2:49, el entrevistado encontró los planes pero dijo «veo que no hay un plan gratuito» y que los planes empiezan en 60 soles; no vio la prueba gratuita. Ver la Figura 251. **Recomendación:** Poner «Prueba gratis de 14 días» dentro de cada tarjeta de plan y en el botón principal de la sección de precios.
 
-**Figura 219**
+**Figura 251**
 
 *Planes de suscripción en la landing page durante la entrevista #3*
 
@@ -241,9 +241,9 @@ Los minutos de cada problema se cuentan desde el inicio de la entrevista corresp
 
 *Descripción.* Minuto 2:49 de la entrevista #3: la sección «Elige el plan ideal para tu operación» muestra los planes de S/ 60, S/ 110 y S/ 200, sin un aviso visible de la prueba gratuita en las tarjetas.
 
-**Problema #7:** Control del umbral de stock bajo difícil de encontrar. **Sesión(es) en que se observó:** 3. **Severidad:** 2, porque le costó pero lo resolvió solo. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 4:11 y 5:19, el entrevistado dudó si el aviso era «una alerta o no», lo buscó primero en notificaciones, pidió que le repitieran la consigna y después lo encontró en inventario; le tomó cerca de un minuto. Al final dijo que lo más difícil fue entender el control del umbral en inventarios y que había «botoncitos» que recién notaba y que deberían notarse más. Ver la Figura 220. **Recomendación:** Un botón visible con texto, por ejemplo «Avisarme cuando baje de…», en cada producto del inventario y en la lista de stock bajo.
+**Problema #7:** Control del umbral de stock bajo difícil de encontrar. **Sesión(es) en que se observó:** 3. **Severidad:** 2, porque le costó pero lo resolvió solo. **Heurística violada:** Arquitectura de información: ¿es encontrable (*findable*)?. **Problema:** Entre los minutos 4:11 y 5:19, el entrevistado dudó si el aviso era «una alerta o no», lo buscó primero en notificaciones, pidió que le repitieran la consigna y después lo encontró en inventario; le tomó cerca de un minuto. Al final dijo que lo más difícil fue entender el control del umbral en inventarios y que había «botoncitos» que recién notaba y que deberían notarse más. Ver la Figura 252. **Recomendación:** Un botón visible con texto, por ejemplo «Avisarme cuando baje de…», en cada producto del inventario y en la lista de stock bajo.
 
-**Figura 220**
+**Figura 252**
 
 *Reposición del comercializador al buscar el umbral de stock bajo*
 
