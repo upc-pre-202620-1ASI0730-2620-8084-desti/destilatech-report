@@ -4,7 +4,7 @@ El Sprint Backlog 4 contiene siete historias: las historias técnicas US26 (endp
 
 **Tablero del equipo en Trello:** <https://trello.com/b/76wisHfR/sprint-backlog-4-destilatech> (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
-**Figura 209**
+**Figura 208**
 
 *Tablero del Sprint 4 en Trello*
 

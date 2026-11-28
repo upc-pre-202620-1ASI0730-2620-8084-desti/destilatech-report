@@ -6,7 +6,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 **Landing page 4.0.0.** Las siguientes capturas muestran los botones nuevos sobre la landing page publicada en GitHub Pages (<https://upc-pre-202620-1asi0730-2620-8084-desti.github.io/destilatech-website/>), cuyos botones abren el registro de la aplicación web (<https://destilatech-webapp.web.app/register>).
 
-**Figura 214**
+**Figura 213**
 
 *Botón principal de prueba gratuita de la landing page*
 
@@ -16,7 +16,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* La sección principal ofrece el botón «Start your 14-day free trial», que abre `/register` de la aplicación web, y el encabezado incluye el botón «Free trial»; ambos aparecen también en español.
 
-**Figura 215**
+**Figura 214**
 
 *Botones de prueba gratuita por segmento*
 
@@ -26,7 +26,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Cada segmento tiene su botón de prueba gratuita, que abre el registro con el tipo de negocio ya elegido (`/register?type=producer` y `/register?type=retailer`).
 
-**Figura 216**
+**Figura 215**
 
 *Planes con prueba gratuita y suscripción*
 
@@ -38,7 +38,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 **Aplicación web 3.0.0.** Las siguientes capturas se tomaron sobre la aplicación web publicada en Firebase Hosting (<https://destilatech-webapp.web.app>), que consume la API 2.0.0 desplegada en Render.
 
-**Figura 217**
+**Figura 216**
 
 *Vista de registro de cuenta*
 
@@ -48,7 +48,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Formulario de registro con el nombre completo, el correo, la contraseña, el nombre del negocio, el tipo de negocio (productor o comercializador) y el plan preferido tomados del enlace de la landing page.
 
-**Figura 218**
+**Figura 217**
 
 *Aviso de los días de prueba restantes*
 
@@ -58,7 +58,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Después del registro la aplicación abre el dashboard del tipo de negocio y muestra el aviso con los días restantes de la prueba de 14 días; en los últimos 3 días el aviso cambia a advertencia.
 
-**Figura 219**
+**Figura 218**
 
 *Vista de inicio de sesión*
 
@@ -68,7 +68,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Formulario de inicio de sesión con el correo y la contraseña, el enlace al registro y el enlace a los términos y condiciones en el pie de página.
 
-**Figura 220**
+**Figura 219**
 
 *Inicio de sesión con credenciales no válidas*
 
@@ -78,7 +78,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Cuando las credenciales no son válidas, la API responde `401` y la vista muestra el mensaje de error sin iniciar la sesión.
 
-**Figura 221**
+**Figura 220**
 
 *Menú de cuenta con cierre de sesión*
 
@@ -88,7 +88,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* El menú de cuenta reemplaza al selector de usuarios de demostración del Sprint 2 y ofrece la opción de cerrar sesión (historia US38).
 
-**Figura 222**
+**Figura 221**
 
 *Ruta protegida sin sesión*
 
@@ -98,7 +98,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Sin sesión, la guardia de autenticación redirige cualquier ruta protegida a `/login`: al abrir `/inventory` sin haber iniciado sesión, la aplicación muestra la vista de inicio de sesión en `/login?redirect=/inventory` y, después de iniciar sesión, vuelve a la ruta solicitada.
 
-**Figura 223**
+**Figura 222**
 
 *Cuenta con la prueba terminada*
 
@@ -108,7 +108,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* Al terminar la prueba solo se puede entrar a la vista de planes y a las páginas de retorno de Stripe; el resto de rutas redirige a los planes hasta que la cuenta contrate una suscripción.
 
-**Figura 224**
+**Figura 223**
 
 *Términos y condiciones desde el pie de página*
 
@@ -120,7 +120,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 **RESTful API 2.0.0.** Las siguientes capturas muestran la API en ejecución local con Docker y su base de datos MySQL.
 
-**Figura 225**
+**Figura 224**
 
 *API 2.0.0 en ejecución local con Docker*
 
@@ -130,7 +130,7 @@ El logro del Sprint 4 es el ciclo completo de acceso al producto: un visitante a
 
 *Descripción.* La API inicia con MySQL, aplica las migraciones y publica la documentación en Scalar; el secreto del token y la contraseña de las cuentas de demostración se leen de variables de entorno.
 
-**Figura 226**
+**Figura 225**
 
 *Cuentas guardadas con la contraseña cifrada*
 

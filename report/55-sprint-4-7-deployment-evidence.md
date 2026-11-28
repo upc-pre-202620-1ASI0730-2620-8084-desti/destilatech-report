@@ -25,7 +25,7 @@ En el Sprint 4 las tres partes del producto se publicaron con versiones nuevas: 
 
 Las notas de cada versión están en las secciones *Releases* de los repositorios: <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/releases>, <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/releases> y <https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/releases>.
 
-**Figura 234**
+**Figura 233**
 
 *Variables de entorno de la API en Render*
 
@@ -35,7 +35,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* Variables de entorno de la API desplegada: los valores de los secretos permanecen ocultos.
 
-**Figura 235**
+**Figura 234**
 
 *Despliegue de la API 2.0.0 en Render*
 
@@ -45,7 +45,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* Despliegue de la versión 2.0.0 de la API en estado *Live* en Render, con el commit de la versión.
 
-**Figura 236**
+**Figura 235**
 
 *Aplicación web 3.0.0 en Firebase Hosting*
 
@@ -55,7 +55,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* La aplicación web 3.0.0 publicada en Firebase Hosting abre en la vista de inicio de sesión.
 
-**Figura 237**
+**Figura 236**
 
 *Landing page 4.0.0 en GitHub Pages*
 
@@ -65,7 +65,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* Flujo de GitHub Actions que publicó la landing page 4.0.0 en GitHub Pages.
 
-**Figura 238**
+**Figura 237**
 
 *Release 2.0.0 de la API*
 
@@ -75,7 +75,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* Release v2.0.0 de la API con sus notas: registro con contraseña cifrada, inicio de sesión con token JWT y API protegida.
 
-**Figura 239**
+**Figura 238**
 
 *Release 3.0.0 de la aplicación web*
 
@@ -85,7 +85,7 @@ Las notas de cada versión están en las secciones *Releases* de los repositorio
 
 *Descripción.* Release v3.0.0 de la aplicación web con sus notas: inicio de sesión, registro y prueba gratuita.
 
-**Figura 240**
+**Figura 239**
 
 *Release 4.0.0 de la landing page*
 

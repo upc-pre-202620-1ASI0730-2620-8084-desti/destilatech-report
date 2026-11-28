@@ -6,7 +6,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **a. IAM (Identity & Access Management)**
 
-**Figura 84**
+**Figura 83**
 
 *Diagrama de clases del Bounded Context IAM (Identity & Access Management)*
 
@@ -21,7 +21,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **b. Billing**
 
-**Figura 85**
+**Figura 84**
 
 *Diagrama de clases del Bounded Context Billing*
 
@@ -36,7 +36,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **c. Production & Monitoring**
 
-**Figura 86**
+**Figura 85**
 
 *Diagrama de clases del Bounded Context Production & Monitoring*
 
@@ -51,7 +51,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **d. Inventory & Stock Management**
 
-**Figura 87**
+**Figura 86**
 
 *Diagrama de clases del Bounded Context Inventory & Stock Management*
 
@@ -66,7 +66,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **e. Orders & Replenishment**
 
-**Figura 88**
+**Figura 87**
 
 *Diagrama de clases del Bounded Context Orders & Replenishment*
 
@@ -81,7 +81,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **f. Alerts & Notifications**
 
-**Figura 89**
+**Figura 88**
 
 *Diagrama de clases del Bounded Context Alerts & Notifications*
 
@@ -96,7 +96,7 @@ En esta sección el equipo detalla el diseño orientado a objetos de la REST API
 
 **g. Analytics & Estimations**
 
-**Figura 90**
+**Figura 89**
 
 *Diagrama de clases del Bounded Context Analytics & Estimations*
 

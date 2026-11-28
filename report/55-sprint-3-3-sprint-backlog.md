@@ -4,7 +4,7 @@ El Sprint Backlog 3 contiene las 13 historias técnicas de la épica EP10 que la
 
 **Tablero del equipo en Trello:** <https://trello.com/b/11yAZnma/sprint-backlog-3-destilatech> (listas Goal, Stories, To-Do, In-Process, To-Review, To-Fix y Done)
 
-**Figura 169**
+**Figura 168**
 
 *Tablero del Sprint 3 en Trello*
 

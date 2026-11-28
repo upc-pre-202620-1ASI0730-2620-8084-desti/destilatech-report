@@ -25,7 +25,7 @@ Durante el Sprint 4 se implementó la autenticación en los tres repositorios de
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform` | `feature/iam-authentication` | [`3aaeda8`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/3aaeda8) | feat(analytics): protect the analytics endpoints | — | 2026-11-24 |
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform` | `feature/iam-authentication` | [`ff5a5b9`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-platform/commit/ff5a5b9) | docs(readme): document authentication and secrets | — | 2026-11-24 |
 
-**Figura 210**
+**Figura 209**
 
 *Commits de la API en el Sprint 4*
 
@@ -55,7 +55,7 @@ Durante el Sprint 4 se implementó la autenticación en los tres repositorios de
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp` | `feature/iam-authentication` | [`6296ca6`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/6296ca6) | docs(readme): document sign up, sign in and the free trial | — | 2026-11-25 |
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp` | `develop` | [`da40ed7`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-webapp/commit/da40ed7) | chore(release): bump version to 3.0.0 | — | 2026-11-27 |
 
-**Figura 211**
+**Figura 210**
 
 *Commits de la aplicación web en el Sprint 4*
 
@@ -79,7 +79,7 @@ Durante el Sprint 4 se implementó la autenticación en los tres repositorios de
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website` | `feature/free-trial-cta` | [`5f8e46a`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/5f8e46a) | style(landing): style the segment and trial buttons | — | 2026-11-25 |
 | `upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website` | `feature/free-trial-cta` | [`736d46a`](https://github.com/upc-pre-202620-1ASI0730-2620-8084-desti/destilatech-website/commit/736d46a) | docs(readme): document the free trial and subscribe buttons | — | 2026-11-25 |
 
-**Figura 212**
+**Figura 211**
 
 *Commits de la landing page en el Sprint 4*
 
@@ -89,7 +89,7 @@ Durante el Sprint 4 se implementó la autenticación en los tres repositorios de
 
 *Descripción.* Historial de `destilatech-website` con los 5 commits del Sprint 4: los textos de la prueba gratuita y de la suscripción, los botones del encabezado, del pie de página, de cada segmento y de cada plan, sus estilos y la documentación.
 
-**Figura 213**
+**Figura 212**
 
 *Commits del repositorio del informe en el Sprint 4*
 

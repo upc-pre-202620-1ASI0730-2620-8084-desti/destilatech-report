@@ -61,7 +61,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 }
 ```
 
-**Figura 227**
+**Figura 226**
 
 *Documentación de la API con el esquema de seguridad Bearer*
 
@@ -71,7 +71,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Documentación de la API 2.0.0 en Scalar con el esquema de seguridad Bearer (JWT) y los grupos de endpoints protegidos.
 
-**Figura 228**
+**Figura 227**
 
 *Prueba de POST /api/v1/users en Scalar*
 
@@ -81,7 +81,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Registro de una cuenta con respuesta `201`: la cuenta incluye el período de prueba de 14 días y no devuelve la contraseña.
 
-**Figura 229**
+**Figura 228**
 
 *Prueba de POST /api/v1/tokens en Scalar*
 
@@ -91,7 +91,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Inicio de sesión con respuesta `200`: la API devuelve la cuenta, el token JWT y la fecha de expiración (60 minutos).
 
-**Figura 230**
+**Figura 229**
 
 *Solicitud protegida sin token*
 
@@ -101,7 +101,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Un endpoint protegido sin el encabezado `Authorization` responde `401`.
 
-**Figura 231**
+**Figura 230**
 
 *Solicitud protegida con token*
 
@@ -111,7 +111,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Con el token de la cuenta, la consulta responde `200` con los datos de esa cuenta.
 
-**Figura 232**
+**Figura 231**
 
 *Solicitud con el tenantId de otra cuenta*
 
@@ -121,7 +121,7 @@ En el Sprint 4 la API incorpora la autenticación con tokens JWT y documenta el 
 
 *Descripción.* Una cuenta que consulta los datos de otra recibe `403`, aunque su token sea válido.
 
-**Figura 233**
+**Figura 232**
 
 *GET /api/v1/plans sin token*
 

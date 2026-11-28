@@ -102,7 +102,7 @@ Las Épicas agrupan historias relacionadas. Además de las historias orientadas 
 
 ### 3.2. Impact Mapping
 
-**Figura 45**
+**Figura 44**
 
 *Impact Mapping de Destilatech*
 
@@ -150,7 +150,7 @@ Las ocho primeras historias (US30 a US37) corresponden al Sprint 1 (landing page
 
 **Product Backlog público:** <https://trello.com/b/4HZaQ3o7/destilatech-app-web> (lista «Product Backlog» del tablero «Destilatech - App Web», con las 65 historias ordenadas por prioridad de negocio)
 
-**Figura 46**
+**Figura 45**
 
 *Product Backlog en Trello*
 
